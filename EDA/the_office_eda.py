@@ -1,0 +1,59 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+
+pd.options.display.max_columns = 10
+pd.options.display.max_rows = None
+
+# read data
+# office_raw = pd.read_csv("../data/the_office/The-Office-Lines-V4.csv", sep=",", quotechar='\"', skipinitialspace=True)
+
+# fix unescaped commas
+# office_raw.head()
+# wrong_lines = office_raw.iloc[:, 6].notna()
+# office_raw.loc[wrong_lines, 'line'] = office_raw.iloc[:, [5, 6]][wrong_lines].apply(lambda x: "{0}, {1}".format(x[0], x[1]), axis=1)
+# office_raw.iloc[:, 0:6].to_csv("../data/the_office/the_office_lines_v5.csv", index=False, encoding="utf-8")
+
+# read fixed data
+
+office_raw = pd.read_csv("../data/the_office/the_office_lines_v5.csv")
+
+office_raw.head()
+
+lines_by_season = office_raw.groupby('season')['line'].count()
+lines_by_season.plot.bar()
+
+lines_by_speaker = office_raw.groupby(['speaker', 'season'])['line'].size().unstack(fill_value=0)
+lines_by_speaker["sum_col"] = lines_by_speaker.sum(axis=1)
+lines_by_speaker = lines_by_speaker.sort_values(by="sum_col", ascending=False)
+lines_by_speaker = lines_by_speaker.drop("sum_col",axis=1)
+lines_by_speaker[:30].plot(kind="bar", stacked=True,colormap="inferno")
+
+episodes_by_speaker = office_raw.loc[:,['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])['speaker'].count().sort_values(ascending=False)[:20]
+episodes_by_speaker.plot.bar()
+
+episodes_by_number_of_speaker = office_raw.loc[:,['speaker', 'season', 'episode']].drop_duplicates().groupby(['season', 'episode'])['speaker'].count().sort_values(ascending=False)[:20]
+episodes_by_number_of_speaker.plot.bar()
+
+replacements = {"Micheal": "Michael",
+                "Todd": "Todd Packer",
+                "Packer": "Todd Packer",
+                "Robert": "Robert California",
+                "Carroll": "Carol",
+                "David": "David Wallace",
+                "DeAngelo": "Deangelo",
+                "Daryl": "Darryl"}
+
+
+def fix_names(x):
+    x = x.strip().replace(":", "")
+    for rep in replacements:
+        x = re.sub(r'^'+rep+'$', replacements[rep], x)
+    return x
+
+
+office_raw['speaker'] = office_raw.speaker.apply(fix_names)
+office_raw.groupby('speaker')['season'].count().sort_values(ascending=False)
+office_raw.to_csv("../data/the_office/the_office_lines_v6.csv", index=False, encoding="utf-8")
+
