@@ -8,17 +8,30 @@ from networkx import community
 office_edges_weighted = pd.read_csv("../data/the_office/the_office_edges_weighted.csv")
 
 office_edges_weighted.head()
+office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", target="speaker2",
+                                     edge_attr=["line_count", "scene_count"])
 
-office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", target="speaker2", edge_attr=["line_count", "scene_count"])
-nodes = list(office_net.nodes())
-edges = office_net.edges()
-degrees = [v for _, v in office_net.degree()]
-degrees_lines = [v for _, v in office_net.degree(weight="line_count")]
-degrees_scenes = [v for _, v in office_net.degree(weight="scene_count")]
-line_counts_width = np.array([office_net[u][v]['line_count'] for u, v in edges])/1000
-plt.figure(figsize=(15, 15))
-nx.draw_spring(office_net, with_labels=True, nodelist=nodes, node_size=[d/5 for d in degrees_lines], width=line_counts_width)
-plt.show()
+def draw_interaction_network(G, weight=None):
+    nodes = list(G.nodes())
+    edges = G.edges()
+    if weight == "lines":
+        degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
+        edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
+        edge_width = edge_width / np.max(edge_width) * 6
+    elif weight == "scenes":
+        degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
+        edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
+        edge_width = edge_width / np.max(edge_width) * 6
+    else:
+        degrees_weight = np.array([v for _, v in G.degree()])
+        edge_width = np.ones(len(edges))
+    degrees_weight = degrees_weight/np.max(degrees_weight) * 5000
+    plt.figure(figsize=(15, 15))
+    nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width)
+    plt.show()
+    return edge_width
+
+deg_test = draw_interaction_network(office_net)
 
 # stats
 density = nx.density(office_net)
