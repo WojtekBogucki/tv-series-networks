@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import re
+import os
 
 # load raw data
 office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
@@ -59,3 +60,18 @@ for season in seasons:
                                      .pipe(get_speaker_network_edges))
     season_edges.to_csv("../data/the_office/the_office_edges_weighted_S{0}.csv".format(season), index=False, encoding="utf-8")
     print("Season {} saved".format(season))
+
+for season in seasons:
+    office_raw_season = office_raw[office_raw.season == season]
+    episodes = office_raw_season.episode.unique()
+    dir_path = "../data/the_office/season{}".format(season)
+    for episode in episodes:
+        office_raw_episode = office_raw_season[office_raw_season.episode == episode]
+        episode_edges = (office_raw_episode.pipe(filter_by_speakers, count=1)
+                         .pipe(filter_group_scenes)
+                         .pipe(get_speaker_network_edges))
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+        episode_edges.to_csv(dir_path + "/the_office_edges_weighted_E{0}.csv".format(episode), index=False,
+                             encoding="utf-8")
+        print("Season {0} episode {1} saved".format(season, episode))

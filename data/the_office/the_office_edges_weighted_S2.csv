@@ -1,0 +1,150 @@
+speaker1,speaker2,line_count,scene_count
+Angela,Creed,4,1
+Angela,Dwight,178,31
+Angela,Jan,15,3
+Angela,Jim,56,10
+Angela,Kelly,26,6
+Angela,Kevin,52,15
+Angela,Meredith,12,4
+Angela,Michael,200,28
+Angela,Oscar,66,16
+Angela,Pam,96,20
+Angela,Phyllis,60,17
+Angela,Roy,5,1
+Angela,Ryan,10,3
+Angela,Stanley,27,7
+Angela,Toby,29,8
+Captain Jack,Dwight,19,4
+Captain Jack,Jim,4,1
+Captain Jack,Meredith,8,2
+Captain Jack,Michael,59,8
+Captain Jack,Pam,3,1
+Captain Jack,Roy,6,2
+Carol,Dwight,34,6
+Carol,Jan,51,5
+Carol,Kevin,7,1
+Carol,Michael,117,13
+Carol,Pam,22,2
+Carol,Roy,4,1
+Creed,Dwight,32,7
+Creed,Jake,5,1
+Creed,Jan,2,1
+Creed,Jim,22,5
+Creed,Kelly,5,2
+Creed,Kevin,7,2
+Creed,Michael,119,14
+Creed,Oscar,7,2
+Creed,Pam,9,3
+Creed,Phyllis,11,4
+Creed,Ryan,6,2
+Creed,Stanley,6,2
+Creed,Toby,12,4
+Darryl,Dwight,33,5
+Darryl,Jake,3,1
+Darryl,Jim,7,3
+Darryl,Kevin,17,2
+Darryl,Michael,142,16
+Darryl,Oscar,2,1
+Darryl,Pam,10,4
+Darryl,Phyllis,5,2
+Darryl,Roy,67,9
+Dwight,Jake,30,5
+Dwight,Jan,57,6
+Dwight,Jim,509,69
+Dwight,Kelly,69,11
+Dwight,Kevin,83,19
+Dwight,Meredith,33,6
+Dwight,Michael,1209,143
+Dwight,Oscar,115,22
+Dwight,Pam,284,45
+Dwight,Phyllis,137,27
+Dwight,Roy,40,6
+Dwight,Ryan,123,20
+Dwight,Stanley,64,16
+Dwight,Toby,66,14
+Dwight,Todd Packer,11,2
+Jake,Jim,10,2
+Jake,Michael,45,4
+Jake,Oscar,3,1
+Jake,Pam,17,2
+Jake,Ryan,4,1
+Jan,Jim,25,3
+Jan,Kelly,26,6
+Jan,Kevin,5,1
+Jan,Meredith,18,4
+Jan,Michael,445,42
+Jan,Pam,50,8
+Jan,Phyllis,25,5
+Jan,Toby,6,2
+Jan,Todd Packer,4,1
+Jim,Katy,31,4
+Jim,Kelly,79,14
+Jim,Kevin,80,16
+Jim,Meredith,19,4
+Jim,Michael,605,72
+Jim,Oscar,70,18
+Jim,Pam,693,108
+Jim,Phyllis,71,15
+Jim,Roy,64,10
+Jim,Ryan,103,24
+Jim,Stanley,59,14
+Jim,Toby,34,6
+Jim,Todd Packer,7,2
+Katy,Pam,2,1
+Katy,Roy,10,1
+Kelly,Kevin,5,2
+Kelly,Meredith,18,5
+Kelly,Michael,110,12
+Kelly,Oscar,12,4
+Kelly,Pam,73,14
+Kelly,Phyllis,29,9
+Kelly,Ryan,32,9
+Kelly,Stanley,17,4
+Kelly,Toby,26,7
+Kevin,Meredith,6,3
+Kevin,Michael,242,33
+Kevin,Oscar,47,13
+Kevin,Pam,72,18
+Kevin,Phyllis,27,7
+Kevin,Roy,25,4
+Kevin,Ryan,19,6
+Kevin,Stanley,17,6
+Kevin,Toby,25,5
+Kevin,Todd Packer,7,1
+Meredith,Michael,65,12
+Meredith,Oscar,9,3
+Meredith,Pam,29,6
+Meredith,Phyllis,19,6
+Meredith,Ryan,6,2
+Meredith,Stanley,4,2
+Meredith,Toby,14,3
+Michael,Oscar,179,23
+Michael,Pam,595,76
+Michael,Phyllis,163,23
+Michael,Roy,104,12
+Michael,Ryan,272,38
+Michael,Stanley,198,27
+Michael,Toby,249,29
+Michael,Todd Packer,72,7
+Oscar,Pam,58,16
+Oscar,Phyllis,12,4
+Oscar,Ryan,13,5
+Oscar,Stanley,24,7
+Oscar,Toby,16,4
+Pam,Phyllis,90,22
+Pam,Roy,83,15
+Pam,Ryan,38,9
+Pam,Stanley,49,14
+Pam,Toby,46,9
+Pam,Todd Packer,3,1
+Phyllis,Ryan,10,2
+Phyllis,Stanley,25,8
+Phyllis,Toby,13,3
+Phyllis,Todd Packer,8,1
+Roy,Ryan,7,2
+Roy,Stanley,5,1
+Roy,Todd Packer,9,1
+Ryan,Stanley,19,6
+Ryan,Toby,18,4
+Ryan,Todd Packer,2,1
+Stanley,Toby,17,3

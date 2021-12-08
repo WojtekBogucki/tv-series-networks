@@ -1,0 +1,289 @@
+speaker1,speaker2,line_count,scene_count
+Andy,Angela,139,25
+Andy,Cathy,7,3
+Andy,Creed,72,13
+Andy,Darryl,344,47
+Andy,David Wallace,49,5
+Andy,Dwight,503,69
+Andy,Erin,602,85
+Andy,Gabe,66,10
+Andy,Harry,15,2
+Andy,Host,28,5
+Andy,Irene,34,6
+Andy,Jessica,123,12
+Andy,Jim,531,69
+Andy,Kelly,159,25
+Andy,Kevin,338,56
+Andy,Meredith,174,25
+Andy,Nate,29,3
+Andy,Nellie,113,14
+Andy,Oscar,292,45
+Andy,Pam,314,48
+Andy,Phyllis,237,39
+Andy,Robert California,393,51
+Andy,Ryan,100,18
+Andy,Stanley,183,31
+Andy,Susan,94,11
+Andy,Toby,79,10
+Andy,Val,60,9
+Andy,Walter,47,6
+Angela,Cathy,5,2
+Angela,Creed,8,4
+Angela,Darryl,27,9
+Angela,Dwight,125,21
+Angela,Erin,53,13
+Angela,Gabe,12,4
+Angela,Jessica,4,1
+Angela,Jim,65,13
+Angela,Kelly,54,13
+Angela,Kevin,92,21
+Angela,Meredith,10,4
+Angela,Nellie,25,6
+Angela,Oscar,120,29
+Angela,Pam,142,27
+Angela,Phyllis,57,17
+Angela,Robert California,10,4
+Angela,Ryan,24,5
+Angela,Senator Lipton,53,10
+Angela,Stanley,24,7
+Angela,Susan,3,1
+Angela,Toby,40,7
+Angela,Val,11,4
+Cathy,Creed,5,2
+Cathy,Dwight,85,10
+Cathy,Erin,11,3
+Cathy,Gabe,11,3
+Cathy,Host,3,1
+Cathy,Jim,100,14
+Cathy,Kevin,4,2
+Cathy,Nellie,28,5
+Cathy,Pam,25,3
+Cathy,Phyllis,2,1
+Cathy,Ryan,11,3
+Cathy,Stanley,5,2
+Cathy,Todd Packer,19,5
+Creed,Darryl,17,6
+Creed,Dwight,57,10
+Creed,Erin,9,3
+Creed,Gabe,2,1
+Creed,Host,3,1
+Creed,Jim,51,11
+Creed,Kelly,11,3
+Creed,Kevin,16,7
+Creed,Meredith,9,4
+Creed,Nate,4,1
+Creed,Nellie,10,3
+Creed,Oscar,17,8
+Creed,Pam,46,9
+Creed,Phyllis,14,5
+Creed,Robert California,15,4
+Creed,Ryan,10,3
+Creed,Stanley,9,4
+Creed,Toby,15,4
+Darryl,Dwight,149,23
+Darryl,Erin,75,14
+Darryl,Gabe,38,9
+Darryl,Host,12,2
+Darryl,Jessica,9,2
+Darryl,Jim,143,25
+Darryl,Kelly,46,12
+Darryl,Kevin,161,37
+Darryl,Meredith,27,9
+Darryl,Nate,47,4
+Darryl,Nellie,33,6
+Darryl,Oscar,75,20
+Darryl,Pam,79,20
+Darryl,Phyllis,76,23
+Darryl,Robert California,27,6
+Darryl,Ryan,18,6
+Darryl,Stanley,24,9
+Darryl,Toby,49,10
+Darryl,Val,117,19
+David Wallace,Erin,6,1
+David Wallace,Jim,16,2
+David Wallace,Meredith,4,1
+David Wallace,Pam,10,1
+David Wallace,Phyllis,16,2
+David Wallace,Robert California,37,4
+David Wallace,Stanley,10,1
+Dwight,Erin,289,51
+Dwight,Gabe,116,21
+Dwight,Harry,54,8
+Dwight,Jessica,14,2
+Dwight,Jim,894,116
+Dwight,Kelly,109,19
+Dwight,Kevin,175,34
+Dwight,Meredith,57,11
+Dwight,Nate,11,1
+Dwight,Nellie,260,40
+Dwight,Oscar,199,33
+Dwight,Pam,276,42
+Dwight,Phyllis,126,26
+Dwight,Robert California,154,22
+Dwight,Ryan,161,26
+Dwight,Senator Lipton,30,5
+Dwight,Stanley,132,27
+Dwight,Susan,8,1
+Dwight,Toby,46,8
+Dwight,Todd Packer,90,14
+Dwight,Val,13,2
+Dwight,Walter,2,1
+Erin,Gabe,33,6
+Erin,Harry,5,1
+Erin,Host,13,2
+Erin,Irene,47,8
+Erin,Jessica,77,10
+Erin,Jim,178,36
+Erin,Kelly,36,8
+Erin,Kevin,155,35
+Erin,Meredith,40,9
+Erin,Nellie,46,10
+Erin,Oscar,106,21
+Erin,Pam,96,20
+Erin,Phyllis,54,16
+Erin,Robert California,112,20
+Erin,Ryan,84,17
+Erin,Senator Lipton,14,4
+Erin,Stanley,43,14
+Erin,Susan,18,5
+Erin,Toby,16,3
+Erin,Todd Packer,12,4
+Erin,Val,9,2
+Erin,Walter,12,1
+Gabe,Jim,77,18
+Gabe,Kelly,13,2
+Gabe,Kevin,18,5
+Gabe,Meredith,6,2
+Gabe,Nellie,38,10
+Gabe,Oscar,30,8
+Gabe,Pam,28,5
+Gabe,Phyllis,16,5
+Gabe,Robert California,53,12
+Gabe,Ryan,21,7
+Gabe,Stanley,5,2
+Gabe,Toby,42,7
+Gabe,Todd Packer,12,3
+Gabe,Val,18,3
+Gabe,Walter,12,1
+Harry,Jim,31,6
+Harry,Robert California,14,1
+Harry,Toby,10,2
+Host,Jim,13,2
+Host,Kelly,11,2
+Host,Kevin,23,4
+Host,Meredith,22,3
+Host,Oscar,15,2
+Host,Phyllis,6,2
+Host,Ryan,15,2
+Host,Stanley,7,2
+Irene,Jim,9,1
+Jessica,Jim,11,1
+Jessica,Kelly,6,2
+Jessica,Kevin,19,4
+Jessica,Meredith,7,1
+Jessica,Nate,4,1
+Jessica,Oscar,6,1
+Jessica,Phyllis,10,2
+Jessica,Stanley,4,1
+Jessica,Val,9,2
+Jim,Kelly,96,15
+Jim,Kevin,219,37
+Jim,Meredith,86,16
+Jim,Nate,7,1
+Jim,Nellie,204,34
+Jim,Oscar,194,34
+Jim,Pam,535,82
+Jim,Phyllis,190,35
+Jim,Robert California,222,31
+Jim,Ryan,180,30
+Jim,Stanley,161,29
+Jim,Susan,21,3
+Jim,Toby,64,13
+Jim,Todd Packer,47,10
+Jim,Val,5,1
+Kelly,Kevin,70,17
+Kelly,Meredith,44,12
+Kelly,Nellie,2,1
+Kelly,Oscar,83,18
+Kelly,Pam,138,26
+Kelly,Phyllis,46,16
+Kelly,Robert California,38,4
+Kelly,Ryan,67,17
+Kelly,Stanley,30,10
+Kelly,Toby,30,4
+Kelly,Val,19,5
+Kevin,Meredith,51,16
+Kevin,Nate,3,1
+Kevin,Nellie,46,9
+Kevin,Oscar,158,35
+Kevin,Pam,149,35
+Kevin,Phyllis,73,24
+Kevin,Robert California,150,25
+Kevin,Ryan,58,14
+Kevin,Senator Lipton,10,2
+Kevin,Stanley,44,17
+Kevin,Susan,5,2
+Kevin,Toby,53,10
+Kevin,Val,30,8
+Kevin,Walter,11,1
+Meredith,Nellie,8,1
+Meredith,Oscar,57,15
+Meredith,Pam,57,13
+Meredith,Phyllis,24,10
+Meredith,Robert California,46,9
+Meredith,Ryan,17,6
+Meredith,Stanley,25,10
+Meredith,Toby,16,3
+Meredith,Val,2,1
+Meredith,Walter,11,1
+Nate,Oscar,4,1
+Nate,Pam,6,1
+Nate,Phyllis,5,1
+Nate,Ryan,9,1
+Nate,Toby,6,1
+Nate,Val,29,3
+Nellie,Oscar,36,7
+Nellie,Pam,112,17
+Nellie,Phyllis,24,6
+Nellie,Robert California,105,16
+Nellie,Ryan,43,5
+Nellie,Stanley,34,6
+Nellie,Toby,16,3
+Nellie,Todd Packer,78,16
+Oscar,Pam,176,37
+Oscar,Phyllis,124,34
+Oscar,Robert California,97,15
+Oscar,Ryan,85,20
+Oscar,Senator Lipton,16,3
+Oscar,Stanley,48,15
+Oscar,Susan,13,2
+Oscar,Toby,59,12
+Oscar,Val,7,2
+Oscar,Walter,4,1
+Pam,Phyllis,145,32
+Pam,Robert California,87,13
+Pam,Ryan,137,21
+Pam,Stanley,66,16
+Pam,Toby,38,6
+Pam,Val,6,2
+Phyllis,Robert California,53,10
+Phyllis,Ryan,41,14
+Phyllis,Senator Lipton,4,1
+Phyllis,Stanley,46,19
+Phyllis,Susan,5,1
+Phyllis,Toby,19,5
+Phyllis,Val,19,6
+Robert California,Ryan,54,11
+Robert California,Stanley,43,10
+Robert California,Susan,67,9
+Robert California,Toby,36,7
+Robert California,Todd Packer,7,1
+Robert California,Val,6,1
+Robert California,Walter,18,2
+Ryan,Stanley,27,10
+Ryan,Susan,6,2
+Ryan,Toby,15,4
+Ryan,Todd Packer,14,4
+Stanley,Todd Packer,6,2
+Stanley,Val,3,1
+Susan,Toby,5,1

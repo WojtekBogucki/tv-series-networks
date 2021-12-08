@@ -1,0 +1,58 @@
+speaker1,speaker2,line_count,scene_count
+Angela,Dwight,13,3
+Angela,Katy,11,1
+Angela,Kevin,16,4
+Angela,Michael,49,6
+Angela,Oscar,14,4
+Angela,Pam,11,4
+Angela,Roy,3,1
+Angela,Stanley,2,1
+Dwight,Jan,18,1
+Dwight,Jim,197,28
+Dwight,Katy,19,2
+Dwight,Kevin,13,2
+Dwight,Michael,261,25
+Dwight,Mr. Brown,31,2
+Dwight,Oscar,26,5
+Dwight,Pam,84,13
+Dwight,Roy,12,3
+Dwight,Ryan,24,5
+Dwight,Stanley,43,8
+Jan,Michael,60,4
+Jan,Pam,11,1
+Jim,Katy,28,2
+Jim,Kevin,21,5
+Jim,Michael,136,17
+Jim,Mr. Brown,3,1
+Jim,Oscar,21,3
+Jim,Pam,199,23
+Jim,Roy,61,10
+Jim,Ryan,19,4
+Jim,Stanley,12,2
+Katy,Michael,100,9
+Katy,Oscar,3,1
+Katy,Pam,15,2
+Katy,Ryan,3,1
+Katy,Stanley,5,1
+Kevin,Michael,56,6
+Kevin,Mr. Brown,8,2
+Kevin,Oscar,22,5
+Kevin,Pam,7,2
+Kevin,Roy,8,1
+Kevin,Ryan,3,1
+Kevin,Stanley,7,2
+Michael,Mr. Brown,72,7
+Michael,Oscar,134,13
+Michael,Pam,199,22
+Michael,Roy,43,7
+Michael,Ryan,111,15
+Michael,Stanley,77,8
+Mr. Brown,Oscar,4,1
+Oscar,Pam,13,4
+Oscar,Ryan,3,1
+Oscar,Stanley,12,3
+Pam,Roy,51,7
+Pam,Ryan,13,2
+Pam,Stanley,16,3
+Roy,Ryan,4,2
+Ryan,Stanley,8,2
