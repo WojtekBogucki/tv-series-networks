@@ -27,7 +27,6 @@ Angela,Michael,180,21
 Angela,Oscar,15,6
 Angela,Pam,83,19
 Angela,Phyllis,42,12
-Angela,Pizza guy,2,1
 Angela,Stanley,14,4
 Angela,Toby,19,4
 Creed,Darryl,4,1
@@ -68,7 +67,6 @@ Dwight,Michael,678,76
 Dwight,Oscar,11,3
 Dwight,Pam,127,25
 Dwight,Phyllis,32,8
-Dwight,Pizza guy,20,3
 Dwight,Ryan,92,12
 Dwight,Stanley,39,8
 Dwight,Toby,33,6
@@ -111,7 +109,6 @@ Kevin,Michael,240,28
 Kevin,Oscar,51,15
 Kevin,Pam,92,21
 Kevin,Phyllis,40,11
-Kevin,Pizza guy,2,1
 Kevin,Ryan,43,3
 Kevin,Stanley,32,8
 Kevin,Toby,20,6
@@ -127,25 +124,21 @@ Meredith,Toby,13,3
 Michael,Oscar,198,27
 Michael,Pam,588,65
 Michael,Phyllis,190,23
-Michael,Pizza guy,45,4
 Michael,Ryan,290,32
 Michael,Stanley,224,25
 Michael,Toby,183,22
 Oscar,Pam,80,20
 Oscar,Phyllis,30,9
-Oscar,Pizza guy,10,1
 Oscar,Ryan,18,2
 Oscar,Stanley,32,10
 Oscar,Toby,30,8
 Pam,Phyllis,68,16
-Pam,Pizza guy,11,1
 Pam,Ryan,82,8
 Pam,Stanley,50,10
 Pam,Toby,98,19
 Phyllis,Ryan,30,4
 Phyllis,Stanley,36,13
 Phyllis,Toby,26,7
-Pizza guy,Ryan,3,1
 Ryan,Stanley,29,3
 Ryan,Toby,24,2
 Stanley,Toby,12,3

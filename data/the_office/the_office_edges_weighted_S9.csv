@@ -7,7 +7,6 @@ Andy,Darryl,192,30
 Andy,David Wallace,105,11
 Andy,Dwight,244,30
 Andy,Erin,279,40
-Andy,Gabe,19,1
 Andy,Group,31,5
 Andy,Jan,26,1
 Andy,Jim,131,21
@@ -66,7 +65,6 @@ Creed,David Wallace,10,2
 Creed,Dwight,68,13
 Creed,Erin,47,11
 Creed,Esther,2,1
-Creed,Gabe,4,1
 Creed,Group,5,1
 Creed,Jim,51,9
 Creed,Kevin,47,12
@@ -119,7 +117,6 @@ Dwight,Stanley,113,22
 Dwight,Toby,65,9
 Dwight,Trevor,76,9
 Erin,Esther,4,1
-Erin,Gabe,40,3
 Erin,Group,9,4
 Erin,Jim,75,13
 Erin,Kevin,107,24
@@ -135,9 +132,6 @@ Esther,Group,3,1
 Esther,Jim,6,1
 Esther,Nellie,14,3
 Esther,Oscar,6,1
-Gabe,Kevin,4,1
-Gabe,Meredith,3,1
-Gabe,Pete,28,2
 Group,Jim,17,3
 Group,Kevin,23,2
 Group,Meredith,12,4

@@ -27,7 +27,6 @@ Carol,Michael,117,13
 Carol,Pam,22,2
 Carol,Roy,4,1
 Creed,Dwight,32,7
-Creed,Jake,5,1
 Creed,Jan,2,1
 Creed,Jim,22,5
 Creed,Kelly,5,2
@@ -40,7 +39,6 @@ Creed,Ryan,6,2
 Creed,Stanley,6,2
 Creed,Toby,12,4
 Darryl,Dwight,33,5
-Darryl,Jake,3,1
 Darryl,Jim,7,3
 Darryl,Kevin,17,2
 Darryl,Michael,142,16
@@ -48,7 +46,6 @@ Darryl,Oscar,2,1
 Darryl,Pam,10,4
 Darryl,Phyllis,5,2
 Darryl,Roy,67,9
-Dwight,Jake,30,5
 Dwight,Jan,57,6
 Dwight,Jim,509,69
 Dwight,Kelly,69,11
@@ -63,11 +60,6 @@ Dwight,Ryan,123,20
 Dwight,Stanley,64,16
 Dwight,Toby,66,14
 Dwight,Todd Packer,11,2
-Jake,Jim,10,2
-Jake,Michael,45,4
-Jake,Oscar,3,1
-Jake,Pam,17,2
-Jake,Ryan,4,1
 Jan,Jim,25,3
 Jan,Kelly,26,6
 Jan,Kevin,5,1
@@ -77,7 +69,6 @@ Jan,Pam,50,8
 Jan,Phyllis,25,5
 Jan,Toby,6,2
 Jan,Todd Packer,4,1
-Jim,Katy,31,4
 Jim,Kelly,79,14
 Jim,Kevin,80,16
 Jim,Meredith,19,4
@@ -90,8 +81,6 @@ Jim,Ryan,103,24
 Jim,Stanley,59,14
 Jim,Toby,34,6
 Jim,Todd Packer,7,2
-Katy,Pam,2,1
-Katy,Roy,10,1
 Kelly,Kevin,5,2
 Kelly,Meredith,18,5
 Kelly,Michael,110,12
