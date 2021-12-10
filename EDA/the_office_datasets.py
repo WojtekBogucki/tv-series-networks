@@ -52,26 +52,41 @@ office_edges_weighted = get_speaker_network_edges(office_group_scenes)
 office_edges_weighted.head()
 office_edges_weighted.to_csv("../data/the_office/the_office_edges_weighted.csv", index=False, encoding="utf-8")
 
-seasons = office_raw.season.unique()
-for season in seasons:
-    office_raw_season = office_raw[office_raw.season == season]
-    season_edges = (office_raw_season.pipe(filter_by_speakers, count=20)
-                                     .pipe(filter_group_scenes)
-                                     .pipe(get_speaker_network_edges))
-    season_edges.to_csv("../data/the_office/the_office_edges_weighted_S{0}.csv".format(season), index=False, encoding="utf-8")
-    print("Season {} saved".format(season))
 
-for season in seasons:
-    office_raw_season = office_raw[office_raw.season == season]
-    episodes = office_raw_season.episode.unique()
-    dir_path = "../data/the_office/season{}".format(season)
-    for episode in episodes:
-        office_raw_episode = office_raw_season[office_raw_season.episode == episode]
-        episode_edges = (office_raw_episode.pipe(filter_by_speakers, count=1)
-                         .pipe(filter_group_scenes)
-                         .pipe(get_speaker_network_edges))
-        if not os.path.exists(dir_path):
-            os.mkdir(dir_path)
-        episode_edges.to_csv(dir_path + "/the_office_edges_weighted_E{0}.csv".format(episode), index=False,
-                             encoding="utf-8")
-        print("Season {0} episode {1} saved".format(season, episode))
+def save_seasons(dataset, count=20):
+    seasons = dataset.season.unique()
+    for season in seasons:
+        raw_season = dataset[dataset.season == season]
+        season_edges = (raw_season.pipe(filter_by_speakers, count=count)
+                                  .pipe(filter_group_scenes)
+                                  .pipe(get_speaker_network_edges))
+        season_edges.to_csv("../data/the_office/the_office_edges_weighted_S{0}.csv".format(season), index=False, encoding="utf-8")
+        print("Season {} saved".format(season))
+
+
+def save_episodes(dataset, count=1):
+    seasons = dataset.season.unique()
+    for season in seasons:
+        raw_season = dataset[dataset.season == season]
+        episodes = raw_season.episode.unique()
+        dir_path = "../data/the_office/season{}".format(season)
+        for episode in episodes:
+            raw_episode = raw_season[raw_season.episode == episode]
+            episode_edges = (raw_episode.pipe(filter_by_speakers, count=count)
+                             .pipe(filter_group_scenes)
+                             .pipe(get_speaker_network_edges))
+            if not os.path.exists(dir_path):
+                os.mkdir(dir_path)
+            episode_edges.to_csv(dir_path + "/the_office_edges_weighted_E{:02d}.csv".format(episode), index=False,
+                                 encoding="utf-8")
+            print("Season {0} episode {1} saved".format(season, episode))
+
+
+save_seasons(office_raw)
+save_episodes(office_raw)
+
+test_group = office_raw[(office_raw.season==3) & (office_raw.episode==20)].groupby('scene')
+scenes_group = {scene: list(test_group.get_group(name=scene).speaker) for scene in test_group.groups}
+import json
+with open('../data/s03ep20_speakers.json', 'w+') as f:
+    json.dump(scenes_group, f, indent=4)
