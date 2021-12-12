@@ -10,10 +10,11 @@ import community as community_louvain
 
 # load data
 office_edges_weighted = pd.read_csv("../data/the_office/the_office_edges_weighted.csv")
-
 office_edges_weighted.head()
+
+# create a network
 office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", target="speaker2",
-                                     edge_attr=["line_count", "scene_count"])
+                                     edge_attr=["line_count", "scene_count", "word_count"])
 
 
 def draw_interaction_network(G, weight=None, filename=None):
@@ -26,6 +27,10 @@ def draw_interaction_network(G, weight=None, filename=None):
     elif weight == "scenes":
         degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
         edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
+        edge_width = edge_width / np.max(edge_width) * 6
+    elif weight == "words":
+        degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
+        edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
         edge_width = edge_width / np.max(edge_width) * 6
     else:
         degrees_weight = np.array([v for _, v in G.degree()])
@@ -56,6 +61,10 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     elif weight == "scenes":
         degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
         edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
+        edge_width = edge_width / np.max(edge_width) * 6
+    elif weight == "words":
+        degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
+        edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
         edge_width = edge_width / np.max(edge_width) * 6
     else:
         degrees_weight = np.array([v for _, v in G.degree()])
@@ -93,10 +102,11 @@ def draw_interaction_network_communities2(G, weight=None, filename=None):
     else:
         plt.show()
 
+
 # save drawn networks
 draw_interaction_network(office_net, "lines", filename="the_office_lines")
 draw_interaction_network(office_net, "scenes", filename="the_office_scenes")
-
+draw_interaction_network(office_net, "words", filename="the_office_words")
 
 # stats
 # density
@@ -181,7 +191,7 @@ for office_edges_weighted_season in office_edges_weighted_seasons:
     office_net_seasons.append(nx.from_pandas_edgelist(office_edges_weighted_season,
                                                       source="speaker1",
                                                       target="speaker2",
-                                                      edge_attr=["line_count", "scene_count"]))
+                                                      edge_attr=["line_count", "scene_count", "word_count"]))
 
 draw_interaction_network(office_net_seasons[0], "lines")
 draw_interaction_network(office_net_seasons[0], "scenes")
@@ -213,7 +223,7 @@ for office_edges_weighted_episode in office_edges_weighted_episodes:
     office_net_episodes.append(nx.from_pandas_edgelist(office_edges_weighted_episode,
                                                        source="speaker1",
                                                        target="speaker2",
-                                                       edge_attr=["line_count", "scene_count"]))
+                                                       edge_attr=["line_count", "scene_count", "word_count"]))
 
 office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
 seasons = office_raw.season.unique()
@@ -228,7 +238,7 @@ for season in seasons:
 
 draw_interaction_network_communities(office_net_episodes[episode_dict["s06e01"]], "lines", resolution=0.87)
 
-draw_interaction_network_communities2(office_net_episodes[episode_dict["s04e01"]], "lines")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e20"]], "words")
 # communities = community.greedy_modularity_communities(office_net_s3ep19, weight="scene_count")
 # print("Found communities:", len(communities))
 # com_dict = {}

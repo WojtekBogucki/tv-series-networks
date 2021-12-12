@@ -23,11 +23,14 @@ def filter_group_scenes(dataset):
 # transformation and aggregation
 def get_speaker_network_edges(dataset):
     interactions = pd.DataFrame(columns=["speaker1", "speaker2", "line_count"])
-    office_count_by_scene_speaker = dataset.groupby(["scene", "speaker"])["line"].count().reset_index(name="count")
+    dataset["word_count"] = dataset.loc[:, "line"].apply(lambda x: len(str(x).split(" ")))
+    office_count_by_scene_speaker = dataset.groupby(["scene", "speaker"]).agg(word_count=("word_count", "sum"),
+                                                                              line=("line", "count")).reset_index()
+    # word_count_by_scene_speaker = dataset.groupby(["scene", "speaker"])["line"].count().reset_index(name="word_count")
     scenes = office_count_by_scene_speaker.scene.unique()
     for scene in scenes:
         speakers_count = office_count_by_scene_speaker.loc[office_count_by_scene_speaker.scene == scene,
-                                                           ["speaker", "count"]].sort_values("speaker").reset_index(drop=True)
+                                                           ["speaker", "word_count", "line"]].sort_values("speaker").reset_index(drop=True)
         n = speakers_count.shape[0]
         for i in range(n-1):
             for j in range(i+1, n):
@@ -35,9 +38,11 @@ def get_speaker_network_edges(dataset):
                 sp2 = speakers_count.iloc[j]
                 interactions = interactions.append({"speaker1": sp1["speaker"],
                                                     "speaker2": sp2["speaker"],
-                                                    "line_count": sp1["count"] + sp2["count"]}, ignore_index=True)
-    return interactions.groupby(["speaker1", "speaker2"])["line_count"].agg(line_count="sum",
-                                                                            scene_count="count").reset_index()
+                                                    "line_count": sp1["line"] + sp2["line"],
+                                                    "word_count": sp1["word_count"] + sp2["word_count"]}, ignore_index=True)
+    return interactions.groupby(["speaker1", "speaker2"]).agg(line_count=("line_count", "sum"),
+                                                              scene_count=("line_count", "count"),
+                                                              word_count=("word_count", "sum")).reset_index()
 
 
 # save speakers with over 100 lines
@@ -90,3 +95,11 @@ scenes_group = {scene: list(test_group.get_group(name=scene).speaker) for scene 
 import json
 with open('../data/s03ep20_speakers.json', 'w+') as f:
     json.dump(scenes_group, f, indent=4)
+
+test_line = office_raw.line[0]
+office_raw["word_count"] = office_raw.loc[:, "line"].apply(lambda x: len(str(x).split(" ")))
+office_raw.groupby(["scene", "speaker"])["word_count", "line"].agg({"word_count": "sum","line": "count"}).reset_index()
+
+(office_raw.iloc[0:100,:].pipe(filter_by_speakers, count=1)
+                                  .pipe(filter_group_scenes)
+                                  .pipe(get_speaker_network_edges))
