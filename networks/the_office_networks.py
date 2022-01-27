@@ -4,8 +4,9 @@ import numpy as np
 import networkx as nx
 from networkx import community
 import matplotlib.pyplot as plt
-from matplotlib import cm
 import community as community_louvain
+import igraph
+from networks.utils import draw_interaction_network_communities
 
 
 # load data
@@ -17,113 +18,38 @@ office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", t
                                      edge_attr=["line_count", "scene_count", "word_count"])
 
 
-def draw_interaction_network(G, weight=None, filename=None):
-    nodes = list(G.nodes())
-    edges = G.edges()
-    if weight == "lines":
-        degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
-        edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    elif weight == "scenes":
-        degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
-        edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    elif weight == "words":
-        degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
-        edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    else:
-        degrees_weight = np.array([v for _, v in G.degree()])
-        edge_width = np.ones(len(edges))
-    degrees_weight = degrees_weight/np.max(degrees_weight) * 5000
-    plt.figure(figsize=(15, 15))
-    nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width)
-    if filename:
-        plt.savefig("../figures/{}.png".format(filename))
-    else:
-        plt.show()
-
-
-def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0):
-    nodes = list(G.nodes())
-    edges = G.edges()
-    communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
-    print("Found communities:", len(communities))
-    com_dict = {}
-    for i, com in enumerate(communities):
-        for character in com:
-            com_dict[character] = i
-    colors = [com_dict[c] for c in nodes]
-    if weight == "lines":
-        degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
-        edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    elif weight == "scenes":
-        degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
-        edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    elif weight == "words":
-        degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
-        edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    else:
-        degrees_weight = np.array([v for _, v in G.degree()])
-        edge_width = np.ones(len(edges))
-    degrees_weight = degrees_weight/np.max(degrees_weight) * 5000
-    plt.figure(figsize=(15, 15))
-    nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
-    if filename:
-        plt.savefig("../figures/{}.png".format(filename))
-    else:
-        plt.show()
-
-
-def draw_interaction_network_communities2(G, weight=None, filename=None):
-    nodes = list(G.nodes())
-    edges = G.edges()
-    com_dict = community_louvain.best_partition(G, weight=weight)
-    colors = [com_dict[c] for c in nodes]
-    if weight == "lines":
-        degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
-        edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    elif weight == "scenes":
-        degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
-        edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
-    else:
-        degrees_weight = np.array([v for _, v in G.degree()])
-        edge_width = np.ones(len(edges))
-    degrees_weight = degrees_weight/np.max(degrees_weight) * 5000
-    plt.figure(figsize=(15, 15))
-    nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
-    if filename:
-        plt.savefig("../figures/{}.png".format(filename))
-    else:
-        plt.show()
-
 
 # save drawn networks
-draw_interaction_network(office_net, "lines", filename="the_office_lines")
-draw_interaction_network(office_net, "scenes", filename="the_office_scenes")
-draw_interaction_network(office_net, "words", filename="the_office_words")
+draw_interaction_network_communities(office_net, "lines", filename="the_office_lines", method=None)
+draw_interaction_network_communities(office_net, "scenes", filename="the_office_scenes", method=None)
+draw_interaction_network_communities(office_net, "words", filename="the_office_words", method=None)
 
 # stats
 # density
 density = nx.density(office_net)
 print("Network density:", density)
 
+nodes = list(office_net.nodes())
+
+stats = pd.DataFrame(index=nodes, columns=["deg_centrality", "weighted_deg_centrality"])
+
 # centrality
 deg_weight_line = dict(office_net.degree(weight="line_count"))
 max_deg_weight_line = max(deg_weight_line.items(), key=lambda item: item[1])[1]
-dg_weighted_centrality = {k: np.round(v/max_deg_weight_line,3) for k, v in sorted(deg_weight_line.items(), key=lambda item: item[1], reverse=True)}
+dg_weighted_centrality = {k: np.round(v/max_deg_weight_line, 3) for k, v in sorted(deg_weight_line.items(), key=lambda item: item[1], reverse=True)}
 print("Weighted degree centrality:", dg_weighted_centrality)
+for key, val in dg_weighted_centrality.items():
+    stats.loc[key, "weighted_deg_centrality"] = val
 
 dg_centrality = nx.degree_centrality(office_net)
 dg_centrality = {k: np.round(v, 2) for k, v in sorted(dg_centrality.items(), key=lambda item: item[1], reverse=True)}
 print("Degree centrality:", dg_centrality)
+for key, val in dg_centrality.items():
+    stats.loc[key, "deg_centrality"] = val
 
-betweenness_dict = nx.betweenness_centrality(office_net, weight="line_count")
+office_net_distance_dict = {(e1, e2): 1 / weight for e1, e2, weight in office_net.edges(data="line_count")}
+nx.set_edge_attributes(office_net, office_net_distance_dict, "line_distance")
+betweenness_dict = nx.betweenness_centrality(office_net, weight="line_distance")
 betweenness_dict = {k: np.round(v, 3) for k, v in sorted(betweenness_dict.items(), key=lambda item: item[1], reverse=True)}
 print("Betweenness centrality:", betweenness_dict)
 
@@ -131,15 +57,17 @@ eigenvector_dict = nx.eigenvector_centrality(office_net, weight="line_count")
 eigenvector_dict = {k: np.round(v, 2) for k, v in sorted(eigenvector_dict.items(), key=lambda item: item[1], reverse=True)}
 print("Eigenvector centrality:", eigenvector_dict)
 
-office_net_distance_dict = {(e1, e2): 1 / weight for e1, e2, weight in office_net.edges(data="line_count")}
-nx.set_edge_attributes(office_net, office_net_distance_dict, "line_distance")
 clossenes_dict = nx.closeness_centrality(office_net, distance="line_distance")
 clossenes_dict = {k: np.round(v, 2) for k, v in sorted(clossenes_dict.items(), key=lambda item: item[1], reverse=True)}
 print("Closseness centrality:", clossenes_dict)
 
-load_dict = nx.load_centrality(office_net, weight="line_count")
+load_dict = nx.load_centrality(office_net, weight="line_distance")
 load_dict = {k: np.round(v, 2) for k, v in sorted(load_dict.items(), key=lambda item: item[1], reverse=True)}
 print("Load centrality:", load_dict)
+
+page_rank = nx.pagerank(office_net, weight="line_count")
+page_rank = {k: np.round(v, 2) for k, v in sorted(page_rank.items(), key=lambda item: item[1], reverse=True)}
+print("PageRank:", page_rank)
 
 # assortativity
 assort_coef = nx.degree_assortativity_coefficient(office_net, weight="line_count")
@@ -182,7 +110,7 @@ plt.show()
 
 # the office by seasons
 office_edges_weighted_seasons = []
-for i in range(1,10):
+for i in range(1, 10):
     office_edges_weighted_seasons.append(pd.read_csv("../data/the_office/the_office_edges_weighted_S{}.csv".format(i)))
 
 office_edges_weighted_seasons[0].head()
@@ -193,13 +121,9 @@ for office_edges_weighted_season in office_edges_weighted_seasons:
                                                       target="speaker2",
                                                       edge_attr=["line_count", "scene_count", "word_count"]))
 
-draw_interaction_network(office_net_seasons[0], "lines")
-draw_interaction_network(office_net_seasons[0], "scenes")
-
-communities = community.greedy_modularity_communities(office_net_seasons[8], weight="scene_count")
-print("Found communities:", len(communities))
-for com in communities:
-    print(com)
+draw_interaction_network_communities(office_net_seasons[2], "lines")
+draw_interaction_network_communities(office_net_seasons[2], "scenes", method=None)
+draw_interaction_network_communities(office_net_seasons[0], "words")
 
 communities = community.girvan_newman(office_net_seasons[3], most_valuable_edge=most_central_edge)
 node_groups = []
@@ -236,15 +160,16 @@ for season in seasons:
         episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
         i += 1
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s06e01"]], "lines", resolution=0.87)
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "lines")
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e20"]], "words")
-# communities = community.greedy_modularity_communities(office_net_s3ep19, weight="scene_count")
-# print("Found communities:", len(communities))
-# com_dict = {}
-#
-# for i, com in enumerate(communities):
-#     for character in com:
-#         com_dict[character] = i
-# colors = [com_dict[c] for c in office_net_s3ep19.nodes()]
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]], "lines", filename="office_lines_s03e18")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "lines", filename="office_lines_s03e21")
+
+# another algorithm
+communities = community.girvan_newman(office_net_episodes[episode_dict["s02e08"]], most_valuable_edge=most_central_edge)
+node_groups = []
+for com in next(communities):
+    node_groups.append(list(com))
+
+print(node_groups)
 

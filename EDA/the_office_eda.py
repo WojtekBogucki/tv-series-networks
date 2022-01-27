@@ -22,18 +22,22 @@ office_raw = pd.read_csv("../data/the_office/the_office_lines_v5.csv")
 office_raw.head()
 
 lines_by_season = office_raw.groupby('season')['line'].count()
-lines_by_season.plot.bar()
+lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines")
+plt.xticks(rotation=0)
+plt.savefig("../figures/office_lines_by_season.png")
 
 lines_by_speaker = office_raw.groupby(['speaker', 'season'])['line'].size().unstack(fill_value=0)
 lines_by_speaker["sum_col"] = lines_by_speaker.sum(axis=1)
 lines_by_speaker = lines_by_speaker.sort_values(by="sum_col", ascending=False)
-lines_by_speaker = lines_by_speaker.drop("sum_col",axis=1)
-lines_by_speaker[:30].plot(kind="bar", stacked=True,colormap="inferno")
+lines_by_speaker = lines_by_speaker.drop("sum_col", axis=1)
+lines_by_speaker[:20].plot(kind="bar", stacked=True, colormap="inferno", title="Lines spoken by character", ylabel="Number of lines", figsize=(12,8))
+plt.xticks(rotation = 45)
+plt.savefig("../figures/office_speakers_by_season.png")
 
-episodes_by_speaker = office_raw.loc[:,['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])['speaker'].count().sort_values(ascending=False)[:20]
+episodes_by_speaker = office_raw.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])['speaker'].count().sort_values(ascending=False)[:20]
 episodes_by_speaker.plot.bar()
 
-episodes_by_number_of_speaker = office_raw.loc[:,['speaker', 'season', 'episode']].drop_duplicates().groupby(['season', 'episode'])['speaker'].count().sort_values(ascending=False)[:20]
+episodes_by_number_of_speaker = office_raw.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['season', 'episode'])['speaker'].count().sort_values(ascending=False)[:20]
 episodes_by_number_of_speaker.plot.bar()
 
 replacements = {"Micheal": "Michael",
