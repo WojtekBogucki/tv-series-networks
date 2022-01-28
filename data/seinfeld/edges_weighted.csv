@@ -1,0 +1,114 @@
+speaker1,speaker2,line_count,scene_count,word_count
+bania,elaine,151,9,1120
+bania,frank,5,1,52
+bania,george,174,8,1578
+bania,jerry,346,19,2751
+bania,kramer,184,12,1436
+bania,mr. steinbrenner,6,1,188
+bania,newman,10,2,51
+bania,susan,12,2,112
+bania,woman,5,1,60
+elaine,estelle,106,7,1105
+elaine,frank,220,17,2447
+elaine,george,7407,442,68201
+elaine,helen,322,19,1993
+elaine,jack,81,6,543
+elaine,jerry,13105,735,110822
+elaine,kramer,6225,448,55605
+elaine,man,297,27,2752
+elaine,mickey,38,4,334
+elaine,morty,276,21,2037
+elaine,mr. lippman,235,20,2002
+elaine,mr. steinbrenner,64,1,618
+elaine,newman,415,38,4405
+elaine,peterman,317,40,3654
+elaine,puddy,324,34,2310
+elaine,susan,353,19,2867
+elaine,uncle leo,64,7,565
+elaine,woman,297,25,2759
+estelle,frank,576,61,4876
+estelle,george,656,54,5256
+estelle,helen,10,2,65
+estelle,jerry,227,13,1961
+estelle,kramer,217,17,1739
+estelle,morty,13,2,84
+estelle,mr. lippman,10,1,58
+estelle,mr. steinbrenner,8,1,97
+estelle,susan,41,2,274
+estelle,woman,10,1,64
+frank,george,731,62,6520
+frank,helen,15,3,133
+frank,jerry,276,17,2649
+frank,kramer,401,31,3405
+frank,man,2,1,14
+frank,morty,49,5,396
+frank,mr. lippman,16,1,172
+frank,mr. steinbrenner,10,2,168
+frank,puddy,2,1,13
+frank,susan,47,3,373
+frank,woman,15,2,142
+george,helen,158,12,1131
+george,jerry,15950,834,145270
+george,kramer,7043,493,69528
+george,man,351,28,3291
+george,mickey,34,3,346
+george,morty,166,15,1345
+george,mr. lippman,75,4,698
+george,mr. steinbrenner,221,21,3384
+george,newman,403,25,3867
+george,peterman,56,8,604
+george,puddy,76,9,624
+george,susan,972,74,8498
+george,uncle leo,66,6,473
+george,woman,330,31,3773
+helen,jack,216,11,1541
+helen,jerry,1212,65,8584
+helen,kramer,359,25,2843
+helen,morty,1051,82,7940
+helen,newman,41,4,354
+helen,uncle leo,83,10,643
+jack,jerry,318,16,2249
+jack,kramer,27,3,142
+jack,morty,279,14,2201
+jack,puddy,6,1,31
+jack,uncle leo,13,1,165
+jerry,kramer,12629,773,111442
+jerry,man,358,27,3158
+jerry,mickey,106,10,1007
+jerry,morty,1261,73,9704
+jerry,mr. lippman,82,2,647
+jerry,mr. steinbrenner,99,3,974
+jerry,newman,1091,77,9802
+jerry,peterman,24,3,254
+jerry,puddy,137,12,1029
+jerry,susan,537,30,4624
+jerry,uncle leo,368,25,3134
+jerry,woman,406,27,4059
+kramer,man,142,24,1229
+kramer,mickey,240,24,1970
+kramer,morty,398,30,3517
+kramer,mr. lippman,71,5,593
+kramer,mr. steinbrenner,38,2,456
+kramer,newman,992,91,8814
+kramer,peterman,26,3,355
+kramer,puddy,47,7,401
+kramer,susan,249,15,2042
+kramer,uncle leo,36,4,378
+kramer,woman,120,20,1140
+man,mickey,4,1,26
+man,peterman,11,1,89
+man,woman,46,12,428
+mickey,susan,6,1,49
+morty,newman,26,3,256
+morty,peterman,27,3,320
+morty,uncle leo,81,11,824
+morty,woman,14,2,136
+mr. lippman,newman,5,1,48
+mr. lippman,woman,6,1,56
+mr. steinbrenner,newman,4,1,165
+mr. steinbrenner,susan,7,1,172
+newman,susan,17,2,141
+newman,uncle leo,6,1,32
+newman,woman,19,5,159
+puddy,woman,7,1,58
+susan,woman,9,2,47

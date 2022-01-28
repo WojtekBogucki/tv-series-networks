@@ -1,0 +1,129 @@
+speaker1,speaker2,line_count,scene_count,word_count
+bob,elaine,109,6,970
+bob,george,77,2,711
+bob,jerry,119,5,978
+bob,kramer,62,4,582
+bob,mr. steinbrenner,9,1,245
+bob,newman,9,1,98
+bob,peterman,9,1,78
+bob,soup nazi,31,2,318
+bob,susan,17,2,231
+craig,elaine,62,4,388
+craig,jerry,41,3,282
+deena,george,77,7,678
+deena,kramer,3,1,27
+detective,elaine,22,2,202
+detective,george,8,1,51
+detective,jerry,37,3,426
+detective,kramer,6,1,37
+elaine,estelle,52,1,670
+elaine,frank,83,2,1042
+elaine,george,882,43,7707
+elaine,helen,50,2,303
+elaine,holly,25,4,218
+elaine,jackie,17,1,254
+elaine,jerry,1708,104,14404
+elaine,kramer,882,57,7576
+elaine,lena,9,1,85
+elaine,lloyd,58,4,673
+elaine,maestro,60,5,503
+elaine,morty,34,2,238
+elaine,mr. steinbrenner,64,1,618
+elaine,newman,162,13,1699
+elaine,paul,34,3,307
+elaine,peterman,94,11,1096
+elaine,rabbi,38,3,437
+elaine,ramon,13,1,109
+elaine,sally,24,2,135
+elaine,soup nazi,103,3,867
+elaine,sue ellen,46,5,282
+elaine,susan,240,14,2072
+elaine,todd,49,4,345
+elaine,tony,19,2,297
+estelle,frank,111,10,886
+estelle,george,118,5,1093
+estelle,helen,6,1,36
+estelle,jerry,82,2,833
+estelle,kramer,71,4,677
+estelle,lloyd,17,1,176
+estelle,maestro,4,2,35
+estelle,morty,10,1,63
+estelle,mr. steinbrenner,8,1,97
+estelle,susan,41,2,274
+frank,george,148,8,1450
+frank,helen,10,2,108
+frank,jerry,102,3,1057
+frank,kramer,107,6,961
+frank,lloyd,27,1,275
+frank,maestro,18,3,175
+frank,morty,17,2,151
+frank,mr. steinbrenner,6,1,112
+frank,susan,47,3,373
+george,helen,15,2,119
+george,jerry,1728,87,15242
+george,kramer,857,49,8240
+george,lena,35,2,230
+george,lloyd,83,3,824
+george,maestro,12,1,65
+george,morty,28,3,236
+george,mr. steinbrenner,137,9,1904
+george,newman,122,5,1103
+george,paul,10,1,78
+george,peterman,54,7,596
+george,rabbi,3,1,131
+george,sally,11,1,111
+george,soup nazi,97,3,753
+george,susan,608,55,5212
+george,wilhelm,76,11,797
+helen,jack,8,1,73
+helen,jerry,99,9,776
+helen,kramer,6,1,51
+helen,morty,124,13,859
+holly,jerry,53,8,462
+jack,jerry,28,2,177
+jack,morty,57,4,436
+jackie,jerry,19,1,279
+jackie,kramer,99,5,1068
+jackie,sue ellen,16,1,257
+jerry,kramer,1756,100,14990
+jerry,lena,64,3,574
+jerry,lloyd,135,9,1010
+jerry,maestro,54,3,347
+jerry,morty,140,11,1139
+jerry,mr. steinbrenner,78,1,776
+jerry,newman,172,9,1634
+jerry,paul,94,9,803
+jerry,peterman,15,1,158
+jerry,rabbi,25,2,205
+jerry,ramon,74,6,552
+jerry,sally,60,4,555
+jerry,soup nazi,122,3,985
+jerry,sue ellen,32,4,207
+jerry,susan,272,19,2283
+jerry,todd,14,1,91
+jerry,tony,51,4,616
+kramer,lena,7,1,56
+kramer,lloyd,118,7,1172
+kramer,maestro,58,6,440
+kramer,morty,6,1,63
+kramer,mr. steinbrenner,38,2,456
+kramer,newman,209,20,1921
+kramer,paul,24,4,182
+kramer,peterman,8,1,182
+kramer,rabbi,12,1,96
+kramer,ramon,29,3,236
+kramer,soup nazi,65,2,483
+kramer,sue ellen,9,1,38
+kramer,susan,139,8,1162
+kramer,todd,3,1,6
+kramer,wilhelm,8,1,84
+lena,susan,16,2,113
+lloyd,susan,8,1,39
+mr. steinbrenner,newman,4,1,165
+mr. steinbrenner,soup nazi,22,1,278
+mr. steinbrenner,susan,7,1,172
+mr. steinbrenner,wilhelm,33,2,264
+newman,ramon,14,2,72
+newman,soup nazi,31,2,242
+newman,susan,17,2,141
+soup nazi,susan,39,3,290

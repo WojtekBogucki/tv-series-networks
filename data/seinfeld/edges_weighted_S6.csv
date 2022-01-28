@@ -1,0 +1,86 @@
+speaker1,speaker2,line_count,scene_count,word_count
+bania,donna,6,1,45
+bania,elaine,72,6,503
+bania,george,83,4,735
+bania,jerry,208,10,1643
+bania,kramer,114,7,870
+bonnie,george,51,5,474
+carl,elaine,60,5,378
+carl,george,17,3,238
+carl,jerry,34,2,206
+carl,kramer,14,1,217
+david,elaine,36,3,159
+david,jerry,18,1,180
+donna,elaine,23,2,187
+donna,estelle,13,2,62
+donna,frank,8,2,39
+donna,george,24,3,194
+donna,jerry,85,8,594
+donna,kramer,6,1,48
+doorman,elaine,7,1,108
+doorman,jerry,35,3,371
+earl,elaine,10,1,80
+earl,kramer,55,5,376
+earl,newman,25,2,181
+elaine,frank,33,5,401
+elaine,george,739,44,6168
+elaine,jerry,1666,92,13849
+elaine,jimmy,32,3,241
+elaine,julie,25,2,121
+elaine,kramer,797,54,6813
+elaine,landis,60,3,468
+elaine,lois,3,1,22
+elaine,mr. pitt,180,15,1394
+elaine,newman,20,2,190
+elaine,poppie,37,3,389
+elaine,puddy,52,4,402
+elaine,tim,56,4,392
+elaine,uncle leo,3,1,15
+elaine,wendy,65,5,446
+estelle,frank,64,6,442
+estelle,george,87,6,707
+estelle,jerry,11,2,69
+estelle,kramer,42,4,325
+frank,george,89,10,685
+frank,jerry,29,4,252
+frank,kramer,98,7,662
+gary,george,51,5,480
+gary,jerry,35,3,331
+gary,kramer,16,2,152
+george,jerry,1776,96,16293
+george,jimmy,32,2,281
+george,julie,54,4,575
+george,karen,5,1,23
+george,kate,14,1,105
+george,kramer,850,63,8180
+george,lois,32,2,371
+george,newman,41,3,438
+george,tim,39,2,329
+george,wendy,44,3,327
+jerry,jimmy,31,2,213
+jerry,julie,29,2,192
+jerry,karen,26,3,143
+jerry,kate,60,6,564
+jerry,kramer,1621,98,14939
+jerry,landis,17,1,117
+jerry,lois,64,5,440
+jerry,mr. pitt,25,3,154
+jerry,newman,148,11,1468
+jerry,poppie,59,4,523
+jerry,tim,49,3,368
+jerry,uncle leo,65,5,453
+jerry,wendy,44,2,328
+jimmy,kramer,53,3,356
+julie,kramer,9,1,68
+karen,kramer,48,5,474
+kramer,landis,7,1,26
+kramer,lois,3,1,40
+kramer,mr. pitt,21,1,179
+kramer,newman,99,13,821
+kramer,poppie,43,3,351
+kramer,puddy,18,2,146
+kramer,tim,23,2,160
+kramer,uncle leo,30,3,349
+kramer,wendy,19,1,103
+landis,mr. pitt,13,1,118
+newman,tim,5,1,53

@@ -1,0 +1,15 @@
+speaker1,speaker2,line_count,scene_count,word_count
+elaine,george,171,8,1779
+elaine,jerry,399,14,3492
+elaine,joel,29,1,352
+elaine,kramer,79,4,853
+elaine,vanessa,23,1,146
+george,jerry,564,20,5657
+george,kramer,102,5,1059
+george,vanessa,38,1,204
+helen,jerry,87,2,641
+helen,kramer,23,1,153
+jerry,joel,82,2,820
+jerry,kramer,266,10,2626
+jerry,vanessa,120,4,1002
+joel,kramer,18,1,207
