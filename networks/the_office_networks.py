@@ -6,7 +6,7 @@ from networkx import community
 import matplotlib.pyplot as plt
 import community as community_louvain
 import igraph
-from networks.utils import draw_interaction_network_communities
+from networks.utils import draw_interaction_network_communities, get_character_stats
 
 
 # load data
@@ -29,45 +29,7 @@ draw_interaction_network_communities(office_net, "words", filename="the_office_w
 density = nx.density(office_net)
 print("Network density:", density)
 
-nodes = list(office_net.nodes())
-
-stats = pd.DataFrame(index=nodes, columns=["deg_centrality", "weighted_deg_centrality"])
-
-# centrality
-deg_weight_line = dict(office_net.degree(weight="line_count"))
-max_deg_weight_line = max(deg_weight_line.items(), key=lambda item: item[1])[1]
-dg_weighted_centrality = {k: np.round(v/max_deg_weight_line, 3) for k, v in sorted(deg_weight_line.items(), key=lambda item: item[1], reverse=True)}
-print("Weighted degree centrality:", dg_weighted_centrality)
-for key, val in dg_weighted_centrality.items():
-    stats.loc[key, "weighted_deg_centrality"] = val
-
-dg_centrality = nx.degree_centrality(office_net)
-dg_centrality = {k: np.round(v, 2) for k, v in sorted(dg_centrality.items(), key=lambda item: item[1], reverse=True)}
-print("Degree centrality:", dg_centrality)
-for key, val in dg_centrality.items():
-    stats.loc[key, "deg_centrality"] = val
-
-office_net_distance_dict = {(e1, e2): 1 / weight for e1, e2, weight in office_net.edges(data="line_count")}
-nx.set_edge_attributes(office_net, office_net_distance_dict, "line_distance")
-betweenness_dict = nx.betweenness_centrality(office_net, weight="line_distance")
-betweenness_dict = {k: np.round(v, 3) for k, v in sorted(betweenness_dict.items(), key=lambda item: item[1], reverse=True)}
-print("Betweenness centrality:", betweenness_dict)
-
-eigenvector_dict = nx.eigenvector_centrality(office_net, weight="line_count")
-eigenvector_dict = {k: np.round(v, 2) for k, v in sorted(eigenvector_dict.items(), key=lambda item: item[1], reverse=True)}
-print("Eigenvector centrality:", eigenvector_dict)
-
-clossenes_dict = nx.closeness_centrality(office_net, distance="line_distance")
-clossenes_dict = {k: np.round(v, 2) for k, v in sorted(clossenes_dict.items(), key=lambda item: item[1], reverse=True)}
-print("Closseness centrality:", clossenes_dict)
-
-load_dict = nx.load_centrality(office_net, weight="line_distance")
-load_dict = {k: np.round(v, 2) for k, v in sorted(load_dict.items(), key=lambda item: item[1], reverse=True)}
-print("Load centrality:", load_dict)
-
-page_rank = nx.pagerank(office_net, weight="line_count")
-page_rank = {k: np.round(v, 2) for k, v in sorted(page_rank.items(), key=lambda item: item[1], reverse=True)}
-print("PageRank:", page_rank)
+office_stats = get_character_stats(office_net)
 
 # assortativity
 assort_coef = nx.degree_assortativity_coefficient(office_net, weight="line_count")
