@@ -6,7 +6,7 @@ from networkx import community
 import matplotlib.pyplot as plt
 import community as community_louvain
 import igraph
-from networks.utils import draw_interaction_network_communities
+from networks.utils import *
 
 # load data
 edges_weighted = pd.read_csv("../data/seinfeld/edges_weighted.csv")
@@ -24,3 +24,14 @@ draw_interaction_network_communities(seinfeld_net, "words", filename="seinfeld_w
 # density
 density = nx.density(seinfeld_net)
 print("Network density:", density)
+
+seinfeld_stats = get_character_stats(seinfeld_net)
+
+seinfeld_stats.loc[:,["betweenness_word", "betweenness_scene"]].sort_values("betweenness_word", ascending=True).plot(kind="barh")
+plt.tight_layout()
+plt.show()
+
+# by seasons
+seinfeld_net_seasons = get_season_networks("../data/seinfeld/")
+
+seinfeld_season_stats = get_network_stats_by_season(seinfeld_net_seasons)
