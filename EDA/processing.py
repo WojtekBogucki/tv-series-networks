@@ -15,9 +15,12 @@ def fix_names(x, replacements):
     return x
 
 
-def filter_by_speakers(dataset, count=100):
+def filter_by_speakers(dataset, count=100, top=None):
     speaker_count = dataset.speaker.groupby(dataset.speaker).count()
-    top_speakers = speaker_count[speaker_count > count].index.tolist()
+    if top is None:
+        top_speakers = speaker_count[speaker_count > count].index.tolist()
+    else:
+        top_speakers = speaker_count.sort_values(ascending=False)[:top].index.to_list()
     return dataset[dataset.speaker.isin(top_speakers)]
 
 

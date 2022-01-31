@@ -81,7 +81,7 @@ def get_episode_networks(path):
 
 
 def get_network_stats_by_season(net_seasons):
-    seasons = [f"season{i + 1}" for i in range(len(net_seasons))]
+    seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]
     measures = np.array([[nx.number_of_nodes(net) for net in net_seasons],
@@ -93,6 +93,21 @@ def get_network_stats_by_season(net_seasons):
                          [nx.average_shortest_path_length(net, weight="line_count") for net in net_seasons],
                          [nx.transitivity(net) for net in net_seasons]]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
+    return stats
+
+
+def get_network_stats(net):
+    columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+               "transitivity"]
+    measures = np.array([nx.number_of_nodes(net),
+                         nx.number_of_edges(net),
+                         nx.density(net),
+                         nx.diameter(net),
+                         nx.degree_assortativity_coefficient(net, weight="line_count"),
+                         nx.average_clustering(net),
+                         nx.average_shortest_path_length(net, weight="line_count"),
+                         nx.transitivity(net)])
+    stats = {col: measure for col, measure in zip(columns, measures)}
     return stats
 
 
@@ -121,22 +136,22 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     if weight == "lines":
         degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
         edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
+        edge_width = edge_width / np.max(edge_width) * 8
     elif weight == "scenes":
         degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
         edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 6
+        edge_width = edge_width / np.max(edge_width) * 8
     elif weight == "words":
         degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
         edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 8
+        edge_width = edge_width / np.max(edge_width) * 10
     else:
         degrees_weight = np.array([v for _, v in G.degree()])
         edge_width = np.ones(len(edges))
-    degrees_weight = degrees_weight / np.max(degrees_weight) * 5000
+    degrees_weight = degrees_weight / np.max(degrees_weight) * 4500
     pos = nx.spring_layout(G, weight=weight)
-    plt.figure(figsize=(16, 9))
-    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"))
+    plt.figure(figsize=(12, 16))
+    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9)
     nx.draw_networkx_edges(G, pos, width=edge_width, alpha=0.5)
     nx.draw_networkx_labels(G, pos)
     plt.axis('off')

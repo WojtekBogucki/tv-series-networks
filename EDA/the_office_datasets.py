@@ -19,6 +19,18 @@ office_edges_weighted = get_speaker_network_edges(office_group_scenes)
 office_edges_weighted.head()
 office_edges_weighted.to_csv("../data/the_office/the_office_edges_weighted.csv", index=False, encoding="utf-8")
 
+# top 30 speakers
+office_top_speakers = filter_by_speakers(office_raw, top=30)
+office_top_speakers.to_csv("../data/the_office/top_speakers_top30.csv", index=False, encoding="utf-8")
+
+office_group_scenes = filter_group_scenes(office_top_speakers)
+office_group_scenes.head()
+office_group_scenes.to_csv("../data/the_office/group_scenes_top30.csv", index=False, encoding="utf-8")
+
+office_edges_weighted = get_speaker_network_edges(office_group_scenes)
+office_edges_weighted.head()
+office_edges_weighted.to_csv("../data/the_office/edges_weighted_top30.csv", index=False, encoding="utf-8")
+
 
 save_seasons(office_raw, path="../data/the_office")
 save_episodes(office_raw, path="../data/the_office")
