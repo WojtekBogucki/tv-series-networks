@@ -5,7 +5,7 @@ import networkx as nx
 from networkx import community
 import matplotlib.pyplot as plt
 import community as community_louvain
-import igraph
+import igraph as ig
 
 
 def get_character_stats(G):
@@ -111,7 +111,7 @@ def get_network_stats(net):
     return stats
 
 
-def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="modularity"):
+def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM"):
     '''
     Function that draws an interaction network from given graph
     :param G: networkx graph
@@ -123,28 +123,40 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     '''
     nodes = list(G.nodes())
     edges = G.edges()
-    if method == "modularity":
+    if method is not None:
+        method = method.upper()
+    if method == "GM":
         communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
-        print("Found communities:", len(communities))
         com_dict = {character: i for i, com in enumerate(communities) for character in com}
-    elif method == "louvain":
+        colors = [com_dict[c] for c in nodes]
+    elif method == "LV":
         com_dict = community_louvain.best_partition(G, weight=weight, resolution=resolution)
+        colors = [com_dict[c] for c in nodes]
+    elif method in ["SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
+        G_ig = ig.Graph.from_networkx(G)
+        if method == "SG":
+            colors = G_ig.community_spinglass(weights=weight).membership
+        elif method == "FG":
+            colors = G_ig.community_fastgreedy(weights=weight).as_clustering().membership
+        elif method == "IM":
+            colors = G_ig.community_infomap(edge_weights=weight).membership
+        elif method == "LE":
+            colors = G_ig.community_leading_eigenvector(weights=weight).membership
+        elif method == "LP":
+            colors = G_ig.community_label_propagation(weights=weight).membership
+        elif method == "ML":
+            colors = G_ig.community_multilevel(weights=weight).membership
+        elif method == "WT":
+            colors = G_ig.community_walktrap(weights=weight).as_clustering().membership
+        else:
+            colors = G_ig.community_leiden(weights=weight).membership
     else:
         print("No community detection selected")
-        com_dict = {n: 0 for n in nodes}
-    colors = [com_dict[c] for c in nodes]
-    if weight == "lines":
-        degrees_weight = np.array([v for _, v in G.degree(weight="line_count")])
-        edge_width = np.array([G[u][v]['line_count'] for u, v in edges])
+        colors = np.zeros(len(nodes))
+    if weight is not None:
+        degrees_weight = np.array([v for _, v in G.degree(weight=weight)])
+        edge_width = np.array([G[u][v][weight] for u, v in edges])
         edge_width = edge_width / np.max(edge_width) * 8
-    elif weight == "scenes":
-        degrees_weight = np.array([v for _, v in G.degree(weight="scene_count")])
-        edge_width = np.array([G[u][v]['scene_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 8
-    elif weight == "words":
-        degrees_weight = np.array([v for _, v in G.degree(weight="word_count")])
-        edge_width = np.array([G[u][v]['word_count'] for u, v in edges])
-        edge_width = edge_width / np.max(edge_width) * 10
     else:
         degrees_weight = np.array([v for _, v in G.degree()])
         edge_width = np.ones(len(edges))
@@ -157,6 +169,6 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     plt.axis('off')
     # nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
     if filename:
-        plt.savefig("../figures/{}.png".format(filename))
+        plt.savefig(f"../figures/{filename}.png")
     else:
         plt.show()

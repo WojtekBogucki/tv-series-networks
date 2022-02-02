@@ -1,11 +1,3 @@
-import os
-import pandas as pd
-import numpy as np
-import networkx as nx
-from networkx import community
-import matplotlib.pyplot as plt
-import community as community_louvain
-import igraph
 from networks.utils import *
 
 # load data
@@ -19,13 +11,13 @@ office_net_top30 = nx.from_pandas_edgelist(office_edges_weighted_top30, source="
                                      edge_attr=["line_count", "scene_count", "word_count"])
 
 # save drawn networks
-draw_interaction_network_communities(office_net, "lines", filename="the_office_lines", method=None)
-draw_interaction_network_communities(office_net, "scenes", filename="the_office_scenes", method=None)
-draw_interaction_network_communities(office_net, "words", filename="the_office_words", method=None)
+draw_interaction_network_communities(office_net, "line_count", filename="the_office_lines", method=None)
+draw_interaction_network_communities(office_net, "scene_count", filename="the_office_scenes", method=None)
+draw_interaction_network_communities(office_net, "word_count", filename="the_office_words", method=None)
 
-draw_interaction_network_communities(office_net_top30, "lines", filename="the_office_top30_lines", method=None)
-draw_interaction_network_communities(office_net_top30, "scenes", filename="the_office_top30_scenes", method=None)
-draw_interaction_network_communities(office_net_top30, "words", filename="the_office_top30_words", method=None)
+draw_interaction_network_communities(office_net_top30, "line_count", filename="the_office_top30_lines", method=None)
+draw_interaction_network_communities(office_net_top30, "scene_count", filename="the_office_top30_scenes", method=None)
+draw_interaction_network_communities(office_net_top30, "word_count", filename="the_office_top30_words", method=None)
 
 # stats
 # density
@@ -73,9 +65,9 @@ office_net_seasons = get_season_networks("../data/the_office/")
 
 office_season_stats = get_network_stats_by_season(office_net_seasons)
 
-draw_interaction_network_communities(office_net_seasons[2], "lines")
-draw_interaction_network_communities(office_net_seasons[2], "scenes", method=None)
-draw_interaction_network_communities(office_net_seasons[0], "words")
+draw_interaction_network_communities(office_net_seasons[2], "line_count", method="SG")
+draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)
+draw_interaction_network_communities(office_net_seasons[0], "word_count")
 
 office_season_stats["nodes"].plot(kind="bar")
 
@@ -101,11 +93,18 @@ for season in seasons:
         episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
         i += 1
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e12"]], "lines")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="SG")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="FG")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="IM")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LE")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LP")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="ML")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="WT")
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LD")
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]], "lines",
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]], "line_count",
                                      filename="office_lines_s03e18")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "lines",
+draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "line_count",
                                      filename="office_lines_s03e21")
 
 # another algorithm

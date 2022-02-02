@@ -16,6 +16,7 @@ office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", t
                                      edge_attr=["line_count", "scene_count", "word_count"])
 
 office_net_ig = ig.Graph.from_networkx(office_net)
+office_net_ig.vs["name"] = office_net_ig.vs["_nx_name"]
 
 visual_style = {"vertex_label": office_net_ig.vs["_nx_name"], "vertex_color": "red"}
 fig, ax = plt.subplots()
@@ -32,6 +33,8 @@ LE_community = office_net_ig.community_leading_eigenvector(weights="line_count")
 LP_community = office_net_ig.community_label_propagation(weights="line_count")
 ML_community = office_net_ig.community_multilevel(weights="line_count")
 WT_community = office_net_ig.community_walktrap(weights="line_count").as_clustering()
-leiden_community = office_net_ig.community_leiden(weights="line_count")
+LD_community = office_net_ig.community_leiden(weights="line_count")
 
 ig.compare_communities(ML_community, SG_community, method="rand")
+
+list(EB_community)
