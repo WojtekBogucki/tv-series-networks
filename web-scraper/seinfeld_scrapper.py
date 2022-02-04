@@ -120,10 +120,20 @@ for ep_title in episodes_titles:
     print(ep_number)
     if ep_number in [6, 18, 41, 65, 87, 111, 135, 157]:
         season += 1
+    if ep_number in [47, 116, 121]:
+        ep_title = "fixed/" + ep_title
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
+            full_line = line
             line = line.strip()
-            line = re.sub(r"(\(.*\))", "", line)
+            stage_dirs = re.findall(r"(^\([^)]*\))$",  line)
+            if stage_dirs:
+                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches", "comes? in"]:
+                    match = re.findall(fr"(^\(.*{word}.*\))$", line, re.IGNORECASE)
+                    if match:
+                        scene += 1
+                        continue
+            line = re.sub(r"(\([^)]*\))", "", line)
             for name in ["GEORGE","JERRY","KRAMER","ELAINE"]:
                 line = re.sub(fr"(?<=^{name})  ", ": ", line)
             if not line:
@@ -139,7 +149,10 @@ for ep_title in episodes_titles:
                 speaker = line_search.group(1)
                 line = line_search.group(2)
             else:
-                print("*error*", line)
+                with open(f"../data/seinfeld/seinology/errors.txt", "a") as err:
+                    err.write(f"{ep_number} Full_line: {full_line}")
+                    err.write(f"{ep_number} Line: {line}\n")
+                # print("*error*", line)
                 continue
             seinfeld_df = seinfeld_df.append({"season": season,
                                               "episode": ep_number,
@@ -149,8 +162,29 @@ for ep_title in episodes_titles:
                                               "line": line.strip()}, ignore_index=True)
     # if ep_number >= 1: break
 
-seinfeld_df = seinfeld_df[seinfeld_df.episode!=180]
+seinfeld_df = seinfeld_df[~seinfeld_df.episode.isin([180, 101, 100, 177, 178])]
 seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v1.csv", index=False, encoding="utf-8")
 
+seinfeld_df.groupby("episode")["scene"].nunique().plot(kind="barh")
+seinfeld_df.groupby("episode")["scene"].nunique().sort_values()
 
+for ep_title in episodes_titles:
+    with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            items = re.findall(r"(^\([^)]*\))$",  line)
+            if items:
+                with open("../data/seinfeld/seinology/stage_directions.txt", "a") as sd:
+                    sd.write(f"{ep_title} {items}\n")
 
+i=0
+for ep_title in episodes_titles:
+    with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            items = re.findall(r"(^\(.*enters?.*\))$",  line)
+            if items:
+                i += 1
+                print(f"{i} {items}")
+
+# enters, enter, walks in, walk in, walks out, leaves, leave, hungs up, burts in, approaches, exit

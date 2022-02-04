@@ -11,12 +11,17 @@ seinfeld_df.head()
 print("Shape: ", seinfeld_df.shape)
 
 seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
-seinfeld_df.speaker.nunique()   # 1055
+seinfeld_df.speaker.nunique()   # 1060
 
 lines_by_season = seinfeld_df.groupby('season')['line'].count()
 lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines")
 plt.xticks(rotation=0)
 plt.savefig("../figures/seinfeld_lines_by_season.png")
+
+scenes_by_season = seinfeld_df.groupby('season')['scene'].nunique()
+scenes_by_season.plot.bar(title="Number of scenes by season", ylabel="Number of scenes")
+plt.xticks(rotation=0)
+plt.savefig("../figures/seinfeld_scenes_by_season.png")
 
 lines_by_speaker = seinfeld_df.groupby(['speaker', 'season'])['line'].size().unstack(fill_value=0)
 lines_by_speaker["sum_col"] = lines_by_speaker.sum(axis=1)

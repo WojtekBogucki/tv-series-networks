@@ -28,11 +28,6 @@ draw_interaction_network_communities(seinfeld_net_top30, "scene_count", filename
 draw_interaction_network_communities(seinfeld_net_top30, "word_count", filename="seinfeld_top30_words", method=None)
 
 # stats
-# density
-density = nx.density(seinfeld_net)
-print("Network density:", density)
-
-
 seinfeld_char_stats = get_character_stats(seinfeld_net)
 
 seinfeld_char_stats.loc[:,["betweenness_word", "betweenness_scene"]].sort_values("betweenness_word", ascending=True).plot(kind="barh")

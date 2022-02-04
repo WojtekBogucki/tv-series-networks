@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import re
 import os
-from EDA.processing import filter_by_speakers, filter_group_scenes, get_speaker_network_edges, save_seasons, save_episodes
+from EDA.processing import *
 
 path = "../data/seinfeld"
 seinfeld_raw = pd.read_csv(f"{path}/seinfeld_lines_v2.csv", encoding="utf-8")
