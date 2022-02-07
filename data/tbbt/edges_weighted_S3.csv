@@ -1,0 +1,39 @@
+speaker1,speaker2,line_count,scene_count,word_count
+bernadette,howard,202,13,1830
+bernadette,leonard,130,10,1004
+bernadette,penny,118,11,1090
+bernadette,sheldon,52,4,635
+beverly,howard,23,1,261
+beverly,leonard,70,4,763
+beverly,penny,81,5,886
+beverly,sheldon,59,4,710
+elizabeth,howard,33,2,296
+elizabeth,leonard,87,6,853
+elizabeth,penny,21,1,170
+elizabeth,raj,34,2,322
+elizabeth,sheldon,64,5,826
+howard,leonard,1088,84,10880
+howard,mrs cooper,17,1,166
+howard,penny,533,43,5518
+howard,raj,844,77,8978
+howard,sheldon,939,68,12604
+howard,stuart,41,5,518
+howard,wil,29,2,270
+leonard,mrs cooper,19,1,230
+leonard,penny,1322,90,12171
+leonard,raj,826,68,8304
+leonard,sheldon,1713,113,21463
+leonard,stuart,64,6,688
+leonard,wil,43,2,421
+mrs cooper,raj,12,1,135
+mrs cooper,sheldon,35,2,343
+penny,raj,258,24,2569
+penny,sheldon,1405,81,16928
+penny,stuart,84,4,633
+penny,wil,51,2,359
+raj,sheldon,1039,73,13901
+raj,stuart,49,7,634
+raj,wil,28,2,224
+sheldon,stuart,105,9,1572
+sheldon,wil,87,4,1036
+stuart,wil,48,4,440

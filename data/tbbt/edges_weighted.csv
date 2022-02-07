@@ -1,0 +1,138 @@
+speaker1,speaker2,line_count,scene_count,word_count
+amy,arthur,9,1,85
+amy,bernadette,2145,257,22735
+amy,beverly,82,12,790
+amy,emily,46,8,459
+amy,howard,1095,151,11354
+amy,kripke,71,8,739
+amy,leonard,2283,278,21742
+amy,leslie,9,1,126
+amy,man,34,4,321
+amy,mike,19,4,160
+amy,mrs cooper,119,16,1144
+amy,mrs wolowitz,15,4,116
+amy,penny,3697,413,38523
+amy,priya,27,3,187
+amy,raj,1296,173,14850
+amy,sheldon,5414,501,68751
+amy,stuart,338,51,3263
+amy,wil,50,4,634
+amy,zack,58,7,608
+arthur,howard,14,1,110
+arthur,leonard,110,8,1169
+arthur,penny,62,5,612
+arthur,raj,12,1,97
+arthur,sheldon,235,15,2823
+bernadette,beverly,49,7,523
+bernadette,emily,100,13,750
+bernadette,howard,3733,401,38429
+bernadette,kripke,11,3,89
+bernadette,leonard,1320,173,11815
+bernadette,leslie,7,1,81
+bernadette,man,26,4,219
+bernadette,mike,83,12,784
+bernadette,mrs cooper,16,3,184
+bernadette,mrs wolowitz,193,27,1900
+bernadette,penny,2679,302,27054
+bernadette,priya,90,11,787
+bernadette,raj,1810,238,19266
+bernadette,sheldon,1334,154,16801
+bernadette,stuart,598,82,5797
+bernadette,wil,2,1,74
+bernadette,zack,23,3,247
+beverly,howard,62,5,663
+beverly,kripke,4,1,51
+beverly,leonard,360,31,3577
+beverly,leslie,8,1,89
+beverly,mrs cooper,106,11,977
+beverly,penny,284,28,3034
+beverly,raj,24,3,314
+beverly,sheldon,307,25,3450
+beverly,stuart,19,3,167
+beverly,wil,3,1,82
+emily,howard,123,14,1163
+emily,leonard,47,8,366
+emily,man,5,1,35
+emily,penny,78,8,783
+emily,raj,323,39,3239
+emily,sheldon,67,9,849
+emily,stuart,19,3,175
+howard,kripke,134,17,1490
+howard,leonard,7477,723,74443
+howard,leslie,170,13,1571
+howard,man,101,13,1088
+howard,mike,245,25,2624
+howard,mrs cooper,75,8,1117
+howard,mrs wolowitz,586,60,5729
+howard,penny,3494,345,35686
+howard,priya,163,19,1596
+howard,raj,7067,766,78022
+howard,sheldon,7163,651,93722
+howard,stuart,830,109,8640
+howard,wil,71,12,686
+howard,zack,107,12,952
+kripke,leonard,257,28,2980
+kripke,leslie,8,1,90
+kripke,penny,37,5,506
+kripke,raj,179,22,2389
+kripke,sheldon,468,41,6829
+kripke,stuart,31,6,446
+kripke,wil,13,3,206
+kripke,zack,18,2,215
+leonard,leslie,324,20,3017
+leonard,man,235,20,2217
+leonard,mike,60,6,591
+leonard,mrs cooper,301,28,3816
+leonard,mrs wolowitz,169,12,1570
+leonard,penny,10388,839,99151
+leonard,priya,493,39,4380
+leonard,raj,6270,649,63054
+leonard,sheldon,14744,1138,177252
+leonard,stuart,653,68,6532
+leonard,wil,253,23,2505
+leonard,zack,175,16,1767
+leslie,man,10,1,64
+leslie,mrs wolowitz,26,2,195
+leslie,penny,84,7,794
+leslie,raj,92,10,1004
+leslie,sheldon,256,18,3041
+leslie,stuart,7,1,83
+leslie,wil,7,1,121
+man,penny,97,10,932
+man,raj,84,11,859
+man,sheldon,225,19,3330
+man,stuart,7,1,40
+man,wil,4,1,24
+man,zack,7,1,65
+mike,mrs wolowitz,28,5,222
+mike,penny,38,5,345
+mike,raj,54,7,581
+mike,sheldon,84,8,994
+mike,stuart,10,1,74
+mike,zack,4,1,47
+mrs cooper,penny,139,16,1812
+mrs cooper,raj,45,5,667
+mrs cooper,sheldon,491,41,6325
+mrs cooper,stuart,13,2,101
+mrs wolowitz,penny,54,6,582
+mrs wolowitz,raj,123,18,1228
+mrs wolowitz,sheldon,153,12,1848
+mrs wolowitz,stuart,19,4,193
+mrs wolowitz,zack,2,1,18
+penny,priya,106,12,989
+penny,raj,2838,312,29906
+penny,sheldon,9803,734,116267
+penny,stuart,432,51,4142
+penny,wil,175,14,1950
+penny,zack,198,20,1778
+priya,raj,149,17,1565
+priya,sheldon,307,25,3628
+raj,sheldon,6292,594,84286
+raj,stuart,834,109,9321
+raj,wil,81,13,955
+raj,zack,79,9,760
+sheldon,stuart,806,81,10486
+sheldon,wil,285,19,4013
+sheldon,zack,144,14,1569
+stuart,wil,94,9,944
+stuart,zack,29,3,334

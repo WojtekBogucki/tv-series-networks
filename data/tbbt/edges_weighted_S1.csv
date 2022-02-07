@@ -1,0 +1,36 @@
+speaker1,speaker2,line_count,scene_count,word_count
+dr koothrappali,howard,18,1,152
+dr koothrappali,leonard,40,2,302
+dr koothrappali,raj,55,2,429
+dr koothrappali,sheldon,43,2,434
+gablehauser,howard,54,3,551
+gablehauser,leonard,85,5,855
+gablehauser,leslie,30,1,281
+gablehauser,mrs cooper,12,1,66
+gablehauser,penny,25,1,250
+gablehauser,raj,52,3,536
+gablehauser,sheldon,102,6,1289
+howard,leonard,984,70,9604
+howard,leslie,58,4,619
+howard,missy,69,6,563
+howard,mrs cooper,17,2,425
+howard,penny,595,46,6201
+howard,raj,512,51,5520
+howard,sheldon,831,62,10038
+leonard,leslie,156,7,1467
+leonard,missy,79,6,696
+leonard,mrs cooper,49,5,671
+leonard,penny,1296,72,12067
+leonard,raj,769,56,7332
+leonard,sheldon,1954,113,21271
+leslie,penny,46,3,451
+leslie,raj,47,4,580
+leslie,sheldon,88,5,957
+missy,penny,38,3,241
+missy,raj,48,5,460
+missy,sheldon,95,8,1164
+mrs cooper,penny,19,2,431
+mrs cooper,sheldon,64,5,872
+penny,raj,395,34,4112
+penny,sheldon,1241,69,13989
+raj,sheldon,630,51,7670

@@ -1,0 +1,59 @@
+speaker1,speaker2,line_count,scene_count,word_count
+amy,arthur,9,1,85
+amy,bernadette,388,56,4045
+amy,emily,6,1,71
+amy,howard,331,47,3303
+amy,leonard,378,50,3793
+amy,mike,14,3,88
+amy,mrs cooper,12,2,147
+amy,penny,460,59,4690
+amy,raj,356,46,4106
+amy,sheldon,734,70,9306
+amy,stuart,68,10,626
+amy,wil,16,1,205
+arthur,howard,14,1,110
+arthur,leonard,64,5,651
+arthur,penny,16,2,114
+arthur,raj,12,1,97
+arthur,sheldon,116,8,1378
+bernadette,emily,30,3,175
+bernadette,howard,523,62,5520
+bernadette,leonard,268,41,2712
+bernadette,mike,30,5,255
+bernadette,mrs cooper,7,2,95
+bernadette,penny,351,47,3575
+bernadette,raj,368,51,4161
+bernadette,sheldon,224,29,2522
+bernadette,stuart,100,14,1011
+emily,howard,40,3,455
+emily,raj,105,9,1087
+emily,sheldon,11,1,106
+howard,leonard,424,58,4116
+howard,mike,62,7,593
+howard,mrs cooper,17,2,160
+howard,penny,305,43,2805
+howard,raj,727,88,8285
+howard,sheldon,591,66,7867
+howard,stuart,58,10,570
+leonard,mike,22,3,192
+leonard,mrs cooper,14,2,148
+leonard,penny,1224,108,12295
+leonard,raj,489,66,5573
+leonard,sheldon,1111,98,13700
+leonard,stuart,67,9,679
+leonard,wil,29,3,384
+mike,penny,20,3,192
+mike,raj,12,2,135
+mike,sheldon,44,5,498
+mrs cooper,penny,15,2,136
+mrs cooper,raj,9,2,125
+mrs cooper,sheldon,54,4,624
+mrs cooper,stuart,6,1,52
+penny,raj,417,55,4653
+penny,sheldon,975,84,11268
+penny,stuart,78,11,648
+penny,wil,41,4,566
+raj,sheldon,431,51,6171
+raj,stuart,149,19,1673
+sheldon,stuart,63,6,736
+sheldon,wil,22,1,310

@@ -1,0 +1,70 @@
+speaker1,speaker2,line_count,scene_count,word_count
+amy,bernadette,322,38,3437
+amy,dr koothrappali,26,4,258
+amy,dr lorvis,30,5,242
+amy,emily,31,6,257
+amy,howard,124,17,1324
+amy,leonard,325,43,3072
+amy,man,5,1,27
+amy,penny,559,66,5700
+amy,raj,187,28,1997
+amy,sheldon,787,71,10704
+amy,stuart,32,6,311
+bernadette,dan,43,3,405
+bernadette,dr koothrappali,7,2,53
+bernadette,dr lorvis,3,1,15
+bernadette,emily,36,4,243
+bernadette,howard,570,66,6158
+bernadette,leonard,116,18,1148
+bernadette,man,5,1,20
+bernadette,penny,398,43,4231
+bernadette,raj,290,40,3051
+bernadette,sheldon,166,20,2164
+bernadette,stuart,96,16,998
+beverly,leonard,60,4,596
+beverly,mrs cooper,55,4,682
+beverly,penny,27,2,234
+beverly,sheldon,66,5,703
+dan,penny,60,5,700
+dr koothrappali,howard,10,2,98
+dr koothrappali,leonard,2,1,12
+dr koothrappali,penny,26,4,251
+dr koothrappali,raj,38,4,450
+dr koothrappali,sheldon,18,2,196
+dr lorvis,howard,22,3,167
+dr lorvis,leonard,38,3,302
+dr lorvis,man,13,1,167
+dr lorvis,penny,39,5,405
+dr lorvis,raj,23,3,169
+dr lorvis,sheldon,26,3,294
+emily,howard,43,5,325
+emily,leonard,32,6,254
+emily,penny,50,4,445
+emily,raj,113,18,1134
+emily,sheldon,18,3,235
+emily,stuart,12,2,127
+howard,leonard,576,59,6159
+howard,man,29,3,349
+howard,penny,201,25,2113
+howard,raj,827,90,9488
+howard,sheldon,555,53,7050
+howard,stuart,141,19,1548
+leonard,man,64,4,676
+leonard,mrs cooper,56,5,742
+leonard,penny,908,84,8910
+leonard,raj,595,63,6390
+leonard,sheldon,1251,104,15585
+leonard,stuart,47,6,454
+leonard,wil,54,4,661
+man,penny,28,2,319
+man,raj,40,4,509
+man,sheldon,56,5,952
+mrs cooper,penny,33,3,412
+mrs cooper,sheldon,54,5,748
+penny,raj,195,26,1878
+penny,sheldon,800,68,9650
+penny,stuart,29,5,298
+penny,wil,53,4,717
+raj,sheldon,571,56,7674
+raj,stuart,75,13,889
+sheldon,stuart,42,6,640
