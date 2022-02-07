@@ -102,6 +102,8 @@ draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]]
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="WT")
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LD")
 
+draw_interaction_network_communities(office_net_episodes[episode_dict["s04e12"]], "scene_count", method="GM")
+
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]], "line_count",
                                      filename="office_lines_s03e18")
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "line_count",

@@ -47,7 +47,8 @@ replacements = {"Micheal": "Michael",
                 "Carroll": "Carol",
                 "David": "David Wallace",
                 "DeAngelo": "Deangelo",
-                "Daryl": "Darryl"}
+                "Daryl": "Darryl",
+                "Diane": "Diane Kelly"}
 
 
 def fix_names(x):
