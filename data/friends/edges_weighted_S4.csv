@@ -1,0 +1,124 @@
+speaker1,speaker2,line_count,scene_count,word_count
+alice,all,13,3,135
+alice,chandler,66,5,698
+alice,emily,26,2,276
+alice,frank,50,5,600
+alice,joey,68,6,854
+alice,kathy,10,2,105
+alice,monica,64,4,576
+alice,phoebe,104,6,1423
+alice,rachel,65,5,652
+alice,ross,74,6,862
+all,chandler,231,20,2415
+all,emily,21,4,159
+all,frank,19,3,242
+all,gunther,16,3,72
+all,janice,5,1,67
+all,joanna,15,2,246
+all,joey,220,21,2260
+all,joshua,49,4,376
+all,kathy,29,3,202
+all,monica,215,18,2071
+all,mr. treeger,7,1,78
+all,mr. waltham,8,1,107
+all,mrs. geller,27,3,272
+all,phoebe,179,20,1929
+all,rachel,253,18,2450
+all,ross,195,21,2016
+chandler,emily,273,19,2803
+chandler,frank,64,4,723
+chandler,gunther,160,9,1773
+chandler,janice,67,5,866
+chandler,joanna,86,4,1024
+chandler,joey,1615,105,18289
+chandler,joshua,120,10,1203
+chandler,kathy,250,13,2788
+chandler,monica,1407,87,15401
+chandler,mr. treeger,73,5,790
+chandler,mr. waltham,48,4,825
+chandler,mrs. geller,79,6,938
+chandler,phoebe,1419,98,17327
+chandler,rachel,1555,99,17487
+chandler,ross,1452,92,16712
+chandler,tim,48,1,492
+emily,frank,13,1,156
+emily,gunther,21,2,150
+emily,janice,44,3,499
+emily,joey,287,22,2985
+emily,joshua,29,3,272
+emily,monica,233,17,2345
+emily,mr. waltham,25,2,389
+emily,mrs. geller,22,2,292
+emily,phoebe,255,17,3091
+emily,rachel,266,17,3070
+emily,ross,324,22,4128
+frank,joey,70,5,886
+frank,kathy,14,2,176
+frank,monica,72,4,673
+frank,phoebe,100,5,1358
+frank,rachel,73,5,774
+frank,ross,70,5,802
+gunther,joey,157,10,1674
+gunther,joshua,27,2,206
+gunther,kathy,32,2,323
+gunther,monica,136,7,1404
+gunther,phoebe,91,8,1040
+gunther,rachel,143,10,1619
+gunther,ross,140,9,1596
+gunther,tim,28,1,202
+janice,joey,50,4,536
+janice,monica,45,4,567
+janice,phoebe,40,4,438
+janice,rachel,53,5,568
+janice,ross,58,3,770
+joanna,joey,40,3,469
+joanna,monica,44,2,630
+joanna,mrs. geller,14,1,162
+joanna,phoebe,33,2,428
+joanna,rachel,92,5,1128
+joanna,ross,29,2,405
+joey,joshua,145,10,1437
+joey,kathy,161,10,1912
+joey,monica,1306,85,14359
+joey,mr. treeger,95,5,1178
+joey,mr. waltham,69,5,943
+joey,mrs. geller,81,7,987
+joey,phoebe,1350,93,16470
+joey,rachel,1442,91,16425
+joey,ross,1401,88,16627
+joey,tim,53,1,535
+joshua,kathy,4,1,42
+joshua,monica,64,6,578
+joshua,mr. treeger,7,1,28
+joshua,mr. waltham,38,3,428
+joshua,phoebe,98,9,927
+joshua,rachel,268,15,3124
+joshua,ross,139,10,1504
+kathy,monica,170,8,1633
+kathy,phoebe,135,9,1551
+kathy,rachel,142,10,1461
+kathy,ross,149,11,1563
+kathy,tim,36,1,350
+monica,mr. treeger,56,4,619
+monica,mr. waltham,55,4,661
+monica,mrs. geller,106,6,1164
+monica,phoebe,1303,92,15117
+monica,rachel,1369,91,14772
+monica,ross,1252,79,13599
+monica,tim,65,1,561
+mr. treeger,phoebe,67,5,874
+mr. treeger,rachel,81,5,844
+mr. treeger,ross,51,3,545
+mr. waltham,mrs. geller,15,3,267
+mr. waltham,phoebe,63,4,1003
+mr. waltham,rachel,94,6,1203
+mr. waltham,ross,73,5,1002
+mrs. geller,phoebe,87,5,1218
+mrs. geller,rachel,93,5,1126
+mrs. geller,ross,80,7,1037
+phoebe,rachel,1336,93,15837
+phoebe,ross,1256,85,15638
+phoebe,tim,33,1,266
+rachel,ross,1423,92,16274
+rachel,tim,47,1,425
+ross,tim,41,1,366

@@ -1,0 +1,146 @@
+speaker1,speaker2,line_count,scene_count,word_count
+all,aurora,17,2,99
+all,barry,11,1,95
+all,carol,26,4,107
+all,chandler,403,41,4323
+all,david,14,2,178
+all,janice,4,1,56
+all,joey,290,41,2489
+all,monica,439,45,3728
+all,mr. geller,5,1,24
+all,mr. heckles,6,1,39
+all,mr. tribbiani,12,1,198
+all,mrs. bing,11,1,114
+all,mrs. geller,13,1,192
+all,paolo,4,1,7
+all,phoebe,341,42,3297
+all,rachel,355,41,3941
+all,roger,16,2,116
+all,ross,396,43,3893
+all,susan,18,3,109
+aurora,chandler,74,3,828
+aurora,joey,35,2,311
+aurora,monica,21,2,188
+aurora,phoebe,15,2,142
+aurora,rachel,5,1,19
+aurora,ross,21,2,153
+barry,chandler,27,1,355
+barry,joey,18,1,191
+barry,mindy,12,1,138
+barry,monica,25,1,259
+barry,mr. heckles,15,1,130
+barry,phoebe,21,1,212
+barry,rachel,79,5,868
+barry,ross,32,1,399
+carol,chandler,100,14,941
+carol,janice,4,1,39
+carol,joey,77,11,602
+carol,lydia,18,2,128
+carol,monica,80,11,678
+carol,paolo,2,1,23
+carol,phoebe,60,10,615
+carol,rachel,68,10,745
+carol,ross,215,19,2439
+carol,susan,105,13,742
+chandler,david,55,3,794
+chandler,janice,99,13,1206
+chandler,joey,1257,112,13784
+chandler,lydia,27,3,304
+chandler,monica,1399,118,14781
+chandler,mr. geller,37,4,487
+chandler,mr. heckles,32,3,413
+chandler,mr. tribbiani,34,2,308
+chandler,mrs. bing,54,4,591
+chandler,mrs. geller,41,3,438
+chandler,paolo,47,8,482
+chandler,phoebe,1181,110,13346
+chandler,rachel,1296,120,14872
+chandler,roger,46,3,490
+chandler,ross,1412,118,16264
+chandler,steve,20,1,248
+chandler,susan,83,11,835
+chandler,young ethan,35,1,330
+david,janice,28,2,349
+david,joey,44,3,551
+david,monica,55,3,614
+david,phoebe,88,3,1020
+david,rachel,43,3,569
+david,ross,47,3,652
+janice,joey,68,8,796
+janice,monica,87,9,976
+janice,phoebe,71,6,859
+janice,rachel,53,8,782
+janice,ross,57,7,1058
+janice,susan,3,1,47
+joey,lydia,39,5,372
+joey,monica,1236,108,12563
+joey,mr. geller,19,2,237
+joey,mr. heckles,20,2,194
+joey,mr. tribbiani,57,3,678
+joey,mrs. bing,22,2,311
+joey,mrs. geller,37,3,430
+joey,paolo,46,7,356
+joey,phoebe,1048,103,11324
+joey,rachel,1063,100,11796
+joey,roger,40,3,476
+joey,ross,1196,107,13089
+joey,steve,25,1,222
+joey,susan,68,9,591
+joey,young ethan,37,2,388
+lydia,monica,26,3,240
+lydia,phoebe,29,4,396
+lydia,rachel,14,2,168
+lydia,ross,42,4,367
+lydia,susan,25,3,173
+mindy,monica,6,1,63
+mindy,rachel,49,3,539
+monica,mr. geller,73,5,857
+monica,mr. heckles,48,5,393
+monica,mr. tribbiani,31,3,304
+monica,mrs. bing,29,2,306
+monica,mrs. geller,63,4,674
+monica,paolo,39,8,345
+monica,phoebe,1300,114,13339
+monica,rachel,1482,128,16037
+monica,roger,37,4,382
+monica,ross,1437,120,15483
+monica,steve,39,2,419
+monica,susan,49,7,492
+monica,young ethan,55,2,598
+mr. geller,mrs. geller,35,3,490
+mr. geller,phoebe,35,4,506
+mr. geller,rachel,50,4,681
+mr. geller,ross,69,6,962
+mr. heckles,paolo,8,1,39
+mr. heckles,phoebe,38,4,346
+mr. heckles,rachel,71,6,747
+mr. heckles,ross,54,4,539
+mr. tribbiani,phoebe,14,2,231
+mr. tribbiani,rachel,22,2,149
+mr. tribbiani,roger,13,1,198
+mr. tribbiani,ross,8,1,43
+mrs. bing,paolo,11,1,117
+mrs. bing,phoebe,30,2,271
+mrs. bing,rachel,27,2,367
+mrs. bing,ross,59,4,640
+mrs. geller,phoebe,46,4,537
+mrs. geller,rachel,49,4,577
+mrs. geller,ross,82,6,938
+paolo,phoebe,71,9,617
+paolo,rachel,70,9,663
+paolo,ross,84,9,691
+phoebe,rachel,1176,111,13398
+phoebe,roger,50,4,555
+phoebe,ross,1269,109,14567
+phoebe,steve,33,2,345
+phoebe,susan,63,10,752
+phoebe,young ethan,33,1,341
+rachel,roger,42,3,499
+rachel,ross,1396,116,16284
+rachel,steve,31,2,265
+rachel,susan,43,7,504
+rachel,young ethan,37,2,411
+roger,ross,34,3,414
+ross,steve,25,1,269
+ross,susan,205,17,2119
+ross,young ethan,37,2,405

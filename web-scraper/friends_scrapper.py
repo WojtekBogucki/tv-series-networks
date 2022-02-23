@@ -38,7 +38,15 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
             if p and not p.startswith("<"):
                 script_text.append(p + "\n")
     else:
-        script_text = [p.get_text().replace("\n", " ").replace("\x97", " ").replace("\xa0", "").replace("\x91", "'").replace("\x92", "'").replace("\x85", "'").strip() + "\n" for p in
+        script_text = [p.get_text()
+                           .replace("\n", " ")
+                           .replace("\x97", " ")
+                           .replace("\xa0", "")
+                           .replace("\x91", "'")
+                           .replace("\x92", "'")
+                           .replace("\x93", "")
+                           .replace("\ufffd", "")
+                           .replace("\x85", "'").strip() + "\n" for p in
                        soup_subpage.body.findAll("p")]
     print(len(script_text))
     try:
@@ -62,24 +70,40 @@ for ep_title in episodes_titles:
         for line in f:
             full_line = line
             line = line.strip()
-            line = re.sub(r"(\([^)]*\))", "", line)
+            stage_dirs = re.findall(r"(^[(\[][^)\]]*[)\]])$", line)
+            if stage_dirs:
+                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches",
+                             "comes? in"]:
+                    match = re.findall(fr"(^[(\[].*{word}.*[)\]])$", line, re.IGNORECASE)
+                    if match:
+                        scene += 1
+                        continue
+            line = re.sub(r"(^[(\[][^)\]]*[)\]])$", "", line)
             lower_line = line.lower()
             if not line:
                 continue
-            elif lower_line.startswith("written by:") or \
+            elif "written by" in lower_line or \
+                    lower_line.startswith("teleplay by:") or \
+                    lower_line.startswith("story by:") or \
+                    lower_line.startswith("transcriber's note") or \
                     lower_line.startswith("opening credits") or \
                     lower_line.startswith("opening titles") or \
                     lower_line.startswith("commercial break") or \
                     lower_line.startswith("closing credits") or \
+                    lower_line.startswith("closing titles") or \
+                    lower_line.startswith("the end") or \
                     lower_line.startswith("end"):
                 continue
             elif lower_line.startswith("[scene") or \
                     lower_line.startswith("[time") or \
                     lower_line.startswith("[cut") or \
+                    lower_line.startswith("[at") or \
+                    lower_line.startswith("[out") or \
+                    lower_line.startswith("[back") or \
                     line.startswith("[later"):
                 scene += 1
                 continue
-            pattern = re.compile(r"([A-Za-z0-9'.#& \"’]+): ? ?(.*)")
+            pattern = re.compile(r"([A-Za-z0-9'.#& \"’,]+): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
@@ -92,13 +116,42 @@ for ep_title in episodes_titles:
                     print(uee)
                 # print("*error*", line)
                 continue
-            friends_df = friends_df.append({"season": season,
-                                      "episode": episode,
-                                      "title": title,
-                                      "scene": scene,
-                                      "speaker": speaker.strip().lower(),
-                                      "line": line.strip()}, ignore_index=True)
+            if " and " in speaker:
+                speakers = re.split(r"and |, ", speaker)
+                for speaker in speakers:
+                    if speaker:
+                        friends_df = friends_df.append({"season": season,
+                                                        "episode": episode,
+                                                        "title": title,
+                                                        "scene": scene,
+                                                        "speaker": speaker.strip().lower(),
+                                                        "line": line.strip()}, ignore_index=True)
+            else:
+                friends_df = friends_df.append({"season": season,
+                                                "episode": episode,
+                                                "title": title,
+                                                "scene": scene,
+                                                "speaker": speaker.strip().lower(),
+                                                "line": line.strip()}, ignore_index=True)
     # if episode >= 10: break
 #
-# seinfeld_df = seinfeld_df[~seinfeld_df.episode.isin([180, 101, 100, 177, 178])]
+friends_df = friends_df[~((friends_df.season==7) & (friends_df.episode==24))]
 friends_df.to_csv("../data/friends/friends_lines_v1.csv", index=False, encoding="utf-8")
+
+pd.options.display.max_columns = 10
+pd.options.display.max_rows = None
+friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv")
+friends_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
+friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()[:20]
+
+friends_df.groupby(["season"])["scene"].nunique()
+
+friends_df2 = pd.read_csv("../data/friends/friends_r_package.csv")
+friends_df2.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
+friends_df2.groupby(["season", "episode"])["scene"].nunique().sort_values()[:20]
+
+######################
+# from convokit import Corpus, download
+#
+# corpus = Corpus(filename=download("friends-corpus"))
+# corpus.get_conversations_dataframe().to_csv("../data/friends/friends_corpus.csv", index=False, encoding="utf-8")

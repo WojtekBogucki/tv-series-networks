@@ -29,7 +29,7 @@ lines_by_speaker = lines_by_speaker.sort_values(by="sum_col", ascending=False)
 lines_by_speaker = lines_by_speaker.drop("sum_col", axis=1)
 lines_by_speaker[:15].plot(kind="bar", stacked=True, colormap="inferno", title="Lines spoken by character", ylabel="Number of lines", figsize=(12,8))
 plt.xticks(rotation=45)
-plt.savefig("../figures/seinfeld_speakers_by_season.png")
+plt.savefig("../figures/tbbt_speakers_by_season.png")
 
 episodes_by_speaker = tbbt_df.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])['speaker'].count().sort_values(ascending=False)[:15]
 episodes_by_speaker.plot(kind="bar", title="Number of episodes in which characters occurred", ylabel="Number of episodes", figsize=(12,8))
