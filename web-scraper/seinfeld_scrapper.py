@@ -6,38 +6,39 @@ import re
 from bs4 import BeautifulSoup
 import pandas as pd
 
-main_URL = "https://www.seinfeldscripts.com/"
-URL = main_URL + "seinfeld-scripts.html"
-headers = {"User-Agent": "'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'"}
-page = requests.get(URL, headers=headers)
-
-soup = BeautifulSoup(page.content, "html.parser")
-
-tables = soup.find_all("table")
-
-episodes_list = tables[1].findChildren('a')
-episodes_link = list(map(lambda x: main_URL + x.get('href').strip(), episodes_list))
-episodes_title = list(
-    map(lambda x: x.text.strip().lower().translate(str.maketrans({'\n': '', ' ': '_', '(': '', ')': ''})),
-        episodes_list))
-
-i = 0
-for ep_title, ep_link in zip(episodes_title[i:], episodes_link[i:]):
-    i += 1
-    print(i)
-    sub_page = requests.get(ep_link, headers=headers)
-    soup_subpage = BeautifulSoup(sub_page.content, "html.parser")
-    soup_subpage = soup_subpage(id="content")[0]
-    soup_subpage_p = soup_subpage.find_all("p", recursive=False)
-    soup_subpage_p = [x for x in soup_subpage_p if not len(x.findChildren())]
-    script_text = '\n'.join(list(map(lambda x: x.text, soup_subpage_p)))
-    script_text = re.sub('\\n{2,}', '', script_text)
-    try:
-        with open("data/seinfeld/{0}{1}.txt".format(i, ep_title), "w", encoding="utf-8") as f:
-            f.write(script_text)
-    except UnicodeEncodeError as uee:
-        print(uee)
-    if i >= 10: break
+########
+# main_URL = "https://www.seinfeldscripts.com/"
+# URL = main_URL + "seinfeld-scripts.html"
+# headers = {"User-Agent": "'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'"}
+# page = requests.get(URL, headers=headers)
+#
+# soup = BeautifulSoup(page.content, "html.parser")
+#
+# tables = soup.find_all("table")
+#
+# episodes_list = tables[1].findChildren('a')
+# episodes_link = list(map(lambda x: main_URL + x.get('href').strip(), episodes_list))
+# episodes_title = list(
+#     map(lambda x: x.text.strip().lower().translate(str.maketrans({'\n': '', ' ': '_', '(': '', ')': ''})),
+#         episodes_list))
+#
+# i = 0
+# for ep_title, ep_link in zip(episodes_title[i:], episodes_link[i:]):
+#     i += 1
+#     print(i)
+#     sub_page = requests.get(ep_link, headers=headers)
+#     soup_subpage = BeautifulSoup(sub_page.content, "html.parser")
+#     soup_subpage = soup_subpage(id="content")[0]
+#     soup_subpage_p = soup_subpage.find_all("p", recursive=False)
+#     soup_subpage_p = [x for x in soup_subpage_p if not len(x.findChildren())]
+#     script_text = '\n'.join(list(map(lambda x: x.text, soup_subpage_p)))
+#     script_text = re.sub('\\n{2,}', '', script_text)
+#     try:
+#         with open("data/seinfeld/{0}{1}.txt".format(i, ep_title), "w", encoding="utf-8") as f:
+#             f.write(script_text)
+#     except UnicodeEncodeError as uee:
+#         print(uee)
+#     if i >= 10: break
 
 ######################
 main_URL = "https://web.archive.org"

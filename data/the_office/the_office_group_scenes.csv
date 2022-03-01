@@ -947,6 +947,8 @@ season,episode,title,scene,speaker,line
 1,5,Basketball,172,Roy,That's what I'm talking about.
 1,5,Basketball,172,Michael,"Yeah, yeah, yeah. Over here, over here.  Here we go. Three!  Let's go to the zone! We're going to zone!"
 1,5,Basketball,172,Dwight,De-fense!   De-fense! 
+1,5,Basketball,172,Michael,De-fense! De-fense!
+1,5,Basketball,172,Dwight,De-fense! De-fense!
 1,5,Basketball,172,Michael,Who's got Roy? 
 1,5,Basketball,172,Pam,Woo!
 1,5,Basketball,174,Michael," OK, foul. Charging. Charging. That's a foul."
@@ -1466,6 +1468,8 @@ season,episode,title,scene,speaker,line
 2,1,The Dundies,271,Pam,"Woo! Hey, I haven't gotten one yet!"
 2,1,The Dundies,271,Jim,"Yes, I have not gotten one either. So, keep going."
 2,1,The Dundies,271,Pam,More Dundies!
+2,1,The Dundies,271,Pam,Dundies! Dundies! Dundies! Dundies!
+2,1,The Dundies,271,Jim,Dundies! Dundies! Dundies! Dundies!
 2,1,The Dundies,271,Michael," Alright, alright, alright, okay. Alright, we'll keep rolling. Okay, this is the fine work award. This goes to Stanley, for all the fine work he did this year."
 2,1,The Dundies,271,Pam,Fine work! Fine work Stanley!
 2,1,The Dundies,271,Michael,You know you did.
@@ -2244,9 +2248,13 @@ season,episode,title,scene,speaker,line
 2,4,The Fire,415,Dwight,You failed?
 2,4,The Fire,415,Ryan,I am so sorry.
 2,4,The Fire,417,Dwight,"I have a song. Attention, everyone! That I want to sing. That I wrote especially for this occasion when I was up there among the flames. Ready?  Ryan started the fire! It was always burning since the world's been turning!"
+2,4,The Fire,417,Dwight,Ryan started the fire! It was always burning---
+2,4,The Fire,417,Michael,Ryan started the fire! It was always burning---
 2,4,The Fire,417,Dwight,Everybody!
 2,4,The Fire,417,Michael,...since the world was turning.
 2,4,The Fire,419,Dwight,... Marilyn Monroe!
+2,4,The Fire,419,Dwight,Ryan started the fire! It was always burning...
+2,4,The Fire,419,Michael,Ryan started the fire! It was always burning...
 2,4,The Fire,419,Dwight,Eat it! You gotta eat it. You have to eat it!
 2,4,The Fire,420,Jim,Hey.
 2,4,The Fire,420,Jim,"Good, how are you?"
@@ -2872,6 +2880,7 @@ season,episode,title,scene,speaker,line
 2,7,The Client,524,Michael,"Did somebody say ""baby back ribs""? Hmmm? Hmmmmm?"
 2,7,The Client,524,Jan,I don't think Christian has time for that.
 2,7,The Client,524,Michael," I want my baby back, baby back, baby back "
+2,7,The Client,524,Michael," I want my baby back, baby back, baby back-"
 2,7,The Client,524,Michael,Chili's baby back ribs...
 2,7,The Client,525,Jim," Inside the FBI, Agent Michael Scarn sits with his feet up on his desk. Catherine Zeta Jones enters."
 2,7,The Client,525,Phyllis,"Sir, you have some messages."
@@ -2907,6 +2916,7 @@ season,episode,title,scene,speaker,line
 2,7,The Client,533,Michael,Check please.
 2,7,The Client,533,Jan,"He didn't want kids, but I knew that going into it. But he also knew that I did. I guess I thought that he would change his mind; he thought that I would change mine."
 2,7,The Client,533,Jan,I was stupid.
+2,7,The Client,533,Michael,No.
 2,7,The Client,533,Michael,"No, you were not stupid. Gould was stupid. Right?"
 2,7,The Client,533,Michael,You know?
 2,7,The Client,533,Michael,It's true.
@@ -3445,7 +3455,11 @@ season,episode,title,scene,speaker,line
 2,9,E-Mail Surveillance,616,Phyllis,Dwight...
 2,9,E-Mail Surveillance,616,Michael,"Wow! Who opened the morgue for this thing? I'm just driving by, thought I'd drop in.  There's some wine. I would love a glass, if you're gonna open it. Here ya go Temp, take my jacket!  Oh, come on! That guy? He is a good guy, not a terrorist. Karaoke, I love it! I am a karaoke fiend. I call dibs. I got next, I got next up. Come on, let's get this party started, ha! Ok? Where's that wine?"
 2,9,E-Mail Surveillance,617,Michael,"Ok, yeah, this is a duet, so, need somebody else, Pam? You wanna come up and sing this one? Need somebody else. Takers, please.  Baby when I met you there was peace unknown. Kelly? Tried to get you with a fine tooth comb. I was soft inside, there was something goin' on. This part goes to the, uh, girl. You do something to me that I can't explain. Hold me closer and I feel no pain. In every beat of my heart, we got something goin' on. Tender love is blind---"
+2,9,E-Mail Surveillance,617,Michael," It requires a dedication, all this love we feel needs no conversation. Divided, together, uh huh. Making love with each other, uh huh."
+2,9,E-Mail Surveillance,617,Jim," It requires a dedication, all this love we feel needs no conversation. Divided, together, uh huh. Making love with each other, uh huh."
 2,9,E-Mail Surveillance,617,Michael,We're making love!
+2,9,E-Mail Surveillance,617,Michael," Islands in the stream, that is what we are, no one in between, how can we be wrong? Sail away with me..."
+2,9,E-Mail Surveillance,617,Jim," Islands in the stream, that is what we are, no one in between, how can we be wrong? Sail away with me..."
 2,9,E-Mail Surveillance,618,Michael,Talk! Just talk!
 2,9,E-Mail Surveillance,618,Michael,Shut up!
 2,10,Christmas Party,620,Dwight,Go. Get the door.
@@ -3479,6 +3493,8 @@ season,episode,title,scene,speaker,line
 2,10,Christmas Party,627,Michael,"I want people to cut loose. I want people making out in closets. I want people hanging from the ceilings, lamp shades on the heads. I want it to be a Playboy Mansion party. And also, I want you to spread the word that I will have my digital camera. And I'll be taking pictures all along the way. And the best and craziest thing that happens will be on the cover of the newsletter. Incentive."
 2,10,Christmas Party,627,Pam,You do realize that we can't serve liquor at the party.
 2,10,Christmas Party,627,Michael,"Yeah, I know. Damn it. Stupid corporate wet blankets. Like booze ever killed anybody."
+2,10,Christmas Party,628,Kevin,"One, two, three. "
+2,10,Christmas Party,628,Oscar,"One, two, three. "
 2,10,Christmas Party,628,Dwight,You guys should use a hand truck.
 2,10,Christmas Party,628,Kevin,Do we have one?
 2,10,Christmas Party,628,Dwight,No.
@@ -3648,6 +3664,10 @@ season,episode,title,scene,speaker,line
 2,10,Christmas Party,667,Ryan,We're running low on cups. Do you want me to just run out and get some?
 2,10,Christmas Party,667,Angela,There should be some ..
 2,10,Christmas Party,667,Michael,"No, no, no, no. We'll find some, don't leave the party."
+2,10,Christmas Party,668,Phyllis,"One, two, three. "
+2,10,Christmas Party,668,Meredith,"One, two, three. "
+2,10,Christmas Party,668,Michael,"One, two, three. "
+2,10,Christmas Party,668,Kevin,"One, two, three. "
 2,10,Christmas Party,668,Michael,"Kudos to Ryan, king of the party committee."
 2,10,Christmas Party,668,Ryan,"Oh, no."
 2,10,Christmas Party,668,Michael,"Yeah, yeah, yeah."
@@ -3803,6 +3823,7 @@ season,episode,title,scene,speaker,line
 2,11,Booze Cruise,705,Dwight,What do you do with a drunken sailor? What do you do with a drunken sailor? What do you do with a drunken sailor early in the morning?
 2,11,Booze Cruise,705,Angela,"Hey, come inside and talk to me."
 2,11,Booze Cruise,705,Dwight,"I can't. Do you want us to run aground, woman?!"
+2,11,Booze Cruise,706,Darryl,Snorkel shot! Snorkel shot!
 2,11,Booze Cruise,706,Roy,"Whoo! Who's next? Come on, Pam! Come on! Come on!"
 2,11,Booze Cruise,706,Pam,"No, I'm not going to do that."
 2,11,Booze Cruise,706,Roy,Come on!
@@ -3911,6 +3932,8 @@ season,episode,title,scene,speaker,line
 2,12,The Injury,723,Jim,"It's broken right, he can't..."
 2,12,The Injury,723,Pam,Oh my gosh.
 2,12,The Injury,723,Jim,"Oh Dwight, Dwight,  Ohhhhhh!"
+2,12,The Injury,723,Jim,Oh my God!
+2,12,The Injury,723,Pam,Oh my God!
 2,12,The Injury,723,Pam,Is he ok?
 2,12,The Injury,723,Jim,"He's still driving... Dwight, you forgot your bumper!"
 2,12,The Injury,723,Michael,Hellooo? ... Please don't send Dwight!
@@ -4449,6 +4472,7 @@ season,episode,title,scene,speaker,line
 2,14,The Carpet,806,Michael,"What is it? No, just tell me what it is."
 2,14,The Carpet,806,Kevin," Michael, I ... I ... I gotta get outta here. I can't hold my breath that long."
 2,14,The Carpet,806,Pam,Open the door up!
+2,14,The Carpet,807,Pam," Phew. Oh! No, mm-mm. "
 2,14,The Carpet,807,Michael,I cannot believe a pipe burst and left that in there.
 2,14,The Carpet,807,Toby,That's no burst pipe.
 2,14,The Carpet,807,Michael,"How do you know that? What is it, then?"
@@ -4520,6 +4544,8 @@ season,episode,title,scene,speaker,line
 2,14,The Carpet,825,Oscar,"Hey, Michael."
 2,14,The Carpet,825,Michael,Ahem. What's up?
 2,14,The Carpet,825,Oscar,"Hey, Dwight."
+2,14,The Carpet,825,Michael," Ahhhh! Whoo hoo! Come on, come on, come on, come on! Sales rules!"
+2,14,The Carpet,825,Dwight," Ahhhh! Whoo hoo! Come on, come on, come on, come on! Sales rules!"
 2,14,The Carpet,825,Dwight,Yeah! 
 2,14,The Carpet,825,Michael,Yeah! Oh ho ho 
 2,14,The Carpet,825,Dwight,Should we help 'em pick up their stuff?
@@ -5211,6 +5237,8 @@ season,episode,title,scene,speaker,line
 2,18,Take Your Daughter to Work Day,993,Michael,They're cool.
 2,18,Take Your Daughter to Work Day,993,Pam,"Michael, I think that as the boss you should really---"
 2,18,Take Your Daughter to Work Day,993,Michael,"Fine, fine, fine, fine, fine, fine, fine. Hi, children. I'm Michael Scott, and... I... am in charge of this place... ahh, what'll make you... understand... I am... like Superman, and the people who work here are like citizens of Gotham City."
+2,18,Take Your Daughter to Work Day,993,Jim,That's Batman.
+2,18,Take Your Daughter to Work Day,993,Dwight,That's Batman.
 2,18,Take Your Daughter to Work Day,993,Michael,"Okay, I'm Aquaman. Where does he live, guys?"
 2,18,Take Your Daughter to Work Day,993,Jim,The ocean.
 2,18,Take Your Daughter to Work Day,993,Michael,I work with a bunch of nerds.
@@ -5368,7 +5396,11 @@ season,episode,title,scene,speaker,line
 2,18,Take Your Daughter to Work Day,1029,Michael,You... who are on the road... must have a code... that you can live by...  and so... become yourself... because the past... is just a goodbye... and teach... your children well...
 2,18,Take Your Daughter to Work Day,1029,Jim,Why does he own a guitar if he doesn't know how to play?
 2,18,Take Your Daughter to Work Day,1029,Pam,I think he thought his ukulele skills would transfer. 
+2,18,Take Your Daughter to Work Day,1029,Michael,...did slowly go by... and feed... them on your dreams...
+2,18,Take Your Daughter to Work Day,1029,Dwight,...did slowly go by... and feed... them on your dreams...
 2,18,Take Your Daughter to Work Day,1029,Pam,My theory is that... 
+2,18,Take Your Daughter to Work Day,1029,Michael,...The one they picked... the one you'll know by... don't you ever ask them why... if I told you would cry... you never look at them and sigh... and know they love you...
+2,18,Take Your Daughter to Work Day,1029,Dwight,...The one they picked... the one you'll know by... don't you ever ask them why... if I told you would cry... you never look at them and sigh... and know they love you...
 2,18,Take Your Daughter to Work Day,1029,Dwight,"And they do, your parents, love you very much."
 2,18,Take Your Daughter to Work Day,1029,Michael,One more time.  You...
 2,19,Michael's Birthday,1031,Michael,"So, Phil recruited me to sell these cards, and now I am recruiting you."
@@ -6455,6 +6487,8 @@ season,episode,title,scene,speaker,line
 3,2,The Convention,1276,Dwight,I got it.
 3,2,The Convention,1276,Dwight,Um.
 3,2,The Convention,1276,Michael,Um.
+3,2,The Convention,1276,Dwight," Um, um, um..."
+3,2,The Convention,1276,Michael," Um, um, um..."
 3,2,The Convention,1277,Creed,There's my girl. I noticed you handing out some shekels. How would one get on that train?
 3,2,The Convention,1277,Angela,"That was for per diem, for Philadelphia."
 3,2,The Convention,1277,Meredith,That town smells like cheese steaks.
@@ -6574,6 +6608,8 @@ season,episode,title,scene,speaker,line
 3,2,The Convention,1299,Michael,Okay! Excellent. Oh...
 3,2,The Convention,1299,Dwight,Keep the wing flaps.
 3,2,The Convention,1299,Michael,"Shut it.  Hey, Pam, what's up? Yep, yech... no. Tell him I will give him general specifics tomorrow, okay? Yes.  Say hi to Pam!"
+3,2,The Convention,1299,Jim,"Hi, Pam."
+3,2,The Convention,1299,Dwight,"Hi, Pam."
 3,2,The Convention,1299,Michael,"Yes. That is Josh and Dwight and Jim.  Pam says hi.  Have fun on your date! Very good, talk to you later. Bye."
 3,2,The Convention,1300,Michael,You first.
 3,2,The Convention,1300,Dwight,"Come on. Nice try, Josh!"
@@ -6879,6 +6915,7 @@ season,episode,title,scene,speaker,line
 3,4,Grief Counseling,1368,Pam,"Hey Michael, would you get me some coffee from the warehouse?"
 3,4,Grief Counseling,1368,Michael,"There's coffee in the kitchen, Pam."
 3,4,Grief Counseling,1368,Pam,But the warehouse coffee tastes SO much better.
+3,4,Grief Counseling,1368,Ryan,"Yeah. Yes, it's better. It's great."
 3,4,Grief Counseling,1368,Michael,All right. Okay. 
 3,4,Grief Counseling,1370,Pam,With cream and sugar?
 3,4,Grief Counseling,1370,Michael,All right.
@@ -7446,9 +7483,17 @@ season,episode,title,scene,speaker,line
 3,6,Diwali,1485,Andy,I went to the doctor. I went to the mountains. I looked to the children...
 3,6,Diwali,1485,Karen,"Andy, no acappella."
 3,6,Diwali,1485,Andy," I looked to the children, I drank from the fountain."
+3,6,Diwali,1485,Andy,There's more than one answer to these questions pointing me in a crooked line
+3,6,Diwali,1485,Jim,There's more than one answer to these questions pointing me in a crooked line
 3,6,Diwali,1485,Andy,"Wait, wait."
+3,6,Diwali,1485,Andy,the less I seek my source...
+3,6,Diwali,1485,Jim,the less I seek my source...
 3,6,Diwali,1485,Karen,"Oh, come on, guys. Please."
+3,6,Diwali,1485,Andy,the closer I am to fi-i-i-ne. The closer I am to..
+3,6,Diwali,1485,Jim,the closer I am to fi-i-i-ne. The closer I am to..
 3,6,Diwali,1485,Karen,It's not good.
+3,6,Diwali,1485,Andy,fi-i-i-ine!
+3,6,Diwali,1485,Jim,fi-i-i-ine!
 3,6,Diwali,1485,Andy,TUNA! Are you kidding me!!
 3,6,Diwali,1486,Michael,"Oh, God!  Oh. Wow."
 3,6,Diwali,1486,Pam,Here. 
@@ -7701,7 +7746,11 @@ season,episode,title,scene,speaker,line
 3,7,Branch Closing,1540,Dwight,"Stranford is closed! Michael, we're not closed. Stamford is closed. Stamford is closed."
 3,7,Branch Closing,1540,Michael,We did it? We did it.
 3,7,Branch Closing,1540,Dwight,We did it!
+3,7,Branch Closing,1540,Michael,We did it! We did it!
+3,7,Branch Closing,1540,Dwight,We did it! We did it!
 3,7,Branch Closing,1540,Michael,Right here! Right here! 
+3,7,Branch Closing,1540,Michael,Ouu! Ou! Ouu! Ouu!
+3,7,Branch Closing,1540,Dwight,Ouu! Ou! Ouu! Ouu!
 3,7,Branch Closing,1540,Michael,"Yeah, baby!"
 3,7,Branch Closing,1540,Dwight,In your face!
 3,7,Branch Closing,1540,Michael,We did it!
@@ -7907,6 +7956,8 @@ season,episode,title,scene,speaker,line
 3,8,The Merger,1572,Michael,"Sittin' in my office with a plate of grilled bacon, call my man Dwight just to see what was shakin'."
 3,8,The Merger,1572,Dwight,"Yo Mike, our town is dope and pretty."
 3,8,The Merger,1572,Michael,So check out how we live
+3,8,The Merger,1572,Michael,in the Electric City!
+3,8,The Merger,1572,Dwight,in the Electric City!
 3,8,The Merger,1572,Michael,They call it Scranton.
 3,8,The Merger,1572,Dwight,What?
 3,8,The Merger,1572,Michael,The Electric City. Scranton.
@@ -7915,6 +7966,8 @@ season,episode,title,scene,speaker,line
 3,8,The Merger,1572,Dwight,But check that it's covered by your health care provider!
 3,8,The Merger,1575,Michael,"You like coal mines and you wanna see 'em, Well, check it out, yo, the Anthracite Museum! Plenty of space in the parking lot,"
 3,8,The Merger,1575,Dwight,But the little cars go in the compact spot
+3,8,The Merger,1575,Michael,"Spot, spot, spot, spot ..."
+3,8,The Merger,1575,Dwight,"Spot, spot, spot, spot ..."
 3,8,The Merger,1576,Michael,Spot. Scranton. What? The Electric City. Scranton.What? The Electric City. Scranton. What?
 3,8,The Merger,1576,Michael,"Well, so far, I think it is killin'. I thought it would either be an 'A' or an 'A+' but I completely forgot that there's an 'A++'."
 3,8,The Merger,1577,Karen,This is Karen Filippelli. Please leave a message.
@@ -7979,11 +8032,15 @@ season,episode,title,scene,speaker,line
 3,8,The Merger,1588,Michael,"Yes, yes! Okay!"
 3,8,The Merger,1588,Andy,"Baby, don't hurt me."
 3,8,The Merger,1588,Michael,"Okay, here we go."
+3,8,The Merger,1588,Andy,"Don't hurt me! Baby, don't hurt me!"
+3,8,The Merger,1588,Michael,"Don't hurt me! Baby, don't hurt me!"
 3,8,The Merger,1588,Michael,Oh!
 3,8,The Merger,1588,Andy,"Baby, don't hurt me!"
 3,8,The Merger,1588,Michael,Oh! Oh! Oh!
 3,8,The Merger,1588,Andy,Whoa-oh-oh-oh
 3,8,The Merger,1588,Michael,Scuse me! Scuse me!
+3,8,The Merger,1588,Andy,Whoa-oh-oh-oh! Whoa-oh-oh...
+3,8,The Merger,1588,Michael,Whoa-oh-oh-oh! Whoa-oh-oh...
 3,8,The Merger,1588,Michael,You me? You me? Me you? You! You! You me! Bow Bow Bow!
 3,8,The Merger,1588,Andy,Whoa-oh-oh-oh.
 3,8,The Merger,1588,Michael,"You me? You me? Me you me! You! You! You me you! You! Oh my nose so itchy, why's my nose so itchy!"
@@ -8634,6 +8691,8 @@ season,episode,title,scene,speaker,line
 3,10,A Benihana Christmas (Parts 1&2),1690,Karen,"Yeah, thanks."
 3,10,A Benihana Christmas (Parts 1&2),1690,Pam,We'll go tell everyone.
 3,10,A Benihana Christmas (Parts 1&2),1690,Karen,OK.
+3,10,A Benihana Christmas (Parts 1&2),1691,Andy," And if you want love, we'll make it. Swim in a big sea of blankets. Take all your big plans and break 'em. This is bound to take awhile. Your body is a wonderland.  Your body is a wonderland."
+3,10,A Benihana Christmas (Parts 1&2),1691,Michael," And if you want love, we'll make it. Swim in a big sea of blankets. Take all your big plans and break 'em. This is bound to take awhile. Your body is a wonderland.  Your body is a wonderland."
 3,10,A Benihana Christmas (Parts 1&2),1691,Andy,Your hands.
 3,10,A Benihana Christmas (Parts 1&2),1691,Andy,I'll use my hands on it.
 3,10,A Benihana Christmas (Parts 1&2),1692,Kelly," Whatever we deny or embrace. For worse or for better. We belong, we belong, we belong together... Ryan..."
@@ -12838,6 +12897,8 @@ season,episode,title,scene,speaker,line
 4,5,Launch Party (Parts 1&2),2498,Jim,Oh I'm sorry. What?
 4,5,Launch Party (Parts 1&2),2498,Pam,One of the tickets is for him.
 4,5,Launch Party (Parts 1&2),2498,Michael,Just let me know who the winner is.
+4,5,Launch Party (Parts 1&2),2498,Pam,Not it.
+4,5,Launch Party (Parts 1&2),2498,Jim,Not it.
 4,5,Launch Party (Parts 1&2),2498,Jim,Nope.
 4,5,Launch Party (Parts 1&2),2498,Pam,I won.
 4,5,Launch Party (Parts 1&2),2498,Jim,Definitely not. If anything it was a tie.
@@ -13445,6 +13506,8 @@ season,episode,title,scene,speaker,line
 4,7,Money (Parts 1&2),2598,Michael,"I don't talk to my girlfriend about money. It is rude, and unsexual."
 4,7,Money (Parts 1&2),2598,Kevin,"True, it's best to hide our money problems from women."
 4,7,Money (Parts 1&2),2598,Michael,"I totally agree with you. But I don't have money problems, I don't. Alright, you know what? Watch this, if I had money problems, would I do this? "
+4,7,Money (Parts 1&2),2598,Oscar,You just put it back in your pocket.
+4,7,Money (Parts 1&2),2598,Stanley,You just put it back in your pocket.
 4,7,Money (Parts 1&2),2598,Michael,"Yeah, but I destroyed it, it's not even useable anymore."
 4,7,Money (Parts 1&2),2601,Kelly,"Well, I just need to know where this is going."
 4,7,Money (Parts 1&2),2601,Darryl,"Hey, I like you. Oh yeah, what's not to like? But you need to access your uncrazy side, otherwise maybe this thing's run its course."
@@ -13637,8 +13700,21 @@ season,episode,title,scene,speaker,line
 4,9,Local Ad,2650,Michael,Line it up Phyllis.
 4,9,Local Ad,2650,Creed,Get her Phyll.
 4,9,Local Ad,2651,Darryl," Out of paper, out of stock, there's friendly faces around the block, break loose from the chains that are causing your pain."
+4,9,Local Ad,2651,Andy,"Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs."
+4,9,Local Ad,2651,Creed,"Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs."
+4,9,Local Ad,2651,Kevin,"Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs."
+4,9,Local Ad,2651,Kelly,"Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs."
+4,9,Local Ad,2651,Darryl,"Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs."
 4,9,Local Ad,2651,Darryl,Dunder Mifflin.
+4,9,Local Ad,2651,Andy,The people person's paper people.
+4,9,Local Ad,2651,Creed,The people person's paper people.
+4,9,Local Ad,2651,Kevin,The people person's paper people.
+4,9,Local Ad,2651,Kelly,The people person's paper people.
 4,9,Local Ad,2651,Darryl,Dunder Mifflin.
+4,9,Local Ad,2651,Andy,The people person's paper people.
+4,9,Local Ad,2651,Creed,The people person's paper people.
+4,9,Local Ad,2651,Kevin,The people person's paper people.
+4,9,Local Ad,2651,Kelly,The people person's paper people.
 4,9,Local Ad,2651,Michael,"Time out, time out, time out, time out, time out. I thought... I was under the impression that this was going to be a rap."
 4,9,Local Ad,2651,Darryl,What's rap?
 4,9,Local Ad,2651,Michael,"Okay, Darryl, wow, you need to learn a lot about your own culture. I'll make you a mix."
@@ -13661,9 +13737,21 @@ season,episode,title,scene,speaker,line
 4,9,Local Ad,2653,Jim,"Ah, show me how this works."
 4,9,Local Ad,2653,Pam,Oh boy.
 4,9,Local Ad,2654,Darryl," Out of paper, out of stock, there's friendly faces around the block, break loose from the chains that are causing your pain. Call Michael, Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs. Call Dunder Mifflin."
+4,9,Local Ad,2654,Andy,The people person's paper people.
+4,9,Local Ad,2654,Creed,The people person's paper people.
+4,9,Local Ad,2654,Kevin,The people person's paper people.
+4,9,Local Ad,2654,Kelly,The people person's paper people.
 4,9,Local Ad,2654,Darryl,Dunder Mifflin.
+4,9,Local Ad,2654,Andy,The people person's paper people.
+4,9,Local Ad,2654,Creed,The people person's paper people.
+4,9,Local Ad,2654,Kevin,The people person's paper people.
+4,9,Local Ad,2654,Kelly,The people person's paper people.
 4,9,Local Ad,2654,Michael,Stop. Stop stop stop stop stop stop. This is not me. This is not my music.
 4,9,Local Ad,2654,Darryl,"You're right, it's better than you! It's us!  Dunder Mifflin."
+4,9,Local Ad,2654,Andy,The people person's paper people.
+4,9,Local Ad,2654,Creed,The people person's paper people.
+4,9,Local Ad,2654,Kevin,The people person's paper people.
+4,9,Local Ad,2654,Kelly,The people person's paper people.
 4,9,Local Ad,2654,Michael,"No, I hate it! I hate it! ...I don't hate it, I just don't like it at all. And it's terrible."
 4,9,Local Ad,2654,Darryl,"You're on your own, Mike. "
 4,9,Local Ad,2654,Michael,"Okay, you know what. Hold on, hold on Darryl."
@@ -13776,6 +13864,8 @@ season,episode,title,scene,speaker,line
 4,10,Branch Wars,2685,Michael,"That's the problem, that's the problem. We need rock n' roll Pam, rock n' roll. Alright?  Oh... My... God, that's why people are leaving. I- I have no words."
 4,10,Branch Wars,2686,Jim,We just passed the exit for Corcroan.
 4,10,Branch Wars,2686,Michael,What? What? We did?
+4,10,Branch Wars,2686,Dwight,"Surprise! Ha, ha, ha, ha, ha."
+4,10,Branch Wars,2686,Michael,"Surprise! Ha, ha, ha, ha, ha."
 4,10,Branch Wars,2686,Michael,Look at his face! Look at his face!
 4,10,Branch Wars,2686,Jim,What are we doing?
 4,10,Branch Wars,2686,Dwight,"Egg dripping, blah, blah, blah."
@@ -13788,6 +13878,10 @@ season,episode,title,scene,speaker,line
 4,10,Branch Wars,2686,Michael,"Yes you are. Oh, buckle up Jim."
 4,10,Branch Wars,2686,Jim,No.
 4,10,Branch Wars,2686,Michael,We are going to make Karen wish that she had never been dumped by you.
+4,10,Branch Wars,2686,Michael,Utica! Utica! Utica!
+4,10,Branch Wars,2686,Dwight,Utica! Utica! Utica!
+4,10,Branch Wars,2687,Michael,Utica! Utica!
+4,10,Branch Wars,2687,Dwight,Utica! Utica!
 4,10,Branch Wars,2687,Michael,In your face
 4,10,Branch Wars,2687,Dwight,Yow!
 4,10,Branch Wars,2687,Jim,I can't believe you guys. I'm not going to go further piss off my ex-girlfriend.
@@ -15305,6 +15399,8 @@ season,episode,title,scene,speaker,line
 4,17,Job Fair,2940,Dwight,Maybe he's going to church. Or court.
 4,17,Job Fair,2940,Darryl,Figured I look presentable.  You?  Went a different way.
 4,17,Job Fair,2940,Pam,I think you look nice.
+4,17,Job Fair,2940,Michael,Thank you.
+4,17,Job Fair,2940,Darryl,Thank you.
 4,17,Job Fair,2940,Michael,"Okay, here's what we're going to do: I'm going to instruct the kids about management and sales. Oscar will be in charge of accounting. Pam will be eye candy. No... uh, also, because that is your alma mater. Darryl will hire some kids for the warehouse. We don't have to worry about internships with them, because they definitely ain't going to college."
 4,17,Job Fair,2940,Darryl,What college did you go to Mike?
 4,17,Job Fair,2940,Michael,Let's go!
@@ -15370,6 +15466,8 @@ season,episode,title,scene,speaker,line
 4,17,Job Fair,2960,Pam,Okay.
 4,17,Job Fair,2961,Jim,"You know, you can just pick it up, take the triple bogey."
 4,17,Job Fair,2961,Jim,Yep. 
+4,17,Job Fair,2962,Angela,
+4,17,Job Fair,2962,Dwight,
 4,17,Job Fair,2963,Andy," AH! Come on, Tuna!"
 4,17,Job Fair,2963,Jim,"Hey, can't really talk now, what's up?"
 4,17,Job Fair,2963,Pam,"Just checking in, how's it going?"
@@ -16378,6 +16476,8 @@ season,episode,title,scene,speaker,line
 5,3,Business Ethics,3155,Jim,Yep. 
 5,3,Business Ethics,3155,Pam,Sorry.
 5,3,Business Ethics,3158,Dwight," I got it, I got it. "
+5,3,Business Ethics,3158,Michael,Let's get ethical! Ethical! I wanna get ethical! Let's get into Ethics yeah! Let me hear that Dunder Mifflin talk! Your body talk. Let me hear your body talk.
+5,3,Business Ethics,3158,Holly,Let's get ethical! Ethical! I wanna get ethical! Let's get into Ethics yeah! Let me hear that Dunder Mifflin talk! Your body talk. Let me hear your body talk.
 5,3,Business Ethics,3158,Michael,WOO! Alright!
 5,3,Business Ethics,3160,Michael,"Ok, let's give it for Miss... Holly Flaaaax! "
 5,3,Business Ethics,3160,Holly,"Thanks Michael.  Today we're going to have a business ethics seminar because recently, without mentioning any names, there has been some misconduct at corporate and we have a very strict ethics policy and that employee has been fired."
@@ -17096,6 +17196,10 @@ season,episode,title,scene,speaker,line
 5,6,Employee Transfer,3273,Michael,Cool!
 5,6,Employee Transfer,3273,Darryl,Mike you'll drive this every weekend?
 5,6,Employee Transfer,3273,Michael,"We're gonna switch back and forth, the driving. Sometimes we'll just meet in the middle. It'll be fun. Wait a sec. Oh I love this song."
+5,6,Employee Transfer,3273,Michael,"Life is a highway, I want to ride it all night long."
+5,6,Employee Transfer,3273,Holly,"Life is a highway, I want to ride it all night long."
+5,6,Employee Transfer,3273,Michael,"If you're going my way, I wanna drive you all night long! If you're going my way..."
+5,6,Employee Transfer,3273,Darryl,"If you're going my way, I wanna drive you all night long! If you're going my way..."
 5,6,Employee Transfer,3274,Dwight,"Hey there. So uh, how do you think we're gonna do against Penn this year? Nathan Ford's arm looks pretty strong."
 5,6,Employee Transfer,3274,Andy,"Well he's had a pretty good season so far--- Stop saying ""we."" You did not go to Cornell. Okay, you're just doing this to screw with me."
 5,6,Employee Transfer,3274,Dwight,"Not so. Cornell is an excellent school. Without its agricultural program, we probably wouldn't have cabbage. At least not modern cabbage."
@@ -17344,6 +17448,8 @@ season,episode,title,scene,speaker,line
 5,7,Customer Survey,3307,Pam,"It's the world's tiniest Bluetooth. I found it in a Japanese gadget store in the village. I got one for Jim, too. Jim, say something."
 5,7,Customer Survey,3307,Jim," Testing, testing. Hello, everybody."
 5,7,Customer Survey,3307,Pam,"We wanted to stay on the phone all day, but the company has a policy against eight-hour personal calls. So we're not telling anyone."
+5,7,Customer Survey,3307,Jim,Sprinkle of cinnamon.
+5,7,Customer Survey,3307,Pam,Sprinkle of cinnamon.
 5,7,Customer Survey,3307,Pam,I should go.
 5,7,Customer Survey,3308,Michael,"Alrighty, Dwighty, let's see how you did."
 5,7,Customer Survey,3308,Dwight,Bring it on. 
@@ -19134,6 +19240,8 @@ season,episode,title,scene,speaker,line
 5,13,Prince Family Paper,3527,Dwight,Thank you very much.
 5,13,Prince Family Paper,3527,Michael,I cannot wait to contact your clients.
 5,13,Prince Family Paper,3527,Dwight,Thank you for your time I look forward to getting your calls. 
+5,13,Prince Family Paper,3527,Dwight,"Oh my God, oh my God, oh my God. "
+5,13,Prince Family Paper,3527,Michael,"Oh my God, oh my God, oh my God. "
 5,13,Prince Family Paper,3527,Michael,"Haha, we struck the mother load!"
 5,13,Prince Family Paper,3527,Dwight,Cmon.
 5,13,Prince Family Paper,3527,Michael,Wallace is going to freak.
@@ -19274,6 +19382,8 @@ season,episode,title,scene,speaker,line
 5,14,Stress Relief (Parts 1&2),3540,Andy,The fire's shooting at us!
 5,14,Stress Relief (Parts 1&2),3540,Phyllis,What in the name of God is going on?!
 5,14,Stress Relief (Parts 1&2),3540,Andy,"Yes!  Yes, ba-- Yes, battering ram! Battering ram!"
+5,14,Stress Relief (Parts 1&2),3540,Phyllis,Ahhhh!!! 
+5,14,Stress Relief (Parts 1&2),3540,Creed,Ahhhh!!! 
 5,14,Stress Relief (Parts 1&2),3540,Andy,"Go, go, go, go, go!! "
 5,14,Stress Relief (Parts 1&2),3540,Michael,Help!! Help!!
 5,14,Stress Relief (Parts 1&2),3540,Stanley,I'm about to die!
@@ -19999,6 +20109,14 @@ season,episode,title,scene,speaker,line
 5,18,Blood Drive,3671,Pam,Ayyyy!
 5,18,Blood Drive,3671,Michael,Ayyyy!
 5,18,Blood Drive,3671,Jim,Ayyyy!
+5,18,Blood Drive,3671,Dwight,Ayyyy!
+5,18,Blood Drive,3671,Jim,Ayyyy!
+5,18,Blood Drive,3671,Pam,Ayyyy!
+5,18,Blood Drive,3671,Michael,Ayyyy!
+5,18,Blood Drive,3671,Dwight,Ayyyy!
+5,18,Blood Drive,3671,Jim,Ayyyy!
+5,18,Blood Drive,3671,Pam,Ayyyy!
+5,18,Blood Drive,3671,Michael,Ayyyy!
 5,18,Blood Drive,3671,Dwight,Ayyyy!
 5,18,Blood Drive,3671,Michael,What was that?
 5,18,Blood Drive,3671,Pam,That was funny.
@@ -20908,6 +21026,8 @@ season,episode,title,scene,speaker,line
 5,21,Two Weeks,3799,Kelly,"Yep, we were in the middle of something so why don't you just..."
 5,21,Two Weeks,3799,Angela,"Okay, um, actually you know it was so much fun last year. There was a Sunday-bar. I mean I didn't have any, you know, to stay trim."
 5,21,Two Weeks,3799,Charles,Did Michael just let anybody in his office?
+5,21,Two Weeks,3799,Angela,"Yep! Yeah. He just loved having people, communicating all the time. He was like 'Come on in!"""
+5,21,Two Weeks,3799,Kelly,"Yep! Yeah. He just loved having people, communicating all the time. He was like 'Come on in!"""
 5,21,Two Weeks,3801,Kelly,So you should be heading back to your desk.
 5,21,Two Weeks,3801,Angela,Okay. Bye Charles. Well you'll let me know. Good bye.
 5,21,Two Weeks,3801,Kelly,She's such a special person. And she's turning 50 this year.
@@ -21499,7 +21619,11 @@ season,episode,title,scene,speaker,line
 5,23,The Michael Scott Paper Company,3894,Dwight,"Oh it's good, you're coming along. It's really technically proficient but really there's no heart or soul in it."
 5,23,The Michael Scott Paper Company,3894,Andy,Really?
 5,23,The Michael Scott Paper Company,3894,Dwight,Hey you want to sing with me? Almost heaven...
+5,23,The Michael Scott Paper Company,3894,Dwight,"West Virginia, Blue Ridge mountain, Shenandoah River "
+5,23,The Michael Scott Paper Company,3894,Erin,"West Virginia, Blue Ridge mountain, Shenandoah River "
 5,23,The Michael Scott Paper Company,3894,Dwight,"In German! Leben ist dort alt, alter als die Baume, Junger als die Berge, wie eine Brise blasend"
+5,23,The Michael Scott Paper Company,3894,Dwight,"Take me home, country roads, to the place, I belong. West Virginia, mountain momma, take me home, country roads. "
+5,23,The Michael Scott Paper Company,3894,Andy,"Take me home, country roads, to the place, I belong. West Virginia, mountain momma, take me home, country roads. "
 5,23,The Michael Scott Paper Company,3894,Dwight,"Take it Andy! Take me home, to the place I belong, Ba bah dah duh"
 5,23,The Michael Scott Paper Company,3894,Toby,You have to stop. 
 5,23,The Michael Scott Paper Company,3895,Michael,"I once had a dream. That I was eating a peanut butter and tuna fish sandwich. And, let me tell you something it was delicious. So the next day, I decided to make that sandwich. And in real life it is disgusting.  It is a disgusting sandwich.  And the reason I tell you this story.  Pick up the phone."
@@ -21583,6 +21707,9 @@ season,episode,title,scene,speaker,line
 5,24,Heavy Competition,3908,Michael,"Good, you take the lead on this one. Also, do not forget that he has just gone through a messy divorce."
 5,24,Heavy Competition,3908,Ryan,"Oh, awesome."
 5,24,Heavy Competition,3908,Michael,Bring it in. Morning cheer. 
+5,24,Heavy Competition,3908,Michael,"U-G-L-Y, you ain't got no alibi! You ugly, huh huh, you ugly! You mama says you ugly! Hey! Go Michael Scott Paper Company!"
+5,24,Heavy Competition,3908,Pam,"U-G-L-Y, you ain't got no alibi! You ugly, huh huh, you ugly! You mama says you ugly! Hey! Go Michael Scott Paper Company!"
+5,24,Heavy Competition,3908,Ryan,"U-G-L-Y, you ain't got no alibi! You ugly, huh huh, you ugly! You mama says you ugly! Hey! Go Michael Scott Paper Company!"
 5,24,Heavy Competition,3910,Dwight,You needed to speak to me?
 5,24,Heavy Competition,3910,Charles,"Dwight, take a seat."
 5,24,Heavy Competition,3910,Dwight,I prefer to stand. Less blood clots.
@@ -22836,14 +22963,20 @@ season,episode,title,scene,speaker,line
 6,1,Gossip,4091,Andy,Parkour!
 6,1,Gossip,4091,Dwight,Extreme! Parkour!
 6,1,Gossip,4091,Jim,"This... is Parkour.  Internet sensation of 2004. And it was in one of the Bond films. It's pretty impressive.  The goal is to get from point A to point B as creatively as possible, so technically they are doing Parkour, as long as point A is delusion and point B is the hospital."
+6,1,Gossip,4091,Dwight,Parkour! Parkour!
+6,1,Gossip,4091,Andy,Parkour! Parkour!
 6,1,Gossip,4091,Dwight,Andy! Leapfrog! 
 6,1,Gossip,4091,Andy,Do me! Do me!
 6,1,Gossip,4091,Dwight,Yeah!  Parkour! Parkour!
 6,1,Gossip,4091,Andy,Ow! Get off! Get off!
 6,1,Gossip,4091,Dwight,Okay.
+6,1,Gossip,4091,Andy,Parkour! Parkour!
+6,1,Gossip,4091,Michael,Parkour! Parkour!
 6,1,Gossip,4091,Dwight,Jump over the camera! Jump over the camera! 
 6,1,Gossip,4091,Michael," Okay, we all go together or we go one at a time."
 6,1,Gossip,4091,Andy,"Here it is, here it is... truck, to refrigerators, to dumpster,  360 onto the pallets, backflip gainer to the trash can."
+6,1,Gossip,4091,Michael,Yeah! Gainer! Woohoo!
+6,1,Gossip,4091,Dwight,Yeah! Gainer! Woohoo!
 6,1,Gossip,4091,Andy,Hardcore Parkour!
 6,1,Gossip,4091,Michael,Parkoooooour!
 6,1,Gossip,4091,Dwight,Let's do it!
@@ -23961,6 +24094,8 @@ season,episode,title,scene,speaker,line
 6,4,Niagara (Parts 1&2),4233,Jim,No. Let's talk for a long time.
 6,4,Niagara (Parts 1&2),4233,Pam,Goodbye. 
 6,4,Niagara (Parts 1&2),4234,Michael,Mmm! It's after midnight. 
+6,4,Niagara (Parts 1&2),4234,Michael,You're married.  He's married!
+6,4,Niagara (Parts 1&2),4234,Dwight,You're married.  He's married!
 6,4,Niagara (Parts 1&2),4234,Dwight,Congratulations.
 6,4,Niagara (Parts 1&2),4234,Jim,That's not how that works.
 6,4,Niagara (Parts 1&2),4234,Dwight,Oh my goodness.
@@ -24078,6 +24213,7 @@ season,episode,title,scene,speaker,line
 6,4,Niagara (Parts 1&2),4255,Michael,It is a terrible year for love.
 6,4,Niagara (Parts 1&2),4255,Michael,I'm thinking about having my sperm frozen.
 6,4,Niagara (Parts 1&2),4255,Michael,"Oh, wow. That sounds hilarious. I do actually.  There you go. Use it in good health."
+6,4,Niagara (Parts 1&2),4255,Pete,Yes!
 6,4,Niagara (Parts 1&2),4256,Meredith,"Whoa, whoa. Wait a minute. What is the etiquette on taking the gifts? Can you only take your own back or is it a whatever you can carry type of thing?"
 6,4,Niagara (Parts 1&2),4256,Stanley,Anyone have anything they want to trade for a toaster?
 6,4,Niagara (Parts 1&2),4256,Kevin,"Oh, oh, does it have slots for hot dogs?"
@@ -24163,6 +24299,8 @@ season,episode,title,scene,speaker,line
 6,6,Mafia,4273,Michael,Okay.
 6,6,Mafia,4273,Ryan,What you have are specific families. What's the guy's last name?
 6,6,Mafia,4273,Michael,"Um it is, Grotti."
+6,6,Mafia,4273,Andy,Oh no. Fabulous.
+6,6,Mafia,4273,Dwight,Oh no. Fabulous.
 6,6,Mafia,4273,Oscar,What? What?
 6,6,Mafia,4273,Andy,"It's John Gotti, you idiot!"
 6,6,Mafia,4273,Oscar,"It's, it's a completely different name!"
@@ -24368,6 +24506,8 @@ season,episode,title,scene,speaker,line
 6,6,Mafia,4291,Dwight,"That's good, let's wrap it up."
 6,6,Mafia,4291,Michael,"How about that? The only person that actually needs insurance is you, if you show your face around here again, got it?"
 6,6,Mafia,4291,Michael,Doubt it. 
+6,6,Mafia,4291,Dwight,Oh man.
+6,6,Mafia,4291,Andy,Oh man.
 6,6,Mafia,4291,Michael,What a tool.  What?
 6,6,Mafia,4291,Andy,"Next time you look in the mirror, you're gonna be looking at a guy who stood down the mafia!"
 6,6,Mafia,4291,Michael,No. What do you mean?
@@ -25577,6 +25717,8 @@ season,episode,title,scene,speaker,line
 6,11,Shareholder Meeting,4477,Michael,"Hey, you know who you should be jealous of? Yourself. Because you're invited and you're invited and you're invited and you and you and you and you and you and you-"
 6,11,Shareholder Meeting,4477,Michael,What?
 6,11,Shareholder Meeting,4477,Michael,The limo seats eight. Ok. Then Jim and Pam and Ryan plus a guest.
+6,11,Shareholder Meeting,4477,Jim,No thanks.
+6,11,Shareholder Meeting,4477,Pam,No thanks.
 6,11,Shareholder Meeting,4477,Ryan,I'll use it when you're done.
 6,11,Shareholder Meeting,4477,Michael,Mmm... whoa.
 6,11,Shareholder Meeting,4479,Michael,I wish the windows weren't tinted so people could see us in here.
@@ -25947,6 +26089,8 @@ season,episode,title,scene,speaker,line
 6,12,Scott's Tots,4543,Michael,"You know, when I hired Kevin, he was actually applying for a job in the warehouse."
 6,12,Scott's Tots,4543,Erin,Seriously?
 6,12,Scott's Tots,4543,Michael,Yeah. I just sort've had a feeling about him. I have a feeling about you too.
+6,12,Scott's Tots,4543,Michael,"Hey Mr. Scott, What you gonna do, What you gonna do make our dreams come true. Hey Mr. Scott, What you gonna do, What you gonna do make our dreams come true."
+6,12,Scott's Tots,4543,Erin,"Hey Mr. Scott, What you gonna do, What you gonna do make our dreams come true. Hey Mr. Scott, What you gonna do, What you gonna do make our dreams come true."
 6,12,Scott's Tots,4544,Jim,"See you tomorrow, Dwight."
 6,12,Scott's Tots,4544,Dwight,Apparently.
 6,12,Scott's Tots,4544,Ryan,How's it going? Good day?
@@ -26111,6 +26255,8 @@ season,episode,title,scene,speaker,line
 6,13,Secret Santa,4568,Andy,"Hey Phyllis, could you not reveal to Erin that I'm her Secret Santa?"
 6,13,Secret Santa,4568,Phyllis,"All right sweetie, I'll tell her its Michael."
 6,13,Secret Santa,4568,Andy,Okay.
+6,13,Secret Santa,4569,Kelly," I saw three ships come sailing in, on Christmas day, on Christmas day..."
+6,13,Secret Santa,4569,Erin," I saw three ships come sailing in, on Christmas day, on Christmas day..."
 6,13,Secret Santa,4569,Pam,Have you talked to him?
 6,13,Secret Santa,4569,Oscar,Who?
 6,13,Secret Santa,4569,Pam,Matt?
@@ -26394,8 +26540,12 @@ season,episode,title,scene,speaker,line
 6,15,Sabre,4619,Dwight,Oh. Of course.
 6,15,Sabre,4619,Michael,"Yes, say-ber. Good. Take it away guys."
 6,15,Sabre,4619,Andy,Ok. 
+6,15,Sabre,4619,Andy," Hopped off the train in Scranton, PA, another cloudy gray afternoon. Jumped in the cab, here you are for the first time, look to the right see the ""Electric City"" sign. This is gonna be good day, for Dunder Mifflin and Sob-ray. Sab - "
+6,15,Sabre,4619,Erin," Hopped off the train in Scranton, PA, another cloudy gray afternoon. Jumped in the cab, here you are for the first time, look to the right see the ""Electric City"" sign. This is gonna be good day, for Dunder Mifflin and Sob-ray. Sab - "
 6,15,Sabre,4619,Michael,Saber.
 6,15,Sabre,4619,Andy,"Saber.  Dunder Mifflin and Saber. So yeah, yeah, yay, yay."
+6,15,Sabre,4619,Andy,"Dunder Mifflin is a part of Sob-ray. So yeah, yeah, yay, yay. Dunder Mifflin is a part of Sabre. "
+6,15,Sabre,4619,Erin,"Dunder Mifflin is a part of Sob-ray. So yeah, yeah, yay, yay. Dunder Mifflin is a part of Sabre. "
 6,15,Sabre,4619,Andy,You sure it's saber?
 6,15,Sabre,4620,Pam,Hey.
 6,15,Sabre,4620,Jim,"Thank you. Hey, we should be fine if we leave around 11:20."
@@ -26577,6 +26727,8 @@ season,episode,title,scene,speaker,line
 6,16,The Manager and the Salesman,4653,Michael,Oh.
 6,16,The Manager and the Salesman,4653,Dwight,Thank you.
 6,16,The Manager and the Salesman,4653,Michael,That's it!
+6,16,The Manager and the Salesman,4653,Michael,"Uh-huh, okay..."
+6,16,The Manager and the Salesman,4653,Dwight,"Uh-huh, okay..."
 6,16,The Manager and the Salesman,4653,Michael,"Alright, I would like to cancel my reservation, please."
 6,16,The Manager and the Salesman,4653,Michael,"Okay, put it on my card."
 6,16,The Manager and the Salesman,4655,Michael,Why hello!
@@ -27054,6 +27206,9 @@ season,episode,title,scene,speaker,line
 6,17,The Delivery (Parts 1&2),4718,Erin,I didn't know we had a tape measure.
 6,17,The Delivery (Parts 1&2),4718,Dwight," ""We"" don't."
 6,17,The Delivery (Parts 1&2),4718,Jim,"Okay, I can't find my keys! I cannot find my keys! Found 'em. They're here."
+6,17,The Delivery (Parts 1&2),4718,Dwight,Here we go!
+6,17,The Delivery (Parts 1&2),4718,Jim,Here we go!
+6,17,The Delivery (Parts 1&2),4718,Michael,Here we go!
 6,17,The Delivery (Parts 1&2),4718,Phyllis,Good luck!
 6,17,The Delivery (Parts 1&2),4718,Michael,Thank you! Wish me luck!
 6,17,The Delivery (Parts 1&2),4718,Creed,Have fun! 
@@ -27504,9 +27659,17 @@ season,episode,title,scene,speaker,line
 6,19,St. Patrick's Day,4786,Jim,Whether it's this time or next time.
 6,19,St. Patrick's Day,4786,Andy," ""The cat's in the cradle and the silver spoon"""
 6,19,St. Patrick's Day,4786,Jim,Yeah.
+6,19,St. Patrick's Day,4786,Andy," ""Little boy blue and the man in the moon."""
+6,19,St. Patrick's Day,4786,Dwight," ""Little boy blue and the man in the moon."""
 6,19,St. Patrick's Day,4786,Jim,"No, we definitely can talk about it in the next--"
+6,19,St. Patrick's Day,4786,Andy,"""When you coming home Dad?"
+6,19,St. Patrick's Day,4786,Dwight,"""When you coming home Dad?"
 6,19,St. Patrick's Day,4786,Jim,"You know, can I call you back?"
+6,19,St. Patrick's Day,4786,Andy,"""I don't know when-"""
+6,19,St. Patrick's Day,4786,Dwight,"""I don't know when-"""
 6,19,St. Patrick's Day,4786,Jim,"That would be great, thank you."
+6,19,St. Patrick's Day,4786,Andy,"""But we'll get together then, we're gonna have a good time-"""
+6,19,St. Patrick's Day,4786,Dwight,"""But we'll get together then, we're gonna have a good time-"""
 6,19,St. Patrick's Day,4789,Erin,This fax came for you. 
 6,19,St. Patrick's Day,4789,Jo,Oh no no no! Are you feeling ill?
 6,19,St. Patrick's Day,4789,Erin,Uh...
@@ -29001,6 +29164,8 @@ season,episode,title,scene,speaker,line
 6,25,The Chump,5032,Michael,"Oh! Oh wow, are those Eagles' flavors? Cake it to the Limit. That's my favorite! I love that! Too much for me to have by myself. Anybody wanna share?"
 6,25,The Chump,5032,Kevin,Boi-oi-oi-ing
 6,25,The Chump,5032,Michael,Okay. Well... that's random. I will dig into those later.
+6,25,The Chump,5033,Dwight,Joint custody
+6,25,The Chump,5033,Angela,Joint custody
 6,25,The Chump,5033,Angela,No.
 6,25,The Chump,5033,Dwight,No.
 6,25,The Chump,5034,Angela,"Rather than spend all day in court, we've decided to settle our dispute using a mediator. It was an option spelled out in our childrearing contract."
@@ -30238,6 +30403,8 @@ season,episode,title,scene,speaker,line
 7,4,s*x Ed,5258,Pam,Hey! Our baby was not a mistake. She was a surprise.
 7,4,s*x Ed,5258,Jim,Good!
 7,4,s*x Ed,5258,Darryl,"I'm sure they don't regret having their child, let's move it to the pros."
+7,4,s*x Ed,5258,Jim,Thank you!
+7,4,s*x Ed,5258,Pam,Thank you!
 7,4,s*x Ed,5258,Andy,"Ok, unplanned pregnancy, going in the pros column."
 7,4,s*x Ed,5259,Dwight,"Next stop is Helene. You're gonna wanna make a left on Willow, which is a little ways away, uh. I'll remind you."
 7,4,s*x Ed,5259,Michael,"You know, I don't know if I trust Jan's judgment. She..."
@@ -30488,6 +30655,8 @@ season,episode,title,scene,speaker,line
 7,5,The Sting,5291,Michael,Shhh! Hey! That's my mug.
 7,5,The Sting,5291,Jim,"You know this isn't real TV, right?"
 7,5,The Sting,5291,Michael,Yes.
+7,5,The Sting,5292,Darryl," Please Mr. President, if you wanna give hope a whirl, bring our troops home safe and sound, says this little girl."
+7,5,The Sting,5292,Andy," Please Mr. President, if you wanna give hope a whirl, bring our troops home safe and sound, says this little girl."
 7,5,The Sting,5292,Andy,Please Mr. President-
 7,5,The Sting,5292,Darryl,"One second, one second, one second.  So, this song is from the point of view of a little girl?"
 7,5,The Sting,5292,Andy,Yeah.
@@ -31088,6 +31257,8 @@ season,episode,title,scene,speaker,line
 7,7,Christening,5403,Andy,"If we went to Mexico, we'd probably screw everything up anyway."
 7,7,Christening,5403,Michael,"Do you want that for little Jessica? No, you don't. And the answer is clear. Stop the bus. Okay?"
 7,7,Christening,5403,Andy,Stop the bus!
+7,7,Christening,5403,Michael,Stop the bus! Stop the bus!
+7,7,Christening,5403,Andy,Stop the bus! Stop the bus!
 7,7,Christening,5403,Michael," Okay, well, a pleasure. Go save the world. We'll keep an eye on America for you."
 7,7,Christening,5404,Erin,Get in quick.
 7,7,Christening,5404,Michael,Why quick?
@@ -31393,6 +31564,8 @@ season,episode,title,scene,speaker,line
 7,9,WUPHF.com,5450,Ryan,You should've sent me a WUPHF.
 7,9,WUPHF.com,5450,Michael,A what?
 7,9,WUPHF.com,5450,Ryan," When you send a WUPHF, it goes to your home phone, Email, Facebook, Twitter and homescreen. All at the same time. "
+7,9,WUPHF.com,5450,Ryan,WUPHF!
+7,9,WUPHF.com,5450,Michael,WUPHF!
 7,9,WUPHF.com,5450,Michael,Dot com!
 7,9,WUPHF.com,5451,Ryan,Thanks Erin.
 7,9,WUPHF.com,5451,Erin,Sure.
@@ -31836,6 +32009,7 @@ season,episode,title,scene,speaker,line
 7,10,China,5509,Dwight,"Here it is, right here, pull over. Oh my God. No way. Man, look at that."
 7,10,China,5509,Dwight,There's no building. This could only mean one thing.
 7,10,China,5509,Dwight,"She was lying. Oh, Pam, Pam..."
+7,10,China,5509,Dwight,"Pam, Pam, Pam, Pam."
 7,10,China,5509,Dwight,What?
 7,10,China,5509,Dwight,Oh.
 7,10,China,5509,Dwight,I'm sorry. We have a colleague with the same name.
@@ -32756,6 +32930,9 @@ season,episode,title,scene,speaker,line
 7,14,The Seminar,5642,Jim,Hey.
 7,14,The Seminar,5642,Dwight,How are the marks?
 7,14,The Seminar,5643,Dwight,What are some of your small business ideas?
+7,14,The Seminar,5643,Phyllis,Oooh!
+7,14,The Seminar,5643,Stanley,Oooh!
+7,14,The Seminar,5643,Dwight,Oooh!
 7,14,The Seminar,5643,Dwight,"That's great. There's a big, big future in that."
 7,14,The Seminar,5643,Phyllis,A lot of mines in Scranton.
 7,14,The Seminar,5643,Dwight,"Um, what about you?"
@@ -32964,6 +33141,8 @@ season,episode,title,scene,speaker,line
 7,15,The Search,5682,Kelly,"We were having a beautiful weekend in the Poconos. We were making love, constantly. We saw the sunrise. Ryan was crying a lot."
 7,15,The Search,5682,Ryan,It's not irrelevant. Details
 7,15,The Search,5682,Kelly,"And in the morning we walked by a chapel and we stopped, suddenly, and Ryan said..."
+7,15,The Search,5682,Ryan,I don't think I should be married to you anymore.
+7,15,The Search,5682,Kelly,I don't think I should be married to you anymore.
 7,15,The Search,5682,Kevin,What?
 7,15,The Search,5682,Andy,"Sorry, when did you get married?"
 7,15,The Search,5682,Kelly,"Ummm, like a week ago, we got really wasted and it just felt right."
@@ -33145,6 +33324,8 @@ season,episode,title,scene,speaker,line
 7,15,The Search,5699,Holly,What?
 7,15,The Search,5699,Dwight,Tootenbacher.
 7,15,The Search,5699,Erin,Orville Tootenbacher. That's Michael's millionaire character that...
+7,15,The Search,5699,Dwight,farts popcorn.
+7,15,The Search,5699,Erin,farts popcorn.
 7,15,The Search,5699,Dwight,"Of course. He was here. She's the key. Amazing. Holly. Hey, where you would you like to go next? Holly?"
 7,15,The Search,5699,Holly,Are their egg rolls really that big?
 7,15,The Search,5700,Michael,"Oh, boy. That was yummy. Thank you so much. You know what? I think I left my wallet in my car. Do you mind if I run out and get it?"
@@ -33434,6 +33615,10 @@ season,episode,title,scene,speaker,line
 7,16,PDA,5732,Erin,Yeah. Did you not see it? 
 7,16,PDA,5732,Andy,"Oh, my gosh."
 7,16,PDA,5732,Erin,Hanks.
+7,16,PDA,5733,Jim,Hey!
+7,16,PDA,5733,Pam,Hey!
+7,16,PDA,5733,Andy,Hey.
+7,16,PDA,5733,Erin,Hey.
 7,16,PDA,5733,Andy,No time to chat.
 7,16,PDA,5733,Erin,Sorry.
 7,16,PDA,5733,Jim,"Well, we were just looking for Ryan, so he's not here."
@@ -33597,6 +33782,7 @@ season,episode,title,scene,speaker,line
 7,17,Threat Level Midnight,5773,Michael,Go puck yourself!
 7,17,Threat Level Midnight,5775,Pam,"Looking at her mother on screen, horrified] Oh God...  So good."
 7,17,Threat Level Midnight,5775,Michael,"It'll take a lot more than a bullet to the brain, lungs, heart, back, and balls to kill Michael Scarn."
+7,17,Threat Level Midnight,5775,Michael,Yes.
 7,17,Threat Level Midnight,5776,Michael,For the insurance money! I knew it all along!  You will never get away with this! 
 7,17,Threat Level Midnight,5776,Michael,I got problems Billy. Big problems...
 7,17,Threat Level Midnight,5776,Michael,Don't ever change Billy. Goldenface is going to blow up the NHL All Star Game tomorrow.
@@ -34656,12 +34842,16 @@ season,episode,title,scene,speaker,line
 7,21,Michael's Last Dundies,5921,Pam,In costumes!
 7,21,Michael's Last Dundies,5921,Jim,And impressions!
 7,21,Michael's Last Dundies,5921,Toby,In meetings.
+7,21,Michael's Last Dundies,5921,Erin,And cups of coffee.
+7,21,Michael's Last Dundies,5921,Kelly,And cups of coffee.
 7,21,Michael's Last Dundies,5921,Kevin,For birthdays!
 7,21,Michael's Last Dundies,5921,Stanley,More meetings and-
 7,21,Michael's Last Dundies,5921,Meredith,You hit me with your car!
 7,21,Michael's Last Dundies,5921,Ryan,You helped me get off drugs!
 7,21,Michael's Last Dundies,5921,Creed,I watch you when you sleep.
 7,21,Michael's Last Dundies,5921,Oscar,I forgive you for kissing me!
+7,21,Michael's Last Dundies,5921,Kelly,"Call, text or e-mail, or call."
+7,21,Michael's Last Dundies,5921,Erin,"Call, text or e-mail, or call."
 7,21,Michael's Last Dundies,5921,Deangelo,Measure your life in love!
 7,21,Michael's Last Dundies,5923,Deangelo," Every day, millions of Americans suffer from extreme repulsiveness. Someone in our midst, is bringing that problem to light. Toby Flenderson, please come up here and accept the Extreme Repulsiveness Award. Oh that's so mean!"
 7,21,Michael's Last Dundies,5923,Michael,No it's not.
@@ -35443,6 +35633,8 @@ season,episode,title,scene,speaker,line
 7,24,"Dwight K. Schrute, (Acting) Manager",6043,Jim,"Well, you do know that Jo was right to take the job away from you, right? There's no debating that. But, I will say... in your one week, every single one of the orders went out on time. And I think that is shagadelic, baby. "
 7,24,"Dwight K. Schrute, (Acting) Manager",6044,Angela," Four, one, seven, one..."
 7,24,"Dwight K. Schrute, (Acting) Manager",6044,Kevin,Another one?
+7,24,"Dwight K. Schrute, (Acting) Manager",6044,Darryl,Yes!
+7,24,"Dwight K. Schrute, (Acting) Manager",6044,Angela,Yes!
 7,24,"Dwight K. Schrute, (Acting) Manager",6044,Angela,"Seven, two..."
 7,24,"Dwight K. Schrute, (Acting) Manager",6044,Oscar,Could you turn the volume down on the beeping?
 7,24,"Dwight K. Schrute, (Acting) Manager",6044,Angela,"Six, nine, shut up, Oscar. Eight..."
@@ -36606,6 +36798,10 @@ season,episode,title,scene,speaker,line
 8,3,Lotto,6234,Dwight,"It's uh, it's in beta testing."
 8,3,Lotto,6234,Darryl,Let me see it!
 8,3,Lotto,6234,Dwight,"Get the thing, go! Lube it up, Kevin! Start mopping."
+8,3,Lotto,6234,Dwight,Uno! Dos! Tres! 
+8,3,Lotto,6234,Erin,Uno! Dos! Tres! 
+8,3,Lotto,6234,Jim,Uno! Dos! Tres! 
+8,3,Lotto,6234,Kevin,Uno! Dos! Tres! 
 8,3,Lotto,6238,Pam,We came to an agreement. We're going to live in a stunning pre-war brownstone at the top of a mountain.
 8,3,Lotto,6238,Jim,Right. It's city and country combined.
 8,3,Lotto,6238,Pam,Just a subway stop away are the best museums in the world.
@@ -36747,8 +36943,11 @@ season,episode,title,scene,speaker,line
 8,4,Garden Party,6278,Andy,Yeah?
 8,4,Garden Party,6278,Andy,"Right, it feels strange."
 8,4,Garden Party,6278,Andy,Saying I love... Saying I love you...
+8,4,Garden Party,6278,Andy,...not the words...
+8,4,Garden Party,6278,Andy,...not to say it but if you only knew... More than words is all you have to do to make it real...
 8,4,Garden Party,6278,Andy,Is anyone filming this? Seriously! Erin!
 8,4,Garden Party,6278,Erin,It's either taping or calling.
+8,4,Garden Party,6278,Andy,What would you do if my heart was torn in two...
 8,4,Garden Party,6278,Meredith,Get up there and sing or I will cut your larynx and you'll never be able to sing again. Woo!
 8,4,Garden Party,6278,Andy," Cheers! Alright! Cheers, cheers, cheers, get your own guitar."
 8,4,Garden Party,6278,Erin,Sorry.
@@ -37471,6 +37670,8 @@ season,episode,title,scene,speaker,line
 8,7,Pam's Replacement,6401,Kelly,I'm gonna write something mean on his wall.
 8,7,Pam's Replacement,6401,Pam,"No, Kelly, don't."
 8,7,Pam's Replacement,6401,Dwight,"The male reveals attraction through unconscious and involuntary physical signs. The puffing of the chest, mirroring, increased blood flow to the crotch. I say we start there."
+8,7,Pam's Replacement,6401,Pam,With the crotch?
+8,7,Pam's Replacement,6401,Kelly,With the crotch?
 8,7,Pam's Replacement,6401,Dwight,With the crotch.
 8,7,Pam's Replacement,6403,Dwight,Psst. We're not here. 
 8,7,Pam's Replacement,6403,Creed,Who said that?
@@ -37563,7 +37764,15 @@ season,episode,title,scene,speaker,line
 8,7,Pam's Replacement,6415,Pam,Just go home. It doesn't matter.
 8,7,Pam's Replacement,6415,Dwight,"But... hey, Cece's toothbrush."
 8,7,Pam's Replacement,6415,Jim,Thank you.
+8,7,Pam's Replacement,6416,Andy,Oh baby I love your way.
+8,7,Pam's Replacement,6416,Darryl,Oh baby I love your way.
 8,7,Pam's Replacement,6416,Darryl,Every day.
+8,7,Pam's Replacement,6416,Andy,Wanna be with you night and day.
+8,7,Pam's Replacement,6416,Darryl,Wanna be with you night and day.
+8,7,Pam's Replacement,6416,Darryl,And day.
+8,7,Pam's Replacement,6416,Kevin,And day.
+8,7,Pam's Replacement,6416,Andy,Oh baby I love your way.
+8,7,Pam's Replacement,6416,Darryl,Oh baby I love your way.
 8,7,Pam's Replacement,6416,Andy,Rudit-do-do-do-di-do.
 8,8,Gettysburg,6417,Gabe,"The Sabre Code of Conduct outlines the governing principles key to establishing and maintaining trust with our employees, clients-"
 8,8,Gettysburg,6417,Kelly,"Oh my God, kill me!"
@@ -40436,6 +40645,8 @@ season,episode,title,scene,speaker,line
 8,20,Welcome Party,6861,Nellie,"Oh, I assure you, I would have done. I did, and I will keep doing it."
 8,20,Welcome Party,6861,Robert California,"No, no, no, no. There's something going on. Some stress in your life."
 8,20,Welcome Party,6861,Nellie,"Well, yes, uh... there is the whole moving to Scranton nonsense. Thirty boxes arrived yesterday from England and two trunks from Florida. Then I have to move in to my apartment in this dreadful, God knows where it is backwater suburb of a suburb, and I mean, no offense but are there a lot of Irish people living around here?"
+8,20,Welcome Party,6861,Kevin,Yes.
+8,20,Welcome Party,6861,Meredith,Yes.
 8,20,Welcome Party,6861,Nellie,Ugh! I hate that! No offense.
 8,20,Welcome Party,6861,Kevin,None taken.
 8,20,Welcome Party,6861,Oscar,"Actually, Nellie, this monologue you're delivering is very offensive."
@@ -40658,6 +40869,8 @@ season,episode,title,scene,speaker,line
 8,21,Angry Andy,6890,Phyllis,Lots of things are cozy in the rain.
 8,21,Angry Andy,6890,Jim,And that's noon. Exactly. 
 8,21,Angry Andy,6892,Andy,My girlfriend's back and there's gonna be trouble-
+8,21,Angry Andy,6892,Andy,"Hey la, hey la..."
+8,21,Angry Andy,6892,Erin,"Hey la, hey la..."
 8,21,Angry Andy,6892,Andy,...my girlfriend's back!
 8,21,Angry Andy,6892,Erin,...his girlfriend's back! 
 8,21,Angry Andy,6892,Andy,"Anyway, I know it's the end of the day. We just wanted to stop by and say hi."
@@ -40777,6 +40990,7 @@ season,episode,title,scene,speaker,line
 8,21,Angry Andy,6919,Dwight,"It's not just a human problem. Flounders frequently experience impotence, especially when converting from male to female and then back again to male."
 8,21,Angry Andy,6919,Oscar,"Nellie, does the person affected by this want us to help her in any way in particular?"
 8,21,Angry Andy,6919,Nellie,"Oh, oh, it's not me. No, no. I've never had any problem in that arena. And I have been with several older men."
+8,21,Angry Andy,6919,Creed,How old?
 8,21,Angry Andy,6919,Creed,Jinx. Buy me some Coke.
 8,21,Angry Andy,6919,Nellie,Dwight told me about it earlier.
 8,21,Angry Andy,6919,Erin,Dwight!
@@ -42073,6 +42287,8 @@ season,episode,title,scene,speaker,line
 9,3,Andy's Ancestry,7165,Andy,Nellie! Get your wrinkly old balls in here.
 9,3,Andy's Ancestry,7165,Pam,"Nellie, I could practice with you in my car at lunchtime."
 9,3,Andy's Ancestry,7165,Nellie,"Oh, Pam, thank you! You are my savior! "
+9,3,Andy's Ancestry,7165,Nellie,ohhhhhhhhhhhhhh!!!
+9,3,Andy's Ancestry,7165,Pam,ohhhhhhhhhhhhhh!!!
 9,3,Andy's Ancestry,7165,Pam," I'm sorry, I'm leaving you alone for lunch."
 9,3,Andy's Ancestry,7165,Jim,Don't worry about it. I have a thing. A thing of soup. Which I've been wanting to try.
 9,3,Andy's Ancestry,7166,Nellie,This is my research into how we might produce child-proof paper that doesn't give you paper cuts. We can't. And here is a print out of your genealogy from thisisyourfamilytree.com
@@ -42409,6 +42625,9 @@ season,episode,title,scene,speaker,line
 9,4,Work Bus,7222,Stanley,No question.
 9,4,Work Bus,7222,Dwight,No. No! This is a work bus. The wheels are for transporting the work space to and from the work site.
 9,4,Work Bus,7222,Jim,What are you talking about? You're not the boss. Andy is. Andy?
+9,4,Work Bus,7222,Phyllis,Pies! Pies! Pies! Pies! Pies!
+9,4,Work Bus,7222,Kevin,Pies! Pies! Pies! Pies! Pies!
+9,4,Work Bus,7222,Stanley,Pies! Pies! Pies! Pies! Pies!
 9,4,Work Bus,7222,Andy,"Alright! The fat people have spoken! Dwight, get this bus moving."
 9,4,Work Bus,7222,Erin,Yes! 
 9,4,Work Bus,7222,Jim,Next stop: Laverne's Pies Tires Fixed Also.
@@ -45896,6 +46115,8 @@ season,episode,title,scene,speaker,line
 9,18,Promos,7822,Dwight,No!
 9,18,Promos,7822,Clark,"Hey Dwight, what's an auger used for?"
 9,18,Promos,7822,Dwight,Post hole digging. 
+9,18,Promos,7823,Angela,Hi honey!
+9,18,Promos,7823,Oscar,Hi honey!
 9,18,Promos,7823,Oscar,Oh you?
 9,18,Promos,7823,Angela,No you go. Hi honey!
 9,18,Promos,7823,Oscar,"Hey, Hey Robert!"
@@ -46739,6 +46960,8 @@ season,episode,title,scene,speaker,line
 9,22,A.A.R.M,7997,Kevin,Guys.
 9,22,A.A.R.M,7997,Angela,Why don't you pack it?
 9,22,A.A.R.M,7997,Kevin,Guys.
+9,22,A.A.R.M,7997,Angela,"Kevin, what?"
+9,22,A.A.R.M,7997,Oscar,"Kevin, what?"
 9,22,A.A.R.M,7997,Kevin,"Do you want to see a video of a weatherman who says ""bold front"" instead of ""cold front""? It's insane."
 9,22,A.A.R.M,7997,Angela,"Not now, Kevin. Can't you see we're busy? Phillip needs his apple snacks."
 9,22,A.A.R.M,7997,Oscar,"Seriously, Kevin. I'm just gonna have to go to the store."
@@ -46802,7 +47025,11 @@ season,episode,title,scene,speaker,line
 9,22,A.A.R.M,8006,Jim,"Ew, the exact opposite, actually."
 9,22,A.A.R.M,8006,Pete,What's the opposite of a horse?
 9,22,A.A.R.M,8006,Jim,Come on.
+9,22,A.A.R.M,8006,Jim,Sea horse.
+9,22,A.A.R.M,8006,Dwight,Sea horse.
 9,22,A.A.R.M,8006,Jim,Whoa. How did you know that I was gonna�
+9,22,A.A.R.M,8006,Jim,Say that? Uncanny.
+9,22,A.A.R.M,8006,Dwight,Say that? Uncanny.
 9,22,A.A.R.M,8007,Jim,"Challenge number two, protocol. Clark?"
 9,22,A.A.R.M,8007,Clark,Yeah.
 9,22,A.A.R.M,8007,Jim,Do you want a corn dog?
@@ -46914,6 +47141,8 @@ season,episode,title,scene,speaker,line
 9,22,A.A.R.M,8017,Kevin,"What? I'm moving the ink down in my pen, for work."
 9,22,A.A.R.M,8017,Oscar,"Here, use my pen."
 9,22,A.A.R.M,8017,Kevin,Don't tell me what to do!
+9,22,A.A.R.M,8017,Angela,Shhh!
+9,22,A.A.R.M,8017,Oscar,Shhh!
 9,22,A.A.R.M,8017,Kevin,"No, I don't need this! And you obviously don't need me."
 9,22,A.A.R.M,8017,Angela,"Kevin, where are you going?"
 9,22,A.A.R.M,8017,Kevin,Away. Tell Phillip that his stupid little baby wish came true.

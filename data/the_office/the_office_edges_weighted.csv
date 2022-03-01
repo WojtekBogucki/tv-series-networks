@@ -1,379 +1,379 @@
 speaker1,speaker2,line_count,scene_count,word_count
-Andy,Angela,714,133,6577.0
-Andy,Charles,79,12,713.0
-Andy,Clark,154,21,1769.0
-Andy,Creed,254,54,2376.0
-Andy,Darryl,923,137,9527.0
-Andy,David Wallace,169,19,1854.0
-Andy,Deangelo,68,14,870.0
-Andy,Dwight,2147,311,21108.0
-Andy,Erin,1431,219,13430.0
-Andy,Gabe,253,37,2721.0
-Andy,Holly,72,9,755.0
-Andy,Jan,72,8,594.0
-Andy,Jim,1828,286,17744.0
-Andy,Jo,29,3,357.0
-Andy,Karen,78,18,569.0
-Andy,Kelly,430,78,4248.0
-Andy,Kevin,955,191,8764.0
-Andy,Meredith,450,91,4120.0
-Andy,Michael,1812,211,21462.0
-Andy,Nellie,241,35,2596.0
-Andy,Oscar,882,159,8494.0
-Andy,Pam,1217,212,11662.0
-Andy,Pete,125,17,1246.0
-Andy,Phyllis,780,169,7437.0
-Andy,Robert California,409,54,5142.0
-Andy,Ryan,394,70,4089.0
-Andy,Stanley,556,127,5408.0
-Andy,Toby,233,37,2643.0
-Andy,Todd Packer,5,1,54.0
-Angela,Charles,45,8,457.0
-Angela,Clark,28,8,206.0
-Angela,Creed,141,43,1113.0
-Angela,Darryl,125,31,980.0
-Angela,David Wallace,4,1,8.0
-Angela,Deangelo,42,5,511.0
-Angela,Dwight,1606,275,13829.0
-Angela,Erin,229,60,1917.0
-Angela,Gabe,38,14,377.0
-Angela,Holly,50,7,544.0
-Angela,Jan,92,14,844.0
-Angela,Jim,635,123,5518.0
-Angela,Karen,76,15,681.0
-Angela,Kelly,265,73,2337.0
-Angela,Kevin,846,195,6830.0
-Angela,Meredith,306,82,2548.0
-Angela,Michael,1348,167,17580.0
-Angela,Nellie,112,26,1035.0
-Angela,Oscar,873,187,6887.0
-Angela,Pam,883,181,7572.0
-Angela,Pete,27,7,259.0
-Angela,Phyllis,490,140,4080.0
-Angela,Robert California,29,8,331.0
-Angela,Roy,15,4,97.0
-Angela,Ryan,101,29,920.0
-Angela,Stanley,231,72,1697.0
-Angela,Toby,178,39,1758.0
-Angela,Todd Packer,6,2,56.0
-Charles,David Wallace,70,10,668.0
-Charles,Dwight,181,23,1745.0
-Charles,Erin,11,2,53.0
-Charles,Jim,239,27,1875.0
-Charles,Kelly,37,6,351.0
-Charles,Kevin,61,8,565.0
-Charles,Michael,224,20,2578.0
-Charles,Oscar,24,2,242.0
-Charles,Pam,97,13,658.0
-Charles,Phyllis,19,4,139.0
-Charles,Ryan,9,3,48.0
-Charles,Stanley,46,5,489.0
-Charles,Toby,3,1,16.0
-Clark,Creed,8,3,87.0
-Clark,Darryl,47,12,335.0
-Clark,David Wallace,19,3,261.0
-Clark,Dwight,354,47,3749.0
-Clark,Erin,63,13,617.0
-Clark,Jan,7,1,65.0
-Clark,Jim,141,15,1397.0
-Clark,Kevin,48,12,338.0
-Clark,Meredith,28,9,291.0
-Clark,Nellie,22,5,197.0
-Clark,Oscar,34,11,478.0
-Clark,Pam,121,16,1039.0
-Clark,Pete,66,13,601.0
-Clark,Phyllis,32,10,337.0
-Clark,Stanley,39,11,265.0
-Clark,Toby,15,3,149.0
-Clark,Todd Packer,11,2,327.0
-Creed,Darryl,56,15,432.0
-Creed,David Wallace,17,3,201.0
-Creed,Deangelo,2,1,11.0
-Creed,Dwight,361,77,3147.0
-Creed,Erin,106,28,890.0
-Creed,Gabe,45,10,510.0
-Creed,Holly,11,3,67.0
-Creed,Jan,15,3,115.0
-Creed,Jim,376,77,3305.0
-Creed,Karen,9,3,76.0
-Creed,Kelly,95,29,654.0
-Creed,Kevin,203,62,1507.0
-Creed,Meredith,134,44,914.0
-Creed,Michael,600,77,7427.0
-Creed,Nellie,52,13,447.0
-Creed,Oscar,162,54,1143.0
-Creed,Pam,340,72,2719.0
-Creed,Pete,21,6,141.0
-Creed,Phyllis,161,56,1156.0
-Creed,Robert California,22,5,398.0
-Creed,Ryan,96,27,763.0
-Creed,Stanley,105,38,710.0
-Creed,Toby,92,25,793.0
-Darryl,Deangelo,63,13,781.0
-Darryl,Dwight,557,91,4957.0
-Darryl,Erin,178,37,1433.0
-Darryl,Gabe,152,30,1537.0
-Darryl,Holly,64,13,379.0
-Darryl,Jan,4,1,33.0
-Darryl,Jim,550,86,4684.0
-Darryl,Jo,34,2,420.0
-Darryl,Karen,9,2,98.0
-Darryl,Kelly,150,32,1437.0
-Darryl,Kevin,404,88,3387.0
-Darryl,Meredith,116,33,1011.0
-Darryl,Michael,946,106,10484.0
-Darryl,Nellie,95,21,963.0
-Darryl,Oscar,264,64,2222.0
-Darryl,Pam,382,79,3561.0
-Darryl,Pete,25,6,165.0
-Darryl,Phyllis,201,57,1691.0
-Darryl,Robert California,27,6,253.0
-Darryl,Roy,95,15,699.0
-Darryl,Ryan,107,21,1052.0
-Darryl,Stanley,101,32,786.0
-Darryl,Toby,173,29,1722.0
-Darryl,Todd Packer,3,1,25.0
-David Wallace,Dwight,267,29,2448.0
-David Wallace,Erin,43,9,447.0
-David Wallace,Holly,16,2,232.0
-David Wallace,Jan,49,8,404.0
-David Wallace,Jim,204,27,2217.0
-David Wallace,Karen,11,2,85.0
-David Wallace,Kelly,23,3,226.0
-David Wallace,Kevin,26,4,248.0
-David Wallace,Meredith,18,3,196.0
-David Wallace,Michael,681,65,7505.0
-David Wallace,Nellie,4,1,38.0
-David Wallace,Oscar,7,3,70.0
-David Wallace,Pam,88,11,762.0
-David Wallace,Pete,2,1,42.0
-David Wallace,Phyllis,45,7,442.0
-David Wallace,Robert California,37,4,487.0
-David Wallace,Ryan,32,6,353.0
-David Wallace,Stanley,17,3,132.0
-David Wallace,Toby,8,2,96.0
-Deangelo,Dwight,79,9,1033.0
-Deangelo,Erin,60,8,799.0
-Deangelo,Gabe,35,6,443.0
-Deangelo,Jim,131,20,1501.0
-Deangelo,Kelly,31,4,416.0
-Deangelo,Kevin,96,14,1186.0
-Deangelo,Meredith,18,5,250.0
-Deangelo,Michael,260,29,3068.0
-Deangelo,Oscar,54,7,679.0
-Deangelo,Pam,69,12,818.0
-Deangelo,Phyllis,36,4,652.0
-Deangelo,Ryan,42,7,617.0
-Deangelo,Stanley,25,6,331.0
-Deangelo,Toby,9,3,183.0
-Dwight,Erin,767,139,7764.0
-Dwight,Gabe,251,48,2947.0
-Dwight,Holly,200,26,1831.0
-Dwight,Jan,271,29,2136.0
-Dwight,Jim,4645,646,43636.0
-Dwight,Jo,86,8,929.0
-Dwight,Karen,115,20,929.0
-Dwight,Kelly,611,106,6231.0
-Dwight,Kevin,991,188,9128.0
-Dwight,Meredith,566,116,5297.0
-Dwight,Michael,5958,665,62343.0
-Dwight,Nellie,514,80,6651.0
-Dwight,Oscar,1020,191,9366.0
-Dwight,Pam,2338,368,21725.0
-Dwight,Pete,45,12,406.0
-Dwight,Phyllis,1074,221,9778.0
-Dwight,Robert California,166,24,2042.0
-Dwight,Roy,55,10,460.0
-Dwight,Ryan,809,134,7998.0
-Dwight,Stanley,825,161,7954.0
-Dwight,Toby,472,71,4469.0
-Dwight,Todd Packer,136,22,1357.0
-Erin,Gabe,197,33,2082.0
-Erin,Holly,87,12,773.0
-Erin,Jim,553,106,4608.0
-Erin,Jo,15,2,187.0
-Erin,Kelly,163,41,1339.0
-Erin,Kevin,432,101,3531.0
-Erin,Meredith,183,50,1518.0
-Erin,Michael,947,115,10063.0
-Erin,Nellie,159,38,1993.0
-Erin,Oscar,320,76,2710.0
-Erin,Pam,623,117,5370.0
-Erin,Pete,266,46,2280.0
-Erin,Phyllis,264,80,2124.0
-Erin,Robert California,124,23,1445.0
-Erin,Ryan,173,39,1428.0
-Erin,Stanley,153,50,1271.0
-Erin,Toby,77,17,640.0
-Erin,Todd Packer,19,5,351.0
-Gabe,Holly,19,3,165.0
-Gabe,Jim,235,49,2548.0
-Gabe,Jo,93,10,1320.0
-Gabe,Kelly,76,15,660.0
-Gabe,Kevin,139,28,1381.0
-Gabe,Meredith,69,16,853.0
-Gabe,Michael,289,37,3742.0
-Gabe,Nellie,51,11,561.0
-Gabe,Oscar,99,21,1006.0
-Gabe,Pam,181,31,2085.0
-Gabe,Pete,28,2,245.0
-Gabe,Phyllis,68,16,680.0
-Gabe,Robert California,61,13,1148.0
-Gabe,Ryan,50,13,493.0
-Gabe,Stanley,26,8,262.0
-Gabe,Toby,103,19,1053.0
-Gabe,Todd Packer,20,5,217.0
-Holly,Jan,16,3,100.0
-Holly,Jim,141,15,1124.0
-Holly,Kelly,62,9,712.0
-Holly,Kevin,177,22,1343.0
-Holly,Meredith,58,6,708.0
-Holly,Michael,1016,107,10191.0
-Holly,Oscar,72,10,662.0
-Holly,Pam,101,13,637.0
-Holly,Phyllis,54,8,752.0
-Holly,Ryan,48,6,567.0
-Holly,Stanley,32,4,385.0
-Holly,Toby,42,6,320.0
-Holly,Todd Packer,18,2,152.0
-Jan,Jim,140,15,1071.0
-Jan,Karen,17,3,182.0
-Jan,Kelly,35,8,403.0
-Jan,Kevin,43,6,281.0
-Jan,Meredith,18,4,209.0
-Jan,Michael,1394,134,14115.0
-Jan,Oscar,25,5,190.0
-Jan,Pam,251,32,2213.0
-Jan,Phyllis,29,6,349.0
-Jan,Ryan,20,2,127.0
-Jan,Stanley,6,1,61.0
-Jan,Toby,41,7,350.0
-Jan,Todd Packer,9,2,59.0
-Jim,Jo,92,12,1203.0
-Jim,Karen,385,69,3040.0
-Jim,Kelly,561,99,4957.0
-Jim,Kevin,1179,217,9375.0
-Jim,Meredith,508,95,4202.0
-Jim,Michael,4451,473,46771.0
-Jim,Nellie,256,47,3054.0
-Jim,Oscar,862,169,7384.0
-Jim,Pam,5194,767,41628.0
-Jim,Pete,77,10,825.0
-Jim,Phyllis,879,183,7483.0
-Jim,Robert California,231,32,2726.0
-Jim,Roy,185,26,1446.0
-Jim,Ryan,713,124,6311.0
-Jim,Stanley,697,144,5643.0
-Jim,Toby,382,66,3333.0
-Jim,Todd Packer,89,18,687.0
-Jo,Kelly,4,1,112.0
-Jo,Kevin,64,6,794.0
-Jo,Meredith,3,1,39.0
-Jo,Michael,211,22,2791.0
-Jo,Oscar,21,2,270.0
-Jo,Pam,9,1,113.0
-Jo,Phyllis,7,1,162.0
-Jo,Toby,14,2,159.0
-Karen,Kelly,16,4,110.0
-Karen,Kevin,41,7,320.0
-Karen,Meredith,20,5,112.0
-Karen,Michael,282,33,3847.0
-Karen,Oscar,7,2,31.0
-Karen,Pam,204,37,1439.0
-Karen,Phyllis,77,18,610.0
-Karen,Roy,14,2,115.0
-Karen,Ryan,15,5,91.0
-Karen,Stanley,24,7,170.0
-Karen,Todd Packer,12,2,80.0
-Kelly,Kevin,295,78,2530.0
-Kelly,Meredith,214,55,1759.0
-Kelly,Michael,890,113,11352.0
-Kelly,Nellie,2,1,17.0
-Kelly,Oscar,294,69,2646.0
-Kelly,Pam,581,117,5197.0
-Kelly,Phyllis,249,73,1928.0
-Kelly,Robert California,38,4,400.0
-Kelly,Roy,11,3,67.0
-Kelly,Ryan,530,98,5104.0
-Kelly,Stanley,149,42,1207.0
-Kelly,Toby,162,33,1388.0
-Kelly,Todd Packer,4,1,66.0
-Kevin,Meredith,362,102,2363.0
-Kevin,Michael,1929,232,21295.0
-Kevin,Nellie,176,37,1882.0
-Kevin,Oscar,942,219,7215.0
-Kevin,Pam,1043,220,7811.0
-Kevin,Pete,69,13,536.0
-Kevin,Phyllis,506,147,3447.0
-Kevin,Robert California,163,28,2372.0
-Kevin,Roy,62,12,432.0
-Kevin,Ryan,272,62,2223.0
-Kevin,Stanley,289,89,2004.0
-Kevin,Toby,197,51,1765.0
-Kevin,Todd Packer,38,6,589.0
-Meredith,Michael,796,102,9877.0
-Meredith,Nellie,67,19,747.0
-Meredith,Oscar,350,94,2666.0
-Meredith,Pam,506,114,3910.0
-Meredith,Pete,40,12,273.0
-Meredith,Phyllis,265,81,2020.0
-Meredith,Robert California,56,11,1041.0
-Meredith,Ryan,104,32,968.0
-Meredith,Stanley,169,58,1351.0
-Meredith,Toby,113,23,990.0
-Meredith,Todd Packer,3,1,24.0
-Michael,Oscar,1694,207,20754.0
-Michael,Pam,4345,502,47417.0
-Michael,Pete,15,1,269.0
-Michael,Phyllis,1516,193,19042.0
-Michael,Roy,169,24,1895.0
-Michael,Ryan,1625,203,18794.0
-Michael,Stanley,1358,168,16356.0
-Michael,Toby,1004,115,12451.0
-Michael,Todd Packer,207,23,2535.0
-Nellie,Oscar,88,21,1043.0
-Nellie,Pam,281,47,3283.0
-Nellie,Pete,60,15,544.0
-Nellie,Phyllis,101,25,1338.0
-Nellie,Robert California,109,17,1370.0
-Nellie,Ryan,43,5,807.0
-Nellie,Stanley,87,21,1089.0
-Nellie,Toby,117,17,1167.0
-Nellie,Todd Packer,78,16,1180.0
-Oscar,Pam,816,176,6833.0
-Oscar,Pete,31,10,203.0
-Oscar,Phyllis,494,142,3852.0
-Oscar,Robert California,119,20,1578.0
-Oscar,Ryan,254,63,2209.0
-Oscar,Stanley,302,92,2575.0
-Oscar,Toby,185,46,1842.0
-Oscar,Todd Packer,3,1,57.0
-Pam,Pete,70,13,533.0
-Pam,Phyllis,838,198,6471.0
-Pam,Robert California,90,14,1079.0
-Pam,Roy,252,43,1966.0
-Pam,Ryan,753,127,6562.0
-Pam,Stanley,459,116,3419.0
-Pam,Toby,356,63,3281.0
-Pam,Todd Packer,16,3,390.0
-Pete,Phyllis,7,3,46.0
-Pete,Robert California,6,1,70.0
-Pete,Stanley,17,5,169.0
-Pete,Toby,14,3,86.0
-Phyllis,Robert California,61,12,863.0
-Phyllis,Ryan,211,57,1592.0
-Phyllis,Stanley,492,162,3431.0
-Phyllis,Toby,109,27,994.0
-Phyllis,Todd Packer,15,2,344.0
-Robert California,Ryan,58,12,872.0
-Robert California,Stanley,47,11,590.0
-Robert California,Toby,45,8,632.0
-Robert California,Todd Packer,7,1,133.0
-Roy,Ryan,19,5,154.0
-Roy,Stanley,5,1,50.0
-Roy,Todd Packer,9,1,50.0
-Ryan,Stanley,194,49,1640.0
-Ryan,Toby,165,28,1354.0
-Ryan,Todd Packer,19,6,135.0
-Stanley,Toby,86,23,763.0
-Stanley,Todd Packer,6,2,39.0
+Andy,Angela,714,133,6905
+Andy,Charles,79,12,748
+Andy,Clark,154,21,1857
+Andy,Creed,277,57,2642
+Andy,Darryl,949,139,10326
+Andy,David Wallace,169,19,1934
+Andy,Deangelo,68,14,926
+Andy,Dwight,2172,311,22441
+Andy,Erin,1453,221,14464
+Andy,Gabe,258,37,2963
+Andy,Holly,72,9,800
+Andy,Jan,72,8,627
+Andy,Jim,1854,288,18979
+Andy,Jo,29,3,376
+Andy,Karen,82,18,628
+Andy,Kelly,448,81,4621
+Andy,Kevin,979,194,9424
+Andy,Meredith,453,91,4398
+Andy,Michael,1842,214,22858
+Andy,Nellie,242,35,2735
+Andy,Oscar,883,159,8991
+Andy,Pam,1223,213,12310
+Andy,Pete,125,17,1304
+Andy,Phyllis,783,169,7894
+Andy,Robert California,412,54,5426
+Andy,Ryan,397,70,4339
+Andy,Stanley,557,127,5699
+Andy,Toby,234,37,2810
+Andy,Todd Packer,5,1,56
+Angela,Charles,46,8,493
+Angela,Clark,28,8,217
+Angela,Creed,150,44,1228
+Angela,Darryl,127,31,1040
+Angela,David Wallace,4,1,8
+Angela,Deangelo,42,5,539
+Angela,Dwight,1609,276,14523
+Angela,Erin,229,60,2005
+Angela,Gabe,38,14,400
+Angela,Holly,50,7,571
+Angela,Jan,92,14,889
+Angela,Jim,635,123,5876
+Angela,Karen,76,15,722
+Angela,Kelly,267,73,2527
+Angela,Kevin,850,195,7215
+Angela,Meredith,306,82,2700
+Angela,Michael,1348,167,18430
+Angela,Nellie,112,26,1088
+Angela,Oscar,880,187,7323
+Angela,Pam,883,181,8014
+Angela,Pete,27,7,271
+Angela,Phyllis,492,140,4322
+Angela,Robert California,29,8,352
+Angela,Roy,15,4,107
+Angela,Ryan,101,29,976
+Angela,Stanley,232,72,1800
+Angela,Toby,178,39,1869
+Angela,Todd Packer,6,2,58
+Charles,David Wallace,70,10,711
+Charles,Dwight,181,23,1837
+Charles,Erin,11,2,59
+Charles,Jim,239,27,1968
+Charles,Kelly,38,6,383
+Charles,Kevin,61,8,597
+Charles,Michael,224,20,2718
+Charles,Oscar,24,2,257
+Charles,Pam,97,13,702
+Charles,Phyllis,19,4,149
+Charles,Ryan,9,3,51
+Charles,Stanley,46,5,510
+Charles,Toby,3,1,16
+Clark,Creed,8,3,91
+Clark,Darryl,47,12,363
+Clark,David Wallace,19,3,276
+Clark,Dwight,354,47,3970
+Clark,Erin,63,13,656
+Clark,Jan,7,1,69
+Clark,Jim,141,15,1484
+Clark,Kevin,49,12,360
+Clark,Meredith,28,9,301
+Clark,Nellie,22,5,204
+Clark,Oscar,34,11,505
+Clark,Pam,121,16,1110
+Clark,Pete,66,13,635
+Clark,Phyllis,33,10,358
+Clark,Stanley,40,11,288
+Clark,Toby,15,3,162
+Clark,Todd Packer,11,2,350
+Creed,Darryl,73,17,631
+Creed,David Wallace,17,3,208
+Creed,Deangelo,2,1,11
+Creed,Dwight,387,78,3572
+Creed,Erin,110,29,964
+Creed,Gabe,45,10,541
+Creed,Holly,11,3,72
+Creed,Jan,15,3,120
+Creed,Jim,385,78,3584
+Creed,Karen,9,3,83
+Creed,Kelly,110,32,809
+Creed,Kevin,218,65,1716
+Creed,Meredith,134,44,979
+Creed,Michael,627,80,8004
+Creed,Nellie,53,13,478
+Creed,Oscar,167,55,1238
+Creed,Pam,348,74,2936
+Creed,Pete,21,6,149
+Creed,Phyllis,166,57,1263
+Creed,Robert California,22,5,414
+Creed,Ryan,96,27,816
+Creed,Stanley,108,39,776
+Creed,Toby,92,25,856
+Darryl,Deangelo,63,13,826
+Darryl,Dwight,559,91,5248
+Darryl,Erin,179,37,1538
+Darryl,Gabe,152,30,1642
+Darryl,Holly,66,13,425
+Darryl,Jan,4,1,36
+Darryl,Jim,552,86,5001
+Darryl,Jo,34,2,441
+Darryl,Karen,9,2,105
+Darryl,Kelly,168,34,1686
+Darryl,Kevin,430,91,3822
+Darryl,Meredith,116,33,1082
+Darryl,Michael,952,106,11127
+Darryl,Nellie,95,21,1014
+Darryl,Oscar,265,64,2366
+Darryl,Pam,385,79,3811
+Darryl,Pete,25,6,176
+Darryl,Phyllis,201,57,1814
+Darryl,Robert California,27,6,265
+Darryl,Roy,96,15,751
+Darryl,Ryan,107,21,1115
+Darryl,Stanley,101,32,833
+Darryl,Toby,173,29,1843
+Darryl,Todd Packer,3,1,29
+David Wallace,Dwight,267,29,2577
+David Wallace,Erin,43,9,467
+David Wallace,Holly,16,2,242
+David Wallace,Jan,49,8,428
+David Wallace,Jim,204,27,2330
+David Wallace,Karen,11,2,90
+David Wallace,Kelly,23,3,240
+David Wallace,Kevin,26,4,266
+David Wallace,Meredith,18,3,207
+David Wallace,Michael,681,65,7835
+David Wallace,Nellie,4,1,41
+David Wallace,Oscar,7,3,77
+David Wallace,Pam,88,11,806
+David Wallace,Pete,2,1,45
+David Wallace,Phyllis,45,7,473
+David Wallace,Robert California,37,4,521
+David Wallace,Ryan,32,6,377
+David Wallace,Stanley,17,3,140
+David Wallace,Toby,8,2,98
+Deangelo,Dwight,79,9,1092
+Deangelo,Erin,63,9,852
+Deangelo,Gabe,35,6,474
+Deangelo,Jim,131,20,1591
+Deangelo,Kelly,34,5,467
+Deangelo,Kevin,96,14,1256
+Deangelo,Meredith,18,5,258
+Deangelo,Michael,260,29,3221
+Deangelo,Oscar,54,7,714
+Deangelo,Pam,69,12,863
+Deangelo,Phyllis,36,4,690
+Deangelo,Ryan,42,7,656
+Deangelo,Stanley,25,6,345
+Deangelo,Toby,9,3,198
+Dwight,Erin,781,140,8300
+Dwight,Gabe,251,48,3095
+Dwight,Holly,203,27,1971
+Dwight,Jan,271,29,2247
+Dwight,Jim,4679,648,46213
+Dwight,Jo,86,8,981
+Dwight,Karen,115,20,975
+Dwight,Kelly,613,106,6547
+Dwight,Kevin,998,188,9615
+Dwight,Meredith,572,117,5583
+Dwight,Michael,6017,667,65906
+Dwight,Nellie,514,80,6976
+Dwight,Oscar,1027,192,9876
+Dwight,Pam,2358,370,23020
+Dwight,Pete,47,12,434
+Dwight,Phyllis,1080,221,10280
+Dwight,Robert California,166,24,2157
+Dwight,Roy,56,10,494
+Dwight,Ryan,811,134,8412
+Dwight,Stanley,828,161,8375
+Dwight,Toby,474,71,4716
+Dwight,Todd Packer,136,22,1459
+Erin,Gabe,202,34,2322
+Erin,Holly,88,12,829
+Erin,Jim,568,109,5029
+Erin,Jo,15,2,194
+Erin,Kelly,170,43,1469
+Erin,Kevin,439,102,3789
+Erin,Meredith,186,51,1624
+Erin,Michael,965,117,10839
+Erin,Nellie,159,38,2100
+Erin,Oscar,327,78,2912
+Erin,Pam,638,120,5821
+Erin,Pete,266,46,2423
+Erin,Phyllis,265,80,2264
+Erin,Robert California,124,23,1521
+Erin,Ryan,178,40,1544
+Erin,Stanley,157,51,1357
+Erin,Toby,81,18,702
+Erin,Todd Packer,19,5,371
+Gabe,Holly,19,3,175
+Gabe,Jim,235,49,2683
+Gabe,Jo,93,10,1389
+Gabe,Kelly,76,15,696
+Gabe,Kevin,139,28,1464
+Gabe,Meredith,69,16,905
+Gabe,Michael,289,37,3927
+Gabe,Nellie,51,11,606
+Gabe,Oscar,99,21,1063
+Gabe,Pam,181,31,2202
+Gabe,Pete,28,2,253
+Gabe,Phyllis,68,16,742
+Gabe,Robert California,61,13,1193
+Gabe,Ryan,50,13,526
+Gabe,Stanley,26,8,275
+Gabe,Toby,103,19,1130
+Gabe,Todd Packer,20,5,237
+Holly,Jan,16,3,113
+Holly,Jim,141,15,1191
+Holly,Kelly,62,9,750
+Holly,Kevin,177,22,1409
+Holly,Meredith,58,6,753
+Holly,Michael,1022,108,10850
+Holly,Oscar,72,10,701
+Holly,Pam,101,13,690
+Holly,Phyllis,54,8,793
+Holly,Ryan,48,6,592
+Holly,Stanley,32,4,399
+Holly,Toby,42,6,345
+Holly,Todd Packer,18,2,159
+Jan,Jim,140,15,1125
+Jan,Karen,17,3,194
+Jan,Kelly,35,8,420
+Jan,Kevin,43,6,291
+Jan,Meredith,18,4,220
+Jan,Michael,1396,134,14878
+Jan,Oscar,25,5,206
+Jan,Pam,251,32,2339
+Jan,Phyllis,29,6,370
+Jan,Ryan,20,2,130
+Jan,Stanley,6,1,64
+Jan,Toby,41,7,366
+Jan,Todd Packer,9,2,61
+Jim,Jo,92,12,1275
+Jim,Karen,392,70,3256
+Jim,Kelly,565,100,5257
+Jim,Kevin,1184,217,9969
+Jim,Meredith,511,95,4487
+Jim,Michael,4484,475,49643
+Jim,Nellie,257,47,3241
+Jim,Oscar,865,170,7845
+Jim,Pam,5217,768,44382
+Jim,Pete,79,10,872
+Jim,Phyllis,884,183,7998
+Jim,Robert California,231,32,2864
+Jim,Roy,185,26,1535
+Jim,Ryan,716,125,6682
+Jim,Stanley,698,144,6008
+Jim,Toby,382,66,3529
+Jim,Todd Packer,89,18,742
+Jo,Kelly,4,1,120
+Jo,Kevin,64,6,841
+Jo,Meredith,3,1,40
+Jo,Michael,211,22,2933
+Jo,Oscar,21,2,284
+Jo,Pam,9,1,120
+Jo,Phyllis,7,1,173
+Jo,Toby,14,2,169
+Karen,Kelly,16,4,119
+Karen,Kevin,41,7,345
+Karen,Meredith,20,5,123
+Karen,Michael,282,33,4061
+Karen,Oscar,7,2,34
+Karen,Pam,204,37,1528
+Karen,Phyllis,77,18,645
+Karen,Roy,14,2,123
+Karen,Ryan,15,5,96
+Karen,Stanley,24,7,181
+Karen,Todd Packer,12,2,84
+Kelly,Kevin,311,81,2779
+Kelly,Meredith,218,56,1884
+Kelly,Michael,909,116,12145
+Kelly,Nellie,2,1,18
+Kelly,Oscar,302,71,2857
+Kelly,Pam,595,119,5595
+Kelly,Phyllis,250,73,2045
+Kelly,Robert California,38,4,418
+Kelly,Roy,11,3,70
+Kelly,Ryan,535,99,5491
+Kelly,Stanley,152,43,1288
+Kelly,Toby,165,34,1479
+Kelly,Todd Packer,4,1,72
+Kevin,Meredith,367,104,2516
+Kevin,Michael,1948,235,22600
+Kevin,Nellie,177,37,1960
+Kevin,Oscar,949,220,7721
+Kevin,Pam,1047,220,8331
+Kevin,Pete,69,13,574
+Kevin,Phyllis,511,148,3715
+Kevin,Robert California,164,28,2486
+Kevin,Roy,62,12,455
+Kevin,Ryan,276,63,2387
+Kevin,Stanley,293,89,2155
+Kevin,Toby,197,51,1879
+Kevin,Todd Packer,38,6,623
+Meredith,Michael,802,103,10393
+Meredith,Nellie,80,20,1001
+Meredith,Oscar,354,95,2850
+Meredith,Pam,509,115,4171
+Meredith,Pete,40,12,288
+Meredith,Phyllis,267,82,2162
+Meredith,Robert California,69,12,1267
+Meredith,Ryan,108,33,1053
+Meredith,Stanley,172,59,1434
+Meredith,Toby,113,23,1058
+Meredith,Todd Packer,3,1,26
+Michael,Oscar,1697,207,21832
+Michael,Pam,4372,504,50151
+Michael,Pete,22,2,368
+Michael,Phyllis,1523,194,20100
+Michael,Roy,170,24,2000
+Michael,Ryan,1631,203,19756
+Michael,Stanley,1359,168,17163
+Michael,Toby,1004,115,13055
+Michael,Todd Packer,207,23,2670
+Nellie,Oscar,88,21,1089
+Nellie,Pam,283,47,3447
+Nellie,Pete,60,15,570
+Nellie,Phyllis,101,25,1406
+Nellie,Robert California,109,17,1430
+Nellie,Ryan,43,5,854
+Nellie,Stanley,87,21,1146
+Nellie,Toby,117,17,1230
+Nellie,Todd Packer,78,16,1248
+Oscar,Pam,819,177,7275
+Oscar,Pete,31,10,210
+Oscar,Phyllis,496,142,4118
+Oscar,Robert California,119,20,1651
+Oscar,Ryan,255,63,2362
+Oscar,Stanley,304,92,2740
+Oscar,Toby,185,46,1952
+Oscar,Todd Packer,3,1,62
+Pam,Pete,70,13,565
+Pam,Phyllis,842,198,6898
+Pam,Robert California,90,14,1128
+Pam,Roy,252,43,2100
+Pam,Ryan,760,128,7034
+Pam,Stanley,461,116,3640
+Pam,Toby,358,64,3500
+Pam,Todd Packer,16,3,415
+Pete,Phyllis,7,3,47
+Pete,Robert California,6,1,73
+Pete,Stanley,17,5,176
+Pete,Toby,14,3,91
+Phyllis,Robert California,61,12,907
+Phyllis,Ryan,215,58,1703
+Phyllis,Stanley,498,162,3693
+Phyllis,Toby,109,27,1059
+Phyllis,Todd Packer,15,2,369
+Robert California,Ryan,58,12,915
+Robert California,Stanley,47,11,619
+Robert California,Toby,45,8,656
+Robert California,Todd Packer,7,1,139
+Roy,Ryan,19,5,163
+Roy,Stanley,5,1,53
+Roy,Todd Packer,9,1,51
+Ryan,Stanley,194,49,1721
+Ryan,Toby,165,28,1452
+Ryan,Todd Packer,19,6,142
+Stanley,Toby,86,23,801
+Stanley,Todd Packer,6,2,44

@@ -33,7 +33,8 @@ def filter_group_scenes(dataset):
 # transformation and aggregation
 def get_speaker_network_edges(dataset):
     interactions = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count"])
-    dataset["word_count"] = dataset["line"].apply(lambda x: len(str(x).split(" ")))
+    word_count = dataset.apply(lambda x: len(re.split(r" |'", str(x.line))), axis=1)
+    dataset = dataset.assign(word_count=word_count)
     office_count_by_scene_speaker = dataset.groupby(["scene", "speaker"]).agg(word_count=("word_count", "sum"),
                                                                               line=("line", "count")).reset_index()
     # word_count_by_scene_speaker = dataset.groupby(["scene", "speaker"])["line"].count().reset_index(name="word_count")
