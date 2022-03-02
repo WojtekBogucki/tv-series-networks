@@ -96,6 +96,22 @@ def get_network_stats_by_season(net_seasons):
     return stats
 
 
+def get_network_stats_by_episode(net_episodes, episode_dict):
+    episodes = episode_dict.keys()
+    columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+               "transitivity"]
+    measures = np.array([[nx.number_of_nodes(net) for net in net_episodes],
+                         [nx.number_of_edges(net) for net in net_episodes],
+                         [nx.density(net) for net in net_episodes],
+                         [nx.diameter(net) if nx.is_connected(net) else np.nan for net in net_episodes],
+                         [nx.degree_assortativity_coefficient(net, weight="line_count") for net in net_episodes],
+                         [nx.average_clustering(net) for net in net_episodes],
+                         [nx.average_shortest_path_length(net, weight="line_count") if nx.is_connected(net) else np.nan for net in net_episodes],
+                         [nx.transitivity(net) for net in net_episodes]]).transpose()
+    stats = pd.DataFrame(measures, index=episodes, columns=columns)
+    return stats
+
+
 def get_network_stats(net):
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]

@@ -49,7 +49,9 @@ replacements = {"Micheal": "Michael",
                 "Daryl": "Darryl",
                 "Diane": "Diane Kelly",
                 "A\.J\.": "AJ",
-                "Bob": "Bob Vance"}
+                "Bob": "Bob Vance",
+                "Paul": "Paul Faust",
+                "Holy": "Holly"}
 
 
 office_raw['speaker'] = office_raw.speaker.apply(fix_names, args=(replacements,))

@@ -82,7 +82,7 @@ print(node_groups)
 office_net_episodes = get_episode_networks("../data/the_office/")
 
 
-office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
+office_raw = pd.read_csv("../data/the_office/the_office_lines_v7.csv")
 seasons = office_raw.season.unique()
 i = 0
 episode_dict = {}
@@ -92,6 +92,13 @@ for season in seasons:
     for episode in episodes:
         episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
         i += 1
+
+episode_stats = get_network_stats_by_episode(office_net_episodes, episode_dict)
+episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
+# save networks of all episodes
+plt.ioff()
+for k, v in episode_dict.items():
+    draw_interaction_network_communities(office_net_episodes[v], "line_count", method="ML", filename=f"the_office/{k}_line_ML")
 
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="SG")
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="FG")
