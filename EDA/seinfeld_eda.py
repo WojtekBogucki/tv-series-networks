@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from EDA.processing import fix_names
+from EDA.processing import fix_names, split_characters
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -41,15 +41,24 @@ episodes_by_number_of_speaker.plot(kind="bar", title="Number of characters in ep
 plt.xticks(rotation=45)
 plt.show()
 
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" and ")])
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" & ")])
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains("&")])
+seinfeld_df[seinfeld_df.speaker.apply(len) > 20]
 
-seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
+seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("speaker", ascending=True)
+
+seinfeld_df = split_characters(seinfeld_df, [" and "," & ", "&"])
 
 replacements = {"pitt": "mr. pitt",
                 "steinbrenner": "mr. steinbrenner",
                 "lippman": "mr. lippman",
                 "mrs. costanza": "estelle",
                 "devola": "joe divola",
-                "leo": "uncle leo"}
+                "leo": "uncle leo",
+                "mr ross": "mr. ross",
+                "j\. peterman": "peterman",
+                "mr. peterman": "peterman"}
 
 
 seinfeld_df['speaker'] = seinfeld_df.speaker.apply(fix_names, args=(replacements,))
