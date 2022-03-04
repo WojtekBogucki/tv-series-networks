@@ -186,5 +186,6 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     # nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
     if filename:
         plt.savefig(f"../figures/{filename}.png")
+        plt.close()
     else:
         plt.show()

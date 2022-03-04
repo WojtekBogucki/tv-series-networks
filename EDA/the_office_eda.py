@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
-from EDA.processing import fix_names
+from EDA.processing import fix_names, split_characters
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -40,10 +40,12 @@ episodes_by_number_of_speaker = office_raw.loc[:, ['speaker', 'season', 'episode
 episodes_by_number_of_speaker.plot.bar()
 
 replacements = {"Micheal": "Michael",
+                "Michel": "Michael",
                 "Todd": "Todd Packer",
                 "Packer": "Todd Packer",
                 "Robert": "Robert California",
                 "Carroll": "Carol",
+                "Dacvid Wallace": "David Wallace",
                 "David": "David Wallace",
                 "DeAngelo": "Deangelo",
                 "Daryl": "Darryl",
@@ -51,8 +53,14 @@ replacements = {"Micheal": "Michael",
                 "A\.J\.": "AJ",
                 "Bob": "Bob Vance",
                 "Paul": "Paul Faust",
-                "Holy": "Holly"}
+                "Holy": "Holly",
+                "Holly,": "Holly",
+                "Marie": "Concierge Marie",
+                "Concierge": "Concierge Marie",
+                "DunMiff\/sys": "DunMiffsys"}
 
+filter_s07e14 = (office_raw.season == 7) & (office_raw.episode == 14)
+office_raw.loc[filter_s07e14, 'speaker'] = office_raw.loc[filter_s07e14, 'speaker'].apply(fix_names, args=({"David": "David Brent"},))
 
 office_raw['speaker'] = office_raw.speaker.apply(fix_names, args=(replacements,))
 office_raw.groupby('speaker').size().reset_index(name="count").sort_values("speaker", ascending=False)
@@ -65,12 +73,12 @@ len(office_raw.speaker[office_raw.speaker.str.contains("/")])
 office_raw.speaker[office_raw.speaker.str.contains("/")]
 len(office_raw.speaker[office_raw.speaker.str.contains(" & ")])
 
-for splitter in [" and ", ", ", " & "]:
-    filter_speakers = office_raw.speaker.str.contains(splitter)
-    office_raw.loc[filter_speakers, "speaker"] = office_raw.speaker[filter_speakers].apply(lambda x: x.split(splitter))
-    office_raw = office_raw.explode("speaker")
 
-many_speakers = office_raw.speaker.str.contains(" and ")
-office_raw.loc[many_speakers, "speaker"] = office_raw.speaker[many_speakers].apply(lambda x: x.split(" and "))
+office_raw = split_characters(office_raw, [" and ", ", ", " & ", "/"])
 
 office_raw.to_csv("../data/the_office/the_office_lines_v7.csv", index=False, encoding="utf-8")
+
+###########
+line_count = office_raw.groupby(["season", "speaker"]).size().reset_index(name="line_count")
+line_count.loc[(line_count.season==1) & (line_count.line_count<100),["speaker", "line_count"]].plot(kind="hist", bins=12)
+plt.ion()

@@ -2,6 +2,7 @@ import re
 import pandas as pd
 import os
 
+
 def fix_names(x, replacements):
     '''
     Fix characters' names
@@ -13,6 +14,21 @@ def fix_names(x, replacements):
     for rep in replacements:
         x = re.sub(r'^'+rep+'$', replacements[rep], x)
     return x
+
+
+def split_characters(dataset, splitters):
+    '''
+    Split multiple characters e.g. "Michael and Dwight" to separate records with duplicated lines
+    :param dataset: Pandas Data Frame
+    :param splitters: list of strings
+    :return: Data Frame with splitted characters
+    '''
+    for splitter in splitters:
+        filter_speakers = dataset.speaker.str.contains(splitter)
+        dataset.loc[filter_speakers, "speaker"] = dataset.speaker[filter_speakers].apply(
+            lambda x: x.split(splitter))
+        dataset = dataset.explode("speaker")
+    return dataset
 
 
 def filter_by_speakers(dataset, count=100, top=None):

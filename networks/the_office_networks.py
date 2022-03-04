@@ -65,7 +65,7 @@ office_net_seasons = get_season_networks("../data/the_office/")
 
 office_season_stats = get_network_stats_by_season(office_net_seasons)
 
-draw_interaction_network_communities(office_net_seasons[2], "line_count", method="SG")
+draw_interaction_network_communities(office_net_seasons[8], "line_count", method="SG")
 draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)
 draw_interaction_network_communities(office_net_seasons[0], "word_count")
 

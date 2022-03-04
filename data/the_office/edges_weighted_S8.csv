@@ -1,30 +1,30 @@
 speaker1,speaker2,line_count,scene_count,word_count
-Andy,Angela,139,25,1305
+Andy,Angela,140,25,1323
 Andy,Cathy,7,3,35
 Andy,Creed,73,13,887
 Andy,Darryl,351,47,4208
 Andy,David Wallace,49,5,528
 Andy,Dwight,505,69,6152
-Andy,Erin,608,85,6347
+Andy,Erin,609,85,6365
 Andy,Gabe,69,10,762
 Andy,Harry,15,2,155
 Andy,Host,28,5,386
 Andy,Irene,34,6,403
 Andy,Jessica,123,12,1011
-Andy,Jim,532,69,6612
+Andy,Jim,533,69,6628
 Andy,Kelly,159,25,1844
-Andy,Kevin,348,57,3649
+Andy,Kevin,349,57,3667
 Andy,Meredith,177,25,1968
 Andy,Nate,29,3,559
 Andy,Nellie,113,14,1146
-Andy,Oscar,292,45,3289
-Andy,Pam,314,48,3312
+Andy,Oscar,294,45,3325
+Andy,Pam,319,49,3360
 Andy,Phyllis,237,39,2794
-Andy,Robert California,396,51,5160
+Andy,Robert California,398,52,5178
 Andy,Ryan,100,18,1332
-Andy,Stanley,183,31,2197
-Andy,Susan,94,11,848
-Andy,Toby,79,10,1173
+Andy,Stanley,186,32,2216
+Andy,Susan,95,11,866
+Andy,Toby,80,10,1191
 Andy,Val,60,9,515
 Andy,Walter,54,6,581
 Angela,Cathy,5,2,31
@@ -39,10 +39,10 @@ Angela,Kelly,54,13,493
 Angela,Kevin,92,21,764
 Angela,Meredith,10,4,78
 Angela,Nellie,25,6,243
-Angela,Oscar,120,29,1070
-Angela,Pam,142,27,1346
+Angela,Oscar,123,30,1090
+Angela,Pam,144,28,1348
 Angela,Phyllis,57,17,473
-Angela,Robert California,10,4,130
+Angela,Robert California,13,5,143
 Angela,Ryan,24,5,309
 Angela,Senator Lipton,53,10,360
 Angela,Stanley,24,7,263
@@ -76,7 +76,7 @@ Creed,Nellie,11,3,93
 Creed,Oscar,18,8,161
 Creed,Pam,46,9,367
 Creed,Phyllis,14,5,137
-Creed,Robert California,15,4,334
+Creed,Robert California,18,5,343
 Creed,Ryan,10,3,72
 Creed,Stanley,9,4,98
 Creed,Toby,15,4,204
@@ -119,7 +119,7 @@ Dwight,Nellie,260,40,3875
 Dwight,Oscar,199,33,2195
 Dwight,Pam,277,42,2810
 Dwight,Phyllis,126,26,1302
-Dwight,Robert California,154,22,2038
+Dwight,Robert California,157,23,2083
 Dwight,Ryan,161,26,2438
 Dwight,Senator Lipton,30,5,253
 Dwight,Stanley,132,27,1615
@@ -138,10 +138,10 @@ Erin,Kelly,36,8,224
 Erin,Kevin,158,35,1414
 Erin,Meredith,40,9,243
 Erin,Nellie,46,10,785
-Erin,Oscar,106,21,855
+Erin,Oscar,107,21,873
 Erin,Pam,96,20,696
 Erin,Phyllis,54,16,371
-Erin,Robert California,112,20,1377
+Erin,Robert California,115,21,1382
 Erin,Ryan,84,17,690
 Erin,Senator Lipton,14,4,149
 Erin,Stanley,43,14,330
@@ -151,17 +151,17 @@ Erin,Todd Packer,12,4,88
 Erin,Val,9,2,34
 Erin,Walter,16,1,181
 Gabe,Jim,77,18,787
-Gabe,Kelly,13,2,108
+Gabe,Kelly,15,2,136
 Gabe,Kevin,18,5,170
 Gabe,Meredith,6,2,77
 Gabe,Nellie,38,10,386
 Gabe,Oscar,30,8,266
 Gabe,Pam,28,5,324
 Gabe,Phyllis,16,5,172
-Gabe,Robert California,53,12,963
+Gabe,Robert California,54,12,977
 Gabe,Ryan,21,7,206
 Gabe,Stanley,5,2,61
-Gabe,Toby,42,7,448
+Gabe,Toby,44,7,476
 Gabe,Todd Packer,12,3,148
 Gabe,Val,18,3,157
 Gabe,Walter,16,1,198
@@ -192,7 +192,7 @@ Jim,Meredith,86,16,675
 Jim,Nate,7,1,100
 Jim,Nellie,204,34,2416
 Jim,Oscar,194,34,1904
-Jim,Pam,535,82,4702
+Jim,Pam,538,83,4745
 Jim,Phyllis,190,35,1785
 Jim,Robert California,222,31,2629
 Jim,Ryan,180,30,2057
@@ -207,18 +207,18 @@ Kelly,Nellie,2,1,18
 Kelly,Oscar,83,18,739
 Kelly,Pam,140,26,1371
 Kelly,Phyllis,46,16,489
-Kelly,Robert California,38,4,418
+Kelly,Robert California,39,4,432
 Kelly,Ryan,67,17,833
 Kelly,Stanley,30,10,345
-Kelly,Toby,30,4,281
+Kelly,Toby,32,4,309
 Kelly,Val,19,5,200
 Kevin,Meredith,54,17,397
 Kevin,Nate,3,1,57
 Kevin,Nellie,47,9,626
-Kevin,Oscar,159,35,1391
+Kevin,Oscar,160,35,1409
 Kevin,Pam,150,35,1305
 Kevin,Phyllis,73,24,512
-Kevin,Robert California,151,25,2304
+Kevin,Robert California,153,26,2314
 Kevin,Ryan,58,14,540
 Kevin,Senator Lipton,10,2,87
 Kevin,Stanley,45,17,328
@@ -245,19 +245,19 @@ Nate,Val,29,3,300
 Nellie,Oscar,36,7,436
 Nellie,Pam,112,17,1304
 Nellie,Phyllis,24,6,309
-Nellie,Robert California,105,16,1365
+Nellie,Robert California,109,17,1413
 Nellie,Ryan,43,5,854
 Nellie,Stanley,34,6,455
 Nellie,Toby,16,3,182
 Nellie,Todd Packer,78,16,1248
-Oscar,Pam,176,37,1791
+Oscar,Pam,178,38,1793
 Oscar,Phyllis,124,34,974
-Oscar,Robert California,97,15,1476
+Oscar,Robert California,100,16,1498
 Oscar,Ryan,85,20,755
 Oscar,Senator Lipton,16,3,155
 Oscar,Stanley,48,15,432
-Oscar,Susan,13,2,93
-Oscar,Toby,59,12,647
+Oscar,Susan,14,2,111
+Oscar,Toby,60,12,665
 Oscar,Val,7,2,34
 Oscar,Walter,4,1,31
 Pam,Phyllis,145,32,1257
@@ -276,7 +276,7 @@ Phyllis,Val,19,6,142
 Robert California,Ryan,54,11,870
 Robert California,Stanley,43,10,584
 Robert California,Susan,67,9,778
-Robert California,Toby,36,7,438
+Robert California,Toby,37,7,452
 Robert California,Todd Packer,7,1,139
 Robert California,Val,6,1,49
 Robert California,Walter,22,2,324

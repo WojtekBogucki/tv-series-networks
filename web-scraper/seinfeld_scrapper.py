@@ -6,7 +6,7 @@ import re
 from bs4 import BeautifulSoup
 import pandas as pd
 
-########
+######## OLD VERSION
 # main_URL = "https://www.seinfeldscripts.com/"
 # URL = main_URL + "seinfeld-scripts.html"
 # headers = {"User-Agent": "'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'"}
@@ -50,17 +50,19 @@ soup = BeautifulSoup(page.content, "html.parser")
 tables = soup.find_all("table")
 
 episodes_list = tables[2].findChildren('a')
+# get episode titles
 episodes_titles = [x.text for x in episodes_list if
                    str(x.get("href")).startswith("/web") or str(x.get("href")).startswith("scripts") and str(
                        x.get("href")).endswith(".shtml")]
+episodes_titles = list(
+    map(lambda x: x.translate(str.maketrans({'\n': '', ' ': '_', '(': '', ')': '', ',': ''})),
+        episodes_titles))
+# get episode links
 episodes_links1 = [x.get("href") for x in episodes_list if str(x.get("href")).startswith("/web")]
 episodes_links2 = ['/web/20170504050113/http://www.seinology.com/' + x.get("href") for x in episodes_list if
                    str(x.get("href")).startswith("scripts") and str(x.get("href")).endswith(".shtml")]
 episodes_links = episodes_links1 + episodes_links2
 episodes_links = list(map(lambda x: main_URL + x, episodes_links))
-episodes_titles = list(
-    map(lambda x: x.translate(str.maketrans({'\n': '', ' ': '_', '(': '', ')': '', ',': ''})),
-        episodes_titles))
 
 i = 0
 for ep_title, ep_link in zip(episodes_titles[i:], episodes_links[i:]):
@@ -109,8 +111,7 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_links[i:]):
         print(te)
     # if i >= 1: break
 
-
-seinfeld_df = pd.DataFrame(columns=["season", "episode","title","scene","speaker","line"])
+seinfeld_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 # seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv",encoding="utf-8")
 season = 1
 scene = 0
@@ -127,15 +128,16 @@ for ep_title in episodes_titles:
         for line in f:
             full_line = line
             line = line.strip()
-            stage_dirs = re.findall(r"(^\([^)]*\))$",  line)
+            stage_dirs = re.findall(r"(^\([^)]*\))$", line)
             if stage_dirs:
-                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches", "comes? in"]:
+                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches",
+                             "comes? in"]:
                     match = re.findall(fr"(^\(.*{word}.*\))$", line, re.IGNORECASE)
                     if match:
                         scene += 1
                         continue
             line = re.sub(r"(\([^)]*\))", "", line)
-            for name in ["GEORGE","JERRY","KRAMER","ELAINE"]:
+            for name in ["GEORGE", "JERRY", "KRAMER", "ELAINE"]:
                 line = re.sub(fr"(?<=^{name})  ", ": ", line)
             if not line:
                 continue
@@ -163,6 +165,7 @@ for ep_title in episodes_titles:
                                               "line": line.strip()}, ignore_index=True)
     # if ep_number >= 1: break
 
+# removing recap or duplicated episodes
 seinfeld_df = seinfeld_df[~seinfeld_df.episode.isin([180, 101, 100, 177, 178])]
 seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v1.csv", index=False, encoding="utf-8")
 
@@ -173,17 +176,17 @@ for ep_title in episodes_titles:
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            items = re.findall(r"(^\([^)]*\))$",  line)
+            items = re.findall(r"(^\([^)]*\))$", line)
             if items:
                 with open("../data/seinfeld/seinology/stage_directions.txt", "a") as sd:
                     sd.write(f"{ep_title} {items}\n")
 
-i=0
+i = 0
 for ep_title in episodes_titles:
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            items = re.findall(r"(^\(.*enters?.*\))$",  line)
+            items = re.findall(r"(^\(.*enters?.*\))$", line)
             if items:
                 i += 1
                 print(f"{i} {items}")
