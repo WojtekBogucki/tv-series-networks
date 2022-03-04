@@ -82,7 +82,7 @@ print(node_groups)
 office_net_episodes = get_episode_networks("../data/the_office/")
 
 
-office_raw = pd.read_csv("../data/the_office/the_office_lines_v7.csv")
+office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
 seasons = office_raw.season.unique()
 i = 0
 episode_dict = {}

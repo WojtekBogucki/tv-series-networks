@@ -22,6 +22,7 @@ Andy,Pam,319,49,3360
 Andy,Phyllis,237,39,2794
 Andy,Robert California,398,52,5178
 Andy,Ryan,100,18,1332
+Andy,Senator Lipton,7,1,115
 Andy,Stanley,186,32,2216
 Andy,Susan,95,11,866
 Andy,Toby,80,10,1191
@@ -143,7 +144,7 @@ Erin,Pam,96,20,696
 Erin,Phyllis,54,16,371
 Erin,Robert California,115,21,1382
 Erin,Ryan,84,17,690
-Erin,Senator Lipton,14,4,149
+Erin,Senator Lipton,16,5,156
 Erin,Stanley,43,14,330
 Erin,Susan,18,5,146
 Erin,Toby,16,3,159
@@ -232,6 +233,7 @@ Meredith,Pam,60,14,450
 Meredith,Phyllis,24,10,174
 Meredith,Robert California,59,10,1153
 Meredith,Ryan,17,6,137
+Meredith,Senator Lipton,2,1,28
 Meredith,Stanley,27,11,239
 Meredith,Toby,16,3,238
 Meredith,Val,2,1,18
@@ -254,7 +256,7 @@ Oscar,Pam,178,38,1793
 Oscar,Phyllis,124,34,974
 Oscar,Robert California,100,16,1498
 Oscar,Ryan,85,20,755
-Oscar,Senator Lipton,16,3,155
+Oscar,Senator Lipton,24,5,227
 Oscar,Stanley,48,15,432
 Oscar,Susan,14,2,111
 Oscar,Toby,60,12,665
@@ -274,6 +276,7 @@ Phyllis,Susan,5,1,35
 Phyllis,Toby,19,5,165
 Phyllis,Val,19,6,142
 Robert California,Ryan,54,11,870
+Robert California,Senator Lipton,6,1,112
 Robert California,Stanley,43,10,584
 Robert California,Susan,67,9,778
 Robert California,Toby,37,7,452

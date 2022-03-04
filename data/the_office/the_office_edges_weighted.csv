@@ -180,7 +180,7 @@ Dwight,Michael,6020,667,66041
 Dwight,Nellie,514,80,6976
 Dwight,Oscar,1027,192,9876
 Dwight,Pam,2358,370,23020
-Dwight,Pete,47,12,434
+Dwight,Pete,41,11,422
 Dwight,Phyllis,1080,221,10280
 Dwight,Robert California,169,25,2202
 Dwight,Roy,56,10,494
@@ -212,7 +212,7 @@ Gabe,Jo,93,10,1389
 Gabe,Kelly,78,15,724
 Gabe,Kevin,139,28,1464
 Gabe,Meredith,69,16,905
-Gabe,Michael,289,37,3927
+Gabe,Michael,289,37,3913
 Gabe,Nellie,51,11,606
 Gabe,Oscar,99,21,1063
 Gabe,Pam,181,31,2202
@@ -258,7 +258,7 @@ Jim,Michael,4485,475,49647
 Jim,Nellie,257,47,3241
 Jim,Oscar,866,170,7852
 Jim,Pam,5222,769,44439
-Jim,Pete,79,10,872
+Jim,Pete,42,6,310
 Jim,Phyllis,884,183,7998
 Jim,Robert California,231,32,2864
 Jim,Roy,185,26,1535
@@ -324,7 +324,6 @@ Meredith,Toby,113,23,1058
 Meredith,Todd Packer,3,1,26
 Michael,Oscar,1697,207,21832
 Michael,Pam,4373,504,50155
-Michael,Pete,23,2,370
 Michael,Phyllis,1523,194,20100
 Michael,Roy,170,24,2000
 Michael,Ryan,1631,203,19756
@@ -348,7 +347,7 @@ Oscar,Ryan,255,63,2362
 Oscar,Stanley,304,92,2740
 Oscar,Toby,186,46,1970
 Oscar,Todd Packer,3,1,62
-Pam,Pete,70,13,565
+Pam,Pete,35,8,286
 Pam,Phyllis,842,198,6898
 Pam,Robert California,90,14,1128
 Pam,Roy,252,43,2100

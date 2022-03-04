@@ -24,7 +24,7 @@ def split_characters(dataset, splitters):
     :return: Data Frame with splitted characters
     '''
     for splitter in splitters:
-        filter_speakers = dataset.speaker.str.contains(splitter)
+        filter_speakers = dataset.speaker.str.strip().str.contains(splitter)
         dataset.loc[filter_speakers, "speaker"] = dataset.speaker[filter_speakers].apply(
             lambda x: x.split(splitter))
         dataset = dataset.explode("speaker")

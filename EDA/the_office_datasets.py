@@ -6,7 +6,7 @@ from EDA.processing import filter_by_speakers, filter_group_scenes, get_speaker_
     save_episodes
 
 # load raw data
-office_raw = pd.read_csv("../data/the_office/the_office_lines_v7.csv")
+office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
 
 # save speakers with over 100 lines
 office_edges_weighted = (office_raw.pipe(filter_by_speakers)
