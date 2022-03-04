@@ -58,7 +58,9 @@ replacements = {"pitt": "mr. pitt",
                 "leo": "uncle leo",
                 "mr ross": "mr. ross",
                 "j\. peterman": "peterman",
-                "mr. peterman": "peterman"}
+                "mr. peterman": "peterman",
+                "claie": "claire",
+                "marry": "mary"}
 
 
 seinfeld_df['speaker'] = seinfeld_df.speaker.apply(fix_names, args=(replacements,))

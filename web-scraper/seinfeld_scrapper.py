@@ -124,8 +124,11 @@ for ep_title in episodes_titles:
     if ep_number in [6, 18, 41, 65, 87, 111, 135, 157]:
         season += 1
         episode = 0
-    if ep_number in [47, 116, 121]:
+    elif ep_number in [47, 116, 121]:
         ep_title = "fixed/" + ep_title
+    elif ep_number in [180, 101, 100, 177, 178]:
+        episode += 1
+        continue
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         episode += 1
         for line in f:
@@ -168,7 +171,6 @@ for ep_title in episodes_titles:
     # if ep_number >= 1: break
 
 # removing recap or duplicated episodes
-seinfeld_df = seinfeld_df[~seinfeld_df.episode.isin([180, 101, 100, 177, 178])]
 seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v1.csv", index=False, encoding="utf-8")
 
 seinfeld_df.groupby(["season","episode"])["scene"].nunique().plot(kind="barh")

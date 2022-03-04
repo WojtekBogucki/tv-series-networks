@@ -1,126 +1,129 @@
 speaker1,speaker2,line_count,scene_count,word_count
-babu,cheryl,7,1,66
-babu,elaine,46,3,345
-babu,george,21,1,315
-babu,jerry,75,3,724
-babu,kramer,15,1,300
-buckles,clerk,7,1,111
-buckles,elaine,60,3,663
-buckles,george,57,3,558
-buckles,jerry,54,3,465
-buckles,kramer,34,3,316
-buckles,woman,10,1,170
-casting director,george,31,5,168
-casting director,jerry,36,6,171
-casting director,kramer,8,1,51
-casting director,tom,11,1,63
+babu,cheryl,7,1,68
+babu,elaine,46,3,357
+babu,george,21,1,335
+babu,jerry,75,3,759
+babu,kramer,15,1,309
+buckles,clerk,7,1,119
+buckles,elaine,61,3,712
+buckles,george,58,3,608
+buckles,jerry,54,3,509
+buckles,kramer,34,3,342
+buckles,woman,10,1,187
+casting director,george,31,5,182
+casting director,jerry,36,6,185
+casting director,kramer,8,1,55
+casting director,tom,11,1,68
 cheryl,donald,3,1,20
-cheryl,elaine,64,5,481
-cheryl,george,67,5,759
-cheryl,jerry,79,5,647
+cheryl,elaine,64,5,515
+cheryl,george,67,5,827
+cheryl,jerry,79,5,701
 cheryl,kramer,2,1,14
-cheryl,marla,3,1,20
+cheryl,marla,3,1,21
 cheryl,mel,2,1,9
-clerk,elaine,49,4,390
-clerk,george,81,6,827
-clerk,jerry,35,3,331
-clerk,kramer,38,5,328
-clerk,susan,24,2,148
-clerk,woman,10,2,128
-cop,george,60,5,363
-cop,jerry,75,5,431
-cop,kramer,3,1,7
-cop,lt. martel,3,1,19
-dana,george,62,4,727
-donald,elaine,10,2,45
-donald,george,44,5,288
-donald,jerry,17,2,66
+cheryl,susan,2,1,8
+clerk,elaine,49,4,422
+clerk,george,81,6,889
+clerk,jerry,35,3,354
+clerk,kramer,38,5,352
+clerk,susan,24,2,163
+clerk,woman,10,2,140
+cop,george,61,5,383
+cop,jerry,76,5,456
+cop,kramer,3,1,8
+cop,lt. martel,3,1,20
+dana,george,62,4,801
+donald,elaine,10,2,46
+donald,george,44,5,320
+donald,jerry,17,2,71
 donald,kramer,3,1,20
-donald,marla,4,1,26
-donald,mel,6,2,59
-donald,susan,13,2,65
-dr. reston,elaine,45,2,403
-elaine,gail,46,4,376
-elaine,george,764,68,7600
-elaine,jerry,1522,125,13928
-elaine,joe divola,58,6,640
-elaine,kramer,562,55,5239
-elaine,marla,44,5,554
-elaine,mel,35,3,303
-elaine,russell,39,3,489
-elaine,sandi,3,1,22
-elaine,sidra,54,3,385
-elaine,susan,35,4,258
-elaine,tia,11,3,90
-elaine,woman,22,3,304
-gail,george,22,3,227
-gail,jerry,57,4,516
-gail,kramer,6,1,78
-gail,russell,15,2,93
-george,helen,40,6,224
-george,jerry,2485,178,23150
-george,joe divola,18,1,133
-george,kramer,866,83,8299
-george,lt. martel,10,1,56
-george,marla,51,3,454
-george,mel,7,1,35
-george,morty,44,5,270
-george,naomi,9,1,126
-george,newman,29,4,276
-george,russell,121,8,1423
-george,sandi,23,2,270
-george,susan,311,27,2924
-george,tia,5,1,48
-george,tom,37,3,502
-george,uncle leo,33,3,277
-george,woman,62,7,689
-helen,jerry,179,16,1250
-helen,kramer,38,2,332
-helen,morty,135,14,1127
-helen,naomi,4,1,23
+donald,marla,4,1,27
+donald,mel,6,2,64
+donald,susan,16,3,86
+dr. reston,elaine,45,2,438
+elaine,gail,46,4,403
+elaine,george,770,68,8146
+elaine,jerry,1541,125,15014
+elaine,joe divola,59,6,667
+elaine,kramer,567,55,5589
+elaine,marla,44,5,586
+elaine,mel,35,3,325
+elaine,russell,39,3,522
+elaine,sandi,3,1,23
+elaine,sidra,54,3,422
+elaine,susan,38,5,295
+elaine,tia,15,4,122
+elaine,woman,22,3,329
+gail,george,22,3,247
+gail,jerry,57,4,558
+gail,kramer,6,1,87
+gail,russell,15,2,97
+george,helen,40,6,245
+george,jerry,2506,178,24940
+george,joe divola,18,1,151
+george,kramer,876,83,8983
+george,lt. martel,10,1,59
+george,marla,51,3,476
+george,mel,7,1,36
+george,morty,44,5,292
+george,naomi,9,1,131
+george,newman,29,4,296
+george,russell,122,8,1506
+george,sandi,23,2,289
+george,susan,312,27,3132
+george,tia,5,1,51
+george,tom,37,3,532
+george,uncle leo,33,3,295
+george,woman,62,7,745
+helen,jerry,178,16,1360
+helen,kramer,38,2,356
+helen,morty,135,14,1220
+helen,naomi,4,1,24
 helen,sandi,4,1,17
 helen,sidra,2,1,7
 helen,tia,2,1,11
-helen,uncle leo,30,5,201
-jerry,joe divola,62,5,547
-jerry,kramer,1382,119,12186
-jerry,lt. martel,12,1,56
-jerry,marla,133,7,998
-jerry,mel,48,3,397
-jerry,morty,161,13,1285
-jerry,naomi,34,6,374
-jerry,newman,105,10,882
-jerry,russell,88,5,787
-jerry,sandi,70,5,504
-jerry,sidra,68,3,634
-jerry,susan,138,12,1219
-jerry,tia,77,10,684
-jerry,tom,45,4,432
-jerry,uncle leo,99,9,886
-jerry,woman,110,8,1212
-joe divola,kramer,3,1,18
-kramer,lt. martel,21,2,362
-kramer,marla,39,3,251
+helen,uncle leo,30,5,225
+jerry,joe divola,63,5,587
+jerry,kramer,1393,119,13196
+jerry,lt. martel,12,1,61
+jerry,marla,133,7,1056
+jerry,mel,48,3,424
+jerry,morty,160,13,1389
+jerry,naomi,34,6,397
+jerry,newman,107,10,944
+jerry,russell,89,5,838
+jerry,sandi,70,5,544
+jerry,sidra,68,3,680
+jerry,susan,149,13,1354
+jerry,tia,84,11,754
+jerry,tom,45,4,467
+jerry,uncle leo,98,9,938
+jerry,woman,110,8,1302
+joe divola,kramer,3,1,21
+kramer,lt. martel,21,2,382
+kramer,marla,39,3,269
 kramer,mel,2,1,9
-kramer,morty,25,1,228
-kramer,naomi,21,6,200
-kramer,newman,177,14,1778
-kramer,sandi,2,1,10
-kramer,sidra,22,1,170
-kramer,susan,47,6,329
-kramer,tia,33,4,323
-kramer,tom,21,3,206
-kramer,woman,27,5,286
-marla,mel,3,1,15
-morty,sandi,4,1,13
-morty,sidra,2,1,3
-morty,tia,2,1,7
-morty,uncle leo,34,4,304
-russell,sandi,13,1,186
-russell,susan,15,2,84
-russell,tom,15,1,263
+kramer,morty,25,1,241
+kramer,naomi,21,6,213
+kramer,newman,178,14,1899
+kramer,sandi,2,1,11
+kramer,sidra,22,1,189
+kramer,susan,49,7,367
+kramer,tia,33,4,348
+kramer,tom,21,3,221
+kramer,woman,27,5,308
+marla,mel,3,1,16
+marla,susan,3,1,15
+mel,susan,2,1,3
+morty,sandi,4,1,14
+morty,sidra,2,1,4
+morty,tia,2,1,8
+morty,uncle leo,34,4,323
+russell,sandi,13,1,197
+russell,susan,15,2,85
+russell,tom,15,1,276
 sandi,sidra,4,1,12
 sandi,tia,4,1,16
-sandi,tom,21,2,185
+sandi,tom,21,2,200
 sidra,tia,2,1,6
-susan,woman,2,1,11
+susan,woman,2,1,13

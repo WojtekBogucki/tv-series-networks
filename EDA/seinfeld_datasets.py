@@ -31,5 +31,9 @@ edges_weighted = get_speaker_network_edges(group_scenes)
 edges_weighted.head()
 edges_weighted.to_csv(f"{path}/edges_weighted_top30.csv", index=False, encoding="utf-8")
 
-save_seasons(seinfeld_raw, path=path)
-save_episodes(seinfeld_raw, path=path)
+save_seasons(seinfeld_raw, path=path, count=20)
+save_episodes(seinfeld_raw, path=path, count=0)
+
+
+episode_edges = (seinfeld_raw[(seinfeld_raw.season==6) & (seinfeld_raw.episode==14)].pipe(filter_by_speakers, count=0)
+                             .pipe(filter_group_scenes))
