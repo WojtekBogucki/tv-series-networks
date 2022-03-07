@@ -136,7 +136,7 @@ for ep_title in episodes_titles:
             line = line.strip()
             stage_dirs = re.findall(r"(^\([^)]*\))$", line)
             if stage_dirs:
-                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches",
+                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "bursts in", "approaches",
                              "comes? in"]:
                     match = re.findall(fr"(^\(.*{word}.*\))$", line, re.IGNORECASE)
                     if match:
@@ -152,7 +152,7 @@ for ep_title in episodes_titles:
             elif line.startswith("INT.") or line.startswith("EXT.") or line.startswith("["):
                 scene += 1
                 continue
-            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"]{,30}): ? ?(.*)")
+            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"-]{,30}): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
@@ -161,6 +161,8 @@ for ep_title in episodes_titles:
                 with open(f"../data/seinfeld/seinology/errors.txt", "a") as err:
                     err.write(f"{ep_number} Line: {line}\n")
                 # print("*error*", line)
+                continue
+            if not speaker.strip():
                 continue
             seinfeld_df = seinfeld_df.append({"season": season,
                                               "episode": episode,

@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from EDA.processing import fix_names
+from EDA.processing import fix_names, split_characters
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -11,7 +11,7 @@ tbbt_df.head()
 print("Shape: ", tbbt_df.shape)
 
 tbbt_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
-tbbt_df.speaker.nunique()   # 420
+tbbt_df.speaker.nunique()   # 412
 
 lines_by_season = tbbt_df.groupby('season')['line'].count()
 lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines")
@@ -41,11 +41,16 @@ episodes_by_number_of_speaker.plot(kind="bar", title="Number of characters in ep
 plt.xticks(rotation=45)
 plt.show()
 
+tbbt_df.speaker = tbbt_df.speaker.apply(lambda x: x.replace(" together", ""))
 
-tbbt_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
+len(tbbt_df.speaker[tbbt_df.speaker.str.contains(" and ")])
+len(tbbt_df.speaker[tbbt_df.speaker.str.contains(" & ")])
+
+tbbt_df = split_characters(tbbt_df, [" and ", " & "])
 
 replacements = {"howard’s mother": "mrs wolowitz",
                 "barry": "kripke",
+                "barry kripke": "kripke",
                 "lesley": "leslie",
                 "leslie winkle": "leslie",
                 "beverley": "beverly",
@@ -68,10 +73,13 @@ replacements = {"howard’s mother": "mrs wolowitz",
                 "past sheldon": "sheldon",
                 "past leonard": "leonard",
                 "past howard": "howard",
-                "past raj": "raj"}
+                "past raj": "raj",
+                "col\. williams": "colonel williams",
+                "col williams": "colonel williams"}
 
 
 tbbt_df['speaker'] = tbbt_df.speaker.apply(fix_names, args=(replacements,))
+tbbt_df.groupby("speaker").size().reset_index(name="count").sort_values("speaker", ascending=False)
 tbbt_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)[:100]
 tbbt_df.speaker.nunique()
 

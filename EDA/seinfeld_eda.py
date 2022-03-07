@@ -10,8 +10,37 @@ seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv", encoding="ut
 seinfeld_df.head()
 print("Shape: ", seinfeld_df.shape)
 
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" and ")])
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" & ")])
+len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains("&")])
+seinfeld_df[seinfeld_df.speaker.apply(len) > 20]
+
+seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("speaker", ascending=True)
+
+seinfeld_df = split_characters(seinfeld_df, [" and "," & ", "&"])
+
+replacements = {"pitt": "mr. pitt",
+                "steinbrenner": "mr. steinbrenner",
+                "lippman": "mr. lippman",
+                "mrs. costanza": "estelle",
+                "devola": "joe divola",
+                "leo": "uncle leo",
+                "mr ross": "mr. ross",
+                "j\. peterman": "peterman",
+                "mr. peterman": "peterman",
+                "claie": "claire",
+                "marry": "mary"}
+
+
+seinfeld_df['speaker'] = seinfeld_df.speaker.apply(fix_names, args=(replacements,))
+seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)[:100]
+seinfeld_df.speaker.nunique()
+
+seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v2.csv", index=False, encoding="utf-8")
+
+
 seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
-seinfeld_df.speaker.nunique()   # 1060
+seinfeld_df.speaker.nunique()   # 992
 
 lines_by_season = seinfeld_df.groupby('season')['line'].count()
 lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines")
@@ -40,31 +69,3 @@ episodes_by_number_of_speaker = seinfeld_df.loc[:, ['speaker', 'season', 'episod
 episodes_by_number_of_speaker.plot(kind="bar", title="Number of characters in episodes", ylabel="Number of characters", figsize=(12,8))
 plt.xticks(rotation=45)
 plt.show()
-
-len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" and ")])
-len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" & ")])
-len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains("&")])
-seinfeld_df[seinfeld_df.speaker.apply(len) > 20]
-
-seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("speaker", ascending=True)
-
-seinfeld_df = split_characters(seinfeld_df, [" and "," & ", "&"])
-
-replacements = {"pitt": "mr. pitt",
-                "steinbrenner": "mr. steinbrenner",
-                "lippman": "mr. lippman",
-                "mrs. costanza": "estelle",
-                "devola": "joe divola",
-                "leo": "uncle leo",
-                "mr ross": "mr. ross",
-                "j\. peterman": "peterman",
-                "mr. peterman": "peterman",
-                "claie": "claire",
-                "marry": "mary"}
-
-
-seinfeld_df['speaker'] = seinfeld_df.speaker.apply(fix_names, args=(replacements,))
-seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)[:100]
-seinfeld_df.speaker.nunique()
-
-seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v2.csv", index=False, encoding="utf-8")

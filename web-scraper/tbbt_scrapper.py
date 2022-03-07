@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 main_URL = "https://bigbangtrans.wordpress.com/"
-headers = {"User-Agent": "'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'"}
+headers = {"User-Agent": "'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'"}
 page = requests.get(main_URL, headers=headers)
 
 soup = BeautifulSoup(page.content, "html.parser")
@@ -22,7 +22,7 @@ episodes_titles = list(
         .replace("__", "_"),
         elements))
 
-i = 124
+i = 0
 for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
     i += 1
     print(i)
@@ -53,10 +53,14 @@ for ep_title in episodes_titles:
         for line in f:
             full_line = line
             line = line.strip()
+            stage_dirs = re.findall(r"(\([^)]*\))", line)
+            if stage_dirs:
+                for word in ["enters?", "entering", "exits?", "exiting", "leaves?", "walks? in|out", "hungs up", "approaches"]:
+                    match = re.findall(fr"(^[(\[].*{word}.*[)\]])$", line, re.IGNORECASE)
+                    if match:
+                        scene += 1
             line = re.sub(r"(\([^)]*\))", "", line)
             if not line:
-                continue
-            elif line.startswith("(") or line.startswith(".") or line.startswith("Credit"):
                 continue
             elif line.startswith("Scene:") or \
                     line.startswith("Fantasy sequence") or \
@@ -64,17 +68,21 @@ for ep_title in episodes_titles:
                     line.startswith("Back to apartment") or \
                     line.startswith("Flash") or \
                     line.startswith("Time shift") or \
+                    line.startswith("(Time shift") or \
+                    line.startswith("(Later") or \
+                    line.startswith("(Back") or \
                     line.startswith("Later"):
                 scene += 1
                 continue
-            pattern = re.compile(r"([A-Za-z0-9'.#& \"’]+): ? ?(.*)")
+            elif line.startswith("(") or line.startswith(".") or line.startswith("Credit"):
+                continue
+            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’]+): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
                 line = line_search.group(2)
             else:
                 with open(f"../data/tbbt/errors.txt", "a") as err:
-                    err.write(f"{season} {episode} Full_line: {full_line}")
                     err.write(f"{season} {episode} Line: {line}\n")
                 # print("*error*", line)
                 continue
@@ -91,3 +99,21 @@ pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
 
 tbbt_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+
+for ep_title in episodes_titles:
+    with open(f"../data/tbbt/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            items = re.findall(r"(^\([^)]*\))$", line)
+            if items:
+                with open("../data/tbbt/raw_scripts/stage_directions.txt", "a") as sd:
+                    sd.write(f"{ep_title} {items}\n")
+
+for ep_title in episodes_titles:
+    with open(f"../data/tbbt/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            items = re.findall(r"(\([^)]*\))", line)
+            if items:
+                with open("../data/tbbt/raw_scripts/stage_directions2.txt", "a") as sd:
+                    sd.write(f"{ep_title} {items}\n")
