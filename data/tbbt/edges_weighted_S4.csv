@@ -1,40 +1,35 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,bernadette,223,20,2560
-amy,howard,92,9,896
-amy,leonard,231,19,2177
-amy,penny,400,35,4659
+amy,bernadette,226,20,2568
+amy,howard,94,9,901
+amy,leonard,232,19,2178
+amy,penny,401,35,4661
 amy,priya,27,3,187
 amy,raj,68,6,748
-amy,sheldon,585,38,7317
+amy,sheldon,585,39,7317
 amy,zack,19,2,267
-bernadette,howard,405,34,3793
-bernadette,leonard,204,20,1759
+bernadette,howard,407,35,3801
+bernadette,leonard,204,21,1759
 bernadette,mrs wolowitz,8,1,81
-bernadette,penny,306,30,2970
-bernadette,priya,90,11,787
+bernadette,penny,308,30,2976
+bernadette,priya,89,11,773
 bernadette,raj,156,15,1597
 bernadette,sheldon,140,13,1847
 bernadette,zack,11,1,117
-bot,howard,28,3,393
-bot,leonard,62,4,697
-bot,penny,43,3,494
-bot,raj,20,2,219
-bot,sheldon,7,1,148
-howard,leonard,967,100,9175
+howard,leonard,958,100,9060
 howard,mrs latham,15,2,206
 howard,mrs wolowitz,103,9,884
-howard,penny,476,42,4536
-howard,priya,163,19,1596
-howard,raj,734,81,7404
-howard,sheldon,863,85,10929
+howard,penny,477,42,4540
+howard,priya,162,19,1585
+howard,raj,735,81,7405
+howard,sheldon,864,85,10930
 howard,zack,65,8,613
 leonard,mrs latham,62,4,629
 leonard,mrs wolowitz,26,3,253
 leonard,page,32,2,318
 leonard,penny,720,55,6388
-leonard,priya,424,35,3818
-leonard,raj,790,80,7672
-leonard,sheldon,1732,126,19804
+leonard,priya,423,36,3809
+leonard,raj,783,79,7633
+leonard,sheldon,1727,126,19698
 leonard,wyatt,46,4,572
 leonard,zack,87,8,761
 mrs latham,raj,17,2,226
@@ -45,11 +40,11 @@ page,raj,16,1,172
 page,sheldon,50,2,668
 penny,priya,106,12,989
 penny,raj,239,23,2491
-penny,sheldon,1034,71,11727
+penny,sheldon,1033,71,11718
 penny,wyatt,39,3,462
 penny,zack,86,8,716
 priya,raj,149,17,1565
-priya,sheldon,267,22,3236
+priya,sheldon,267,23,3236
 raj,sheldon,782,70,9571
 raj,zack,44,5,423
 sheldon,wyatt,4,1,37

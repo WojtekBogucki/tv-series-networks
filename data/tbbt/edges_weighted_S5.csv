@@ -1,6 +1,6 @@
 speaker1,speaker2,line_count,scene_count,word_count
 amy,bernadette,291,35,3514
-amy,howard,128,16,1800
+amy,howard,127,16,1784
 amy,leonard,270,28,3019
 amy,mike,5,1,72
 amy,mrs wolowitz,9,2,89
@@ -8,51 +8,51 @@ amy,penny,558,47,6536
 amy,raj,90,10,1357
 amy,sheldon,474,45,7165
 amy,stuart,30,3,324
-bernadette,howard,435,39,5019
+bernadette,howard,435,40,5019
 bernadette,leonard,112,15,892
 bernadette,mike,7,1,81
 bernadette,mrs wolowitz,98,12,1023
 bernadette,penny,312,32,3334
-bernadette,raj,112,15,1346
+bernadette,raj,112,16,1346
 bernadette,sheldon,165,20,2374
 howard,jimmy,33,2,362
 howard,kripke,31,5,294
-howard,leonard,575,59,6057
+howard,leonard,576,63,6037
 howard,mike,66,8,756
 howard,mrs cooper,22,2,350
 howard,mrs wolowitz,125,14,1379
-howard,penny,191,22,2444
-howard,raj,593,66,7212
-howard,sheldon,688,63,10384
+howard,penny,192,22,2446
+howard,raj,594,71,7206
+howard,sheldon,689,68,10371
 howard,stuart,40,5,598
 jimmy,leonard,83,3,700
 jimmy,raj,36,2,377
 jimmy,sheldon,64,3,733
 kripke,leonard,50,7,538
-kripke,raj,49,6,691
-kripke,sheldon,76,8,1151
+kripke,raj,50,6,692
+kripke,sheldon,77,8,1152
 kripke,stuart,13,2,219
 leonard,mike,8,1,85
-leonard,mrs cooper,84,7,1248
+leonard,mrs cooper,83,7,1246
 leonard,mrs wolowitz,8,1,77
 leonard,penny,767,58,8144
 leonard,priya,69,4,562
-leonard,raj,487,56,5186
-leonard,sheldon,1447,114,19208
+leonard,raj,486,58,5174
+leonard,sheldon,1442,122,19044
 leonard,stuart,94,6,976
 mike,mrs wolowitz,6,1,40
 mike,penny,7,1,74
 mike,raj,8,1,91
 mike,sheldon,7,1,142
-mrs cooper,penny,38,4,568
+mrs cooper,penny,38,5,568
 mrs cooper,raj,24,2,407
-mrs cooper,sheldon,114,8,1820
+mrs cooper,sheldon,113,9,1779
 mrs wolowitz,penny,7,1,66
 mrs wolowitz,raj,12,2,128
 mrs wolowitz,sheldon,19,2,295
-penny,raj,148,16,1792
-penny,sheldon,617,51,7978
+penny,raj,149,17,1794
+penny,sheldon,617,52,7978
 priya,sheldon,40,3,392
-raj,sheldon,568,58,9155
+raj,sheldon,564,61,9103
 raj,stuart,42,5,733
 sheldon,stuart,125,9,1725

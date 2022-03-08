@@ -14,7 +14,7 @@ bernadette,dan,43,3,405
 bernadette,dr koothrappali,7,2,53
 bernadette,dr lorvis,3,1,15
 bernadette,emily,36,4,243
-bernadette,howard,570,66,6158
+bernadette,howard,572,67,6166
 bernadette,leonard,116,18,1148
 bernadette,man,5,1,20
 bernadette,penny,398,43,4231
@@ -39,8 +39,8 @@ dr lorvis,raj,23,3,169
 dr lorvis,sheldon,26,3,294
 emily,howard,43,5,325
 emily,leonard,32,6,254
-emily,penny,50,4,445
-emily,raj,113,18,1134
+emily,penny,52,4,451
+emily,raj,114,18,1137
 emily,sheldon,18,3,235
 emily,stuart,12,2,127
 howard,leonard,576,59,6159
@@ -61,7 +61,7 @@ man,raj,40,4,509
 man,sheldon,56,5,952
 mrs cooper,penny,33,3,412
 mrs cooper,sheldon,54,5,748
-penny,raj,195,26,1878
+penny,raj,196,26,1881
 penny,sheldon,800,68,9650
 penny,stuart,29,5,298
 penny,wil,53,4,717

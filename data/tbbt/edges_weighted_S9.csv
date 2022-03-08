@@ -5,17 +5,17 @@ alfred,leonard,44,4,373
 alfred,mrs cooper,43,4,376
 alfred,penny,29,3,220
 alfred,sheldon,36,4,315
-amy,bernadette,353,43,3374
+amy,bernadette,351,43,3348
 amy,beverly,63,9,605
 amy,claire,10,3,73
-amy,dave,100,6,1137
+amy,dave,100,7,1137
 amy,emily,9,1,131
 amy,howard,162,24,1456
 amy,kripke,36,5,389
-amy,leonard,340,43,2890
+amy,leonard,340,43,2873
 amy,meemaw,63,3,672
 amy,mrs cooper,48,6,309
-amy,penny,562,66,5474
+amy,penny,567,67,5490
 amy,raj,184,27,1886
 amy,sheldon,819,77,9633
 amy,stuart,87,14,1038
@@ -23,7 +23,7 @@ amy,zack,28,3,236
 arthur,sheldon,42,3,470
 bernadette,beverly,38,6,430
 bernadette,claire,13,1,113
-bernadette,dave,40,2,452
+bernadette,dave,38,2,404
 bernadette,emily,34,6,332
 bernadette,howard,485,60,4877
 bernadette,kripke,8,2,65
@@ -47,8 +47,8 @@ claire,leonard,7,2,73
 claire,penny,7,2,74
 claire,raj,106,11,1275
 claire,zack,15,2,134
-dave,leonard,36,2,447
-dave,penny,37,2,421
+dave,leonard,34,2,399
+dave,penny,35,2,373
 dave,sheldon,13,1,248
 emily,howard,23,4,187
 emily,leonard,15,2,112
@@ -57,39 +57,39 @@ emily,raj,84,10,771
 emily,sheldon,38,5,508
 emily,stuart,7,1,48
 howard,kripke,27,3,412
-howard,leonard,589,69,5537
+howard,leonard,590,69,5544
 howard,man,45,6,460
 howard,penny,228,28,1993
-howard,raj,768,97,8190
-howard,sheldon,521,57,6622
+howard,raj,770,97,8204
+howard,sheldon,522,57,6629
 howard,stuart,133,21,1265
 howard,zack,26,2,238
-kripke,leonard,63,8,785
-kripke,penny,19,3,338
+kripke,leonard,64,8,788
+kripke,penny,21,4,355
 kripke,raj,42,6,597
 kripke,sheldon,100,10,1352
 kripke,stuart,8,2,93
 leonard,man,93,8,927
-leonard,meemaw,35,3,329
+leonard,meemaw,36,3,335
 leonard,mrs cooper,29,3,220
-leonard,penny,1009,102,9292
-leonard,raj,473,66,4583
-leonard,sheldon,1251,121,15507
+leonard,penny,1014,103,9315
+leonard,raj,475,66,4593
+leonard,sheldon,1253,121,15516
 leonard,stuart,95,13,933
 leonard,zack,26,2,228
 man,penny,13,2,126
 man,raj,21,4,188
 man,sheldon,74,4,1152
 man,stuart,7,1,40
-meemaw,penny,29,2,276
+meemaw,penny,30,2,282
 meemaw,sheldon,74,4,889
 mrs cooper,penny,30,4,190
 mrs cooper,sheldon,69,7,570
-penny,raj,253,32,2495
-penny,sheldon,780,80,9937
+penny,raj,256,33,2531
+penny,sheldon,788,81,10086
 penny,stuart,84,13,965
 penny,zack,23,2,198
-raj,sheldon,533,62,7153
+raj,sheldon,534,62,7160
 raj,stuart,98,19,1039
 raj,zack,33,3,307
 sheldon,stuart,115,14,1403

@@ -51,3 +51,10 @@ for season in seasons:
         i += 1
 
 draw_interaction_network_communities(tbbt_net_episodes[episode_dict["s09e09"]], "scene_count", method="ML")
+
+episode_stats = get_network_stats_by_episode(tbbt_net_episodes, episode_dict)
+episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
+# save networks of all episodes
+plt.ioff()
+for k, v in episode_dict.items():
+    draw_interaction_network_communities(tbbt_net_episodes[v], "line_count", method="ML", filename=f"tbbt/{k}_line_ML")

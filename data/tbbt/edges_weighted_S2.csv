@@ -15,45 +15,45 @@ david,penny,46,2,397
 david,raj,13,1,111
 david,sheldon,33,2,315
 howard,kripke,30,2,250
-howard,leonard,1207,94,11955
+howard,leonard,1217,95,11949
 howard,leslie,103,8,852
 howard,mrs wolowitz,90,9,870
-howard,penny,585,43,6193
-howard,raj,741,74,8144
+howard,penny,592,45,6207
+howard,raj,747,76,8124
 howard,ramona,24,2,308
-howard,sheldon,1114,85,14419
+howard,sheldon,1121,87,14407
 howard,steph,19,3,193
-howard,stuart,61,4,505
+howard,stuart,61,5,505
 kripke,leonard,59,5,570
 kripke,penny,15,1,136
 kripke,raj,40,4,447
 kripke,sheldon,93,6,1342
-leonard,leslie,134,11,1231
+leonard,leslie,134,12,1231
 leonard,mrs wolowitz,18,3,160
-leonard,penny,1336,80,12068
-leonard,raj,879,75,8380
+leonard,penny,1336,83,12045
+leonard,raj,887,77,8385
 leonard,ramona,72,5,675
-leonard,sheldon,2052,131,23372
-leonard,steph,157,10,1374
-leonard,stuart,96,5,803
+leonard,sheldon,2058,134,23355
+leonard,steph,157,11,1374
+leonard,stuart,96,6,803
 leslie,mrs wolowitz,26,2,195
-leslie,penny,28,3,219
-leslie,raj,38,5,338
+leslie,penny,28,4,219
+leslie,raj,37,5,337
 leslie,ramona,22,2,251
-leslie,sheldon,148,12,1866
+leslie,sheldon,148,13,1866
 mrs wolowitz,penny,16,2,184
 mrs wolowitz,raj,9,2,107
 mrs wolowitz,sheldon,27,3,377
 mrs wolowitz,steph,3,1,24
-penny,raj,319,27,3260
+penny,raj,322,28,3249
 penny,ramona,60,5,444
-penny,sheldon,1491,88,17076
+penny,sheldon,1487,89,16936
 penny,steph,25,1,187
-penny,stuart,47,3,430
+penny,stuart,47,4,430
 raj,ramona,17,2,213
-raj,sheldon,793,68,10550
+raj,sheldon,797,70,10551
 raj,steph,8,1,59
-raj,stuart,43,3,346
+raj,stuart,43,4,346
 ramona,sheldon,107,7,1021
-sheldon,steph,141,9,1822
-sheldon,stuart,92,6,899
+sheldon,steph,141,10,1822
+sheldon,stuart,92,7,899
