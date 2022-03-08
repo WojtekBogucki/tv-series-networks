@@ -28,7 +28,7 @@ draw_interaction_network_communities(friends_net_seasons[2], "line_count", metho
 
 friends_net_episodes = get_episode_networks("../data/friends/")
 
-friends_raw = pd.read_csv("../data/friends/friends_lines_v1.csv")
+friends_raw = pd.read_csv("../data/friends/friends_lines_v2.csv")
 seasons = friends_raw.season.unique()
 i = 0
 episode_dict = {}
@@ -38,5 +38,12 @@ for season in seasons:
     for episode in episodes:
         episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
         i += 1
+
+episode_stats = get_network_stats_by_episode(friends_net_episodes, episode_dict)
+episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
+# save networks of all episodes
+plt.ioff()
+for k, v in episode_dict.items():
+    draw_interaction_network_communities(friends_net_episodes[v], "line_count", method="ML", filename=f"friends/{k}_line_ML")
 
 draw_interaction_network_communities(friends_net_episodes[episode_dict["s01e02"]], "line_count", method="ML")

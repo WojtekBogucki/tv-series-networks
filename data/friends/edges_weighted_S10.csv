@@ -1,77 +1,77 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,chandler,64,7,918
-amy,charlie,12,1,103
-amy,joey,86,7,1226
-amy,mike,55,3,688
-amy,monica,54,6,707
-amy,phoebe,81,4,1141
-amy,rachel,132,8,1585
-amy,ross,86,5,1047
-benjamin,chandler,33,2,454
-benjamin,charlie,41,2,562
-benjamin,joey,27,2,351
-benjamin,monica,21,1,333
-benjamin,phoebe,20,1,252
-benjamin,rachel,37,3,565
-benjamin,ross,82,4,1147
-chandler,charlie,54,5,583
-chandler,erica,153,12,1823
-chandler,frank jr.,14,1,210
-chandler,gene,74,1,550
-chandler,joey,1116,81,12844
-chandler,laura,54,4,581
-chandler,mike,188,16,2331
-chandler,monica,1247,94,14212
-chandler,phoebe,1082,78,12851
-chandler,rachel,1074,70,12667
-chandler,ross,1179,69,13390
-chandler,roy,70,1,865
-charlie,frank jr.,17,2,240
-charlie,joey,83,9,810
-charlie,mike,13,1,95
-charlie,monica,57,5,719
-charlie,phoebe,68,6,751
-charlie,rachel,77,9,799
-charlie,ross,153,11,1951
-erica,joey,99,9,1140
-erica,monica,166,13,1953
-erica,phoebe,100,8,1047
-erica,rachel,80,4,945
-erica,ross,128,8,1543
-frank jr.,joey,22,2,308
-frank jr.,monica,23,2,297
-frank jr.,phoebe,46,3,620
-frank jr.,rachel,30,3,399
-frank jr.,ross,25,2,448
-gene,joey,60,1,507
-gene,monica,55,1,454
-gene,phoebe,53,1,428
-gene,rachel,53,1,497
-gene,ross,80,1,652
-gene,roy,50,1,589
-joey,laura,44,4,569
-joey,mike,196,15,2348
-joey,monica,1034,70,12173
-joey,phoebe,1088,80,12583
-joey,rachel,1161,77,13914
-joey,ross,1225,74,14081
-joey,roy,56,1,822
-laura,mike,20,1,195
-laura,monica,53,4,728
-laura,phoebe,33,1,588
-laura,rachel,40,1,554
-laura,ross,40,1,591
-mike,monica,168,14,2190
-mike,phoebe,302,21,4144
-mike,rachel,229,15,2499
-mike,ross,242,18,2962
-monica,phoebe,1128,80,13738
-monica,rachel,1108,71,13525
-monica,ross,1158,64,13816
-monica,roy,51,1,769
-phoebe,rachel,1150,76,14246
-phoebe,ross,1231,74,14789
-phoebe,roy,49,1,743
-rachel,ross,1345,75,16209
-rachel,roy,49,1,812
-ross,roy,76,1,967
+amy,chandler,64,7,859
+amy,charlie,12,1,87
+amy,joey,86,7,1078
+amy,mike,55,3,620
+amy,monica,54,6,652
+amy,phoebe,81,4,1026
+amy,rachel,132,8,1449
+amy,ross,86,5,904
+benjamin,chandler,45,2,544
+benjamin,charlie,42,2,518
+benjamin,joey,49,3,673
+benjamin,monica,41,2,572
+benjamin,phoebe,38,2,566
+benjamin,rachel,46,3,654
+benjamin,ross,83,4,1133
+chandler,charlie,55,5,559
+chandler,erica,153,12,1781
+chandler,frank jr.,15,1,256
+chandler,gene,74,1,518
+chandler,joey,1126,81,11954
+chandler,laura,54,4,552
+chandler,mike,189,16,2279
+chandler,monica,1256,94,13551
+chandler,phoebe,1094,79,12440
+chandler,rachel,1083,70,11939
+chandler,ross,1196,70,12609
+chandler,roy,71,1,810
+charlie,frank jr.,17,2,259
+charlie,joey,84,9,856
+charlie,mike,13,1,103
+charlie,monica,58,5,640
+charlie,phoebe,68,6,728
+charlie,rachel,77,9,726
+charlie,ross,154,11,1913
+erica,joey,99,9,1030
+erica,monica,168,13,1903
+erica,phoebe,101,8,1037
+erica,rachel,81,4,877
+erica,ross,129,8,1406
+frank jr.,joey,22,2,333
+frank jr.,monica,25,2,356
+frank jr.,phoebe,47,3,697
+frank jr.,rachel,31,3,461
+frank jr.,ross,26,2,493
+gene,joey,60,1,436
+gene,monica,55,1,389
+gene,phoebe,53,1,418
+gene,rachel,53,1,426
+gene,ross,80,1,635
+gene,roy,51,1,564
+joey,laura,44,4,521
+joey,mike,197,15,2168
+joey,monica,1041,70,11247
+joey,phoebe,1097,80,11742
+joey,rachel,1170,77,12764
+joey,ross,1236,74,12892
+joey,roy,57,1,728
+laura,mike,21,1,203
+laura,monica,53,4,709
+laura,phoebe,34,1,551
+laura,rachel,40,1,551
+laura,ross,41,1,533
+mike,monica,170,14,1986
+mike,phoebe,304,21,3892
+mike,rachel,230,15,2323
+mike,ross,244,18,2688
+monica,phoebe,1136,80,13106
+monica,rachel,1114,71,12605
+monica,ross,1179,65,12878
+monica,roy,52,1,681
+phoebe,rachel,1159,77,13366
+phoebe,ross,1253,76,14020
+phoebe,roy,50,1,710
+rachel,ross,1348,75,14893
+rachel,roy,50,1,718
+ross,roy,77,1,927

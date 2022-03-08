@@ -20,7 +20,7 @@ episodes_titles = list(
         .replace("__", "_"),
         elements))
 
-i = 0
+i = 195
 for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
     i += 1
     print(i, ep_title)
@@ -40,6 +40,9 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
     else:
         script_text = [p.get_text()
                            .replace("\n", " ")
+                           .replace("\r", "")
+                           .replace("<", "(")
+                           .replace(">", ")")
                            .replace("\x97", " ")
                            .replace("\xa0", "")
                            .replace("\x91", "'")
@@ -54,7 +57,7 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
             f.writelines(script_text)
     except UnicodeEncodeError as uee:
         print(uee)
-    # if i >= 1: break
+    if i >= 1: break
 
 friends_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 # friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv",encoding="utf-8")
@@ -78,7 +81,7 @@ for ep_title in episodes_titles:
                     if match:
                         scene += 1
                         continue
-            line = re.sub(r"(^[(\[][^)\]]*[)\]])$", "", line)
+            line = re.sub(r"([(\[][^)\]]*[)\]])", "", line)
             lower_line = line.lower()
             if not line:
                 continue
@@ -103,7 +106,7 @@ for ep_title in episodes_titles:
                     line.startswith("[later"):
                 scene += 1
                 continue
-            pattern = re.compile(r"([A-Za-z0-9'.#& \"’,]+): ? ?(.*)")
+            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’,]+): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
@@ -116,23 +119,25 @@ for ep_title in episodes_titles:
                     print(uee)
                 # print("*error*", line)
                 continue
-            if " and " in speaker:
-                speakers = re.split(r"and |, ", speaker)
-                for speaker in speakers:
-                    if speaker:
-                        friends_df = friends_df.append({"season": season,
-                                                        "episode": episode,
-                                                        "title": title,
-                                                        "scene": scene,
-                                                        "speaker": speaker.strip().lower(),
-                                                        "line": line.strip()}, ignore_index=True)
-            else:
-                friends_df = friends_df.append({"season": season,
-                                                "episode": episode,
-                                                "title": title,
-                                                "scene": scene,
-                                                "speaker": speaker.strip().lower(),
-                                                "line": line.strip()}, ignore_index=True)
+            # if " and " in speaker:
+            #     speakers = re.split(r"and |, ", speaker)
+            #     for speaker in speakers:
+            #         if speaker:
+            #             friends_df = friends_df.append({"season": season,
+            #                                             "episode": episode,
+            #                                             "title": title,
+            #                                             "scene": scene,
+            #                                             "speaker": speaker.strip().lower(),
+            #                                             "line": line.strip()}, ignore_index=True)
+            # else:
+            if season == 9 and episode == 8:
+                speaker = speaker.split(" ")[0]
+            friends_df = friends_df.append({"season": season,
+                                            "episode": episode,
+                                            "title": title,
+                                            "scene": scene,
+                                            "speaker": speaker.strip().lower(),
+                                            "line": line.strip()}, ignore_index=True)
     # if episode >= 10: break
 #
 friends_df = friends_df[~((friends_df.season==7) & (friends_df.episode==24))]

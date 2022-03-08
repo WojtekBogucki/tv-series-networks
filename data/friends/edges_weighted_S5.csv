@@ -1,75 +1,76 @@
 speaker1,speaker2,line_count,scene_count,word_count
-all,caitlin,16,1,99
-all,chandler,258,29,2655
-all,danny,18,2,118
-all,emily,26,2,257
-all,frank,6,1,51
-all,frank sr.,3,1,18
-all,gary,16,2,70
-all,joey,280,30,3295
-all,monica,293,30,2825
-all,phoebe,282,31,3213
-all,rachel,285,30,3121
-all,ross,282,27,2897
-caitlin,chandler,65,3,622
-caitlin,joey,44,2,487
-caitlin,monica,39,1,345
-caitlin,phoebe,55,3,392
-caitlin,rachel,61,3,635
-caitlin,ross,69,3,609
-chandler,danny,72,5,624
-chandler,emily,57,6,665
-chandler,frank,32,4,306
-chandler,frank sr.,45,2,544
-chandler,gary,174,16,1587
-chandler,joey,1584,118,17740
-chandler,kim,21,2,306
-chandler,larry,13,2,113
-chandler,monica,1568,115,16781
-chandler,phoebe,1338,105,15093
-chandler,rachel,1369,96,16091
-chandler,ross,1532,103,17147
-danny,joey,93,6,971
-danny,monica,107,7,856
-danny,phoebe,54,4,725
-danny,rachel,140,8,1480
-danny,ross,60,4,559
-emily,gary,5,1,107
-emily,joey,62,6,800
-emily,monica,60,4,742
-emily,phoebe,48,3,637
-emily,rachel,49,5,605
-emily,ross,82,5,999
-frank,joey,20,3,332
-frank,monica,17,3,187
-frank,phoebe,49,5,531
-frank,rachel,39,4,429
-frank,ross,13,3,128
-frank sr.,joey,44,2,747
-frank sr.,monica,46,2,593
-frank sr.,phoebe,69,2,892
-frank sr.,rachel,34,2,497
-frank sr.,ross,33,2,482
-gary,joey,137,14,1380
-gary,monica,147,11,1574
-gary,phoebe,169,12,1811
-gary,rachel,118,9,1782
-gary,ross,154,14,1418
-joey,kim,24,1,292
-joey,larry,14,2,157
-joey,monica,1418,102,16480
-joey,phoebe,1369,99,16786
-joey,rachel,1431,95,17974
-joey,ross,1497,102,18450
-kim,monica,16,1,193
-kim,rachel,50,4,726
-kim,ross,13,1,162
-larry,monica,14,1,113
-larry,phoebe,42,4,464
-larry,ross,9,1,130
-monica,phoebe,1299,96,14705
-monica,rachel,1484,101,17781
-monica,ross,1344,89,15511
-phoebe,rachel,1235,88,15156
-phoebe,ross,1253,85,15223
-rachel,ross,1417,89,17661
+all,caitlin,16,1,76
+all,chandler,262,29,2500
+all,danny,18,2,106
+all,emily,26,2,238
+all,frank jr.,6,1,50
+all,frank sr.,3,1,19
+all,gary,16,2,66
+all,joey,293,30,3061
+all,monica,300,30,2655
+all,phoebe,294,31,3159
+all,rachel,286,30,2927
+all,ross,286,27,2723
+caitlin,chandler,65,3,588
+caitlin,joey,44,2,360
+caitlin,monica,39,1,302
+caitlin,phoebe,55,3,355
+caitlin,rachel,61,3,602
+caitlin,ross,69,3,557
+chandler,danny,72,5,574
+chandler,emily,57,6,652
+chandler,frank jr.,32,4,314
+chandler,frank sr.,45,2,524
+chandler,gary,180,14,1527
+chandler,joey,1614,116,16757
+chandler,kim,33,3,392
+chandler,larry,13,2,103
+chandler,monica,1574,111,15832
+chandler,phoebe,1368,103,14408
+chandler,rachel,1405,94,15753
+chandler,ross,1559,100,16311
+danny,joey,96,6,932
+danny,monica,113,7,817
+danny,phoebe,63,4,699
+danny,rachel,140,8,1486
+danny,ross,60,4,519
+emily,gary,5,1,104
+emily,joey,62,6,754
+emily,monica,60,4,745
+emily,phoebe,48,3,630
+emily,rachel,49,5,583
+emily,ross,82,5,928
+frank jr.,joey,20,3,253
+frank jr.,monica,17,3,185
+frank jr.,phoebe,49,5,552
+frank jr.,rachel,39,4,443
+frank jr.,ross,13,3,134
+frank sr.,joey,44,2,689
+frank sr.,monica,46,2,578
+frank sr.,phoebe,69,2,859
+frank sr.,rachel,34,2,489
+frank sr.,ross,33,2,470
+gary,joey,158,13,1429
+gary,monica,152,9,1517
+gary,phoebe,187,11,1920
+gary,rachel,141,8,1889
+gary,ross,173,12,1506
+joey,kim,55,3,758
+joey,larry,14,2,147
+joey,monica,1447,99,15315
+joey,phoebe,1386,96,15396
+joey,rachel,1485,95,17275
+joey,ross,1526,100,17113
+kim,monica,16,1,199
+kim,phoebe,12,1,118
+kim,rachel,50,4,695
+kim,ross,44,3,471
+larry,monica,14,1,121
+larry,phoebe,42,4,426
+larry,ross,9,1,104
+monica,phoebe,1314,93,13995
+monica,rachel,1508,98,17000
+monica,ross,1376,86,14673
+phoebe,rachel,1268,86,14699
+phoebe,ross,1278,82,14346
+rachel,ross,1451,87,16604
