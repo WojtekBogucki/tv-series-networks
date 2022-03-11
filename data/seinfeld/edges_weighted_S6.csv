@@ -15,20 +15,21 @@ donna,estelle,13,2,70
 donna,frank,8,2,43
 donna,george,17,2,135
 donna,jerry,74,10,539
-doorman,elaine,3,1,31
-doorman,jerry,32,3,380
+doorman s06e18,elaine,3,1,31
+doorman s06e18,jerry,32,3,380
 earl,elaine,10,1,82
 earl,kramer,55,5,422
-earl,newman,25,2,197
+earl,newman,32,3,254
 elaine,frank,31,4,410
 elaine,george,543,54,4862
-elaine,jerry,1503,138,13457
+elaine,jerry,1504,138,13459
 elaine,jimmy,29,3,214
 elaine,julie,23,2,124
 elaine,kramer,517,50,4963
 elaine,landis,60,3,495
 elaine,lois,2,1,13
 elaine,mr. pitt,184,17,1595
+elaine,newman,5,1,53
 elaine,poppie,32,3,346
 elaine,puddy,52,6,448
 elaine,tim,58,4,450
@@ -44,7 +45,7 @@ frank,kramer,90,9,657
 gary,george,42,6,498
 gary,jerry,26,5,237
 gary,kramer,8,2,87
-george,jerry,1588,124,16169
+george,jerry,1589,124,16171
 george,jimmy,28,2,230
 george,julie,46,4,526
 george,kate,14,1,110
@@ -63,7 +64,7 @@ jerry,lois,64,6,435
 jerry,mr. pitt,25,4,175
 jerry,newman,94,9,945
 jerry,poppie,60,5,568
-jerry,tim,51,4,435
+jerry,tim,54,5,464
 jerry,uncle leo,55,7,402
 jerry,wendy,28,5,160
 jimmy,kramer,38,4,264
@@ -71,10 +72,10 @@ karen,kramer,47,5,507
 kramer,landis,7,1,28
 kramer,lois,2,1,31
 kramer,mr. pitt,22,1,204
-kramer,newman,82,12,808
+kramer,newman,90,13,853
 kramer,poppie,44,3,392
 kramer,puddy,9,2,125
-kramer,tim,21,2,174
+kramer,tim,31,3,241
 kramer,uncle leo,22,2,228
 kramer,wendy,13,1,79
 landis,mr. pitt,13,1,128

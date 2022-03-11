@@ -1,8 +1,7 @@
 speaker1,speaker2,line_count,scene_count,word_count
-bob,elaine,25,4,275
-bob,jerry,23,3,173
+bob,elaine,9,1,110
+bob,jerry,12,1,125
 bob,kramer,23,4,287
-bob,peterman,9,1,82
 craig,elaine,62,5,411
 craig,jerry,35,3,273
 deena,george,72,10,718
@@ -15,7 +14,8 @@ elaine,george,615,49,5423
 elaine,helen,41,2,266
 elaine,holly,24,4,225
 elaine,jackie,17,1,271
-elaine,jerry,1412,134,12781
+elaine,jean-paul,34,4,359
+elaine,jerry,1413,134,12782
 elaine,kramer,569,58,5213
 elaine,lloyd,21,4,214
 elaine,maestro,59,7,530
@@ -48,8 +48,9 @@ frank,morty,17,2,166
 frank,mr. steinbrenner,6,1,121
 frank,susan,32,3,225
 george,helen,4,1,16
-george,jerry,1494,132,14267
-george,kramer,473,48,4559
+george,jean-paul,10,1,84
+george,jerry,1495,132,14274
+george,kramer,474,48,4566
 george,lena,33,2,235
 george,lloyd,17,2,124
 george,maestro,12,1,70
@@ -70,6 +71,8 @@ jack,morty,55,5,433
 jackie,jerry,19,1,295
 jackie,kramer,99,5,1151
 jackie,sue ellen,16,1,272
+jean-paul,jerry,89,9,835
+jean-paul,kramer,20,3,181
 jerry,kramer,1329,122,12698
 jerry,lena,60,3,592
 jerry,lloyd,58,8,359

@@ -4,16 +4,15 @@ audrey,george,71,5,663
 audrey,jerry,16,2,68
 audrey,kramer,31,3,314
 babu,elaine,35,3,218
-babu,jerry,66,7,633
+babu,jerry,67,7,638
 babu,kramer,20,1,178
 cynthia,elaine,75,7,759
 cynthia,george,7,1,115
 cynthia,jerry,19,2,198
-elaine,george,1421,108,13285
-elaine,guy,31,3,297
+elaine,george,1422,108,13292
 elaine,helen,119,10,784
 elaine,jack,56,3,483
-elaine,jerry,1981,140,18018
+elaine,jerry,1982,140,18025
 elaine,keith,17,2,148
 elaine,kramer,793,71,7641
 elaine,mike,81,4,998
@@ -25,16 +24,15 @@ elaine,nina,13,1,77
 elaine,noel,22,3,189
 elaine,rula,34,2,253
 elaine,steve,41,5,356
-elaine,woman,29,2,261
+elaine,woman s03e13,18,1,162
 george,gina,18,2,96
-george,guy,24,2,276
 george,jerry,2355,155,23050
 george,keith,21,1,280
 george,kramer,805,65,8257
 george,mike,116,5,1107
 george,monica,49,4,347
 george,mr. lippman,39,2,349
-george,mrs. sokol,51,3,666
+george,mrs. sokol,52,3,698
 george,newman,78,4,671
 george,nina,35,3,355
 george,noel,55,4,465
@@ -42,20 +40,17 @@ george,patrice,49,3,540
 george,raymond,41,3,179
 george,rula,48,2,445
 george,steve,17,2,162
-george,woman,86,7,1155
+george,woman s03e13,41,5,517
 gina,jerry,82,4,779
 gina,kramer,11,1,91
 gina,newman,11,1,98
-guy,jerry,44,3,435
-guy,kramer,14,2,141
-guy,steve,7,1,64
 helen,jack,94,3,822
 helen,jerry,179,9,1400
 helen,morty,147,10,1177
 jack,jerry,107,3,991
 jack,morty,87,3,784
 jerry,keith,67,5,721
-jerry,kramer,1279,91,12559
+jerry,kramer,1280,91,12567
 jerry,mike,90,4,757
 jerry,morty,153,8,1305
 jerry,mr. lippman,28,1,217
@@ -65,13 +60,11 @@ jerry,noel,25,3,219
 jerry,patrice,15,1,193
 jerry,raymond,6,1,48
 jerry,steve,79,8,686
-jerry,woman,60,3,552
 keith,kramer,20,2,241
 keith,newman,15,1,215
 kramer,mike,58,4,483
 kramer,newman,98,9,840
 kramer,nina,27,3,253
 kramer,steve,41,5,444
-kramer,woman,10,1,78
 mike,newman,25,1,237
 noel,steve,8,1,68

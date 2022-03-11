@@ -5,7 +5,6 @@ abby,kramer,5,1,98
 anna,elaine,49,6,499
 anna,frank,9,1,96
 anna,george,42,5,292
-anna,man,4,1,30
 brett,elaine,54,7,480
 brett,jerry,36,3,307
 brody,jerry,55,6,506
@@ -27,7 +26,6 @@ elaine,jerry,969,104,8379
 elaine,kevin,86,12,704
 elaine,kramer,577,65,5872
 elaine,kurt,44,8,378
-elaine,man,27,4,297
 elaine,mickey,20,2,230
 elaine,morty,32,4,370
 elaine,newman,11,2,67
@@ -45,7 +43,6 @@ george,kevin,10,2,72
 george,kramer,568,63,6036
 george,kurt,14,2,152
 george,lanette,21,3,153
-george,man,19,4,193
 george,morty,17,3,178
 george,mr. steinbrenner,46,7,698
 george,newman,25,2,350
@@ -54,15 +51,14 @@ hal,kramer,26,3,210
 helen,jerry,79,12,656
 helen,kramer,31,4,310
 helen,morty,66,15,562
-izzy,jerry,59,7,453
-izzy,morty,22,4,204
+izzy sr.,jerry,66,8,480
+izzy sr.,morty,22,4,204
 jenna,jerry,64,12,538
 jenna,kramer,3,1,42
 jerry,kevin,18,3,143
 jerry,kramer,1402,147,13305
 jerry,kurt,2,1,17
 jerry,lanette,71,8,414
-jerry,man,44,7,279
 jerry,mickey,30,3,264
 jerry,morty,103,15,744
 jerry,mr. steinbrenner,21,2,210
@@ -74,13 +70,10 @@ kevin,kramer,8,2,40
 kevin,newman,3,1,9
 kramer,kurt,3,1,18
 kramer,lanette,18,2,135
-kramer,man,31,6,254
 kramer,mickey,39,4,352
 kramer,morty,35,5,297
 kramer,newman,103,9,950
 kramer,peterman,26,3,280
 kramer,seth,5,1,49
-lanette,man,5,1,12
-man,seth,6,1,27
 morty,peterman,19,2,230
 newman,seth,9,1,47

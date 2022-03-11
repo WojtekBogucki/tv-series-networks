@@ -4,24 +4,21 @@ bania,frank,5,1,56
 bania,george,59,6,481
 bania,jerry,206,19,1821
 bania,kramer,106,8,912
-bania,woman,5,1,63
 elaine,estelle,47,5,390
 elaine,frank,140,16,1637
-elaine,george,5983,542,59017
+elaine,george,5984,542,59024
 elaine,helen,275,26,1828
 elaine,jack,74,6,612
-elaine,jerry,11897,1045,108756
-elaine,kramer,4512,470,43386
-elaine,man,202,23,2034
+elaine,jerry,11901,1045,108769
+elaine,kramer,4514,470,43390
 elaine,mickey,32,3,313
 elaine,morty,243,27,1860
 elaine,mr. lippman,223,20,2109
-elaine,newman,223,27,2635
+elaine,newman,228,28,2688
 elaine,peterman,331,44,4174
 elaine,puddy,305,37,2370
 elaine,susan,137,15,1053
 elaine,uncle leo,62,7,606
-elaine,woman,193,22,1890
 estelle,frank,569,71,5253
 estelle,george,591,67,4993
 estelle,helen,6,1,38
@@ -35,17 +32,14 @@ frank,george,663,76,6303
 frank,helen,10,2,114
 frank,jerry,166,17,1630
 frank,kramer,312,32,2836
-frank,man,3,1,32
 frank,morty,37,4,356
 frank,mr. lippman,16,1,187
 frank,mr. steinbrenner,10,2,179
 frank,puddy,2,1,13
 frank,susan,32,3,225
-frank,woman,4,1,43
 george,helen,102,17,835
-george,jerry,14540,1169,144336
-george,kramer,5090,503,53252
-george,man,269,26,2572
+george,jerry,14542,1169,144345
+george,kramer,5092,503,53260
 george,mickey,24,3,270
 george,morty,115,17,1016
 george,mr. lippman,69,3,686
@@ -55,7 +49,6 @@ george,peterman,55,10,619
 george,puddy,71,10,616
 george,susan,821,86,7729
 george,uncle leo,51,5,423
-george,woman,249,27,2889
 helen,jack,200,13,1604
 helen,jerry,1138,98,8723
 helen,kramer,229,21,2053
@@ -66,8 +59,7 @@ jack,jerry,299,21,2424
 jack,kramer,27,3,153
 jack,morty,268,16,2285
 jack,puddy,6,1,33
-jerry,kramer,10306,953,99341
-jerry,man,255,26,2419
+jerry,kramer,10308,953,99350
 jerry,mickey,92,10,965
 jerry,morty,1167,104,9705
 jerry,mr. lippman,82,2,702
@@ -77,31 +69,19 @@ jerry,peterman,25,3,277
 jerry,puddy,123,15,989
 jerry,susan,271,32,2350
 jerry,uncle leo,327,28,2935
-jerry,woman,282,27,3017
-kramer,man,114,21,922
 kramer,mickey,249,26,2290
 kramer,morty,314,29,2950
 kramer,mr. lippman,70,5,648
 kramer,mr. steinbrenner,4,1,64
-kramer,newman,883,102,8531
+kramer,newman,892,103,8577
 kramer,peterman,28,4,347
 kramer,puddy,30,5,296
 kramer,susan,94,14,792
 kramer,uncle leo,28,3,266
-kramer,woman,103,18,1086
-man,mickey,4,1,27
-man,peterman,11,2,97
-man,woman,46,12,555
 mickey,susan,6,1,54
 morty,newman,24,2,276
 morty,peterman,19,2,230
 morty,uncle leo,58,9,640
-morty,woman,14,2,142
 mr. lippman,newman,4,1,45
 mr. lippman,peterman,6,1,57
-mr. lippman,woman,6,1,58
 newman,uncle leo,6,1,42
-newman,woman,12,3,64
-peterman,woman,4,1,31
-puddy,woman,7,1,64
-susan,woman,2,1,13

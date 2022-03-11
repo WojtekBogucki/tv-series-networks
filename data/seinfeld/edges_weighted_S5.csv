@@ -22,9 +22,9 @@ elaine,greg,57,4,530
 elaine,helen,86,10,474
 elaine,jake,52,2,498
 elaine,jane,90,9,783
-elaine,jerry,1848,170,16317
+elaine,jerry,1849,170,16320
 elaine,joel,58,5,491
-elaine,kramer,699,78,6168
+elaine,kramer,700,78,6171
 elaine,lloyd,33,2,283
 elaine,morty,78,10,404
 elaine,mr. lippman,61,5,535
@@ -35,7 +35,6 @@ elaine,testikov,47,6,389
 elaine,toby,34,3,259
 elaine,tony,28,2,286
 elaine,winona,12,1,65
-elaine,woman,13,2,109
 enzo,jerry,26,3,259
 enzo,kramer,5,1,73
 enzo,newman,14,2,146
@@ -44,6 +43,8 @@ estelle,george,246,27,1851
 estelle,jerry,45,5,357
 estelle,kramer,59,6,378
 estelle,lloyd,29,2,238
+father-priest,george,34,4,336
+father-priest,kramer,12,1,163
 frank,george,250,23,2402
 frank,jerry,22,2,163
 frank,kramer,68,5,463
@@ -65,7 +66,6 @@ george,rachel,37,4,297
 george,rudy,74,8,730
 george,stan,28,4,317
 george,tony,52,4,512
-george,woman,30,4,235
 helen,jack,98,8,726
 helen,jerry,338,29,2254
 helen,kramer,70,7,588
@@ -96,7 +96,6 @@ jerry,toby,37,3,489
 jerry,tony,7,1,115
 jerry,uncle leo,51,2,382
 jerry,winona,59,5,556
-jerry,woman,19,4,199
 jodi,karen,13,1,83
 jodi,kramer,6,1,37
 kramer,meryl,29,2,208
@@ -109,13 +108,9 @@ kramer,rudy,78,8,626
 kramer,stan,19,3,205
 kramer,toby,24,3,284
 kramer,tony,22,2,132
-kramer,woman,19,4,215
 meryl,morty,14,1,93
 meryl,uncle leo,12,1,99
 morty,newman,24,2,276
 morty,rachel,38,2,216
 morty,rudy,18,2,170
-morty,woman,14,2,142
 mr. lippman,testikov,31,2,168
-newman,woman,3,1,12
-stan,woman,3,1,11

@@ -9,7 +9,6 @@ buckles,elaine,61,3,712
 buckles,george,58,3,608
 buckles,jerry,54,3,509
 buckles,kramer,34,3,342
-buckles,woman,10,1,187
 casting director,george,31,5,182
 casting director,jerry,36,6,185
 casting director,kramer,8,1,55
@@ -27,11 +26,6 @@ clerk,george,81,6,889
 clerk,jerry,35,3,354
 clerk,kramer,38,5,352
 clerk,susan,24,2,163
-clerk,woman,10,2,140
-cop,george,61,5,383
-cop,jerry,76,5,456
-cop,kramer,3,1,8
-cop,lt. martel,3,1,20
 dana,george,62,4,801
 donald,elaine,10,2,46
 donald,george,44,5,320
@@ -44,8 +38,8 @@ dr. reston,elaine,45,2,438
 elaine,gail,46,4,403
 elaine,george,770,68,8146
 elaine,jerry,1541,125,15014
-elaine,joe divola,59,6,667
-elaine,kramer,567,55,5589
+elaine,joe divola,71,8,768
+elaine,kramer,568,55,5590
 elaine,marla,44,5,586
 elaine,mel,35,3,325
 elaine,russell,39,3,522
@@ -53,7 +47,6 @@ elaine,sandi,3,1,23
 elaine,sidra,54,3,422
 elaine,susan,38,5,295
 elaine,tia,15,4,122
-elaine,woman,22,3,329
 gail,george,22,3,247
 gail,jerry,57,4,558
 gail,kramer,6,1,87
@@ -61,7 +54,7 @@ gail,russell,15,2,97
 george,helen,40,6,245
 george,jerry,2506,178,24940
 george,joe divola,18,1,151
-george,kramer,876,83,8983
+george,kramer,877,83,8984
 george,lt. martel,10,1,59
 george,marla,51,3,476
 george,mel,7,1,36
@@ -74,7 +67,7 @@ george,susan,312,27,3132
 george,tia,5,1,51
 george,tom,37,3,532
 george,uncle leo,33,3,295
-george,woman,62,7,745
+george,woman s04e20,3,1,13
 helen,jerry,178,16,1360
 helen,kramer,38,2,356
 helen,morty,135,14,1220
@@ -84,7 +77,7 @@ helen,sidra,2,1,7
 helen,tia,2,1,11
 helen,uncle leo,30,5,225
 jerry,joe divola,63,5,587
-jerry,kramer,1393,119,13196
+jerry,kramer,1394,119,13197
 jerry,lt. martel,12,1,61
 jerry,marla,133,7,1056
 jerry,mel,48,3,424
@@ -98,7 +91,7 @@ jerry,susan,149,13,1354
 jerry,tia,84,11,754
 jerry,tom,45,4,467
 jerry,uncle leo,98,9,938
-jerry,woman,110,8,1302
+jerry,woman s04e20,51,4,398
 joe divola,kramer,3,1,21
 kramer,lt. martel,21,2,382
 kramer,marla,39,3,269
@@ -111,7 +104,7 @@ kramer,sidra,22,1,189
 kramer,susan,49,7,367
 kramer,tia,33,4,348
 kramer,tom,21,3,221
-kramer,woman,27,5,308
+kramer,woman s04e20,13,2,58
 marla,mel,3,1,16
 marla,susan,3,1,15
 mel,susan,2,1,3
@@ -126,4 +119,3 @@ sandi,sidra,4,1,12
 sandi,tia,4,1,16
 sandi,tom,21,2,200
 sidra,tia,2,1,6
-susan,woman,2,1,13
