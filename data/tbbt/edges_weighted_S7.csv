@@ -19,7 +19,7 @@ arthur,sheldon,116,8,1378
 bernadette,emily,30,3,175
 bernadette,howard,525,62,5522
 bernadette,leonard,269,41,2713
-bernadette,mike,30,5,255
+bernadette,mike,31,5,258
 bernadette,mrs cooper,7,2,95
 bernadette,penny,352,47,3576
 bernadette,raj,370,51,4163
@@ -29,12 +29,13 @@ emily,howard,40,3,455
 emily,raj,105,9,1087
 emily,sheldon,11,1,106
 howard,leonard,425,58,4117
-howard,mike,62,7,593
+howard,mike,63,7,596
 howard,mrs cooper,17,2,160
 howard,penny,306,43,2806
 howard,raj,729,88,8287
 howard,sheldon,591,66,7867
 howard,stuart,58,10,570
+james,sheldon,40,7,508
 leonard,mike,22,3,192
 leonard,mrs cooper,14,2,148
 leonard,penny,1224,108,12295
@@ -43,7 +44,7 @@ leonard,sheldon,1110,98,13687
 leonard,stuart,67,9,679
 leonard,wil,29,3,384
 mike,penny,20,3,192
-mike,raj,12,2,135
+mike,raj,13,2,138
 mike,sheldon,44,5,498
 mrs cooper,penny,15,2,136
 mrs cooper,raj,9,2,125

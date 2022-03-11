@@ -7,9 +7,8 @@ amy,howard,1089,151,11293
 amy,kripke,71,8,739
 amy,leonard,2283,279,21722
 amy,leslie,9,1,126
-amy,man,34,4,321
 amy,mike,19,4,160
-amy,mrs cooper,119,16,1144
+amy,mrs cooper,120,16,1150
 amy,mrs wolowitz,15,4,116
 amy,penny,3694,414,38483
 amy,priya,27,3,187
@@ -24,13 +23,12 @@ arthur,penny,62,5,612
 arthur,raj,12,1,97
 arthur,sheldon,235,15,2823
 bernadette,beverly,49,7,523
-bernadette,emily,100,13,750
+bernadette,emily,101,13,758
 bernadette,howard,3737,404,38431
 bernadette,kripke,11,3,89
 bernadette,leonard,1321,175,11816
 bernadette,leslie,7,1,81
-bernadette,man,26,4,219
-bernadette,mike,83,12,784
+bernadette,mike,84,12,787
 bernadette,mrs cooper,16,3,184
 bernadette,mrs wolowitz,193,27,1900
 bernadette,penny,2682,303,27061
@@ -50,24 +48,22 @@ beverly,raj,24,3,314
 beverly,sheldon,306,25,3436
 beverly,stuart,19,3,167
 beverly,wil,3,1,82
-emily,howard,123,14,1163
+emily,howard,124,14,1171
 emily,leonard,47,8,366
-emily,man,5,1,35
 emily,penny,80,8,789
-emily,raj,324,39,3242
+emily,raj,325,39,3250
 emily,sheldon,67,9,849
 emily,stuart,19,3,175
 howard,kripke,134,17,1490
-howard,leonard,7421,736,73761
+howard,leonard,7422,736,73812
 howard,leslie,170,13,1571
-howard,man,101,13,1085
-howard,mike,245,25,2624
+howard,mike,246,25,2627
 howard,mrs cooper,74,8,1112
 howard,mrs wolowitz,583,60,5713
 howard,penny,3470,352,35381
 howard,priya,162,19,1585
-howard,raj,7066,779,77856
-howard,sheldon,7105,664,92911
+howard,raj,7068,779,77870
+howard,sheldon,7107,664,92923
 howard,stuart,815,109,8507
 howard,wil,71,12,686
 howard,zack,107,12,952
@@ -80,38 +76,30 @@ kripke,stuart,31,6,446
 kripke,wil,13,3,206
 kripke,zack,18,2,215
 leonard,leslie,323,22,3014
-leonard,man,235,20,2214
 leonard,mike,58,6,577
 leonard,mrs cooper,297,28,3784
 leonard,mrs wolowitz,120,12,1090
-leonard,penny,10362,852,98796
+leonard,penny,10363,852,98799
 leonard,priya,492,40,4371
-leonard,raj,6204,658,62435
-leonard,sheldon,14713,1166,176561
+leonard,raj,6206,658,62490
+leonard,sheldon,14716,1166,176624
 leonard,stuart,650,69,6517
 leonard,wil,253,23,2505
 leonard,zack,175,16,1767
-leslie,man,10,2,64
 leslie,mrs wolowitz,26,2,195
 leslie,penny,84,8,794
 leslie,raj,91,10,1003
 leslie,sheldon,255,19,3009
 leslie,stuart,7,1,83
 leslie,wil,7,1,121
-man,penny,97,10,932
-man,raj,83,11,855
-man,sheldon,225,20,3330
-man,stuart,7,1,40
-man,wil,4,1,24
-man,zack,7,1,65
 mike,mrs wolowitz,28,5,222
 mike,penny,38,5,345
-mike,raj,51,7,557
+mike,raj,52,7,560
 mike,sheldon,73,8,878
 mike,zack,4,1,47
 mrs cooper,penny,138,17,1807
 mrs cooper,raj,45,5,667
-mrs cooper,sheldon,490,42,6284
+mrs cooper,sheldon,491,42,6290
 mrs cooper,stuart,13,2,101
 mrs wolowitz,penny,44,6,473
 mrs wolowitz,raj,122,18,1227
@@ -120,14 +108,14 @@ mrs wolowitz,stuart,19,4,193
 mrs wolowitz,zack,2,1,18
 penny,priya,106,12,989
 penny,raj,2800,316,29468
-penny,sheldon,9773,750,115916
+penny,sheldon,9778,750,115984
 penny,stuart,432,52,4142
 penny,wil,175,14,1950
 penny,zack,198,20,1778
 priya,raj,149,17,1565
 priya,sheldon,307,26,3628
-raj,sheldon,6231,603,83516
-raj,stuart,831,109,9273
+raj,sheldon,6235,603,83540
+raj,stuart,832,109,9277
 raj,wil,81,13,955
 raj,zack,79,9,760
 sheldon,stuart,801,82,10422

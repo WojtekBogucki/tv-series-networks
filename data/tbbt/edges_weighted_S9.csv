@@ -1,7 +1,7 @@
 speaker1,speaker2,line_count,scene_count,word_count
 alfred,amy,32,4,253
 alfred,beverly,27,3,205
-alfred,leonard,44,4,373
+alfred,leonard,45,4,380
 alfred,mrs cooper,43,4,376
 alfred,penny,29,3,220
 alfred,sheldon,36,4,315
@@ -14,7 +14,7 @@ amy,howard,162,24,1456
 amy,kripke,36,5,389
 amy,leonard,340,43,2873
 amy,meemaw,63,3,672
-amy,mrs cooper,48,6,309
+amy,mrs cooper,49,6,315
 amy,penny,567,67,5490
 amy,raj,184,27,1886
 amy,sheldon,819,77,9633
@@ -24,11 +24,10 @@ arthur,sheldon,42,3,470
 bernadette,beverly,38,6,430
 bernadette,claire,13,1,113
 bernadette,dave,38,2,404
-bernadette,emily,34,6,332
+bernadette,emily,35,6,340
 bernadette,howard,485,60,4877
 bernadette,kripke,8,2,65
 bernadette,leonard,167,22,1395
-bernadette,man,5,1,54
 bernadette,penny,461,55,4428
 bernadette,raj,279,40,2813
 bernadette,sheldon,246,27,3204
@@ -50,15 +49,14 @@ claire,zack,15,2,134
 dave,leonard,34,2,399
 dave,penny,35,2,373
 dave,sheldon,13,1,248
-emily,howard,23,4,187
+emily,howard,24,4,195
 emily,leonard,15,2,112
 emily,penny,28,4,338
-emily,raj,84,10,771
+emily,raj,85,10,779
 emily,sheldon,38,5,508
 emily,stuart,7,1,48
 howard,kripke,27,3,412
 howard,leonard,590,69,5544
-howard,man,45,6,460
 howard,penny,228,28,1993
 howard,raj,770,97,8204
 howard,sheldon,522,57,6629
@@ -69,7 +67,7 @@ kripke,penny,21,4,355
 kripke,raj,42,6,597
 kripke,sheldon,100,10,1352
 kripke,stuart,8,2,93
-leonard,man,93,8,927
+leonard,man s09e06,41,2,461
 leonard,meemaw,36,3,335
 leonard,mrs cooper,29,3,220
 leonard,penny,1014,103,9315
@@ -77,14 +75,11 @@ leonard,raj,475,66,4593
 leonard,sheldon,1253,121,15516
 leonard,stuart,95,13,933
 leonard,zack,26,2,228
-man,penny,13,2,126
-man,raj,21,4,188
-man,sheldon,74,4,1152
-man,stuart,7,1,40
+man s09e06,sheldon,44,2,680
 meemaw,penny,30,2,282
 meemaw,sheldon,74,4,889
 mrs cooper,penny,30,4,190
-mrs cooper,sheldon,69,7,570
+mrs cooper,sheldon,70,7,576
 penny,raj,256,33,2531
 penny,sheldon,788,81,10086
 penny,stuart,84,13,965

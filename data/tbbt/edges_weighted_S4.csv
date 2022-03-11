@@ -20,7 +20,7 @@ howard,mrs latham,15,2,206
 howard,mrs wolowitz,103,9,884
 howard,penny,477,42,4540
 howard,priya,162,19,1585
-howard,raj,735,81,7405
+howard,raj,736,81,7409
 howard,sheldon,864,85,10930
 howard,zack,65,8,613
 leonard,mrs latham,62,4,629
@@ -28,7 +28,7 @@ leonard,mrs wolowitz,26,3,253
 leonard,page,32,2,318
 leonard,penny,720,55,6388
 leonard,priya,423,36,3809
-leonard,raj,783,79,7633
+leonard,raj,784,79,7637
 leonard,sheldon,1727,126,19698
 leonard,wyatt,46,4,572
 leonard,zack,87,8,761
@@ -45,7 +45,7 @@ penny,wyatt,39,3,462
 penny,zack,86,8,716
 priya,raj,149,17,1565
 priya,sheldon,267,23,3236
-raj,sheldon,782,70,9571
+raj,sheldon,783,70,9575
 raj,zack,44,5,423
 sheldon,wyatt,4,1,37
 sheldon,zack,121,12,1387

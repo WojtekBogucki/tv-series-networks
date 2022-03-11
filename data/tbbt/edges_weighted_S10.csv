@@ -34,15 +34,15 @@ beverly,penny,35,5,370
 beverly,sheldon,55,5,663
 beverly,stuart,9,1,53
 beverly,susan,16,3,105
-colonel williams,howard,49,5,481
-colonel williams,leonard,53,5,525
-colonel williams,sheldon,33,4,403
+colonel williams,howard,50,5,489
+colonel williams,leonard,54,5,533
+colonel williams,sheldon,34,4,411
 howard,isabella,18,1,161
 howard,leonard,518,71,5006
 howard,mrs cooper,2,1,16
 howard,penny,179,29,1682
 howard,raj,655,79,6965
-howard,ramona,16,3,129
+howard,ramona,17,3,130
 howard,sheldon,479,54,5997
 howard,stuart,237,33,2302
 howard,susan,2,1,20
@@ -50,7 +50,7 @@ isabella,raj,77,4,833
 leonard,mrs cooper,22,3,218
 leonard,penny,973,121,9127
 leonard,raj,517,70,4731
-leonard,ramona,31,5,268
+leonard,ramona,32,5,269
 leonard,sheldon,1185,125,13681
 leonard,stuart,65,11,670
 leonard,susan,15,3,146
@@ -63,10 +63,10 @@ penny,ramona,20,3,169
 penny,sheldon,866,88,9950
 penny,stuart,82,12,800
 penny,susan,41,6,418
-raj,ramona,34,5,247
+raj,ramona,35,5,248
 raj,sheldon,465,55,5727
 raj,stuart,221,28,2352
-ramona,sheldon,48,6,493
+ramona,sheldon,49,6,494
 sheldon,stuart,92,13,1065
 sheldon,susan,5,1,90
 stuart,susan,7,1,53

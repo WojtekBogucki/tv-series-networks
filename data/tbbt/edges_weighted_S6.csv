@@ -35,14 +35,14 @@ howard,lucy,5,1,28
 howard,mike,63,5,631
 howard,mrs wolowitz,77,6,809
 howard,penny,190,24,2104
-howard,raj,665,63,7816
+howard,raj,666,63,7826
 howard,sheldon,562,58,7619
 howard,stuart,88,9,1021
 janine,kripke,20,2,122
 janine,leonard,46,3,407
 janine,penny,2,1,17
 janine,raj,31,3,361
-janine,sheldon,59,5,577
+janine,sheldon,60,5,585
 kripke,leonard,40,3,520
 kripke,penny,3,1,32
 kripke,raj,19,2,272
@@ -59,6 +59,6 @@ mrs wolowitz,raj,30,4,331
 penny,raj,197,22,2574
 penny,sheldon,590,56,7729
 penny,stuart,28,3,368
-raj,sheldon,469,51,6634
+raj,sheldon,470,51,6642
 raj,stuart,137,13,1427
 sheldon,stuart,119,12,1727
