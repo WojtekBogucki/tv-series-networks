@@ -33,7 +33,7 @@ Angela,Jim,95,20,937
 Angela,Kelly,48,15,519
 Angela,Kevin,120,28,1087
 Angela,Meredith,44,13,465
-Angela,Michael,212,22,2785
+Angela,Michael,213,22,2802
 Angela,Oscar,90,21,642
 Angela,Pam,134,26,1371
 Angela,Phyllis,56,18,469
@@ -94,7 +94,7 @@ Deangelo,Jim,131,20,1591
 Deangelo,Kelly,34,5,467
 Deangelo,Kevin,96,14,1256
 Deangelo,Meredith,18,5,258
-Deangelo,Michael,264,29,3225
+Deangelo,Michael,265,29,3242
 Deangelo,Oscar,54,7,714
 Deangelo,Pam,69,12,863
 Deangelo,Phyllis,36,4,690
@@ -109,7 +109,7 @@ Dwight,Jo,56,4,658
 Dwight,Kelly,128,23,1483
 Dwight,Kevin,186,28,1835
 Dwight,Meredith,70,17,755
-Dwight,Michael,525,59,6274
+Dwight,Michael,526,59,6291
 Dwight,Nate,48,5,483
 Dwight,Oscar,104,17,885
 Dwight,Pam,359,55,4084
@@ -172,7 +172,7 @@ Jim,Jo,52,7,845
 Jim,Kelly,106,21,1061
 Jim,Kevin,177,33,1511
 Jim,Meredith,78,18,735
-Jim,Michael,490,53,5885
+Jim,Michael,491,53,5902
 Jim,Nate,13,2,110
 Jim,Oscar,132,24,1150
 Jim,Pam,571,90,5314
@@ -197,7 +197,7 @@ Kelly,Stanley,28,8,195
 Kelly,Toby,42,9,444
 Kelly,Todd Packer,4,1,72
 Kevin,Meredith,56,17,355
-Kevin,Michael,401,47,4677
+Kevin,Michael,402,47,4694
 Kevin,Nate,6,1,99
 Kevin,Oscar,150,35,1176
 Kevin,Pam,188,40,1654
@@ -214,11 +214,11 @@ Meredith,Ryan,41,11,434
 Meredith,Stanley,15,7,147
 Meredith,Toby,23,4,248
 Michael,Nate,11,1,149
-Michael,Oscar,335,40,4377
-Michael,Pam,470,54,5490
-Michael,Phyllis,275,35,3726
+Michael,Oscar,336,40,4394
+Michael,Pam,471,54,5495
+Michael,Phyllis,276,35,3743
 Michael,Ryan,259,32,3078
-Michael,Stanley,214,28,2723
+Michael,Stanley,215,28,2740
 Michael,Toby,137,17,1925
 Michael,Todd Packer,77,9,1158
 Nate,Oscar,7,1,64

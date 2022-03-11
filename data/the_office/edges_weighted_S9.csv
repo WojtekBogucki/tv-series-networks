@@ -1,6 +1,6 @@
 speaker1,speaker2,line_count,scene_count,word_count
 Andy,Angela,97,16,1162
-Andy,Casey,51,5,456
+Andy,Casey,53,6,473
 Andy,Clark,154,21,1857
 Andy,Creed,27,8,196
 Andy,Darryl,192,30,2178
@@ -144,7 +144,7 @@ Kevin,Phyllis,99,27,842
 Kevin,Stanley,58,15,524
 Kevin,Toby,25,5,173
 Kevin,Trevor,4,1,14
-Mark,Pam,36,4,741
+Mark Franks,Pam,36,4,741
 Meredith,Nellie,59,18,691
 Meredith,Oscar,86,22,786
 Meredith,Pam,170,34,1631

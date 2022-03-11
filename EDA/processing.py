@@ -25,6 +25,19 @@ def fix_filtered_names(dataset, episodes, replacements):
     return dataset
 
 
+def distinguish_characters(dataset: pd.DataFrame, characters: list):
+    '''
+    Distinguish generic characters e.g. "Man", "Woman" by adding season and episode
+    :param dataset:
+    :param characters:
+    :return:
+    '''
+    for character in characters:
+        dataset.loc[dataset.speaker == character, "speaker"] = dataset[dataset.speaker == character].apply(
+            lambda x: f"{character} s{x.season:02d}e{x.episode:02d}", axis=1)
+    return dataset
+
+
 def split_characters(dataset, splitters):
     '''
     Split multiple characters e.g. "Michael and Dwight" to separate records with duplicated lines

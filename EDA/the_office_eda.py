@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
-from EDA.processing import fix_names, split_characters, remove_speakers, fix_filtered_names
+from EDA.processing import fix_names, split_characters, remove_speakers, fix_filtered_names, distinguish_characters
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -137,6 +137,7 @@ replacements = {"A\.J\.": "AJ",
                 "Mee-Maw": "MeeMaw",
                 "Mema": "MeeMaw",
                 "Phil Maguire": "Phil",
+                "Maguire": "Phil",
                 "Philip": "Phillip",
                 "Sensei Ira": "Ira",
                 "Sensei": "Ira"
@@ -155,6 +156,7 @@ office_raw = fix_filtered_names(office_raw, [[5, 16]], {"Mark": "Mark Baldy"})
 
 
 office_raw['speaker'] = office_raw.speaker.apply(fix_names, args=(replacements,))
+office_raw = distinguish_characters(office_raw, ["Man", "Woman", "Guy", "Girl", "Waiter"])
 office_raw.groupby('speaker').size().reset_index(name="count").sort_values("speaker", ascending=False)
 office_raw.to_csv("../data/the_office/the_office_lines_v6.csv", index=False, encoding="utf-8")
 
