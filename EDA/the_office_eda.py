@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
-from EDA.processing import fix_names, split_characters
+from EDA.processing import fix_names, split_characters, remove_speakers, fix_filtered_names
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -19,7 +19,54 @@ office_raw.iloc[:, 0:6].to_csv("../data/the_office/the_office_lines_v5.csv", ind
 
 office_raw = pd.read_csv("../data/the_office/the_office_lines_v5.csv")
 
+office_raw['speaker'] = office_raw.speaker.apply(fix_names, args=({"DunMiff\/sys": "DunMiffsys","Bob Vance, Vance Refrigeration": "Bob Vance"},))
 office_raw = split_characters(office_raw, [" and ", ", ", " & ", "/"])
+
+speakers_to_remove = ['"Phyllis"',
+                      '"Jo"',
+                      '"Jim"',
+                      '"Angela"',
+                      "Boom Box",
+                      "Computron",
+                      "song",
+                      "Video",
+                      "Various",
+                      "Unknown",
+                      "Together",
+                      "TV",
+                      "Song",
+                      "Hunter's CD",
+                      "Radio",
+                      "Phone",
+                      "Automated phone voice",
+                      "Jim's voicemail",
+                      "Ryan's Voicemail",
+                      "Voicemail",
+                      "Voice on CD player",
+                      "others",
+                      "Others",
+                      "Oscar's Computer",
+                      "Offscreen",
+                      "Off-camera",
+                      "GPS",
+                      "Entire office",
+                      "Office",
+                      "Employees",
+                      "Employees except Dwight",
+                      "Everyone",
+                      "Everyone watching",
+                      "Everybody",
+                      "Both",
+                      "All",
+                      "All Girls",
+                      "All but Oscar",
+                      "All the Men",
+                      "Group",
+                      "Teammates",
+                      "Warehouse Crew",
+                      "Crowd",
+                      "Narrator",
+                      "New Instant Message"]
 
 replacements = {"A\.J\.": "AJ",
                 "Anglea": "Angela",
@@ -34,6 +81,7 @@ replacements = {"A\.J\.": "AJ",
                 "MIchael": "Michael",
                 "Michae": "Michael",
                 "Micael": "Michael",
+                "Micahel": "Michael",
                 "Michal": "Michael",
                 "Miichael": "Michael",
                 "Mihael": "Michael",
@@ -55,7 +103,6 @@ replacements = {"A\.J\.": "AJ",
                 "Holly,": "Holly",
                 "Marie": "Concierge Marie",
                 "Concierge": "Concierge Marie",
-                "DunMiff\/sys": "DunMiffsys",
                 "JIm": "Jim",
                 "JIM9334": "Jim",
                 "Receptionitis15": "Pam",
@@ -81,15 +128,30 @@ replacements = {"A\.J\.": "AJ",
                 "Tom Halpert": "Tom",
                 "Teddy Wallace": "Teddy",
                 "Rolph": "Rolf",
-                "Julius Irving": "Julius"
+                "Julius Irving": "Julius",
+                "Casey Dean": "Casey",
+                "Carol Stills": "Carol",
+                "Cousin Mose": "Mose",
+                "Bar Manager": "Donna",
+                "Fred Henry": "Fred",
+                "Mee-Maw": "MeeMaw",
+                "Mema": "MeeMaw",
+                "Phil Maguire": "Phil",
+                "Philip": "Phillip",
+                "Sensei Ira": "Ira",
+                "Sensei": "Ira"
                 }
 
-filter_s07e14 = (office_raw.season == 7) & (office_raw.episode == 14)
-office_raw.loc[filter_s07e14, 'speaker'] = office_raw.loc[filter_s07e14, 'speaker'].apply(fix_names, args=({"David": "David Brent"},))
-filter_s07e18 = (office_raw.season == 7) & (office_raw.episode == 18)
-office_raw.loc[filter_s07e18, 'speaker'] = office_raw.loc[filter_s07e18, 'speaker'].apply(fix_names, args=({"Holy": "Todd Packer"},))
-filter_pete = ((office_raw.season == 5) & (office_raw.episode == 6)) | ((office_raw.season == 6) & (office_raw.episode == 4))
-office_raw.loc[filter_pete, 'speaker'] = office_raw.loc[filter_pete, 'speaker'].apply(fix_names, args=({"Pete": "Pete Halpert"},))
+office_raw = remove_speakers(office_raw, speakers_to_remove)
+
+office_raw = fix_filtered_names(office_raw, [[7, 14]], {"David": "David Brent"})
+office_raw = fix_filtered_names(office_raw, [[7, 18]], {"Holy": "Todd Packer"})
+office_raw = fix_filtered_names(office_raw, [[5, 6], [6,4]], {"Pete": "Pete Halpert"})
+office_raw = fix_filtered_names(office_raw, [[9, 19]], {"Carla": "Carla Fern"})
+office_raw = fix_filtered_names(office_raw, [[2, 2]], {"Billy": "Billy Merchant"})
+office_raw = fix_filtered_names(office_raw, [[2, 9]], {"Bill": "Bill from improv"})
+office_raw = fix_filtered_names(office_raw, [[9, 16]], {"Mark": "Mark Franks"})
+office_raw = fix_filtered_names(office_raw, [[5, 16]], {"Mark": "Mark Baldy"})
 
 
 office_raw['speaker'] = office_raw.speaker.apply(fix_names, args=(replacements,))

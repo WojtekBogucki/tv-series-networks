@@ -16,6 +16,15 @@ def fix_names(x, replacements):
     return x
 
 
+def fix_filtered_names(dataset, episodes, replacements):
+    filter_ep = (dataset.season == episodes[0][0]) & (dataset.episode == episodes[0][1])
+    if len(episodes) > 1:
+        for episode in episodes[1:]:
+            filter_ep = filter_ep | (dataset.season == episode[0]) & (dataset.episode == episode[1])
+    dataset.loc[filter_ep, 'speaker'] = dataset.loc[filter_ep, 'speaker'].apply(fix_names, args=(replacements,))
+    return dataset
+
+
 def split_characters(dataset, splitters):
     '''
     Split multiple characters e.g. "Michael and Dwight" to separate records with duplicated lines
@@ -28,6 +37,18 @@ def split_characters(dataset, splitters):
         dataset.loc[filter_speakers, "speaker"] = dataset.speaker[filter_speakers].apply(
             lambda x: x.split(splitter))
         dataset = dataset.explode("speaker")
+    return dataset
+
+
+def remove_speakers(dataset: pd.DataFrame, speakers: list):
+    '''
+    Remove speakers from dataset
+    :param dataset: pandas Data Frame
+    :param speakers: list of speakers to remove
+    :return: pandas Data Frame
+    '''
+    dataset = dataset.reset_index(drop=True)
+    dataset = dataset.drop(dataset[dataset.speaker.isin(speakers)].index).reset_index(drop=True)
     return dataset
 
 

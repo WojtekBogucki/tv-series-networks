@@ -7,7 +7,6 @@ Andy,Darryl,192,30,2178
 Andy,David Wallace,105,11,1191
 Andy,Dwight,244,30,2786
 Andy,Erin,279,40,3180
-Andy,Group,31,5,294
 Andy,Jan,26,1,249
 Andy,Jim,131,21,1400
 Andy,Kevin,118,24,1301
@@ -25,7 +24,6 @@ Angela,Darryl,19,5,183
 Angela,Dwight,382,54,3763
 Angela,Erin,91,20,934
 Angela,Esther,13,3,127
-Angela,Group,20,6,122
 Angela,Jim,81,17,826
 Angela,Kevin,229,45,2040
 Angela,Meredith,73,19,645
@@ -48,7 +46,6 @@ Clark,David Wallace,19,3,276
 Clark,Dwight,354,47,3970
 Clark,Erin,63,13,656
 Clark,Esther,10,1,151
-Clark,Group,5,1,7
 Clark,Jan,7,1,69
 Clark,Jim,115,14,1282
 Clark,Kevin,49,12,360
@@ -65,7 +62,6 @@ Creed,David Wallace,10,2,98
 Creed,Dwight,68,13,637
 Creed,Erin,47,11,514
 Creed,Esther,2,1,40
-Creed,Group,5,1,6
 Creed,Jim,51,9,589
 Creed,Kevin,47,12,405
 Creed,Meredith,32,10,216
@@ -78,7 +74,6 @@ Creed,Stanley,20,7,175
 Creed,Toby,2,1,20
 Darryl,Dwight,141,27,1381
 Darryl,Erin,67,14,685
-Darryl,Group,5,2,29
 Darryl,Jim,247,30,2161
 Darryl,Kevin,57,14,482
 Darryl,Meredith,50,12,441
@@ -103,7 +98,6 @@ David Wallace,Phyllis,13,2,168
 David Wallace,Toby,5,1,75
 Dwight,Erin,193,33,2153
 Dwight,Esther,67,10,643
-Dwight,Group,24,6,184
 Dwight,Jan,50,3,408
 Dwight,Jim,549,73,6176
 Dwight,Kevin,180,31,1917
@@ -117,7 +111,6 @@ Dwight,Stanley,114,22,1484
 Dwight,Toby,65,9,553
 Dwight,Trevor,76,9,754
 Erin,Esther,4,1,38
-Erin,Group,9,4,31
 Erin,Jim,75,13,725
 Erin,Kevin,108,24,940
 Erin,Meredith,95,23,940
@@ -128,20 +121,9 @@ Erin,Pete,266,46,2423
 Erin,Phyllis,79,22,701
 Erin,Stanley,47,14,477
 Erin,Toby,13,3,89
-Esther,Group,3,1,37
 Esther,Jim,6,1,61
 Esther,Nellie,14,3,175
 Esther,Oscar,6,1,31
-Group,Jim,17,3,133
-Group,Kevin,23,2,125
-Group,Meredith,12,4,49
-Group,Nellie,11,4,140
-Group,Oscar,27,7,128
-Group,Pam,32,7,120
-Group,Pete,3,1,22
-Group,Phyllis,12,4,23
-Group,Stanley,12,3,63
-Group,Toby,2,1,30
 Jan,Pam,43,3,395
 Jim,Kevin,117,21,1060
 Jim,Meredith,99,17,1056
