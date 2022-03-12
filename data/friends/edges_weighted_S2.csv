@@ -1,23 +1,4 @@
 speaker1,speaker2,line_count,scene_count,word_count
-all,carol,6,1,19
-all,chandler,309,29,3198
-all,dr. burke,13,1,224
-all,eddie,10,2,88
-all,erica,27,2,255
-all,fun bobby,15,1,171
-all,joey,263,26,2596
-all,julie,30,6,242
-all,monica,306,28,3060
-all,mr. geller,16,1,107
-all,mr. greene,7,1,58
-all,mrs. geller,12,1,85
-all,mrs. greene,8,1,66
-all,phoebe,271,30,3576
-all,rachel,312,29,3267
-all,richard,15,3,159
-all,ross,348,27,3131
-all,susan,8,2,30
-all,susie,15,1,198
 big bully,chandler,62,2,496
 big bully,joey,52,2,451
 big bully,monica,26,1,323
@@ -40,7 +21,7 @@ chandler,erica,39,3,441
 chandler,fun bobby,38,3,478
 chandler,joey,1296,96,15069
 chandler,julie,69,8,706
-chandler,monica,1323,88,14832
+chandler,monica,1326,89,14835
 chandler,mr. geller,67,6,964
 chandler,mr. greene,56,2,531
 chandler,mrs. geller,75,7,929
@@ -76,7 +57,7 @@ fun bobby,rachel,40,4,415
 fun bobby,ross,33,3,370
 fun bobby,russ,10,1,70
 joey,julie,83,10,1053
-joey,monica,1166,78,13277
+joey,monica,1169,79,13280
 joey,mr. geller,56,4,649
 joey,mr. greene,37,2,344
 joey,mrs. geller,56,5,551
@@ -100,9 +81,9 @@ monica,mr. greene,62,2,690
 monica,mrs. geller,116,8,1123
 monica,mrs. greene,109,4,1418
 monica,phoebe,1239,86,15170
-monica,rachel,1358,87,15267
+monica,rachel,1359,87,15268
 monica,richard,293,21,3115
-monica,ross,1342,81,14490
+monica,ross,1345,82,14494
 monica,russ,27,4,157
 monica,ryan,36,2,456
 monica,susan,87,8,880

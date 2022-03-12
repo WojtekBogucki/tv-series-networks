@@ -12,23 +12,21 @@ chandler,gavin,143,4,1776
 chandler,joey,1402,66,17537
 chandler,lennart,32,2,479
 chandler,mike,560,23,7162
-chandler,monica,1703,81,20789
+chandler,monica,1704,81,20795
 chandler,mr. geller,64,5,798
 chandler,phoebe,1343,57,17798
-chandler,rachel,1457,69,18396
+chandler,rachel,1459,69,18408
 chandler,receptionist,99,7,1292
-chandler,ross,1470,62,19304
+chandler,ross,1471,62,19310
 chandler,sandy,55,2,863
-chandler,waiter,159,6,1969
 charlie,david,54,3,562
 charlie,joey,243,10,2619
 charlie,mike,88,4,835
 charlie,monica,242,11,2653
 charlie,phoebe,205,11,2308
-charlie,rachel,263,12,2738
+charlie,rachel,264,12,2744
 charlie,receptionist,20,1,220
 charlie,ross,293,11,3598
-charlie,waiter,22,1,248
 david,joey,147,7,1836
 david,mike,72,5,975
 david,monica,148,7,2166
@@ -36,7 +34,6 @@ david,phoebe,182,9,2516
 david,rachel,116,5,1427
 david,ross,161,6,2175
 david,sandy,20,2,524
-david,waiter,19,2,328
 gavin,joey,131,5,1671
 gavin,mike,59,3,681
 gavin,monica,136,4,1769
@@ -48,46 +45,37 @@ joey,mike,466,23,5555
 joey,monica,1414,66,16616
 joey,mr. geller,62,4,624
 joey,phoebe,1344,63,16818
-joey,rachel,1460,70,17358
+joey,rachel,1461,70,17364
 joey,receptionist,115,7,1295
 joey,ross,1420,65,17193
 joey,sandy,62,3,853
-joey,waiter,112,5,1186
 lennart,mike,15,1,197
 lennart,monica,46,3,506
 lennart,phoebe,54,4,748
 lennart,rachel,15,1,125
 lennart,receptionist,19,2,245
 lennart,ross,30,3,402
-lennart,waiter,9,1,118
 mike,monica,562,24,6688
 mike,phoebe,585,29,7644
 mike,rachel,518,25,6222
 mike,receptionist,17,2,188
 mike,ross,567,28,7072
 mike,sandy,21,2,406
-mike,waiter,39,4,430
 monica,mr. geller,59,4,595
 monica,phoebe,1400,64,17089
-monica,rachel,1510,72,17781
+monica,rachel,1511,72,17787
 monica,receptionist,89,8,975
 monica,ross,1438,60,17865
 monica,sandy,62,2,900
-monica,waiter,151,6,1823
 mr. geller,phoebe,42,4,477
 mr. geller,rachel,50,3,538
 mr. geller,ross,68,4,569
-phoebe,rachel,1391,66,17575
+phoebe,rachel,1392,66,17581
 phoebe,receptionist,100,8,1236
 phoebe,ross,1407,66,18234
 phoebe,sandy,61,2,1015
-phoebe,waiter,113,5,1635
 rachel,receptionist,82,8,780
-rachel,ross,1486,69,18696
+rachel,ross,1487,69,18702
 rachel,sandy,84,3,1099
-rachel,waiter,101,5,1083
 receptionist,ross,92,7,1208
-receptionist,waiter,3,1,54
 ross,sandy,92,4,1651
-ross,waiter,129,7,1667
-sandy,waiter,19,1,312

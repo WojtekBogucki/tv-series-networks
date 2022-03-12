@@ -1,24 +1,4 @@
 speaker1,speaker2,line_count,scene_count,word_count
-all,bonnie,32,4,181
-all,carol,30,2,307
-all,chandler,409,34,4140
-all,chloe,5,1,33
-all,director,18,5,162
-all,frank jr.,38,4,534
-all,gunther,10,3,81
-all,guy,10,3,50
-all,janice,31,4,369
-all,joanna,15,2,150
-all,joey,424,34,4428
-all,kate,48,6,413
-all,lauren,18,3,129
-all,mark,9,2,93
-all,monica,416,32,3973
-all,pete,63,7,864
-all,phoebe,444,34,5133
-all,rachel,422,34,3737
-all,richard,13,2,87
-all,ross,484,33,4890
 bonnie,chandler,44,4,335
 bonnie,joey,46,4,393
 bonnie,monica,43,3,331
@@ -37,21 +17,20 @@ chandler,chloe,50,3,529
 chandler,director,69,8,851
 chandler,frank jr.,125,6,1402
 chandler,gunther,143,15,1589
-chandler,guy,92,6,963
 chandler,janice,226,11,2866
 chandler,joanna,50,6,646
-chandler,joey,1515,93,17360
+chandler,joey,1516,93,17361
 chandler,kate,102,8,981
 chandler,lauren,47,5,428
 chandler,mark,102,7,1216
-chandler,monica,1462,81,15818
-chandler,mr. greene,39,1,412
+chandler,monica,1464,81,15820
+chandler,mr. greene,40,1,415
 chandler,pete,159,12,2150
-chandler,phoebe,1377,78,16403
-chandler,rachel,1451,87,15973
+chandler,phoebe,1378,78,16404
+chandler,rachel,1452,87,15974
 chandler,richard,91,7,854
 chandler,robert,43,3,346
-chandler,ross,1642,90,18430
+chandler,ross,1644,90,18436
 chandler,tommy,29,3,336
 chloe,gunther,5,1,40
 chloe,joey,43,3,526
@@ -82,7 +61,6 @@ frank jr.,pete,47,3,838
 frank jr.,phoebe,167,5,2070
 frank jr.,rachel,124,6,1404
 frank jr.,ross,118,6,1235
-gunther,guy,5,1,55
 gunther,janice,23,3,245
 gunther,joey,121,11,1509
 gunther,kate,20,2,255
@@ -94,17 +72,9 @@ gunther,rachel,153,13,1805
 gunther,richard,2,1,15
 gunther,robert,5,1,66
 gunther,ross,187,13,2338
-guy,janice,5,1,31
-guy,joey,81,6,1157
-guy,mark,4,1,23
-guy,monica,68,6,672
-guy,mr. greene,35,1,359
-guy,phoebe,79,6,940
-guy,rachel,116,6,1356
-guy,ross,129,6,1399
 janice,joey,233,12,3107
 janice,monica,192,11,2188
-janice,mr. greene,32,1,334
+janice,mr. greene,33,1,337
 janice,phoebe,201,12,2858
 janice,rachel,196,11,2164
 janice,ross,231,12,2771
@@ -118,14 +88,14 @@ joanna,ross,31,3,301
 joey,kate,167,9,1851
 joey,lauren,83,6,800
 joey,mark,87,8,959
-joey,monica,1462,79,16016
-joey,mr. greene,56,1,760
+joey,monica,1463,79,16017
+joey,mr. greene,57,1,763
 joey,pete,151,11,1962
 joey,phoebe,1431,83,17153
 joey,rachel,1443,83,15634
 joey,richard,86,6,824
 joey,robert,32,2,321
-joey,ross,1625,89,18249
+joey,ross,1626,89,18254
 joey,tommy,25,2,292
 kate,lauren,41,4,397
 kate,mark,11,1,169
@@ -145,17 +115,17 @@ mark,pete,21,2,322
 mark,phoebe,64,6,714
 mark,rachel,125,10,1181
 mark,ross,134,10,1381
-monica,mr. greene,41,1,409
+monica,mr. greene,42,1,412
 monica,pete,245,17,3137
-monica,phoebe,1500,78,17170
-monica,rachel,1534,84,15692
+monica,phoebe,1501,78,17171
+monica,rachel,1535,84,15693
 monica,richard,123,9,1506
 monica,robert,42,3,406
-monica,ross,1680,87,17773
+monica,ross,1682,87,17779
 monica,tommy,21,2,196
-mr. greene,phoebe,55,1,612
-mr. greene,rachel,63,1,705
-mr. greene,ross,73,1,756
+mr. greene,phoebe,56,1,615
+mr. greene,rachel,64,1,708
+mr. greene,ross,74,1,759
 pete,phoebe,204,11,2942
 pete,rachel,165,12,2006
 pete,ross,187,13,2130
@@ -163,11 +133,11 @@ pete,tommy,11,1,129
 phoebe,rachel,1474,84,16664
 phoebe,richard,79,7,699
 phoebe,robert,42,3,337
-phoebe,ross,1583,80,18314
+phoebe,ross,1584,80,18319
 phoebe,tommy,7,1,122
 rachel,richard,76,6,758
 rachel,robert,28,2,230
-rachel,ross,1866,97,19265
+rachel,ross,1867,97,19270
 rachel,tommy,33,3,337
 richard,robert,37,3,256
 richard,ross,111,7,1094

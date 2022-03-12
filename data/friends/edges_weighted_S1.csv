@@ -1,23 +1,4 @@
 speaker1,speaker2,line_count,scene_count,word_count
-all,aurora,17,2,108
-all,barry,11,1,102
-all,carol,26,4,112
-all,chandler,403,41,4357
-all,david,14,2,175
-all,janice,4,1,48
-all,joey,290,41,2473
-all,monica,439,45,3743
-all,mr. geller,5,1,20
-all,mr. heckles,6,1,38
-all,mr. tribbiani,12,1,206
-all,mrs. bing,11,1,107
-all,mrs. geller,13,1,181
-all,paolo,4,1,7
-all,phoebe,352,43,3326
-all,rachel,354,41,3802
-all,roger,16,2,117
-all,ross,399,43,3837
-all,susan,18,3,114
 aurora,chandler,74,3,840
 aurora,joey,35,2,315
 aurora,monica,21,2,206
@@ -32,7 +13,7 @@ barry,mr. heckles,15,1,136
 barry,phoebe,21,1,201
 barry,rachel,79,5,904
 barry,ross,32,1,388
-carol,chandler,99,14,949
+carol,chandler,100,14,952
 carol,janice,4,1,42
 carol,joey,77,11,621
 carol,lydia,18,2,137
@@ -44,19 +25,19 @@ carol,ross,215,19,2401
 carol,susan,105,13,739
 chandler,david,55,3,786
 chandler,janice,99,13,1174
-chandler,joey,1254,111,13771
+chandler,joey,1257,111,13790
 chandler,lydia,27,3,284
-chandler,monica,1412,118,14949
+chandler,monica,1415,118,14968
 chandler,mr. geller,37,4,507
 chandler,mr. heckles,32,3,402
 chandler,mr. tribbiani,34,2,310
 chandler,mrs. bing,54,4,602
 chandler,mrs. geller,41,3,425
-chandler,paolo,42,8,421
-chandler,phoebe,1193,111,13273
-chandler,rachel,1306,120,14873
+chandler,paolo,43,8,424
+chandler,phoebe,1196,111,13292
+chandler,rachel,1310,120,14894
 chandler,roger,46,3,522
-chandler,ross,1414,117,16262
+chandler,ross,1417,117,16281
 chandler,steve,25,2,194
 chandler,susan,83,11,848
 chandler,young ethan,35,1,341
@@ -81,7 +62,7 @@ joey,mrs. bing,22,2,301
 joey,mrs. geller,37,3,405
 joey,paolo,43,7,317
 joey,phoebe,1056,103,11139
-joey,rachel,1077,100,11732
+joey,rachel,1078,100,11734
 joey,roger,40,3,486
 joey,ross,1197,106,13081
 joey,steve,25,1,147
@@ -101,7 +82,7 @@ monica,mrs. bing,29,2,306
 monica,mrs. geller,63,4,653
 monica,paolo,36,8,302
 monica,phoebe,1323,115,13437
-monica,rachel,1487,127,15733
+monica,rachel,1488,127,15735
 monica,roger,37,4,406
 monica,ross,1463,120,15644
 monica,steve,44,2,377
@@ -129,14 +110,14 @@ mrs. geller,ross,82,6,887
 paolo,phoebe,67,9,542
 paolo,rachel,66,9,617
 paolo,ross,81,9,666
-phoebe,rachel,1197,112,13204
+phoebe,rachel,1198,112,13206
 phoebe,roger,50,4,602
 phoebe,ross,1285,109,14503
 phoebe,steve,33,2,233
 phoebe,susan,63,10,778
 phoebe,young ethan,33,1,360
 rachel,roger,42,3,512
-rachel,ross,1421,116,16170
+rachel,ross,1422,116,16172
 rachel,steve,36,2,223
 rachel,susan,43,7,508
 rachel,young ethan,37,2,415

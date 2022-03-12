@@ -23,11 +23,10 @@ chandler,mr. geller,116,10,1478
 chandler,mrs. geller,71,6,817
 chandler,phoebe,1096,78,11603
 chandler,policeman,43,2,324
-chandler,rachel,1307,81,14539
+chandler,rachel,1308,81,14540
 chandler,richard,39,2,448
 chandler,ross,1163,75,12533
 chandler,tag,109,12,958
-chandler,woman,77,6,708
 director,joey,101,9,1081
 director,monica,62,7,622
 director,phoebe,58,7,477
@@ -35,7 +34,6 @@ director,policeman,9,1,102
 director,rachel,61,6,675
 director,richard,34,4,332
 director,ross,46,5,603
-director,woman,8,1,76
 earl,joey,35,2,315
 earl,monica,41,2,423
 earl,mr. geller,43,2,514
@@ -48,7 +46,6 @@ erin,monica,21,1,181
 erin,phoebe,43,3,240
 erin,rachel,61,4,478
 erin,ross,30,2,284
-erin,woman,17,1,150
 joey,kristen,60,3,468
 joey,melissa,80,5,1063
 joey,monica,1329,85,14934
@@ -56,11 +53,10 @@ joey,mr. geller,108,9,1243
 joey,mrs. geller,17,4,279
 joey,phoebe,1357,94,14403
 joey,policeman,40,1,405
-joey,rachel,1622,100,18141
+joey,rachel,1623,100,18142
 joey,richard,102,6,977
 joey,ross,1226,82,13314
 joey,tag,160,15,1492
-joey,woman,90,5,758
 kristen,monica,52,3,421
 kristen,phoebe,37,3,308
 kristen,rachel,33,2,281
@@ -70,41 +66,32 @@ melissa,phoebe,51,4,620
 melissa,rachel,124,6,1552
 melissa,ross,27,3,387
 melissa,tag,9,1,62
-melissa,woman,13,1,151
 monica,mr. geller,141,10,1817
 monica,mrs. geller,57,5,724
 monica,phoebe,1260,90,13607
 monica,policeman,40,2,283
-monica,rachel,1389,86,16188
+monica,rachel,1390,86,16189
 monica,richard,49,4,499
 monica,ross,1228,84,14012
 monica,tag,129,13,1284
-monica,woman,92,7,982
 mr. geller,mrs. geller,45,8,475
 mr. geller,phoebe,111,8,1356
 mr. geller,rachel,124,10,1585
 mr. geller,ross,155,13,1723
 mr. geller,tag,7,1,131
-mr. geller,woman,20,3,190
 mrs. geller,phoebe,42,4,382
 mrs. geller,rachel,32,5,344
 mrs. geller,ross,56,7,594
-mrs. geller,woman,18,3,181
 phoebe,policeman,24,1,103
-phoebe,rachel,1486,104,16117
+phoebe,rachel,1487,104,16118
 phoebe,richard,49,3,377
 phoebe,ross,1191,84,12371
 phoebe,tag,175,16,1751
-phoebe,woman,118,9,839
 policeman,rachel,53,2,308
 policeman,richard,13,1,107
 policeman,ross,46,2,387
-policeman,woman,9,1,42
 rachel,richard,53,4,509
-rachel,ross,1388,84,15492
+rachel,ross,1389,84,15493
 rachel,tag,345,25,4043
-rachel,woman,134,9,1291
 richard,ross,41,2,552
-richard,woman,12,1,81
 ross,tag,167,16,1789
-ross,woman,62,7,662

@@ -1,30 +1,14 @@
 speaker1,speaker2,line_count,scene_count,word_count
-alice,all,13,3,120
 alice,chandler,66,5,710
 alice,emily,26,2,254
 alice,frank jr.,50,5,609
 alice,joey,68,6,807
 alice,kathy,10,2,101
-alice,monica,63,4,589
+alice,monica,64,4,593
 alice,phoebe,104,6,1475
+alice,phoebe sr,22,2,392
 alice,rachel,65,5,651
 alice,ross,74,6,826
-all,chandler,238,20,2254
-all,emily,21,4,137
-all,frank jr.,19,3,221
-all,gunther,16,3,56
-all,janice,5,1,64
-all,joanna,15,2,231
-all,joey,229,22,2127
-all,joshua,49,4,350
-all,kathy,29,3,183
-all,monica,218,19,1996
-all,mr. treeger,7,1,79
-all,mr. waltham,8,1,101
-all,mrs. geller,27,3,254
-all,phoebe,183,20,1902
-all,rachel,251,18,2306
-all,ross,201,21,1890
 chandler,emily,280,19,2929
 chandler,frank jr.,64,4,738
 chandler,gunther,163,9,1603
@@ -33,13 +17,14 @@ chandler,joanna,86,4,949
 chandler,joey,1617,104,17293
 chandler,joshua,120,10,1160
 chandler,kathy,250,13,2600
-chandler,monica,1433,87,14984
+chandler,monica,1435,87,14989
 chandler,mr. treeger,73,5,777
 chandler,mr. waltham,48,4,748
 chandler,mrs. geller,79,6,835
 chandler,phoebe,1443,96,16909
-chandler,rachel,1552,97,16652
-chandler,ross,1452,90,15937
+chandler,phoebe sr,59,3,874
+chandler,rachel,1554,97,16654
+chandler,ross,1453,90,15938
 chandler,tim,48,1,461
 emily,frank jr.,13,1,139
 emily,gunther,21,2,162
@@ -54,8 +39,9 @@ emily,rachel,275,17,2991
 emily,ross,333,22,4139
 frank jr.,joey,70,5,846
 frank jr.,kathy,14,2,164
-frank jr.,monica,71,4,683
+frank jr.,monica,72,4,687
 frank jr.,phoebe,100,5,1420
+frank jr.,phoebe sr,28,2,457
 frank jr.,rachel,73,5,776
 frank jr.,ross,70,5,779
 gunther,joey,156,10,1560
@@ -79,13 +65,14 @@ joanna,rachel,92,5,1074
 joanna,ross,29,2,403
 joey,joshua,145,10,1401
 joey,kathy,160,10,1819
-joey,monica,1312,85,13745
+joey,monica,1314,85,13750
 joey,mr. treeger,95,5,1163
 joey,mr. waltham,69,5,846
 joey,mrs. geller,81,7,879
 joey,phoebe,1357,92,15866
-joey,rachel,1434,89,15694
-joey,ross,1401,87,15853
+joey,phoebe sr,68,4,1196
+joey,rachel,1436,89,15696
+joey,ross,1402,87,15854
 joey,tim,52,1,525
 joshua,kathy,4,1,34
 joshua,monica,64,6,579
@@ -94,17 +81,19 @@ joshua,mr. waltham,38,3,401
 joshua,phoebe,98,9,900
 joshua,rachel,268,15,2905
 joshua,ross,139,10,1472
-kathy,monica,169,8,1551
+kathy,monica,170,8,1555
 kathy,phoebe,135,9,1501
+kathy,phoebe sr,14,1,283
 kathy,rachel,141,10,1390
 kathy,ross,149,11,1459
 kathy,tim,36,1,339
 monica,mr. treeger,56,4,624
 monica,mr. waltham,55,4,559
 monica,mrs. geller,106,6,1046
-monica,phoebe,1304,91,14689
-monica,rachel,1387,91,14336
-monica,ross,1250,78,13129
+monica,phoebe,1306,91,14694
+monica,phoebe sr,67,3,867
+monica,rachel,1391,91,14343
+monica,ross,1253,78,13135
 monica,tim,65,1,538
 mr. treeger,phoebe,67,5,860
 mr. treeger,rachel,81,5,841
@@ -114,11 +103,14 @@ mr. waltham,phoebe,63,4,963
 mr. waltham,rachel,94,6,1001
 mr. waltham,ross,73,5,900
 mrs. geller,phoebe,86,5,1188
-mrs. geller,rachel,92,5,1033
+mrs. geller,rachel,93,5,1034
 mrs. geller,ross,80,7,943
-phoebe,rachel,1351,92,15614
-phoebe,ross,1257,83,15143
+phoebe,phoebe sr,93,4,1403
+phoebe,rachel,1353,92,15616
+phoebe,ross,1258,83,15144
 phoebe,tim,33,1,266
-rachel,ross,1423,91,15617
+phoebe sr,rachel,74,4,1019
+phoebe sr,ross,79,4,1086
+rachel,ross,1426,91,15620
 rachel,tim,46,1,382
 ross,tim,41,1,360

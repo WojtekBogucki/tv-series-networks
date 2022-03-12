@@ -1,13 +1,4 @@
 speaker1,speaker2,line_count,scene_count,word_count
-all,chandler,103,16,898
-all,director,12,2,165
-all,elizabeth,9,1,46
-all,janine,4,1,47
-all,joey,110,15,1266
-all,monica,114,18,860
-all,phoebe,123,17,1347
-all,rachel,141,17,1325
-all,ross,117,15,1124
 chandler,director,29,4,346
 chandler,elizabeth,142,13,1136
 chandler,gunther,96,10,1117

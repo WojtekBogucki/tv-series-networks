@@ -4,7 +4,6 @@ chandler,dr. long,61,5,701
 chandler,eric,105,5,1132
 chandler,janice,28,2,292
 chandler,joey,1137,71,13298
-chandler,man,68,5,534
 chandler,mona,180,15,1745
 chandler,monica,1266,89,13948
 chandler,mr. greene,48,4,597
@@ -12,10 +11,9 @@ chandler,mrs. greene,66,1,611
 chandler,parker,26,2,351
 chandler,phoebe,1002,68,10047
 chandler,rachel,1239,69,13834
-chandler,ross,1124,67,11778
+chandler,ross,1125,67,11779
 chandler,the interviewer,72,6,751
 chandler,will,64,3,602
-chandler,woman,69,7,474
 dina,joey,50,4,668
 dina,monica,23,2,374
 dina,phoebe,44,2,644
@@ -23,12 +21,10 @@ dina,rachel,57,6,738
 dina,ross,11,1,179
 dr. long,janice,18,1,164
 dr. long,joey,62,5,778
-dr. long,man,3,1,34
 dr. long,monica,28,2,313
 dr. long,phoebe,31,2,417
 dr. long,rachel,120,7,1246
 dr. long,ross,103,7,1165
-dr. long,woman,3,1,31
 eric,joey,76,3,896
 eric,mona,44,2,439
 eric,monica,107,5,1230
@@ -36,13 +32,10 @@ eric,phoebe,132,6,1548
 eric,rachel,95,5,1207
 eric,ross,95,4,1043
 janice,joey,47,3,552
-janice,man,13,1,120
 janice,monica,28,2,346
 janice,phoebe,33,2,431
 janice,rachel,81,3,897
 janice,ross,66,3,641
-janice,woman,10,1,106
-joey,man,107,6,1107
 joey,mona,196,14,2324
 joey,monica,1206,71,14858
 joey,mr. greene,56,4,793
@@ -50,32 +43,22 @@ joey,mrs. greene,95,2,1128
 joey,parker,23,1,326
 joey,phoebe,1174,73,13841
 joey,rachel,1616,83,19895
-joey,ross,1393,74,16543
+joey,ross,1394,74,16544
 joey,the interviewer,121,7,1643
 joey,will,58,1,549
-joey,woman,132,8,1466
-man,monica,63,4,914
-man,mrs. greene,34,1,418
-man,parker,15,1,184
-man,phoebe,75,4,757
-man,rachel,118,7,1369
-man,ross,131,7,1333
-man,woman,27,6,168
 mona,monica,165,14,1792
 mona,mr. greene,36,4,412
 mona,phoebe,172,13,1864
 mona,rachel,208,12,2361
 mona,ross,306,22,3284
-mona,woman,5,1,40
 monica,mr. greene,37,4,542
 monica,mrs. greene,74,2,979
 monica,parker,47,3,802
 monica,phoebe,1368,85,15083
 monica,rachel,1433,75,16887
-monica,ross,1237,68,13899
+monica,ross,1238,68,13900
 monica,the interviewer,63,5,828
 monica,will,97,3,898
-monica,woman,58,4,960
 mr. greene,phoebe,40,3,509
 mr. greene,rachel,65,3,788
 mr. greene,ross,48,4,624
@@ -83,21 +66,15 @@ mrs. greene,phoebe,65,2,770
 mrs. greene,rachel,92,2,1187
 mrs. greene,ross,88,2,1023
 mrs. greene,the interviewer,8,1,107
-mrs. greene,woman,36,1,424
 parker,phoebe,70,3,865
 parker,rachel,66,3,798
 parker,ross,71,3,951
-parker,woman,20,1,206
 phoebe,rachel,1405,75,15782
-phoebe,ross,1246,73,13868
+phoebe,ross,1247,73,13869
 phoebe,the interviewer,61,6,710
 phoebe,will,70,3,667
-phoebe,woman,86,5,854
-rachel,ross,1701,81,18792
+rachel,ross,1702,81,18793
 rachel,the interviewer,83,6,1037
 rachel,will,82,1,831
-rachel,woman,121,8,1376
-ross,the interviewer,73,7,756
+ross,the interviewer,74,7,757
 ross,will,77,1,726
-ross,woman,146,9,1614
-the interviewer,woman,3,1,37
