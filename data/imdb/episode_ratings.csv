@@ -1,0 +1,876 @@
+originalTitle,startYear,endYear,genres,seasonNumber,episodeNumber,averageRating,numVotes
+Friends,1994,2004,"Comedy,Romance",1,1,8.2,8605
+Friends,1994,2004,"Comedy,Romance",1,2,7.9,6626
+Friends,1994,2004,"Comedy,Romance",1,3,8.1,6229
+Friends,1994,2004,"Comedy,Romance",1,4,8.0,6049
+Friends,1994,2004,"Comedy,Romance",1,5,8.4,6045
+Friends,1994,2004,"Comedy,Romance",1,6,8.0,5757
+Friends,1994,2004,"Comedy,Romance",1,7,8.9,7328
+Friends,1994,2004,"Comedy,Romance",1,8,8.0,5630
+Friends,1994,2004,"Comedy,Romance",1,9,8.1,5461
+Friends,1994,2004,"Comedy,Romance",1,10,8.0,5491
+Friends,1994,2004,"Comedy,Romance",1,11,8.1,5406
+Friends,1994,2004,"Comedy,Romance",1,12,8.1,5309
+Friends,1994,2004,"Comedy,Romance",1,13,8.6,5662
+Friends,1994,2004,"Comedy,Romance",1,14,8.2,5216
+Friends,1994,2004,"Comedy,Romance",1,15,8.1,5265
+Friends,1994,2004,"Comedy,Romance",1,16,8.0,5181
+Friends,1994,2004,"Comedy,Romance",1,17,8.4,5279
+Friends,1994,2004,"Comedy,Romance",1,18,8.7,5838
+Friends,1994,2004,"Comedy,Romance",1,19,8.0,5052
+Friends,1994,2004,"Comedy,Romance",1,20,7.8,5047
+Friends,1994,2004,"Comedy,Romance",1,21,7.7,5084
+Friends,1994,2004,"Comedy,Romance",1,22,8.2,5048
+Friends,1994,2004,"Comedy,Romance",1,23,8.6,5329
+Friends,1994,2004,"Comedy,Romance",1,24,8.8,5679
+Friends,1994,2004,"Comedy,Romance",2,1,8.4,5168
+Friends,1994,2004,"Comedy,Romance",2,2,8.1,4950
+Friends,1994,2004,"Comedy,Romance",2,3,8.3,4959
+Friends,1994,2004,"Comedy,Romance",2,4,7.8,4810
+Friends,1994,2004,"Comedy,Romance",2,5,8.2,4820
+Friends,1994,2004,"Comedy,Romance",2,6,8.5,5164
+Friends,1994,2004,"Comedy,Romance",2,7,8.9,5887
+Friends,1994,2004,"Comedy,Romance",2,8,8.4,4854
+Friends,1994,2004,"Comedy,Romance",2,9,7.8,4645
+Friends,1994,2004,"Comedy,Romance",2,10,7.9,4886
+Friends,1994,2004,"Comedy,Romance",2,11,8.0,4772
+Friends,1994,2004,"Comedy,Romance",2,12,8.5,5023
+Friends,1994,2004,"Comedy,Romance",2,13,8.7,5203
+Friends,1994,2004,"Comedy,Romance",2,14,9.3,7547
+Friends,1994,2004,"Comedy,Romance",2,15,8.8,5261
+Friends,1994,2004,"Comedy,Romance",2,16,8.5,4670
+Friends,1994,2004,"Comedy,Romance",2,17,8.2,4607
+Friends,1994,2004,"Comedy,Romance",2,18,8.4,4605
+Friends,1994,2004,"Comedy,Romance",2,19,8.4,4725
+Friends,1994,2004,"Comedy,Romance",2,20,8.1,4479
+Friends,1994,2004,"Comedy,Romance",2,21,8.0,4528
+Friends,1994,2004,"Comedy,Romance",2,22,8.9,5635
+Friends,1994,2004,"Comedy,Romance",2,23,8.0,4542
+Friends,1994,2004,"Comedy,Romance",2,24,8.1,4555
+Friends,1994,2004,"Comedy,Romance",3,1,8.3,4702
+Friends,1994,2004,"Comedy,Romance",3,2,8.9,6307
+Friends,1994,2004,"Comedy,Romance",3,3,7.9,4492
+Friends,1994,2004,"Comedy,Romance",3,4,7.9,4322
+Friends,1994,2004,"Comedy,Romance",3,5,8.0,4430
+Friends,1994,2004,"Comedy,Romance",3,6,9.0,5798
+Friends,1994,2004,"Comedy,Romance",3,7,8.2,4372
+Friends,1994,2004,"Comedy,Romance",3,8,8.3,4396
+Friends,1994,2004,"Comedy,Romance",3,9,8.9,6088
+Friends,1994,2004,"Comedy,Romance",3,10,8.0,4401
+Friends,1994,2004,"Comedy,Romance",3,11,8.5,4554
+Friends,1994,2004,"Comedy,Romance",3,12,8.1,4319
+Friends,1994,2004,"Comedy,Romance",3,13,8.1,4332
+Friends,1994,2004,"Comedy,Romance",3,14,7.7,4328
+Friends,1994,2004,"Comedy,Romance",3,15,8.4,4646
+Friends,1994,2004,"Comedy,Romance",3,16,9.0,5674
+Friends,1994,2004,"Comedy,Romance",3,17,8.2,4268
+Friends,1994,2004,"Comedy,Romance",3,18,8.3,4420
+Friends,1994,2004,"Comedy,Romance",3,19,8.1,4252
+Friends,1994,2004,"Comedy,Romance",3,20,8.0,4215
+Friends,1994,2004,"Comedy,Romance",3,21,8.6,4549
+Friends,1994,2004,"Comedy,Romance",3,22,8.1,4293
+Friends,1994,2004,"Comedy,Romance",3,23,7.9,4217
+Friends,1994,2004,"Comedy,Romance",3,24,8.1,4398
+Friends,1994,2004,"Comedy,Romance",3,25,8.7,4881
+Friends,1994,2004,"Comedy,Romance",4,1,9.0,5515
+Friends,1994,2004,"Comedy,Romance",4,2,8.0,4304
+Friends,1994,2004,"Comedy,Romance",4,3,8.4,4376
+Friends,1994,2004,"Comedy,Romance",4,4,8.1,4222
+Friends,1994,2004,"Comedy,Romance",4,5,8.3,4275
+Friends,1994,2004,"Comedy,Romance",4,6,8.4,4379
+Friends,1994,2004,"Comedy,Romance",4,7,8.6,4428
+Friends,1994,2004,"Comedy,Romance",4,8,9.0,5534
+Friends,1994,2004,"Comedy,Romance",4,9,7.8,4124
+Friends,1994,2004,"Comedy,Romance",4,10,8.0,4101
+Friends,1994,2004,"Comedy,Romance",4,11,8.4,4413
+Friends,1994,2004,"Comedy,Romance",4,12,9.4,8134
+Friends,1994,2004,"Comedy,Romance",4,13,8.1,4077
+Friends,1994,2004,"Comedy,Romance",4,14,8.1,4120
+Friends,1994,2004,"Comedy,Romance",4,15,8.4,4306
+Friends,1994,2004,"Comedy,Romance",4,16,8.1,4158
+Friends,1994,2004,"Comedy,Romance",4,17,8.5,4306
+Friends,1994,2004,"Comedy,Romance",4,18,8.2,4081
+Friends,1994,2004,"Comedy,Romance",4,19,8.7,4298
+Friends,1994,2004,"Comedy,Romance",4,20,8.4,4224
+Friends,1994,2004,"Comedy,Romance",4,21,7.0,4554
+Friends,1994,2004,"Comedy,Romance",4,22,8.4,4135
+Friends,1994,2004,"Comedy,Romance",4,23,8.6,4526
+Friends,1994,2004,"Comedy,Romance",4,24,9.2,5645
+Friends,1994,2004,"Comedy,Romance",5,1,8.8,4815
+Friends,1994,2004,"Comedy,Romance",5,2,8.9,4951
+Friends,1994,2004,"Comedy,Romance",5,3,8.7,4518
+Friends,1994,2004,"Comedy,Romance",5,4,8.2,4046
+Friends,1994,2004,"Comedy,Romance",5,5,8.7,4356
+Friends,1994,2004,"Comedy,Romance",5,6,7.9,4037
+Friends,1994,2004,"Comedy,Romance",5,7,8.2,4091
+Friends,1994,2004,"Comedy,Romance",5,8,9.1,5654
+Friends,1994,2004,"Comedy,Romance",5,9,9.0,5217
+Friends,1994,2004,"Comedy,Romance",5,10,8.1,4025
+Friends,1994,2004,"Comedy,Romance",5,11,9.0,5086
+Friends,1994,2004,"Comedy,Romance",5,12,8.2,4006
+Friends,1994,2004,"Comedy,Romance",5,13,8.0,4011
+Friends,1994,2004,"Comedy,Romance",5,14,9.7,10928
+Friends,1994,2004,"Comedy,Romance",5,15,8.4,4227
+Friends,1994,2004,"Comedy,Romance",5,16,8.5,4349
+Friends,1994,2004,"Comedy,Romance",5,17,8.4,4046
+Friends,1994,2004,"Comedy,Romance",5,18,7.9,3927
+Friends,1994,2004,"Comedy,Romance",5,19,8.6,4358
+Friends,1994,2004,"Comedy,Romance",5,20,8.2,3928
+Friends,1994,2004,"Comedy,Romance",5,21,8.4,4072
+Friends,1994,2004,"Comedy,Romance",5,22,8.1,3887
+Friends,1994,2004,"Comedy,Romance",5,23,8.7,4431
+Friends,1994,2004,"Comedy,Romance",5,24,9.0,5025
+Friends,1994,2004,"Comedy,Romance",6,1,8.6,4324
+Friends,1994,2004,"Comedy,Romance",6,2,8.1,3914
+Friends,1994,2004,"Comedy,Romance",6,3,8.1,3859
+Friends,1994,2004,"Comedy,Romance",6,4,8.4,4035
+Friends,1994,2004,"Comedy,Romance",6,5,8.0,3936
+Friends,1994,2004,"Comedy,Romance",6,6,8.4,3984
+Friends,1994,2004,"Comedy,Romance",6,7,8.3,4001
+Friends,1994,2004,"Comedy,Romance",6,8,8.4,4159
+Friends,1994,2004,"Comedy,Romance",6,9,9.2,5643
+Friends,1994,2004,"Comedy,Romance",6,10,8.5,4294
+Friends,1994,2004,"Comedy,Romance",6,11,8.0,3912
+Friends,1994,2004,"Comedy,Romance",6,12,7.9,3843
+Friends,1994,2004,"Comedy,Romance",6,13,8.1,4009
+Friends,1994,2004,"Comedy,Romance",6,14,8.5,4071
+Friends,1994,2004,"Comedy,Romance",6,15,8.4,4192
+Friends,1994,2004,"Comedy,Romance",6,16,8.4,4100
+Friends,1994,2004,"Comedy,Romance",6,17,9.0,5565
+Friends,1994,2004,"Comedy,Romance",6,18,8.2,3892
+Friends,1994,2004,"Comedy,Romance",6,19,8.2,3950
+Friends,1994,2004,"Comedy,Romance",6,20,7.2,4197
+Friends,1994,2004,"Comedy,Romance",6,21,8.5,4149
+Friends,1994,2004,"Comedy,Romance",6,22,8.9,4787
+Friends,1994,2004,"Comedy,Romance",6,23,8.5,4016
+Friends,1994,2004,"Comedy,Romance",6,24,8.7,4148
+Friends,1994,2004,"Comedy,Romance",6,25,9.2,5683
+Friends,1994,2004,"Comedy,Romance",7,1,8.3,4125
+Friends,1994,2004,"Comedy,Romance",7,2,8.2,3833
+Friends,1994,2004,"Comedy,Romance",7,3,8.0,3806
+Friends,1994,2004,"Comedy,Romance",7,4,8.0,3833
+Friends,1994,2004,"Comedy,Romance",7,5,8.0,3789
+Friends,1994,2004,"Comedy,Romance",7,6,8.8,4544
+Friends,1994,2004,"Comedy,Romance",7,7,8.4,3886
+Friends,1994,2004,"Comedy,Romance",7,8,8.1,3782
+Friends,1994,2004,"Comedy,Romance",7,9,8.0,3745
+Friends,1994,2004,"Comedy,Romance",7,10,8.4,4129
+Friends,1994,2004,"Comedy,Romance",7,11,8.5,4007
+Friends,1994,2004,"Comedy,Romance",7,12,8.6,4072
+Friends,1994,2004,"Comedy,Romance",7,13,8.3,3846
+Friends,1994,2004,"Comedy,Romance",7,14,8.5,4072
+Friends,1994,2004,"Comedy,Romance",7,15,8.3,3949
+Friends,1994,2004,"Comedy,Romance",7,16,8.6,4096
+Friends,1994,2004,"Comedy,Romance",7,17,8.3,3781
+Friends,1994,2004,"Comedy,Romance",7,18,8.3,3829
+Friends,1994,2004,"Comedy,Romance",7,19,8.6,4270
+Friends,1994,2004,"Comedy,Romance",7,20,8.3,3931
+Friends,1994,2004,"Comedy,Romance",7,21,7.3,3857
+Friends,1994,2004,"Comedy,Romance",7,22,8.3,3873
+Friends,1994,2004,"Comedy,Romance",7,23,8.8,4343
+Friends,1994,2004,"Comedy,Romance",7,24,9.1,4908
+Friends,1994,2004,"Comedy,Romance",8,1,8.6,4132
+Friends,1994,2004,"Comedy,Romance",8,2,9.0,4803
+Friends,1994,2004,"Comedy,Romance",8,3,8.6,3921
+Friends,1994,2004,"Comedy,Romance",8,4,9.2,5586
+Friends,1994,2004,"Comedy,Romance",8,5,8.0,3743
+Friends,1994,2004,"Comedy,Romance",8,6,8.4,4081
+Friends,1994,2004,"Comedy,Romance",8,7,7.8,3819
+Friends,1994,2004,"Comedy,Romance",8,8,8.7,4271
+Friends,1994,2004,"Comedy,Romance",8,9,9.3,6911
+Friends,1994,2004,"Comedy,Romance",8,10,8.0,3799
+Friends,1994,2004,"Comedy,Romance",8,11,7.9,3648
+Friends,1994,2004,"Comedy,Romance",8,12,8.5,3970
+Friends,1994,2004,"Comedy,Romance",8,13,8.5,3867
+Friends,1994,2004,"Comedy,Romance",8,14,8.1,3667
+Friends,1994,2004,"Comedy,Romance",8,15,8.3,3656
+Friends,1994,2004,"Comedy,Romance",8,16,8.2,3719
+Friends,1994,2004,"Comedy,Romance",8,17,8.0,3663
+Friends,1994,2004,"Comedy,Romance",8,18,8.1,3716
+Friends,1994,2004,"Comedy,Romance",8,19,7.3,3838
+Friends,1994,2004,"Comedy,Romance",8,20,8.1,3710
+Friends,1994,2004,"Comedy,Romance",8,21,8.1,3695
+Friends,1994,2004,"Comedy,Romance",8,22,8.2,3649
+Friends,1994,2004,"Comedy,Romance",8,23,8.7,3986
+Friends,1994,2004,"Comedy,Romance",8,24,8.8,4297
+Friends,1994,2004,"Comedy,Romance",9,1,8.5,4043
+Friends,1994,2004,"Comedy,Romance",9,2,8.5,4042
+Friends,1994,2004,"Comedy,Romance",9,3,8.1,3729
+Friends,1994,2004,"Comedy,Romance",9,4,8.1,3769
+Friends,1994,2004,"Comedy,Romance",9,5,8.4,3859
+Friends,1994,2004,"Comedy,Romance",9,6,8.3,4043
+Friends,1994,2004,"Comedy,Romance",9,7,8.6,4053
+Friends,1994,2004,"Comedy,Romance",9,8,8.7,4487
+Friends,1994,2004,"Comedy,Romance",9,9,8.1,3708
+Friends,1994,2004,"Comedy,Romance",9,10,7.3,3842
+Friends,1994,2004,"Comedy,Romance",9,11,7.9,3581
+Friends,1994,2004,"Comedy,Romance",9,12,7.8,3696
+Friends,1994,2004,"Comedy,Romance",9,13,8.0,3678
+Friends,1994,2004,"Comedy,Romance",9,14,8.1,3612
+Friends,1994,2004,"Comedy,Romance",9,15,8.2,3633
+Friends,1994,2004,"Comedy,Romance",9,16,8.1,3554
+Friends,1994,2004,"Comedy,Romance",9,17,8.4,3708
+Friends,1994,2004,"Comedy,Romance",9,18,8.5,3833
+Friends,1994,2004,"Comedy,Romance",9,19,8.0,3591
+Friends,1994,2004,"Comedy,Romance",9,20,8.1,3603
+Friends,1994,2004,"Comedy,Romance",9,21,8.1,3518
+Friends,1994,2004,"Comedy,Romance",9,22,7.7,3616
+Friends,1994,2004,"Comedy,Romance",9,23,8.4,3785
+Friends,1994,2004,"Comedy,Romance",9,24,8.6,3942
+Friends,1994,2004,"Comedy,Romance",10,1,8.4,4254
+Friends,1994,2004,"Comedy,Romance",10,2,8.7,4591
+Friends,1994,2004,"Comedy,Romance",10,3,8.7,4454
+Friends,1994,2004,"Comedy,Romance",10,4,8.2,3892
+Friends,1994,2004,"Comedy,Romance",10,5,8.1,3839
+Friends,1994,2004,"Comedy,Romance",10,6,8.1,3894
+Friends,1994,2004,"Comedy,Romance",10,7,8.2,3736
+Friends,1994,2004,"Comedy,Romance",10,8,8.8,4518
+Friends,1994,2004,"Comedy,Romance",10,9,8.5,3933
+Friends,1994,2004,"Comedy,Romance",10,10,7.9,3777
+Friends,1994,2004,"Comedy,Romance",10,11,8.9,4968
+Friends,1994,2004,"Comedy,Romance",10,12,8.8,4382
+Friends,1994,2004,"Comedy,Romance",10,13,8.4,4164
+Friends,1994,2004,"Comedy,Romance",10,14,8.5,4046
+Friends,1994,2004,"Comedy,Romance",10,15,8.4,3798
+Friends,1994,2004,"Comedy,Romance",10,16,8.9,4402
+Friends,1994,2004,"Comedy,Romance",10,17,9.7,14481
+Seinfeld,1989,1998,Comedy,1,1,7.4,5118
+Seinfeld,1989,1998,Comedy,1,2,7.6,4280
+Seinfeld,1989,1998,Comedy,1,3,7.5,3898
+Seinfeld,1989,1998,Comedy,1,4,7.3,3813
+Seinfeld,1989,1998,Comedy,1,5,7.5,3657
+Seinfeld,1989,1998,Comedy,2,1,7.6,3521
+Seinfeld,1989,1998,Comedy,2,2,7.9,3674
+Seinfeld,1989,1998,Comedy,2,3,8.3,3720
+Seinfeld,1989,1998,Comedy,2,4,8.4,3612
+Seinfeld,1989,1998,Comedy,2,5,7.8,3280
+Seinfeld,1989,1998,Comedy,2,6,7.9,3316
+Seinfeld,1989,1998,Comedy,2,7,8.3,3366
+Seinfeld,1989,1998,Comedy,2,8,7.9,3318
+Seinfeld,1989,1998,Comedy,2,9,8.2,3323
+Seinfeld,1989,1998,Comedy,2,10,7.5,3196
+Seinfeld,1989,1998,Comedy,2,11,8.6,4103
+Seinfeld,1989,1998,Comedy,2,12,7.7,3183
+Seinfeld,1989,1998,Comedy,3,1,8.2,3383
+Seinfeld,1989,1998,Comedy,3,2,7.7,3049
+Seinfeld,1989,1998,Comedy,3,3,8.2,3407
+Seinfeld,1989,1998,Comedy,3,4,7.2,3358
+Seinfeld,1989,1998,Comedy,3,5,8.5,3763
+Seinfeld,1989,1998,Comedy,3,6,8.8,4179
+Seinfeld,1989,1998,Comedy,3,7,8.4,3175
+Seinfeld,1989,1998,Comedy,3,8,8.7,3450
+Seinfeld,1989,1998,Comedy,3,9,7.9,3096
+Seinfeld,1989,1998,Comedy,3,10,7.5,3086
+Seinfeld,1989,1998,Comedy,3,11,8.3,3073
+Seinfeld,1989,1998,Comedy,3,12,8.4,3110
+Seinfeld,1989,1998,Comedy,3,13,8.7,3734
+Seinfeld,1989,1998,Comedy,3,14,8.4,3169
+Seinfeld,1989,1998,Comedy,3,15,7.6,2825
+Seinfeld,1989,1998,Comedy,3,16,8.5,3130
+Seinfeld,1989,1998,Comedy,3,17,8.7,3723
+Seinfeld,1989,1998,Comedy,3,18,9.0,4128
+Seinfeld,1989,1998,Comedy,3,19,8.0,2796
+Seinfeld,1989,1998,Comedy,3,20,7.9,2733
+Seinfeld,1989,1998,Comedy,3,21,8.3,2919
+Seinfeld,1989,1998,Comedy,3,22,8.3,2859
+Seinfeld,1989,1998,Comedy,4,1,8.1,2867
+Seinfeld,1989,1998,Comedy,4,2,8.3,2836
+Seinfeld,1989,1998,Comedy,4,3,8.6,2954
+Seinfeld,1989,1998,Comedy,4,4,8.3,2683
+Seinfeld,1989,1998,Comedy,4,5,8.0,2636
+Seinfeld,1989,1998,Comedy,4,6,8.1,2590
+Seinfeld,1989,1998,Comedy,4,7,8.7,3749
+Seinfeld,1989,1998,Comedy,4,8,8.5,2879
+Seinfeld,1989,1998,Comedy,4,9,8.2,2788
+Seinfeld,1989,1998,Comedy,4,10,8.1,2711
+Seinfeld,1989,1998,Comedy,4,11,9.6,7174
+Seinfeld,1989,1998,Comedy,4,12,8.9,3596
+Seinfeld,1989,1998,Comedy,4,13,8.5,2901
+Seinfeld,1989,1998,Comedy,4,14,8.1,2750
+Seinfeld,1989,1998,Comedy,4,15,8.1,2583
+Seinfeld,1989,1998,Comedy,4,16,8.2,2717
+Seinfeld,1989,1998,Comedy,4,17,9.4,4898
+Seinfeld,1989,1998,Comedy,4,18,8.0,2738
+Seinfeld,1989,1998,Comedy,4,19,8.6,2943
+Seinfeld,1989,1998,Comedy,4,20,8.7,3335
+Seinfeld,1989,1998,Comedy,4,21,8.4,2778
+Seinfeld,1989,1998,Comedy,4,22,8.3,2636
+Seinfeld,1989,1998,Comedy,4,23,8.6,2977
+Seinfeld,1989,1998,Comedy,5,1,8.6,2942
+Seinfeld,1989,1998,Comedy,5,2,8.9,3600
+Seinfeld,1989,1998,Comedy,5,3,8.4,2736
+Seinfeld,1989,1998,Comedy,5,4,8.2,2653
+Seinfeld,1989,1998,Comedy,5,5,8.1,2819
+Seinfeld,1989,1998,Comedy,5,6,8.5,2726
+Seinfeld,1989,1998,Comedy,5,7,8.4,2960
+Seinfeld,1989,1998,Comedy,5,8,8.3,2745
+Seinfeld,1989,1998,Comedy,5,9,7.8,2561
+Seinfeld,1989,1998,Comedy,5,10,8.5,2804
+Seinfeld,1989,1998,Comedy,5,11,8.2,2559
+Seinfeld,1989,1998,Comedy,5,12,8.6,2887
+Seinfeld,1989,1998,Comedy,5,13,8.3,2656
+Seinfeld,1989,1998,Comedy,5,14,9.2,4368
+Seinfeld,1989,1998,Comedy,5,15,8.5,2680
+Seinfeld,1989,1998,Comedy,5,16,7.7,2472
+Seinfeld,1989,1998,Comedy,5,17,8.0,2553
+Seinfeld,1989,1998,Comedy,5,18,8.4,2611
+Seinfeld,1989,1998,Comedy,5,20,8.7,2871
+Seinfeld,1989,1998,Comedy,5,21,9.1,3664
+Seinfeld,1989,1998,Comedy,5,22,9.5,5384
+Seinfeld,1989,1998,Comedy,6,1,8.0,2479
+Seinfeld,1989,1998,Comedy,6,2,8.1,2600
+Seinfeld,1989,1998,Comedy,6,3,8.3,2549
+Seinfeld,1989,1998,Comedy,6,4,8.2,2520
+Seinfeld,1989,1998,Comedy,6,5,8.1,2478
+Seinfeld,1989,1998,Comedy,6,6,8.3,2527
+Seinfeld,1989,1998,Comedy,6,7,8.1,2440
+Seinfeld,1989,1998,Comedy,6,8,8.1,2484
+Seinfeld,1989,1998,Comedy,6,9,8.1,2352
+Seinfeld,1989,1998,Comedy,6,10,8.9,3478
+Seinfeld,1989,1998,Comedy,6,11,8.9,3354
+Seinfeld,1989,1998,Comedy,6,12,8.6,2539
+Seinfeld,1989,1998,Comedy,6,13,8.1,2328
+Seinfeld,1989,1998,Comedy,6,14,7.1,2289
+Seinfeld,1989,1998,Comedy,6,15,8.3,2389
+Seinfeld,1989,1998,Comedy,6,16,8.2,2359
+Seinfeld,1989,1998,Comedy,6,17,8.3,2444
+Seinfeld,1989,1998,Comedy,6,18,9.0,3296
+Seinfeld,1989,1998,Comedy,6,19,8.3,2310
+Seinfeld,1989,1998,Comedy,6,20,8.8,2907
+Seinfeld,1989,1998,Comedy,6,21,8.1,2313
+Seinfeld,1989,1998,Comedy,6,22,8.5,2466
+Seinfeld,1989,1998,Comedy,6,23,8.0,2393
+Seinfeld,1989,1998,Comedy,7,1,8.6,2573
+Seinfeld,1989,1998,Comedy,7,2,8.3,2276
+Seinfeld,1989,1998,Comedy,7,3,8.1,2383
+Seinfeld,1989,1998,Comedy,7,4,8.6,2566
+Seinfeld,1989,1998,Comedy,7,5,8.6,2512
+Seinfeld,1989,1998,Comedy,7,6,9.5,5500
+Seinfeld,1989,1998,Comedy,7,7,8.5,2410
+Seinfeld,1989,1998,Comedy,7,8,8.4,2352
+Seinfeld,1989,1998,Comedy,7,9,8.3,2415
+Seinfeld,1989,1998,Comedy,7,10,8.6,2681
+Seinfeld,1989,1998,Comedy,7,11,8.9,3060
+Seinfeld,1989,1998,Comedy,7,12,8.6,2469
+Seinfeld,1989,1998,Comedy,7,13,8.2,2242
+Seinfeld,1989,1998,Comedy,7,14,8.6,2514
+Seinfeld,1989,1998,Comedy,7,15,8.4,2315
+Seinfeld,1989,1998,Comedy,7,16,8.2,2269
+Seinfeld,1989,1998,Comedy,7,17,7.8,2178
+Seinfeld,1989,1998,Comedy,7,18,8.1,2273
+Seinfeld,1989,1998,Comedy,7,19,8.8,2902
+Seinfeld,1989,1998,Comedy,7,20,8.7,2795
+Seinfeld,1989,1998,Comedy,7,21,8.3,2241
+Seinfeld,1989,1998,Comedy,7,22,8.7,2937
+Seinfeld,1989,1998,Comedy,8,1,8.2,2254
+Seinfeld,1989,1998,Comedy,8,2,8.1,2204
+Seinfeld,1989,1998,Comedy,8,3,9.1,3490
+Seinfeld,1989,1998,Comedy,8,4,8.9,3119
+Seinfeld,1989,1998,Comedy,8,5,8.7,2417
+Seinfeld,1989,1998,Comedy,8,6,8.1,2230
+Seinfeld,1989,1998,Comedy,8,7,8.1,2215
+Seinfeld,1989,1998,Comedy,8,8,9.0,3238
+Seinfeld,1989,1998,Comedy,8,9,9.0,3058
+Seinfeld,1989,1998,Comedy,8,10,8.4,2251
+Seinfeld,1989,1998,Comedy,8,11,8.3,2349
+Seinfeld,1989,1998,Comedy,8,12,7.8,2093
+Seinfeld,1989,1998,Comedy,8,13,8.6,2510
+Seinfeld,1989,1998,Comedy,8,14,8.1,2194
+Seinfeld,1989,1998,Comedy,8,15,8.6,2461
+Seinfeld,1989,1998,Comedy,8,16,8.7,2429
+Seinfeld,1989,1998,Comedy,8,17,8.6,2479
+Seinfeld,1989,1998,Comedy,8,18,8.8,2696
+Seinfeld,1989,1998,Comedy,8,19,9.0,3317
+Seinfeld,1989,1998,Comedy,8,20,8.1,2184
+Seinfeld,1989,1998,Comedy,8,21,8.5,2413
+Seinfeld,1989,1998,Comedy,8,22,8.6,2438
+Seinfeld,1989,1998,Comedy,9,1,8.4,2483
+Seinfeld,1989,1998,Comedy,9,2,8.4,2446
+Seinfeld,1989,1998,Comedy,9,3,8.9,3177
+Seinfeld,1989,1998,Comedy,9,4,8.2,2262
+Seinfeld,1989,1998,Comedy,9,5,8.0,2207
+Seinfeld,1989,1998,Comedy,9,6,9.1,3503
+Seinfeld,1989,1998,Comedy,9,7,8.4,2268
+Seinfeld,1989,1998,Comedy,9,8,9.0,3605
+Seinfeld,1989,1998,Comedy,9,9,8.3,2267
+Seinfeld,1989,1998,Comedy,9,10,8.8,3098
+Seinfeld,1989,1998,Comedy,9,11,8.5,2409
+Seinfeld,1989,1998,Comedy,9,12,8.3,2251
+Seinfeld,1989,1998,Comedy,9,13,7.9,2237
+Seinfeld,1989,1998,Comedy,9,14,8.0,2183
+Seinfeld,1989,1998,Comedy,9,15,8.0,2119
+Seinfeld,1989,1998,Comedy,9,16,8.4,2545
+Seinfeld,1989,1998,Comedy,9,17,8.3,2181
+Seinfeld,1989,1998,Comedy,9,18,8.8,2899
+Seinfeld,1989,1998,Comedy,9,19,8.1,2138
+Seinfeld,1989,1998,Comedy,9,20,8.0,2322
+Seinfeld,1989,1998,Comedy,9,21,7.8,2057
+Seinfeld,1989,1998,Comedy,9,22,7.8,3676
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,0,6.7,2050
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,1,8.2,6142
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,2,8.3,4929
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,3,7.7,4397
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,4,8.1,4439
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,5,7.9,4232
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,6,8.4,4409
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,7,8.1,4149
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,8,8.2,4178
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,9,8.0,4031
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,10,8.0,4127
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,11,8.2,4100
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,12,7.9,3908
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,13,8.3,4020
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,14,8.1,3955
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,15,8.2,4156
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,16,8.3,3917
+The Big Bang Theory,2007,2019,"Comedy,Romance",1,17,8.5,4104
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,1,8.2,3995
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,2,8.1,3683
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,3,8.7,4288
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,4,7.9,3706
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,5,8.4,3804
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,6,8.2,3828
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,7,8.7,4064
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,8,8.1,3664
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,9,8.1,3632
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,10,7.7,3549
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,11,9.1,5989
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,12,7.9,3568
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,13,8.0,3564
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,14,8.0,3537
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,15,8.9,4277
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,16,8.2,3553
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,17,8.1,3872
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,18,8.1,3565
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,19,8.2,3602
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,20,7.9,3453
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,21,8.5,3739
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,22,8.2,3418
+The Big Bang Theory,2007,2019,"Comedy,Romance",2,23,8.3,3520
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,1,8.3,3789
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,2,7.8,3451
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,3,8.1,3535
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,4,8.0,3459
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,5,8.3,3544
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,6,7.5,3338
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,7,7.8,3339
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,8,8.9,4755
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,9,8.4,3529
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,10,8.5,3592
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,11,8.3,3476
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,12,8.3,3428
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,13,8.1,3327
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,14,8.5,3639
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,15,8.1,3270
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,16,8.3,3383
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,17,8.5,3588
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,18,8.4,3511
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,19,7.9,3286
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,20,8.1,3283
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,21,8.2,3529
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,22,9.0,4601
+The Big Bang Theory,2007,2019,"Comedy,Romance",3,23,8.6,3584
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,1,8.7,4029
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,2,8.4,3594
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,3,8.0,3380
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,4,8.0,3381
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,5,7.7,3231
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,6,8.0,3290
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,7,8.1,3333
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,8,8.1,3327
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,9,8.5,3491
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,10,7.7,3219
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,11,8.7,3731
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,12,7.6,3206
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,13,8.3,3450
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,14,7.8,3268
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,15,7.8,3214
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,16,7.9,3126
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,17,8.0,3158
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,18,8.2,3314
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,19,8.1,3222
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,20,8.2,3204
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,21,8.3,3286
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,22,7.8,3108
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,23,8.1,3161
+The Big Bang Theory,2007,2019,"Comedy,Romance",4,24,8.6,3369
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,1,8.1,3804
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,2,8.0,3342
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,3,7.7,3198
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,4,7.9,3259
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,5,8.0,3228
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,6,7.6,3161
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,7,8.6,3886
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,8,7.7,3152
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,9,8.2,3312
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,10,8.0,3205
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,11,7.3,3154
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,12,7.7,3162
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,13,8.2,3342
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,14,8.2,3370
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,15,7.8,3052
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,16,7.6,3033
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,17,7.8,3109
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,18,8.2,3302
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,19,8.2,3143
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,20,8.1,3270
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,21,8.6,3656
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,22,7.8,3114
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,23,8.1,3071
+The Big Bang Theory,2007,2019,"Comedy,Romance",5,24,8.5,3507
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,1,7.7,4001
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,2,7.7,3194
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,3,8.0,3208
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,4,8.3,3417
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,5,8.0,3177
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,6,7.9,3058
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,7,7.7,3024
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,8,8.5,3534
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,9,8.3,3421
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,10,8.1,3213
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,11,7.8,3099
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,12,8.4,3494
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,13,8.4,3499
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,14,7.8,3065
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,15,8.2,3182
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,16,7.9,3103
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,17,7.6,2954
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,18,7.7,3040
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,19,8.1,3197
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,20,8.0,3098
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,21,8.0,3057
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,22,8.0,3158
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,23,8.1,3211
+The Big Bang Theory,2007,2019,"Comedy,Romance",6,24,7.8,3030
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,1,7.8,3421
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,2,8.0,3375
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,3,8.7,4054
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,4,7.9,3100
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,5,7.7,2957
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,6,8.4,3529
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,7,7.8,3011
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,8,7.6,2985
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,9,8.8,4134
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,10,7.6,2795
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,11,8.2,3125
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,12,7.5,2859
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,13,7.6,2835
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,14,8.0,3065
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,15,8.2,3254
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,16,7.6,2733
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,17,7.5,2705
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,18,7.5,2773
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,19,8.1,3005
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,20,8.0,2818
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,21,7.6,2671
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,22,7.7,2819
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,23,7.9,2812
+The Big Bang Theory,2007,2019,"Comedy,Romance",7,24,8.0,2884
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,1,7.2,3370
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,2,7.6,3122
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,3,7.1,3051
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,4,7.2,2871
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,5,7.5,2949
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,6,7.2,2815
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,7,7.7,3097
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,8,8.0,3087
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,9,7.5,2743
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,10,7.0,2808
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,11,7.4,2718
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,12,7.2,2623
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,13,7.4,2620
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,14,8.0,2846
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,15,8.1,2879
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,16,7.9,2727
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,17,7.5,2576
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,18,7.4,2548
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,19,7.6,2556
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,20,7.5,2538
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,21,7.1,2486
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,22,7.3,2529
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,23,7.5,2580
+The Big Bang Theory,2007,2019,"Comedy,Romance",8,24,7.9,2998
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,1,6.8,3335
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,2,7.4,2797
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,3,7.7,2845
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,4,7.4,2671
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,5,7.4,2591
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,6,7.2,2646
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,7,8.0,2726
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,8,8.0,2730
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,9,7.8,2670
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,10,8.3,3090
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,11,9.0,4707
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,12,7.4,2449
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,13,7.4,2467
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,14,7.5,2491
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,15,7.5,2452
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,16,7.4,2544
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,17,7.5,2567
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,18,7.5,2412
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,19,7.4,2334
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,20,7.4,2291
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,21,7.4,2303
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,22,7.4,2243
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,23,7.4,2251
+The Big Bang Theory,2007,2019,"Comedy,Romance",9,24,7.8,2573
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,1,7.7,3052
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,2,7.3,2454
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,3,7.2,2347
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,4,7.9,2596
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,5,7.4,2310
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,6,7.4,2353
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,7,8.0,2504
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,8,8.1,2600
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,9,7.4,2263
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,10,7.3,2256
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,11,7.6,2314
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,12,7.3,2326
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,13,7.0,2214
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,14,7.2,2178
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,15,7.3,2151
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,16,7.1,2071
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,17,7.5,2122
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,18,7.2,2072
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,19,7.1,2110
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,20,7.2,2076
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,21,7.2,2111
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,22,6.8,2044
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,23,7.1,2035
+The Big Bang Theory,2007,2019,"Comedy,Romance",10,24,8.6,2943
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,1,7.6,2607
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,2,7.2,2297
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,3,7.0,2163
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,4,7.1,2102
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,5,7.3,2118
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,6,7.2,2092
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,7,7.4,2124
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,8,7.1,2030
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,9,7.7,2209
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,10,7.4,2045
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,11,7.1,1985
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,12,7.5,2034
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,13,7.2,2021
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,14,7.2,2055
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,15,7.5,2008
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,16,7.1,1946
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,17,6.8,1961
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,18,7.1,1990
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,19,7.2,1944
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,20,7.2,1941
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,21,7.4,1932
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,22,7.2,1899
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,23,7.7,2038
+The Big Bang Theory,2007,2019,"Comedy,Romance",11,24,9.0,3546
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,1,7.2,2327
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,2,7.6,2207
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,3,7.2,2100
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,4,7.0,2026
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,5,6.8,2022
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,6,8.2,2492
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,7,7.3,1999
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,8,7.3,2035
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,9,7.2,2010
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,10,7.5,2063
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,11,7.3,1976
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,12,7.1,1932
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,13,7.1,1946
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,14,7.1,1937
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,15,7.4,1999
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,16,7.9,2205
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,17,7.1,1924
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,18,7.1,1896
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,19,7.0,1904
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,20,7.1,1889
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,21,7.2,1938
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,22,7.9,2412
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,23,9.0,4356
+The Big Bang Theory,2007,2019,"Comedy,Romance",12,24,9.5,8802
+The Office,2005,2013,Comedy,1,1,7.4,7670
+The Office,2005,2013,Comedy,1,2,8.2,7533
+The Office,2005,2013,Comedy,1,3,7.7,6286
+The Office,2005,2013,Comedy,1,4,7.9,6066
+The Office,2005,2013,Comedy,1,5,8.3,6745
+The Office,2005,2013,Comedy,1,6,7.6,5983
+The Office,2005,2013,Comedy,2,1,8.6,6746
+The Office,2005,2013,Comedy,2,2,8.1,5793
+The Office,2005,2013,Comedy,2,3,8.2,5715
+The Office,2005,2013,Comedy,2,4,8.2,5635
+The Office,2005,2013,Comedy,2,5,8.0,5288
+The Office,2005,2013,Comedy,2,6,8.0,5291
+The Office,2005,2013,Comedy,2,7,8.5,5573
+The Office,2005,2013,Comedy,2,8,8.1,5031
+The Office,2005,2013,Comedy,2,9,8.3,5181
+The Office,2005,2013,Comedy,2,10,8.8,5751
+The Office,2005,2013,Comedy,2,11,8.5,5537
+The Office,2005,2013,Comedy,2,12,9.0,6633
+The Office,2005,2013,Comedy,2,13,8.2,4913
+The Office,2005,2013,Comedy,2,14,7.7,4853
+The Office,2005,2013,Comedy,2,15,8.0,4824
+The Office,2005,2013,Comedy,2,16,8.2,4846
+The Office,2005,2013,Comedy,2,17,8.3,5157
+The Office,2005,2013,Comedy,2,18,8.2,5003
+The Office,2005,2013,Comedy,2,19,8.0,4820
+The Office,2005,2013,Comedy,2,20,8.3,4917
+The Office,2005,2013,Comedy,2,21,8.6,5036
+The Office,2005,2013,Comedy,2,22,9.3,7253
+The Office,2005,2013,Comedy,3,1,9.0,6481
+The Office,2005,2013,Comedy,3,2,8.1,4725
+The Office,2005,2013,Comedy,3,3,8.4,4949
+The Office,2005,2013,Comedy,3,4,7.9,4737
+The Office,2005,2013,Comedy,3,5,8.0,4605
+The Office,2005,2013,Comedy,3,6,7.8,4824
+The Office,2005,2013,Comedy,3,7,8.5,4736
+The Office,2005,2013,Comedy,3,8,8.6,4936
+The Office,2005,2013,Comedy,3,9,8.2,4940
+The Office,2005,2013,Comedy,3,10,8.7,5230
+The Office,2005,2013,Comedy,3,11,8.5,4691
+The Office,2005,2013,Comedy,3,12,8.5,4726
+The Office,2005,2013,Comedy,3,13,8.7,4972
+The Office,2005,2013,Comedy,3,14,8.0,4590
+The Office,2005,2013,Comedy,3,15,8.1,4650
+The Office,2005,2013,Comedy,3,16,8.8,5395
+The Office,2005,2013,Comedy,3,17,8.4,4586
+The Office,2005,2013,Comedy,3,18,8.9,5252
+The Office,2005,2013,Comedy,3,19,8.7,4883
+The Office,2005,2013,Comedy,3,20,8.6,4812
+The Office,2005,2013,Comedy,3,21,8.7,4882
+The Office,2005,2013,Comedy,3,22,9.1,5648
+The Office,2005,2013,Comedy,3,23,9.2,5966
+The Office,2005,2013,Comedy,4,1,8.7,5473
+The Office,2005,2013,Comedy,4,2,8.2,4531
+The Office,2005,2013,Comedy,4,3,8.3,4417
+The Office,2005,2013,Comedy,4,4,8.6,4737
+The Office,2005,2013,Comedy,4,5,8.7,4870
+The Office,2005,2013,Comedy,4,6,8.4,4497
+The Office,2005,2013,Comedy,4,7,8.1,4339
+The Office,2005,2013,Comedy,4,8,8.6,4613
+The Office,2005,2013,Comedy,4,9,9.4,8971
+The Office,2005,2013,Comedy,4,10,7.9,4256
+The Office,2005,2013,Comedy,4,11,8.5,4441
+The Office,2005,2013,Comedy,4,12,8.2,4251
+The Office,2005,2013,Comedy,4,13,7.7,4083
+The Office,2005,2013,Comedy,4,14,9.3,6062
+The Office,2005,2013,Comedy,5,1,8.7,4967
+The Office,2005,2013,Comedy,5,2,8.1,4089
+The Office,2005,2013,Comedy,5,3,7.9,4089
+The Office,2005,2013,Comedy,5,4,8.0,3925
+The Office,2005,2013,Comedy,5,5,7.9,4034
+The Office,2005,2013,Comedy,5,6,8.4,4198
+The Office,2005,2013,Comedy,5,7,8.1,3928
+The Office,2005,2013,Comedy,5,8,8.5,4374
+The Office,2005,2013,Comedy,5,9,8.7,4332
+The Office,2005,2013,Comedy,5,10,8.3,4052
+The Office,2005,2013,Comedy,5,11,8.6,4232
+The Office,2005,2013,Comedy,5,12,7.9,4067
+The Office,2005,2013,Comedy,5,13,9.7,12891
+The Office,2005,2013,Comedy,5,14,8.1,3890
+The Office,2005,2013,Comedy,5,15,8.0,3839
+The Office,2005,2013,Comedy,5,16,7.9,3846
+The Office,2005,2013,Comedy,5,17,8.6,4189
+The Office,2005,2013,Comedy,5,18,8.2,3921
+The Office,2005,2013,Comedy,5,19,8.3,3891
+The Office,2005,2013,Comedy,5,20,8.2,3890
+The Office,2005,2013,Comedy,5,21,8.6,4266
+The Office,2005,2013,Comedy,5,22,8.6,4027
+The Office,2005,2013,Comedy,5,23,9.2,5444
+The Office,2005,2013,Comedy,5,24,8.2,3866
+The Office,2005,2013,Comedy,5,25,8.7,4556
+The Office,2005,2013,Comedy,5,26,8.9,4611
+The Office,2005,2013,Comedy,6,1,8.7,4562
+The Office,2005,2013,Comedy,6,2,8.0,3697
+The Office,2005,2013,Comedy,6,3,7.9,3673
+The Office,2005,2013,Comedy,6,4,9.3,6723
+The Office,2005,2013,Comedy,6,5,9.4,5680
+The Office,2005,2013,Comedy,6,6,7.5,3888
+The Office,2005,2013,Comedy,6,7,8.5,4082
+The Office,2005,2013,Comedy,6,8,8.1,3690
+The Office,2005,2013,Comedy,6,9,8.0,3655
+The Office,2005,2013,Comedy,6,10,8.6,4428
+The Office,2005,2013,Comedy,6,11,8.1,3683
+The Office,2005,2013,Comedy,6,12,8.2,4238
+The Office,2005,2013,Comedy,6,13,8.4,3893
+The Office,2005,2013,Comedy,6,14,6.8,4749
+The Office,2005,2013,Comedy,6,15,7.6,3542
+The Office,2005,2013,Comedy,6,16,8.0,3487
+The Office,2005,2013,Comedy,6,17,8.3,3733
+The Office,2005,2013,Comedy,6,18,8.4,3740
+The Office,2005,2013,Comedy,6,19,7.6,3442
+The Office,2005,2013,Comedy,6,20,7.6,3427
+The Office,2005,2013,Comedy,6,21,8.5,3910
+The Office,2005,2013,Comedy,6,22,7.7,3427
+The Office,2005,2013,Comedy,6,23,7.8,3446
+The Office,2005,2013,Comedy,6,24,8.0,3455
+The Office,2005,2013,Comedy,6,25,7.6,3322
+The Office,2005,2013,Comedy,6,26,7.9,3423
+The Office,2005,2013,Comedy,7,1,8.2,3911
+The Office,2005,2013,Comedy,7,2,8.1,3554
+The Office,2005,2013,Comedy,7,3,8.1,3797
+The Office,2005,2013,Comedy,7,4,7.7,3493
+The Office,2005,2013,Comedy,7,5,7.7,3410
+The Office,2005,2013,Comedy,7,6,8.1,3544
+The Office,2005,2013,Comedy,7,7,7.3,3529
+The Office,2005,2013,Comedy,7,8,7.7,3484
+The Office,2005,2013,Comedy,7,9,7.6,3376
+The Office,2005,2013,Comedy,7,10,8.1,3572
+The Office,2005,2013,Comedy,7,11,8.9,4546
+The Office,2005,2013,Comedy,7,12,8.2,3608
+The Office,2005,2013,Comedy,7,13,7.6,3432
+The Office,2005,2013,Comedy,7,14,8.4,3797
+The Office,2005,2013,Comedy,7,15,8.3,3691
+The Office,2005,2013,Comedy,7,16,9.4,7829
+The Office,2005,2013,Comedy,7,17,7.4,3366
+The Office,2005,2013,Comedy,7,18,9.3,6052
+The Office,2005,2013,Comedy,7,19,7.6,3488
+The Office,2005,2013,Comedy,7,20,8.9,5000
+The Office,2005,2013,Comedy,7,21,9.8,13478
+The Office,2005,2013,Comedy,7,22,7.5,3479
+The Office,2005,2013,Comedy,7,23,8.6,3807
+The Office,2005,2013,Comedy,7,24,8.6,4010
+The Office,2005,2013,Comedy,8,1,8.0,3662
+The Office,2005,2013,Comedy,8,2,8.0,3462
+The Office,2005,2013,Comedy,8,3,7.2,3303
+The Office,2005,2013,Comedy,8,4,8.0,3629
+The Office,2005,2013,Comedy,8,5,7.4,3247
+The Office,2005,2013,Comedy,8,6,7.5,3128
+The Office,2005,2013,Comedy,8,7,7.6,3359
+The Office,2005,2013,Comedy,8,8,6.7,3352
+The Office,2005,2013,Comedy,8,9,7.6,3274
+The Office,2005,2013,Comedy,8,10,7.8,3200
+The Office,2005,2013,Comedy,8,11,7.8,3169
+The Office,2005,2013,Comedy,8,12,7.9,3437
+The Office,2005,2013,Comedy,8,13,7.4,3091
+The Office,2005,2013,Comedy,8,14,7.5,3015
+The Office,2005,2013,Comedy,8,15,7.7,3183
+The Office,2005,2013,Comedy,8,16,8.0,3301
+The Office,2005,2013,Comedy,8,17,7.7,3148
+The Office,2005,2013,Comedy,8,18,7.7,3063
+The Office,2005,2013,Comedy,8,19,6.4,3586
+The Office,2005,2013,Comedy,8,20,6.9,3161
+The Office,2005,2013,Comedy,8,21,6.8,3446
+The Office,2005,2013,Comedy,8,22,6.9,3042
+The Office,2005,2013,Comedy,8,23,7.5,2955
+The Office,2005,2013,Comedy,8,24,7.6,3091
+The Office,2005,2013,Comedy,9,1,7.5,3312
+The Office,2005,2013,Comedy,9,2,7.0,3165
+The Office,2005,2013,Comedy,9,3,7.2,3120
+The Office,2005,2013,Comedy,9,4,7.7,3312
+The Office,2005,2013,Comedy,9,5,6.8,3226
+The Office,2005,2013,Comedy,9,6,7.6,3173
+The Office,2005,2013,Comedy,9,7,7.5,3032
+The Office,2005,2013,Comedy,9,8,7.7,3173
+The Office,2005,2013,Comedy,9,9,8.2,3585
+The Office,2005,2013,Comedy,9,10,7.5,3141
+The Office,2005,2013,Comedy,9,11,7.7,3086
+The Office,2005,2013,Comedy,9,12,7.8,3179
+The Office,2005,2013,Comedy,9,13,7.4,2998
+The Office,2005,2013,Comedy,9,14,7.3,3016
+The Office,2005,2013,Comedy,9,15,7.1,3072
+The Office,2005,2013,Comedy,9,16,7.9,3330
+The Office,2005,2013,Comedy,9,17,7.4,3498
+The Office,2005,2013,Comedy,9,18,7.8,3097
+The Office,2005,2013,Comedy,9,19,7.9,3201
+The Office,2005,2013,Comedy,9,20,7.9,3290
+The Office,2005,2013,Comedy,9,21,9.0,4834
+The Office,2005,2013,Comedy,9,22,9.4,6428
+The Office,2005,2013,Comedy,9,23,9.8,16532
