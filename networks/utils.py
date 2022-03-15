@@ -50,6 +50,17 @@ def get_character_stats(G):
     return stats
 
 
+def draw_character_stats(G: pd.DataFrame, colname: str, filename=None):
+    G.loc[:, colname].sort_values(ascending=True).plot(kind="barh")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    if filename:
+        plt.savefig(f"../figures/{filename}_{colname}.png")
+        plt.close()
+    else:
+        plt.show()
+
+
 def get_season_networks(path):
     net_seasons = []
     num_seasons = len(

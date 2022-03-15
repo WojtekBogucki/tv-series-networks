@@ -1,8 +1,12 @@
-from networks.utils import *
+import pandas as pd
 
+from networks.utils import *
+import os
+
+show_name = "the_office"
 # load data
-office_edges_weighted = pd.read_csv("../data/the_office/the_office_edges_weighted.csv")
-office_edges_weighted_top30 = pd.read_csv("../data/the_office/edges_weighted_top30.csv")
+office_edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted.csv")
+office_edges_weighted_top30 = pd.read_csv(f"../data/{show_name}/edges_weighted_top30.csv")
 
 # create a network
 office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", target="speaker2",
@@ -11,33 +15,24 @@ office_net_top30 = nx.from_pandas_edgelist(office_edges_weighted_top30, source="
                                      edge_attr=["line_count", "scene_count", "word_count"])
 
 # save drawn networks
-draw_interaction_network_communities(office_net, "line_count", filename="the_office_lines", method=None)
-draw_interaction_network_communities(office_net, "scene_count", filename="the_office_scenes", method=None)
-draw_interaction_network_communities(office_net, "word_count", filename="the_office_words", method=None)
+draw_interaction_network_communities(office_net, "line_count", filename=f"{show_name}/{show_name}_lines", method=None)
+draw_interaction_network_communities(office_net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method=None)
+draw_interaction_network_communities(office_net, "word_count", filename=f"{show_name}/{show_name}_words", method=None)
 
-draw_interaction_network_communities(office_net_top30, "line_count", filename="the_office_top30_lines", method=None)
-draw_interaction_network_communities(office_net_top30, "scene_count", filename="the_office_top30_scenes", method=None)
-draw_interaction_network_communities(office_net_top30, "word_count", filename="the_office_top30_words", method=None)
+draw_interaction_network_communities(office_net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines", method=None)
+draw_interaction_network_communities(office_net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes", method=None)
+draw_interaction_network_communities(office_net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words", method=None)
 
 # stats
-# density
-density = nx.density(office_net)
-print("Network density:", density)
+os.mkdir(f"../figures/{show_name}/character_stats")
 
-office_stats = get_character_stats(office_net)
-office_stats.loc[:, ["pagerank_word", "pagerank_line"]].sort_values("pagerank_word", ascending=True).plot(kind="barh")
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
+office_stats = get_character_stats(office_net_top30)
+
+for colname in office_stats.columns:
+    draw_character_stats(office_stats, colname, filename=f"{show_name}/character_stats/top30")
 
 
 # communities
-communities = community.greedy_modularity_communities(office_net, weight="line_count")
-print("Found communities:", len(communities))
-for com in communities:
-    print(com)
-
-
 def most_central_edge(G):
     centrality = nx.edge_betweenness_centrality(G, weight="line_count")
     return max(centrality, key=centrality.get)
@@ -61,9 +56,21 @@ plt.show()
 
 
 # the office by seasons
-office_net_seasons = get_season_networks("../data/the_office/")
+office_net_seasons = get_season_networks(f"../data/{show_name}/")
 
 office_season_stats = get_network_stats_by_season(office_net_seasons)
+
+# add rating weighted by number of votes
+season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
+season_ratings = season_ratings[season_ratings.originalTitle=="The Office"]
+weighted_rating = season_ratings["weighted_rating"].tolist()
+
+office_season_stats["weighted_rating"] = weighted_rating
+
+os.mkdir(f"../figures/{show_name}/season_networks")
+for i, season_net in enumerate(office_net_seasons):
+    draw_interaction_network_communities(season_net, "line_count", method="GM", filename=f"{show_name}/season_networks/season{i+1}_line_GM")
+
 
 draw_interaction_network_communities(office_net_seasons[8], "line_count", method="SG")
 draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)

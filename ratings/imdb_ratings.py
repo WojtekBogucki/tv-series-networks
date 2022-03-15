@@ -25,3 +25,15 @@ ratings["seasonNumber"] = ratings.seasonNumber.astype("int")
 ratings = ratings.sort_values(["originalTitle", "seasonNumber", "episodeNumber"])
 
 ratings.to_csv("../data/imdb/episode_ratings.csv", index=False, encoding="utf-8")
+
+ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
+
+
+def w_avg(df, values, weights):
+    d = df[values]
+    w = df[weights]
+    return (d * w).sum() / w.sum()
+
+
+season_rating = ratings.groupby(["originalTitle", "seasonNumber"]).apply(w_avg, "averageRating", "numVotes").reset_index(name="weighted_rating")
+season_rating.to_csv("../data/imdb/season_ratings.csv", index=False, encoding="utf-8")

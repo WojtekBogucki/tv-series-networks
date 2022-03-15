@@ -9,7 +9,7 @@ office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
 office_edges_weighted = (office_raw.pipe(filter_by_speakers)
                          .pipe(filter_group_scenes)
                          .pipe(get_speaker_network_edges))
-office_edges_weighted.to_csv("../data/the_office/the_office_edges_weighted.csv", index=False, encoding="utf-8")
+office_edges_weighted.to_csv("../data/the_office/edges_weighted.csv", index=False, encoding="utf-8")
 
 # top 30 speakers
 top30_office_edges_weighted = (office_raw.pipe(filter_by_speakers, top=30)
