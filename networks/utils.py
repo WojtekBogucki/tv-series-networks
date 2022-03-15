@@ -138,6 +138,20 @@ def get_network_stats(net):
     return stats
 
 
+def get_episode_dict(data_path: str) -> dict:
+    data = pd.read_csv(data_path)
+    seasons = data.season.unique()
+    i = 0
+    episode_dict = {}
+    for season in seasons:
+        office_raw_season = data[data.season == season]
+        episodes = office_raw_season.episode.unique()
+        for episode in episodes:
+            episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
+            i += 1
+    return episode_dict
+
+
 def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM"):
     '''
     Function that draws an interaction network from given graph

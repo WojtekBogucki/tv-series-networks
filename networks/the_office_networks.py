@@ -1,5 +1,3 @@
-import pandas as pd
-
 from networks.utils import *
 import os
 
@@ -62,12 +60,19 @@ office_season_stats = get_network_stats_by_season(office_net_seasons)
 
 # add rating weighted by number of votes
 season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
-season_ratings = season_ratings[season_ratings.originalTitle=="The Office"]
+season_ratings = season_ratings[season_ratings.originalTitle == "The Office"]
 weighted_rating = season_ratings["weighted_rating"].tolist()
-
 office_season_stats["weighted_rating"] = weighted_rating
 
-os.mkdir(f"../figures/{show_name}/season_networks")
+# network stats by season
+# os.mkdir(f"../figures/{show_name}/stats_by_season")
+for colname in office_season_stats.columns:
+    office_season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname)
+    plt.savefig(f"../figures/{show_name}/stats_by_season/{colname}.png")
+    plt.close()
+
+# seasonal networks
+# os.mkdir(f"../figures/{show_name}/season_networks")
 for i, season_net in enumerate(office_net_seasons):
     draw_interaction_network_communities(season_net, "line_count", method="GM", filename=f"{show_name}/season_networks/season{i+1}_line_GM")
 
@@ -76,32 +81,15 @@ draw_interaction_network_communities(office_net_seasons[8], "line_count", method
 draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)
 draw_interaction_network_communities(office_net_seasons[0], "word_count")
 
-office_season_stats["nodes"].plot(kind="bar")
-
-communities = community.girvan_newman(office_net_seasons[3], most_valuable_edge=most_central_edge)
-node_groups = []
-for com in next(communities):
-    node_groups.append(list(com))
-
-print(node_groups)
 
 # the office by episodes
-office_net_episodes = get_episode_networks("../data/the_office/")
-
-
-office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
-seasons = office_raw.season.unique()
-i = 0
-episode_dict = {}
-for season in seasons:
-    office_raw_season = office_raw[office_raw.season == season]
-    episodes = office_raw_season.episode.unique()
-    for episode in episodes:
-        episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
-        i += 1
+office_net_episodes = get_episode_networks(f"../data/{show_name}/")
+episode_dict = get_episode_dict("../data/the_office/the_office_lines_v6.csv")
 
 episode_stats = get_network_stats_by_episode(office_net_episodes, episode_dict)
 episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
+
+episode_stats["density"].plot(kind="hist")
 # save networks of all episodes
 plt.ioff()
 for k, v in episode_dict.items():
