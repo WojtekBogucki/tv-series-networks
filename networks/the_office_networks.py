@@ -81,6 +81,19 @@ draw_interaction_network_communities(office_net_seasons[8], "line_count", method
 draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)
 draw_interaction_network_communities(office_net_seasons[0], "word_count")
 
+season_character_stats = pd.DataFrame()
+for i, season_net in enumerate(office_net_seasons):
+    season_char_stats = get_character_stats(season_net)
+    season_char_stats["season"] = i+1
+    season_character_stats = pd.concat([season_character_stats, season_char_stats], axis=0)
+
+character_season_count = season_character_stats.groupby(season_character_stats.index)["season"].size().reset_index(name="season_count").sort_values("season_count", ascending=False)
+top_characters = character_season_count.loc[character_season_count.season_count>=5, "index"].tolist()
+os.mkdir(f"../figures/{show_name}/character_stats_by_season")
+for top_character in top_characters:
+    season_character_stats.loc[top_character, ["pagerank_line", "season"]].plot(kind="bar", x="season", rot=0, title=f"PageRank by season for {top_character}")
+    plt.savefig(f"../figures/{show_name}/character_stats_by_season/pagerank_line_{top_character}.png")
+    plt.close()
 
 # the office by episodes
 office_net_episodes = get_episode_networks(f"../data/{show_name}/")
@@ -89,7 +102,8 @@ episode_dict = get_episode_dict("../data/the_office/the_office_lines_v6.csv")
 episode_stats = get_network_stats_by_episode(office_net_episodes, episode_dict)
 episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
 
-episode_stats["density"].plot(kind="hist")
+episode_stats["transitivity"].plot(kind="hist")
+
 # save networks of all episodes
 plt.ioff()
 for k, v in episode_dict.items():
