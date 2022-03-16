@@ -166,6 +166,7 @@ len(office_raw.speaker[office_raw.speaker.str.contains(", ")])
 len(office_raw.speaker[office_raw.speaker.str.contains("/")])
 len(office_raw.speaker[office_raw.speaker.str.contains(" & ")])
 
+office_raw.groupby(["season", "episode", "title"]).count()
 
 ###########
 line_count = office_raw.groupby(["season", "speaker"]).size().reset_index(name="line_count")

@@ -22,35 +22,10 @@ draw_interaction_network_communities(office_net_top30, "scene_count", filename=f
 draw_interaction_network_communities(office_net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words", method=None)
 
 # stats
-os.mkdir(f"../figures/{show_name}/character_stats")
+char_stat_dit = f"../figures/{show_name}/character_stats"
 
-office_stats = get_character_stats(office_net_top30)
-
-for colname in office_stats.columns:
-    draw_character_stats(office_stats, colname, filename=f"{show_name}/character_stats/top30")
-
-
-# communities
-def most_central_edge(G):
-    centrality = nx.edge_betweenness_centrality(G, weight="line_count")
-    return max(centrality, key=centrality.get)
-
-
-communities = community.girvan_newman(office_net, most_valuable_edge=most_central_edge)
-node_groups = []
-for com in next(communities):
-    node_groups.append(list(com))
-
-print(node_groups)
-
-color_map = []
-for node in office_net:
-    if node in node_groups[0]:
-        color_map.append('blue')
-    else:
-        color_map.append('green')
-nx.draw(office_net, node_color=color_map, with_labels=True)
-plt.show()
+save_character_stats(office_net_top30, char_stat_dit, "top30")
+save_character_stats(office_net, char_stat_dit, "over_100_lines")
 
 
 # the office by seasons
@@ -100,9 +75,17 @@ office_net_episodes = get_episode_networks(f"../data/{show_name}/")
 episode_dict = get_episode_dict("../data/the_office/the_office_lines_v6.csv")
 
 episode_stats = get_network_stats_by_episode(office_net_episodes, episode_dict)
-episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
 
-episode_stats["transitivity"].plot(kind="hist")
+# add episode rating and number of votes
+ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
+ratings = ratings[ratings.originalTitle == "The Office"]
+avg_rating = ratings["averageRating"].tolist()
+episode_stats["averageRating"] = avg_rating
+episode_stats["numVotes"] = ratings["numVotes"].tolist()
+episode_stats.plot(kind="scatter", x="averageRating", y="numVotes")
+
+episode_stats["averageRating"].plot(kind="hist")
+episode_stats["numVotes"].plot(kind="hist")
 
 # save networks of all episodes
 plt.ioff()
@@ -125,10 +108,4 @@ draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]]
 draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "line_count",
                                      filename="office_lines_s03e21")
 
-# another algorithm
-communities = community.girvan_newman(office_net_episodes[episode_dict["s02e08"]], most_valuable_edge=most_central_edge)
-node_groups = []
-for com in next(communities):
-    node_groups.append(list(com))
 
-print(node_groups)

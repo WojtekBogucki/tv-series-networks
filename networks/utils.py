@@ -8,7 +8,7 @@ import community as community_louvain
 import igraph as ig
 
 
-def get_character_stats(G):
+def get_character_stats(G: nx.Graph) -> pd.DataFrame:
     nodes = list(G.nodes())
     measures = ["degree",
                 "weighted_degree",
@@ -50,8 +50,8 @@ def get_character_stats(G):
     return stats
 
 
-def draw_character_stats(G: pd.DataFrame, colname: str, filename=None):
-    G.loc[:, colname].sort_values(ascending=True).plot(kind="barh")
+def draw_character_stats(data: pd.DataFrame, colname: str, filename=None):
+    data.loc[:, colname].sort_values(ascending=True).plot(kind="barh")
     plt.xticks(rotation=45)
     plt.tight_layout()
     if filename:
@@ -61,7 +61,15 @@ def draw_character_stats(G: pd.DataFrame, colname: str, filename=None):
         plt.show()
 
 
-def get_season_networks(path):
+def save_character_stats(G: nx.Graph, path: str, file_prefix: str = ""):
+    if not os.path.exists(path):
+        os.mkdir(path)
+    stats = get_character_stats(G)
+    for stat in stats.columns:
+        draw_character_stats(stats, stat, filename=os.path.join(path, file_prefix))
+
+
+def get_season_networks(path: str) -> list[nx.Graph]:
     net_seasons = []
     num_seasons = len(
         [f for f in os.listdir(path) if f.startswith("edges_weighted_S") and os.path.isfile(os.path.join(path, f))])
@@ -74,7 +82,7 @@ def get_season_networks(path):
     return net_seasons
 
 
-def get_episode_networks(path):
+def get_episode_networks(path: str) -> list[nx.Graph]:
     net_episodes = []
     num_seasons = len(
         [f for f in os.listdir(path) if f.startswith("edges_weighted_S") and os.path.isfile(os.path.join(path, f))])
@@ -91,7 +99,7 @@ def get_episode_networks(path):
     return net_episodes
 
 
-def get_network_stats_by_season(net_seasons):
+def get_network_stats_by_season(net_seasons: list[nx.Graph]) -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]
@@ -107,7 +115,7 @@ def get_network_stats_by_season(net_seasons):
     return stats
 
 
-def get_network_stats_by_episode(net_episodes, episode_dict):
+def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict):
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]
@@ -123,7 +131,7 @@ def get_network_stats_by_episode(net_episodes, episode_dict):
     return stats
 
 
-def get_network_stats(net):
+def get_network_stats(net: nx.Graph) -> dict:
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]
     measures = np.array([nx.number_of_nodes(net),

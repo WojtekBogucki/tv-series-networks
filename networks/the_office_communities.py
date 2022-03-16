@@ -38,3 +38,25 @@ LD_community = office_net_ig.community_leiden(weights="line_count")
 ig.compare_communities(ML_community, SG_community, method="rand")
 
 list(EB_community)
+
+# communities
+def most_central_edge(G):
+    centrality = nx.edge_betweenness_centrality(G, weight="line_count")
+    return max(centrality, key=centrality.get)
+
+
+communities = community.girvan_newman(office_net, most_valuable_edge=most_central_edge)
+node_groups = []
+for com in next(communities):
+    node_groups.append(list(com))
+
+print(node_groups)
+
+color_map = []
+for node in office_net:
+    if node in node_groups[0]:
+        color_map.append('blue')
+    else:
+        color_map.append('green')
+nx.draw(office_net, node_color=color_map, with_labels=True)
+plt.show()
