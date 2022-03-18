@@ -1,6 +1,5 @@
 import pandas as pd
-from EDA.processing import filter_by_speakers, filter_group_scenes, get_speaker_network_edges, save_seasons, \
-    save_episodes
+from EDA.processing import *
 
 # load raw data
 office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
@@ -19,6 +18,10 @@ top30_office_edges_weighted.to_csv("../data/the_office/edges_weighted_top30.csv"
 
 save_seasons(office_raw, count=20, path="../data/the_office")
 save_episodes(office_raw, count=0, path="../data/the_office")
+
+merged = merge_episodes("../data/the_office/")
+merged.to_csv("../data/the_office/merged_episode_edges.csv")
+merged.loc[('Andy', 'Jim')].set_index(["season", "episode"]).rolling(50, min_periods=1, center=True).mean().plot(y="line_count", figsize=(16,9))
 
 #############
 # test_group = office_raw[(office_raw.season == 3) & (office_raw.episode == 20)].groupby('scene')

@@ -12,7 +12,7 @@ def fix_names(x, replacements):
     '''
     x = x.strip().replace(":", "")
     for rep in replacements:
-        x = re.sub(r'^'+rep+'$', replacements[rep], x)
+        x = re.sub(r'^' + rep + '$', replacements[rep], x)
     return x
 
 
@@ -91,16 +91,18 @@ def get_speaker_network_edges(dataset):
     scenes = office_count_by_scene_speaker.scene.unique()
     for scene in scenes:
         speakers_count = office_count_by_scene_speaker.loc[office_count_by_scene_speaker.scene == scene,
-                                                           ["speaker", "word_count", "line"]].sort_values("speaker").reset_index(drop=True)
+                                                           ["speaker", "word_count", "line"]].sort_values(
+            "speaker").reset_index(drop=True)
         n = speakers_count.shape[0]
-        for i in range(n-1):
-            for j in range(i+1, n):
+        for i in range(n - 1):
+            for j in range(i + 1, n):
                 sp1 = speakers_count.iloc[i]
                 sp2 = speakers_count.iloc[j]
                 interactions = interactions.append({"speaker1": sp1["speaker"],
                                                     "speaker2": sp2["speaker"],
                                                     "line_count": sp1["line"] + sp2["line"],
-                                                    "word_count": sp1["word_count"] + sp2["word_count"]}, ignore_index=True)
+                                                    "word_count": sp1["word_count"] + sp2["word_count"]},
+                                                   ignore_index=True)
     return interactions.groupby(["speaker1", "speaker2"]).agg(line_count=("line_count", "sum"),
                                                               scene_count=("line_count", "count"),
                                                               word_count=("word_count", "sum")).reset_index()
@@ -111,8 +113,8 @@ def save_seasons(dataset, count=20, path="../data"):
     for season in seasons:
         raw_season = dataset[dataset.season == season]
         season_edges = (raw_season.pipe(filter_by_speakers, count=count)
-                                  .pipe(filter_group_scenes)
-                                  .pipe(get_speaker_network_edges))
+                        .pipe(filter_group_scenes)
+                        .pipe(get_speaker_network_edges))
         season_edges.to_csv(f"{path}/edges_weighted_S{season}.csv", index=False, encoding="utf-8")
         print(f"Season {season} saved")
 
@@ -133,3 +135,17 @@ def save_episodes(dataset, count=1, path="../data"):
             episode_edges.to_csv(dir_path + f"/edges_weighted_E{episode:02d}.csv", index=False,
                                  encoding="utf-8")
             print(f"Season {season} episode {episode} saved")
+
+
+def merge_episodes(path: str = "../data") -> pd.DataFrame:
+    seasons = [os.path.join(path, dirname) for dirname in os.listdir(path) if os.path.isdir(os.path.join(path, dirname)) and dirname.startswith("season")]
+    df = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count", "scene_count", "season", "episode"])
+    pattern = re.compile(r"edges_weighted_E(\d+)\.csv")
+    for i, season in enumerate(seasons):
+        episodes = os.listdir(season)
+        for episode in episodes:
+            ep_df = pd.read_csv(os.path.join(season, episode))
+            ep_df["season"] = i + 1
+            ep_df["episode"] = int(pattern.search(episode).group(1))
+            df = pd.concat([df, ep_df], axis=0)
+    return df.set_index(["speaker1", "speaker2"])
