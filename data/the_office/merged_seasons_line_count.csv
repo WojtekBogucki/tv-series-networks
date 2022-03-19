@@ -1,0 +1,626 @@
+speaker1,speaker2,1,2,3,4,5,6,7,8,9
+Andy,Angela,0,0,35,70,244,58,71,140,97
+Andy,Bob Vance,0,0,0,0,11,0,0,0,0
+Andy,Carol,0,0,7,0,0,0,0,0,0
+Andy,Casey,0,0,0,0,0,0,0,0,53
+Andy,Cathy,0,0,0,0,0,0,0,7,0
+Andy,Charles,0,0,0,0,79,0,0,0,0
+Andy,Clark,0,0,0,0,0,0,0,0,154
+Andy,Creed,0,0,5,22,59,39,52,73,27
+Andy,Danny,0,0,0,0,0,0,13,0,0
+Andy,Darryl,0,0,11,26,5,53,311,351,192
+Andy,David Wallace,0,0,0,0,8,7,0,49,105
+Andy,Deangelo,0,0,0,0,0,0,68,0,0
+Andy,Dwight,0,0,223,132,504,335,229,505,244
+Andy,Eric,0,0,0,0,0,3,0,0,0
+Andy,Erin,0,0,0,0,33,269,264,609,279
+Andy,Gabe,0,0,0,0,0,41,129,69,0
+Andy,Grotti,0,0,0,0,0,42,0,0,0
+Andy,Harry,0,0,0,0,0,0,0,15,0
+Andy,Holly,0,0,0,0,40,0,32,0,0
+Andy,Host,0,0,0,0,0,0,0,28,0
+Andy,Irene,0,0,0,0,0,0,0,34,0
+Andy,Jada,0,0,0,0,0,0,9,0,0
+Andy,Jan,0,0,2,30,14,0,0,0,26
+Andy,Jessica,0,0,0,0,0,0,0,123,0
+Andy,Jim,0,0,277,131,289,284,210,533,131
+Andy,Jo,0,0,0,0,0,29,0,0,0
+Andy,Josh,0,0,24,0,0,0,0,0,0
+Andy,Karen,0,0,82,0,0,0,0,0,0
+Andy,Kelly,0,0,12,27,43,82,125,159,0
+Andy,Kevin,0,0,23,91,93,117,189,349,118
+Andy,Meredith,0,0,14,14,51,55,58,177,84
+Andy,Michael,0,0,287,220,367,585,383,0,0
+Andy,Nate,0,0,0,0,0,0,7,29,0
+Andy,Nellie,0,0,0,0,0,0,0,113,129
+Andy,Oscar,0,0,15,25,184,102,131,294,134
+Andy,Pam,0,0,61,90,95,246,290,319,127
+Andy,Pete,0,0,0,0,0,0,0,0,125
+Andy,Phyllis,0,0,25,36,85,118,155,237,127
+Andy,Robert California,0,0,0,0,0,0,0,398,0
+Andy,Ryan,0,0,18,49,24,66,140,100,0
+Andy,Senator Lipton,0,0,0,0,0,0,0,7,0
+Andy,Stanley,0,0,26,26,102,62,92,186,66
+Andy,Susan,0,0,0,0,0,0,0,95,0
+Andy,Toby,0,0,0,26,13,7,41,80,68
+Andy,Val,0,0,0,0,0,0,0,60,0
+Andy,Walter,0,0,0,0,0,0,0,54,0
+Angela,Ben Franklin,0,0,5,0,0,0,0,0,0
+Angela,Bob Vance,0,0,0,0,11,0,0,0,0
+Angela,Cathy,0,0,0,0,0,0,0,5,0
+Angela,Charles,0,0,0,0,46,0,0,0,0
+Angela,Clark,0,0,0,0,0,0,0,0,28
+Angela,Creed,0,4,14,13,31,29,16,9,34
+Angela,Darryl,0,0,5,9,2,10,50,27,19
+Angela,David Wallace,0,0,0,0,4,0,0,0,0
+Angela,Deangelo,0,0,0,0,0,0,42,0,0
+Angela,Donna,0,0,0,0,0,4,0,0,0
+Angela,Dwight,13,178,121,173,234,218,165,125,382
+Angela,Eric,0,0,0,0,0,3,0,0,0
+Angela,Erin,0,0,0,0,9,32,44,53,91
+Angela,Esther,0,0,0,0,0,0,0,0,13
+Angela,Gabe,0,0,0,0,0,6,20,12,0
+Angela,Holly,0,0,0,0,30,0,20,0,0
+Angela,Isabel,0,0,0,0,0,26,0,0,0
+Angela,Jada,0,0,0,0,0,0,3,0,0
+Angela,Jan,0,15,14,47,16,0,0,0,0
+Angela,Jessica,0,0,0,0,0,0,0,4,0
+Angela,Jim,0,56,26,56,104,152,95,65,81
+Angela,Karen,0,0,76,0,0,0,0,0,0
+Angela,Katy,11,0,0,0,0,0,0,0,0
+Angela,Kelly,0,26,51,17,46,25,48,54,0
+Angela,Kevin,16,52,111,23,125,82,120,92,229
+Angela,Meredith,0,12,39,17,55,48,44,10,73
+Angela,Michael,49,200,227,180,246,234,213,0,0
+Angela,Nellie,0,0,0,0,0,0,0,25,87
+Angela,Oscar,14,66,50,15,101,69,90,123,355
+Angela,Pam,11,96,122,83,51,97,134,144,147
+Angela,Pete,0,0,0,0,0,0,0,0,27
+Angela,Phyllis,0,60,58,42,62,72,56,57,75
+Angela,Robert California,0,0,0,0,0,0,0,13,0
+Angela,Roy,3,5,7,0,0,0,0,0,0
+Angela,Ryan,0,10,17,0,4,17,29,24,0
+Angela,Senator Lipton,0,0,0,0,0,0,0,53,0
+Angela,Stanley,2,27,18,14,34,24,32,24,57
+Angela,Susan,0,0,0,0,0,0,0,3,0
+Angela,Toby,0,29,17,19,9,11,28,40,25
+Angela,Todd Packer,0,0,0,0,0,0,3,0,0
+Angela,Trevor,0,0,0,0,0,0,0,0,41
+Angela,Val,0,0,0,0,0,0,0,11,0
+Ben Franklin,Dwight,0,0,11,0,0,0,0,0,0
+Ben Franklin,Karen,0,0,9,0,0,0,0,0,0
+Ben Franklin,Meredith,0,0,5,0,0,0,0,0,0
+Ben Franklin,Michael,0,0,22,0,0,0,0,0,0
+Ben Franklin,Pam,0,0,20,0,0,0,0,0,0
+Bob Vance,David Wallace,0,0,0,0,14,0,0,0,0
+Bob Vance,Dwight,0,0,0,0,21,0,0,0,0
+Bob Vance,Jim,0,0,0,0,18,0,0,0,0
+Bob Vance,Michael,0,0,0,0,36,0,0,0,0
+Bob Vance,Oscar,0,0,0,0,2,0,0,0,0
+Bob Vance,Pam,0,0,0,0,16,0,0,0,0
+Bob Vance,Phyllis,0,0,0,0,33,0,0,0,0
+Bob Vance,Stanley,0,0,0,0,10,0,0,0,0
+Brian,Creed,0,0,0,0,0,0,0,0,6
+Brian,Erin,0,0,0,0,0,0,0,0,9
+Brian,Jim,0,0,0,0,0,0,0,0,36
+Brian,Meredith,0,0,0,0,0,0,0,0,16
+Brian,Pam,0,0,0,0,0,0,0,0,117
+Captain Jack,Dwight,0,19,0,0,0,0,0,0,0
+Captain Jack,Jim,0,4,0,0,0,0,0,0,0
+Captain Jack,Meredith,0,8,0,0,0,0,0,0,0
+Captain Jack,Michael,0,59,0,0,0,0,0,0,0
+Captain Jack,Pam,0,3,0,0,0,0,0,0,0
+Captain Jack,Roy,0,6,0,0,0,0,0,0,0
+Carol,Dwight,0,34,6,0,0,0,0,0,0
+Carol,Jan,0,51,0,0,0,0,0,0,0
+Carol,Jim,0,0,6,0,0,0,0,0,0
+Carol,Kevin,0,7,3,0,0,0,0,0,0
+Carol,Michael,0,117,64,0,0,0,0,0,0
+Carol,Pam,0,22,0,0,0,0,0,0,0
+Carol,Roy,0,4,0,0,0,0,0,0,0
+Cathy,Creed,0,0,0,0,0,0,0,5,0
+Cathy,Dwight,0,0,0,0,0,0,0,85,0
+Cathy,Erin,0,0,0,0,0,0,0,11,0
+Cathy,Gabe,0,0,0,0,0,0,0,11,0
+Cathy,Host,0,0,0,0,0,0,0,3,0
+Cathy,Jim,0,0,0,0,0,0,0,100,0
+Cathy,Kevin,0,0,0,0,0,0,0,4,0
+Cathy,Nellie,0,0,0,0,0,0,0,28,0
+Cathy,Pam,0,0,0,0,0,0,0,25,0
+Cathy,Phyllis,0,0,0,0,0,0,0,2,0
+Cathy,Ryan,0,0,0,0,0,0,0,11,0
+Cathy,Stanley,0,0,0,0,0,0,0,5,0
+Cathy,Todd Packer,0,0,0,0,0,0,0,19,0
+Charles,David Wallace,0,0,0,0,70,0,0,0,0
+Charles,Dwight,0,0,0,0,181,0,0,0,0
+Charles,Erin,0,0,0,0,11,0,0,0,0
+Charles,Jim,0,0,0,0,239,0,0,0,0
+Charles,Kelly,0,0,0,0,38,0,0,0,0
+Charles,Kevin,0,0,0,0,61,0,0,0,0
+Charles,Michael,0,0,0,0,224,0,0,0,0
+Charles,Oscar,0,0,0,0,24,0,0,0,0
+Charles,Pam,0,0,0,0,97,0,0,0,0
+Charles,Phyllis,0,0,0,0,19,0,0,0,0
+Charles,Ryan,0,0,0,0,9,0,0,0,0
+Charles,Stanley,0,0,0,0,46,0,0,0,0
+Charles,Toby,0,0,0,0,3,0,0,0,0
+Christian,Jan,0,43,0,0,0,0,0,0,0
+Christian,Michael,0,56,0,0,0,0,0,0,0
+Clark,Creed,0,0,0,0,0,0,0,0,8
+Clark,Darryl,0,0,0,0,0,0,0,0,47
+Clark,David Wallace,0,0,0,0,0,0,0,0,19
+Clark,Dwight,0,0,0,0,0,0,0,0,354
+Clark,Erin,0,0,0,0,0,0,0,0,63
+Clark,Esther,0,0,0,0,0,0,0,0,10
+Clark,Jan,0,0,0,0,0,0,0,0,7
+Clark,Jim,0,0,0,0,0,0,0,0,115
+Clark,Kevin,0,0,0,0,0,0,0,0,49
+Clark,Meredith,0,0,0,0,0,0,0,0,28
+Clark,Nellie,0,0,0,0,0,0,0,0,22
+Clark,Oscar,0,0,0,0,0,0,0,0,34
+Clark,Pam,0,0,0,0,0,0,0,0,93
+Clark,Pete,0,0,0,0,0,0,0,0,66
+Clark,Phyllis,0,0,0,0,0,0,0,0,33
+Clark,Stanley,0,0,0,0,0,0,0,0,40
+Clark,Toby,0,0,0,0,0,0,0,0,15
+Creed,Danny,0,0,0,0,0,0,5,0,0
+Creed,Darryl,0,0,0,21,4,7,17,17,7
+Creed,David Wallace,0,0,0,0,7,0,0,0,10
+Creed,Deangelo,0,0,0,0,0,0,2,0,0
+Creed,Dwight,0,32,42,22,100,47,18,58,68
+Creed,Erin,0,0,0,0,0,20,33,10,47
+Creed,Esther,0,0,0,0,0,0,0,0,2
+Creed,Gabe,0,0,0,0,0,6,33,2,0
+Creed,Helene,0,0,0,0,0,4,0,0,0
+Creed,Holly,0,0,0,9,2,0,0,0,0
+Creed,Host,0,0,0,0,0,0,0,3,0
+Creed,Jada,0,0,0,0,0,0,3,0,0
+Creed,Jan,0,2,0,6,7,0,0,0,0
+Creed,Jim,0,22,9,45,87,86,34,51,51
+Creed,Karen,0,0,9,0,0,0,0,0,0
+Creed,Kelly,0,5,6,28,20,15,25,11,0
+Creed,Kevin,0,7,20,24,24,25,54,17,47
+Creed,Meredith,0,0,16,22,20,23,12,9,32
+Creed,Michael,0,119,52,97,99,138,122,0,0
+Creed,Nate,0,0,0,0,0,0,0,4,0
+Creed,Nellie,0,0,0,0,0,0,0,11,42
+Creed,Oscar,0,7,2,23,36,31,14,18,36
+Creed,Pam,0,11,23,31,26,55,71,46,85
+Creed,Pete,0,0,0,0,0,0,0,0,21
+Creed,Phyllis,0,11,9,17,28,31,16,14,40
+Creed,Robert California,0,0,0,0,0,0,0,18,0
+Creed,Ryan,0,6,4,37,2,14,23,10,0
+Creed,Stanley,0,6,2,15,27,14,15,9,20
+Creed,Toby,0,12,16,17,2,9,19,15,2
+Danny,Dwight,0,0,0,0,0,0,60,0,0
+Danny,Gabe,0,0,0,0,0,0,5,0,0
+Danny,Jim,0,0,0,0,0,0,86,0,0
+Danny,Kevin,0,0,0,0,0,0,18,0,0
+Danny,Meredith,0,0,0,0,0,0,37,0,0
+Danny,Michael,0,0,0,0,0,0,66,0,0
+Danny,Oscar,0,0,0,0,0,0,8,0,0
+Danny,Pam,0,0,0,0,0,0,17,0,0
+Danny,Ryan,0,0,0,0,0,0,5,0,0
+Danny,Todd Packer,0,0,0,0,0,0,10,0,0
+Darryl,Deangelo,0,0,0,0,0,0,63,0,0
+Darryl,Dwight,0,33,18,23,28,57,105,150,141
+Darryl,Erin,0,0,0,0,0,0,36,76,67
+Darryl,Gabe,0,0,0,0,0,21,93,38,0
+Darryl,Holly,0,0,0,0,60,0,7,0,0
+Darryl,Host,0,0,0,0,0,0,0,12,0
+Darryl,Jada,0,0,0,0,0,0,28,0,0
+Darryl,Jan,0,0,0,4,0,0,0,0,0
+Darryl,Jessica,0,0,0,0,0,0,0,9,0
+Darryl,Jim,0,7,21,22,21,15,73,144,247
+Darryl,Jo,0,0,0,0,0,22,12,0,0
+Darryl,Karen,0,0,9,0,0,0,0,0,0
+Darryl,Katy,0,3,0,0,0,0,0,0,0
+Darryl,Kelly,0,0,15,60,2,17,28,46,0
+Darryl,Kevin,0,17,33,22,6,11,116,168,57
+Darryl,Meredith,0,0,4,0,2,13,20,27,50
+Darryl,Michael,0,142,162,111,162,93,233,0,0
+Darryl,Nate,0,0,0,0,0,0,0,47,0
+Darryl,Nellie,0,0,0,0,0,0,0,33,62
+Darryl,Oscar,0,2,11,11,6,35,73,75,52
+Darryl,Pam,0,11,20,43,4,25,122,79,81
+Darryl,Pete,0,0,0,0,0,0,0,0,25
+Darryl,Phyllis,0,5,5,8,6,3,47,76,51
+Darryl,Robert California,0,0,0,0,0,0,0,27,0
+Darryl,Roy,0,68,6,0,0,0,0,0,0
+Darryl,Ryan,0,0,12,18,3,10,39,18,0
+Darryl,Stanley,0,0,4,9,4,6,33,24,21
+Darryl,Toby,0,0,21,12,14,31,22,49,24
+Darryl,Val,0,0,0,0,0,0,0,117,0
+David Wallace,Dwight,0,0,8,0,136,22,0,0,101
+David Wallace,Erin,0,0,0,0,0,21,0,6,16
+David Wallace,Esther,0,0,0,0,0,0,0,0,3
+David Wallace,Holly,0,0,0,0,16,0,0,0,0
+David Wallace,Jan,0,0,33,0,0,0,0,0,0
+David Wallace,Jim,0,0,19,0,34,76,0,16,59
+David Wallace,Karen,0,0,11,0,0,0,0,0,0
+David Wallace,Kelly,0,0,3,0,10,10,0,0,0
+David Wallace,Kevin,0,0,0,0,10,4,0,0,12
+David Wallace,Meredith,0,0,0,0,0,10,0,4,4
+David Wallace,Michael,0,0,97,0,314,215,0,0,0
+David Wallace,Nellie,0,0,0,0,0,0,0,0,4
+David Wallace,Oscar,0,0,0,0,3,0,0,0,4
+David Wallace,Pam,0,0,0,0,54,7,0,10,17
+David Wallace,Pete,0,0,0,0,0,0,0,0,2
+David Wallace,Phyllis,0,0,0,0,16,0,0,16,13
+David Wallace,Robert California,0,0,0,0,0,0,0,37,0
+David Wallace,Ryan,0,0,3,0,25,0,0,0,0
+David Wallace,Stanley,0,0,0,0,3,4,0,10,0
+David Wallace,Toby,0,0,0,0,3,0,0,0,5
+Deangelo,Dwight,0,0,0,0,0,0,79,0,0
+Deangelo,Erin,0,0,0,0,0,0,63,0,0
+Deangelo,Gabe,0,0,0,0,0,0,35,0,0
+Deangelo,Jim,0,0,0,0,0,0,131,0,0
+Deangelo,Kelly,0,0,0,0,0,0,34,0,0
+Deangelo,Kevin,0,0,0,0,0,0,96,0,0
+Deangelo,Meredith,0,0,0,0,0,0,18,0,0
+Deangelo,Michael,0,0,0,0,0,0,265,0,0
+Deangelo,Oscar,0,0,0,0,0,0,54,0,0
+Deangelo,Pam,0,0,0,0,0,0,69,0,0
+Deangelo,Phyllis,0,0,0,0,0,0,36,0,0
+Deangelo,Ryan,0,0,0,0,0,0,42,0,0
+Deangelo,Stanley,0,0,0,0,0,0,25,0,0
+Deangelo,Toby,0,0,0,0,0,0,9,0,0
+Diane Kelly,Jan,0,0,0,8,0,0,0,0,0
+Diane Kelly,Lester,0,0,0,38,0,0,0,0,0
+Diane Kelly,Michael,0,0,0,56,0,0,0,0,0
+Diane Kelly,Toby,0,0,0,17,0,0,0,0,0
+Donna,Dwight,0,0,0,0,0,22,0,0,0
+Donna,Jim,0,0,0,0,0,44,0,0,0
+Donna,Kelly,0,0,0,0,0,10,0,0,0
+Donna,Kevin,0,0,0,0,0,12,0,0,0
+Donna,Michael,0,0,0,0,0,178,0,0,0
+Donna,Pam,0,0,0,0,0,44,0,0,0
+Dwight,Eric,0,0,0,0,0,13,0,0,0
+Dwight,Erin,0,0,0,0,56,95,145,292,193
+Dwight,Esther,0,0,0,0,0,0,0,0,67
+Dwight,Gabe,0,0,0,0,0,73,62,116,0
+Dwight,Grotti,0,0,0,0,0,42,0,0,0
+Dwight,Harry,0,0,0,0,0,0,0,54,0
+Dwight,Holly,0,0,0,32,69,0,102,0,0
+Dwight,Isabel,0,0,0,0,0,67,0,0,0
+Dwight,Jan,18,57,93,33,10,0,0,0,50
+Dwight,Jessica,0,0,0,0,0,0,0,14,0
+Dwight,Jim,198,515,372,286,762,469,632,896,549
+Dwight,Jo,0,0,0,0,0,30,56,0,0
+Dwight,Josh,0,0,33,0,0,0,0,0,0
+Dwight,Karen,0,0,97,18,0,0,0,0,0
+Dwight,Katy,19,0,0,0,0,0,0,0,0
+Dwight,Kelly,0,69,36,24,138,106,128,110,0
+Dwight,Kevin,13,86,55,16,145,139,186,178,180
+Dwight,Meredith,0,33,16,30,110,95,70,60,149
+Dwight,Michael,263,1227,1030,687,1332,948,526,0,0
+Dwight,Mr. Brown,31,0,0,0,0,0,0,0,0
+Dwight,Nate,0,0,0,0,0,0,48,11,0
+Dwight,Nellie,0,0,0,0,0,0,0,260,254
+Dwight,Oscar,26,119,35,11,172,142,104,199,219
+Dwight,Pam,85,291,252,127,296,220,359,277,451
+Dwight,Pete,0,0,0,0,0,0,0,0,41
+Dwight,Phyllis,0,137,61,32,260,155,142,126,152
+Dwight,Robert California,0,0,0,0,0,0,0,157,0
+Dwight,Roy,13,40,3,0,0,0,0,0,0
+Dwight,Ryan,24,123,134,92,79,118,80,161,0
+Dwight,Senator Lipton,0,0,0,0,0,0,0,30,0
+Dwight,Stanley,43,64,67,39,181,99,89,132,114
+Dwight,Susan,0,0,0,0,0,0,0,8,0
+Dwight,Toby,0,66,47,33,79,89,49,46,65
+Dwight,Todd Packer,0,11,0,0,0,0,35,90,0
+Dwight,Tony,0,0,24,0,0,0,0,0,0
+Dwight,Trevor,0,0,0,0,0,0,0,0,76
+Dwight,Val,0,0,0,0,0,0,0,13,0
+Dwight,Walter,0,0,0,0,0,0,0,2,0
+Eric,Jim,0,0,0,0,0,2,0,0,0
+Eric,Kevin,0,0,0,0,0,3,0,0,0
+Eric,Meredith,0,0,0,0,0,2,0,0,0
+Eric,Michael,0,0,0,0,0,38,0,0,0
+Eric,Pam,0,0,0,0,0,6,0,0,0
+Eric,Phyllis,0,0,0,0,0,2,0,0,0
+Eric,Toby,0,0,0,0,0,33,0,0,0
+Erin,Esther,0,0,0,0,0,0,0,0,4
+Erin,Gabe,0,0,0,0,0,16,113,33,0
+Erin,Grotti,0,0,0,0,0,4,0,0,0
+Erin,Harry,0,0,0,0,0,0,0,5,0
+Erin,Helene,0,0,0,0,0,8,0,0,0
+Erin,Holly,0,0,0,0,0,0,88,0,0
+Erin,Host,0,0,0,0,0,0,0,13,0
+Erin,Irene,0,0,0,0,0,0,0,47,0
+Erin,Jessica,0,0,0,0,0,0,0,77,0
+Erin,Jim,0,0,0,0,5,180,128,180,75
+Erin,Jo,0,0,0,0,0,7,8,0,0
+Erin,Kelly,0,0,0,0,8,61,63,36,0
+Erin,Kevin,0,0,0,0,4,92,77,158,108
+Erin,Meredith,0,0,0,0,2,22,27,40,95
+Erin,Michael,0,0,0,0,91,485,391,0,0
+Erin,Nate,0,0,0,0,0,0,6,0,0
+Erin,Nellie,0,0,0,0,0,0,0,46,113
+Erin,Oscar,0,0,0,0,13,54,84,107,70
+Erin,Pam,0,0,0,0,32,165,187,96,158
+Erin,Pete,0,0,0,0,0,0,0,0,266
+Erin,Phyllis,0,0,0,0,8,43,81,54,79
+Erin,Robert California,0,0,0,0,0,0,0,115,0
+Erin,Ryan,0,0,0,0,0,41,53,84,0
+Erin,Senator Lipton,0,0,0,0,0,0,0,16,0
+Erin,Stanley,0,0,0,0,6,28,33,43,47
+Erin,Susan,0,0,0,0,0,0,0,18,0
+Erin,Toby,0,0,0,0,5,12,35,16,13
+Erin,Todd Packer,0,0,0,0,0,0,0,12,0
+Erin,Val,0,0,0,0,0,0,0,9,0
+Erin,Walter,0,0,0,0,0,0,0,16,0
+Esther,Jim,0,0,0,0,0,0,0,0,6
+Esther,Nellie,0,0,0,0,0,0,0,0,14
+Esther,Oscar,0,0,0,0,0,0,0,0,6
+Gabe,Holly,0,0,0,0,0,0,19,0,0
+Gabe,Jim,0,0,0,0,0,39,119,77,0
+Gabe,Jo,0,0,0,0,0,47,46,0,0
+Gabe,Kelly,0,0,0,0,0,22,41,15,0
+Gabe,Kevin,0,0,0,0,0,32,85,18,0
+Gabe,Meredith,0,0,0,0,0,12,48,6,0
+Gabe,Michael,0,0,0,0,0,85,204,0,0
+Gabe,Nellie,0,0,0,0,0,0,0,38,0
+Gabe,Oscar,0,0,0,0,0,14,55,30,0
+Gabe,Pam,0,0,0,0,0,34,119,28,0
+Gabe,Phyllis,0,0,0,0,0,2,50,16,0
+Gabe,Robert California,0,0,0,0,0,0,0,54,0
+Gabe,Ryan,0,0,0,0,0,4,25,21,0
+Gabe,Stanley,0,0,0,0,0,10,11,5,0
+Gabe,Toby,0,0,0,0,0,6,55,44,0
+Gabe,Todd Packer,0,0,0,0,0,0,8,12,0
+Gabe,Val,0,0,0,0,0,0,0,18,0
+Gabe,Walter,0,0,0,0,0,0,0,16,0
+Grotti,Michael,0,0,0,0,0,80,0,0,0
+Harry,Jim,0,0,0,0,0,0,0,31,0
+Harry,Robert California,0,0,0,0,0,0,0,14,0
+Harry,Toby,0,0,0,0,0,0,0,10,0
+Helene,Isabel,0,0,0,0,0,5,0,0,0
+Helene,Jim,0,0,0,0,0,48,0,0,0
+Helene,Kelly,0,0,0,0,0,4,0,0,0
+Helene,Kevin,0,0,0,0,0,4,0,0,0
+Helene,Michael,0,0,0,0,0,110,0,0,0
+Helene,Pam,0,0,0,0,0,86,0,0,0
+Helene,Ryan,0,0,0,0,0,4,0,0,0
+Holly,Jan,0,0,0,0,16,0,0,0,0
+Holly,Jim,0,0,0,0,57,0,84,0,0
+Holly,Kelly,0,0,0,0,22,0,40,0,0
+Holly,Kevin,0,0,0,50,39,0,89,0,0
+Holly,Meredith,0,0,0,3,46,0,9,0,0
+Holly,Michael,0,0,0,127,435,0,462,0,0
+Holly,Oscar,0,0,0,0,47,0,25,0,0
+Holly,Pam,0,0,0,19,5,0,77,0,0
+Holly,Phyllis,0,0,0,0,21,0,33,0,0
+Holly,Ryan,0,0,0,0,28,0,20,0,0
+Holly,Stanley,0,0,0,0,21,0,11,0,0
+Holly,Toby,0,0,0,35,0,0,7,0,0
+Holly,Todd Packer,0,0,0,0,0,0,18,0,0
+Host,Jim,0,0,0,0,0,0,0,13,0
+Host,Kelly,0,0,0,0,0,0,0,11,0
+Host,Kevin,0,0,0,0,0,0,0,23,0
+Host,Meredith,0,0,0,0,0,0,0,22,0
+Host,Oscar,0,0,0,0,0,0,0,15,0
+Host,Phyllis,0,0,0,0,0,0,0,6,0
+Host,Ryan,0,0,0,0,0,0,0,15,0
+Host,Stanley,0,0,0,0,0,0,0,7,0
+Irene,Jim,0,0,0,0,0,0,0,9,0
+Isabel,Michael,0,0,0,0,0,22,0,0,0
+Isabel,Pam,0,0,0,0,0,13,0,0,0
+Jada,Jim,0,0,0,0,0,0,6,0,0
+Jada,Kelly,0,0,0,0,0,0,3,0,0
+Jada,Kevin,0,0,0,0,0,0,3,0,0
+Jada,Meredith,0,0,0,0,0,0,4,0,0
+Jada,Michael,0,0,0,0,0,0,26,0,0
+Jada,Oscar,0,0,0,0,0,0,4,0,0
+Jada,Pam,0,0,0,0,0,0,11,0,0
+Jada,Phyllis,0,0,0,0,0,0,4,0,0
+Jada,Toby,0,0,0,0,0,0,3,0,0
+Jan,Jim,0,25,31,79,5,0,0,0,0
+Jan,Josh,0,0,32,0,0,0,0,0,0
+Jan,Karen,0,0,17,0,0,0,0,0,0
+Jan,Kelly,0,26,0,0,9,0,0,0,0
+Jan,Kevin,0,5,18,8,12,0,0,0,0
+Jan,Lester,0,0,0,17,0,0,0,0,0
+Jan,Meredith,0,18,0,0,0,0,0,0,0
+Jan,Michael,61,447,436,369,58,0,0,0,0
+Jan,Oscar,0,0,0,13,12,0,0,0,0
+Jan,Pam,11,50,37,110,0,0,0,0,43
+Jan,Phyllis,0,25,4,0,0,0,0,0,0
+Jan,Ryan,0,0,0,20,0,0,0,0,0
+Jan,Stanley,0,0,0,0,6,0,0,0,0
+Jan,Toby,0,6,33,2,0,0,0,0,0
+Jan,Todd Packer,0,4,0,0,0,0,0,0,0
+Jessica,Jim,0,0,0,0,0,0,0,11,0
+Jessica,Kelly,0,0,0,0,0,0,0,6,0
+Jessica,Kevin,0,0,0,0,0,0,0,19,0
+Jessica,Meredith,0,0,0,0,0,0,0,7,0
+Jessica,Nate,0,0,0,0,0,0,0,4,0
+Jessica,Oscar,0,0,0,0,0,0,0,6,0
+Jessica,Phyllis,0,0,0,0,0,0,0,10,0
+Jessica,Stanley,0,0,0,0,0,0,0,4,0
+Jessica,Val,0,0,0,0,0,0,0,9,0
+Jim,Jo,0,0,0,0,0,40,52,0,0
+Jim,Josh,0,0,42,0,0,0,0,0,0
+Jim,Karen,0,0,364,28,0,0,0,0,0
+Jim,Katy,28,31,0,0,0,0,0,0,0
+Jim,Kelly,0,79,28,33,125,95,106,96,0
+Jim,Kevin,21,81,117,76,159,215,177,221,117
+Jim,Meredith,0,19,16,42,58,113,78,86,99
+Jim,Michael,137,616,459,677,821,1277,491,0,0
+Jim,Mr. Brown,3,0,0,0,0,0,0,0,0
+Jim,Nate,0,0,0,0,0,0,13,7,0
+Jim,Nellie,0,0,0,0,0,0,0,204,41
+Jim,Oscar,21,71,14,62,138,147,132,194,87
+Jim,Pam,199,700,369,517,711,856,571,538,761
+Jim,Pete,0,0,0,0,0,0,0,0,42
+Jim,Phyllis,0,72,31,65,101,204,108,190,104
+Jim,Robert California,0,0,0,0,0,0,0,222,0
+Jim,Roy,61,64,14,0,0,0,0,0,0
+Jim,Ryan,19,103,81,80,53,98,102,180,0
+Jim,Stanley,12,60,23,56,99,130,72,161,86
+Jim,Susan,0,0,0,0,0,0,0,21,0
+Jim,Toby,0,34,43,80,16,35,70,64,37
+Jim,Todd Packer,0,7,0,0,0,0,32,47,0
+Jim,Trevor,0,0,0,0,0,0,0,0,8
+Jim,Val,0,0,0,0,0,0,0,5,0
+Jo,Kelly,0,0,0,0,0,0,4,0,0
+Jo,Kevin,0,0,0,0,0,47,17,0,0
+Jo,Meredith,0,0,0,0,0,3,0,0,0
+Jo,Michael,0,0,0,0,0,198,13,0,0
+Jo,Oscar,0,0,0,0,0,21,0,0,0
+Jo,Pam,0,0,0,0,0,0,9,0,0
+Jo,Phyllis,0,0,0,0,0,7,0,0,0
+Jo,Toby,0,0,0,0,0,10,4,0,0
+Josh,Karen,0,0,8,0,0,0,0,0,0
+Josh,Michael,0,0,61,0,0,0,0,0,0
+Karen,Kelly,0,0,16,0,0,0,0,0,0
+Karen,Kevin,0,0,41,0,0,0,0,0,0
+Karen,Meredith,0,0,20,0,0,0,0,0,0
+Karen,Michael,0,0,197,35,43,0,0,0,0
+Karen,Oscar,0,0,7,0,0,0,0,0,0
+Karen,Pam,0,0,174,0,30,0,0,0,0
+Karen,Phyllis,0,0,77,0,0,0,0,0,0
+Karen,Roy,0,0,14,0,0,0,0,0,0
+Karen,Ryan,0,0,15,0,0,0,0,0,0
+Karen,Stanley,0,0,24,0,0,0,0,0,0
+Karen,Tony,0,0,26,0,0,0,0,0,0
+Katy,Michael,100,0,0,0,0,0,0,0,0
+Katy,Oscar,3,0,0,0,0,0,0,0,0
+Katy,Pam,15,5,0,0,0,0,0,0,0
+Katy,Roy,0,14,0,0,0,0,0,0,0
+Katy,Ryan,3,0,0,0,0,0,0,0,0
+Katy,Stanley,5,0,0,0,0,0,0,0,0
+Kelly,Kevin,0,5,41,26,46,37,82,70,0
+Kelly,Meredith,0,18,17,11,41,39,48,44,0
+Kelly,Michael,0,110,128,113,189,171,179,0,0
+Kelly,Nellie,0,0,0,0,0,0,0,2,0
+Kelly,Oscar,0,12,15,16,46,40,79,83,0
+Kelly,Pam,0,73,89,49,21,87,136,140,0
+Kelly,Phyllis,0,29,22,22,35,30,66,46,0
+Kelly,Robert California,0,0,0,0,0,0,0,39,0
+Kelly,Roy,0,0,11,0,0,0,0,0,0
+Kelly,Ryan,0,32,60,63,71,84,133,67,0
+Kelly,Stanley,0,17,19,12,22,24,28,30,0
+Kelly,Toby,0,26,30,19,14,2,42,32,0
+Kelly,Todd Packer,0,0,0,0,0,0,4,0,0
+Kelly,Val,0,0,0,0,0,0,0,19,0
+Kevin,Meredith,0,8,20,19,63,68,56,54,79
+Kevin,Michael,56,249,259,252,332,399,402,0,0
+Kevin,Mr. Brown,8,0,0,0,0,0,0,0,0
+Kevin,Nate,0,0,0,0,0,0,6,3,0
+Kevin,Nellie,0,0,0,0,0,0,0,47,130
+Kevin,Oscar,22,50,50,52,109,134,150,160,223
+Kevin,Pam,7,73,151,92,91,182,188,150,113
+Kevin,Pete,0,0,0,0,0,0,0,0,69
+Kevin,Phyllis,0,29,44,40,51,94,78,73,99
+Kevin,Robert California,0,0,0,0,0,0,0,153,0
+Kevin,Roy,8,25,29,0,0,0,0,0,0
+Kevin,Ryan,3,22,41,43,13,23,73,58,0
+Kevin,Senator Lipton,0,0,0,0,0,0,0,10,0
+Kevin,Stanley,7,17,20,33,57,26,30,45,58
+Kevin,Susan,0,0,0,0,0,0,0,5,0
+Kevin,Toby,0,25,45,20,7,5,15,53,25
+Kevin,Todd Packer,0,7,0,0,0,0,20,0,0
+Kevin,Tony,0,0,4,0,0,0,0,0,0
+Kevin,Trevor,0,0,0,0,0,0,0,0,4
+Kevin,Val,0,0,0,0,0,0,0,30,0
+Kevin,Walter,0,0,0,0,0,0,0,15,0
+Lester,Michael,0,0,0,65,0,0,0,0,0
+Lester,Ryan,0,0,0,3,0,0,0,0,0
+Lester,Toby,0,0,0,6,0,0,0,0,0
+Mark Franks,Pam,0,0,0,0,0,0,0,0,36
+Meredith,Michael,0,70,62,52,208,204,170,0,0
+Meredith,Nellie,0,0,0,0,0,0,0,21,59
+Meredith,Oscar,0,9,4,9,57,60,58,60,86
+Meredith,Pam,0,29,26,25,23,84,83,60,170
+Meredith,Pete,0,0,0,0,0,0,0,0,40
+Meredith,Phyllis,0,21,12,16,32,40,36,24,80
+Meredith,Robert California,0,0,0,0,0,0,0,59,0
+Meredith,Ryan,0,9,6,0,8,27,41,17,0
+Meredith,Senator Lipton,0,0,0,0,0,0,0,2,0
+Meredith,Stanley,0,4,6,17,35,21,15,27,39
+Meredith,Toby,0,14,5,13,23,5,23,16,14
+Meredith,Trevor,0,0,0,0,0,0,0,0,2
+Meredith,Val,0,0,0,0,0,0,0,2,0
+Meredith,Walter,0,0,0,0,0,0,0,15,0
+Michael,Mr. Brown,72,0,0,0,0,0,0,0,0
+Michael,Nate,0,0,0,0,0,0,11,0,0
+Michael,Oscar,134,180,76,199,419,354,336,0,0
+Michael,Pam,200,603,673,590,1006,831,471,0,0
+Michael,Phyllis,0,168,200,190,274,365,276,0,0
+Michael,Roy,44,104,22,0,0,0,0,0,0
+Michael,Ryan,111,273,172,290,352,174,259,0,0
+Michael,Stanley,77,198,148,225,269,228,215,0,0
+Michael,Toby,0,249,176,183,117,125,137,0,0
+Michael,Todd Packer,0,72,0,0,0,0,77,0,0
+Michael,Tony,0,0,54,0,0,0,0,0,0
+Mr. Brown,Oscar,4,0,0,0,0,0,0,0,0
+Nate,Oscar,0,0,0,0,0,0,7,4,0
+Nate,Pam,0,0,0,0,0,0,28,6,0
+Nate,Phyllis,0,0,0,0,0,0,7,5,0
+Nate,Ryan,0,0,0,0,0,0,0,9,0
+Nate,Stanley,0,0,0,0,0,0,7,0,0
+Nate,Toby,0,0,0,0,0,0,0,6,0
+Nate,Val,0,0,0,0,0,0,0,29,0
+Nellie,Oscar,0,0,0,0,0,0,0,36,52
+Nellie,Pam,0,0,0,0,0,0,0,112,171
+Nellie,Pete,0,0,0,0,0,0,0,0,60
+Nellie,Phyllis,0,0,0,0,0,0,0,24,77
+Nellie,Robert California,0,0,0,0,0,0,0,109,0
+Nellie,Ryan,0,0,0,0,0,0,0,43,0
+Nellie,Stanley,0,0,0,0,0,0,0,34,53
+Nellie,Toby,0,0,0,0,0,0,0,16,91
+Nellie,Todd Packer,0,0,0,0,0,0,0,78,0
+Oscar,Pam,13,59,13,81,88,109,171,178,110
+Oscar,Pete,0,0,0,0,0,0,0,0,31
+Oscar,Phyllis,0,12,13,31,53,90,71,124,93
+Oscar,Robert California,0,0,0,0,0,0,0,100,0
+Oscar,Ryan,3,13,0,18,11,29,96,85,0
+Oscar,Senator Lipton,0,0,0,0,0,0,0,24,0
+Oscar,Stanley,12,24,13,34,48,36,33,48,56
+Oscar,Susan,0,0,0,0,0,0,0,14,0
+Oscar,Toby,0,16,0,30,16,6,20,60,38
+Oscar,Todd Packer,0,0,0,0,0,0,3,0,0
+Oscar,Trevor,0,0,0,0,0,0,0,0,17
+Oscar,Val,0,0,0,0,0,0,0,7,0
+Oscar,Walter,0,0,0,0,0,0,0,4,0
+Pam,Pete,0,0,0,0,0,0,0,0,35
+Pam,Phyllis,0,91,75,68,68,125,144,145,113
+Pam,Robert California,0,0,0,0,0,0,0,87,0
+Pam,Roy,51,83,115,0,0,0,0,0,0
+Pam,Ryan,13,38,73,82,196,74,147,137,0
+Pam,Stanley,16,50,42,51,53,48,72,66,64
+Pam,Toby,0,48,63,98,17,43,23,38,28
+Pam,Todd Packer,0,3,0,0,0,0,0,0,0
+Pam,Tony,0,0,5,0,0,0,0,0,0
+Pam,Val,0,0,0,0,0,0,0,6,0
+Pete,Phyllis,0,0,0,0,0,0,0,0,7
+Pete,Stanley,0,0,0,0,0,0,0,0,17
+Pete,Toby,0,0,0,0,0,0,0,0,14
+Phyllis,Robert California,0,0,0,0,0,0,0,53,0
+Phyllis,Ryan,0,13,21,30,32,25,49,41,0
+Phyllis,Senator Lipton,0,0,0,0,0,0,0,4,0
+Phyllis,Stanley,0,25,43,37,96,74,74,46,91
+Phyllis,Susan,0,0,0,0,0,0,0,5,0
+Phyllis,Toby,0,13,12,26,0,2,25,19,12
+Phyllis,Todd Packer,0,8,0,0,0,0,0,0,0
+Phyllis,Val,0,0,0,0,0,0,0,19,0
+Robert California,Ryan,0,0,0,0,0,0,0,54,0
+Robert California,Senator Lipton,0,0,0,0,0,0,0,6,0
+Robert California,Stanley,0,0,0,0,0,0,0,43,0
+Robert California,Susan,0,0,0,0,0,0,0,67,0
+Robert California,Toby,0,0,0,0,0,0,0,37,0
+Robert California,Todd Packer,0,0,0,0,0,0,0,7,0
+Robert California,Val,0,0,0,0,0,0,0,6,0
+Robert California,Walter,0,0,0,0,0,0,0,22,0
+Roy,Ryan,4,7,8,0,0,0,0,0,0
+Roy,Stanley,0,5,0,0,0,0,0,0,0
+Roy,Todd Packer,0,9,0,0,0,0,0,0,0
+Ryan,Stanley,8,19,23,29,23,19,46,27,0
+Ryan,Susan,0,0,0,0,0,0,0,6,0
+Ryan,Toby,0,18,38,24,19,13,32,15,0
+Ryan,Todd Packer,0,2,0,0,0,0,3,14,0
+Stanley,Toby,0,17,8,12,5,18,13,0,13
+Stanley,Todd Packer,0,0,0,0,0,0,0,6,0
+Stanley,Val,0,0,0,0,0,0,0,3,0
+Susan,Toby,0,0,0,0,0,0,0,5,0

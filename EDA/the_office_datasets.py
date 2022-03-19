@@ -1,27 +1,33 @@
 import pandas as pd
 from EDA.processing import *
 
+path = "../data/the_office"
+
 # load raw data
-office_raw = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
+office_raw = pd.read_csv(f"{path}/the_office_lines_v6.csv")
 
 # save speakers with over 100 lines
 office_edges_weighted = (office_raw.pipe(filter_by_speakers)
                          .pipe(filter_group_scenes)
                          .pipe(get_speaker_network_edges))
-office_edges_weighted.to_csv("../data/the_office/edges_weighted.csv", index=False, encoding="utf-8")
+office_edges_weighted.to_csv(f"{path}/edges_weighted.csv", index=False, encoding="utf-8")
 
 # top 30 speakers
 top30_office_edges_weighted = (office_raw.pipe(filter_by_speakers, top=30)
                                .pipe(filter_group_scenes)
                                .pipe(get_speaker_network_edges))
-top30_office_edges_weighted.to_csv("../data/the_office/edges_weighted_top30.csv", index=False, encoding="utf-8")
+top30_office_edges_weighted.to_csv(f"{path}/edges_weighted_top30.csv", index=False, encoding="utf-8")
 
-save_seasons(office_raw, count=20, path="../data/the_office")
-save_episodes(office_raw, count=0, path="../data/the_office")
+save_seasons(office_raw, count=20, path=path)
+save_episodes(office_raw, count=0, path=path)
 
-merged = merge_episodes("../data/the_office/")
-merged.to_csv("../data/the_office/merged_episode_edges.csv")
-merged.loc[('Andy', 'Jim')].set_index(["season", "episode"]).rolling(50, min_periods=1, center=True).mean().plot(y="line_count", figsize=(16,9))
+save_merged_episodes(path)
+merged_ep = pd.read_csv(f"{path}/merged_episodes_line_count.csv", index_col=[0, 1], header=[0, 1])
+merged_ep.loc[('Andy', 'Jim')].rolling(50, min_periods=1, center=True).mean().plot(y="line_count", figsize=(16,9))
+
+merge_seasons(path)
+merged_seas = pd.read_csv(f"{path}/merged_seasons_line_count.csv", index_col=[0, 1])
+merged_seas.loc[('Andy', 'Jim')].plot(kind="bar", rot=0)
 
 #############
 # test_group = office_raw[(office_raw.season == 3) & (office_raw.episode == 20)].groupby('scene')

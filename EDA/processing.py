@@ -137,7 +137,7 @@ def save_episodes(dataset, count=1, path="../data"):
             print(f"Season {season} episode {episode} saved")
 
 
-def merge_episodes(path: str = "../data") -> pd.DataFrame:
+def save_merged_episodes(path: str = "../data") -> None:
     seasons = [os.path.join(path, dirname) for dirname in os.listdir(path) if os.path.isdir(os.path.join(path, dirname)) and dirname.startswith("season")]
     df = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count", "scene_count", "season", "episode"])
     pattern = re.compile(r"edges_weighted_E(\d+)\.csv")
@@ -148,4 +148,19 @@ def merge_episodes(path: str = "../data") -> pd.DataFrame:
             ep_df["season"] = i + 1
             ep_df["episode"] = int(pattern.search(episode).group(1))
             df = pd.concat([df, ep_df], axis=0)
-    return df.set_index(["speaker1", "speaker2"])
+    for measure in ["line_count", "word_count", "scene_count"]:
+        pivot_df = pd.pivot_table(df, values=measure, index=["speaker1", "speaker2"], columns=["season", "episode"], fill_value=0)
+        pivot_df.to_csv(os.path.join(path, f"merged_episodes_{measure}.csv"), encoding="utf-8")
+
+
+def merge_seasons(path: str) -> None:
+    num_seasons = len(
+        [f for f in os.listdir(path) if f.startswith("edges_weighted_S") and os.path.isfile(os.path.join(path, f))])
+    df = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count", "scene_count", "season"])
+    for i in range(num_seasons):
+        season_df = pd.read_csv(os.path.join(path, f"edges_weighted_S{i + 1}.csv"))
+        season_df["season"] = i + 1
+        df = pd.concat([df, season_df], axis=0)
+    for measure in ["line_count", "word_count", "scene_count"]:
+        pivot_df = pd.pivot_table(df, values=measure, index=["speaker1", "speaker2"], columns="season", fill_value=0)
+        pivot_df.to_csv(os.path.join(path, f"merged_seasons_{measure}.csv"), encoding="utf-8")
