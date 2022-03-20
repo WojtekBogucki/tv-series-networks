@@ -122,6 +122,8 @@ seinfeld_df.speaker.nunique()
 
 seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v2.csv", index=False, encoding="utf-8")
 
+seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v2.csv")
+seinfeld_df.groupby(["season", "episode", "title"]).count()
 
 seinfeld_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
 seinfeld_df.speaker.nunique()   # 1116

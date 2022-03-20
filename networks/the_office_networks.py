@@ -3,61 +3,60 @@ import os
 
 show_name = "the_office"
 # load data
-office_edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted.csv")
-office_edges_weighted_top30 = pd.read_csv(f"../data/{show_name}/edges_weighted_top30.csv")
+edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted.csv")
+edges_weighted_top30 = pd.read_csv(f"../data/{show_name}/edges_weighted_top30.csv")
 
 # create a network
-office_net = nx.from_pandas_edgelist(office_edges_weighted, source="speaker1", target="speaker2",
-                                     edge_attr=["line_count", "scene_count", "word_count"])
-office_net_top30 = nx.from_pandas_edgelist(office_edges_weighted_top30, source="speaker1", target="speaker2",
-                                     edge_attr=["line_count", "scene_count", "word_count"])
+net = nx.from_pandas_edgelist(edges_weighted, source="speaker1", target="speaker2",
+                              edge_attr=["line_count", "scene_count", "word_count"])
+net_top30 = nx.from_pandas_edgelist(edges_weighted_top30, source="speaker1", target="speaker2",
+                                    edge_attr=["line_count", "scene_count", "word_count"])
 
 # save drawn networks
-draw_interaction_network_communities(office_net, "line_count", filename=f"{show_name}/{show_name}_lines", method=None)
-draw_interaction_network_communities(office_net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method=None)
-draw_interaction_network_communities(office_net, "word_count", filename=f"{show_name}/{show_name}_words", method=None)
+draw_interaction_network_communities(net, "line_count", filename=f"{show_name}/{show_name}_lines", method=None)
+draw_interaction_network_communities(net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method=None)
+draw_interaction_network_communities(net, "word_count", filename=f"{show_name}/{show_name}_words", method=None)
 
-draw_interaction_network_communities(office_net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines", method=None)
-draw_interaction_network_communities(office_net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes", method=None)
-draw_interaction_network_communities(office_net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words", method=None)
+draw_interaction_network_communities(net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines", method=None)
+draw_interaction_network_communities(net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes", method=None)
+draw_interaction_network_communities(net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words", method=None)
 
 # stats
-char_stat_dit = f"../figures/{show_name}/character_stats"
+char_stat_dir = f"../figures/{show_name}/character_stats"
 
-save_character_stats(office_net_top30, char_stat_dit, "top30")
-save_character_stats(office_net, char_stat_dit, "over_100_lines")
+save_character_stats(net_top30, char_stat_dir, "top30")
+save_character_stats(net, char_stat_dir, "over_100_lines")
 
 
 # the office by seasons
-office_net_seasons = get_season_networks(f"../data/{show_name}/")
+net_seasons = get_season_networks(f"../data/{show_name}/")
 
-office_season_stats = get_network_stats_by_season(office_net_seasons)
+season_stats = get_network_stats_by_season(net_seasons, show_name)
 
-# add rating weighted by number of votes
-season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
-season_ratings = season_ratings[season_ratings.originalTitle == "The Office"]
-weighted_rating = season_ratings["weighted_rating"].tolist()
-office_season_stats["weighted_rating"] = weighted_rating
+season_stats.plot(kind="scatter", x="weighted_rating", y="number_of_cliques", s="avg_shortest_path")
+
+plot_corr_mat(season_stats)
 
 # network stats by season
 # os.mkdir(f"../figures/{show_name}/stats_by_season")
-for colname in office_season_stats.columns:
-    office_season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname)
+for colname in season_stats.columns:
+    season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname)
     plt.savefig(f"../figures/{show_name}/stats_by_season/{colname}.png")
     plt.close()
 
 # seasonal networks
 # os.mkdir(f"../figures/{show_name}/season_networks")
-for i, season_net in enumerate(office_net_seasons):
+for i, season_net in enumerate(net_seasons):
     draw_interaction_network_communities(season_net, "line_count", method="GM", filename=f"{show_name}/season_networks/season{i+1}_line_GM")
 
 
-draw_interaction_network_communities(office_net_seasons[8], "line_count", method="SG")
-draw_interaction_network_communities(office_net_seasons[2], "scene_count", method=None)
-draw_interaction_network_communities(office_net_seasons[0], "word_count")
+draw_interaction_network_communities(net_seasons[8], "line_count", method="SG")
+draw_interaction_network_communities(net_seasons[2], "scene_count", method=None)
+draw_interaction_network_communities(net_seasons[0], "word_count")
 
+# character stats
 season_character_stats = pd.DataFrame()
-for i, season_net in enumerate(office_net_seasons):
+for i, season_net in enumerate(net_seasons):
     season_char_stats = get_character_stats(season_net)
     season_char_stats["season"] = i+1
     season_character_stats = pd.concat([season_character_stats, season_char_stats], axis=0)
@@ -71,18 +70,22 @@ for top_character in top_characters:
     plt.close()
 
 # the office by episodes
-office_net_episodes = get_episode_networks(f"../data/{show_name}/")
+net_episodes = get_episode_networks(f"../data/{show_name}/")
 episode_dict = get_episode_dict("../data/the_office/the_office_lines_v6.csv")
 
-episode_stats = get_network_stats_by_episode(office_net_episodes, episode_dict)
+episode_stats = get_network_stats_by_episode(net_episodes, episode_dict)
 
 # add episode rating and number of votes
 ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
-ratings = ratings[ratings.originalTitle == "The Office"]
+ratings = ratings[ratings.originalTitle == show_name]
 avg_rating = ratings["averageRating"].tolist()
 episode_stats["averageRating"] = avg_rating
 episode_stats["numVotes"] = ratings["numVotes"].tolist()
 episode_stats.plot(kind="scatter", x="averageRating", y="numVotes")
+
+episode_stats.plot(kind="scatter", x="averageRating", y="assortativity")
+
+plot_corr_mat(episode_stats)
 
 episode_stats["averageRating"].plot(kind="hist")
 episode_stats["numVotes"].plot(kind="hist")
@@ -90,22 +93,22 @@ episode_stats["numVotes"].plot(kind="hist")
 # save networks of all episodes
 plt.ioff()
 for k, v in episode_dict.items():
-    draw_interaction_network_communities(office_net_episodes[v], "line_count", method="ML", filename=f"the_office/{k}_line_ML")
+    draw_interaction_network_communities(net_episodes[v], "line_count", method="ML", filename=f"the_office/{k}_line_ML")
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="SG")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="FG")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="IM")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LE")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LP")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="ML")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="WT")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e07"]], "line_count", method="LD")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="SG")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="FG")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="IM")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LE")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LP")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="ML")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="WT")
+draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LD")
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s04e12"]], "scene_count", method="GM")
+draw_interaction_network_communities(net_episodes[episode_dict["s04e12"]], "scene_count", method="GM")
 
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e18"]], "line_count",
+draw_interaction_network_communities(net_episodes[episode_dict["s03e18"]], "line_count",
                                      filename="office_lines_s03e18")
-draw_interaction_network_communities(office_net_episodes[episode_dict["s03e21"]], "line_count",
+draw_interaction_network_communities(net_episodes[episode_dict["s03e21"]], "line_count",
                                      filename="office_lines_s03e21")
 
 

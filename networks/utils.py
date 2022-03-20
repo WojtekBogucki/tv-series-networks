@@ -6,7 +6,7 @@ from networkx import community
 import matplotlib.pyplot as plt
 import community as community_louvain
 import igraph as ig
-
+import seaborn as sns
 
 def get_character_stats(G: nx.Graph) -> pd.DataFrame:
     nodes = list(G.nodes())
@@ -99,34 +99,44 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
     return net_episodes
 
 
-def get_network_stats_by_season(net_seasons: list[nx.Graph]) -> pd.DataFrame:
+def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, weight: str = "line_count") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity"]
+               "transitivity", "number_of_cliques", "clique_number", "weighted_rating"]
+    season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
+    season_ratings = season_ratings[season_ratings.originalTitle == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_seasons],
                          [nx.number_of_edges(net) for net in net_seasons],
                          [nx.density(net) for net in net_seasons],
                          [nx.diameter(net) for net in net_seasons],
-                         [nx.degree_assortativity_coefficient(net, weight="line_count") for net in net_seasons],
+                         [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_seasons],
                          [nx.average_clustering(net) for net in net_seasons],
-                         [nx.average_shortest_path_length(net, weight="line_count") for net in net_seasons],
-                         [nx.transitivity(net) for net in net_seasons]]).transpose()
+                         [nx.average_shortest_path_length(net, weight=weight) for net in net_seasons],
+                         [nx.transitivity(net) for net in net_seasons],
+                         [nx.graph_number_of_cliques(net) for net in net_seasons],
+                         [nx.graph_clique_number(net) for net in net_seasons],
+                         season_ratings["weighted_rating"].tolist()
+                         ]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
     return stats
 
 
-def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict):
+def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, weight: str = "line_count"):
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity"]
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number"]
     measures = np.array([[nx.number_of_nodes(net) for net in net_episodes],
                          [nx.number_of_edges(net) for net in net_episodes],
                          [nx.density(net) for net in net_episodes],
                          [nx.diameter(net) if nx.is_connected(net) else np.nan for net in net_episodes],
-                         [nx.degree_assortativity_coefficient(net, weight="line_count") for net in net_episodes],
+                         [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_episodes],
                          [nx.average_clustering(net) for net in net_episodes],
-                         [nx.average_shortest_path_length(net, weight="line_count") if nx.is_connected(net) else np.nan for net in net_episodes],
-                         [nx.transitivity(net) for net in net_episodes]]).transpose()
+                         [nx.average_shortest_path_length(net, weight=weight) if nx.is_connected(net) else np.nan for net in net_episodes],
+                         [nx.transitivity(net) for net in net_episodes],
+                         [nx.number_connected_components(net) for net in net_episodes],
+                         [nx.graph_number_of_cliques(net) for net in net_episodes],
+                         [nx.graph_clique_number(net) for net in net_episodes]
+                         ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats
 
@@ -222,3 +232,17 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
         plt.close()
     else:
         plt.show()
+
+
+def plot_corr_mat(df: pd.DataFrame) -> None:
+    cmap = sns.diverging_palette(230, 20, as_cmap=True)
+    df_corr = df.corr()
+    sns.heatmap(df_corr,
+                xticklabels=df_corr.columns.values,
+                yticklabels=df_corr.columns.values,
+                cmap=cmap,
+                square=True,
+                annot=True,
+                fmt=".2f")
+    plt.tight_layout()
+    plt.show()

@@ -42,6 +42,9 @@ ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & 
 ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==17), "numVotes"] = max(s6e17_votes, s6e18_votes)[0]
 ratings.drop(office_s6_e18.index, inplace=True)
 
+ratings.loc[ratings.originalTitle=="The Big Bang Theory", "originalTitle"] = "tbbt"
+ratings["originalTitle"] = ratings.originalTitle.apply(lambda x: x.lower().replace(" ", "_"))
+
 ratings.to_csv("../data/imdb/episode_ratings.csv", index=False, encoding="utf-8")
 
 ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
