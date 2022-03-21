@@ -1,8 +1,8 @@
 speaker1,speaker2,line_count,scene_count,word_count
 bania,elaine,29,4,215
 bania,george,48,4,375
-bania,jerry,161,12,1397
-bania,kramer,96,6,806
+bania,jerry,156,12,1384
+bania,kramer,86,5,723
 bonnie,george,50,7,494
 carl,elaine,58,5,399
 carl,george,17,3,251
@@ -15,17 +15,17 @@ donna,estelle,13,2,70
 donna,frank,8,2,43
 donna,george,17,2,135
 donna,jerry,74,10,539
-doorman s06e18,elaine,3,1,31
-doorman s06e18,jerry,32,3,380
+doorman s06e17,elaine,3,1,31
+doorman s06e17,jerry,32,3,380
 earl,elaine,10,1,82
 earl,kramer,55,5,422
 earl,newman,32,3,254
 elaine,frank,31,4,410
 elaine,george,543,54,4862
-elaine,jerry,1504,138,13459
+elaine,jerry,1504,139,13459
 elaine,jimmy,29,3,214
 elaine,julie,23,2,124
-elaine,kramer,517,50,4963
+elaine,kramer,507,50,4876
 elaine,landis,60,3,495
 elaine,lois,2,1,13
 elaine,mr. pitt,184,17,1595
@@ -58,7 +58,7 @@ jerry,jimmy,17,2,135
 jerry,julie,16,2,109
 jerry,karen,19,2,124
 jerry,kate,60,6,618
-jerry,kramer,1298,116,12907
+jerry,kramer,1288,116,12840
 jerry,landis,17,1,123
 jerry,lois,64,6,435
 jerry,mr. pitt,25,4,175

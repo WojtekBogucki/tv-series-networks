@@ -1,5 +1,6 @@
 from networks.utils import *
 
+show_name = "seinfeld"
 # load data
 edges_weighted = pd.read_csv("../data/seinfeld/edges_weighted.csv")
 edges_weighted_top30 = pd.read_csv("../data/seinfeld/edges_weighted_top30.csv")
@@ -34,21 +35,10 @@ seinfeld_season_stats = get_network_stats_by_season(seinfeld_net_seasons)
 seinfeld_season_stats["nodes"].plot(kind="bar")
 
 # by episodes
-seinfeld_net_episodes = get_episode_networks("../data/seinfeld/")
+seinfeld_net_episodes = get_episode_networks(f"../data/{show_name}/")
+episode_dict = get_episode_dict(f"../data/{show_name}/seinfeld_lines_v2.csv")
 
-
-seinfeld_raw = pd.read_csv("../data/seinfeld/seinfeld_lines_v2.csv")
-seasons = seinfeld_raw.season.unique()
-i = 0
-episode_dict = {}
-for season in seasons:
-    seinfeld_raw_season = seinfeld_raw[seinfeld_raw.season == season]
-    episodes = seinfeld_raw_season.episode.unique()
-    for episode in episodes:
-        episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
-        i += 1
-
-episode_stats = get_network_stats_by_episode(seinfeld_net_episodes, episode_dict)
+episode_stats = get_network_stats_by_episode(seinfeld_net_episodes, episode_dict, show_name)
 episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
 # save networks of all episodes
 plt.ioff()

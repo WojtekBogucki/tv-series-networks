@@ -2,15 +2,15 @@ speaker1,speaker2,line_count,scene_count,word_count
 bania,elaine,38,6,317
 bania,frank,5,1,56
 bania,george,59,6,481
-bania,jerry,206,19,1821
-bania,kramer,106,8,912
+bania,jerry,201,19,1808
+bania,kramer,96,7,829
 elaine,estelle,47,5,390
 elaine,frank,140,16,1637
 elaine,george,5984,542,59024
 elaine,helen,275,26,1828
 elaine,jack,74,6,612
-elaine,jerry,11901,1045,108769
-elaine,kramer,4514,470,43390
+elaine,jerry,11901,1047,108769
+elaine,kramer,4496,470,43246
 elaine,mickey,32,3,313
 elaine,morty,243,27,1860
 elaine,mr. lippman,223,20,2109
@@ -38,7 +38,7 @@ frank,mr. steinbrenner,10,2,179
 frank,puddy,2,1,13
 frank,susan,32,3,225
 george,helen,102,17,835
-george,jerry,14542,1169,144345
+george,jerry,14536,1168,144285
 george,kramer,5092,503,53260
 george,mickey,24,3,270
 george,morty,115,17,1016
@@ -50,8 +50,8 @@ george,puddy,71,10,616
 george,susan,821,86,7729
 george,uncle leo,51,5,423
 helen,jack,200,13,1604
-helen,jerry,1138,98,8723
-helen,kramer,229,21,2053
+helen,jerry,1128,98,8691
+helen,kramer,216,20,1956
 helen,morty,1004,112,8211
 helen,newman,40,3,385
 helen,uncle leo,57,10,519
@@ -59,9 +59,9 @@ jack,jerry,299,21,2424
 jack,kramer,27,3,153
 jack,morty,268,16,2285
 jack,puddy,6,1,33
-jerry,kramer,10308,953,99350
+jerry,kramer,10287,953,99185
 jerry,mickey,92,10,965
-jerry,morty,1167,104,9705
+jerry,morty,1157,104,9673
 jerry,mr. lippman,82,2,702
 jerry,mr. steinbrenner,21,2,210
 jerry,newman,809,79,7518
@@ -70,7 +70,7 @@ jerry,puddy,123,15,989
 jerry,susan,271,32,2350
 jerry,uncle leo,327,28,2935
 kramer,mickey,249,26,2290
-kramer,morty,314,29,2950
+kramer,morty,300,28,2844
 kramer,mr. lippman,70,5,648
 kramer,mr. steinbrenner,4,1,64
 kramer,newman,892,103,8577

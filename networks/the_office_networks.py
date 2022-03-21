@@ -71,24 +71,18 @@ for top_character in top_characters:
 
 # the office by episodes
 net_episodes = get_episode_networks(f"../data/{show_name}/")
-episode_dict = get_episode_dict("../data/the_office/the_office_lines_v6.csv")
+episode_dict = get_episode_dict(f"../data/{show_name}/the_office_lines_v6.csv")
 
-episode_stats = get_network_stats_by_episode(net_episodes, episode_dict)
+episode_stats = get_network_stats_by_episode(net_episodes, episode_dict, show_name)
 
 # add episode rating and number of votes
-ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
-ratings = ratings[ratings.originalTitle == show_name]
-avg_rating = ratings["averageRating"].tolist()
-episode_stats["averageRating"] = avg_rating
-episode_stats["numVotes"] = ratings["numVotes"].tolist()
-episode_stats.plot(kind="scatter", x="averageRating", y="numVotes")
-
-episode_stats.plot(kind="scatter", x="averageRating", y="assortativity")
+episode_stats.plot(kind="scatter", x="avg_rating", y="num_votes")
+episode_stats.plot(kind="scatter", x="avg_rating", y="assortativity")
 
 plot_corr_mat(episode_stats)
 
-episode_stats["averageRating"].plot(kind="hist")
-episode_stats["numVotes"].plot(kind="hist")
+episode_stats["avg_rating"].plot(kind="hist")
+episode_stats["num_votes"].plot(kind="hist")
 
 # save networks of all episodes
 plt.ioff()

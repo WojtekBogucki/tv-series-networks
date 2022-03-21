@@ -48,19 +48,19 @@ george,mr. steinbrenner,46,7,698
 george,newman,25,2,350
 george,wyck,64,7,651
 hal,kramer,26,3,210
-helen,jerry,79,12,656
-helen,kramer,31,4,310
+helen,jerry,69,12,624
+helen,kramer,18,3,213
 helen,morty,66,15,562
 izzy sr.,jerry,66,8,480
 izzy sr.,morty,22,4,204
 jenna,jerry,64,12,538
 jenna,kramer,3,1,42
 jerry,kevin,18,3,143
-jerry,kramer,1402,147,13305
+jerry,kramer,1399,147,13279
 jerry,kurt,2,1,17
 jerry,lanette,71,8,414
 jerry,mickey,30,3,264
-jerry,morty,103,15,744
+jerry,morty,93,15,712
 jerry,mr. steinbrenner,21,2,210
 jerry,newman,147,14,1439
 jerry,peterman,5,1,84
@@ -71,7 +71,7 @@ kevin,newman,3,1,9
 kramer,kurt,3,1,18
 kramer,lanette,18,2,135
 kramer,mickey,39,4,352
-kramer,morty,35,5,297
+kramer,morty,21,4,191
 kramer,newman,103,9,950
 kramer,peterman,26,3,280
 kramer,seth,5,1,49

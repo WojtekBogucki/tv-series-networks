@@ -16,8 +16,8 @@ elaine,george,838,87,7670
 elaine,glenn,53,7,449
 elaine,helen,7,1,66
 elaine,hoyt,12,2,74
-elaine,jerry,1404,146,12092
-elaine,kramer,596,71,5778
+elaine,jerry,1404,147,12092
+elaine,kramer,588,71,5721
 elaine,kruger,5,2,40
 elaine,newman,44,4,608
 elaine,nina,42,6,352
@@ -56,7 +56,7 @@ helen,morty,70,9,612
 helen,newman,6,1,39
 hoyt,jerry,35,4,375
 hoyt,peterman,14,1,88
-jerry,kramer,1569,171,15487
+jerry,kramer,1561,171,15415
 jerry,kruger,11,3,83
 jerry,lisi,50,5,376
 jerry,morty,95,10,822

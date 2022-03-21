@@ -121,10 +121,12 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, wei
     return stats
 
 
-def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, weight: str = "line_count"):
+def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, show_name: str, weight: str = "line_count"):
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_connected_components", "number_of_cliques", "clique_number"]
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes"]
+    ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
+    ratings = ratings[ratings.originalTitle == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_episodes],
                          [nx.number_of_edges(net) for net in net_episodes],
                          [nx.density(net) for net in net_episodes],
@@ -135,7 +137,9 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dic
                          [nx.transitivity(net) for net in net_episodes],
                          [nx.number_connected_components(net) for net in net_episodes],
                          [nx.graph_number_of_cliques(net) for net in net_episodes],
-                         [nx.graph_clique_number(net) for net in net_episodes]
+                         [nx.graph_clique_number(net) for net in net_episodes],
+                         ratings["averageRating"].tolist(),
+                         ratings["numVotes"].tolist()
                          ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats
@@ -237,6 +241,7 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
 def plot_corr_mat(df: pd.DataFrame) -> None:
     cmap = sns.diverging_palette(230, 20, as_cmap=True)
     df_corr = df.corr()
+    plt.figure(figsize=(10, 10))
     sns.heatmap(df_corr,
                 xticklabels=df_corr.columns.values,
                 yticklabels=df_corr.columns.values,

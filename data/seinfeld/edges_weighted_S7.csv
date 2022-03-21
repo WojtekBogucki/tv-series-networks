@@ -1,7 +1,8 @@
 speaker1,speaker2,line_count,scene_count,word_count
-bob,elaine,9,1,110
-bob,jerry,12,1,125
+bob,elaine,16,3,165
+bob,jerry,11,2,48
 bob,kramer,23,4,287
+bob,peterman,9,1,82
 craig,elaine,62,5,411
 craig,jerry,35,3,273
 deena,george,72,10,718

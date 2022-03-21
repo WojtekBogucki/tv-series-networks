@@ -24,26 +24,31 @@ ratings["episodeNumber"] = ratings.episodeNumber.astype("int")
 ratings["seasonNumber"] = ratings.seasonNumber.astype("int")
 ratings = ratings.sort_values(["originalTitle", "seasonNumber", "episodeNumber"])
 
-office_s6_e4 = ratings[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==4)]
-office_s6_e5 = ratings[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==5)]
-s6e4_votes = office_s6_e4.numVotes.values
-s6e5_votes = office_s6_e5.numVotes.values
-new_avg_rating = np.round((office_s6_e4.averageRating.values*s6e4_votes + office_s6_e5.averageRating.values*s6e5_votes)/(s6e4_votes + s6e5_votes), 1)[0]
-ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==4), "averageRating"] = new_avg_rating
-ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==4), "numVotes"] = max(s6e4_votes, s6e5_votes)[0]
-ratings.drop(office_s6_e5.index, inplace=True)
+def merge_episodes(ratings, title, season, episodes):
+    ep1_mask = (ratings.originalTitle == title) & (ratings.seasonNumber == season) & (ratings.episodeNumber == episodes[0])
+    ep2_mask = (ratings.originalTitle == title) & (ratings.seasonNumber == season) & (ratings.episodeNumber == episodes[1])
+    ep1 = ratings[ep1_mask]
+    ep2 = ratings[ep2_mask]
+    ep1_votes = ep1.numVotes.values
+    ep2_votes = ep2.numVotes.values
+    new_avg_rating = np.round(
+        (ep1.averageRating.values * ep1_votes + ep2.averageRating.values * ep2_votes) / (ep1_votes + ep2_votes), 1)[0]
+    ratings.loc[ep1_mask, "averageRating"] = new_avg_rating
+    ratings.loc[ep1_mask, "numVotes"] = max(ep1_votes, ep2_votes)[0]
+    ratings = ratings.drop(ep2.index)
+    return ratings
 
-office_s6_e17 = ratings[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==17)]
-office_s6_e18 = ratings[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==18)]
-s6e17_votes = office_s6_e17.numVotes.values
-s6e18_votes = office_s6_e18.numVotes.values
-new_avg_rating = np.round((office_s6_e17.averageRating.values*s6e17_votes + office_s6_e18.averageRating.values*s6e18_votes)/(s6e17_votes + s6e18_votes), 1)[0]
-ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==17), "averageRating"] = new_avg_rating
-ratings.loc[(ratings.originalTitle=="The Office") & (ratings.seasonNumber==6) & (ratings.episodeNumber==17), "numVotes"] = max(s6e17_votes, s6e18_votes)[0]
-ratings.drop(office_s6_e18.index, inplace=True)
 
 ratings.loc[ratings.originalTitle=="The Big Bang Theory", "originalTitle"] = "tbbt"
 ratings["originalTitle"] = ratings.originalTitle.apply(lambda x: x.lower().replace(" ", "_"))
+
+ratings = merge_episodes(ratings, "the_office", 6, [4, 5])
+ratings = merge_episodes(ratings, "the_office", 6, [17, 18])
+ratings = merge_episodes(ratings, "seinfeld", 4, [1, 2])
+
+# drop recap episodes
+ratings.drop(ratings[(ratings.originalTitle=="seinfeld") & (ratings.seasonNumber==9) & (ratings.episodeNumber==21)].index, inplace=True)
+ratings.drop(ratings[(ratings.originalTitle=="seinfeld") & (ratings.seasonNumber==6) & (ratings.episodeNumber==14)].index, inplace=True)
 
 ratings.to_csv("../data/imdb/episode_ratings.csv", index=False, encoding="utf-8")
 
