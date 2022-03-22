@@ -37,22 +37,14 @@ draw_interaction_network_communities(tbbt_net_seasons[0], "line_count", method="
 draw_interaction_network_communities(tbbt_net_seasons[1], "line_count", method="GM")
 
 # by episodes
+show_name = "tbbt"
 tbbt_net_episodes = get_episode_networks("../data/tbbt/")
 
-tbbt_raw = pd.read_csv("../data/tbbt/tbbt_lines_v2.csv")
-seasons = tbbt_raw.season.unique()
-i = 0
-episode_dict = {}
-for season in seasons:
-    tbbt_raw_season = tbbt_raw[tbbt_raw.season == season]
-    episodes = tbbt_raw_season.episode.unique()
-    for episode in episodes:
-        episode_dict["s{0:02d}e{1:02d}".format(season, episode)] = i
-        i += 1
+episode_dict = get_episode_dict("../data/tbbt/tbbt_lines_v2.csv")
+episode_stats = get_network_stats_by_episode(tbbt_net_episodes, episode_dict, show_name)
 
 draw_interaction_network_communities(tbbt_net_episodes[episode_dict["s09e09"]], "scene_count", method="ML")
 
-episode_stats = get_network_stats_by_episode(tbbt_net_episodes, episode_dict)
 episode_stats.plot(kind="scatter", x="transitivity", y="assortativity")
 # save networks of all episodes
 plt.ioff()

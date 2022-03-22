@@ -135,7 +135,8 @@ tbbt_df.speaker.nunique()
 
 tbbt_df.to_csv("../data/tbbt/tbbt_lines_v2.csv", index=False, encoding="utf-8")
 
-
+tbbt_df = pd.read_csv("../data/tbbt/tbbt_lines_v2.csv")
+tbbt_df.groupby(["season", "episode", "title"]).count()
 ################
 tbbt_df.head()
 print("Shape: ", tbbt_df.shape)

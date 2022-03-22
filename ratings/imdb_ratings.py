@@ -50,6 +50,11 @@ ratings = merge_episodes(ratings, "seinfeld", 4, [1, 2])
 ratings.drop(ratings[(ratings.originalTitle=="seinfeld") & (ratings.seasonNumber==9) & (ratings.episodeNumber==21)].index, inplace=True)
 ratings.drop(ratings[(ratings.originalTitle=="seinfeld") & (ratings.seasonNumber==6) & (ratings.episodeNumber==14)].index, inplace=True)
 
+# drop season 11 and 12 for tbbt
+ratings.drop(ratings[(ratings.originalTitle=="tbbt") & ((ratings.seasonNumber==11) | (ratings.seasonNumber==12))].index, inplace=True)
+# drop unaired pilot of tbbt
+ratings.drop(ratings[(ratings.originalTitle=="tbbt") & (ratings.seasonNumber==1) & (ratings.episodeNumber==0)].index, inplace=True)
+
 ratings.to_csv("../data/imdb/episode_ratings.csv", index=False, encoding="utf-8")
 
 ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
