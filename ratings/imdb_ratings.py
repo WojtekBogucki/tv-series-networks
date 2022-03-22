@@ -45,6 +45,14 @@ ratings["originalTitle"] = ratings.originalTitle.apply(lambda x: x.lower().repla
 ratings = merge_episodes(ratings, "the_office", 6, [4, 5])
 ratings = merge_episodes(ratings, "the_office", 6, [17, 18])
 ratings = merge_episodes(ratings, "seinfeld", 4, [1, 2])
+ratings = merge_episodes(ratings, "friends", 2, [12, 13])
+ratings = merge_episodes(ratings, "friends", 4, [23, 24])
+ratings = merge_episodes(ratings, "friends", 5, [23, 24])
+ratings = merge_episodes(ratings, "friends", 6, [15, 16])
+ratings = merge_episodes(ratings, "friends", 6, [24, 25])
+ratings = merge_episodes(ratings, "friends", 7, [23, 24])
+ratings = merge_episodes(ratings, "friends", 8, [23, 24])
+ratings = merge_episodes(ratings, "friends", 9, [23, 24])
 
 # drop recap episodes
 ratings.drop(ratings[(ratings.originalTitle=="seinfeld") & (ratings.seasonNumber==9) & (ratings.episodeNumber==21)].index, inplace=True)

@@ -115,6 +115,7 @@ friends_df.to_csv("../data/friends/friends_lines_v2.csv", index=False, encoding=
 
 friends_df = pd.read_csv("../data/friends/friends_lines_v2.csv")
 friends_df.groupby("scene").agg(speakers=("speaker",lambda x: x.tolist()))
+friends_df.groupby(["season", "episode", "title"]).count()
 
 ######
 friends_df.head()
