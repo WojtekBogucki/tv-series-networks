@@ -1,0 +1,875 @@
+season,episode,title,viewership,show
+1,1,Pilot,11.2,the_office
+1,2,Diversity Day,6.0,the_office
+1,3,Health Care,5.8,the_office
+1,4,The Alliance,5.4,the_office
+1,5,Basketball,5.0,the_office
+1,6,Hot Girl,4.8,the_office
+2,1,The Dundies,9.0,the_office
+2,2,Sexual Harassment,7.13,the_office
+2,3,Office Olympics,8.3,the_office
+2,4,The Fire,7.6,the_office
+2,5,Halloween,8.0,the_office
+2,6,The Fight,7.9,the_office
+2,7,The Client,7.5,the_office
+2,8,Performance Review,8.0,the_office
+2,9,E-Mail Surveillance,8.1,the_office
+2,10,Christmas Party,9.7,the_office
+2,11,Booze Cruise,8.7,the_office
+2,12,The Injury,10.3,the_office
+2,13,The Secret,8.7,the_office
+2,14,The Carpet,8.6,the_office
+2,15,Boys and Girls,5.42,the_office
+2,16,Valentine's Day,8.95,the_office
+2,17,Dwight's Speech,8.4,the_office
+2,18,Take Your Daughter to Work Day,8.8,the_office
+2,19,Michael's Birthday,7.8,the_office
+2,20,Drug Testing,7.8,the_office
+2,21,Conflict Resolution,7.4,the_office
+2,22,Casino Night,7.6,the_office
+3,1,Gay Witch Hunt,9.11,the_office
+3,2,The Convention,7.78,the_office
+3,3,The Coup,8.89,the_office
+3,4,Grief Counseling,8.83,the_office
+3,5,Initiation,8.46,the_office
+3,6,Diwali,8.81,the_office
+3,7,Branch Closing,8.05,the_office
+3,8,The Merger,8.63,the_office
+3,9,The Convict,9.07,the_office
+3,10,A Benihana Christmas,8.44,the_office
+3,11,Back from Vacation,8.8,the_office
+3,12,Traveling Salesmen,10.12,the_office
+3,13,The Return,10.2,the_office
+3,14,Ben Franklin,10.11,the_office
+3,15,Phyllis' Wedding,8.84,the_office
+3,16,Business School,8.84,the_office
+3,17,Cocktails,8.3,the_office
+3,18,The Negotiation,6.74,the_office
+3,19,Safety Training,7.71,the_office
+3,20,Product Recall,7.56,the_office
+3,21,Women's Appreciation,7.0,the_office
+3,22,Beach Games,7.2,the_office
+3,23,The Job,7.88,the_office
+4,1,Fun Run,9.7,the_office
+4,2,Dunder Mifflin Infinity,8.49,the_office
+4,3,Launch Party,8.91,the_office
+4,4,Money,8.5,the_office
+4,5,Local Ad,8.98,the_office
+4,6,Branch Wars,8.39,the_office
+4,7,Survivor Man,8.29,the_office
+4,8,The Deposition,8.86,the_office
+4,9,Dinner Party,9.22,the_office
+4,10,Chair Model,9.81,the_office
+4,11,Night Out,7.56,the_office
+4,12,Did I Stutter?,7.67,the_office
+4,13,Job Fair,7.22,the_office
+4,14,"Goodbye, Toby",8.07,the_office
+5,1,Weight Loss,9.2,the_office
+5,2,Business Ethics,8.99,the_office
+5,3,Baby Shower,8.07,the_office
+5,4,Crime Aid,7.74,the_office
+5,5,Employee Transfer,9.32,the_office
+5,6,Customer Survey,8.35,the_office
+5,7,Business Trip,8.18,the_office
+5,8,Frame Toby,8.4,the_office
+5,9,The Surplus,8.33,the_office
+5,10,Moroccan Christmas,8.79,the_office
+5,11,The Duel,8.5,the_office
+5,12,Prince Family Paper,8.74,the_office
+5,13,Stress Relief,22.91,the_office
+5,14,Lecture Circuit: Part 1,8.39,the_office
+5,15,Lecture Circuit: Part 2,8.89,the_office
+5,16,Blood Drive,8.63,the_office
+5,17,Golden Ticket,7.51,the_office
+5,18,New Boss,7.95,the_office
+5,19,Two Weeks,8.45,the_office
+5,20,Dream Team,7.2,the_office
+5,21,Michael Scott Paper Company,7.94,the_office
+5,22,Heavy Competition,8.24,the_office
+5,23,Broke,7.21,the_office
+5,24,Casual Friday,7.31,the_office
+5,25,Cafe Disco,7.71,the_office
+5,26,Company Picnic,6.72,the_office
+6,1,Gossip,8.2,the_office
+6,2,The Meeting,7.33,the_office
+6,3,The Promotion,7.28,the_office
+6,4,Niagara: Part 1,9.42,the_office
+6,5,Niagara: Part 2,9.42,the_office
+6,6,Mafia,8.1,the_office
+6,7,The Lover,8.52,the_office
+6,8,Koi Pond,8.2,the_office
+6,9,Double Date,7.94,the_office
+6,10,Murder,7.76,the_office
+6,11,Shareholder Meeting,7.43,the_office
+6,12,Scott's Tots,8.1,the_office
+6,13,Secret Santa,8.51,the_office
+6,14,The Banker,7.29,the_office
+6,15,Sabre,7.36,the_office
+6,16,Manager and Salesman,7.4,the_office
+6,17,The Delivery: Part 1,9.0,the_office
+6,18,The Delivery: Part 2,9.0,the_office
+6,19,St. Patrick's Day,7.51,the_office
+6,20,New Leads,7.63,the_office
+6,21,Happy Hour,7.17,the_office
+6,22,Secretary's Day,6.3,the_office
+6,23,Body Language,7.01,the_office
+6,24,The Cover-Up,6.84,the_office
+6,25,The Chump,6.6,the_office
+6,26,Whistleblower,6.6,the_office
+7,1,Nepotism,8.4,the_office
+7,2,Counseling,7.36,the_office
+7,3,Andy's Play,6.95,the_office
+7,4,Sex Ed,7.36,the_office
+7,5,The Sting,6.87,the_office
+7,6,Costume Contest,8.07,the_office
+7,7,Christening,7.65,the_office
+7,8,Viewing Party,7.15,the_office
+7,9,WUPHF.com,7.28,the_office
+7,10,China,7.31,the_office
+7,11,Classy Christmas,7.18,the_office
+7,12,Ultimatum,8.26,the_office
+7,13,The Seminar,7.93,the_office
+7,14,The Search,7.29,the_office
+7,15,PDA,6.9,the_office
+7,16,Threat Level Midnight,6.41,the_office
+7,17,Todd Packer,6.12,the_office
+7,18,Garage Sale,7.07,the_office
+7,19,Training Day,7.87,the_office
+7,20,Michael's Last Dundies,6.85,the_office
+7,21,"Goodbye, Michael",8.42,the_office
+7,22,The Inner Circle,6.9,the_office
+7,23,"Dwight K. Schrute, (Acting) Manager",6.45,the_office
+7,24,Search Committee,7.29,the_office
+8,1,The List,7.64,the_office
+8,2,The Incentive,6.7,the_office
+8,3,Lotto,5.82,the_office
+8,4,Garden Party,6.08,the_office
+8,5,Spooked,5.53,the_office
+8,6,Doomsday,6.15,the_office
+8,7,Pam's Replacement,5.96,the_office
+8,8,Gettysburg,5.5,the_office
+8,9,Mrs. California,5.71,the_office
+8,10,Christmas Wishes,5.79,the_office
+8,11,Trivia,5.9,the_office
+8,12,Pool Party,6.02,the_office
+8,13,Jury Duty,5.31,the_office
+8,14,Special Project,5.19,the_office
+8,15,Tallahassee,4.38,the_office
+8,16,After Hours,5.02,the_office
+8,17,Test the Store,4.95,the_office
+8,18,Last Day in Florida,4.89,the_office
+8,19,Get the Girl,4.87,the_office
+8,20,Welcome Party,4.39,the_office
+8,21,Angry Andy,4.35,the_office
+8,22,Fundraiser,4.17,the_office
+8,23,Turf War,4.44,the_office
+8,24,Free Family Portrait Studio,4.49,the_office
+9,1,New Guys,4.28,the_office
+9,2,Roy's Wedding,4.13,the_office
+9,3,Andy's Ancestry,4.14,the_office
+9,4,Work Bus,4.28,the_office
+9,5,Here Comes Treble,4.0,the_office
+9,6,The Boat,4.83,the_office
+9,7,The Whale,4.16,the_office
+9,8,The Target,3.88,the_office
+9,9,Dwight Christmas,4.16,the_office
+9,10,Lice,4.54,the_office
+9,11,Suit Warehouse,4.15,the_office
+9,12,Customer Loyalty,4.19,the_office
+9,13,Junior Salesman,4.45,the_office
+9,14,Vandalism,3.97,the_office
+9,15,Couples Discount,4.15,the_office
+9,16,Moving On,4.06,the_office
+9,17,The Farm,3.54,the_office
+9,18,Promos,3.44,the_office
+9,19,Stairmageddon,3.83,the_office
+9,20,Paper Airplane,3.25,the_office
+9,21,Livin' the Dream,3.51,the_office
+9,22,A.A.R.M.,4.56,the_office
+9,23,Finale,5.69,the_office
+1,1,"Good News, Bad News",15.4,seinfeld
+1,2,The Stakeout,22.5,seinfeld
+1,3,The Robbery,19.7,seinfeld
+1,4,Male Unbonding,19.1,seinfeld
+1,5,The Stock Tip,19.4,seinfeld
+2,1,The Ex-Girlfriend,15.6,seinfeld
+2,2,The Pony Remark,15.2,seinfeld
+2,3,The Jacket,14.8,seinfeld
+2,4,The Phone Message,13.6,seinfeld
+2,5,The Apartment,24.7,seinfeld
+2,6,The Statue,23.3,seinfeld
+2,7,The Revenge,19.6,seinfeld
+2,8,The Heart Attack,20.6,seinfeld
+2,9,The Deal,22.9,seinfeld
+2,10,The Baby Shower,17.2,seinfeld
+2,11,The Chinese Restaurant,16.8,seinfeld
+2,12,The Busboy,12.5,seinfeld
+3,1,The Note,21.7,seinfeld
+3,2,The Truth,16.7,seinfeld
+3,3,The Pen,15.1,seinfeld
+3,4,The Dog,17.2,seinfeld
+3,5,The Library,16.4,seinfeld
+3,6,The Parking Garage,17.0,seinfeld
+3,7,The Cafe,16.4,seinfeld
+3,8,The Tape,15.8,seinfeld
+3,9,The Nose Job,16.3,seinfeld
+3,10,The Stranded,18.6,seinfeld
+3,11,The Alternate Side,18.0,seinfeld
+3,12,The Red Dot,17.9,seinfeld
+3,13,The Subway,18.7,seinfeld
+3,14,The Pez Dispenser,19.2,seinfeld
+3,15,The Suicide,16.9,seinfeld
+3,16,The Fix Up,18.5,seinfeld
+3,17,The Boyfriend,17.0,seinfeld
+3,18,The Boyfriend,17.0,seinfeld
+3,19,The Limo,19.5,seinfeld
+3,20,The Good Samaritan,16.1,seinfeld
+3,21,The Letter,22.3,seinfeld
+3,22,The Parking Space,17.8,seinfeld
+3,23,The Keys,16.4,seinfeld
+4,1,The Trip: Part 1,16.3,seinfeld
+4,2,The Trip: Part 2,15.1,seinfeld
+4,3,The Pitch,17.6,seinfeld
+4,4,The Ticket,17.6,seinfeld
+4,5,The Wallet,17.6,seinfeld
+4,6,The Watch,15.2,seinfeld
+4,7,The Bubble Boy,17.1,seinfeld
+4,8,The Cheever Letters,15.1,seinfeld
+4,9,The Opera,16.7,seinfeld
+4,10,The Virgin,16.2,seinfeld
+4,11,The Contest,18.5,seinfeld
+4,12,The Airport,14.5,seinfeld
+4,13,The Pick,16.2,seinfeld
+4,14,The Movie,17.6,seinfeld
+4,15,The Visa,11.5,seinfeld
+4,16,The Shoes,26.9,seinfeld
+4,17,The Outing,28.0,seinfeld
+4,18,The Old Man,22.7,seinfeld
+4,19,The Implant,27.4,seinfeld
+4,20,The Junior Mint,26.4,seinfeld
+4,21,The Smelly Car,25.0,seinfeld
+4,22,The Handicap Spot,27.6,seinfeld
+4,23,The Pilot,32.8,seinfeld
+4,24,The Pilot,32.8,seinfeld
+5,1,The Mango,28.2,seinfeld
+5,2,The Puffy Shirt,29.5,seinfeld
+5,3,The Glasses,28.7,seinfeld
+5,4,The Sniffing Accountant,28.4,seinfeld
+5,5,The Bris,28.7,seinfeld
+5,6,The Lip Reader,31.0,seinfeld
+5,7,The Non-Fat Yogurt,31.1,seinfeld
+5,8,The Barber,29.7,seinfeld
+5,9,The Masseuse,27.7,seinfeld
+5,10,The Cigar Store Indian,29.6,seinfeld
+5,11,The Conversion,28.3,seinfeld
+5,12,The Stall,35.0,seinfeld
+5,13,The Dinner Party,33.0,seinfeld
+5,14,The Marine Biologist,35.0,seinfeld
+5,15,The Pie,,seinfeld
+5,16,The Stand-In,25.4,seinfeld
+5,17,The Wife,30.7,seinfeld
+5,18,The Raincoats,29.6,seinfeld
+5,19,The Raincoats,29.6,seinfeld
+5,20,The Fire,27.6,seinfeld
+5,21,The Hamptons,24.5,seinfeld
+5,22,The Opposite,30.1,seinfeld
+6,1,The Chaperone,32.8,seinfeld
+6,2,The Big Salad,32.4,seinfeld
+6,3,The Pledge Drive,29.8,seinfeld
+6,4,The Chinese Woman,29.2,seinfeld
+6,5,The Couch,28.0,seinfeld
+6,6,The Gymnast,30.6,seinfeld
+6,7,The Soup,29.6,seinfeld
+6,8,The Mom and Pop Store,32.4,seinfeld
+6,9,The Secretary,29.7,seinfeld
+6,10,The Race,26.8,seinfeld
+6,11,The Switch,36.6,seinfeld
+6,12,The Label Maker,36.2,seinfeld
+6,13,The Scofflaw,33.4,seinfeld
+6,14,Highlights of a Hundred,34.0,seinfeld
+6,15,Highlights of a Hundred,34.0,seinfeld
+6,16,The Beard,32.9,seinfeld
+6,17,The Kiss Hello,33.4,seinfeld
+6,18,The Doorman,33.4,seinfeld
+6,19,The Jimmy,31.1,seinfeld
+6,20,The Doodle,30.7,seinfeld
+6,21,The Fusilli Jerry,28.2,seinfeld
+6,22,The Diplomat's Club,28.9,seinfeld
+6,23,The Face Painter,26.5,seinfeld
+6,24,The Understudy,29.8,seinfeld
+7,1,The Engagement,37.6,seinfeld
+7,2,The Postponement,34.5,seinfeld
+7,3,The Maestro,34.6,seinfeld
+7,4,The Wink,32.3,seinfeld
+7,5,The Hot Tub,32.6,seinfeld
+7,6,The Soup Nazi,33.1,seinfeld
+7,7,The Secret Code,33.9,seinfeld
+7,8,The Pool Guy,33.4,seinfeld
+7,9,The Sponge,32.3,seinfeld
+7,10,The Gum,31.4,seinfeld
+7,11,The Rye,35.1,seinfeld
+7,12,The Caddy,32.0,seinfeld
+7,13,The Seven,37.1,seinfeld
+7,14,The Cadillac,35.9,seinfeld
+7,15,The Cadillac,35.9,seinfeld
+7,16,The Shower Head,32.3,seinfeld
+7,17,The Doll,32.9,seinfeld
+7,18,The Friars Club,32.7,seinfeld
+7,19,The Wig Master,30.5,seinfeld
+7,20,The Calzone,28.5,seinfeld
+7,21,The Bottle Deposit,32.4,seinfeld
+7,22,The Bottle Deposit,32.4,seinfeld
+7,23,The Wait Out,29.9,seinfeld
+7,24,The Invitations,33.2,seinfeld
+8,1,The Foundation,33.7,seinfeld
+8,2,The Soul Mate,33.2,seinfeld
+8,3,The Bizarro Jerry,31.6,seinfeld
+8,4,The Little Kicks,32.2,seinfeld
+8,5,The Package,30.1,seinfeld
+8,6,The Fatigues,30.3,seinfeld
+8,7,The Checks,32.0,seinfeld
+8,8,The Chicken Roaster,34.1,seinfeld
+8,9,The Abstinence,34.4,seinfeld
+8,10,The Andrea Doria,29.6,seinfeld
+8,11,The Little Jerry,34.5,seinfeld
+8,12,The Money,37.3,seinfeld
+8,13,The Comeback,33.5,seinfeld
+8,14,The Van Buren Boys,33.8,seinfeld
+8,15,The Susie,32.0,seinfeld
+8,16,The Pothole,33.8,seinfeld
+8,17,The English Patient,31.3,seinfeld
+8,18,The Nap,32.2,seinfeld
+8,19,The Yada Yada,31.6,seinfeld
+8,20,The Millennium,29.3,seinfeld
+8,21,The Muffin Tops,31.1,seinfeld
+8,22,The Summer of George,29.8,seinfeld
+9,1,The Butter Shave,37.8,seinfeld
+9,2,The Voice,30.9,seinfeld
+9,3,The Serenity Now,30.2,seinfeld
+9,4,The Blood,31.4,seinfeld
+9,5,The Junk Mail,30.2,seinfeld
+9,6,The Merv Griffin Show,31.6,seinfeld
+9,7,The Slicer,32.8,seinfeld
+9,8,The Betrayal,34.0,seinfeld
+9,9,The Apology,30.5,seinfeld
+9,10,The Strike,30.8,seinfeld
+9,11,The Dealership,32.9,seinfeld
+9,12,The Reverse Peephole,33.5,seinfeld
+9,13,The Cartoon,33.2,seinfeld
+9,14,The Strongbox,31.6,seinfeld
+9,15,The Wizard,30.5,seinfeld
+9,16,The Burning,30.9,seinfeld
+9,17,The Bookstore,29.6,seinfeld
+9,18,The Frogger,30.7,seinfeld
+9,19,The Maid,33.3,seinfeld
+9,20,The Puerto Rican Day,38.8,seinfeld
+9,21,The Chronicle,58.5,seinfeld
+9,22,The Chronicle,58.5,seinfeld
+9,23,The Finale,76.3,seinfeld
+9,24,The Finale,76.3,seinfeld
+1,1,"""Pilot""",9.52,tbbt
+1,2,"""The Big Bran Hypothesis""",8.58,tbbt
+1,3,"""The Fuzzy Boots Corollary""",8.36,tbbt
+1,4,"""The Luminous Fish Effect""",8.15,tbbt
+1,5,"""The Hamburger Postulate""",8.81,tbbt
+1,6,"""The Middle-earth Paradigm""",8.92,tbbt
+1,7,"""The Dumpling Paradox""",9.68,tbbt
+1,8,"""The Grasshopper Experiment""",9.32,tbbt
+1,9,"""The Cooper-Hofstadter Polarization""",9.11,tbbt
+1,10,"""The Loobenfeld Decay""",8.63,tbbt
+1,11,"""The Pancake Batter Anomaly""",8.68,tbbt
+1,12,"""The Jerusalem Duality""",7.69,tbbt
+1,13,"""The Bat Jar Conjecture""",7.51,tbbt
+1,14,"""The Nerdvana Annihilation""",8.07,tbbt
+1,15,"""The Shiksa Indeterminacy""[28]""The Pork Chop Indeterminacy""[29]",7.38,tbbt
+1,16,"""The Peanut Reaction""",7.79,tbbt
+1,17,"""The Tangerine Factor""",7.34,tbbt
+2,1,"""The Bad Fish Paradigm""",9.36,tbbt
+2,2,"""The Codpiece Topology""",8.76,tbbt
+2,3,"""The Barbarian Sublimation""",9.33,tbbt
+2,4,"""The Griffin Equivalency""",9.36,tbbt
+2,5,"""The Euclid Alternative""",9.28,tbbt
+2,6,"""The Cooper–Nowitzki Theorem""",9.67,tbbt
+2,7,"""The Panty Piñata Polarization""",10.0,tbbt
+2,8,"""The Lizard–Spock Expansion""",9.76,tbbt
+2,9,"""The White Asparagus Triangulation""",10.1,tbbt
+2,10,"""The Vartabedian Conundrum""",10.8,tbbt
+2,11,"""The Bath Item Gift Hypothesis""",11.4,tbbt
+2,12,"""The Killer Robot Instability""",11.8,tbbt
+2,13,"""The Friendship Algorithm""",11.1,tbbt
+2,14,"""The Financial Permeability""",10.8,tbbt
+2,15,"""The Maternal Capacitance""",13.1,tbbt
+2,16,"""The Cushion Saturation""",10.9,tbbt
+2,17,"""The Terminator Decoupling""",9.46,tbbt
+2,18,"""The Work Song Nanocluster""",9.76,tbbt
+2,19,"""The Dead Hooker Juxtaposition""",9.77,tbbt
+2,20,"""The Hofstadter Isotope""",10.1,tbbt
+2,21,"""The Vegas Renormalization""",9.31,tbbt
+2,22,"""The Classified Materials Turbulence""",9.25,tbbt
+2,23,"""The Monopolar Expedition""",9.81,tbbt
+3,1,"""The Electric Can Opener Fluctuation""",12.9,tbbt
+3,2,"""The Jiminy Conjecture""",13.2,tbbt
+3,3,"""The Gothowitz Deviation""",12.5,tbbt
+3,4,"""The Pirate Solution""",13.0,tbbt
+3,5,"""The Creepy Candy Coating Corollary""",13.4,tbbt
+3,6,"""The Cornhusker Vortex""",12.7,tbbt
+3,7,"""The Guitarist Amplification""",12.7,tbbt
+3,8,"""The Adhesive Duck Deficiency""",13.2,tbbt
+3,9,"""The Vengeance Formulation""",14.1,tbbt
+3,10,"""The Gorilla Experiment""",14.3,tbbt
+3,11,"""The Maternal Congruence""",15.5,tbbt
+3,12,"""The Psychic Vortex""",15.8,tbbt
+3,13,"""The Bozeman Reaction""",14.9,tbbt
+3,14,"""The Einstein Approximation""",15.5,tbbt
+3,15,"""The Large Hadron Collision""",16.2,tbbt
+3,16,"""The Excelsior Acquisition""",15.7,tbbt
+3,17,"""The Precious Fragmentation""",16.3,tbbt
+3,18,"""The Pants Alternative""",13.4,tbbt
+3,19,"""The Wheaton Recurrence""",13.3,tbbt
+3,20,"""The Spaghetti Catalyst""",11.6,tbbt
+3,21,"""The Plimpton Stimulation""",13.7,tbbt
+3,22,"""The Staircase Implementation""",15.0,tbbt
+3,23,"""The Lunar Excitation""",14.7,tbbt
+4,1,"""The Robotic Manipulation""",14.0,tbbt
+4,2,"""The Cruciferous Vegetable Amplification""",13.0,tbbt
+4,3,"""The Zazzy Substitution""",12.5,tbbt
+4,4,"""The Hot Troll Deviation""",12.5,tbbt
+4,5,"""The Desperation Emanation""",13.0,tbbt
+4,6,"""The Irish Pub Formulation""",13.0,tbbt
+4,7,"""The Apology Insufficiency""",14.0,tbbt
+4,8,"""The 21-Second Excitation""",13.1,tbbt
+4,9,"""The Boyfriend Complexity""",13.0,tbbt
+4,10,"""The Alien Parasite Hypothesis""",12.0,tbbt
+4,11,"""The Justice League Recombination""",13.2,tbbt
+4,12,"""The Bus Pants Utilization""",13.9,tbbt
+4,13,"""The Love Car Displacement""",13.6,tbbt
+4,14,"""The Thespian Catalyst""",13.8,tbbt
+4,15,"""The Benefactor Factor""",12.7,tbbt
+4,16,"""The Cohabitation Formulation""",12.4,tbbt
+4,17,"""The Toast Derivation""",12.3,tbbt
+4,18,"""The Prestidigitation Approximation""",12.0,tbbt
+4,19,"""The Zarnecki Incursion""",11.9,tbbt
+4,20,"""The Herb Garden Germination""",11.4,tbbt
+4,21,"""The Agreement Dissection""",10.7,tbbt
+4,22,"""The Wildebeest Implementation""",10.5,tbbt
+4,23,"""The Engagement Reaction""",10.7,tbbt
+4,24,"""The Roommate Transmogrification""",11.3,tbbt
+5,1,"""The Skank Reflex Analysis""",14.3,tbbt
+5,2,"""The Infestation Hypothesis""",14.9,tbbt
+5,3,"""The Pulled Groin Extrapolation""",14.7,tbbt
+5,4,"""The Wiggly Finger Catalyst""",13.9,tbbt
+5,5,"""The Russian Rocket Reaction""",13.5,tbbt
+5,6,"""The Rhinitis Revelation""",14.9,tbbt
+5,7,"""The Good Guy Fluctuation""",14.5,tbbt
+5,8,"""The Isolation Permutation""",15.9,tbbt
+5,9,"""The Ornithophobia Diffusion""",15.8,tbbt
+5,10,"""The Flaming Spittoon Acquisition""",15.0,tbbt
+5,11,"""The Speckerman Recurrence""",14.0,tbbt
+5,12,"""The Shiny Trinket Maneuver""",16.1,tbbt
+5,13,"""The Recombination Hypothesis""",15.8,tbbt
+5,14,"""The Beta Test Initiation""",16.1,tbbt
+5,15,"""The Friendship Contraction""",16.5,tbbt
+5,16,"""The Vacation Solution""",16.2,tbbt
+5,17,"""The Rothman Disintegration""",15.6,tbbt
+5,18,"""The Werewolf Transformation""",16.2,tbbt
+5,19,"""The Weekend Vortex""",15.0,tbbt
+5,20,"""The Transporter Malfunction""",13.9,tbbt
+5,21,"""The Hawking Excitation""",13.2,tbbt
+5,22,"""The Stag Convergence""",12.6,tbbt
+5,23,"""The Launch Acceleration""",13.9,tbbt
+5,24,"""The Countdown Reflection""",13.7,tbbt
+6,1,"""The Date Night Variable""",15.6,tbbt
+6,2,"""The Decoupling Fluctuation""",15.1,tbbt
+6,3,"""The Higgs Boson Observation""",14.2,tbbt
+6,4,"""The Re-Entry Minimization""",15.7,tbbt
+6,5,"""The Holographic Excitation""",15.8,tbbt
+6,6,"""The Extract Obliteration""",15.9,tbbt
+6,7,"""The Habitation Configuration""",16.6,tbbt
+6,8,"""The 43 Peculiarity""",17.6,tbbt
+6,9,"""The Parking Spot Escalation""",17.2,tbbt
+6,10,"""The Fish Guts Displacement""",16.9,tbbt
+6,11,"""The Santa Simulation""",16.7,tbbt
+6,12,"""The Egg Salad Equivalency""",19.2,tbbt
+6,13,"""The Bakersfield Expedition""",20.0,tbbt
+6,14,"""The Cooper/Kripke Inversion""",17.7,tbbt
+6,15,"""The Spoiler Alert Segmentation""",18.9,tbbt
+6,16,"""The Tangible Affection Proof""",17.8,tbbt
+6,17,"""The Monster Isolation""",17.6,tbbt
+6,18,"""The Contractual Obligation Implementation""",17.6,tbbt
+6,19,"""The Closet Reconfiguration""",15.9,tbbt
+6,20,"""The Tenure Turbulence""",17.2,tbbt
+6,21,"""The Closure Alternative""",15.0,tbbt
+6,22,"""The Proton Resurgence""",16.2,tbbt
+6,23,"""The Love Spell Potential""",16.3,tbbt
+6,24,"""The Bon Voyage Reaction""",15.4,tbbt
+7,1,"""The Hofstadter Insufficiency""",18.9,tbbt
+7,2,"""The Deception Verification""",20.4,tbbt
+7,3,"""The Scavenger Vortex""",18.2,tbbt
+7,4,"""The Raiders Minimization""",17.6,tbbt
+7,5,"""The Workplace Proximity""",17.8,tbbt
+7,6,"""The Romance Resonance""",16.9,tbbt
+7,7,"""The Proton Displacement""",16.8,tbbt
+7,8,"""The Itchy Brain Simulation""",18.3,tbbt
+7,9,"""The Thanksgiving Decoupling""",18.9,tbbt
+7,10,"""The Discovery Dissipation""",15.6,tbbt
+7,11,"""The Cooper Extraction""",17.6,tbbt
+7,12,"""The Hesitation Ramification""",19.2,tbbt
+7,13,"""The Occupation Recalibration""",20.3,tbbt
+7,14,"""The Convention Conundrum""",19.0,tbbt
+7,15,"""The Locomotive Manipulation""",17.5,tbbt
+7,16,"""The Table Polarization""",17.7,tbbt
+7,17,"""The Friendship Turbulence""",18.0,tbbt
+7,18,"""The Mommy Observation""",17.3,tbbt
+7,19,"""The Indecision Amalgamation""",17.7,tbbt
+7,20,"""The Relationship Diremption""",16.4,tbbt
+7,21,"""The Anything Can Happen Recurrence""",16.4,tbbt
+7,22,"""The Proton Transmogrification""",16.0,tbbt
+7,23,"""The Gorilla Dissolution""",14.4,tbbt
+7,24,"""The Status Quo Combustion""",16.7,tbbt
+8,1,"""The Locomotion Interruption""",18.0,tbbt
+8,2,"""The Junior Professor Solution""",18.3,tbbt
+8,3,"""The First Pitch Insufficiency""",18.4,tbbt
+8,4,"""The Hook-Up Reverberation""",17.9,tbbt
+8,5,"""The Focus Attenuation""",17.6,tbbt
+8,6,"""The Expedition Approximation""",18.0,tbbt
+8,7,"""The Misinterpretation Agitation""",18.2,tbbt
+8,8,"""The Prom Equivalency""",18.5,tbbt
+8,9,"""The Septum Deviation""",16.9,tbbt
+8,10,"""The Champagne Reflection""",16.6,tbbt
+8,11,"""The Clean Room Infiltration""",18.4,tbbt
+8,12,"""The Space Probe Disintegration""",18.1,tbbt
+8,13,"""The Anxiety Optimization""",17.2,tbbt
+8,14,"""The Troll Manifestation""",17.0,tbbt
+8,15,"""The Comic Book Store Regeneration""",17.4,tbbt
+8,16,"""The Intimacy Acceleration""",16.6,tbbt
+8,17,"""The Colonization Application""",18.1,tbbt
+8,18,"""The Leftover Thermalization""",18.1,tbbt
+8,19,"""The Skywalker Incursion""",16.8,tbbt
+8,20,"""The Fortification Implementation""",16.7,tbbt
+8,21,"""The Communication Deterioration""",16.0,tbbt
+8,22,"""The Graduation Transmission""",16.6,tbbt
+8,23,"""The Maternal Combustion""",15.8,tbbt
+8,24,"""The Commitment Determination""",17.6,tbbt
+9,1,"""The Matrimonial Momentum""",18.2,tbbt
+9,2,"""The Separation Oscillation""",17.2,tbbt
+9,3,"""The Bachelor Party Corrosion""",17.4,tbbt
+9,4,"""The 2003 Approximation""",16.9,tbbt
+9,5,"""The Perspiration Implementation""",17.6,tbbt
+9,6,"""The Helium Insufficiency""",18.3,tbbt
+9,7,"""The Spock Resonance""",18.8,tbbt
+9,8,"""The Mystery Date Observation""",17.9,tbbt
+9,9,"""The Platonic Permutation""",18.1,tbbt
+9,10,"""The Earworm Reverberation""",19.2,tbbt
+9,11,"""The Opening Night Excitation""",18.2,tbbt
+9,12,"""The Sales Call Sublimation""",17.8,tbbt
+9,13,"""The Empathy Optimization""",16.7,tbbt
+9,14,"""The Meemaw Materialization""",17.2,tbbt
+9,15,"""The Valentino Submergence""",18.2,tbbt
+9,16,"""The Positive Negative Reaction""",19.0,tbbt
+9,17,"""The Celebration Experimentation""",18.9,tbbt
+9,18,"""The Application Deterioration""",18.6,tbbt
+9,19,"""The Solder Excursion Diversion""",17.2,tbbt
+9,20,"""The Big Bear Precipitation""",17.5,tbbt
+9,21,"""The Viewing Party Combustion""",17.1,tbbt
+9,22,"""The Fermentation Bifurcation""",16.1,tbbt
+9,23,"""The Line Substitution Solution""",15.2,tbbt
+9,24,"""The Convergence Convergence""",16.7,tbbt
+10,1,"""The Conjugal Conjecture""",18.8,tbbt
+10,2,"""The Military Miniaturization""",17.2,tbbt
+10,3,"""The Dependence Transcendence""",17.3,tbbt
+10,4,"""The Cohabitation Experimentation""",16.4,tbbt
+10,5,"""The Hot Tub Contamination""",18.2,tbbt
+10,6,"""The Fetal Kick Catalyst""",17.3,tbbt
+10,7,"""The Veracity Elasticity""",18.1,tbbt
+10,8,"""The Brain Bowl Incubation""",17.4,tbbt
+10,9,"""The Geology Elevation""",16.3,tbbt
+10,10,"""The Property Division Collision""",16.5,tbbt
+10,11,"""The Birthday Synchronicity""",16.9,tbbt
+10,12,"""The Holiday Summation""",17.0,tbbt
+10,13,"""The Romance Recalibration""",17.1,tbbt
+10,14,"""The Emotion Detection Automation""",16.6,tbbt
+10,15,"""The Locomotion Reverberation""",16.1,tbbt
+10,16,"""The Allowance Evaporation""",15.5,tbbt
+10,17,"""The Comic-Con Conundrum""",16.3,tbbt
+10,18,"""The Escape Hatch Identification""",17.0,tbbt
+10,19,"""The Collaboration Fluctuation""",15.7,tbbt
+10,20,"""The Recollection Dissipation""",15.5,tbbt
+10,21,"""The Separation Agitation""",16.0,tbbt
+10,22,"""The Cognition Regeneration""",14.5,tbbt
+10,23,"""The Gyroscopic Collapse""",15.3,tbbt
+10,24,"""The Long Distance Dissonance""",15.9,tbbt
+11,1,"""The Proposal Proposal""",17.6,tbbt
+11,2,"""The Retraction Reaction""",14.0,tbbt
+11,3,"""The Relaxation Integration""",13.1,tbbt
+11,4,"""The Explosion Implosion""",13.0,tbbt
+11,5,"""The Collaboration Contamination""",13.2,tbbt
+11,6,"""The Proton Regeneration""",14.1,tbbt
+11,7,"""The Geology Methodology""",13.8,tbbt
+11,8,"""The Tesla Recoil""",13.4,tbbt
+11,9,"""The Bitcoin Entanglement""",13.8,tbbt
+11,10,"""The Confidence Erosion""",14.4,tbbt
+11,11,"""The Celebration Reverberation""",13.7,tbbt
+11,12,"""The Matrimonial Metric""",16.1,tbbt
+11,13,"""The Solo Oscillation""",15.9,tbbt
+11,14,"""The Separation Triangulation""",14.9,tbbt
+11,15,"""The Novelization Correlation""",14.6,tbbt
+11,16,"""The Neonatal Nomenclature""",13.7,tbbt
+11,17,"""The Athenaeum Allocation""",13.8,tbbt
+11,18,"""The Gates Excitation""",13.2,tbbt
+11,19,"""The Tenant Disassociation""",13.0,tbbt
+11,20,"""The Reclusive Potential""",12.7,tbbt
+11,21,"""The Comet Polarization""",12.9,tbbt
+11,22,"""The Monetary Insufficiency""",11.7,tbbt
+11,23,"""The Sibling Realignment""",12.9,tbbt
+11,24,"""The Bow Tie Asymmetry""",15.5,tbbt
+12,1,"""The Conjugal Configuration""",12.9,tbbt
+12,2,"""The Wedding Gift Wormhole""",12.0,tbbt
+12,3,"""The Procreation Calculation""",12.2,tbbt
+12,4,"""The Tam Turbulence""",12.9,tbbt
+12,5,"""The Planetarium Collision""",12.2,tbbt
+12,6,"""The Imitation Perturbation""",12.9,tbbt
+12,7,"""The Grant Allocation Derivation""",12.6,tbbt
+12,8,"""The Consummation Deviation""",12.8,tbbt
+12,9,"""The Citation Negation""",12.5,tbbt
+12,10,"""The VCR Illumination""",12.5,tbbt
+12,11,"""The Paintball Scattering""",12.8,tbbt
+12,12,"""The Propagation Proposition""",13.5,tbbt
+12,13,"""The Confirmation Polarization""",13.3,tbbt
+12,14,"""The Meteorite Manifestation""",13.6,tbbt
+12,15,"""The Donation Oscillation""",13.9,tbbt
+12,16,"""The D&D Vortex""",13.4,tbbt
+12,17,"""The Conference Valuation""",12.9,tbbt
+12,18,"""The Laureate Accumulation""",12.2,tbbt
+12,19,"""The Inspiration Deprivation""",11.4,tbbt
+12,20,"""The Decision Reverberation""",11.8,tbbt
+12,21,"""The Plagiarism Schism""",12.4,tbbt
+12,22,"""The Maternal Conclusion""",12.5,tbbt
+12,23,"""The Change Constant""",18.5,tbbt
+12,24,"""The Stockholm Syndrome""",18.5,tbbt
+1,1,The Pilot,21.5,friends
+1,2,The One with the Sonogram at the End,20.2,friends
+1,3,The One with the Thumb,19.5,friends
+1,4,The One with George Stephanopoulos,19.7,friends
+1,5,The One with the East German Laundry Detergent,18.6,friends
+1,6,The One with the Butt,18.2,friends
+1,7,The One with the Blackout,23.5,friends
+1,8,The One Where Nana Dies Twice,21.1,friends
+1,9,The One Where Underdog Gets Away,23.1,friends
+1,10,The One with the Monkey,19.9,friends
+1,11,The One with Mrs. Bing,26.6,friends
+1,12,The One with the Dozen Lasagnas,24.0,friends
+1,13,The One with the Boobies,25.8,friends
+1,14,The One with the Candy Hearts,23.8,friends
+1,15,The One with the Stoned Guy,24.8,friends
+1,16,"The One with Two Parts, Part I",26.1,friends
+1,17,"The One with Two Parts, Part II",30.5,friends
+1,18,The One with All the Poker,30.4,friends
+1,19,The One Where the Monkey Gets Away,29.4,friends
+1,20,The One with the Evil Orthodontist,30.0,friends
+1,21,The One with Fake Monica,28.4,friends
+1,22,The One with the Ick Factor,29.9,friends
+1,23,The One with the Birth,28.7,friends
+1,24,The One Where Rachel Finds Out,31.3,friends
+2,1,The One with Ross's New Girlfriend,32.1,friends
+2,2,The One with the Breast Milk,29.8,friends
+2,3,The One Where Heckles Dies,30.2,friends
+2,4,The One with Phoebe's Husband,28.1,friends
+2,5,The One with Five Steaks and an Eggplant,28.3,friends
+2,6,The One with the Baby on the Bus,30.2,friends
+2,7,The One Where Ross Finds Out,30.5,friends
+2,8,The One with the List,32.9,friends
+2,9,The One with Phoebe's Dad,27.8,friends
+2,10,The One with Russ,32.2,friends
+2,11,The One with the Lesbian Wedding,31.6,friends
+2,12,The One After the Super Bowl,52.9,friends
+2,14,The One with the Prom Video,33.6,friends
+2,15,The One Where Ross and Rachel... You Know,32.9,friends
+2,16,The One Where Joey Moves Out,31.1,friends
+2,17,The One Where Eddie Moves In,30.2,friends
+2,18,The One Where Dr. Ramoray Dies,30.1,friends
+2,19,The One Where Eddie Won't Go,31.2,friends
+2,20,The One Where Old Yeller Dies,27.4,friends
+2,21,The One with the Bullies,24.7,friends
+2,22,The One with Two Parties,25.5,friends
+2,23,The One with the Chicken Pox,26.1,friends
+2,24,The One with Barry and Mindy's Wedding,29.0,friends
+3,1,The One with the Princess Leia Fantasy,26.8,friends
+3,2,The One Where No One's Ready,26.7,friends
+3,3,The One with the Jam,25.2,friends
+3,4,The One with the Metaphorical Tunnel,26.1,friends
+3,5,The One with Frank Jr.,23.3,friends
+3,6,The One with the Flashback,23.3,friends
+3,7,The One with the Racecar Bed,27.4,friends
+3,8,The One with the Giant Poking Device,28.7,friends
+3,9,The One with the Football,29.3,friends
+3,10,The One Where Rachel Quits,25.1,friends
+3,11,The One Where Chandler Can't Remember Which Sister,29.8,friends
+3,12,The One with All the Jealousy,29.6,friends
+3,13,The One Where Monica and Richard Are Just Friends,28.0,friends
+3,14,The One with Phoebe's Ex-Partner,28.9,friends
+3,15,The One Where Ross and Rachel Take a Break,27.3,friends
+3,16,The One the Morning After,28.3,friends
+3,17,The One Without the Ski Trip,25.8,friends
+3,18,The One with the Hypnosis Tape,28.1,friends
+3,19,The One with the Tiny T-Shirt,23.7,friends
+3,20,The One with the Dollhouse,24.4,friends
+3,21,The One with a Chick and a Duck,23.2,friends
+3,22,The One with the Screamer,22.6,friends
+3,23,The One with Ross's Thing,24.2,friends
+3,24,The One with the Ultimate Fighting Champion,23.1,friends
+3,25,The One at the Beach,28.8,friends
+4,1,The One with the Jellyfish,29.4,friends
+4,2,The One with the Cat,25.5,friends
+4,3,The One with the Cuffs,24.0,friends
+4,4,The One with the Ballroom Dancing,24.3,friends
+4,5,The One with Joey's New Girlfriend,24.4,friends
+4,6,The One with the Dirty Girl,25.7,friends
+4,7,The One Where Chandler Crosses the Line,26.4,friends
+4,8,The One with Chandler in a Box,26.8,friends
+4,9,The One Where They're Going to Party!,23.9,friends
+4,10,The One with the Girl from Poughkeepsie,23.2,friends
+4,11,The One with Phoebe's Uterus,23.7,friends
+4,12,The One with the Embryos,27.1,friends
+4,13,The One with Rachel's Crush,25.3,friends
+4,14,The One with Joey's Dirty Day,25.1,friends
+4,15,The One with All the Rugby,24.4,friends
+4,16,The One with the Fake Party,23.1,friends
+4,17,The One with the Free Porn,23.2,friends
+4,18,The One with Rachel's New Dress,21.7,friends
+4,19,The One with All the Haste,21.8,friends
+4,20,The One with All the Wedding Dresses,21.9,friends
+4,21,The One with the Invitation,21.5,friends
+4,22,The One with the Worst Best Man Ever,23.2,friends
+4,23,The One with Ross's Wedding,31.6,friends
+5,1,The One After Ross Says Rachel,31.1,friends
+5,2,The One with All the Kissing,25.4,friends
+5,3,The One Hundredth,26.8,friends
+5,4,The One Where Phoebe Hates PBS,24.1,friends
+5,5,The One with the Kips,25.9,friends
+5,6,The One with the Yeti,25.0,friends
+5,7,The One Where Ross Moves In,24.4,friends
+5,8,The One with All the Thanksgivings,23.9,friends
+5,9,The One with Ross's Sandwich,23.0,friends
+5,10,The One with the Inappropriate Sister,23.7,friends
+5,11,The One with All the Resolutions,27.0,friends
+5,12,The One with Chandler's Work Laugh,24.8,friends
+5,13,The One with Joey's Bag,24.9,friends
+5,14,The One Where Everybody Finds Out,27.7,friends
+5,15,The One with the Girl Who Hits Joey,29.3,friends
+5,16,The One with the Cop,26.0,friends
+5,17,The One with Rachel's Inadvertent Kiss,24.5,friends
+5,18,The One Where Rachel Smokes,21.9,friends
+5,19,The One Where Ross Can't Flirt,20.9,friends
+5,20,The One with the Ride Along,19.6,friends
+5,21,The One with the Ball,20.9,friends
+5,22,The One with Joey's Big Break,21.3,friends
+5,23,The One in Vegas,25.9,friends
+6,1,The One After Vegas,27.7,friends
+6,2,The One Where Ross Hugs Rachel,22.9,friends
+6,3,The One with Ross's Denial,21.6,friends
+6,4,The One Where Joey Loses His Insurance,21.1,friends
+6,5,The One with Joey's Porsche,22.4,friends
+6,6,The One on the Last Night,23.6,friends
+6,7,The One Where Phoebe Runs,22.7,friends
+6,8,The One with Ross's Teeth,22.1,friends
+6,9,The One Where Ross Got High,19.2,friends
+6,10,The One with the Routine,22.4,friends
+6,11,The One with the Apothecary Table,22.3,friends
+6,12,The One with the Joke,22.3,friends
+6,13,The One with Rachel's Sister,24.1,friends
+6,14,The One Where Chandler Can't Cry,23.8,friends
+6,15,The One That Could Have Been,20.7,friends
+6,17,The One with Unagi,22.1,friends
+6,18,The One Where Ross Dates a Student,20.5,friends
+6,19,The One with Joey's Fridge,21.5,friends
+6,20,The One with Mac and C.H.E.E.S.E.,18.8,friends
+6,21,The One Where Ross Meets Elizabeth's Dad,20.6,friends
+6,22,The One Where Paul's the Man,20.0,friends
+6,23,The One with the Ring,20.9,friends
+6,24,The One with the Proposal,30.7,friends
+7,1,The One with Monica's Thunder,25.54,friends
+7,2,The One with Rachel's Book,27.93,friends
+7,3,The One with Phoebe's Cookies,22.7,friends
+7,4,The One with Rachel's Assistant,22.66,friends
+7,5,The One with the Engagement Picture,24.43,friends
+7,6,The One with the Nap Partners,22.01,friends
+7,7,The One with Ross's Library Book,23.73,friends
+7,8,The One Where Chandler Doesn't Like Dogs,16.57,friends
+7,9,The One with All the Candy,21.08,friends
+7,10,The One with the Holiday Armadillo,23.26,friends
+7,11,The One with All the Cheesecakes,24.37,friends
+7,12,The One Where They're Up All Night,22.86,friends
+7,13,The One Where Rosita Dies,22.24,friends
+7,14,The One Where They All Turn Thirty,22.4,friends
+7,15,The One with Joey's New Brain,21.75,friends
+7,16,The One with the Truth About London,21.22,friends
+7,17,The One with the Cheap Wedding Dress,20.84,friends
+7,18,The One with Joey's Award,17.81,friends
+7,19,The One with Ross and Monica's Cousin,16.55,friends
+7,20,The One with Rachel's Big Kiss,16.3,friends
+7,21,The One with the Vows,15.65,friends
+7,22,The One with Chandler's Dad,17.23,friends
+7,23,The One with Monica and Chandler's Wedding,30.05,friends
+8,1,"The One After ""I Do""",31.7,friends
+8,2,The One with the Red Sweater,30.04,friends
+8,3,The One Where Rachel Tells...,29.2,friends
+8,4,The One with the Videotape,25.58,friends
+8,5,The One with Rachel's Date,25.64,friends
+8,6,The One with the Halloween Party,26.96,friends
+8,7,The One with the Stain,24.24,friends
+8,8,The One with the Stripper,26.54,friends
+8,9,The One with the Rumor,24.24,friends
+8,10,The One with Monica's Boots,22.44,friends
+8,11,The One with Ross's Step Forward,23.85,friends
+8,12,The One Where Joey Dates Rachel,25.53,friends
+8,13,The One Where Chandler Takes a Bath,29.24,friends
+8,14,The One with the Secret Closet,28.64,friends
+8,15,The One with the Birthing Video,28.64,friends
+8,16,The One Where Joey Tells Rachel,27.52,friends
+8,17,The One with the Tea Leaves,26.3,friends
+8,18,The One in Massapequa,22.05,friends
+8,19,The One with Joey's Interview,22.59,friends
+8,20,The One with the Baby Shower,22.24,friends
+8,21,The One with the Cooking Class,23.97,friends
+8,22,The One Where Rachel Is Late,24.32,friends
+8,23,The One Where Rachel Has a Baby,34.91,friends
+9,1,The One Where No One Proposes,34.01,friends
+9,2,The One Where Emma Cries,28.93,friends
+9,3,The One with the Pediatrician,26.63,friends
+9,4,The One with the Sharks,25.82,friends
+9,5,The One with Phoebe's Birthday Dinner,24.46,friends
+9,6,The One with the Male Nanny,27.51,friends
+9,7,The One with Ross's Inappropriate Song,25.35,friends
+9,8,The One with Rachel's Other Sister,26.76,friends
+9,9,The One with Rachel's Phone Number,25.43,friends
+9,10,The One with Christmas in Tulsa,22.29,friends
+9,11,The One Where Rachel Goes Back to Work,23.67,friends
+9,12,The One with Phoebe's Rats,23.66,friends
+9,13,The One Where Monica Sings,25.82,friends
+9,14,The One with the Blind Date,23.37,friends
+9,15,The One with the Mugging,20.85,friends
+9,16,The One with the Boob Job,19.52,friends
+9,17,The One with the Memorial Service,21.0,friends
+9,18,The One with the Lottery,20.79,friends
+9,19,The One with Rachel's Dream,18.25,friends
+9,20,The One with the Soap Opera Party,20.71,friends
+9,21,The One with the Fertility Test,19.03,friends
+9,22,The One with the Donor,19.55,friends
+9,23,The One in Barbados,25.46,friends
+10,1,The One After Joey & Rachel Kiss,24.54,friends
+10,2,The One Where Ross Is Fine,22.38,friends
+10,3,The One with Ross's Tan,21.87,friends
+10,4,The One with the Cake,18.77,friends
+10,5,The One Where Rachel's Sister Baby-Sits,19.37,friends
+10,6,The One with Ross's Grant,20.38,friends
+10,7,The One with the Home Study,20.21,friends
+10,8,The One with the Late Thanksgiving,20.66,friends
+10,9,The One with the Birth Mother,25.49,friends
+10,10,The One Where Chandler Gets Caught,26.68,friends
+10,11,The One Where the Stripper Cries,24.91,friends
+10,12,The One with Phoebe's Wedding,25.9,friends
+10,13,The One Where Joey Speaks French,24.27,friends
+10,14,The One with Princess Consuela,22.83,friends
+10,15,The One Where Estelle Dies,22.64,friends
+10,16,The One with Rachel's Going Away Party,24.51,friends
+10,17,The Last One,52.46,friends
