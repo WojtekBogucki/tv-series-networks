@@ -8,6 +8,11 @@ import community as community_louvain
 import igraph as ig
 import seaborn as sns
 
+
+def max_degree(net: nx.Graph, weight: str) -> int:
+    return max(net.degree(weight=weight), key=lambda x: x[1])[1]
+
+
 def get_character_stats(G: nx.Graph) -> pd.DataFrame:
     nodes = list(G.nodes())
     measures = ["degree",
@@ -101,12 +106,13 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
 
 def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, weight: str = "line_count") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
-    columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity", "number_of_cliques", "clique_number", "weighted_rating"]
     season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
     season_ratings = season_ratings[season_ratings.originalTitle == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_seasons],
                          [nx.number_of_edges(net) for net in net_seasons],
+                         [max_degree(net, weight) for net in net_seasons],
                          [nx.density(net) for net in net_seasons],
                          [nx.diameter(net) for net in net_seasons],
                          [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_seasons],
@@ -123,12 +129,13 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, wei
 
 def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, show_name: str, weight: str = "line_count"):
     episodes = episode_dict.keys()
-    columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_episodes],
                          [nx.number_of_edges(net) for net in net_episodes],
+                         [max_degree(net, weight) for net in net_episodes],
                          [nx.density(net) for net in net_episodes],
                          [nx.diameter(net) if nx.is_connected(net) else np.nan for net in net_episodes],
                          [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_episodes],
@@ -146,16 +153,18 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dic
 
 
 def get_network_stats(net: nx.Graph) -> dict:
-    columns = ["nodes", "edges", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity"]
     measures = np.array([nx.number_of_nodes(net),
                          nx.number_of_edges(net),
+                         max_degree(net, weight="line_count"),
                          nx.density(net),
                          nx.diameter(net),
                          nx.degree_assortativity_coefficient(net, weight="line_count"),
                          nx.average_clustering(net),
                          nx.average_shortest_path_length(net, weight="line_count"),
-                         nx.transitivity(net)])
+                         nx.transitivity(net)
+                         ])
     stats = {col: measure for col, measure in zip(columns, measures)}
     return stats
 
@@ -238,16 +247,20 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
         plt.show()
 
 
-def plot_corr_mat(df: pd.DataFrame) -> None:
+def plot_corr_mat(df: pd.DataFrame, filename: str = "", **kwargs) -> None:
     cmap = sns.diverging_palette(230, 20, as_cmap=True)
-    df_corr = df.corr()
-    plt.figure(figsize=(10, 10))
+    df_corr = df.corr(**kwargs)
+    plt.figure(figsize=(16,9))
     sns.heatmap(df_corr,
                 xticklabels=df_corr.columns.values,
                 yticklabels=df_corr.columns.values,
                 cmap=cmap,
-                square=True,
                 annot=True,
                 fmt=".2f")
     plt.tight_layout()
-    plt.show()
+    plt.title("Correlation of statistics")
+    if filename:
+        plt.savefig(f"../figures/{filename}.png")
+        plt.close()
+    else:
+        plt.show()

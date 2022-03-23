@@ -35,7 +35,7 @@ season_stats = get_network_stats_by_season(net_seasons, show_name)
 
 season_stats.plot(kind="scatter", x="weighted_rating", y="number_of_cliques", s="avg_shortest_path")
 
-plot_corr_mat(season_stats)
+plot_corr_mat(season_stats, f"{show_name}/season_corr")
 
 # network stats by season
 # os.mkdir(f"../figures/{show_name}/stats_by_season")
@@ -71,15 +71,24 @@ for top_character in top_characters:
 
 # the office by episodes
 net_episodes = get_episode_networks(f"../data/{show_name}/")
-episode_dict = get_episode_dict(f"../data/{show_name}/the_office_lines_v6.csv")
-
+latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
+episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
 episode_stats = get_network_stats_by_episode(net_episodes, episode_dict, show_name)
 
 # add episode rating and number of votes
 episode_stats.plot(kind="scatter", x="avg_rating", y="num_votes")
 episode_stats.plot(kind="scatter", x="avg_rating", y="assortativity")
+os.makedirs(f"../figures/{show_name}/stats_by_episode")
+stat_cols = episode_stats.columns
+plt.ioff()
+for i, x in enumerate(stat_cols[:-1]):
+    for j, y in enumerate(stat_cols[i+1:]):
+        episode_stats.plot(kind="scatter", x=x, y=y)
+        plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
 
-plot_corr_mat(episode_stats)
+plot_corr_mat(episode_stats, f"{show_name}/episode_corr")
+plot_corr_mat(episode_stats, f"{show_name}/episode_corr_kendall", method="kendall")
+plot_corr_mat(episode_stats, f"{show_name}/episode_corr_spearman", method="spearman")
 
 episode_stats["avg_rating"].plot(kind="hist")
 episode_stats["num_votes"].plot(kind="hist")
