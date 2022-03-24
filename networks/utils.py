@@ -107,9 +107,11 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
 def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, weight: str = "line_count") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_of_cliques", "clique_number", "weighted_rating"]
+               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership"]
     season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
     season_ratings = season_ratings[season_ratings.originalTitle == show_name]
+    season_view = pd.read_csv("../data/viewership/season_viewership.csv")
+    season_view = season_view[season_view.show == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_seasons],
                          [nx.number_of_edges(net) for net in net_seasons],
                          [max_degree(net, weight) for net in net_seasons],
@@ -121,7 +123,8 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, wei
                          [nx.transitivity(net) for net in net_seasons],
                          [nx.graph_number_of_cliques(net) for net in net_seasons],
                          [nx.graph_clique_number(net) for net in net_seasons],
-                         season_ratings["weighted_rating"].tolist()
+                         season_ratings["weighted_rating"].tolist(),
+                         season_view["avg_viewership"].tolist()
                          ]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
     return stats
@@ -130,9 +133,11 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, wei
 def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, show_name: str, weight: str = "line_count"):
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes"]
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes", "viewership"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
+    viewership = pd.read_csv("../data/viewership/viewership.csv")
+    viewership = viewership[viewership.show == show_name]
     measures = np.array([[nx.number_of_nodes(net) for net in net_episodes],
                          [nx.number_of_edges(net) for net in net_episodes],
                          [max_degree(net, weight) for net in net_episodes],
@@ -146,7 +151,8 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dic
                          [nx.graph_number_of_cliques(net) for net in net_episodes],
                          [nx.graph_clique_number(net) for net in net_episodes],
                          ratings["averageRating"].tolist(),
-                         ratings["numVotes"].tolist()
+                         ratings["numVotes"].tolist(),
+                         viewership["viewership"].tolist()
                          ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats

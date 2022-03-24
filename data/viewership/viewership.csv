@@ -94,7 +94,6 @@ season,episode,title,viewership,show
 6,2,The Meeting,7.33,the_office
 6,3,The Promotion,7.28,the_office
 6,4,Niagara: Part 1,9.42,the_office
-6,5,Niagara: Part 2,9.42,the_office
 6,6,Mafia,8.1,the_office
 6,7,The Lover,8.52,the_office
 6,8,Koi Pond,8.2,the_office
@@ -107,7 +106,6 @@ season,episode,title,viewership,show
 6,15,Sabre,7.36,the_office
 6,16,Manager and Salesman,7.4,the_office
 6,17,The Delivery: Part 1,9.0,the_office
-6,18,The Delivery: Part 2,9.0,the_office
 6,19,St. Patrick's Day,7.51,the_office
 6,20,New Leads,7.63,the_office
 6,21,Happy Hour,7.17,the_office
@@ -221,14 +219,12 @@ season,episode,title,viewership,show
 3,15,The Suicide,16.9,seinfeld
 3,16,The Fix Up,18.5,seinfeld
 3,17,The Boyfriend,17.0,seinfeld
-3,18,The Boyfriend,17.0,seinfeld
 3,19,The Limo,19.5,seinfeld
 3,20,The Good Samaritan,16.1,seinfeld
 3,21,The Letter,22.3,seinfeld
 3,22,The Parking Space,17.8,seinfeld
 3,23,The Keys,16.4,seinfeld
 4,1,The Trip: Part 1,16.3,seinfeld
-4,2,The Trip: Part 2,15.1,seinfeld
 4,3,The Pitch,17.6,seinfeld
 4,4,The Ticket,17.6,seinfeld
 4,5,The Wallet,17.6,seinfeld
@@ -250,7 +246,6 @@ season,episode,title,viewership,show
 4,21,The Smelly Car,25.0,seinfeld
 4,22,The Handicap Spot,27.6,seinfeld
 4,23,The Pilot,32.8,seinfeld
-4,24,The Pilot,32.8,seinfeld
 5,1,The Mango,28.2,seinfeld
 5,2,The Puffy Shirt,29.5,seinfeld
 5,3,The Glasses,28.7,seinfeld
@@ -269,7 +264,6 @@ season,episode,title,viewership,show
 5,16,The Stand-In,25.4,seinfeld
 5,17,The Wife,30.7,seinfeld
 5,18,The Raincoats,29.6,seinfeld
-5,19,The Raincoats,29.6,seinfeld
 5,20,The Fire,27.6,seinfeld
 5,21,The Hamptons,24.5,seinfeld
 5,22,The Opposite,30.1,seinfeld
@@ -286,8 +280,6 @@ season,episode,title,viewership,show
 6,11,The Switch,36.6,seinfeld
 6,12,The Label Maker,36.2,seinfeld
 6,13,The Scofflaw,33.4,seinfeld
-6,14,Highlights of a Hundred,34.0,seinfeld
-6,15,Highlights of a Hundred,34.0,seinfeld
 6,16,The Beard,32.9,seinfeld
 6,17,The Kiss Hello,33.4,seinfeld
 6,18,The Doorman,33.4,seinfeld
@@ -311,14 +303,12 @@ season,episode,title,viewership,show
 7,12,The Caddy,32.0,seinfeld
 7,13,The Seven,37.1,seinfeld
 7,14,The Cadillac,35.9,seinfeld
-7,15,The Cadillac,35.9,seinfeld
 7,16,The Shower Head,32.3,seinfeld
 7,17,The Doll,32.9,seinfeld
 7,18,The Friars Club,32.7,seinfeld
 7,19,The Wig Master,30.5,seinfeld
 7,20,The Calzone,28.5,seinfeld
 7,21,The Bottle Deposit,32.4,seinfeld
-7,22,The Bottle Deposit,32.4,seinfeld
 7,23,The Wait Out,29.9,seinfeld
 7,24,The Invitations,33.2,seinfeld
 8,1,The Foundation,33.7,seinfeld
@@ -363,10 +353,7 @@ season,episode,title,viewership,show
 9,18,The Frogger,30.7,seinfeld
 9,19,The Maid,33.3,seinfeld
 9,20,The Puerto Rican Day,38.8,seinfeld
-9,21,The Chronicle,58.5,seinfeld
-9,22,The Chronicle,58.5,seinfeld
 9,23,The Finale,76.3,seinfeld
-9,24,The Finale,76.3,seinfeld
 1,1,"""Pilot""",9.52,tbbt
 1,2,"""The Big Bran Hypothesis""",8.58,tbbt
 1,3,"""The Fuzzy Boots Corollary""",8.36,tbbt
@@ -598,54 +585,6 @@ season,episode,title,viewership,show
 10,22,"""The Cognition Regeneration""",14.5,tbbt
 10,23,"""The Gyroscopic Collapse""",15.3,tbbt
 10,24,"""The Long Distance Dissonance""",15.9,tbbt
-11,1,"""The Proposal Proposal""",17.6,tbbt
-11,2,"""The Retraction Reaction""",14.0,tbbt
-11,3,"""The Relaxation Integration""",13.1,tbbt
-11,4,"""The Explosion Implosion""",13.0,tbbt
-11,5,"""The Collaboration Contamination""",13.2,tbbt
-11,6,"""The Proton Regeneration""",14.1,tbbt
-11,7,"""The Geology Methodology""",13.8,tbbt
-11,8,"""The Tesla Recoil""",13.4,tbbt
-11,9,"""The Bitcoin Entanglement""",13.8,tbbt
-11,10,"""The Confidence Erosion""",14.4,tbbt
-11,11,"""The Celebration Reverberation""",13.7,tbbt
-11,12,"""The Matrimonial Metric""",16.1,tbbt
-11,13,"""The Solo Oscillation""",15.9,tbbt
-11,14,"""The Separation Triangulation""",14.9,tbbt
-11,15,"""The Novelization Correlation""",14.6,tbbt
-11,16,"""The Neonatal Nomenclature""",13.7,tbbt
-11,17,"""The Athenaeum Allocation""",13.8,tbbt
-11,18,"""The Gates Excitation""",13.2,tbbt
-11,19,"""The Tenant Disassociation""",13.0,tbbt
-11,20,"""The Reclusive Potential""",12.7,tbbt
-11,21,"""The Comet Polarization""",12.9,tbbt
-11,22,"""The Monetary Insufficiency""",11.7,tbbt
-11,23,"""The Sibling Realignment""",12.9,tbbt
-11,24,"""The Bow Tie Asymmetry""",15.5,tbbt
-12,1,"""The Conjugal Configuration""",12.9,tbbt
-12,2,"""The Wedding Gift Wormhole""",12.0,tbbt
-12,3,"""The Procreation Calculation""",12.2,tbbt
-12,4,"""The Tam Turbulence""",12.9,tbbt
-12,5,"""The Planetarium Collision""",12.2,tbbt
-12,6,"""The Imitation Perturbation""",12.9,tbbt
-12,7,"""The Grant Allocation Derivation""",12.6,tbbt
-12,8,"""The Consummation Deviation""",12.8,tbbt
-12,9,"""The Citation Negation""",12.5,tbbt
-12,10,"""The VCR Illumination""",12.5,tbbt
-12,11,"""The Paintball Scattering""",12.8,tbbt
-12,12,"""The Propagation Proposition""",13.5,tbbt
-12,13,"""The Confirmation Polarization""",13.3,tbbt
-12,14,"""The Meteorite Manifestation""",13.6,tbbt
-12,15,"""The Donation Oscillation""",13.9,tbbt
-12,16,"""The D&D Vortex""",13.4,tbbt
-12,17,"""The Conference Valuation""",12.9,tbbt
-12,18,"""The Laureate Accumulation""",12.2,tbbt
-12,19,"""The Inspiration Deprivation""",11.4,tbbt
-12,20,"""The Decision Reverberation""",11.8,tbbt
-12,21,"""The Plagiarism Schism""",12.4,tbbt
-12,22,"""The Maternal Conclusion""",12.5,tbbt
-12,23,"""The Change Constant""",18.5,tbbt
-12,24,"""The Stockholm Syndrome""",18.5,tbbt
 1,1,The Pilot,21.5,friends
 1,2,The One with the Sonogram at the End,20.2,friends
 1,3,The One with the Thumb,19.5,friends
