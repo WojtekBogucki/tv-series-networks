@@ -104,10 +104,13 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
     return net_episodes
 
 
-def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, weight: str = "line_count") -> pd.DataFrame:
+def get_network_stats_by_season(net_seasons: list[nx.Graph],
+                                show_name: str,
+                                weight: str = "line_count",
+                                comm_det_method: str = "GM") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership"]
+               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership", f"number_of_communities_{comm_det_method}"]
     season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
     season_ratings = season_ratings[season_ratings.originalTitle == show_name]
     season_view = pd.read_csv("../data/viewership/season_viewership.csv")
@@ -124,16 +127,22 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph], show_name: str, wei
                          [nx.graph_number_of_cliques(net) for net in net_seasons],
                          [nx.graph_clique_number(net) for net in net_seasons],
                          season_ratings["weighted_rating"].tolist(),
-                         season_view["avg_viewership"].tolist()
+                         season_view["avg_viewership"].tolist(),
+                         [len(np.unique(detect_communities(net, method="GM", weight=weight))) for net in net_seasons]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
     return stats
 
 
-def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dict, show_name: str, weight: str = "line_count"):
+def get_network_stats_by_episode(net_episodes: list[nx.Graph],
+                                 episode_dict: dict,
+                                 show_name: str,
+                                 weight: str = "line_count",
+                                 comm_det_method: str = "GM") -> pd.DataFrame:
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes", "viewership"]
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes", "viewership",
+               f"number_of_communities_{comm_det_method}"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
     viewership = pd.read_csv("../data/viewership/viewership.csv")
@@ -152,7 +161,8 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph], episode_dict: dic
                          [nx.graph_clique_number(net) for net in net_episodes],
                          ratings["averageRating"].tolist(),
                          ratings["numVotes"].tolist(),
-                         viewership["viewership"].tolist()
+                         viewership["viewership"].tolist(),
+                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in net_episodes]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats
@@ -189,6 +199,37 @@ def get_episode_dict(data_path: str) -> dict:
     return episode_dict
 
 
+def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list:
+    assert method.upper() in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
+    nodes = list(G.nodes())
+    if method == "GM":
+        communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
+        com_dict = {character: i for i, com in enumerate(communities) for character in com}
+        membership = [com_dict[c] for c in nodes]
+    elif method == "LV":
+        com_dict = community_louvain.best_partition(G, weight=weight, resolution=resolution)
+        membership = [com_dict[c] for c in nodes]
+    elif method in ["SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
+        G_ig = ig.Graph.from_networkx(G)
+        if method == "SG":
+            membership = G_ig.community_spinglass(weights=weight).membership
+        elif method == "FG":
+            membership = G_ig.community_fastgreedy(weights=weight).as_clustering().membership
+        elif method == "IM":
+            membership = G_ig.community_infomap(edge_weights=weight).membership
+        elif method == "LE":
+            membership = G_ig.community_leading_eigenvector(weights=weight).membership
+        elif method == "LP":
+            membership = G_ig.community_label_propagation(weights=weight).membership
+        elif method == "ML":
+            membership = G_ig.community_multilevel(weights=weight).membership
+        elif method == "WT":
+            membership = G_ig.community_walktrap(weights=weight).as_clustering().membership
+        else:
+            membership = G_ig.community_leiden(weights=weight).membership
+    return membership
+
+
 def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM"):
     '''
     Function that draws an interaction network from given graph
@@ -201,33 +242,9 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     '''
     nodes = list(G.nodes())
     edges = G.edges()
-    if method is not None:
+    if method:
         method = method.upper()
-    if method == "GM":
-        communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
-        com_dict = {character: i for i, com in enumerate(communities) for character in com}
-        colors = [com_dict[c] for c in nodes]
-    elif method == "LV":
-        com_dict = community_louvain.best_partition(G, weight=weight, resolution=resolution)
-        colors = [com_dict[c] for c in nodes]
-    elif method in ["SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
-        G_ig = ig.Graph.from_networkx(G)
-        if method == "SG":
-            colors = G_ig.community_spinglass(weights=weight).membership
-        elif method == "FG":
-            colors = G_ig.community_fastgreedy(weights=weight).as_clustering().membership
-        elif method == "IM":
-            colors = G_ig.community_infomap(edge_weights=weight).membership
-        elif method == "LE":
-            colors = G_ig.community_leading_eigenvector(weights=weight).membership
-        elif method == "LP":
-            colors = G_ig.community_label_propagation(weights=weight).membership
-        elif method == "ML":
-            colors = G_ig.community_multilevel(weights=weight).membership
-        elif method == "WT":
-            colors = G_ig.community_walktrap(weights=weight).as_clustering().membership
-        else:
-            colors = G_ig.community_leiden(weights=weight).membership
+        colors = detect_communities(G, method=method, weight=weight, resolution=resolution)
     else:
         print("No community detection selected")
         colors = np.zeros(len(nodes))

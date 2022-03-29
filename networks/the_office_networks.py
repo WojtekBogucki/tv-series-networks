@@ -13,9 +13,9 @@ net_top30 = nx.from_pandas_edgelist(edges_weighted_top30, source="speaker1", tar
                                     edge_attr=["line_count", "scene_count", "word_count"])
 
 # save drawn networks
-draw_interaction_network_communities(net, "line_count", filename=f"{show_name}/{show_name}_lines", method=None)
-draw_interaction_network_communities(net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method=None)
-draw_interaction_network_communities(net, "word_count", filename=f"{show_name}/{show_name}_words", method=None)
+draw_interaction_network_communities(net, "line_count", filename=f"{show_name}/{show_name}_lines", method="")
+draw_interaction_network_communities(net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method="")
+draw_interaction_network_communities(net, "word_count", filename=f"{show_name}/{show_name}_words", method="")
 
 draw_interaction_network_communities(net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines", method=None)
 draw_interaction_network_communities(net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes", method=None)
@@ -51,7 +51,7 @@ for i, season_net in enumerate(net_seasons):
 
 
 draw_interaction_network_communities(net_seasons[8], "line_count", method="SG")
-draw_interaction_network_communities(net_seasons[2], "scene_count", method=None)
+draw_interaction_network_communities(net_seasons[2], "scene_count", method="")
 draw_interaction_network_communities(net_seasons[0], "word_count")
 
 # character stats
