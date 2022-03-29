@@ -141,8 +141,8 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                                  comm_det_method: str = "GM") -> pd.DataFrame:
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes", "viewership",
-               f"number_of_communities_{comm_det_method}"]
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes",
+               "runtime", "viewership", f"number_of_communities_{comm_det_method}"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
     viewership = pd.read_csv("../data/viewership/viewership.csv")
@@ -161,6 +161,7 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                          [nx.graph_clique_number(net) for net in net_episodes],
                          ratings["averageRating"].tolist(),
                          ratings["numVotes"].tolist(),
+                         ratings["runtimeMinutes_y"].tolist(),
                          viewership["viewership"].tolist(),
                          [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in net_episodes]
                          ]).transpose()
