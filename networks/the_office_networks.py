@@ -40,7 +40,7 @@ plot_corr_mat(season_stats, f"{show_name}/season_corr")
 # network stats by season
 # os.mkdir(f"../figures/{show_name}/stats_by_season")
 for colname in season_stats.columns:
-    season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname)
+    season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname, rot=0)
     plt.savefig(f"../figures/{show_name}/stats_by_season/{colname}.png")
     plt.close()
 
@@ -81,10 +81,12 @@ episode_stats.plot(kind="scatter", x="avg_rating", y="assortativity")
 os.makedirs(f"../figures/{show_name}/stats_by_episode")
 stat_cols = episode_stats.columns
 plt.ioff()
+ep_corr = episode_stats.corr()
 for i, x in enumerate(stat_cols[:-1]):
     for j, y in enumerate(stat_cols[i+1:]):
-        episode_stats.plot(kind="scatter", x=x, y=y)
-        plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
+        if abs(ep_corr.loc[x, y]) > 0.2:
+            episode_stats.plot(kind="scatter", x=x, y=y)
+            plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
 
 plot_corr_mat(episode_stats, f"{show_name}/episode_corr")
 plot_corr_mat(episode_stats, f"{show_name}/episode_corr_kendall", method="kendall")

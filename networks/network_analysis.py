@@ -41,15 +41,15 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     season_stats_dir = f"../figures/{show_name}/stats_by_season"
     os.makedirs(season_stats_dir, exist_ok=True)
     for colname in season_stats.columns:
-        season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname)
+        season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname, rot=0)
         plt.savefig(os.path.join(season_stats_dir, f"{colname}.png"))
         plt.close()
 
     # seasonal networks
-    # os.makedirs(f"../figures/{show_name}/season_networks", exist_ok=True)
-    # for i, season_net in enumerate(net_seasons):
-    #     draw_interaction_network_communities(season_net, "line_count", method="GM",
-    #                                          filename=f"{show_name}/season_networks/season{i + 1}_line_GM")
+    os.makedirs(f"../figures/{show_name}/season_networks", exist_ok=True)
+    for i, season_net in enumerate(net_seasons):
+        draw_interaction_network_communities(season_net, "line_count", method="GM",
+                                             filename=f"{show_name}/season_networks/season{i + 1}_line_GM")
 
     # character stats by season
     season_character_stats = pd.DataFrame()
@@ -77,14 +77,38 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
 
     os.makedirs(f"../figures/{show_name}/stats_by_episode", exist_ok=True)
     stat_cols = episode_stats.columns
+    ep_corr = episode_stats.corr()
     for i, x in enumerate(stat_cols[:-1]):
         for j, y in enumerate(stat_cols[i + 1:]):
-            plt.figure()
-            episode_stats.plot(kind="scatter", x=x, y=y)
-            plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
-            plt.close()
+            if abs(ep_corr.loc[x, y]) > 0.2:
+                plt.figure()
+                episode_stats.plot(kind="scatter", x=x, y=y)
+                plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
+                plt.close()
 
     # correlations
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr")
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr_kendall", method="kendall")
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr_spearman", method="spearman")
+
+
+episode_stats = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    net_episodes = get_episode_networks(f"../data/{show_name}/")
+    latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
+    episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
+    ep_stats = get_network_stats_by_episode(net_episodes, episode_dict, show_name)
+    ep_stats["show"] = show_name
+    episode_stats = pd.concat([episode_stats, ep_stats], axis=0)
+
+os.makedirs(f"../figures/comparison", exist_ok=True)
+
+episode_stats.reset_index(drop=True, inplace=True)
+plt.ioff()
+for col in episode_stats.columns:
+    xmin = episode_stats[col].min()
+    xmax = episode_stats[col].max()
+    plt.figure()
+    episode_stats[["show", col]].plot(kind="hist", by="show", layout=(1, 4), figsize=(15, 8), sharey=True, sharex=True, bins=10, range=(xmin, xmax), density=True, legend=False, title=col)
+    plt.savefig(f"../figures/comparison/{col}")
+    plt.close()
