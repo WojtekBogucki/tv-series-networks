@@ -105,7 +105,7 @@ os.makedirs(f"../figures/comparison", exist_ok=True)
 
 episode_stats.reset_index(drop=True, inplace=True)
 plt.ioff()
-for col in episode_stats.columns:
+for col in episode_stats.columns[:-1]:
     xmin = episode_stats[col].min()
     xmax = episode_stats[col].max()
     plt.figure()

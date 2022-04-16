@@ -4,7 +4,6 @@ import numpy as np
 import networkx as nx
 from networkx import community
 import matplotlib.pyplot as plt
-import community as community_louvain
 import igraph as ig
 import seaborn as sns
 
@@ -208,7 +207,8 @@ def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_coun
         com_dict = {character: i for i, com in enumerate(communities) for character in com}
         membership = [com_dict[c] for c in nodes]
     elif method == "LV":
-        com_dict = community_louvain.best_partition(G, weight=weight, resolution=resolution)
+        communities = community.louvain_communities(G, weight=weight, resolution=resolution)
+        com_dict = {character: i for i, com in enumerate(communities) for character in com}
         membership = [com_dict[c] for c in nodes]
     elif method in ["SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
         G_ig = ig.Graph.from_networkx(G)
