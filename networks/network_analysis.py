@@ -41,9 +41,10 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     season_stats_dir = f"../figures/{show_name}/stats_by_season"
     os.makedirs(season_stats_dir, exist_ok=True)
     for colname in season_stats.columns:
-        season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname, rot=0)
+        fig, ax = plt.subplots()
+        season_stats[colname].plot(kind="bar", xlabel="Season", ylabel=colname, rot=0, ax=ax)
         plt.savefig(os.path.join(season_stats_dir, f"{colname}.png"))
-        plt.close()
+        plt.close(fig)
 
     # seasonal networks
     os.makedirs(f"../figures/{show_name}/season_networks", exist_ok=True)
@@ -63,11 +64,11 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     top_characters = character_season_count.loc[character_season_count.season_count >= 5, "index"].tolist()
     os.makedirs(f"../figures/{show_name}/character_stats_by_season", exist_ok=True)
     for top_character in top_characters:
-        plt.figure()
+        fig, ax = plt.subplots()
         season_character_stats.loc[top_character, ["pagerank_line", "season"]].plot(kind="bar", x="season", rot=0,
-                                                                                    title=f"PageRank by season for {top_character}")
+                                                                                    title=f"PageRank by season for {top_character}", ax=ax)
         plt.savefig(f"../figures/{show_name}/character_stats_by_season/pagerank_line_{top_character}.png")
-        plt.close()
+        plt.close(fig)
 
     # by episodes
     net_episodes = get_episode_networks(f"../data/{show_name}/")
@@ -81,10 +82,20 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     for i, x in enumerate(stat_cols[:-1]):
         for j, y in enumerate(stat_cols[i + 1:]):
             if abs(ep_corr.loc[x, y]) > 0.2:
-                plt.figure()
-                episode_stats.plot(kind="scatter", x=x, y=y)
+                fig, ax = plt.subplots()
+                episode_stats.plot(kind="scatter", x=x, y=y, ax=ax)
                 plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
-                plt.close()
+                plt.close(fig)
+                # 2d histograms
+                mask = (episode_stats[x].notnull()) & (episode_stats[y].notnull())
+                fig, ax = plt.subplots()
+                h = ax.hist2d(episode_stats.loc[mask, x], episode_stats.loc[mask, y], bins=10)
+                plt.xlabel(x)
+                plt.ylabel(y)
+                cbar = fig.colorbar(h[3], ax=ax)
+                cbar.set_label("Number of observations", rotation=270, labelpad=15)
+                plt.savefig(f"../figures/{show_name}/stats_by_episode/hist_{x}_{y}.png")
+                plt.close(fig)
 
     # correlations
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr")

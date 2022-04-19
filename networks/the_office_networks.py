@@ -88,6 +88,20 @@ for i, x in enumerate(stat_cols[:-1]):
             episode_stats.plot(kind="scatter", x=x, y=y)
             plt.savefig(f"../figures/{show_name}/stats_by_episode/{x}_{y}.png")
 
+for i, x in enumerate(stat_cols[:-1]):
+    for j, y in enumerate(stat_cols[i+1:]):
+        if abs(ep_corr.loc[x, y]) > 0.2:
+            mask = (episode_stats[x].notnull()) & (episode_stats[y].notnull())
+            fig, ax = plt.subplots()
+            h = ax.hist2d(episode_stats.loc[mask, x], episode_stats.loc[mask, y], bins=10)
+            plt.xlabel(x)
+            plt.ylabel(y)
+            cbar = fig.colorbar(h[3], ax=ax)
+            cbar.set_label("Number of observations", rotation=270, labelpad=15)
+            plt.savefig(f"../figures/{show_name}/stats_by_episode/hist_{x}_{y}.png")
+            plt.close(fig)
+
+
 plot_corr_mat(episode_stats, f"{show_name}/episode_corr")
 plot_corr_mat(episode_stats, f"{show_name}/episode_corr_kendall", method="kendall")
 plot_corr_mat(episode_stats, f"{show_name}/episode_corr_spearman", method="spearman")
