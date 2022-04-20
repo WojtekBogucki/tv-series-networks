@@ -1,6 +1,7 @@
 from networks.utils import *
 import os
 import matplotlib
+
 matplotlib.use('Agg')
 
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
@@ -21,9 +22,12 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     draw_interaction_network_communities(net, "scene_count", filename=f"{show_name}/{show_name}_scenes", method=None)
     draw_interaction_network_communities(net, "word_count", filename=f"{show_name}/{show_name}_words", method=None)
 
-    draw_interaction_network_communities(net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines", method=None)
-    draw_interaction_network_communities(net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes", method=None)
-    draw_interaction_network_communities(net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words", method=None)
+    draw_interaction_network_communities(net_top30, "line_count", filename=f"{show_name}/{show_name}_top30_lines",
+                                         method=None)
+    draw_interaction_network_communities(net_top30, "scene_count", filename=f"{show_name}/{show_name}_top30_scenes",
+                                         method=None)
+    draw_interaction_network_communities(net_top30, "word_count", filename=f"{show_name}/{show_name}_top30_words",
+                                         method=None)
 
     # stats
     char_stat_dir = f"../figures/{show_name}/character_stats"
@@ -66,7 +70,8 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     for top_character in top_characters:
         fig, ax = plt.subplots()
         season_character_stats.loc[top_character, ["pagerank_line", "season"]].plot(kind="bar", x="season", rot=0,
-                                                                                    title=f"PageRank by season for {top_character}", ax=ax)
+                                                                                    title=f"PageRank by season for {top_character}",
+                                                                                    ax=ax)
         plt.savefig(f"../figures/{show_name}/character_stats_by_season/pagerank_line_{top_character}.png")
         plt.close(fig)
 
@@ -102,7 +107,6 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr_kendall", method="kendall")
     plot_corr_mat(episode_stats, f"{show_name}/episode_corr_spearman", method="spearman")
 
-
 episode_stats = pd.DataFrame()
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     net_episodes = get_episode_networks(f"../data/{show_name}/")
@@ -120,6 +124,10 @@ for col in episode_stats.columns[:-1]:
     xmin = episode_stats[col].min()
     xmax = episode_stats[col].max()
     plt.figure()
-    episode_stats[["show", col]].plot(kind="hist", by="show", layout=(1, 4), figsize=(15, 8), sharey=True, sharex=True, bins=10, range=(xmin, xmax), density=True, legend=False, title=col)
+    episode_stats[["show", col]].plot(kind="hist", by="show", layout=(1, 4), figsize=(15, 8), sharey=True, sharex=True,
+                                      bins=10, range=(xmin, xmax), density=True, legend=False, title=col)
     plt.savefig(f"../figures/comparison/{col}")
     plt.close()
+
+# similarity matrix
+create_similarity_matrix(episode_stats)

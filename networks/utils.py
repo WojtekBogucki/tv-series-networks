@@ -6,6 +6,7 @@ from networkx import community
 import matplotlib.pyplot as plt
 import igraph as ig
 import seaborn as sns
+from scipy.spatial.distance import euclidean, pdist, squareform
 
 
 def max_degree(net: nx.Graph, weight: str) -> int:
@@ -109,7 +110,7 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph],
                                 comm_det_method: str = "GM") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership", f"number_of_communities_{comm_det_method}"]
+               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership", f"number_of_communities_{comm_det_method}", "gini_coef"]
     season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
     season_ratings = season_ratings[season_ratings.originalTitle == show_name]
     season_view = pd.read_csv("../data/viewership/season_viewership.csv")
@@ -127,7 +128,8 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph],
                          [nx.graph_clique_number(net) for net in net_seasons],
                          season_ratings["weighted_rating"].tolist(),
                          season_view["avg_viewership"].tolist(),
-                         [len(np.unique(detect_communities(net, method="GM", weight=weight))) for net in net_seasons]
+                         [len(np.unique(detect_communities(net, method="GM", weight=weight))) for net in net_seasons],
+                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in net_seasons]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
     return stats
@@ -141,7 +143,7 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
                "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes",
-               "runtime", "viewership", f"number_of_communities_{comm_det_method}"]
+               "runtime", "viewership", f"number_of_communities_{comm_det_method}", "gini_coef"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
     viewership = pd.read_csv("../data/viewership/viewership.csv")
@@ -162,7 +164,8 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                          ratings["numVotes"].tolist(),
                          ratings["runtimeMinutes_y"].tolist(),
                          viewership["viewership"].tolist(),
-                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in net_episodes]
+                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in net_episodes],
+                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in net_episodes]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats
@@ -296,3 +299,26 @@ def gini_coefficient(x: np.array) -> float:
     for i, xi in enumerate(x[:-1], 1):
         diffsum += np.sum(np.abs(xi - x[i:]))
     return diffsum / (len(x)**2 * np.mean(x))
+
+
+def create_similarity_matrix(episode_stats: pd.DataFrame) -> None:
+    norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1).apply(
+        lambda x: (x - x.mean()) / x.std(), axis=0)
+
+    def similarity_func(u, v):
+        return 1 / (1 + euclidean(u, v))
+
+    dists = pdist(norm_episode_stats.fillna(0), similarity_func)
+    df_euclid = pd.DataFrame(squareform(dists), columns=norm_episode_stats.index, index=norm_episode_stats.index)
+    df_euclid.columns = episode_stats["show"]
+    df_euclid.index = episode_stats["show"]
+    cmap = sns.color_palette("light:b", as_cmap=True)
+    fig = plt.figure(dpi=1200)
+    sns.heatmap(df_euclid,
+                xticklabels="auto",
+                yticklabels="auto",
+                cmap=cmap,
+                annot=False)
+    plt.tight_layout()
+    plt.savefig(f"../figures/comparison/similarity_matrix")
+    plt.close(fig)
