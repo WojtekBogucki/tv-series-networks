@@ -173,3 +173,8 @@ def merge_seasons(path: str) -> None:
     for measure in ["line_count", "word_count", "scene_count"]:
         pivot_df = pd.pivot_table(df, values=measure, index=["speaker1", "speaker2"], columns="season", fill_value=0)
         pivot_df.to_csv(os.path.join(path, f"merged_seasons_{measure}.csv"), encoding="utf-8")
+
+
+def get_valid_filename(s: str) -> str:
+    s = str(s).strip().replace(' ', '_')
+    return re.sub(r'(?u)[^-\w.]', '', s)
