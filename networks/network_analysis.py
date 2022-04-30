@@ -131,3 +131,7 @@ for col in episode_stats.columns[:-1]:
 
 # similarity matrix
 create_similarity_matrix(episode_stats)
+create_similarity_matrix(episode_stats[episode_stats["show"] == "the_office"], filename="the_office/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "seinfeld"], filename="seinfeld/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "tbbt"], filename="tbbt/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "friends"], filename="friends/similarity_matrix")

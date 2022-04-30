@@ -114,14 +114,14 @@ plt.ioff()
 for k, v in episode_dict.items():
     draw_interaction_network_communities(net_episodes[v], "line_count", method="ML", filename=f"the_office/{k}_line_ML")
 
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="SG")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="FG")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="IM")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LE")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LP")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="ML")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="WT")
-draw_interaction_network_communities(net_episodes[episode_dict["s03e07"]], "line_count", method="LD")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="SG")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="FG")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="IM")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="LE")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="LP")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="ML")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="WT")
+draw_interaction_network_communities(net_episodes[episode_dict["s06e02"]], "line_count", method="LD", resolution=2)
 
 draw_interaction_network_communities(net_episodes[episode_dict["s04e12"]], "scene_count", method="GM")
 
@@ -130,4 +130,20 @@ draw_interaction_network_communities(net_episodes[episode_dict["s03e18"]], "line
 draw_interaction_network_communities(net_episodes[episode_dict["s03e21"]], "line_count",
                                      filename="office_lines_s03e21")
 
+mod_df, times = get_community_detection_scores("the_office")
 
+mod_df.to_csv("../data/mod_df.csv")
+draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LD")
+draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LV")
+
+mod_df = pd.read_csv("../data/mod_df.csv", index_col=0)
+
+
+mod_df.mean(axis=0).sort_values(ascending=False)
+
+mod_df_norm = mod_df.div(mod_df.max(axis=1), axis=0).fillna(1)
+mod_df_norm["SG"][mod_df_norm["SG"]<0] = 0
+mod_df_norm.mean(axis=0).sort_values(ascending=False)
+
+mod_df_norm = mod_df.div(mod_df.sum(axis=1), axis=0).fillna(0)
+mod_df_norm.mean(axis=0).sort_values(ascending=False)

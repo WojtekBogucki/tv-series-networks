@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import igraph as ig
 import seaborn as sns
 from scipy.spatial.distance import euclidean, pdist, squareform
+from time import time
 
 
 def max_degree(net: nx.Graph, weight: str) -> int:
@@ -14,6 +15,7 @@ def max_degree(net: nx.Graph, weight: str) -> int:
 
 
 def get_character_stats(G: nx.Graph) -> pd.DataFrame:
+    weight_types = ["line", "scene", "word"]
     nodes = list(G.nodes())
     measures = ["degree",
                 "weighted_degree",
@@ -23,7 +25,6 @@ def get_character_stats(G: nx.Graph) -> pd.DataFrame:
                 "load",
                 "pagerank"]
     columns = [measures[0]]
-    weight_types = ["line", "scene", "word"]
     for measure in measures[1:]:
         columns = columns + [f"{measure}_{weight_type}" for weight_type in weight_types]
     stats = pd.DataFrame(index=nodes)
@@ -55,7 +56,7 @@ def get_character_stats(G: nx.Graph) -> pd.DataFrame:
     return stats
 
 
-def draw_character_stats(data: pd.DataFrame, colname: str, filename=None):
+def draw_character_stats(data: pd.DataFrame, colname: str, filename: str = None) -> None:
     data.loc[:, colname].sort_values(ascending=True).plot(kind="barh")
     plt.xticks(rotation=45)
     plt.tight_layout()
@@ -66,7 +67,7 @@ def draw_character_stats(data: pd.DataFrame, colname: str, filename=None):
         plt.show()
 
 
-def save_character_stats(G: nx.Graph, path: str, file_prefix: str = ""):
+def save_character_stats(G: nx.Graph, path: str, file_prefix: str = "") -> None:
     if not os.path.exists(path):
         os.mkdir(path)
     stats = get_character_stats(G)
@@ -202,9 +203,10 @@ def get_episode_dict(data_path: str) -> dict:
     return episode_dict
 
 
-def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list:
+def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list[int]:
     assert method.upper() in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     nodes = list(G.nodes())
+    membership = list(np.zeros(len(nodes), dtype="int"))
     if method == "GM":
         communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
         com_dict = {character: i for i, com in enumerate(communities) for character in com}
@@ -215,26 +217,31 @@ def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_coun
         membership = [com_dict[c] for c in nodes]
     elif method in ["SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
         G_ig = ig.Graph.from_networkx(G)
-        if method == "SG":
+        if method == "SG" and nx.is_connected(G):
             membership = G_ig.community_spinglass(weights=weight).membership
         elif method == "FG":
             membership = G_ig.community_fastgreedy(weights=weight).as_clustering().membership
         elif method == "IM":
             membership = G_ig.community_infomap(edge_weights=weight).membership
         elif method == "LE":
-            membership = G_ig.community_leading_eigenvector(weights=weight).membership
+            try:
+                membership = G_ig.community_leading_eigenvector(weights=weight).membership
+            except ig._igraph.InternalError:
+                print("Leading eigenvector error")
         elif method == "LP":
             membership = G_ig.community_label_propagation(weights=weight).membership
         elif method == "ML":
             membership = G_ig.community_multilevel(weights=weight).membership
         elif method == "WT":
             membership = G_ig.community_walktrap(weights=weight).as_clustering().membership
+        elif method == "LD":
+            membership = G_ig.community_leiden(weights=weight, n_iterations=-1, objective_function="modularity", resolution_parameter=resolution).membership
         else:
-            membership = G_ig.community_leiden(weights=weight).membership
+            return membership
     return membership
 
 
-def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM"):
+def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM") -> None:
     '''
     Function that draws an interaction network from given graph
     :param G: networkx graph
@@ -301,7 +308,7 @@ def gini_coefficient(x: np.array) -> float:
     return diffsum / (len(x)**2 * np.mean(x))
 
 
-def create_similarity_matrix(episode_stats: pd.DataFrame) -> None:
+def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "comparison/similarity_matrix") -> None:
     norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1).apply(
         lambda x: (x - x.mean()) / x.std(), axis=0)
 
@@ -320,5 +327,31 @@ def create_similarity_matrix(episode_stats: pd.DataFrame) -> None:
                 cmap=cmap,
                 annot=False)
     plt.tight_layout()
-    plt.savefig(f"../figures/comparison/similarity_matrix")
+    plt.savefig(f"../figures/{filename}")
     plt.close(fig)
+
+
+def get_community_detection_scores(show_name: str, weight: str = "line_count") -> tuple[pd.DataFrame, dict]:
+    net_episodes = get_episode_networks(f"../data/{show_name}/")
+    latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
+    episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
+    mod_df = pd.DataFrame(index=list(episode_dict.keys()))
+    times = dict()
+    for method in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
+        print(method)
+        mod_scores = []
+        t1 = time()
+        for ep_code, ep_num in episode_dict.items():
+            comm = detect_communities(net_episodes[ep_num], method=method, weight=weight)
+            nodes = {i: x for i, x in enumerate(list(net_episodes[ep_num].nodes))}
+            communities = [set(nodes[i] for i in np.nonzero(np.array(comm) == c)[0]) for c in np.unique(comm)]
+            mod_score = nx.community.modularity(net_episodes[ep_num], communities, weight=weight)
+            mod_scores.append(mod_score)
+        t2 = time()
+        method_scores = pd.Series(mod_scores)
+        method_scores.name = method
+        method_scores.index = list(episode_dict.keys())
+        mod_df = pd.concat([mod_df, method_scores], axis=1)
+        times[method] = np.round(t2-t1, 4)
+    return mod_df, times
+
