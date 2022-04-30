@@ -82,13 +82,17 @@ def filter_group_scenes(dataset):
 
 # transformation and aggregation
 def get_speaker_network_edges(dataset):
-    interactions = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count"])
+    # interactions = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count"])
     word_count = dataset.apply(lambda x: len(re.split(r" |'", str(x.line))), axis=1)
     dataset = dataset.assign(word_count=word_count)
     office_count_by_scene_speaker = dataset.groupby(["scene", "speaker"]).agg(word_count=("word_count", "sum"),
                                                                               line=("line", "count")).reset_index()
     # word_count_by_scene_speaker = dataset.groupby(["scene", "speaker"])["line"].count().reset_index(name="word_count")
     scenes = office_count_by_scene_speaker.scene.unique()
+    speaker1 = []
+    speaker2 = []
+    line_count = []
+    word_count = []
     for scene in scenes:
         speakers_count = office_count_by_scene_speaker.loc[office_count_by_scene_speaker.scene == scene,
                                                            ["speaker", "word_count", "line"]].sort_values(
@@ -98,11 +102,14 @@ def get_speaker_network_edges(dataset):
             for j in range(i + 1, n):
                 sp1 = speakers_count.iloc[i]
                 sp2 = speakers_count.iloc[j]
-                interactions = interactions.append({"speaker1": sp1["speaker"],
-                                                    "speaker2": sp2["speaker"],
-                                                    "line_count": sp1["line"] + sp2["line"],
-                                                    "word_count": sp1["word_count"] + sp2["word_count"]},
-                                                   ignore_index=True)
+                speaker1.append(sp1["speaker"])
+                speaker2.append(sp2["speaker"])
+                line_count.append(sp1["line"] + sp2["line"])
+                word_count.append(sp1["word_count"] + sp2["word_count"])
+    interactions = pd.concat([pd.Series(speaker1, name="speaker1"),
+                              pd.Series(speaker2, name="speaker2"),
+                              pd.Series(line_count, name="line_count"),
+                              pd.Series(word_count, name="word_count")], axis=1)
     return interactions.groupby(["speaker1", "speaker2"]).agg(line_count=("line_count", "sum"),
                                                               scene_count=("line_count", "count"),
                                                               word_count=("word_count", "sum")).reset_index()
@@ -138,7 +145,8 @@ def save_episodes(dataset, count=1, path="../data"):
 
 
 def save_merged_episodes(path: str = "../data") -> None:
-    seasons = [os.path.join(path, dirname) for dirname in os.listdir(path) if os.path.isdir(os.path.join(path, dirname)) and dirname.startswith("season")]
+    seasons = [os.path.join(path, dirname) for dirname in os.listdir(path) if
+               os.path.isdir(os.path.join(path, dirname)) and dirname.startswith("season")]
     df = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count", "scene_count", "season", "episode"])
     pattern = re.compile(r"edges_weighted_E(\d+)\.csv")
     for i, season in enumerate(seasons):
@@ -149,7 +157,8 @@ def save_merged_episodes(path: str = "../data") -> None:
             ep_df["episode"] = int(pattern.search(episode).group(1))
             df = pd.concat([df, ep_df], axis=0)
     for measure in ["line_count", "word_count", "scene_count"]:
-        pivot_df = pd.pivot_table(df, values=measure, index=["speaker1", "speaker2"], columns=["season", "episode"], fill_value=0)
+        pivot_df = pd.pivot_table(df, values=measure, index=["speaker1", "speaker2"], columns=["season", "episode"],
+                                  fill_value=0)
         pivot_df.to_csv(os.path.join(path, f"merged_episodes_{measure}.csv"), encoding="utf-8")
 
 
