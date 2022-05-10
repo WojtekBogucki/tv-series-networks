@@ -269,15 +269,15 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
         edge_width = np.ones(len(edges))
     degrees_weight = degrees_weight / np.max(degrees_weight) * 4500
     pos = nx.spring_layout(G)
-    plt.figure(figsize=(12, 16))
-    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9)
-    nx.draw_networkx_edges(G, pos, width=edge_width, alpha=0.5)
-    nx.draw_networkx_labels(G, pos)
+    fig, ax = plt.subplots(figsize=(12, 16))
+    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9, ax=ax)
+    nx.draw_networkx_edges(G, pos, width=edge_width, alpha=0.5, ax=ax)
+    nx.draw_networkx_labels(G, pos, ax=ax)
     plt.axis('off')
     # nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
     if filename:
         plt.savefig(f"../figures/{filename}.png")
-        plt.close()
+        plt.close(fig)
     else:
         plt.show()
 
