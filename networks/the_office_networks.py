@@ -130,20 +130,4 @@ draw_interaction_network_communities(net_episodes[episode_dict["s03e18"]], "line
 draw_interaction_network_communities(net_episodes[episode_dict["s03e21"]], "line_count",
                                      filename="office_lines_s03e21")
 
-mod_df, times = get_community_detection_scores("the_office")
 
-mod_df.to_csv("../data/mod_df.csv")
-draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LD")
-draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LV")
-
-mod_df = pd.read_csv("../data/mod_df.csv", index_col=0)
-
-
-mod_df.mean(axis=0).sort_values(ascending=False)
-
-mod_df_norm = mod_df.div(mod_df.max(axis=1), axis=0).fillna(1)
-mod_df_norm["SG"][mod_df_norm["SG"]<0] = 0
-mod_df_norm.mean(axis=0).sort_values(ascending=False)
-
-mod_df_norm = mod_df.div(mod_df.sum(axis=1), axis=0).fillna(0)
-mod_df_norm.mean(axis=0).sort_values(ascending=False)

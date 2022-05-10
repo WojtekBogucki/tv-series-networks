@@ -8,6 +8,7 @@ import igraph as ig
 import seaborn as sns
 from scipy.spatial.distance import euclidean, pdist, squareform
 from time import time
+from tqdm import tqdm
 
 
 def max_degree(net: nx.Graph, weight: str) -> int:
