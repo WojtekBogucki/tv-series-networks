@@ -332,13 +332,15 @@ def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "compa
     plt.close(fig)
 
 
-def get_community_detection_scores(show_name: str, weight: str = "line_count") -> tuple[pd.DataFrame, dict]:
+def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> tuple[pd.DataFrame, dict]:
+    if methods is None:
+        methods = ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     net_episodes = get_episode_networks(f"../data/{show_name}/")
     latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
     episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
     mod_df = pd.DataFrame(index=list(episode_dict.keys()))
     times = dict()
-    for method in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]:
+    for method in methods:
         print(method)
         mod_scores = []
         t1 = time()
@@ -356,3 +358,7 @@ def get_community_detection_scores(show_name: str, weight: str = "line_count") -
         times[method] = np.round(t2-t1, 4)
     return mod_df, times
 
+
+def comm_det_test(net_episodes: list[nx.Graph], episode_dict: dict, method: str, weight: str = "line_count") -> None:
+    for ep_code, ep_num in episode_dict.items():
+        comm = detect_communities(net_episodes[ep_num], method=method, weight=weight)
