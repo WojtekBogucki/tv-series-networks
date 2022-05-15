@@ -177,4 +177,4 @@ def merge_seasons(path: str) -> None:
 
 def get_valid_filename(s: str) -> str:
     s = str(s).strip().replace(' ', '_')
-    return re.sub(r'(?u)[^-\w.]', '', s)
+    return re.sub(r'(?u)[^-\w]', '', s)

@@ -10,12 +10,23 @@ movie_titles = [movie.split(".")[0] for movie in os.listdir(path_dir)]
 
 os.makedirs("../figures/movies", exist_ok=True)
 
-i = 116
+i = 0
 for movie_path, movie_title in zip(movie_paths[i:], movie_titles[i:]):
     print(movie_title)
     edges_weighted = pd.read_csv(movie_path)
     net = nx.from_pandas_edgelist(edges_weighted, source="speaker1", target="speaker2",
                                   edge_attr=["line_count", "scene_count", "word_count"])
     draw_interaction_network_communities(net, "line_count", method="LD", filename=f"movies/{movie_title}_lines")
-    draw_interaction_network_communities(net, "scene_count", method="LD", filename=f"movies/{movie_title}_scenes")
-    draw_interaction_network_communities(net, "word_count", method="LD", filename=f"movies/{movie_title}_words")
+    # draw_interaction_network_communities(net, "scene_count", method="LD", filename=f"movies/{movie_title}_scenes")
+    # draw_interaction_network_communities(net, "word_count", method="LD", filename=f"movies/{movie_title}_words")
+
+
+movies_net = []
+for movie_path, movie_title in zip(movie_paths, movie_titles):
+    print(movie_title)
+    edges_weighted = pd.read_csv(movie_path)
+    net = nx.from_pandas_edgelist(edges_weighted, source="speaker1", target="speaker2",
+                                  edge_attr=["line_count", "scene_count", "word_count"])
+    movies_net.append(net)
+
+movie_stats = get_movie_network_stats(movies_net, movie_titles)

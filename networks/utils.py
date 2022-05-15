@@ -111,8 +111,10 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph],
                                 weight: str = "line_count",
                                 comm_det_method: str = "GM") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
-    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership", f"number_of_communities_{comm_det_method}", "gini_coef"]
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
+               "avg_shortest_path",
+               "transitivity", "number_of_cliques", "clique_number", "weighted_rating", "avg_viewership",
+               f"number_of_communities_{comm_det_method}", "gini_coef"]
     season_ratings = pd.read_csv("../data/imdb/season_ratings.csv")
     season_ratings = season_ratings[season_ratings.originalTitle == show_name]
     season_view = pd.read_csv("../data/viewership/season_viewership.csv")
@@ -131,7 +133,8 @@ def get_network_stats_by_season(net_seasons: list[nx.Graph],
                          season_ratings["weighted_rating"].tolist(),
                          season_view["avg_viewership"].tolist(),
                          [len(np.unique(detect_communities(net, method="GM", weight=weight))) for net in net_seasons],
-                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in net_seasons]
+                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in
+                          net_seasons]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=seasons, columns=columns)
     return stats
@@ -143,8 +146,10 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                                  weight: str = "line_count",
                                  comm_det_method: str = "GM") -> pd.DataFrame:
     episodes = episode_dict.keys()
-    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
-               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating", "num_votes",
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
+               "avg_shortest_path",
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating",
+               "num_votes",
                "runtime", "viewership", f"number_of_communities_{comm_det_method}", "gini_coef"]
     ratings = pd.read_csv("../data/imdb/episode_ratings.csv")
     ratings = ratings[ratings.originalTitle == show_name]
@@ -157,7 +162,8 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                          [nx.diameter(net) if nx.is_connected(net) else np.nan for net in net_episodes],
                          [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_episodes],
                          [nx.average_clustering(net) for net in net_episodes],
-                         [nx.average_shortest_path_length(net, weight=weight) if nx.is_connected(net) else np.nan for net in net_episodes],
+                         [nx.average_shortest_path_length(net, weight=weight) if nx.is_connected(net) else np.nan for
+                          net in net_episodes],
                          [nx.transitivity(net) for net in net_episodes],
                          [nx.number_connected_components(net) for net in net_episodes],
                          [nx.graph_number_of_cliques(net) for net in net_episodes],
@@ -166,15 +172,18 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                          ratings["numVotes"].tolist(),
                          ratings["runtimeMinutes_y"].tolist(),
                          viewership["viewership"].tolist(),
-                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in net_episodes],
-                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in net_episodes]
+                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in
+                          net_episodes],
+                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in
+                          net_episodes]
                          ]).transpose()
     stats = pd.DataFrame(measures, index=episodes, columns=columns)
     return stats
 
 
 def get_network_stats(net: nx.Graph) -> dict:
-    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering", "avg_shortest_path",
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
+               "avg_shortest_path",
                "transitivity"]
     measures = np.array([nx.number_of_nodes(net),
                          nx.number_of_edges(net),
@@ -187,6 +196,40 @@ def get_network_stats(net: nx.Graph) -> dict:
                          nx.transitivity(net)
                          ])
     stats = {col: measure for col, measure in zip(columns, measures)}
+    return stats
+
+
+def get_movie_network_stats(net_movies: list[nx.Graph],
+                            movie_titles: list[str],
+                            weight: str = "line_count",
+                            comm_det_method: str = "LD") -> pd.DataFrame:
+    columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
+               "avg_shortest_path",
+               "transitivity", "number_connected_components", "number_of_cliques", "clique_number", "avg_rating",
+               "num_votes",
+               f"number_of_communities_{comm_det_method}", "gini_coef"]
+    ratings = pd.read_csv("../data/imdb/movie_ratings.csv")
+    measures = np.array([[nx.number_of_nodes(net) for net in net_movies],
+                         [nx.number_of_edges(net) for net in net_movies],
+                         [max_degree(net, weight) for net in net_movies],
+                         [nx.density(net) for net in net_movies],
+                         [nx.diameter(net) if nx.is_connected(net) else np.nan for net in net_movies],
+                         [nx.degree_assortativity_coefficient(net, weight=weight) for net in net_movies],
+                         [nx.average_clustering(net) for net in net_movies],
+                         [nx.average_shortest_path_length(net, weight=weight) if nx.is_connected(net) else np.nan for
+                          net in net_movies],
+                         [nx.transitivity(net) for net in net_movies],
+                         [nx.number_connected_components(net) for net in net_movies],
+                         [nx.graph_number_of_cliques(net) for net in net_movies],
+                         [nx.graph_clique_number(net) for net in net_movies],
+                         [ratings.loc[ratings["title"] == title, "rating"].values[0] if ratings.loc[ratings["title"] == title, "rating"].values else np.nan for title in movie_titles],
+                         [ratings.loc[ratings["title"] == title, "num_votes"].values[0] if ratings.loc[ratings["title"] == title, "num_votes"].values else np.nan for title in movie_titles],
+                         [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in
+                          net_movies],
+                         [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in
+                          net_movies]
+                         ]).transpose()
+    stats = pd.DataFrame(measures, index=movie_titles, columns=columns)
     return stats
 
 
@@ -204,7 +247,8 @@ def get_episode_dict(data_path: str) -> dict:
     return episode_dict
 
 
-def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list[int]:
+def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list[
+    int]:
     assert method.upper() in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     nodes = list(G.nodes())
     membership = list(np.zeros(len(nodes), dtype="int"))
@@ -236,7 +280,8 @@ def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_coun
         elif method == "WT":
             membership = G_ig.community_walktrap(weights=weight).as_clustering().membership
         elif method == "LD":
-            membership = G_ig.community_leiden(weights=weight, n_iterations=-1, objective_function="modularity", resolution_parameter=resolution).membership
+            membership = G_ig.community_leiden(weights=weight, n_iterations=-1, objective_function="modularity",
+                                               resolution_parameter=resolution).membership
         else:
             return membership
     return membership
@@ -270,7 +315,8 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     degrees_weight = degrees_weight / np.max(degrees_weight) * 4500
     pos = nx.spring_layout(G)
     fig, ax = plt.subplots(figsize=(12, 16))
-    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9, ax=ax)
+    nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9,
+                           ax=ax)
     nx.draw_networkx_edges(G, pos, width=edge_width, alpha=0.5, ax=ax)
     nx.draw_networkx_labels(G, pos, ax=ax)
     plt.axis('off')
@@ -285,7 +331,7 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
 def plot_corr_mat(df: pd.DataFrame, filename: str = "", **kwargs) -> None:
     cmap = sns.diverging_palette(230, 20, as_cmap=True)
     df_corr = df.corr(**kwargs)
-    plt.figure(figsize=(16,9))
+    plt.figure(figsize=(16, 9))
     sns.heatmap(df_corr,
                 xticklabels=df_corr.columns.values,
                 yticklabels=df_corr.columns.values,
@@ -306,7 +352,7 @@ def gini_coefficient(x: np.array) -> float:
     diffsum = 0
     for i, xi in enumerate(x[:-1], 1):
         diffsum += np.sum(np.abs(xi - x[i:]))
-    return diffsum / (len(x)**2 * np.mean(x))
+    return diffsum / (len(x) ** 2 * np.mean(x))
 
 
 def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "comparison/similarity_matrix") -> None:
@@ -332,7 +378,8 @@ def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "compa
     plt.close(fig)
 
 
-def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> tuple[pd.DataFrame, dict]:
+def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> tuple[
+    pd.DataFrame, dict]:
     if methods is None:
         methods = ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     net_episodes = get_episode_networks(f"../data/{show_name}/")
@@ -355,7 +402,7 @@ def get_community_detection_scores(show_name: str, weight: str = "line_count", m
         method_scores.name = method
         method_scores.index = list(episode_dict.keys())
         mod_df = pd.concat([mod_df, method_scores], axis=1)
-        times[method] = np.round(t2-t1, 4)
+        times[method] = np.round(t2 - t1, 4)
     return mod_df, times
 
 
