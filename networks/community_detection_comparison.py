@@ -1,27 +1,35 @@
 from networks.utils import *
 import pandas as pd
 import os
-from timeit import timeit
-import numpy
+from timeit import timeit, repeat
+import numpy as np
 import random
 import json
 
-# calculate time and modularity for each community detection method
-times_df = pd.DataFrame()
+# calculate modularity for each community detection method
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     print(show_name)
-    mod_df, times = get_community_detection_scores(show_name)
+    random.seed(777)
+    np.random.seed(777)
+    mod_df, mix_par_df, num_com_def = get_community_detection_scores(show_name)
     mod_df.to_csv(f"../data/communities/{show_name}_modularity.csv")
-    times_df = pd.concat([times_df, pd.Series(times, name=show_name)], axis=1)
+    mix_par_df.to_csv(f"../data/communities/{show_name}_mix_par.csv")
+    num_com_def.to_csv(f"../data/communities/{show_name}_num_com.csv")
 
-times_df.to_csv("../data/communities/times.csv")
+# average modularity
+mods_df = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    mod_df = pd.read_csv(f"../data/communities/{show_name}_modularity.csv", index_col=0)
+    mods_df = pd.concat([mods_df, mod_df], axis=0, ignore_index=True)
 
-times_df = pd.read_csv("../data/communities/times.csv", index_col=0)
-times_df.mean(axis=1).sort_values()
+mods_df.mean(axis=0).round(3)
 
-times_df_norm = times_df/times_df.max(axis=0)
-times_df_norm.mean(axis=1).sort_values()
+# normalized
+mods_df_norm = mods_df.div(mods_df.max(axis=1), axis=0).fillna(1)
+mods_df_norm["SG"][mods_df_norm["SG"] < 0] = 0
+mods_df_norm.mean(axis=0).sort_values(ascending=False).round(3)
 
+# average modularity by show
 mods_df = pd.DataFrame()
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     mod_df = pd.read_csv(f"../data/communities/{show_name}_modularity.csv", index_col=0)
@@ -31,7 +39,23 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     avg_mod = avg_mod.rename(show_name)
     mods_df = pd.concat([mods_df, avg_mod], axis=1)
 
-mods_df.mean(axis=1).sort_values(ascending=False)
+mods_df.mean(axis=1).sort_values(ascending=False).round(3)
+
+# average mixing parameter
+mix_pars_df = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    mix_par_df = pd.read_csv(f"../data/communities/{show_name}_mix_par.csv", index_col=0)
+    mix_pars_df = pd.concat([mix_pars_df, mix_par_df], axis=0, ignore_index=True)
+
+mix_pars_df.mean(axis=0).round(3)
+
+# average number of communities
+nums_com_def = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    num_com_def = pd.read_csv(f"../data/communities/{show_name}_num_com.csv", index_col=0)
+    nums_com_def = pd.concat([nums_com_def, num_com_def], axis=0, ignore_index=True)
+
+num_com_def.mean(axis=0).round(3)
 
 # example comparison
 show_name = "tbbt"
@@ -43,24 +67,67 @@ draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line
 draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LV")
 
 
+# timing
+setup = """
+import random
+import os
+import numpy as np
+import pandas as pd
+import networkx as nx
+import igraph as ig
+from networkx import community
+from networks.utils import get_episode_networks, get_episode_dict
+
+show_name = "the_office"
+net_episodes = get_episode_networks(f"../data/{show_name}/")
+latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
+episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")     
+
+ig_net_episodes = [ig.Graph.from_networkx(G) for G in net_episodes]                            
+
+random.seed(123)
+np.random.seed(123)
+"""
 
 
+nx_times = []
+for method in ["greedy_modularity_communities", "louvain_communities"]:
+    nx_stmt = f"""
+    for ep_code, ep_num in episode_dict.items():
+        communities = community.{method}(net_episodes[ep_num], weight="line_count")
+    """
+    nx_times.append(repeat(nx_stmt, setup=setup, number=10, repeat=5))
+[np.mean(nx_time) for nx_time in nx_times]
 
-# timeit
-times = dict()
-for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
-    random.seed(123)
-    numpy.random.seed(123)
-    net_episodes = get_episode_networks(f"../data/{show_name}/")
-    latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
-    episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
-    serial_times = dict()
-    for method in ["LD", "FG", "ML", "GM", "LV"]:
-        serial_times[method] = timeit(lambda: comm_det_test(net_episodes, episode_dict, method), number=100)
+ig_methods = ["community_spinglass(weights='line_count')",
+               "community_fastgreedy(weights='line_count')",
+               "community_infomap(edge_weights='line_count')",
+               "community_leading_eigenvector(weights='line_count')",
+               "community_label_propagation(weights='line_count')",
+               "community_multilevel(weights='line_count')",
+               "community_walktrap(weights='line_count')",
+               "community_leiden(weights='line_count', n_iterations=-1, objective_function='modularity')"]
 
-    print("\n".join(f"{key}: {value:.3f}" for key, value in serial_times.items()))
-    times[show_name] = serial_times
+ig_times = []
+for method in ig_methods:
+    if "spinglass" in method:
+        ig_stmt = f"""
+for ep_code, ep_num in episode_dict.items():
+    if nx.is_connected(net_episodes[ep_num]):
+        communities = ig_net_episodes[ep_num].{method}
+            """
+    else:
+        ig_stmt = f"""
+for ep_code, ep_num in episode_dict.items():
+    communities = ig_net_episodes[ep_num].{method}
+        """
+    ig_times.append(repeat(ig_stmt, setup=setup, number=10, repeat=5))
+
+[np.mean(ig_time) for ig_time in ig_times]
+
+times_df = pd.DataFrame(data=[np.mean(nx_time) for nx_time in nx_times]+[np.mean(ig_time) for ig_time in ig_times], index=["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"], columns=["avg_time"])
+times_df.to_csv("../data/communities/times.csv")
 
 
-with open("../data/communities/timeit.json", "w") as f:
-    json.dump(times, f, indent=4)
+times_df = pd.read_csv("../data/communities/times.csv", index_col=0)
+(times_df/10).round(3)

@@ -130,8 +130,8 @@ for col in episode_stats.columns[:-1]:
     plt.close()
 
 # similarity matrix
-create_similarity_matrix(episode_stats)
-create_similarity_matrix(episode_stats[episode_stats["show"] == "the_office"], filename="the_office/similarity_matrix")
-create_similarity_matrix(episode_stats[episode_stats["show"] == "seinfeld"], filename="seinfeld/similarity_matrix")
-create_similarity_matrix(episode_stats[episode_stats["show"] == "tbbt"], filename="tbbt/similarity_matrix")
-create_similarity_matrix(episode_stats[episode_stats["show"] == "friends"], filename="friends/similarity_matrix")
+create_similarity_matrix(episode_stats, episode_stats["show"].values.tolist())
+create_similarity_matrix(episode_stats[episode_stats["show"] == "the_office"], episode_stats[episode_stats["show"] == "the_office"].index.values.tolist(), filename="the_office/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "seinfeld"], episode_stats[episode_stats["show"] == "seinfeld"].index.values.tolist(), filename="seinfeld/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "tbbt"], episode_stats[episode_stats["show"] == "tbbt"].index.values.tolist(), filename="tbbt/similarity_matrix")
+create_similarity_matrix(episode_stats[episode_stats["show"] == "friends"], episode_stats[episode_stats["show"] == "friends"].index.values.tolist(), filename="friends/similarity_matrix")

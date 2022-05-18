@@ -30,3 +30,5 @@ for movie_path, movie_title in zip(movie_paths, movie_titles):
     movies_net.append(net)
 
 movie_stats = get_movie_network_stats(movies_net, movie_titles)
+
+create_similarity_matrix(movie_stats, movie_titles, filename="comparison/movies")

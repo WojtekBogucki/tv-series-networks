@@ -355,17 +355,14 @@ def gini_coefficient(x: np.array) -> float:
     return diffsum / (len(x) ** 2 * np.mean(x))
 
 
-def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "comparison/similarity_matrix") -> None:
-    norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1).apply(
+def create_similarity_matrix(episode_stats: pd.DataFrame, labels: list, filename: str = "comparison/similarity_matrix") -> None:
+    norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1, errors="ignore").apply(
         lambda x: (x - x.mean()) / x.std(), axis=0)
 
-    def similarity_func(u, v):
-        return 1 / (1 + euclidean(u, v))
-
-    dists = pdist(norm_episode_stats.fillna(0), similarity_func)
-    df_euclid = pd.DataFrame(squareform(dists), columns=norm_episode_stats.index, index=norm_episode_stats.index)
-    df_euclid.columns = episode_stats["show"]
-    df_euclid.index = episode_stats["show"]
+    dists = pdist(norm_episode_stats.fillna(0), "euclidean")
+    df_euclid = pd.DataFrame(1/(1+squareform(dists)), columns=norm_episode_stats.index, index=norm_episode_stats.index)
+    df_euclid.columns = labels
+    df_euclid.index = labels
     cmap = sns.color_palette("light:b", as_cmap=True)
     fig = plt.figure(dpi=1200)
     sns.heatmap(df_euclid,
@@ -378,32 +375,64 @@ def create_similarity_matrix(episode_stats: pd.DataFrame, filename: str = "compa
     plt.close(fig)
 
 
-def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> tuple[
-    pd.DataFrame, dict]:
+def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> \
+        tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if methods is None:
         methods = ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     net_episodes = get_episode_networks(f"../data/{show_name}/")
     latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
     episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
     mod_df = pd.DataFrame(index=list(episode_dict.keys()))
-    times = dict()
+    mix_pars_df = pd.DataFrame(index=list(episode_dict.keys()))
+    num_communities_df = pd.DataFrame(index=list(episode_dict.keys()))
     for method in methods:
         print(method)
         mod_scores = []
-        t1 = time()
+        mix_pars = []
+        num_communities = []
         for ep_code, ep_num in episode_dict.items():
-            comm = detect_communities(net_episodes[ep_num], method=method, weight=weight)
-            nodes = {i: x for i, x in enumerate(list(net_episodes[ep_num].nodes))}
+            net_episode = net_episodes[ep_num]
+            comm = detect_communities(net_episode, method=method, weight=weight)
+            nodes = {i: x for i, x in enumerate(list(net_episode.nodes))}
             communities = [set(nodes[i] for i in np.nonzero(np.array(comm) == c)[0]) for c in np.unique(comm)]
-            mod_score = nx.community.modularity(net_episodes[ep_num], communities, weight=weight)
+            mod_score = nx.community.modularity(net_episode, communities, weight=weight)
             mod_scores.append(mod_score)
-        t2 = time()
+            # mixing parameter
+            com_dict = {char: com for char, com in zip(list(net_episode.nodes), comm)}
+            nx.set_node_attributes(net_episode, com_dict, "community")
+            mix_par = mean_mixing_parameter(net_episode, "community")
+            mix_pars.append(mix_par)
+            # number of communities
+            num_communities.append(len(np.unique(comm)))
         method_scores = pd.Series(mod_scores)
         method_scores.name = method
         method_scores.index = list(episode_dict.keys())
         mod_df = pd.concat([mod_df, method_scores], axis=1)
-        times[method] = np.round(t2 - t1, 4)
-    return mod_df, times
+        mix_params = pd.Series(mix_pars)
+        mix_params.name = method
+        mix_params.index = list(episode_dict.keys())
+        mix_pars_df = pd.concat([mix_pars_df, mix_params], axis=1)
+        num_communities = pd.Series(num_communities)
+        num_communities.name = method
+        num_communities.index = list(episode_dict.keys())
+        num_communities_df = pd.concat([num_communities_df, num_communities], axis=1)
+    return mod_df, mix_pars_df, num_communities_df
+
+
+def mean_mixing_parameter(g: nx.Graph, attribute: str, weight: str = "line_count"):
+    nodes = list(g.nodes())
+    nodes_data = g.nodes(data=True)
+    mius = []
+    for n in nodes:
+        n_comm = nodes_data[n][attribute]
+        subgraph = nx.subgraph(g, [character for character, data in nodes_data if data[attribute] != n_comm] + [n])
+        k_ext = subgraph.degree(weight=weight)[n]
+        k_tot = g.degree(weight=weight)[n]
+        mius.append(k_ext / k_tot)
+    if np.sum(mius) > 0:
+        return np.mean(mius)
+    else:
+        return np.nan
 
 
 def comm_det_test(net_episodes: list[nx.Graph], episode_dict: dict, method: str, weight: str = "line_count") -> None:
