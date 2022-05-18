@@ -4,7 +4,6 @@ import os
 from timeit import timeit, repeat
 import numpy as np
 import random
-import json
 
 # calculate modularity for each community detection method
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
@@ -57,14 +56,24 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
 
 num_com_def.mean(axis=0).round(3)
 
-# example comparison
-show_name = "tbbt"
+# example comparison - differences
+mods_df = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    mod_df = pd.read_csv(f"../data/communities/{show_name}_modularity.csv", index_col=0)
+    mod_df = mod_df.reset_index()
+    mod_df["show"]=show_name
+    mods_df = pd.concat([mods_df, mod_df], axis=0, ignore_index=True)
+most_different = np.abs(mods_df["ML"] - mods_df["LD"]).sort_values(ascending=False).index.values[:10]
+pd.options.display.max_columns=20
+print(mods_df.iloc[most_different])
+
+show_name = "friends"
 net_episodes = get_episode_networks(f"../data/{show_name}/")
 latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
 episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
 
-draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LD")
-draw_interaction_network_communities(net_episodes[episode_dict["s01e01"]], "line_count", method="LV")
+draw_interaction_network_communities(net_episodes[episode_dict["s08e03"]], "line_count", method="LD", seed=123)
+draw_interaction_network_communities(net_episodes[episode_dict["s08e03"]], "line_count", method="ML", seed=123)
 
 
 # timing

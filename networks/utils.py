@@ -287,7 +287,7 @@ def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_coun
     return membership
 
 
-def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM") -> None:
+def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM", seed: int = None) -> None:
     '''
     Function that draws an interaction network from given graph
     :param G: networkx graph
@@ -295,6 +295,7 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     :param filename: name of the PNG file to which save the graph
     :param resolution: community detection parameter
     :param method: method of community detection (default greedy_modularity_communities)
+    :param seed: Seed for the position of network drawing
     :return:
     '''
     nodes = list(G.nodes())
@@ -313,7 +314,7 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
         degrees_weight = np.array([v for _, v in G.degree()])
         edge_width = np.ones(len(edges))
     degrees_weight = degrees_weight / np.max(degrees_weight) * 4500
-    pos = nx.spring_layout(G)
+    pos = nx.spring_layout(G, seed=seed)
     fig, ax = plt.subplots(figsize=(12, 16))
     nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9,
                            ax=ax)

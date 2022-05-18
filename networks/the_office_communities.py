@@ -146,7 +146,7 @@ ig.plot(office_net_ig, layout=layout, target=ax, **visual_style)
 plt.axis("off")
 plt.show()
 
-EB_community = office_net_ig.community_edge_betweenness(directed=False, weights="line_count").as_clustering()
+EB_community = office_net_ig.community_edge_betweenness(clusters=4, directed=False, weights="line_count").as_clustering()
 SG_community = office_net_ig.community_spinglass(weights="line_count")
 node_attr = {char: com for char, com in zip(list(office_net.nodes()), SG_community.membership)}
 nx.set_node_attributes(office_net, node_attr, "SG_community")
@@ -164,13 +164,19 @@ ig.compare_communities(ML_community, SG_community, method="rand")
 list(EB_community)
 
 
-# communities
+# other communities
+import itertools
+
 def most_central_edge(G):
     centrality = nx.edge_betweenness_centrality(G, weight="line_count")
     return max(centrality, key=centrality.get)
 
 
 communities = community.girvan_newman(office_net, most_valuable_edge=most_central_edge)
+k=3
+for comm in itertools.islice(communities, k):
+    print(tuple(sorted(c) for c in comm))
+
 node_groups = []
 for com in next(communities):
     node_groups.append(list(com))
