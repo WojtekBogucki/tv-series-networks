@@ -161,9 +161,10 @@ for col in episode_stats.columns[:-1]:
         data[col].plot(kind="hist", range=(xmin, xmax), ax=ax, bins=min(15, episode_stats[col].nunique()), legend=False, title=show_names[show],
                        fontsize=13, density=False,
                        weights=list(np.ones_like(data.index) / len(data.index)))
-    fig.suptitle(f"Comparison of  TV series by {col_name}")
+        ax.set_ylabel("")
+    fig.suptitle(f"Comparison of  TV series by {col_name}", fontsize=15)
     fig.supxlabel(col_name.capitalize())
-    fig.supxlabel("Frequency (%)")
+    fig.supylabel("Frequency (%)")
     plt.savefig(f"../figures/comparison/{col}")
     plt.close(fig)
 
