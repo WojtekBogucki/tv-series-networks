@@ -9,6 +9,12 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
     data = pd.read_csv(f"{path}/{latest_file}")
 
+    # save all
+    edges_weighted = (data.pipe(filter_by_speakers, count=0)
+                          .pipe(filter_group_scenes)
+                          .pipe(get_speaker_network_edges))
+    edges_weighted.to_csv(f"{path}/edges_weighted_all.csv", index=False, encoding="utf-8")
+
     # save speakers with over 100 lines
     office_edges_weighted = (data.pipe(filter_by_speakers)
                              .pipe(filter_group_scenes)

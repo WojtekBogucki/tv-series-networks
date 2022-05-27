@@ -33,8 +33,9 @@ tbbt_season_stats = get_network_stats_by_season(tbbt_net_seasons)
 
 tbbt_season_stats["edges"].plot(kind="bar")
 
-draw_interaction_network_communities(tbbt_net_seasons[0], "line_count", method="ML")
-draw_interaction_network_communities(tbbt_net_seasons[1], "line_count", method="GM")
+draw_interaction_network_communities(tbbt_net_seasons[5], "line_count", method="ML")
+draw_interaction_network_communities(tbbt_net_seasons[5], "line_count", method="LD")
+draw_interaction_network_communities(tbbt_net_seasons[5], "line_count", method="FG")
 
 # by episodes
 show_name = "tbbt"

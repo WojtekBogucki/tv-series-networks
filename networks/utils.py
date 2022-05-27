@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import numpy as np
+import random
 import networkx as nx
 from networkx import community
 import matplotlib.pyplot as plt
@@ -58,7 +59,7 @@ def get_character_stats(G: nx.Graph) -> pd.DataFrame:
 
 
 def draw_character_stats(data: pd.DataFrame, colname: str, filename: str = None) -> None:
-    data.loc[:, colname].sort_values(ascending=True).plot(kind="barh")
+    data.loc[data[colname] > 0, colname].sort_values(ascending=True).plot(kind="barh")
     plt.xticks(rotation=45)
     plt.tight_layout()
     if filename:
@@ -109,7 +110,7 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
 def get_network_stats_by_season(net_seasons: list[nx.Graph],
                                 show_name: str,
                                 weight: str = "line_count",
-                                comm_det_method: str = "GM") -> pd.DataFrame:
+                                comm_det_method: str = "LD") -> pd.DataFrame:
     seasons = [f"{i + 1}" for i in range(len(net_seasons))]
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
                "avg_shortest_path",
@@ -144,7 +145,7 @@ def get_network_stats_by_episode(net_episodes: list[nx.Graph],
                                  episode_dict: dict,
                                  show_name: str,
                                  weight: str = "line_count",
-                                 comm_det_method: str = "GM") -> pd.DataFrame:
+                                 comm_det_method: str = "LD") -> pd.DataFrame:
     episodes = episode_dict.keys()
     columns = ["nodes", "edges", "max_degree", "density", "diameter", "assortativity", "avg_clustering",
                "avg_shortest_path",
@@ -222,8 +223,10 @@ def get_movie_network_stats(net_movies: list[nx.Graph],
                          [nx.number_connected_components(net) for net in net_movies],
                          [nx.graph_number_of_cliques(net) for net in net_movies],
                          [nx.graph_clique_number(net) for net in net_movies],
-                         [ratings.loc[ratings["title"] == title, "rating"].values[0] if ratings.loc[ratings["title"] == title, "rating"].values else np.nan for title in movie_titles],
-                         [ratings.loc[ratings["title"] == title, "num_votes"].values[0] if ratings.loc[ratings["title"] == title, "num_votes"].values else np.nan for title in movie_titles],
+                         [ratings.loc[ratings["title"] == title, "rating"].values[0] if ratings.loc[
+                             ratings["title"] == title, "rating"].values else np.nan for title in movie_titles],
+                         [ratings.loc[ratings["title"] == title, "num_votes"].values[0] if ratings.loc[
+                             ratings["title"] == title, "num_votes"].values else np.nan for title in movie_titles],
                          [len(np.unique(detect_communities(net, method=comm_det_method, weight=weight))) for net in
                           net_movies],
                          [gini_coefficient(np.array(list(dict(net.degree(weight=weight)).values()))) for net in
@@ -247,11 +250,14 @@ def get_episode_dict(data_path: str) -> dict:
     return episode_dict
 
 
-def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0) -> list[
+def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_count", resolution: float = 1.0,
+                       seed: int = 777) -> list[
     int]:
     assert method.upper() in ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
     nodes = list(G.nodes())
     membership = list(np.zeros(len(nodes), dtype="int"))
+    random.seed(seed)
+    np.random.seed(seed)
     if method == "GM":
         communities = community.greedy_modularity_communities(G, weight=weight, resolution=resolution)
         com_dict = {character: i for i, com in enumerate(communities) for character in com}
@@ -287,7 +293,8 @@ def detect_communities(G: nx.Graph, method: str = "GM", weight: str = "line_coun
     return membership
 
 
-def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="GM", seed: int = None) -> None:
+def draw_interaction_network_communities(G, weight=None, filename=None, resolution=1.0, method="LD",
+                                         seed: int = None) -> None:
     '''
     Function that draws an interaction network from given graph
     :param G: networkx graph
@@ -314,6 +321,15 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
         degrees_weight = np.array([v for _, v in G.degree()])
         edge_width = np.ones(len(edges))
     degrees_weight = degrees_weight / np.max(degrees_weight) * 4500
+    # for i, component in enumerate(nx.connected_components(G)):
+    #     sub_g = nx.subgraph(G, component)
+    #     if method:
+    #         method = method.upper()
+    #         colors = detect_communities(sub_g, method=method, weight=weight, resolution=resolution)
+    #     else:
+    #         print("No community detection selected")
+    #         colors = np.zeros(len(nodes))
+    #
     pos = nx.spring_layout(G, seed=seed)
     fig, ax = plt.subplots(figsize=(12, 16))
     nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9,
@@ -356,27 +372,31 @@ def gini_coefficient(x: np.array) -> float:
     return diffsum / (len(x) ** 2 * np.mean(x))
 
 
-def create_similarity_matrix(episode_stats: pd.DataFrame, labels: list, filename: str = "comparison/similarity_matrix") -> None:
-    norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1, errors="ignore").apply(
+def create_similarity_matrix(episode_stats: pd.DataFrame, labels: list,
+                             filename: str = "comparison/similarity_matrix") -> plt.Axes:
+    norm_episode_stats = episode_stats.drop(["avg_rating", "num_votes", "runtime", "viewership", "show"], axis=1,
+                                            errors="ignore").apply(
         lambda x: (x - x.mean()) / x.std(), axis=0)
 
     dists = pdist(norm_episode_stats.fillna(0), "euclidean")
-    df_euclid = pd.DataFrame(1/(1+squareform(dists)), columns=norm_episode_stats.index, index=norm_episode_stats.index)
+    df_euclid = pd.DataFrame(1 / (1 + squareform(dists)), columns=norm_episode_stats.index,
+                             index=norm_episode_stats.index)
     df_euclid.columns = labels
     df_euclid.index = labels
     cmap = sns.color_palette("light:b", as_cmap=True)
     fig = plt.figure(dpi=1200)
-    sns.heatmap(df_euclid,
-                xticklabels="auto",
-                yticklabels="auto",
-                cmap=cmap,
-                annot=False)
+    ax = sns.heatmap(df_euclid,
+                     xticklabels="auto",
+                     yticklabels="auto",
+                     cmap=cmap,
+                     annot=False)
     plt.tight_layout()
     plt.savefig(f"../figures/{filename}")
     plt.close(fig)
+    return ax
 
 
-def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None) -> \
+def get_community_detection_scores(show_name: str, weight: str = "line_count", methods: list = None, seed: int = 777) -> \
         tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if methods is None:
         methods = ["GM", "LV", "SG", "FG", "IM", "LE", "LP", "ML", "WT", "LD"]
@@ -392,6 +412,8 @@ def get_community_detection_scores(show_name: str, weight: str = "line_count", m
         mix_pars = []
         num_communities = []
         for ep_code, ep_num in episode_dict.items():
+            random.seed(seed)
+            np.random.seed(seed)
             net_episode = net_episodes[ep_num]
             comm = detect_communities(net_episode, method=method, weight=weight)
             nodes = {i: x for i, x in enumerate(list(net_episode.nodes))}

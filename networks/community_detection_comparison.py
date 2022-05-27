@@ -3,14 +3,11 @@ import pandas as pd
 import os
 from timeit import timeit, repeat
 import numpy as np
-import random
 
 # calculate modularity for each community detection method
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     print(show_name)
-    random.seed(777)
-    np.random.seed(777)
-    mod_df, mix_par_df, num_com_def = get_community_detection_scores(show_name)
+    mod_df, mix_par_df, num_com_def = get_community_detection_scores(show_name, seed=777)
     mod_df.to_csv(f"../data/communities/{show_name}_modularity.csv")
     mix_par_df.to_csv(f"../data/communities/{show_name}_mix_par.csv")
     num_com_def.to_csv(f"../data/communities/{show_name}_num_com.csv")
@@ -63,18 +60,27 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     mod_df = mod_df.reset_index()
     mod_df["show"]=show_name
     mods_df = pd.concat([mods_df, mod_df], axis=0, ignore_index=True)
+
+# ML and LD
 most_different = np.abs(mods_df["ML"] - mods_df["LD"]).sort_values(ascending=False).index.values[:10]
 pd.options.display.max_columns=20
-print(mods_df.iloc[most_different])
+print(mods_df.loc[most_different, ["ML", "LD", "FG", "index", "show"]])
 
-show_name = "friends"
+show_name = "the_office"
 net_episodes = get_episode_networks(f"../data/{show_name}/")
 latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
 episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
 
-draw_interaction_network_communities(net_episodes[episode_dict["s08e03"]], "line_count", method="LD", seed=123)
-draw_interaction_network_communities(net_episodes[episode_dict["s08e03"]], "line_count", method="ML", seed=123)
+draw_interaction_network_communities(net_episodes[episode_dict["s03e14"]], "line_count", method="LD", seed=777)
+draw_interaction_network_communities(net_episodes[episode_dict["s03e14"]], "line_count", method="ML", seed=777)
 
+mix_pars_df = pd.DataFrame()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    mix_par_df = pd.read_csv(f"../data/communities/{show_name}_mix_par.csv", index_col=0).reset_index()
+    mix_par_df["show"] = show_name
+    mix_pars_df = pd.concat([mix_pars_df, mix_par_df], axis=0, ignore_index=True)
+most_different_mix_par = np.abs(mix_pars_df.dropna()["ML"] - mix_pars_df.dropna()["LD"]).sort_values(ascending=False).index.values[:10]
+print(mix_pars_df.loc[most_different, ["ML", "LD", "FG", "index", "show"]])
 
 # timing
 setup = """
