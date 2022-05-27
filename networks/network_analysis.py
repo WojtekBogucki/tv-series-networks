@@ -141,16 +141,31 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
 
 os.makedirs(f"../figures/comparison", exist_ok=True)
 
+show_names = {
+    "the_office": "The Office",
+    "seinfeld": "Seinfeld",
+    "tbbt": "The Big Bang Theory",
+    "friends": "Friends"
+}
+
 episode_stats.reset_index(drop=True, inplace=True)
 plt.ioff()
 for col in episode_stats.columns[:-1]:
     xmin = episode_stats[col].min()
     xmax = episode_stats[col].max()
-    plt.figure()
-    episode_stats[["show", col]].plot(kind="hist", by="show", layout=(1, 4), figsize=(15, 8), sharey=True, sharex=True,
-                                      bins=10, range=(xmin, xmax), density=True, legend=False, title=col)
+    col_name = " ".join([x for x in col.split("_")])
+    fig, axes = plt.subplots(figsize=(15, 8), ncols=4, nrows=1, sharey=True, sharex=True)
+    for ax, show in zip(axes, ["the_office", "seinfeld", "tbbt", "friends"]):
+        show_filter = episode_stats["show"] == show
+        data = episode_stats.loc[show_filter, [col]].dropna()
+        data[col].plot(kind="hist", range=(xmin, xmax), ax=ax, bins=min(15, episode_stats[col].nunique()), legend=False, title=show_names[show],
+                       fontsize=13, density=False,
+                       weights=list(np.ones_like(data.index) / len(data.index)))
+    fig.suptitle(f"Comparison of  TV series by {col_name}")
+    fig.supxlabel(col_name.capitalize())
+    fig.supxlabel("Frequency (%)")
     plt.savefig(f"../figures/comparison/{col}")
-    plt.close()
+    plt.close(fig)
 
 # similarity matrix
 create_similarity_matrix(episode_stats, episode_stats["show"].values.tolist())
@@ -225,7 +240,7 @@ character_comparison(character_stats, "betweenness_word", "pagerank_word")
 
 # correlations
 plot_corr_mat(episode_stats.drop("show", axis=1), f"comparison/episode_corr")
-plot_corr_mat(episode_stats[episode_stats.runtime<30].drop("show", axis=1), f"comparison/episode_corr_below_30_min")
+plot_corr_mat(episode_stats[episode_stats.runtime < 30].drop("show", axis=1), f"comparison/episode_corr_below_30_min")
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -235,14 +250,15 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_log_erro
 regr = RandomForestRegressor(n_estimators=200, random_state=0)
 X = episode_stats.dropna().drop(['avg_rating', 'num_votes', 'runtime', 'viewership', 'show'], axis=1).to_numpy()
 y = episode_stats.dropna()["avg_rating"].to_numpy()
-feature_names = episode_stats.dropna().drop(['avg_rating', 'num_votes', 'runtime', 'viewership', 'show'], axis=1).columns
+feature_names = episode_stats.dropna().drop(['avg_rating', 'num_votes', 'runtime', 'viewership', 'show'],
+                                            axis=1).columns
 regr.fit(X, y)
 
 importances = regr.feature_importances_
 std = np.std([tree.feature_importances_ for tree in regr.estimators_], axis=0)
 forest_importances = pd.Series(importances, index=feature_names).sort_values(ascending=False)
 
-fig, ax = plt.subplots(figsize=(20,10))
+fig, ax = plt.subplots(figsize=(20, 10))
 forest_importances.plot.bar(yerr=std, ax=ax)
 ax.set_title("Feature importances using MDI")
 ax.set_ylabel("Mean decrease in impurity")
@@ -259,7 +275,7 @@ result = permutation_importance(
     forest, X_test, y_test, n_repeats=10, random_state=42, n_jobs=2
 )
 forest_importances = pd.Series(result.importances_mean, index=feature_names).sort_values(ascending=False)
-fig, ax = plt.subplots(figsize=(20,10))
+fig, ax = plt.subplots(figsize=(20, 10))
 forest_importances.plot.bar(yerr=result.importances_std, ax=ax)
 ax.set_title("Feature importances using permutation on full model")
 ax.set_ylabel("Mean accuracy decrease")
