@@ -185,7 +185,7 @@ create_similarity_matrix(episode_stats[episode_stats["show"] == "friends"],
 
 character_stats = pd.DataFrame()
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
-    edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted.csv")
+    edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted_top30.csv")
     net = nx.from_pandas_edgelist(edges_weighted, source="speaker1", target="speaker2",
                                   edge_attr=["line_count", "scene_count", "word_count"])
     char_stats = get_character_stats(net)
@@ -204,14 +204,17 @@ top_char_stats.sort_values(by=colname, ascending=True)[colname].transpose().plot
                                                                                       'friends': plt.cm.Set1(3),
                                                                                       'seinfeld': plt.cm.Set1(6),
                                                                                       'tbbt': plt.cm.Set1(8)}))
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.xlabel("Betweenness")
+plt.title("Betweenness of characters by line count")
 plt.tight_layout()
-plt.savefig(f"../figures/comparison/characters_{colname}.png")
+plt.savefig(f"../figures/comparison/characters_{colname}_top30.png")
 plt.close()
 
 
 # scatterplot
+from adjustText import adjust_text
+
 def character_comparison(character_stats, colname, colname2):
     top_char_stats = character_stats.loc[character_stats["betweenness_line"] > 0, [colname, colname2, "show"]]
     fig, ax = plt.subplots(figsize=(20, 10))
@@ -227,12 +230,18 @@ def character_comparison(character_stats, colname, colname2):
                                                       'tbbt': 3}),
                         cmap=plt.get_cmap("Set1"),
                         colorbar=False,
-                        title="Comparison of leading characters",
-                        grid=True)
-    for idx, row in top_char_stats.iterrows():
-        ax.annotate(idx, (row[colname], row[colname2]), xytext=(10, -5), textcoords='offset points', fontsize=15,
-                    family='sans-serif', color='darkslategrey')
+                        grid=True,
+                        fontsize=15)
+    # for idx, row in top_char_stats.iterrows():
+    #     ax.annotate(idx, (row[colname], row[colname2]), xytext=(10, -5), textcoords='offset points', fontsize=15,
+    #                 family='sans-serif', color='darkslategrey')
+    texts = [plt.text(row[colname], row[colname2], idx, fontsize=20, family='sans-serif', color='darkslategrey') for idx, row in top_char_stats.iterrows()]
+    adjust_text(texts)
+    plt.title("Comparison of leading characters", fontsize=18)
+    plt.xlabel(colname.replace("_", " by "), fontsize=15)
+    plt.ylabel(colname2.replace("_", " by "), fontsize=15)
     plt.savefig(f"../figures/comparison/{colname}_{colname2}.png")
+    plt.close(fig)
 
 
 character_comparison(character_stats, "betweenness_line", "pagerank_line")
@@ -242,52 +251,3 @@ character_comparison(character_stats, "betweenness_word", "pagerank_word")
 # correlations
 plot_corr_mat(episode_stats.drop("show", axis=1), f"comparison/episode_corr")
 plot_corr_mat(episode_stats[episode_stats.runtime < 30].drop("show", axis=1), f"comparison/episode_corr_below_30_min")
-
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-from sklearn.inspection import permutation_importance
-from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_log_error, mean_squared_error
-
-regr = RandomForestRegressor(n_estimators=200, random_state=0)
-X = episode_stats.dropna().drop(['avg_rating', 'num_votes', 'runtime', 'viewership', 'show'], axis=1).to_numpy()
-y = episode_stats.dropna()["avg_rating"].to_numpy()
-feature_names = episode_stats.dropna().drop(['avg_rating', 'num_votes', 'runtime', 'viewership', 'show'],
-                                            axis=1).columns
-regr.fit(X, y)
-
-importances = regr.feature_importances_
-std = np.std([tree.feature_importances_ for tree in regr.estimators_], axis=0)
-forest_importances = pd.Series(importances, index=feature_names).sort_values(ascending=False)
-
-fig, ax = plt.subplots(figsize=(20, 10))
-forest_importances.plot.bar(yerr=std, ax=ax)
-ax.set_title("Feature importances using MDI")
-ax.set_ylabel("Mean decrease in impurity")
-plt.xticks(fontsize=14, rotation=90)
-fig.tight_layout()
-plt.savefig(f"../figures/comparison/rf_feat_imp_impurity")
-
-regr.score(X, y)
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-forest = RandomForestRegressor(n_estimators=100, random_state=0)
-forest.fit(X_train, y_train)
-result = permutation_importance(
-    forest, X_test, y_test, n_repeats=10, random_state=42, n_jobs=2
-)
-forest_importances = pd.Series(result.importances_mean, index=feature_names).sort_values(ascending=False)
-fig, ax = plt.subplots(figsize=(20, 10))
-forest_importances.plot.bar(yerr=result.importances_std, ax=ax)
-ax.set_title("Feature importances using permutation on full model")
-ax.set_ylabel("Mean accuracy decrease")
-plt.xticks(fontsize=14, rotation=90)
-fig.tight_layout()
-plt.savefig(f"../figures/comparison/rf_feat_imp_perm")
-
-forest.score(X_train, y_train)
-forest.score(X_test, y_test)
-y_pred = forest.predict(X_test)
-r2_score(y_test, y_pred)
-mean_absolute_error(y_test, y_pred)
-mean_squared_log_error(y_test, y_pred)
-mean_squared_error(y_test, y_pred)

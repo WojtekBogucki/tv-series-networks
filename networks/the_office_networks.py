@@ -69,6 +69,15 @@ for top_character in top_characters:
     plt.savefig(f"../figures/{show_name}/character_stats_by_season/pagerank_line_{top_character}.png")
     plt.close()
 
+stat = "load_scene"
+n = 8
+season_character_stat = season_character_stats[[stat, "season"]].pivot(columns="season", values=stat).fillna(0)
+character_filter = season_character_stat.sum(axis=1) >= season_character_stat.sum(axis=1).nlargest(n)[-1]
+fig, ax = plt.subplots(figsize=(8,6))
+season_character_stat[character_filter].transpose().plot(title=f"{stat} by seasons", ax=ax)
+plt.ylabel(stat)
+plt.show()
+
 # the office by episodes
 net_episodes = get_episode_networks(f"../data/{show_name}/")
 latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
