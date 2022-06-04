@@ -107,6 +107,24 @@ def get_episode_networks(path: str) -> list[nx.Graph]:
     return net_episodes
 
 
+def get_episode_networks_limit(path: str, limit: int) -> list[nx.Graph]:
+    net_episodes = []
+    num_seasons = len(
+        [f for f in os.listdir(path) if f.startswith("edges_weighted_S") and os.path.isfile(os.path.join(path, f))])
+    for i in range(num_seasons):
+        season_path = f"{path}season{i + 1}"
+        eps_path = os.listdir(season_path)
+        print("Season ", i + 1)
+        for ep in eps_path:
+            edges_weighted_episode = pd.read_csv(os.path.join(season_path, ep))
+            edges_weighted_episode = edges_weighted_episode[edges_weighted_episode["line_count"] >= limit]
+            net_episodes.append(nx.from_pandas_edgelist(edges_weighted_episode,
+                                                        source="speaker1",
+                                                        target="speaker2",
+                                                        edge_attr=["line_count", "scene_count", "word_count"]))
+    return net_episodes
+
+
 def get_network_stats_by_season(net_seasons: list[nx.Graph],
                                 show_name: str,
                                 weight: str = "line_count",
