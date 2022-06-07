@@ -1,4 +1,5 @@
-import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
 from utils import *
 import os
@@ -59,7 +60,7 @@ episode_stats = episode_stats.drop(["runtime", "viewership", "show"], axis=1)
 
 all_stats = pd.concat([movie_stats, episode_stats], axis=0)
 
-
+# standardize all stats
 norm_all_stats = all_stats.drop(["avg_rating", "num_votes"], axis=1, errors="ignore").apply(
         lambda x: (x - x.mean()) / x.std(), axis=0)
 
@@ -67,7 +68,6 @@ dists = pdist(norm_all_stats.fillna(0), "euclidean")
 df_euclid = pd.DataFrame(1 / (1 + squareform(dists)), columns=norm_all_stats.index,
                          index=norm_all_stats.index)
 
-movie = "die_hard"
 most_similar = pd.DataFrame()
 for movie in selected_movies:
     most_sim = df_euclid.iloc[:24, :].transpose().loc[:, movie].sort_values(ascending=False)[1:11]
@@ -78,8 +78,12 @@ most_sim_count = most_similar.notna().sum(axis=1).sort_values(ascending=False).h
 most_sim_count.index = most_sim_count.index.str.replace("_", " ").str.capitalize()
 most_sim_count = most_sim_count.to_frame(name="count")
 
-most_similar_melt = most_similar.reset_index().melt(id_vars=["index"], var_name="movie", value_name="similarity")
-most_similar_melt.sort_values("similarity", ascending=False).head(10)
+# similarity - movie vs series
+most_similar_melt = df_euclid.iloc[:24, 24:].reset_index().melt(id_vars=["index"], var_name="tv_series", value_name="similarity")
+most_similar_melt["index"] = most_similar_melt["index"].str.replace("_", " ").str.capitalize()
+most_similar_melt["tv_series"] = most_similar_melt["tv_series"].str.replace("_", " ").str.capitalize()
+most_similar_melt.sort_values("similarity", ascending=False).round(3).head(10)
+
 
 df_euclid.iloc[:24, :].transpose().mean()
 movies_similarities = (df_euclid.iloc[:24, :24].transpose().sum()-1)/24
@@ -96,3 +100,32 @@ latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"
 episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
 
 draw_interaction_network_communities(net_episodes[episode_dict["s03e14"]], "line_count", method="LD", seed=777)
+
+# PCA
+from sklearn.decomposition import PCA
+from adjustText import adjust_text
+
+pca = PCA(n_components=4)
+all_stats_pca = pca.fit_transform(norm_all_stats.dropna(axis=1))
+
+print(pca.explained_variance_ratio_)
+
+show_idx = dict()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    show_idx[show_name] = norm_all_stats.reset_index()[norm_all_stats.index.str.startswith(show_name)].index.values
+
+fig, ax = plt.subplots()
+for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+    ax.scatter(all_stats_pca[show_idx[show_name], 0], all_stats_pca[show_idx[show_name], 2], label=f"{show_name} episodes", alpha=0.5)
+ax.scatter(all_stats_pca[:24, 0], all_stats_pca[:24, 2], label="Movies", alpha=0.5)
+# ts = []
+# for x, y, text in zip(all_stats_pca[:24, 0], all_stats_pca[:24, 1], selected_movies):
+#     ts.append(plt.text(x, y, text))
+# adjust_text(ts, force_points=0.1, arrowprops=dict(arrowstyle='->', color='red'))
+ax.legend()
+plt.title("Principal component analysis of statistics of movies and TV series")
+plt.xlabel("Principal component 1")
+plt.ylabel("Principal component 2")
+plt.show()
+
+
