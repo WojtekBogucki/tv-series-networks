@@ -61,6 +61,12 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
 
 friends_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 # friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv",encoding="utf-8")
+seasons = []
+episodes = []
+titles = []
+scenes = []
+speakers = []
+lines = []
 scene = 0
 for ep_title in episodes_titles:
     pattern = re.compile(r'^(\d{1,2})(\d{2})_(\d{3,4}_)?([&\w]+)', re.IGNORECASE)
@@ -80,12 +86,12 @@ for ep_title in episodes_titles:
                     match = re.findall(fr"(^[(\[].*{word}.*[)\]])$", line, re.IGNORECASE)
                     if match:
                         scene += 1
-                        continue
-            line = re.sub(r"([(\[][^)\]]*[)\]])", "", line)
+                        break
+                if match:
+                    continue
+            # line = re.sub(r"([(\[][^)\]]*[)\]])", "", line)
             lower_line = line.lower()
-            if not line:
-                continue
-            elif "written by" in lower_line or \
+            if "written by" in lower_line or \
                     lower_line.startswith("teleplay by:") or \
                     lower_line.startswith("story by:") or \
                     lower_line.startswith("transcriber's note") or \
@@ -101,10 +107,14 @@ for ep_title in episodes_titles:
                     lower_line.startswith("[time") or \
                     lower_line.startswith("[cut") or \
                     lower_line.startswith("[at") or \
+                    lower_line.startswith("(at") or \
                     lower_line.startswith("[out") or \
                     lower_line.startswith("[back") or \
                     line.startswith("[later"):
                 scene += 1
+                continue
+            line = re.sub(r"(\([^)]*\))", "", line)
+            if not line:
                 continue
             pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’,]+): ? ?(.*)")
             line_search = pattern.search(line)
@@ -117,30 +127,25 @@ for ep_title in episodes_titles:
                         err.write(f"{season} {episode} Line: {line}\n")
                 except UnicodeEncodeError as uee:
                     print(uee)
-                # print("*error*", line)
                 continue
-            # if " and " in speaker:
-            #     speakers = re.split(r"and |, ", speaker)
-            #     for speaker in speakers:
-            #         if speaker:
-            #             friends_df = friends_df.append({"season": season,
-            #                                             "episode": episode,
-            #                                             "title": title,
-            #                                             "scene": scene,
-            #                                             "speaker": speaker.strip().lower(),
-            #                                             "line": line.strip()}, ignore_index=True)
-            # else:
             if season == 9 and episode == 8:
                 speaker = speaker.split(" ")[0]
-            friends_df = friends_df.append({"season": season,
-                                            "episode": episode,
-                                            "title": title,
-                                            "scene": scene,
-                                            "speaker": speaker.strip().lower(),
-                                            "line": line.strip()}, ignore_index=True)
+            seasons.append(season)
+            episodes.append(episode)
+            titles.append(title)
+            scenes.append(scene)
+            speakers.append(speaker.strip().lower())
+            lines.append(line.strip())
+
     # if episode >= 10: break
+friends_df = pd.DataFrame.from_dict({"season": seasons,
+                                     "episode": episodes,
+                                     "title": titles,
+                                     "scene": scenes,
+                                     "speaker": speakers,
+                                     "line": lines})
 #
-friends_df = friends_df[~((friends_df.season==7) & (friends_df.episode==24))]
+friends_df = friends_df[~((friends_df.season == 7) & (friends_df.episode == 24))]
 friends_df.to_csv("../data/friends/friends_lines_v1.csv", index=False, encoding="utf-8")
 
 pd.options.display.max_columns = 10
@@ -148,8 +153,10 @@ pd.options.display.max_rows = None
 friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv")
 friends_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
 friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()[:20]
+friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()[-20:]
 
 friends_df.groupby(["season"])["scene"].nunique()
+friends_df.groupby(["season", "episode"])["scene"].nunique()
 
 friends_df2 = pd.read_csv("../data/friends/friends_r_package.csv")
 friends_df2.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")

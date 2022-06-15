@@ -353,7 +353,7 @@ def draw_interaction_network_communities(G, weight=None, filename=None, resoluti
     nx.draw_networkx_nodes(G, pos, node_size=degrees_weight, node_color=colors, cmap=plt.get_cmap("Set1"), alpha=0.9,
                            ax=ax)
     nx.draw_networkx_edges(G, pos, width=edge_width, alpha=0.5, ax=ax)
-    nx.draw_networkx_labels(G, pos, ax=ax)
+    nx.draw_networkx_labels(G, pos, ax=ax, font_size=18)
     plt.axis('off')
     # nx.draw_spring(G, with_labels=True, nodelist=nodes, node_size=degrees_weight, width=edge_width, node_color=colors, cmap=plt.get_cmap("Set1"))
     if filename:

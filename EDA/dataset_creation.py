@@ -1,7 +1,7 @@
 from EDA.processing import *
 
 
-for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
+for show_name in ["friends"]: #["the_office", "seinfeld", "tbbt", "friends"]:
     print(f"Creating datasets for {show_name}...")
     path = f"../data/{show_name}"
 
