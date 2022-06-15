@@ -1,97 +1,63 @@
 speaker1,speaker2,line_count,scene_count,word_count
-ben,chandler,130,7,1105
-ben,joey,60,4,681
-ben,monica,109,7,957
-ben,phoebe,73,5,596
-ben,rachel,120,7,1188
-ben,ross,131,8,1142
-cecilia,chandler,52,3,749
+ben,chandler,32,3,246
+ben,monica,22,2,158
+ben,phoebe,13,2,143
+ben,rachel,90,7,873
+ben,ross,103,7,904
 cecilia,director,20,2,212
-cecilia,joey,100,5,1238
-cecilia,monica,62,4,842
-cecilia,phoebe,64,3,864
-cecilia,rachel,75,3,983
-cecilia,ross,54,3,721
-chandler,director,49,5,544
-chandler,earl,29,2,304
-chandler,erin,16,1,159
-chandler,joey,1211,80,13137
-chandler,kristen,30,2,262
-chandler,melissa,64,4,737
-chandler,monica,1505,103,16518
-chandler,mr. geller,116,10,1478
-chandler,mrs. geller,71,6,817
-chandler,phoebe,1096,78,11603
-chandler,policeman,43,2,324
-chandler,rachel,1308,81,14540
-chandler,richard,39,2,448
-chandler,ross,1163,75,12533
-chandler,tag,109,12,958
-director,joey,101,9,1081
-director,monica,62,7,622
-director,phoebe,58,7,477
-director,policeman,9,1,102
-director,rachel,61,6,675
+cecilia,joey,100,6,1238
+cecilia,monica,14,1,131
+cecilia,rachel,17,1,113
+chandler,joey,613,71,6615
+chandler,kristen,8,1,50
+chandler,monica,1257,133,13578
+chandler,mr. geller,67,10,766
+chandler,mrs. geller,50,7,546
+chandler,phoebe,486,66,5365
+chandler,rachel,542,65,5802
+chandler,ross,606,68,6279
+chandler,tag,30,5,310
+director,joey,75,9,791
 director,richard,34,4,332
-director,ross,46,5,603
-earl,joey,35,2,315
-earl,monica,41,2,423
-earl,mr. geller,43,2,514
-earl,phoebe,62,3,747
-earl,rachel,37,2,339
-earl,ross,45,2,417
-earl,tag,18,1,129
+earl,phoebe,60,4,701
 erin,joey,59,4,524
-erin,monica,21,1,181
 erin,phoebe,43,3,240
 erin,rachel,61,4,478
-erin,ross,30,2,284
-joey,kristen,60,3,468
-joey,melissa,80,5,1063
-joey,monica,1329,85,14934
-joey,mr. geller,108,9,1243
-joey,mrs. geller,17,4,279
-joey,phoebe,1357,94,14403
-joey,policeman,40,1,405
-joey,rachel,1623,100,18142
-joey,richard,102,6,977
-joey,ross,1226,82,13314
-joey,tag,160,15,1492
-kristen,monica,52,3,421
-kristen,phoebe,37,3,308
-kristen,rachel,33,2,281
+erin,ross,9,1,88
+joey,kristen,47,2,404
+joey,melissa,16,1,164
+joey,monica,630,70,7253
+joey,mr. geller,13,3,245
+joey,mrs. geller,14,3,258
+joey,phoebe,686,80,7253
+joey,rachel,958,90,9948
+joey,richard,76,6,687
+joey,ross,575,62,6021
+joey,tag,47,7,386
 kristen,ross,44,2,445
-melissa,monica,75,5,1110
-melissa,phoebe,51,4,620
-melissa,rachel,124,6,1552
-melissa,ross,27,3,387
+melissa,monica,14,1,155
+melissa,phoebe,23,3,366
+melissa,rachel,79,6,1025
+melissa,ross,14,1,149
 melissa,tag,9,1,62
-monica,mr. geller,141,10,1817
-monica,mrs. geller,57,5,724
-monica,phoebe,1260,90,13607
-monica,policeman,40,2,283
-monica,rachel,1390,86,16189
-monica,richard,49,4,499
-monica,ross,1228,84,14012
-monica,tag,129,13,1284
-mr. geller,mrs. geller,45,8,475
-mr. geller,phoebe,111,8,1356
-mr. geller,rachel,124,10,1585
-mr. geller,ross,155,13,1723
-mr. geller,tag,7,1,131
-mrs. geller,phoebe,42,4,382
-mrs. geller,rachel,32,5,344
-mrs. geller,ross,56,7,594
-phoebe,policeman,24,1,103
-phoebe,rachel,1487,104,16118
-phoebe,richard,49,3,377
-phoebe,ross,1191,84,12371
-phoebe,tag,175,16,1751
-policeman,rachel,53,2,308
-policeman,richard,13,1,107
-policeman,ross,46,2,387
-rachel,richard,53,4,509
-rachel,ross,1389,84,15493
-rachel,tag,345,25,4043
-richard,ross,41,2,552
-ross,tag,167,16,1789
+monica,mr. geller,91,10,1200
+monica,mrs. geller,42,6,533
+monica,phoebe,706,89,8107
+monica,rachel,611,70,6928
+monica,ross,588,68,6619
+monica,tag,31,7,321
+mr. geller,mrs. geller,43,10,462
+mr. geller,phoebe,13,3,88
+mr. geller,rachel,12,4,103
+mr. geller,ross,106,12,1194
+mrs. geller,phoebe,9,2,74
+mrs. geller,rachel,9,3,75
+mrs. geller,ross,27,5,247
+phoebe,rachel,908,99,9635
+phoebe,ross,615,71,6516
+phoebe,tag,37,6,319
+policeman,rachel,45,2,260
+policeman,ross,36,2,220
+rachel,ross,682,68,7009
+rachel,tag,292,26,3246
+ross,tag,35,7,349

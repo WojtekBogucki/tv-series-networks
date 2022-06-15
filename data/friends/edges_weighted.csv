@@ -1,169 +1,141 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,chandler,190,10,2934
+amy,chandler,120,7,1819
 amy,charlie,12,1,87
-amy,joey,195,10,2577
-amy,mike,92,4,1052
-amy,monica,164,9,2258
-amy,phoebe,202,7,2772
-amy,rachel,259,11,3213
-amy,ross,184,8,2058
-carol,chandler,392,32,3858
+amy,joey,129,7,1712
+amy,monica,116,6,1569
+amy,phoebe,85,3,1227
+amy,rachel,241,13,2894
+amy,ross,146,7,1673
+carol,chandler,66,9,672
 carol,emily,13,2,93
-carol,janice,28,2,379
-carol,joey,406,30,4307
-carol,mike,8,1,105
-carol,monica,381,26,3679
-carol,phoebe,334,25,3979
-carol,rachel,397,29,3912
-carol,richard,37,3,283
-carol,ross,597,41,6488
-carol,susan,192,24,1331
-chandler,charlie,291,17,3320
-chandler,david,212,11,2932
-chandler,director,230,22,2869
-chandler,emily,337,25,3581
-chandler,frank jr.,252,16,2884
-chandler,gunther,642,54,6618
-chandler,janice,661,45,8435
-chandler,joey,13694,936,154608
-chandler,mike,843,42,10717
-chandler,mona,180,15,1745
-chandler,monica,14549,976,158312
-chandler,mr. geller,476,39,5713
-chandler,mrs. geller,397,33,4400
-chandler,paul,167,11,1736
-chandler,pete,159,12,2150
-chandler,phoebe,12396,858,142282
-chandler,rachel,13439,876,151926
-chandler,richard,413,30,4410
-chandler,ross,13657,856,152477
-chandler,susan,247,23,2568
-chandler,tag,122,13,1068
-charlie,david,54,3,562
-charlie,frank jr.,17,2,259
+carol,joey,87,12,990
+carol,monica,84,11,1077
+carol,phoebe,59,8,671
+carol,rachel,115,10,1186
+carol,ross,461,44,5035
+carol,susan,182,25,1252
+chandler,charlie,72,10,784
+chandler,david,69,6,1020
+chandler,director,14,2,154
+chandler,emily,66,12,539
+chandler,frank jr.,61,7,612
+chandler,gunther,176,29,1804
+chandler,janice,406,42,5281
+chandler,joey,9148,1057,102264
+chandler,mike,194,20,2050
+chandler,mona,42,5,341
+chandler,monica,10596,1145,114780
+chandler,mr. geller,205,33,2200
+chandler,mrs. geller,139,24,1552
+chandler,paul,60,6,560
+chandler,pete,27,4,288
+chandler,phoebe,6548,781,74513
+chandler,rachel,6466,760,71826
+chandler,richard,107,10,1380
+chandler,ross,7557,829,83056
+chandler,susan,39,7,421
+chandler,tag,30,5,310
 charlie,gunther,8,1,95
-charlie,janice,23,1,318
-charlie,joey,327,19,3475
-charlie,mike,101,5,938
-charlie,monica,300,16,3293
-charlie,phoebe,273,17,3036
-charlie,rachel,341,21,3470
-charlie,ross,447,22,5511
-david,janice,28,2,328
-david,joey,202,11,2495
-david,mike,72,5,975
-david,monica,220,11,2976
-david,phoebe,317,15,4144
-david,rachel,167,9,2048
-david,ross,208,9,2813
-director,frank jr.,2,1,8
-director,gunther,4,1,53
-director,joey,360,30,4016
-director,monica,243,25,2857
-director,pete,11,3,155
-director,phoebe,218,22,2186
-director,rachel,271,24,2890
+charlie,joey,203,21,2086
+charlie,mike,18,2,126
+charlie,monica,70,7,640
+charlie,phoebe,87,9,932
+charlie,rachel,183,20,1731
+charlie,ross,410,30,4961
+david,janice,9,1,93
+david,joey,29,3,380
+david,mike,48,3,543
+david,monica,68,6,832
+david,phoebe,239,15,3064
+david,rachel,17,2,244
+david,ross,12,2,186
+director,joey,296,36,3197
+director,monica,26,6,333
+director,phoebe,46,5,484
+director,rachel,19,3,196
 director,richard,34,4,332
-director,ross,229,22,2468
-emily,frank jr.,13,1,139
-emily,gunther,21,2,162
-emily,janice,44,3,501
-emily,joey,352,28,3600
-emily,monica,295,21,3130
-emily,mr. geller,26,3,320
-emily,mrs. geller,25,3,309
-emily,phoebe,305,20,3701
-emily,rachel,324,22,3574
-emily,ross,415,27,5067
+director,ross,37,7,449
+emily,joey,122,18,1280
+emily,monica,109,18,1253
+emily,mr. geller,12,3,123
+emily,mrs. geller,11,3,112
+emily,phoebe,85,10,895
+emily,rachel,92,11,1135
+emily,ross,340,34,4108
 emily,susan,17,2,149
-frank jr.,gunther,4,1,51
-frank jr.,joey,232,16,2846
-frank jr.,monica,263,16,2944
-frank jr.,pete,47,3,838
-frank jr.,phoebe,398,20,5100
-frank jr.,rachel,275,19,3119
-frank jr.,ross,243,17,2828
-gunther,janice,33,4,344
-gunther,joey,682,53,7733
-gunther,mike,3,1,47
-gunther,mona,19,2,156
-gunther,monica,624,50,6272
-gunther,mr. geller,11,2,113
-gunther,mrs. geller,11,2,65
-gunther,paul,16,1,144
-gunther,pete,5,1,112
-gunther,phoebe,536,50,5942
-gunther,rachel,722,50,8767
-gunther,richard,2,1,15
-gunther,ross,734,51,8125
-janice,joey,558,36,7045
-janice,mike,22,1,348
-janice,monica,531,37,6370
-janice,mr. geller,14,1,172
-janice,phoebe,487,33,6478
-janice,rachel,543,37,6497
-janice,richard,9,1,101
-janice,ross,594,35,7544
-janice,susan,27,2,382
-joey,mike,773,41,9262
-joey,mona,196,14,2324
-joey,monica,12981,849,144882
-joey,mr. geller,377,31,4425
-joey,mrs. geller,272,26,3030
-joey,paul,127,9,1641
-joey,pete,151,11,1962
-joey,phoebe,12454,863,144639
-joey,rachel,13778,882,158111
-joey,richard,390,28,4101
-joey,ross,13508,864,153416
-joey,susan,236,21,2524
-joey,tag,166,16,1516
-mike,monica,809,41,9591
-mike,phoebe,951,53,12442
-mike,rachel,810,43,9254
-mike,ross,855,49,10380
-mike,susan,8,1,114
-mona,monica,165,14,1792
-mona,mr. geller,12,1,56
-mona,phoebe,172,13,1864
-mona,rachel,208,12,2361
-mona,ross,306,22,3284
-monica,mr. geller,579,39,6554
-monica,mrs. geller,474,33,5176
-monica,paul,118,7,1279
-monica,pete,245,17,3137
-monica,phoebe,13060,885,146027
-monica,rachel,14095,897,156333
-monica,richard,551,38,6227
-monica,ross,13340,819,146895
-monica,susan,223,18,2177
-monica,tag,135,14,1308
-mr. geller,mrs. geller,245,32,2619
-mr. geller,phoebe,386,33,4787
-mr. geller,rachel,453,30,5329
-mr. geller,richard,25,3,170
-mr. geller,ross,578,44,6502
-mr. geller,tag,7,1,131
-mrs. geller,phoebe,319,25,3734
-mrs. geller,rachel,370,28,4242
-mrs. geller,richard,36,5,240
-mrs. geller,ross,480,40,5401
-paul,phoebe,132,10,1559
-paul,rachel,219,14,2820
-paul,ross,186,12,2034
-pete,phoebe,204,11,2942
-pete,rachel,165,12,2006
-pete,ross,187,13,2130
-phoebe,rachel,13401,895,154920
-phoebe,richard,368,28,4071
-phoebe,ross,12904,826,149677
-phoebe,susan,202,20,2666
-phoebe,tag,198,18,1981
-rachel,richard,380,28,4096
-rachel,ross,14938,893,167865
-rachel,susan,178,17,1656
-rachel,tag,365,26,4193
-richard,ross,386,28,4025
-richard,susan,28,3,250
-ross,susan,378,29,3832
-ross,tag,195,18,1968
+frank jr.,joey,56,5,611
+frank jr.,monica,61,7,604
+frank jr.,phoebe,309,23,3971
+frank jr.,rachel,63,7,605
+frank jr.,ross,62,7,612
+gunther,janice,21,2,225
+gunther,joey,310,41,3198
+gunther,monica,109,21,1165
+gunther,mr. geller,6,1,59
+gunther,mrs. geller,6,1,44
+gunther,phoebe,129,26,1461
+gunther,rachel,217,26,2493
+gunther,ross,323,35,3332
+janice,joey,153,19,1683
+janice,monica,150,18,1760
+janice,phoebe,103,12,1601
+janice,rachel,123,12,1263
+janice,ross,132,13,1480
+joey,mike,203,25,2538
+joey,mona,58,8,622
+joey,monica,6682,793,74051
+joey,mr. geller,105,16,1135
+joey,mrs. geller,93,15,1179
+joey,paul,43,4,439
+joey,pete,24,4,285
+joey,phoebe,6659,793,75496
+joey,rachel,7485,799,82473
+joey,richard,124,11,1225
+joey,ross,7592,810,84029
+joey,susan,29,5,338
+joey,tag,47,7,386
+mike,monica,253,25,2673
+mike,phoebe,709,61,8937
+mike,rachel,139,14,1320
+mike,ross,277,26,2951
+mona,monica,30,4,312
+mona,phoebe,31,3,360
+mona,rachel,43,3,547
+mona,ross,255,27,2615
+monica,mr. geller,362,47,4323
+monica,mrs. geller,303,41,3388
+monica,paul,69,5,650
+monica,pete,211,19,2739
+monica,phoebe,8392,940,92663
+monica,rachel,8389,911,91290
+monica,richard,437,39,5035
+monica,ross,6771,758,73537
+monica,susan,48,9,530
+monica,tag,31,7,321
+mr. geller,mrs. geller,222,40,2392
+mr. geller,phoebe,93,14,971
+mr. geller,rachel,136,18,1419
+mr. geller,richard,22,3,165
+mr. geller,ross,332,43,3669
+mrs. geller,phoebe,110,13,1259
+mrs. geller,rachel,147,22,1624
+mrs. geller,richard,26,3,189
+mrs. geller,ross,295,38,3145
+paul,phoebe,40,4,307
+paul,rachel,202,18,2390
+paul,ross,146,12,1587
+pete,phoebe,39,4,482
+pete,rachel,22,3,261
+pete,ross,22,5,242
+phoebe,rachel,8024,880,90936
+phoebe,richard,67,7,818
+phoebe,ross,6652,733,76299
+phoebe,susan,33,9,444
+phoebe,tag,54,8,525
+rachel,richard,112,12,1333
+rachel,ross,10271,987,112580
+rachel,susan,33,5,330
+rachel,tag,312,28,3396
+richard,ross,139,15,1439
+ross,susan,314,33,3069
+ross,tag,46,8,409

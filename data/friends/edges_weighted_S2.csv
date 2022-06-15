@@ -1,129 +1,106 @@
 speaker1,speaker2,line_count,scene_count,word_count
-big bully,chandler,62,2,496
-big bully,joey,52,2,451
-big bully,monica,26,1,323
-big bully,phoebe,39,2,441
-big bully,rachel,48,2,340
-big bully,ross,59,2,557
-carol,chandler,95,8,880
-carol,joey,101,8,1043
-carol,julie,22,2,202
-carol,monica,129,8,1352
-carol,mrs. greene,44,2,513
-carol,phoebe,116,7,1384
-carol,rachel,127,7,1116
-carol,richard,37,3,283
-carol,ross,145,8,1440
-carol,susan,59,7,353
-chandler,dr. burke,26,2,384
-chandler,eddie,170,11,2010
-chandler,erica,39,3,441
-chandler,fun bobby,38,3,478
-chandler,joey,1296,96,15069
-chandler,julie,69,8,706
-chandler,monica,1326,89,14835
-chandler,mr. geller,67,6,964
-chandler,mr. greene,56,2,531
-chandler,mrs. geller,75,7,929
-chandler,mrs. greene,96,4,1081
-chandler,phoebe,1224,88,15539
-chandler,rachel,1278,86,14703
-chandler,richard,217,18,2345
-chandler,ross,1367,90,15135
-chandler,russ,49,5,425
-chandler,ryan,41,3,495
-chandler,susan,65,8,578
-chandler,susie,68,3,796
-dr. burke,joey,24,2,337
-dr. burke,monica,65,3,709
-dr. burke,phoebe,31,2,438
-dr. burke,rachel,46,2,596
-dr. burke,ross,39,2,442
-eddie,joey,119,8,1780
-eddie,monica,123,8,1410
-eddie,phoebe,94,8,1530
-eddie,rachel,93,8,1244
-eddie,richard,43,3,609
-eddie,ross,112,8,1387
-erica,joey,57,3,606
-erica,monica,28,1,301
-erica,phoebe,51,2,667
-erica,rachel,36,2,328
-erica,ross,52,3,495
-fun bobby,joey,39,3,523
-fun bobby,monica,61,5,681
-fun bobby,phoebe,40,4,411
-fun bobby,rachel,40,4,415
-fun bobby,ross,33,3,370
-fun bobby,russ,10,1,70
-joey,julie,83,10,1053
-joey,monica,1169,79,13280
-joey,mr. geller,56,4,649
-joey,mr. greene,37,2,344
-joey,mrs. geller,56,5,551
-joey,mrs. greene,75,4,978
-joey,phoebe,1068,80,14020
-joey,rachel,1137,81,13289
-joey,richard,154,13,1826
-joey,ross,1239,87,13836
-joey,russ,33,3,354
-joey,ryan,42,3,477
-joey,susan,72,8,772
-joey,susie,41,2,473
-julie,monica,79,9,987
-julie,mrs. greene,10,1,150
-julie,phoebe,91,9,1291
-julie,rachel,148,11,1751
-julie,ross,140,10,1506
-julie,susan,13,2,142
-monica,mr. geller,91,6,901
-monica,mr. greene,62,2,690
-monica,mrs. geller,116,8,1123
-monica,mrs. greene,109,4,1418
-monica,phoebe,1239,86,15170
-monica,rachel,1359,87,15268
-monica,richard,293,21,3115
-monica,ross,1345,82,14494
-monica,russ,27,4,157
-monica,ryan,36,2,456
-monica,susan,87,8,880
-monica,susie,61,3,650
-mr. geller,mrs. geller,81,8,789
-mr. geller,phoebe,54,4,562
-mr. geller,rachel,63,3,548
-mr. geller,richard,25,3,170
-mr. geller,ross,92,7,1068
-mr. greene,mrs. geller,21,1,159
-mr. greene,mrs. greene,46,2,443
-mr. greene,phoebe,48,2,599
-mr. greene,rachel,58,2,783
-mr. greene,ross,52,2,524
-mrs. geller,mrs. greene,16,1,174
-mrs. geller,phoebe,66,5,746
-mrs. geller,rachel,74,4,801
-mrs. geller,richard,35,4,226
-mrs. geller,ross,110,8,1192
-mrs. greene,phoebe,96,4,1370
-mrs. greene,rachel,113,4,1478
-mrs. greene,ross,108,4,1200
-mrs. greene,susan,10,1,126
-phoebe,rachel,1258,89,15903
-phoebe,richard,201,15,2523
-phoebe,ross,1209,80,14879
-phoebe,russ,43,6,261
-phoebe,ryan,66,6,608
-phoebe,susan,75,7,940
-phoebe,susie,38,2,450
-rachel,richard,203,15,2176
-rachel,ross,1488,90,16502
-rachel,russ,36,4,265
-rachel,ryan,30,4,320
-rachel,susan,81,7,631
-rachel,susie,57,2,665
-richard,ross,208,17,2051
-richard,ryan,35,2,341
-richard,susan,28,3,250
-ross,russ,42,4,324
-ross,ryan,19,3,110
-ross,susan,113,8,1109
-ross,susie,40,2,525
+big bully,chandler,49,4,428
+big bully,ross,49,4,443
+carol,chandler,31,4,328
+carol,joey,37,5,333
+carol,monica,49,5,676
+carol,mrs. greene,25,1,294
+carol,phoebe,39,4,448
+carol,rachel,58,3,614
+carol,ross,111,9,1070
+carol,susan,60,7,358
+chandler,eddie,150,14,1922
+chandler,erica,22,3,206
+chandler,fun bobby,14,2,154
+chandler,joey,1055,116,12799
+chandler,julie,43,9,477
+chandler,monica,766,89,8826
+chandler,mr. geller,16,1,141
+chandler,mr. greene,24,3,271
+chandler,mrs. geller,11,1,117
+chandler,mrs. greene,69,6,873
+chandler,phoebe,765,91,9987
+chandler,rachel,744,88,8583
+chandler,richard,51,5,633
+chandler,ross,865,97,9795
+chandler,russ,36,5,287
+chandler,susan,16,3,122
+chandler,susie,67,5,815
+dr. burke,monica,59,4,688
+dr. burke,phoebe,18,2,316
+eddie,joey,34,3,469
+eddie,monica,15,1,151
+eddie,phoebe,21,2,298
+eddie,rachel,14,1,180
+erica,joey,55,5,624
+erica,monica,14,1,144
+erica,rachel,16,1,172
+erica,ross,15,1,139
+fun bobby,joey,13,1,135
+fun bobby,monica,61,6,718
+fun bobby,phoebe,34,4,377
+fun bobby,rachel,30,4,348
+fun bobby,ross,17,2,190
+joey,julie,34,7,386
+joey,monica,647,73,7843
+joey,mr. geller,16,1,129
+joey,mr. greene,14,2,207
+joey,mrs. geller,11,1,105
+joey,mrs. greene,58,5,871
+joey,phoebe,690,81,9392
+joey,rachel,659,75,7831
+joey,richard,32,3,413
+joey,ross,755,83,8694
+joey,russ,15,2,154
+joey,susan,17,3,117
+joey,susie,29,2,338
+julie,monica,38,7,408
+julie,phoebe,37,6,423
+julie,rachel,109,13,1380
+julie,ross,95,11,986
+monica,mr. geller,71,7,715
+monica,mr. greene,34,4,390
+monica,mrs. geller,86,10,785
+monica,mrs. greene,86,7,1173
+monica,phoebe,850,96,10643
+monica,rachel,1042,108,11478
+monica,richard,251,22,2801
+monica,ross,905,93,10328
+monica,russ,16,3,82
+monica,susan,18,4,244
+mr. geller,mrs. geller,72,9,752
+mr. geller,phoebe,14,1,130
+mr. geller,rachel,32,2,316
+mr. geller,richard,22,3,165
+mr. geller,ross,63,6,620
+mr. greene,mrs. geller,7,1,42
+mr. greene,mrs. greene,41,5,449
+mr. greene,phoebe,20,3,276
+mr. greene,rachel,37,4,306
+mr. greene,ross,40,5,486
+mrs. geller,mrs. greene,5,1,39
+mrs. geller,phoebe,12,2,129
+mrs. geller,rachel,30,3,261
+mrs. geller,richard,26,3,189
+mrs. geller,ross,68,6,750
+mrs. greene,phoebe,70,6,1081
+mrs. greene,rachel,96,7,1034
+mrs. greene,ross,78,6,996
+phoebe,rachel,868,99,10720
+phoebe,richard,50,5,662
+phoebe,ross,708,79,9159
+phoebe,russ,43,6,267
+phoebe,ryan,64,6,728
+phoebe,susan,9,2,65
+phoebe,susie,11,1,144
+rachel,richard,99,9,1199
+rachel,ross,1205,117,13782
+rachel,russ,33,4,243
+rachel,ryan,13,2,111
+rachel,susan,21,2,205
+rachel,susie,11,1,144
+richard,ross,116,13,1131
+ross,russ,42,4,327
+ross,ryan,14,2,87
+ross,susan,80,8,726
+ross,susie,24,2,282
