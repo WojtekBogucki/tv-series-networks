@@ -5,6 +5,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
 ######## OLD VERSION
 # main_URL = "https://www.seinfeldscripts.com/"
@@ -113,9 +114,18 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_links[i:]):
 
 seinfeld_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 # seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv",encoding="utf-8")
+seasons = []
+episodes = []
+titles = []
+scenes = []
+speakers = []
+lines = []
 season = 1
 scene = 0
 episode = 0
+errors_path = "../data/seinfeld/seinology/errors.txt"
+if os.path.exists(errors_path):
+    os.remove(errors_path)
 for ep_title in episodes_titles:
     pattern = re.compile(r'^(\d+)-(\w+)', re.IGNORECASE)
     ep_number = int(pattern.search(ep_title).group(1))
@@ -124,7 +134,7 @@ for ep_title in episodes_titles:
     if ep_number in [6, 18, 41, 65, 87, 111, 135, 157]:
         season += 1
         episode = 0
-    elif ep_number in [47, 116, 121]:
+    elif ep_number in [47, 54, 116, 121]:
         ep_title = "fixed/" + ep_title
     elif ep_number in [100, 177]:  # recap episodes
         episode += 1
@@ -163,23 +173,31 @@ for ep_title in episodes_titles:
                 speaker = line_search.group(1)
                 line = line_search.group(2)
             else:
-                with open(f"../data/seinfeld/seinology/errors.txt", "a") as err:
+                with open(errors_path, "a") as err:
                     err.write(f"{ep_number} Line: {line}\n")
                 # print("*error*", line)
                 continue
             if not speaker.strip():
                 continue
-            seinfeld_df = seinfeld_df.append({"season": season,
-                                              "episode": episode,
-                                              "title": title,
-                                              "scene": scene,
-                                              "speaker": speaker.strip().lower(),
-                                              "line": line.strip()}, ignore_index=True)
+            seasons.append(season)
+            episodes.append(episode)
+            titles.append(title)
+            scenes.append(scene)
+            speakers.append(speaker.strip().lower())
+            lines.append(line.strip())
     # if ep_number >= 1: break
+
+seinfeld_df = pd.DataFrame.from_dict({"season": seasons,
+                                      "episode": episodes,
+                                      "title": titles,
+                                      "scene": scenes,
+                                      "speaker": speakers,
+                                      "line": lines})
 
 # removing recap or duplicated episodes
 seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v1.csv", index=False, encoding="utf-8")
 
+seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv")
 seinfeld_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
 seinfeld_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
 
