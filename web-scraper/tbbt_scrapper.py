@@ -39,8 +39,17 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
         print(uee)
     # if i >= 10: break
 
+entry_words = ["enters?", "entering", "walks? in", "approaches"]
+exit_words = [ "exits?", "exiting", "leaves?", "walks? out", "hungs up", "flashback"]
+new_scene_words = new_scene_words = entry_words + exit_words
+next_scene = False
 tbbt_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
-# seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv",encoding="utf-8")
+seasons = []
+episodes = []
+titles = []
+scenes = []
+speakers = []
+lines = []
 scene = 0
 for ep_title in episodes_titles:
     pattern = re.compile(r'^s(\d{2})e(\d{2})_([a-z0-9_-]+)', re.IGNORECASE)
@@ -53,12 +62,19 @@ for ep_title in episodes_titles:
         for line in f:
             full_line = line
             line = line.strip()
+            if next_scene:
+                scene += 1
+                next_scene = False
             stage_dirs = re.findall(r"(\([^)]*\))", line)
             if stage_dirs:
-                for word in ["enters?", "entering", "exits?", "exiting", "leaves?", "walks? in|out", "hungs up", "approaches"]:
-                    match = re.findall(fr"(^[(\[].*{word}.*[)\]])$", line, re.IGNORECASE)
+                for word in new_scene_words:
+                    match = re.findall(fr"(\(.*{word}.*\))", line, re.IGNORECASE)
                     if match:
-                        scene += 1
+                        if word in entry_words or (word in exit_words and line.startswith("(")):
+                            scene += 1
+                            break
+                        elif word in exit_words and not line.startswith("("):
+                            next_scene = True
             line = re.sub(r"(\([^)]*\))", "", line)
             if not line:
                 continue
@@ -86,18 +102,25 @@ for ep_title in episodes_titles:
                     err.write(f"{season} {episode} Line: {line}\n")
                 # print("*error*", line)
                 continue
-            tbbt_df = tbbt_df.append({"season": season,
-                                      "episode": episode,
-                                      "title": title,
-                                      "scene": scene,
-                                      "speaker": speaker.strip().lower(),
-                                      "line": line.strip()}, ignore_index=True)
+            seasons.append(season)
+            episodes.append(episode)
+            titles.append(title)
+            scenes.append(scene)
+            speakers.append(speaker.strip().lower())
+            lines.append(line.strip())
     # if episode >= 1: break
+tbbt_df = pd.DataFrame.from_dict({"season": seasons,
+                                      "episode": episodes,
+                                      "title": titles,
+                                      "scene": scenes,
+                                      "speaker": speakers,
+                                      "line": lines})
 
 tbbt_df.to_csv("../data/tbbt/tbbt_lines_v1.csv", index=False, encoding="utf-8")
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
 
+tbbt_df = pd.read_csv("../data/tbbt/tbbt_lines_v1.csv")
 tbbt_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
 
 for ep_title in episodes_titles:
