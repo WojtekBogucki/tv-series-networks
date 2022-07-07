@@ -112,6 +112,10 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_links[i:]):
         print(te)
     # if i >= 1: break
 
+entry_words = ["enters?",  "walks? in",  "picks up", "bursts in", "approaches", "comes? in", "comes? over", "shows? up"]
+exit_words = ["exits?", "leaves?", "walks? out", "hungs up"]
+new_scene_words = entry_words + exit_words
+next_scene = False
 seinfeld_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 # seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv",encoding="utf-8")
 seasons = []
@@ -134,12 +138,12 @@ for ep_title in episodes_titles:
     if ep_number in [6, 18, 41, 65, 87, 111, 135, 157]:
         season += 1
         episode = 0
-    elif ep_number in [47, 54, 116, 121]:
+    elif ep_number in [16, 47, 54, 116, 121]:
         ep_title = "fixed/" + ep_title
     elif ep_number in [100, 177]:  # recap episodes
         episode += 1
         continue
-    elif ep_number in [180, 101, 178]:  # second parts
+    elif ep_number in [83, 180, 101, 178]:  # second parts
         continue
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         if not title.endswith("2"):
@@ -149,25 +153,32 @@ for ep_title in episodes_titles:
         for line in f:
             full_line = line
             line = line.strip()
-            stage_dirs = re.findall(r"(^\([^)]*\))$", line)
+            if next_scene:
+                scene += 1
+                next_scene = False
+            # find stage directions
+            stage_dirs = re.findall(r"(\([^)]+\))", line)
             if stage_dirs:
-                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "bursts in", "approaches",
-                             "comes? in"]:
-                    match = re.findall(fr"(^\(.*{word}.*\))$", line, re.IGNORECASE)
+                for word in new_scene_words:
+                    match = re.findall(fr"(\(.*{word}.*\))", line, re.IGNORECASE)
                     if match:
-                        scene += 1
-                        continue
-            line = re.sub(r"(\([^)]*\))", "", line)
+                        if word in entry_words or (word in exit_words and line.startswith("(")):
+                            scene += 1
+                            break
+                        elif word in exit_words and not line.startswith("("):
+                            next_scene = True
+            # remove stage directions
+            line = re.sub(r"(\([^)]+\))", "", line)
             for name in ["GEORGE", "JERRY", "KRAMER", "ELAINE"]:
                 line = re.sub(fr"(?<=^{name})  ", ": ", line)
             if not line:
                 continue
-            elif line.startswith("*") or line.startswith("Notice") or line.startswith("(") or line.startswith("%"):
+            elif line.startswith("*") or line.startswith("Notice") or line.startswith("%"):
                 continue
             elif line.startswith("INT.") or line.startswith("EXT.") or line.startswith("["):
                 scene += 1
                 continue
-            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"-]{,30}): ? ?(.*)")
+            pattern = re.compile(r"(^[A-Za-z0-9'.,#& \"-]{,30}): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
@@ -199,13 +210,14 @@ seinfeld_df.to_csv("../data/seinfeld/seinfeld_lines_v1.csv", index=False, encodi
 
 seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv")
 seinfeld_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
-seinfeld_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+seinfeld_df.groupby(["season", "episode", "title"])["scene"].nunique().sort_values()
 
 for ep_title in episodes_titles:
+    print(ep_title)
     with open(f"../data/seinfeld/seinology/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
-            items = re.findall(r"(^\([^)]*\))$", line)
+            items = re.findall(r"(\([^)]*\))", line)
             if items:
                 with open("../data/seinfeld/seinology/stage_directions.txt", "a") as sd:
                     sd.write(f"{ep_title} {items}\n")
