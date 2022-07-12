@@ -1,6 +1,5 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-from EDA.processing import fix_names, split_characters, remove_speakers, fix_filtered_names, distinguish_characters
+from EDA.processing import fix_names, split_characters, remove_speakers, distinguish_characters, visualize_eda
 
 pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
@@ -135,59 +134,13 @@ tbbt_df.speaker.nunique()
 
 tbbt_df.to_csv("../data/tbbt/tbbt_lines_v2.csv", index=False, encoding="utf-8")
 
+# EDA
 tbbt_df = pd.read_csv("../data/tbbt/tbbt_lines_v2.csv")
 tbbt_df.groupby(["season", "episode", "title"]).count()
-################
 tbbt_df.head()
 print("Shape: ", tbbt_df.shape)
 
 tbbt_df.groupby("speaker").size().reset_index(name="count").sort_values("count", ascending=False)
 tbbt_df.speaker.nunique()   # 351
 
-lines_by_season = tbbt_df.groupby('season')['line'].count()
-lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines")
-plt.xticks(rotation=0)
-plt.savefig("../figures/tbbt_lines_by_season.png")
-
-episodes_by_season = tbbt_df.groupby('season')['episode'].nunique()
-lines_per_episode_by_season = lines_by_season/episodes_by_season
-lines_per_episode_by_season.plot.bar(title="Average number of lines per episode by season", ylabel="Average number of lines per episode")
-plt.xticks(rotation=0)
-plt.savefig("../figures/tbbt_lines_per_episode_by_season.png")
-
-scenes_by_season = tbbt_df.groupby('season')['scene'].nunique()
-scenes_by_season.plot.bar(title="Number of scenes by season", ylabel="Number of scenes")
-plt.xticks(rotation=0)
-plt.savefig("../figures/tbbt_scenes_by_season.png")
-
-scenes_per_episode_by_season = scenes_by_season/episodes_by_season
-scenes_per_episode_by_season.plot.bar(title="Average number of scenes per episode by season", ylabel="Average number of scenes per episode")
-plt.xticks(rotation=0)
-plt.savefig("../figures/tbbt_scenes_per_episode_by_season.png")
-
-scenes_by_season_episode = tbbt_df.groupby(['season', 'episode'])['scene'].nunique().reset_index(name="count")
-scenes_by_season_episode.boxplot(column="count", by="season")
-plt.title("Number of scenes")
-plt.ylabel("Number of scenes per episode")
-plt.xticks(rotation=0)
-plt.savefig("../figures/tbbt_scenes_per_episode_boxplot.png")
-
-lines_by_speaker = tbbt_df.groupby(['speaker', 'season'])['line'].size().unstack(fill_value=0)
-lines_by_speaker["sum_col"] = lines_by_speaker.sum(axis=1)
-lines_by_speaker = lines_by_speaker.sort_values(by="sum_col", ascending=False)
-lines_by_speaker = lines_by_speaker.drop("sum_col", axis=1)
-lines_by_speaker[:15].plot(kind="bar", stacked=True, colormap="inferno", title="Lines spoken by character", ylabel="Number of lines", figsize=(12,8))
-plt.xticks(rotation=45)
-plt.savefig("../figures/tbbt_speakers_by_season.png")
-
-episodes_by_speaker = tbbt_df.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])['speaker'].count().sort_values(ascending=False)[:15]
-episodes_by_speaker.plot(kind="bar", title="Number of episodes in which characters occurred", ylabel="Number of episodes", figsize=(12,8))
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
-
-episodes_by_number_of_speaker = tbbt_df.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['season', 'episode'])['speaker'].count().sort_values(ascending=False)[:20]
-episodes_by_number_of_speaker.plot(kind="bar", title="Number of characters in episodes", ylabel="Number of characters", figsize=(12,8))
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
+visualize_eda(tbbt_df, "tbbt")

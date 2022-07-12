@@ -2,6 +2,8 @@ import re
 import pandas as pd
 import os
 
+from matplotlib import pyplot as plt
+
 
 def fix_names(x, replacements):
     '''
@@ -178,3 +180,79 @@ def merge_seasons(path: str) -> None:
 def get_valid_filename(s: str) -> str:
     s = str(s).strip().replace(' ', '_')
     return re.sub(r'(?u)[^-\w]', '', s)
+
+
+def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
+    os.makedirs(f"../figures/{show_name}/eda", exist_ok=True)
+    lines_by_season = data.groupby('season')['line'].count()
+    episodes_by_season = data.groupby('season')['episode'].nunique()
+    lines_per_episode_by_season = lines_by_season / episodes_by_season
+    scenes_by_season = data.groupby('season')['scene'].nunique()
+    scenes_per_episode_by_season = scenes_by_season / episodes_by_season
+    scenes_by_season_episode = data.groupby(['season', 'episode'])['scene'].nunique().reset_index(name="count")
+    lines_by_speaker = data.groupby(['speaker', 'season'])['line'].size().unstack(fill_value=0)
+    lines_by_speaker["sum_col"] = lines_by_speaker.sum(axis=1)
+    lines_by_speaker = lines_by_speaker.sort_values(by="sum_col", ascending=False)
+    lines_by_speaker = lines_by_speaker.drop("sum_col", axis=1)
+    episodes_by_speaker = data.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['speaker'])[
+                              'speaker'].count().sort_values(ascending=False)[:15]
+    episodes_by_number_of_speaker = \
+        data.loc[:, ['speaker', 'season', 'episode']].drop_duplicates().groupby(['season', 'episode'])[
+            'speaker'].count().sort_values(ascending=False)[:20]
+
+    fig, ax = plt.subplots()
+    lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines", ax=ax)
+    plt.xticks(rotation=0)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_lines_by_season.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    lines_per_episode_by_season.plot.bar(title="Average number of lines per episode by season",
+                                         ylabel="Average number of lines per episode", ax=ax)
+    plt.xticks(rotation=0)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_lines_per_episode_by_season.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    scenes_by_season.plot.bar(title="Number of scenes by season", ylabel="Number of scenes", ax=ax)
+    plt.xticks(rotation=0)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_by_season.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    scenes_per_episode_by_season.plot.bar(title="Average number of scenes per episode by season",
+                                          ylabel="Average number of scenes per episode", ax=ax)
+    plt.xticks(rotation=0)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_per_episode_by_season.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    scenes_by_season_episode.boxplot(column="count", by="season", ax=ax)
+    plt.title("Number of scenes")
+    plt.ylabel("Number of scenes per episode")
+    plt.xticks(rotation=0)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_per_episode_boxplot.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    lines_by_speaker[:15].plot(kind="bar", stacked=True, colormap="inferno", title="Lines spoken by character",
+                               ylabel="Number of lines", figsize=(12, 8), ax=ax)
+    plt.xticks(rotation=45)
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_speakers_by_season.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    episodes_by_speaker.plot(kind="bar", title="Number of episodes in which characters occurred",
+                             ylabel="Number of episodes", figsize=(12, 8), ax=ax)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_episodes_by_speaker.png")
+    plt.close(fig)
+
+    fig, ax = plt.subplots()
+    episodes_by_number_of_speaker.plot(kind="bar", title="Number of characters in episodes",
+                                       ylabel="Number of characters", figsize=(12, 8), ax=ax)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig(f"../figures/{show_name}/eda/{show_name}_episodes_by_number_of_speaker.png")
+    plt.close(fig)
