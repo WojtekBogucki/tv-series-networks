@@ -74,6 +74,8 @@ for ep_title in episodes_titles:
     season = int(info.group(1))
     episode = int(info.group(2))
     title = info.group(4)
+    if (season == 2 and episode == 3) or (season == 2 and episode == 6) or (season == 9 and episode == 8):
+        ep_title = "fixed/" + ep_title
     print(season, episode, title)
     with open(f"../data/friends/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
@@ -152,8 +154,13 @@ pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
 friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv")
 friends_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
-friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()[:20]
-friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()[-20:]
+scene_count = friends_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+print(scene_count)
+print(scene_count.mean())
+print(scene_count.median())
+
+scene_count[:20]
+scene_count[-20:]
 
 friends_df.groupby(["season"])["scene"].nunique()
 friends_df.groupby(["season", "episode"])["scene"].nunique()
