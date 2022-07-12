@@ -29,9 +29,10 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
     sub_page = requests.get(ep_link, headers=headers)
     soup_subpage = BeautifulSoup(sub_page.content, "html.parser")
     script_text = soup_subpage.find_all("div", {"class": "entrytext"})[0].get_text()
-    script_text = re.sub(r'\n{2,}', '', script_text)
+    script_text = re.sub(r'\n{2,}', '\n', script_text)
     script_text = re.sub(r'\nShare this:.*$', '', script_text)
     script_text = re.sub(r'\nWritten by.*$', '', script_text)
+    script_text = re.sub(r'\nCredits sequence\.', '', script_text, re.IGNORECASE)
     try:
         with open(f"../data/tbbt/raw_scripts/{ep_title}.txt", "w", encoding="utf-8") as f:
             f.write(script_text)
@@ -39,9 +40,9 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
         print(uee)
     # if i >= 10: break
 
-entry_words = ["enters?", "entering", "walks? in", "approaches"]
-exit_words = [ "exits?", "exiting", "leaves?", "walks? out", "hungs up", "flashback"]
-new_scene_words = new_scene_words = entry_words + exit_words
+entry_words = ["enters?", "entering", "walks? in", "approaches", "arriving", "opening door"]
+exit_words = ["exits?", "exiting", "leaves?", "walks? out", "hungs up", "flashback"]
+new_scene_words = entry_words + exit_words
 next_scene = False
 tbbt_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
 seasons = []
@@ -57,6 +58,8 @@ for ep_title in episodes_titles:
     season = int(info.group(1))
     episode = int(info.group(2))
     title = info.group(3)
+    if season == 2 and episode == 17:
+        ep_title = "fixed/" + ep_title
     print(season, episode)
     with open(f"../data/tbbt/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
@@ -76,23 +79,29 @@ for ep_title in episodes_titles:
                         elif word in exit_words and not line.startswith("("):
                             next_scene = True
             line = re.sub(r"(\([^)]*\))", "", line)
+            lower_line = line.lower()
             if not line:
                 continue
-            elif line.startswith("Scene:") or \
-                    line.startswith("Fantasy sequence") or \
-                    line.startswith("End fantasy") or \
-                    line.startswith("Back to apartment") or \
-                    line.startswith("Flash") or \
-                    line.startswith("Time shift") or \
-                    line.startswith("(Time shift") or \
-                    line.startswith("(Later") or \
-                    line.startswith("(Back") or \
-                    line.startswith("Later"):
+            elif lower_line.startswith("scene:") or \
+                    lower_line.startswith("fantasy sequence") or \
+                    lower_line.startswith("end fantasy") or \
+                    lower_line.startswith("back to apartment") or \
+                    lower_line.startswith("flash") or \
+                    lower_line.startswith("time") or \
+                    lower_line.startswith("shortly afterwards") or \
+                    lower_line.startswith("cut to") or \
+                    lower_line.startswith("howard’s car") or \
+                    lower_line.startswith("leonards’s car") or \
+                    lower_line.startswith("slight time shift") or \
+                    lower_line.startswith("(time shift") or \
+                    lower_line.startswith("(later") or \
+                    lower_line.startswith("(back") or \
+                    lower_line.startswith("later"):
                 scene += 1
                 continue
-            elif line.startswith("(") or line.startswith(".") or line.startswith("Credit"):
+            elif lower_line.startswith("(") or lower_line.startswith(".") or lower_line.startswith("credit"):
                 continue
-            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’]+): ? ?(.*)")
+            pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’\-]+): ? ?(.*)")
             line_search = pattern.search(line)
             if line_search is not None:
                 speaker = line_search.group(1)
@@ -121,7 +130,14 @@ pd.options.display.max_columns = 10
 pd.options.display.max_rows = None
 
 tbbt_df = pd.read_csv("../data/tbbt/tbbt_lines_v1.csv")
-tbbt_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+scene_count = tbbt_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+print(scene_count)
+print(scene_count.mean())
+print(scene_count.median())
+
+with open(f"../data/tbbt/errors.txt", "r") as err:
+    x = len(err.readlines())
+    print('Not parsed lines:', x)
 
 for ep_title in episodes_titles:
     with open(f"../data/tbbt/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
