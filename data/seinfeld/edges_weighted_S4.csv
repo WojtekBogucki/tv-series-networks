@@ -4,11 +4,9 @@ babu,elaine,46,3,357
 babu,george,21,1,335
 babu,jerry,75,3,759
 babu,kramer,15,1,309
-buckles,clerk,7,1,119
-buckles,elaine,61,3,712
-buckles,george,58,3,608
-buckles,jerry,54,3,509
-buckles,kramer,34,3,342
+buckles,elaine,7,1,45
+buckles,george,5,1,29
+buckles,jerry,72,7,727
 casting director,george,31,5,182
 casting director,jerry,36,6,185
 casting director,kramer,8,1,55
@@ -21,10 +19,10 @@ cheryl,kramer,2,1,14
 cheryl,marla,3,1,21
 cheryl,mel,2,1,9
 cheryl,susan,2,1,8
-clerk,elaine,49,4,422
-clerk,george,81,6,889
-clerk,jerry,35,3,354
-clerk,kramer,38,5,352
+clerk,elaine,36,2,273
+clerk,george,56,4,596
+clerk,jerry,14,1,200
+clerk,kramer,23,3,224
 clerk,susan,24,2,163
 dana,george,62,4,801
 donald,elaine,10,2,46
@@ -36,10 +34,10 @@ donald,mel,6,2,64
 donald,susan,16,3,86
 dr. reston,elaine,45,2,438
 elaine,gail,46,4,403
-elaine,george,770,68,8146
-elaine,jerry,1541,125,15014
+elaine,george,759,71,7944
+elaine,jerry,1476,124,14335
 elaine,joe divola,71,8,768
-elaine,kramer,568,55,5590
+elaine,kramer,535,54,5162
 elaine,marla,44,5,586
 elaine,mel,35,3,325
 elaine,russell,39,3,522
@@ -52,9 +50,9 @@ gail,jerry,57,4,558
 gail,kramer,6,1,87
 gail,russell,15,2,97
 george,helen,40,6,245
-george,jerry,2506,178,24940
+george,jerry,2449,177,24354
 george,joe divola,18,1,151
-george,kramer,877,83,8984
+george,kramer,851,81,8565
 george,lt. martel,10,1,59
 george,marla,51,3,476
 george,mel,7,1,36
@@ -77,7 +75,7 @@ helen,sidra,2,1,7
 helen,tia,2,1,11
 helen,uncle leo,30,5,225
 jerry,joe divola,63,5,587
-jerry,kramer,1394,119,13197
+jerry,kramer,1349,116,12837
 jerry,lt. martel,12,1,61
 jerry,marla,133,7,1056
 jerry,mel,48,3,424

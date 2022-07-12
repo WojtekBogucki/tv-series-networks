@@ -6,11 +6,11 @@ bania,jerry,201,19,1808
 bania,kramer,96,7,829
 elaine,estelle,47,5,390
 elaine,frank,140,16,1637
-elaine,george,5984,542,59024
+elaine,george,5973,545,58822
 elaine,helen,275,26,1828
 elaine,jack,74,6,612
-elaine,jerry,11901,1047,108769
-elaine,kramer,4496,470,43246
+elaine,jerry,11836,1046,108090
+elaine,kramer,4463,469,42818
 elaine,mickey,32,3,313
 elaine,morty,243,27,1860
 elaine,mr. lippman,223,20,2109
@@ -38,8 +38,8 @@ frank,mr. steinbrenner,10,2,179
 frank,puddy,2,1,13
 frank,susan,32,3,225
 george,helen,102,17,835
-george,jerry,14536,1168,144285
-george,kramer,5092,503,53260
+george,jerry,14479,1167,143699
+george,kramer,5066,501,52841
 george,mickey,24,3,270
 george,morty,115,17,1016
 george,mr. lippman,69,3,686
@@ -59,7 +59,7 @@ jack,jerry,299,21,2424
 jack,kramer,27,3,153
 jack,morty,268,16,2285
 jack,puddy,6,1,33
-jerry,kramer,10287,953,99185
+jerry,kramer,10242,950,98825
 jerry,mickey,92,10,965
 jerry,morty,1157,104,9673
 jerry,mr. lippman,82,2,702
