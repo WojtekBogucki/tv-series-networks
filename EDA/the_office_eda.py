@@ -166,6 +166,11 @@ office_raw.to_csv("../data/the_office/the_office_lines_v6.csv", index=False, enc
 office_df = pd.read_csv("../data/the_office/the_office_lines_v6.csv")
 office_df.groupby(["season", "episode", "title"]).count()
 
+scene_count = office_df.groupby(["season", "episode"])["scene"].nunique().sort_values()
+print(scene_count)
+print(scene_count.mean())
+print(scene_count.median())
+
 line_count = office_df.groupby(["season", "speaker"]).size().reset_index(name="line_count")
 line_count.loc[(line_count.season == 2) & (line_count.line_count < 100), ["speaker", "line_count"]].plot(kind="hist",
                                                                                                          bins=12)
