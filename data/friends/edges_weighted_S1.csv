@@ -1,103 +1,98 @@
 speaker1,speaker2,line_count,scene_count,word_count
-aurora,chandler,74,3,840
+aurora,chandler,73,3,833
 aurora,joey,12,1,124
 aurora,monica,21,2,206
 aurora,phoebe,15,2,149
 aurora,rachel,5,1,21
 aurora,ross,21,2,166
 barry,mindy,12,1,144
-barry,rachel,69,7,650
-barry,ross,8,1,162
-carol,chandler,15,3,108
-carol,joey,7,2,55
-carol,monica,11,3,74
-carol,phoebe,8,2,51
-carol,rachel,17,4,147
-carol,ross,182,18,2034
-carol,susan,94,13,655
-chandler,david,22,2,395
-chandler,janice,79,14,941
-chandler,joey,1015,152,11165
-chandler,monica,885,128,9299
-chandler,mr. geller,7,1,33
-chandler,mr. heckles,4,1,35
+barry,rachel,65,7,615
+barry,ross,4,1,32
+carol,chandler,13,3,86
+carol,joey,4,1,25
+carol,monica,7,2,36
+carol,phoebe,5,1,17
+carol,rachel,14,3,107
+carol,ross,179,23,1979
+carol,susan,93,16,650
+chandler,david,15,2,223
+chandler,janice,77,15,858
+chandler,joey,993,161,10980
+chandler,monica,855,137,8887
+chandler,mr. heckles,6,1,57
 chandler,mr. tribbiani,15,2,99
-chandler,mrs. bing,37,5,392
-chandler,mrs. geller,18,2,218
+chandler,mrs. bing,36,7,382
+chandler,mrs. geller,4,1,47
 chandler,paolo,18,3,163
-chandler,phoebe,789,117,8915
-chandler,rachel,771,116,9028
-chandler,roger,29,2,325
-chandler,ross,986,135,11156
-chandler,susan,10,3,75
+chandler,phoebe,779,125,8728
+chandler,rachel,744,121,8727
+chandler,roger,23,2,216
+chandler,ross,967,138,10940
+chandler,susan,8,3,53
 david,janice,9,1,93
-david,joey,19,2,252
-david,monica,14,2,187
-david,phoebe,63,4,780
-david,rachel,17,2,244
-david,ross,12,2,186
-janice,joey,25,6,253
-janice,monica,19,5,164
-janice,phoebe,19,3,378
-janice,rachel,8,2,79
-janice,ross,7,2,99
+david,joey,12,2,180
+david,phoebe,58,5,738
+janice,joey,20,5,211
+janice,monica,16,4,123
+janice,phoebe,18,4,360
+janice,rachel,7,2,47
+janice,ross,3,1,42
 joey,lydia,34,4,329
-joey,monica,785,125,7712
+joey,monica,759,137,7390
 joey,mr. geller,6,1,32
+joey,mr. heckles,9,1,100
 joey,mr. tribbiani,41,4,457
-joey,mrs. bing,6,1,79
-joey,mrs. geller,17,2,211
-joey,paolo,20,3,163
-joey,phoebe,639,109,6750
-joey,rachel,655,106,7006
-joey,roger,13,2,169
-joey,ross,887,132,9669
-joey,susan,3,1,25
+joey,mrs. bing,15,2,194
+joey,mrs. geller,16,2,199
+joey,paolo,15,3,120
+joey,phoebe,611,111,6441
+joey,rachel,618,111,6642
+joey,roger,7,2,60
+joey,ross,845,129,9218
 joey,young ethan,7,1,106
-mindy,rachel,47,3,531
-monica,mr. geller,39,6,440
+mindy,rachel,46,3,527
+monica,mr. geller,41,6,440
 monica,mr. heckles,18,3,120
 monica,mr. tribbiani,11,3,100
-monica,mrs. bing,12,2,113
-monica,mrs. geller,49,6,528
-monica,paolo,19,6,95
-monica,phoebe,1010,143,10145
-monica,rachel,1211,155,12556
-monica,roger,26,3,286
-monica,ross,900,135,8883
+monica,mrs. bing,10,2,97
+monica,mrs. geller,53,7,531
+monica,paolo,16,5,83
+monica,phoebe,966,152,9635
+monica,rachel,1176,161,12235
+monica,roger,26,5,286
+monica,ross,863,138,8549
 monica,steve,34,2,301
-monica,susan,12,3,85
+monica,susan,8,2,52
 monica,young ethan,55,4,631
-mr. geller,mrs. geller,33,5,408
-mr. geller,phoebe,9,1,58
-mr. geller,rachel,7,1,36
-mr. geller,ross,39,6,555
-mr. heckles,phoebe,20,3,132
-mr. heckles,rachel,27,5,280
-mr. heckles,ross,17,2,110
+mr. geller,mrs. geller,31,5,393
+mr. geller,rachel,5,1,26
+mr. geller,ross,29,5,481
+mr. heckles,phoebe,28,4,190
+mr. heckles,rachel,35,5,356
+mr. heckles,ross,25,2,240
 mr. tribbiani,phoebe,5,1,79
 mr. tribbiani,rachel,8,1,64
 mr. tribbiani,roger,6,1,77
 mrs. bing,paolo,6,1,65
-mrs. bing,phoebe,13,2,123
+mrs. bing,phoebe,11,2,107
 mrs. bing,rachel,10,2,176
-mrs. bing,ross,42,5,395
-mrs. geller,phoebe,18,2,226
-mrs. geller,rachel,16,2,203
-mrs. geller,ross,63,8,677
-paolo,phoebe,24,6,193
+mrs. bing,ross,46,5,425
+mrs. geller,phoebe,6,2,68
+mrs. geller,rachel,13,2,181
+mrs. geller,ross,49,8,503
+paolo,phoebe,23,6,191
 paolo,rachel,32,7,282
-paolo,ross,57,7,491
-phoebe,rachel,874,129,9870
-phoebe,roger,42,4,510
-phoebe,ross,765,118,8655
+paolo,ross,52,7,443
+phoebe,rachel,831,130,9326
+phoebe,roger,42,6,510
+phoebe,ross,743,121,8340
 phoebe,steve,31,3,211
-phoebe,susan,24,7,379
-rachel,roger,25,2,364
-rachel,ross,1021,134,11360
+phoebe,susan,21,6,350
+rachel,roger,22,3,304
+rachel,ross,1003,137,11217
 rachel,steve,25,2,175
-rachel,susan,5,2,50
+rachel,susan,2,1,15
 rachel,young ethan,8,1,119
-roger,ross,24,2,333
-ross,susan,186,20,1852
+roger,ross,21,3,284
+ross,susan,183,23,1802
 ross,young ethan,7,1,112

@@ -1,12 +1,12 @@
 speaker1,speaker2,line_count,scene_count,word_count
-alicia,howard,23,2,231
-alicia,leonard,54,4,360
-alicia,penny,79,4,870
-alicia,raj,11,1,99
-alicia,sheldon,49,3,416
+alicia,howard,23,3,231
+alicia,leonard,50,5,330
+alicia,penny,77,5,857
+alicia,raj,9,1,86
+alicia,sheldon,45,3,381
 beverly,howard,24,1,292
-beverly,leonard,78,4,782
-beverly,penny,39,2,412
+beverly,leonard,65,4,617
+beverly,penny,39,4,412
 beverly,raj,17,1,244
 beverly,sheldon,67,4,761
 david,howard,15,1,165
@@ -14,46 +14,46 @@ david,leonard,63,3,598
 david,penny,46,2,397
 david,raj,13,1,111
 david,sheldon,33,2,315
-howard,kripke,30,2,250
-howard,leonard,1217,95,11949
-howard,leslie,103,8,852
-howard,mrs wolowitz,90,9,870
-howard,penny,592,45,6207
-howard,raj,747,76,8124
-howard,ramona,24,2,308
-howard,sheldon,1121,87,14407
+howard,kripke,26,2,213
+howard,leonard,1152,109,11305
+howard,leslie,97,8,777
+howard,mrs wolowitz,88,10,843
+howard,penny,465,41,4689
+howard,raj,630,74,6775
+howard,ramona,23,2,275
+howard,sheldon,1060,97,13507
 howard,steph,19,3,193
-howard,stuart,61,5,505
-kripke,leonard,59,5,570
+howard,stuart,61,4,505
+kripke,leonard,56,5,531
 kripke,penny,15,1,136
-kripke,raj,40,4,447
-kripke,sheldon,93,6,1342
-leonard,leslie,134,12,1231
-leonard,mrs wolowitz,18,3,160
-leonard,penny,1336,83,12045
-leonard,raj,887,77,8385
-leonard,ramona,72,5,675
-leonard,sheldon,2058,134,23355
-leonard,steph,157,11,1374
-leonard,stuart,96,6,803
+kripke,raj,35,4,371
+kripke,sheldon,89,6,1247
+leonard,leslie,119,12,1124
+leonard,mrs wolowitz,17,4,156
+leonard,penny,1187,83,10871
+leonard,raj,742,78,7128
+leonard,ramona,53,7,526
+leonard,sheldon,1972,163,22429
+leonard,steph,157,12,1374
+leonard,stuart,96,5,803
 leslie,mrs wolowitz,26,2,195
-leslie,penny,28,4,219
-leslie,raj,37,5,337
-leslie,ramona,22,2,251
-leslie,sheldon,148,13,1866
-mrs wolowitz,penny,16,2,184
-mrs wolowitz,raj,9,2,107
-mrs wolowitz,sheldon,27,3,377
+leslie,penny,17,3,144
+leslie,raj,18,2,173
+leslie,ramona,14,2,190
+leslie,sheldon,115,13,1601
+mrs wolowitz,penny,12,2,149
+mrs wolowitz,raj,8,2,84
+mrs wolowitz,sheldon,26,3,354
 mrs wolowitz,steph,3,1,24
-penny,raj,322,28,3249
-penny,ramona,60,5,444
-penny,sheldon,1487,89,16936
-penny,steph,25,1,187
-penny,stuart,47,4,430
-raj,ramona,17,2,213
-raj,sheldon,797,70,10551
+penny,raj,153,14,1670
+penny,ramona,49,5,341
+penny,sheldon,1337,89,15098
+penny,steph,23,1,181
+penny,stuart,47,3,430
+raj,ramona,6,1,70
+raj,sheldon,618,65,7991
 raj,steph,8,1,59
-raj,stuart,43,4,346
-ramona,sheldon,107,7,1021
-sheldon,steph,141,10,1822
-sheldon,stuart,92,7,899
+raj,stuart,43,3,346
+ramona,sheldon,91,10,890
+sheldon,steph,139,10,1768
+sheldon,stuart,92,6,899

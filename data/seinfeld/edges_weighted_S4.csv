@@ -7,14 +7,14 @@ babu,kramer,15,1,309
 buckles,elaine,7,1,45
 buckles,george,5,1,29
 buckles,jerry,72,7,727
-casting director,george,31,5,182
-casting director,jerry,36,6,185
-casting director,kramer,8,1,55
-casting director,tom,11,1,68
+casting director,george,27,5,161
+casting director,jerry,35,7,181
+casting director,kramer,5,1,38
+casting director,tom,9,1,58
 cheryl,donald,3,1,20
-cheryl,elaine,64,5,515
+cheryl,elaine,58,5,468
 cheryl,george,67,5,827
-cheryl,jerry,79,5,701
+cheryl,jerry,79,6,701
 cheryl,kramer,2,1,14
 cheryl,marla,3,1,21
 cheryl,mel,2,1,9
@@ -25,95 +25,95 @@ clerk,jerry,14,1,200
 clerk,kramer,23,3,224
 clerk,susan,24,2,163
 dana,george,62,4,801
-donald,elaine,10,2,46
-donald,george,44,5,320
+donald,elaine,11,2,47
+donald,george,46,5,325
 donald,jerry,17,2,71
 donald,kramer,3,1,20
 donald,marla,4,1,27
 donald,mel,6,2,64
-donald,susan,16,3,86
+donald,susan,22,4,109
 dr. reston,elaine,45,2,438
-elaine,gail,46,4,403
-elaine,george,759,71,7944
-elaine,jerry,1476,124,14335
-elaine,joe divola,71,8,768
-elaine,kramer,535,54,5162
-elaine,marla,44,5,586
-elaine,mel,35,3,325
-elaine,russell,39,3,522
+elaine,gail,34,4,255
+elaine,george,735,73,7460
+elaine,jerry,1450,136,14218
+elaine,joe divola,76,9,811
+elaine,kramer,489,54,4597
+elaine,marla,33,6,458
+elaine,mel,35,2,325
+elaine,russell,34,4,479
 elaine,sandi,3,1,23
-elaine,sidra,54,3,422
-elaine,susan,38,5,295
-elaine,tia,15,4,122
-gail,george,22,3,247
-gail,jerry,57,4,558
-gail,kramer,6,1,87
-gail,russell,15,2,97
-george,helen,40,6,245
-george,jerry,2449,177,24354
+elaine,sidra,42,3,333
+elaine,susan,39,5,296
+elaine,tia,40,4,267
+gail,george,19,3,224
+gail,jerry,45,4,427
+gail,kramer,4,1,62
+gail,russell,7,2,58
+george,helen,39,5,238
+george,jerry,2417,196,24018
 george,joe divola,18,1,151
-george,kramer,851,81,8565
+george,kramer,773,76,7739
 george,lt. martel,10,1,59
-george,marla,51,3,476
+george,marla,31,2,331
 george,mel,7,1,36
-george,morty,44,5,292
-george,naomi,9,1,131
-george,newman,29,4,296
-george,russell,122,8,1506
-george,sandi,23,2,289
-george,susan,312,27,3132
+george,morty,47,5,329
+george,naomi,10,1,142
+george,newman,29,3,296
+george,russell,121,12,1503
+george,sandi,16,2,215
+george,susan,311,28,3071
 george,tia,5,1,51
-george,tom,37,3,532
-george,uncle leo,33,3,295
+george,tom,35,4,521
+george,uncle leo,35,3,304
 george,woman s04e19,3,1,13
-helen,jerry,178,16,1360
+helen,jerry,178,15,1378
 helen,kramer,38,2,356
-helen,morty,135,14,1220
+helen,morty,140,16,1223
 helen,naomi,4,1,24
 helen,sandi,4,1,17
 helen,sidra,2,1,7
 helen,tia,2,1,11
-helen,uncle leo,30,5,225
+helen,uncle leo,38,5,312
 jerry,joe divola,63,5,587
-jerry,kramer,1349,116,12837
+jerry,kramer,1255,116,11896
 jerry,lt. martel,12,1,61
-jerry,marla,133,7,1056
-jerry,mel,48,3,424
-jerry,morty,160,13,1389
-jerry,naomi,34,6,397
-jerry,newman,107,10,944
-jerry,russell,89,5,838
-jerry,sandi,70,5,544
-jerry,sidra,68,3,680
-jerry,susan,149,13,1354
-jerry,tia,84,11,754
-jerry,tom,45,4,467
-jerry,uncle leo,98,9,938
-jerry,woman s04e19,51,4,398
-joe divola,kramer,3,1,21
+jerry,marla,115,9,943
+jerry,mel,48,2,424
+jerry,morty,161,12,1418
+jerry,naomi,34,5,397
+jerry,newman,110,10,970
+jerry,russell,89,8,838
+jerry,sandi,64,5,458
+jerry,sidra,68,4,680
+jerry,susan,149,16,1348
+jerry,tia,111,11,1103
+jerry,tom,43,5,458
+jerry,uncle leo,99,8,947
+jerry,woman s04e19,51,6,398
+joe divola,kramer,8,2,50
 kramer,lt. martel,21,2,382
-kramer,marla,39,3,269
+kramer,marla,3,1,21
 kramer,mel,2,1,9
 kramer,morty,25,1,241
 kramer,naomi,21,6,213
-kramer,newman,178,14,1899
+kramer,newman,176,13,1926
 kramer,sandi,2,1,11
-kramer,sidra,22,1,189
+kramer,sidra,22,2,189
 kramer,susan,49,7,367
 kramer,tia,33,4,348
-kramer,tom,21,3,221
-kramer,woman s04e19,13,2,58
+kramer,tom,12,2,152
+kramer,woman s04e19,10,2,23
 marla,mel,3,1,16
 marla,susan,3,1,15
 mel,susan,2,1,3
 morty,sandi,4,1,14
 morty,sidra,2,1,4
 morty,tia,2,1,8
-morty,uncle leo,34,4,323
-russell,sandi,13,1,197
+morty,uncle leo,35,4,375
+russell,sandi,11,1,180
 russell,susan,15,2,85
-russell,tom,15,1,276
+russell,tom,15,2,276
 sandi,sidra,4,1,12
 sandi,tia,4,1,16
-sandi,tom,21,2,200
+sandi,tom,17,2,174
 sidra,tia,2,1,6

@@ -1,54 +1,53 @@
 speaker1,speaker2,line_count,scene_count,word_count
-caitlin,chandler,45,3,352
-caitlin,joey,15,1,108
-caitlin,monica,30,2,224
-caitlin,phoebe,32,2,187
-caitlin,rachel,47,3,447
-caitlin,ross,54,3,448
+caitlin,chandler,42,4,345
+caitlin,joey,10,1,56
+caitlin,monica,25,2,191
+caitlin,phoebe,16,2,123
+caitlin,rachel,38,4,399
+caitlin,ross,52,5,444
 chandler,danny,13,2,100
-chandler,emily,30,4,258
-chandler,frank jr.,22,4,172
+chandler,emily,17,3,122
+chandler,frank jr.,18,4,146
 chandler,frank sr.,4,1,36
-chandler,gary,120,14,1095
-chandler,joey,1131,138,11708
+chandler,gary,106,12,997
+chandler,joey,1013,145,10483
 chandler,kim,5,1,76
-chandler,monica,1307,153,13142
-chandler,phoebe,848,101,8744
-chandler,rachel,648,88,7381
-chandler,ross,884,104,9433
+chandler,monica,1215,173,12101
+chandler,phoebe,709,111,7170
+chandler,rachel,485,88,5153
+chandler,ross,716,106,7584
 danny,joey,18,3,177
-danny,monica,68,7,466
+danny,monica,65,7,437
 danny,phoebe,12,2,173
-danny,rachel,122,10,1294
-emily,joey,34,4,374
-emily,monica,34,4,457
-emily,phoebe,34,3,369
-emily,rachel,23,4,261
-emily,ross,63,5,727
+danny,rachel,113,11,1147
+emily,joey,33,5,371
+emily,monica,26,4,445
+emily,phoebe,28,3,281
+emily,rachel,27,4,299
+emily,ross,60,6,700
 frank jr.,joey,5,1,83
-frank jr.,monica,8,2,81
-frank jr.,phoebe,21,5,251
-frank jr.,rachel,16,3,140
-frank jr.,ross,10,3,83
-frank sr.,joey,4,1,52
+frank jr.,monica,3,1,30
+frank jr.,phoebe,21,6,284
+frank jr.,rachel,12,2,79
+frank jr.,ross,7,3,62
 frank sr.,monica,4,1,36
-frank sr.,phoebe,56,3,638
+frank sr.,phoebe,56,4,638
 frank sr.,ross,4,1,35
-gary,joey,59,8,475
-gary,monica,59,7,654
-gary,phoebe,148,12,1555
-gary,rachel,15,2,201
-gary,ross,60,7,470
-joey,monica,834,107,9063
-joey,phoebe,862,95,9578
-joey,rachel,823,94,9137
-joey,ross,1043,116,11186
+gary,joey,52,6,440
+gary,monica,57,8,616
+gary,phoebe,146,13,1520
+gary,rachel,5,1,85
+gary,ross,51,5,429
+joey,monica,729,110,7932
+joey,phoebe,677,95,7546
+joey,rachel,645,93,6876
+joey,ross,862,124,9069
 kim,rachel,44,5,596
-larry,monica,14,1,121
-larry,phoebe,42,4,426
-monica,phoebe,823,98,8717
-monica,rachel,941,107,10658
-monica,ross,675,82,7377
-phoebe,rachel,749,87,8466
-phoebe,ross,794,81,8678
-rachel,ross,990,97,10934
+larry,monica,14,2,121
+larry,phoebe,42,5,426
+monica,phoebe,711,109,7523
+monica,rachel,813,110,9020
+monica,ross,523,80,5701
+phoebe,rachel,595,94,6485
+phoebe,ross,598,88,6677
+rachel,ross,867,100,9510

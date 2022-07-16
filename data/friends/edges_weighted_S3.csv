@@ -1,91 +1,85 @@
 speaker1,speaker2,line_count,scene_count,word_count
-bonnie,chandler,13,3,131
-bonnie,joey,19,3,170
-bonnie,monica,13,3,84
-bonnie,phoebe,17,3,183
-bonnie,rachel,61,6,487
-bonnie,ross,47,6,382
-carol,chandler,13,1,216
-carol,joey,9,1,188
-carol,monica,24,3,327
+bonnie,chandler,18,4,173
+bonnie,joey,20,4,139
+bonnie,monica,3,1,10
+bonnie,phoebe,12,2,154
+bonnie,rachel,55,6,438
+bonnie,ross,45,6,371
+carol,monica,17,2,233
 carol,phoebe,9,1,154
-carol,rachel,7,1,67
-carol,ross,71,6,851
-chandler,chloe,16,2,194
-chandler,director,6,1,53
-chandler,frank jr.,34,2,404
-chandler,gunther,64,11,784
-chandler,janice,108,10,1430
+carol,ross,65,6,784
+chandler,chloe,15,2,165
+chandler,director,4,1,27
+chandler,frank jr.,27,3,313
+chandler,gunther,52,10,535
+chandler,janice,105,10,1371
 chandler,joanna,28,4,306
-chandler,joey,1002,124,11083
-chandler,monica,808,97,8734
-chandler,pete,27,4,288
-chandler,phoebe,728,91,8166
-chandler,rachel,779,94,8221
-chandler,richard,15,2,221
-chandler,robert,41,4,336
-chandler,ross,926,104,10505
+chandler,joey,913,143,10001
+chandler,monica,689,106,7451
+chandler,pete,23,4,258
+chandler,phoebe,610,105,6806
+chandler,rachel,691,97,7452
+chandler,richard,7,2,122
+chandler,robert,40,5,315
+chandler,ross,832,121,9424
 chandler,tommy,9,3,139
 chloe,joey,8,1,75
-chloe,rachel,14,1,158
-chloe,ross,55,5,502
-director,joey,98,11,1087
-director,kate,56,6,557
-director,lauren,16,2,204
+chloe,rachel,3,1,22
+chloe,ross,49,7,461
+director,joey,84,11,968
+director,kate,47,6,447
+director,lauren,8,1,87
 director,monica,3,1,13
-director,ross,8,2,144
-frank jr.,joey,45,3,487
-frank jr.,monica,26,2,313
-frank jr.,phoebe,141,8,1637
-frank jr.,rachel,29,2,338
-frank jr.,ross,47,3,503
-gunther,janice,11,1,126
-gunther,joey,24,5,209
-gunther,mark,6,1,112
-gunther,monica,19,6,153
-gunther,phoebe,26,6,224
-gunther,rachel,74,10,892
+frank jr.,joey,38,3,379
+frank jr.,monica,16,2,235
+frank jr.,phoebe,140,10,1634
+frank jr.,rachel,14,2,156
+frank jr.,ross,41,4,464
+gunther,joey,14,3,131
+gunther,mark,4,1,68
+gunther,monica,15,4,127
+gunther,phoebe,24,6,215
+gunther,rachel,79,12,968
 gunther,robert,5,1,66
-gunther,ross,46,8,514
-janice,joey,59,7,728
-janice,monica,16,4,218
-janice,phoebe,22,4,389
+gunther,ross,45,9,507
+janice,joey,57,7,712
+janice,monica,16,5,218
+janice,phoebe,28,4,439
 janice,rachel,13,2,138
 janice,ross,9,2,136
 joanna,rachel,42,5,367
-joey,kate,137,10,1392
-joey,lauren,70,7,715
-joey,monica,751,93,7940
-joey,pete,24,4,285
-joey,phoebe,756,88,8482
-joey,rachel,583,72,5696
-joey,richard,16,2,125
-joey,robert,23,2,243
-joey,ross,743,86,8164
-kate,lauren,38,4,379
+joey,kate,136,14,1356
+joey,lauren,53,7,517
+joey,monica,654,103,6859
+joey,pete,18,3,177
+joey,phoebe,642,97,7264
+joey,rachel,497,79,4794
+joey,richard,5,2,56
+joey,robert,19,2,196
+joey,ross,648,98,7006
+kate,lauren,24,4,175
 lauren,rachel,4,1,35
-mark,rachel,99,10,875
-mark,ross,64,7,531
-monica,pete,211,19,2739
-monica,phoebe,962,110,10813
-monica,rachel,828,96,8503
-monica,richard,107,11,1238
-monica,ross,819,93,8868
-monica,tommy,3,1,24
-mr. greene,rachel,56,3,550
-mr. greene,ross,67,3,634
-pete,phoebe,39,4,482
-pete,rachel,22,3,261
-pete,ross,22,5,242
-phoebe,rachel,696,87,7624
-phoebe,richard,17,2,156
-phoebe,robert,42,4,337
-phoebe,ross,768,86,8627
+mark,rachel,100,10,886
+mark,ross,66,7,539
+monica,pete,206,19,2632
+monica,phoebe,856,125,9349
+monica,rachel,738,101,7311
+monica,richard,96,12,1111
+monica,ross,702,103,7420
+mr. greene,rachel,56,5,550
+mr. greene,ross,66,5,624
+pete,phoebe,37,4,479
+pete,rachel,22,4,261
+pete,ross,18,4,217
+phoebe,rachel,571,88,6209
+phoebe,richard,6,2,52
+phoebe,robert,40,5,296
+phoebe,ross,634,100,7130
 phoebe,tommy,5,1,33
-rachel,richard,13,3,134
-rachel,robert,17,1,130
-rachel,ross,1413,133,14366
-rachel,tommy,24,3,189
-richard,ross,23,2,308
-robert,ross,39,4,291
-ross,tommy,40,3,319
+rachel,richard,4,2,21
+rachel,robert,13,1,83
+rachel,ross,1293,148,12998
+rachel,tommy,15,3,86
+richard,ross,6,1,107
+robert,ross,33,4,232
+ross,tommy,39,4,315

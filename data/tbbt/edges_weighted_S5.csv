@@ -1,58 +1,58 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,bernadette,291,35,3514
-amy,howard,127,16,1784
-amy,leonard,270,28,3019
+amy,bernadette,277,36,3404
+amy,howard,121,15,1645
+amy,leonard,261,29,2926
 amy,mike,5,1,72
 amy,mrs wolowitz,9,2,89
-amy,penny,558,47,6536
+amy,penny,547,49,6496
 amy,raj,90,10,1357
-amy,sheldon,474,45,7165
+amy,sheldon,465,45,7038
 amy,stuart,30,3,324
-bernadette,howard,435,40,5019
-bernadette,leonard,112,15,892
-bernadette,mike,7,1,81
-bernadette,mrs wolowitz,98,12,1023
-bernadette,penny,312,32,3334
-bernadette,raj,112,16,1346
-bernadette,sheldon,165,20,2374
-howard,jimmy,33,2,362
+bernadette,howard,435,39,5023
+bernadette,leonard,109,15,874
+bernadette,mike,8,1,87
+bernadette,mrs wolowitz,94,12,967
+bernadette,penny,298,32,3160
+bernadette,raj,113,15,1352
+bernadette,sheldon,161,20,2310
+howard,jimmy,30,2,338
 howard,kripke,31,5,294
-howard,leonard,576,63,6037
+howard,leonard,570,62,5991
 howard,mike,66,8,756
 howard,mrs cooper,22,2,350
-howard,mrs wolowitz,125,14,1379
-howard,penny,192,22,2446
-howard,raj,594,71,7206
-howard,sheldon,689,68,10371
+howard,mrs wolowitz,120,13,1347
+howard,penny,184,21,2245
+howard,raj,591,67,7181
+howard,sheldon,659,63,9985
 howard,stuart,40,5,598
-jimmy,leonard,83,3,700
-jimmy,raj,36,2,377
+jimmy,leonard,77,3,652
+jimmy,raj,32,2,347
 jimmy,sheldon,64,3,733
 kripke,leonard,50,7,538
-kripke,raj,50,6,692
+kripke,raj,49,6,681
 kripke,sheldon,77,8,1152
 kripke,stuart,13,2,219
 leonard,mike,8,1,85
-leonard,mrs cooper,83,7,1246
+leonard,mrs cooper,83,7,1218
 leonard,mrs wolowitz,8,1,77
-leonard,penny,767,58,8144
+leonard,penny,756,58,8060
 leonard,priya,69,4,562
-leonard,raj,486,58,5174
-leonard,sheldon,1442,122,19044
-leonard,stuart,94,6,976
+leonard,raj,482,58,5067
+leonard,sheldon,1421,119,18966
+leonard,stuart,94,7,976
 mike,mrs wolowitz,6,1,40
 mike,penny,7,1,74
 mike,raj,8,1,91
-mike,sheldon,7,1,142
-mrs cooper,penny,38,5,568
+mike,sheldon,7,1,136
+mrs cooper,penny,31,4,507
 mrs cooper,raj,24,2,407
-mrs cooper,sheldon,113,9,1779
+mrs cooper,sheldon,113,9,1790
 mrs wolowitz,penny,7,1,66
 mrs wolowitz,raj,12,2,128
-mrs wolowitz,sheldon,19,2,295
-penny,raj,149,17,1794
-penny,sheldon,618,52,7982
+mrs wolowitz,sheldon,19,2,289
+penny,raj,149,16,1794
+penny,sheldon,590,50,7748
 priya,sheldon,40,3,392
-raj,sheldon,564,61,9103
+raj,sheldon,546,58,8887
 raj,stuart,42,5,733
-sheldon,stuart,125,9,1725
+sheldon,stuart,125,10,1725

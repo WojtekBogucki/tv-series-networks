@@ -1,36 +1,36 @@
 speaker1,speaker2,line_count,scene_count,word_count
 dr koothrappali,howard,18,1,152
-dr koothrappali,leonard,40,2,302
-dr koothrappali,raj,55,2,429
-dr koothrappali,sheldon,43,2,434
+dr koothrappali,leonard,39,3,290
+dr koothrappali,raj,55,3,429
+dr koothrappali,sheldon,39,2,393
 gablehauser,howard,55,3,559
-gablehauser,leonard,87,5,867
+gablehauser,leonard,81,5,823
 gablehauser,leslie,31,1,289
 gablehauser,mrs cooper,12,1,66
-gablehauser,penny,26,1,258
-gablehauser,raj,53,3,544
-gablehauser,sheldon,104,6,1301
-howard,leonard,973,75,9481
-howard,leslie,58,4,619
-howard,missy,61,7,500
-howard,mrs cooper,16,2,420
-howard,penny,580,49,6058
-howard,raj,499,55,5381
-howard,sheldon,820,66,9950
-leonard,leslie,155,7,1464
-leonard,missy,71,6,614
-leonard,mrs cooper,46,5,641
-leonard,penny,1271,74,11756
-leonard,raj,749,60,7160
-leonard,sheldon,1925,119,20907
-leslie,penny,46,3,451
-leslie,raj,47,4,580
-leslie,sheldon,87,5,925
-missy,penny,37,4,226
-missy,raj,35,5,347
-missy,sheldon,86,10,1022
-mrs cooper,penny,18,2,426
-mrs cooper,sheldon,64,5,872
-penny,raj,368,34,3827
-penny,sheldon,1219,72,13742
-raj,sheldon,616,53,7537
+gablehauser,penny,24,1,228
+gablehauser,raj,49,2,503
+gablehauser,sheldon,98,6,1203
+howard,leonard,932,84,9093
+howard,leslie,54,4,564
+howard,missy,57,6,464
+howard,mrs cooper,17,2,425
+howard,penny,522,45,5144
+howard,raj,475,56,5237
+howard,sheldon,774,73,9136
+leonard,leslie,146,8,1390
+leonard,missy,69,7,596
+leonard,mrs cooper,49,6,671
+leonard,penny,1183,76,11066
+leonard,raj,695,65,6742
+leonard,sheldon,1872,144,20289
+leslie,penny,29,3,295
+leslie,raj,45,4,538
+leslie,sheldon,68,5,667
+missy,penny,33,3,150
+missy,raj,34,4,268
+missy,sheldon,76,8,957
+mrs cooper,penny,19,2,431
+mrs cooper,sheldon,62,5,854
+penny,raj,280,27,2952
+penny,sheldon,1127,72,12461
+raj,sheldon,541,52,6524

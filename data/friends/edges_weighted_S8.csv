@@ -1,65 +1,61 @@
 speaker1,speaker2,line_count,scene_count,word_count
-chandler,eric,20,2,190
 chandler,janice,10,1,80
-chandler,joey,618,65,7232
-chandler,mona,42,5,341
-chandler,monica,997,95,10998
-chandler,parker,26,3,351
-chandler,phoebe,475,52,4851
-chandler,rachel,474,46,5359
-chandler,ross,473,46,4669
+chandler,joey,520,66,6077
+chandler,mona,31,4,211
+chandler,monica,921,103,9925
+chandler,parker,15,2,257
+chandler,phoebe,383,50,3825
+chandler,rachel,360,46,3984
+chandler,ross,381,45,3704
 chandler,the interviewer,27,2,302
-chandler,will,63,5,588
-dina,joey,50,4,668
-dina,rachel,49,6,616
-dr. long,joey,15,1,155
-dr. long,rachel,110,8,1116
-dr. long,ross,95,8,1072
-eric,joey,18,2,198
-eric,mona,12,1,136
-eric,monica,12,1,135
-eric,phoebe,129,8,1503
-eric,rachel,17,1,210
-eric,ross,39,3,421
+chandler,will,53,4,503
+dina,joey,48,4,646
+dina,rachel,49,8,616
+dr. long,joey,15,2,155
+dr. long,rachel,93,9,953
+dr. long,ross,73,7,765
+eric,phoebe,124,9,1467
+eric,rachel,9,1,87
+eric,ross,9,1,90
 janice,monica,6,1,48
-janice,rachel,42,3,479
-janice,ross,43,3,422
-joey,mona,58,8,622
-joey,monica,573,56,6941
-joey,mr. greene,5,2,133
-joey,parker,23,2,326
-joey,phoebe,558,61,6337
-joey,rachel,1007,78,12548
-joey,ross,809,64,9400
-joey,the interviewer,51,9,775
-joey,will,54,3,488
-mona,monica,30,4,312
-mona,mr. greene,13,3,120
-mona,phoebe,31,3,360
-mona,rachel,43,3,547
-mona,ross,255,27,2615
-monica,mrs. greene,66,5,819
-monica,parker,31,3,632
-monica,phoebe,905,77,9752
-monica,rachel,701,55,8486
-monica,ross,494,43,5887
+janice,rachel,31,3,390
+janice,ross,31,4,240
+joey,mona,36,6,463
+joey,monica,445,63,5072
+joey,mr. greene,4,2,118
+joey,parker,16,2,261
+joey,phoebe,452,64,4840
+joey,rachel,865,81,10699
+joey,ross,669,65,7834
+joey,the interviewer,52,11,801
+joey,will,36,3,310
+mona,monica,7,2,60
+mona,mr. greene,15,3,138
+mona,phoebe,13,2,112
+mona,rachel,34,6,425
+mona,ross,241,29,2382
+monica,mrs. greene,52,5,626
+monica,parker,19,2,290
+monica,phoebe,782,85,8178
+monica,rachel,587,62,7033
+monica,ross,346,39,4281
 monica,the interviewer,8,1,79
-monica,will,95,5,882
-mr. greene,phoebe,30,3,406
-mr. greene,rachel,42,3,562
-mr. greene,ross,19,3,246
-mrs. greene,phoebe,58,5,617
-mrs. greene,rachel,83,5,1107
-mrs. greene,ross,34,2,414
-parker,phoebe,70,4,865
-parker,rachel,43,3,576
-parker,ross,45,3,599
-phoebe,rachel,762,61,8559
-phoebe,ross,571,53,6617
-phoebe,the interviewer,11,2,148
-phoebe,will,69,5,659
-rachel,ross,1231,86,13360
-rachel,the interviewer,14,2,210
-rachel,will,81,3,823
-ross,the interviewer,21,3,218
-ross,will,77,3,726
+monica,will,86,5,821
+mr. greene,phoebe,26,2,329
+mr. greene,rachel,38,2,489
+mr. greene,ross,21,3,259
+mrs. greene,phoebe,42,4,502
+mrs. greene,rachel,67,4,940
+mrs. greene,ross,24,2,323
+parker,phoebe,70,6,865
+parker,rachel,9,1,140
+parker,ross,18,2,297
+phoebe,rachel,642,66,7214
+phoebe,ross,415,50,4899
+phoebe,the interviewer,9,1,125
+phoebe,will,58,4,568
+rachel,ross,1098,101,11865
+rachel,the interviewer,14,3,202
+rachel,will,71,3,738
+ross,the interviewer,19,3,189
+ross,will,75,4,694

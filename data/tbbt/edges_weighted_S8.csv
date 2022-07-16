@@ -5,9 +5,9 @@ amy,dr lorvis,30,5,242
 amy,emily,31,6,257
 amy,howard,124,17,1324
 amy,leonard,325,43,3072
-amy,penny,559,66,5700
+amy,penny,549,66,5622
 amy,raj,187,28,1997
-amy,sheldon,787,71,10704
+amy,sheldon,777,71,10518
 amy,stuart,32,6,311
 bernadette,dan,43,3,405
 bernadette,dr koothrappali,7,2,53
@@ -16,7 +16,7 @@ bernadette,emily,36,4,243
 bernadette,howard,572,67,6166
 bernadette,leonard,116,18,1148
 bernadette,penny,398,43,4231
-bernadette,raj,290,40,3051
+bernadette,raj,289,40,3023
 bernadette,sheldon,166,20,2164
 bernadette,stuart,96,16,998
 beverly,leonard,60,4,596
@@ -27,7 +27,7 @@ dan,penny,60,5,700
 dr koothrappali,howard,10,2,98
 dr koothrappali,leonard,2,1,12
 dr koothrappali,penny,26,4,251
-dr koothrappali,raj,38,4,450
+dr koothrappali,raj,37,4,422
 dr koothrappali,sheldon,18,2,196
 dr lorvis,howard,22,3,167
 dr lorvis,leonard,38,3,302
@@ -41,17 +41,17 @@ emily,penny,52,4,451
 emily,raj,114,18,1137
 emily,sheldon,18,3,235
 emily,stuart,12,2,127
-howard,leonard,577,59,6210
+howard,leonard,577,62,6210
 howard,man s08e07,15,1,180
 howard,penny,201,25,2113
-howard,raj,827,90,9488
-howard,sheldon,557,53,7062
+howard,raj,826,93,9460
+howard,sheldon,557,56,7062
 howard,stuart,141,19,1548
 leonard,man s08e07,53,2,582
 leonard,mrs cooper,56,5,742
 leonard,penny,908,84,8910
-leonard,raj,596,63,6441
-leonard,sheldon,1254,104,15648
+leonard,raj,596,66,6441
+leonard,sheldon,1254,107,15648
 leonard,stuart,47,6,454
 leonard,wil,54,4,661
 man s08e07,penny,23,1,300
@@ -60,9 +60,9 @@ man s08e07,sheldon,43,2,623
 mrs cooper,penny,33,3,412
 mrs cooper,sheldon,54,5,748
 penny,raj,196,26,1881
-penny,sheldon,803,68,9711
+penny,sheldon,803,69,9711
 penny,stuart,29,5,298
 penny,wil,53,4,717
-raj,sheldon,573,56,7686
+raj,sheldon,572,59,7658
 raj,stuart,75,13,889
 sheldon,stuart,42,6,640

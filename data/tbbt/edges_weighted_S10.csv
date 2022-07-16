@@ -1,24 +1,24 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,bernadette,231,28,2296
+amy,bernadette,231,27,2296
 amy,bert,118,16,1062
 amy,beverly,19,3,185
-amy,howard,131,21,1155
-amy,leonard,542,68,4936
+amy,howard,138,21,1205
+amy,leonard,542,67,4936
 amy,mrs cooper,42,7,464
-amy,penny,703,83,6471
-amy,raj,241,35,2354
+amy,penny,703,82,6471
+amy,raj,248,35,2404
 amy,ramona,10,1,37
-amy,sheldon,1340,132,15785
+amy,sheldon,1340,131,15785
 amy,stuart,89,14,672
 amy,susan,2,1,12
 bernadette,beverly,11,1,93
-bernadette,howard,619,77,5904
-bernadette,leonard,161,29,1467
+bernadette,howard,620,77,5914
+bernadette,leonard,160,28,1460
 bernadette,mrs cooper,9,1,89
-bernadette,penny,343,42,3430
-bernadette,raj,436,58,4305
+bernadette,penny,342,41,3423
+bernadette,raj,438,58,4321
 bernadette,ramona,15,3,125
-bernadette,sheldon,167,22,1860
+bernadette,sheldon,166,21,1853
 bernadette,stuart,251,32,2379
 bernadette,susan,9,1,93
 bert,howard,30,5,256
@@ -38,18 +38,18 @@ colonel williams,howard,50,5,489
 colonel williams,leonard,54,5,533
 colonel williams,sheldon,34,4,411
 howard,isabella,18,1,161
-howard,leonard,518,71,5006
+howard,leonard,525,70,5071
 howard,mrs cooper,2,1,16
-howard,penny,179,29,1682
+howard,penny,187,28,1746
 howard,raj,655,79,6965
 howard,ramona,17,3,130
-howard,sheldon,479,54,5997
+howard,sheldon,486,53,5993
 howard,stuart,237,33,2302
 howard,susan,2,1,20
 isabella,raj,77,4,833
 leonard,mrs cooper,22,3,218
 leonard,penny,973,121,9127
-leonard,raj,517,70,4731
+leonard,raj,526,70,4812
 leonard,ramona,32,5,269
 leonard,sheldon,1185,125,13681
 leonard,stuart,65,11,670
@@ -58,13 +58,13 @@ mrs cooper,penny,4,1,75
 mrs cooper,sheldon,63,8,864
 mrs cooper,stuart,7,1,49
 mrs cooper,susan,2,1,16
-penny,raj,406,53,3985
+penny,raj,417,53,4082
 penny,ramona,20,3,169
-penny,sheldon,866,88,9950
+penny,sheldon,866,87,9950
 penny,stuart,82,12,800
 penny,susan,41,6,418
 raj,ramona,35,5,248
-raj,sheldon,465,55,5727
+raj,sheldon,475,55,5782
 raj,stuart,221,28,2352
 ramona,sheldon,49,6,494
 sheldon,stuart,92,13,1065

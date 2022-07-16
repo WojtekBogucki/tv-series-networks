@@ -1,35 +1,37 @@
 speaker1,speaker2,line_count,scene_count,word_count
-amy,bernadette,226,20,2568
+amy,bernadette,225,20,2558
 amy,howard,94,9,901
-amy,leonard,232,19,2178
-amy,penny,401,35,4661
+amy,leonard,232,20,2178
+amy,penny,400,35,4651
 amy,priya,27,3,187
 amy,raj,68,6,748
-amy,sheldon,585,39,7317
+amy,sheldon,583,39,7310
 amy,zack,19,2,267
-bernadette,howard,407,35,3801
-bernadette,leonard,204,21,1759
+bernadette,howard,403,35,3778
+bernadette,leonard,202,21,1740
 bernadette,mrs wolowitz,8,1,81
-bernadette,penny,308,30,2976
-bernadette,priya,89,11,773
-bernadette,raj,156,15,1597
-bernadette,sheldon,140,13,1847
+bernadette,penny,307,30,2961
+bernadette,priya,80,11,678
+bernadette,raj,151,15,1538
+bernadette,sheldon,136,14,1736
 bernadette,zack,11,1,117
-howard,leonard,958,100,9060
+howard,leonard,950,101,9032
 howard,mrs latham,15,2,206
 howard,mrs wolowitz,103,9,884
-howard,penny,477,42,4540
-howard,priya,162,19,1585
-howard,raj,736,81,7409
-howard,sheldon,864,85,10930
+howard,penny,466,41,4476
+howard,priya,151,20,1413
+howard,raj,728,82,7356
+howard,sheldon,859,88,10899
+howard,sheldon-bot,28,3,393
 howard,zack,65,8,613
 leonard,mrs latham,62,4,629
 leonard,mrs wolowitz,26,3,253
 leonard,page,32,2,318
-leonard,penny,720,55,6388
-leonard,priya,423,36,3809
-leonard,raj,784,79,7637
-leonard,sheldon,1727,126,19698
+leonard,penny,713,55,6365
+leonard,priya,420,35,3798
+leonard,raj,781,80,7628
+leonard,sheldon,1719,130,19641
+leonard,sheldon-bot,62,4,697
 leonard,wyatt,46,4,572
 leonard,zack,87,8,761
 mrs latham,raj,17,2,226
@@ -38,14 +40,17 @@ mrs wolowitz,raj,24,3,244
 mrs wolowitz,sheldon,4,1,27
 page,raj,16,1,172
 page,sheldon,50,2,668
-penny,priya,106,12,989
-penny,raj,239,23,2491
-penny,sheldon,1033,71,11718
+penny,priya,95,11,874
+penny,raj,224,22,2374
+penny,sheldon,1019,71,11525
+penny,sheldon-bot,43,3,494
 penny,wyatt,39,3,462
 penny,zack,86,8,716
-priya,raj,149,17,1565
-priya,sheldon,267,23,3236
-raj,sheldon,783,70,9575
+priya,raj,149,18,1565
+priya,sheldon,263,23,3190
+raj,sheldon,775,71,9492
+raj,sheldon-bot,20,2,219
 raj,zack,44,5,423
+sheldon,sheldon-bot,7,1,148
 sheldon,wyatt,4,1,37
 sheldon,zack,121,12,1387
