@@ -59,8 +59,12 @@ for ep_title, ep_link in zip(episodes_titles[i:], episodes_link[i:]):
         print(uee)
     if i >= 1: break
 
+
+entry_words = ["enters?",  "walks? in",  "picks up", "bursts in", "approaches", "comes? in", "comes? over", "shows? up", "arrives?", "entering"]
+exit_words = ["exits?", "leaves?", "walks? out", "hungs up"]
+new_scene_words = entry_words + exit_words
+next_scene = False
 friends_df = pd.DataFrame(columns=["season", "episode", "title", "scene", "speaker", "line"])
-# friends_df = pd.read_csv("../data/friends/friends_lines_v1.csv",encoding="utf-8")
 seasons = []
 episodes = []
 titles = []
@@ -74,23 +78,27 @@ for ep_title in episodes_titles:
     season = int(info.group(1))
     episode = int(info.group(2))
     title = info.group(4)
-    if (season == 2 and episode == 3) or (season == 2 and episode == 6) or (season == 9 and episode == 8):
+    if (season == 2 and episode in [3, 5, 6, 11]) or (season == 9 and episode == 8):
         ep_title = "fixed/" + ep_title
     print(season, episode, title)
     with open(f"../data/friends/raw_scripts/{ep_title}.txt", "r", encoding="utf-8") as f:
         for line in f:
             full_line = line
             line = line.strip()
-            stage_dirs = re.findall(r"(^[(\[][^)\]]*[)\]])$", line)
+            if next_scene:
+                scene += 1
+                next_scene = False
+            # find stage directions
+            stage_dirs = re.findall(r"([(\[][^)\]]*[)\]])", line)
             if stage_dirs:
-                for word in ["enters?", "exits?", "leaves?", "walks? in|out", "hungs up", "burts in", "approaches",
-                             "comes? in"]:
-                    match = re.findall(fr"(^[(\[].*{word}.*[)\]])$", line, re.IGNORECASE)
+                for word in new_scene_words:
+                    match = re.findall(fr"([(\[].*{word}.*[)\]])", line, re.IGNORECASE)
                     if match:
-                        scene += 1
-                        break
-                if match:
-                    continue
+                        if word in entry_words or (word in exit_words and line.startswith("(")):
+                            scene += 1
+                            break
+                        elif word in exit_words and not line.startswith("("):
+                            next_scene = True
             # line = re.sub(r"([(\[][^)\]]*[)\]])", "", line)
             lower_line = line.lower()
             if "written by" in lower_line or \
@@ -103,19 +111,23 @@ for ep_title in episodes_titles:
                     lower_line.startswith("closing credits") or \
                     lower_line.startswith("closing titles") or \
                     lower_line.startswith("the end") or \
-                    lower_line.startswith("end"):
+                    lower_line.startswith("end") or \
+                    lower_line.startswith("{"):
                 continue
             elif lower_line.startswith("[scene") or \
                     lower_line.startswith("[time") or \
                     lower_line.startswith("[cut") or \
+                    lower_line.startswith("(cut") or \
                     lower_line.startswith("[at") or \
                     lower_line.startswith("(at") or \
                     lower_line.startswith("[out") or \
                     lower_line.startswith("[back") or \
+                    lower_line.startswith("time lapse") or \
+                    lower_line.startswith("(from") or \
                     line.startswith("[later"):
                 scene += 1
                 continue
-            line = re.sub(r"(\([^)]*\))", "", line)
+            line = re.sub(r"([(\[][^)\]]*[)\]])", "", line)
             if not line:
                 continue
             pattern = re.compile(r"(^[A-Za-z0-9'.#& \"’,]+): ? ?(.*)")
