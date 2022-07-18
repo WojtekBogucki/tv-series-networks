@@ -64,7 +64,7 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
 # ML and LD
 most_different = np.abs(mods_df["ML"] - mods_df["LD"]).sort_values(ascending=False).index.values[:10]
 pd.options.display.max_columns=20
-print(mods_df.loc[most_different, ["ML", "LD", "FG", "index", "show"]])
+print(mods_df.loc[most_different, ["ML", "LD", "FG", "index", "show"]].round(3))
 
 show_name = "the_office"
 net_episodes = get_episode_networks(f"../data/{show_name}/")
