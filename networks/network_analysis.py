@@ -4,6 +4,7 @@ import matplotlib
 import numpy as np
 import random
 from adjustText import adjust_text
+import seaborn as sns
 
 matplotlib.use('Agg')
 
@@ -147,6 +148,15 @@ show_names = {
     "friends": "Friends"
 }
 
+sns_palette = sns.color_palette("tab10")
+
+show_palette = {
+    "The Office": sns_palette[1],
+    "Seinfeld": sns_palette[0],
+    "The Big Bang Theory": sns_palette[2],
+    "Friends": sns_palette[3]
+}
+
 episode_stats.reset_index(drop=True, inplace=True)
 plt.ioff()
 for col in episode_stats.columns[:-1]:
@@ -183,6 +193,7 @@ create_similarity_matrix(episode_stats[episode_stats["show"] == "friends"],
                          episode_stats[episode_stats["show"] == "friends"].index.values.tolist(),
                          filename="friends/similarity_matrix")
 
+# Compare characters
 character_stats = pd.DataFrame()
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     edges_weighted = pd.read_csv(f"../data/{show_name}/edges_weighted_top30.csv")
@@ -193,69 +204,34 @@ for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     character_stats = pd.concat([character_stats, char_stats], axis=0)
 
 colname = "betweenness_line"
-character_stats.index = character_stats.index.str.lower()
+character_stats.index = character_stats.index.str.capitalize()
 top_char_stats = character_stats.loc[character_stats["betweenness_line"] > 0, [colname, "show"]]
-top_char_stats.sort_values(by=colname, ascending=True)[colname].transpose().plot(kind="barh",
-                                                                                 color=
-                                                                                 top_char_stats.sort_values(by=colname,
-                                                                                                            ascending=True)[
-                                                                                     'show'].map(
-                                                                                     {'the_office': plt.cm.Set1(0),
-                                                                                      'friends': plt.cm.Set1(3),
-                                                                                      'seinfeld': plt.cm.Set1(6),
-                                                                                      'tbbt': plt.cm.Set1(8)}))
-plt.xticks(rotation=0)
-plt.xlabel("Betweenness")
-plt.title("Betweenness of characters by line count")
-plt.tight_layout()
+top_char_stats['show'] = top_char_stats['show'].apply(lambda x: show_names[x])
+top_char_stats = top_char_stats.sort_values(by=colname, ascending=False)
+
+
+plt.figure(figsize=(8,6))
+ax = sns.barplot(data=top_char_stats, y=top_char_stats.index, x=colname, orient="h", hue="show", dodge=False)
+ax.set(xlabel='Betweenness', title="Betweenness of characters by line count")
+ax.legend(title='Show name')
 plt.savefig(f"../figures/comparison/characters_{colname}_top30.png")
 plt.close()
-
 
 # scatterplot
 def character_comparison(character_stats, colname, colname2):
     top_char_stats = character_stats.loc[character_stats["betweenness_line"] > 0, [colname, colname2, "show"]]
-    # plt.style.use("dark_background")
-    fig, ax = plt.subplots(figsize=(20, 10))
-    top_char_stats.plot(kind="scatter",
-                        x=colname,
-                        y=colname2,
-                        s=120,
-                        linewidth=0,
-                        ax=ax,
-                        c=top_char_stats['show'].map({'the_office': 0,
-                                                      'friends': 1,
-                                                      'seinfeld': 2,
-                                                      'tbbt': 3}),
-                        cmap=plt.get_cmap("Set1"),
-                        colorbar=False,
-                        grid=True,
-                        fontsize=15)
-    # i = 0
-    # for show in ["the_office", "seinfeld", "tbbt", "friends"]:
-    #     print(i)
-    #     top_char_stats[top_char_stats["show"] == show].plot(kind="scatter",
-    #                                                         x=colname,
-    #                                                         y=colname2,
-    #                                                         s=120,
-    #                                                         linewidth=0,
-    #                                                         ax=ax,
-    #                                                         label=show,
-    #                                                         c=i,
-    #                                                         cmap=plt.get_cmap("Set1"),
-    #                                                         colorbar=False,
-    #                                                         grid=True,
-    #                                                         fontsize=15)
-        # i += 1
-    # for idx, row in top_char_stats.iterrows():
-    #     ax.annotate(idx, (row[colname], row[colname2]), xytext=(10, -5), textcoords='offset points', fontsize=15,
-    #                 family='sans-serif', color='darkslategrey')
-    texts = [plt.text(row[colname], row[colname2], idx, fontsize=20, family='sans-serif') for idx, row in
+    top_char_stats['show'] = top_char_stats['show'].apply(lambda x: show_names[x])
+    fig, ax = plt.subplots(figsize=(12, 10))
+    ax = sns.scatterplot(data=top_char_stats, x=colname, y=colname2, hue="show", ax=ax, s=100, palette=show_palette)
+    texts = [plt.text(row[colname], row[colname2], idx, fontsize=15, family='sans-serif') for idx, row in
              top_char_stats.iterrows()]
+    plt.grid()
     adjust_text(texts)
+    ax.legend(title='Show name', fontsize=12)
+    plt.setp(ax.get_legend().get_title(), fontsize='15')
     plt.title("Comparison of leading characters", fontsize=18)
-    plt.xlabel(colname.replace("_", " by "), fontsize=15)
-    plt.ylabel(colname2.replace("_", " by "), fontsize=15)
+    plt.xlabel(colname.capitalize().replace("_", " by "), fontsize=15)
+    plt.ylabel(colname2.capitalize().replace("_", " by "), fontsize=15)
     plt.savefig(f"../figures/comparison/{colname}_{colname2}.png")
     plt.close(fig)
 
@@ -267,3 +243,8 @@ character_comparison(character_stats, "betweenness_word", "pagerank_word")
 # correlations
 plot_corr_mat(episode_stats.drop("show", axis=1), f"comparison/episode_corr")
 plot_corr_mat(episode_stats[episode_stats.runtime < 30].drop("show", axis=1), f"comparison/episode_corr_below_30_min")
+
+# average number of communities
+print(episode_stats.groupby("show")["number_of_communities_LD"].mean().round(2))
+print(episode_stats.sort_values("density", ascending=False)[:20][["nodes", "show"]])
+print(episode_stats[episode_stats["density"]==1].groupby("show").size())
