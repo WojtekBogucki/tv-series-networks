@@ -1,0 +1,6 @@
+speaker1,speaker2,line_count,scene_count,word_count
+DRIVER,EPPS,9,2,57
+EPPS,JAEGER,370,113,4291
+EPPS,WES,175,63,2350
+JAEGER,WES,168,54,2142
+JAEGER,WOODS,13,4,130
