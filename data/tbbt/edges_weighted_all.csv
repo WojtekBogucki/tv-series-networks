@@ -1,0 +1,1373 @@
+speaker1,speaker2,line_count,scene_count,word_count
+abby,girl s03e12,6,1,36
+abby,martha,7,1,38
+abby,raj,20,1,143
+abby,sheldon,22,1,185
+actor,amy,3,1,8
+actor,leonard,4,1,11
+actor,penny,5,1,91
+actor,sheldon,5,1,37
+actress,leonard,6,1,32
+actress,penny,10,1,53
+adam,amy,10,2,118
+adam,bernadette,3,1,46
+adam,beverly,4,1,54
+adam,howard,12,2,188
+adam,kripke,4,1,55
+adam,leonard,47,6,428
+adam,leslie,8,1,93
+adam,penny,35,4,323
+adam,raj,13,3,187
+adam,sheldon,66,5,1111
+adam,stephen hawking,8,1,56
+adam,stuart,3,1,48
+adam,wil,21,4,199
+air force officer,bernadette,8,1,54
+air force officer,howard,10,1,73
+air force officer,raj,16,1,62
+alex,amy,32,2,285
+alex,howard,11,1,76
+alex,leonard,75,5,650
+alex,penny,20,2,196
+alex,raj,30,3,259
+alex,sheldon,114,10,1523
+alfred,amy,47,7,389
+alfred,bernadette,11,1,112
+alfred,beverly,58,7,450
+alfred,howard,4,1,39
+alfred,leonard,77,8,714
+alfred,mrs cooper,68,8,581
+alfred,penny,35,4,318
+alfred,randall,4,1,35
+alfred,sheldon,70,8,761
+alfred,stuart,9,1,72
+alfred,susan,4,1,39
+alfred,wyatt,4,1,40
+alice,hot girl,10,1,77
+alice,howard,7,1,61
+alice,leonard,40,3,382
+alice,raj,6,1,40
+alice,sheldon,7,1,81
+alice,stuart,10,1,89
+alicia,blonde girl,11,1,22
+alicia,howard,23,3,231
+alicia,leonard,50,5,330
+alicia,penny,77,5,857
+alicia,raj,9,1,86
+alicia,sheldon,45,3,381
+amelia,cooper,8,1,111
+amelia,leonard,8,1,66
+amelia,penny,7,1,62
+amy,arthur,9,1,85
+amy,bernadette,2132,258,22607
+amy,bert,154,18,1401
+amy,bespectacled man,7,1,49
+amy,beverly,82,12,790
+amy,claire,10,3,73
+amy,dave,100,6,1137
+amy,doctor,6,1,41
+amy,dr koothrappali,26,4,258
+amy,dr lorvis,30,5,242
+amy,emily,46,8,459
+amy,fat leonard,5,1,22
+amy,fat raj,2,1,18
+amy,fat stuart,2,1,11
+amy,girl dressed as a witch,3,1,16
+amy,glenn,10,2,67
+amy,greene,10,1,217
+amy,hernandez,4,1,50
+amy,howard,1086,149,11169
+amy,ira,7,1,107
+amy,janine,12,1,139
+amy,jeannie,7,1,58
+amy,kripke,71,8,739
+amy,leonard,2268,280,21523
+amy,leslie,9,1,126
+amy,levar,7,2,44
+amy,levar burton,2,1,8
+amy,lucy,16,2,153
+amy,man in crowd,4,1,26
+amy,man in seat behind,2,1,36
+amy,man s07e15,29,3,294
+amy,man s08e03,5,1,27
+amy,mark harmon on tv,5,1,18
+amy,meemaw,63,3,672
+amy,mike,19,4,160
+amy,minister,5,1,42
+amy,mr spock cuckoo clock,4,1,42
+amy,mrs cooper,118,16,1145
+amy,mrs fowler,6,1,60
+amy,mrs petrescu,17,3,102
+amy,mrs wolowitz,15,4,116
+amy,penny,3678,415,38386
+amy,penny’s dad,19,1,229
+amy,powerfully built man,2,1,4
+amy,priya,27,3,187
+amy,professor proton,6,1,89
+amy,ra,2,1,13
+amy,raj,1293,173,14774
+amy,ramona,10,1,37
+amy,randall,2,1,8
+amy,rebecca,16,2,120
+amy,registrar,6,1,93
+amy,sceme,8,2,41
+amy,second voice,3,1,20
+amy,sheldon,5381,502,68150
+amy,stadium announcer,4,1,46
+amy,stephen hawking,18,2,170
+amy,store assistant,5,1,47
+amy,stuart,335,51,3234
+amy,susan,2,1,12
+amy,tall british dave,13,1,142
+amy,taxi driver,3,1,22
+amy,theodore,8,1,119
+amy,very tall,2,1,4
+amy,waiter s07e01,6,1,78
+amy,waiter s07e15,5,2,41
+amy,wil,50,4,634
+amy,witch,3,1,17
+amy,woman in lab coat,3,1,37
+amy,wyatt,2,1,13
+amy,zack,58,7,608
+amy,zombie,13,3,90
+angela,raj,16,1,141
+angela,server,5,1,18
+angela,sheldon,10,1,57
+angela,woman at table,5,1,14
+angela,woman s04e22,10,1,38
+announcer,howard,2,1,8
+announcer,leonard,4,1,65
+announcer,sheldon,2,1,51
+announcer,summer,2,1,9
+arthur,bill nye,7,1,75
+arthur,howard,14,1,110
+arthur,leonard,110,8,1169
+arthur,paramedic,5,1,52
+arthur,penny,62,5,612
+arthur,raj,12,1,97
+arthur,sheldon,235,15,2823
+assistant,employment office assistant,12,1,94
+assistant,howard,19,2,160
+assistant,leonard,15,2,160
+assistant,penny,17,2,150
+assistant,raj,12,2,160
+assistant,sheldon,63,5,716
+attorney,howard,19,1,219
+attorney,leonard,17,1,214
+attorney,sheldon,17,1,211
+audiitoner,first girl,4,1,26
+audiitoner,girl s08e21,4,1,14
+audiitoner,penny,7,1,48
+audiitoner,second girl,3,1,22
+awkward guy,jeff,10,1,52
+awkward guy,leonard,26,3,188
+awkward guy,penny,28,3,163
+awkward guy,red-haired guy,8,2,68
+baggage clerk,bernadette,4,1,27
+baggage clerk,clerk,3,1,25
+baggage clerk,howard,5,1,49
+bar patrons,barman,7,1,45
+bar patrons,leonard,4,1,10
+bar patrons,raj,3,1,9
+bar patrons,sheldon,7,1,52
+barber,leonard,12,1,119
+barber,sheldon,16,1,224
+barman,howard,6,1,30
+barman,leonard,9,1,53
+barman,penny,6,1,103
+barman,raj,10,2,59
+barman,sheldon,23,3,225
+barry’s siri,kripke,8,1,89
+barry’s siri,raj,8,1,55
+barry’s siri,sheldon,6,1,66
+barry’s siri,siri,5,1,46
+bernadette,beverly,45,6,494
+bernadette,buzz,2,1,44
+bernadette,child,9,1,74
+bernadette,chorus of everyone in cafeteria,6,1,70
+bernadette,claire,13,1,113
+bernadette,clerk,19,4,174
+bernadette,dan,43,3,405
+bernadette,dave,40,2,452
+bernadette,dimitri,15,2,162
+bernadette,doctor,13,2,168
+bernadette,dr koothrappali,18,3,228
+bernadette,dr lorvis,3,1,15
+bernadette,elderly korean gentleman,3,1,11
+bernadette,emily,101,13,758
+bernadette,fat leonard,5,1,23
+bernadette,fat raj,2,1,19
+bernadette,fat stuart,2,1,12
+bernadette,foreign nurse,4,1,22
+bernadette,george takei,16,2,139
+bernadette,girl dressed as a witch,12,1,73
+bernadette,girl s04e05,3,1,28
+bernadette,girl s05e20,5,1,55
+bernadette,glenn,20,2,198
+bernadette,gretchen,8,1,99
+bernadette,guy at door,3,1,33
+bernadette,guy s08e20,6,1,61
+bernadette,halley,1,1,22
+bernadette,howard,3727,404,38365
+bernadette,howie mandel,9,1,85
+bernadette,janine,2,1,9
+bernadette,jeannie,5,1,52
+bernadette,jesse,20,2,189
+bernadette,josh,17,2,110
+bernadette,joy,12,2,111
+bernadette,katee,21,2,198
+bernadette,korean,3,1,11
+bernadette,kripke,11,3,89
+bernadette,lakshmi,6,1,57
+bernadette,leonard,1302,175,11599
+bernadette,leslie,7,1,81
+bernadette,lucy,14,1,88
+bernadette,man in crowd,4,1,19
+bernadette,man in suit,10,1,77
+bernadette,man s07e15,16,2,145
+bernadette,man s08e03,5,1,20
+bernadette,man s09e19,5,1,54
+bernadette,mark harmon on tv,4,1,10
+bernadette,midwife,10,1,101
+bernadette,mike,85,13,793
+bernadette,mike massimino,14,1,125
+bernadette,minister,3,1,23
+bernadette,mrs cooper,16,3,184
+bernadette,mrs wolowitz,189,28,1844
+bernadette,mrs. rostenkowski,11,2,81
+bernadette,nurse,6,1,84
+bernadette,penny,2661,304,26809
+bernadette,penny’s dad,17,1,169
+bernadette,powerfully built man,10,1,60
+bernadette,priya,80,11,678
+bernadette,ra,2,1,13
+bernadette,raj,1803,240,19110
+bernadette,ramona,15,3,125
+bernadette,randall,9,1,89
+bernadette,registrar,6,1,63
+bernadette,remote-control hawking,10,2,73
+bernadette,sceme,12,2,84
+bernadette,second child,10,1,82
+bernadette,second voice,2,1,12
+bernadette,sheldon,1311,154,16393
+bernadette,siri,9,2,66
+bernadette,soup kitchen manager,14,3,128
+bernadette,stadium announcer,4,1,39
+bernadette,stephen hawking,7,1,44
+bernadette,stuart,595,82,5768
+bernadette,susan,9,1,93
+bernadette,sweatpants,6,1,23
+bernadette,tall british dave,12,1,81
+bernadette,tech support guy,2,1,13
+bernadette,very tall,10,1,60
+bernadette,waiter s03e12,4,1,15
+bernadette,waiter s07e01,6,1,58
+bernadette,wil,2,1,74
+bernadette,witch,12,1,74
+bernadette,wyatt,9,1,94
+bernadette,zack,23,3,247
+bert,howard,45,7,394
+bert,leonard,87,12,850
+bert,mrs petrescu,16,3,142
+bert,penny,63,9,649
+bert,raj,76,12,740
+bert,rebecca,14,2,137
+bert,sheldon,177,19,2382
+bert,stuart,23,3,191
+bespectacled man,sheldon,12,1,249
+bethany,girl s03e03,5,1,15
+bethany,howard,44,3,362
+bethany,raj,39,3,322
+bethany,sarah,16,2,116
+bethany,second girl,3,1,14
+bethany,tattooist,10,1,54
+beverly,howard,56,5,634
+beverly,kripke,4,1,51
+beverly,leonard,345,32,3396
+beverly,leonard’s mother,13,1,153
+beverly,leslie,8,1,89
+beverly,mrs cooper,106,11,977
+beverly,penny,274,30,2949
+beverly,raj,20,2,291
+beverly,randall,14,3,70
+beverly,sheldon,301,25,3397
+beverly,stephen hawking,8,1,52
+beverly,stuart,19,3,167
+beverly,susan,16,3,105
+beverly,wil,3,1,82
+beverly,woman s02e15,13,1,218
+beverly,wyatt,14,3,82
+bill murray,howard,2,1,18
+bill murray,leonard,5,1,85
+bill murray,raj,3,1,23
+bill murray,sheldon,4,1,33
+bill nye,leonard,9,1,103
+bill nye,sheldon,7,1,97
+blonde girl,leonard,9,1,43
+blonde girl,sheldon,14,1,133
+bookstore employee,employee,3,1,24
+bookstore employee,girl s02e13,5,1,17
+bookstore employee,leonard,5,1,37
+bookstore employee,little girl,2,1,15
+bookstore employee,sheldon,14,1,199
+bookstore employee,woman in queue,2,1,10
+bookstore employee,woman s02e13,2,1,9
+brent,leonard,12,1,75
+brent,raj,8,1,72
+brent,sheldon,14,1,188
+brent,wil,12,1,125
+buzz,howard,3,1,55
+caller,kevin,7,1,138
+caller,leonard,10,1,74
+caller,penny,11,1,103
+caller,wil,11,1,200
+carrie fisher,james,6,1,27
+carrie fisher,sceme,2,1,8
+carrie fisher,sheldon,5,1,36
+charlie sheen,raj,2,1,17
+child,howard,8,1,104
+child,second child,5,1,30
+chorus of everyone in cafeteria,raj,6,1,57
+christie,howard,39,4,322
+christie,leonard,30,3,243
+christie,mrs wolowitz,11,1,123
+christie,penny,28,3,219
+christie,raj,9,2,81
+christie,sheldon,36,3,367
+claire,emily,17,3,158
+claire,girl s09e14,9,1,75
+claire,howard,45,6,448
+claire,leonard,7,2,73
+claire,lucy,8,2,109
+claire,penny,7,2,74
+claire,raj,124,13,1490
+claire,zack,15,2,134
+class instructor,howard,2,1,33
+cleaner,isabella,11,1,111
+cleaner,raj,17,1,150
+cleaning lady 1,cleaning lady 2,3,1,17
+cleaning lady 1,sheldon,3,1,16
+cleaning lady 2,sheldon,2,1,7
+clerk,howard,19,4,258
+cole,leonard,15,1,93
+cole,penny,8,1,32
+cole,sheldon,8,1,34
+colonel williams,howard,50,5,489
+colonel williams,leonard,54,5,533
+colonel williams,sheldon,34,4,411
+cooper,leonard,6,1,81
+cooper,penny,5,1,77
+cosmonaut,dimitri,3,1,46
+cosmonaut,howard,18,4,198
+cosmonaut,mike,15,4,127
+cosmonaut,mike massimino,2,1,5
+cosmonaut,mission control,4,2,19
+costume guy,penny,2,1,9
+costume guy,wil,2,1,8
+dale,leonard,8,1,50
+dale,sheldon,8,1,83
+dale,speccy guy,5,1,34
+dale,speccy guy behind counter,5,1,28
+dan,penny,60,5,700
+daniel,guy s10e06,6,1,44
+daniel,leonard,9,1,81
+daniel,penny,11,1,79
+dave,leonard,36,2,447
+dave,penny,37,2,421
+dave,sheldon,13,1,248
+dave,tall british dave,15,1,225
+david,howard,15,1,165
+david,leonard,63,3,598
+david,penny,46,2,397
+david,raj,13,1,111
+david,sheldon,33,2,315
+dennis,gablehauser,20,2,330
+dennis,goldfarb,4,1,16
+dennis,howard,14,1,164
+dennis,leonard,45,3,463
+dennis,raj,16,1,159
+dennis,sheldon,39,3,431
+dimitri,howard,55,8,526
+dimitri,leonard,5,1,35
+dimitri,mike,20,5,157
+dimitri,mission control,6,1,34
+dimitri,mrs wolowitz,11,1,158
+dimitri,raj,4,1,29
+dimitri,sheldon,8,1,87
+director,leonard,12,1,117
+director,penny,17,1,229
+director,wil,14,1,144
+dmv lady,howard,13,1,121
+dmv lady,penny,15,1,139
+dmv lady,sheldon,24,1,289
+doctor,howard,21,2,185
+doctor,leonard,9,1,83
+doctor,mrs wolowitz,5,1,54
+doctor,penny,17,2,199
+doctor,priya,11,1,124
+doctor,raj,9,1,113
+doctor,sheldon,11,2,129
+doug,howard,8,1,86
+doug,leonard,14,1,148
+doug,penny,5,1,34
+doug,raj,3,1,8
+doug,sheldon,6,1,104
+dr gallo,leonard,25,2,315
+dr gallo,penny,22,2,332
+dr gallo,raj,14,1,152
+dr gallo,sheldon,17,1,208
+dr koothrappali,howard,33,4,337
+dr koothrappali,leonard,65,7,512
+dr koothrappali,mrs koothrappali,85,10,890
+dr koothrappali,mrs wolowitz,3,1,32
+dr koothrappali,penny,36,5,376
+dr koothrappali,priya,33,3,290
+dr koothrappali,raj,186,16,2084
+dr koothrappali,sheldon,65,6,710
+dr lorvis,howard,22,3,167
+dr lorvis,leonard,38,3,302
+dr lorvis,man s08e07,13,1,167
+dr lorvis,penny,39,5,405
+dr lorvis,raj,23,3,169
+dr lorvis,sheldon,27,3,303
+dr massimino,howard,11,1,83
+dr massimino,mrs wolowitz,4,1,27
+dr massimino,nasa guy,2,1,14
+dr massimino,raj,2,1,30
+dr millstone,prof laughlin,3,1,55
+dr millstone,raj,5,1,68
+dr millstone,woman s03e04,3,1,37
+dr schneider,howard,12,1,101
+dr schneider,mrs wolowitz,9,1,68
+dr tyson,howard,6,1,59
+dr tyson,raj,4,1,48
+dr tyson,sheldon,12,2,205
+elderly korean gentleman,korean,2,1,6
+elderly korean gentleman,penny,3,1,13
+elizabeth,howard,33,2,296
+elizabeth,leonard,87,6,853
+elizabeth,penny,21,1,170
+elizabeth,raj,34,2,322
+elizabeth,sheldon,64,5,826
+ellen,sheldon,2,1,47
+elon,howard,18,1,266
+elon,man s09e09,10,1,112
+emily,howard,124,14,1171
+emily,jeannie,4,1,36
+emily,leonard,47,8,366
+emily,lucy,11,2,141
+emily,man s07e23,5,1,35
+emily,penny,80,8,789
+emily,raj,325,39,3250
+emily,sceme,2,1,9
+emily,sheldon,67,9,849
+emily,soup kitchen manager,10,2,81
+emily,stuart,19,3,175
+emily,woman in lab coat,4,1,52
+emily,zombie,14,3,78
+employee,girl s02e13,6,1,25
+employee,leonard,6,1,45
+employee,little girl,3,1,23
+employee,sheldon,15,1,207
+employee,woman in queue,3,1,18
+employee,woman s02e13,3,1,17
+employment office assistant,sheldon,12,1,129
+enormous man,leonard,4,1,17
+enormous man,man s01e01,2,1,10
+enormous man,sheldon,4,1,16
+eric,howard,5,1,18
+eric,leonard,19,3,118
+eric,leslie,7,1,79
+eric,penny,15,3,88
+eric,raj,4,1,28
+eric,sheldon,8,1,75
+fat leonard,fat raj,8,2,50
+fat leonard,fat stuart,5,1,15
+fat leonard,howard,8,2,49
+fat leonard,leonard,7,1,46
+fat leonard,penny,4,1,38
+fat leonard,raj,8,1,60
+fat leonard,stuart,3,1,23
+fat raj,fat stuart,2,1,11
+fat raj,howard,4,2,39
+fat raj,leonard,4,1,42
+fat raj,penny,3,1,32
+fat raj,raj,5,1,56
+fat raj,stuart,2,1,17
+fat stuart,howard,2,1,11
+fat stuart,leonard,4,1,35
+fat stuart,raj,5,1,49
+female string quartettist,leonard,15,1,111
+female string quartettist,leslie,15,1,141
+female string quartettist,male string quartettist,2,1,5
+first alien,second alien,2,1,9
+first alien,sheldon,2,1,20
+first car thief,second car thief,4,1,14
+first girl,girl s08e21,6,1,38
+first girl,penny,9,1,72
+first girl,second girl,5,1,46
+foreign nurse,howard,4,1,14
+foreign nurse,mrs wolowitz,2,1,6
+gablehauser,goldfarb,11,1,122
+gablehauser,howard,73,4,722
+gablehauser,leonard,99,6,962
+gablehauser,leslie,41,2,384
+gablehauser,mrs cooper,12,1,66
+gablehauser,penny,24,1,228
+gablehauser,raj,69,3,680
+gablehauser,sheldon,129,8,1606
+gablehauser,summer,3,1,18
+gablehauser,third floor janitor,27,1,253
+george smoot,sheldon,3,1,68
+george takei,howard,26,2,187
+george takei,katee,21,2,199
+george takei,mrs wolowitz,7,1,73
+girl 2,girl s06e18,4,1,34
+girl 2,howard,5,1,75
+girl 2,leonard,3,1,145
+girl dressed as a witch,howard,12,1,138
+girl dressed as a witch,leonard,4,1,30
+girl dressed as a witch,penny,5,1,42
+girl dressed as a witch,raj,4,1,61
+girl dressed as a witch,sheldon,3,1,15
+girl dressed as a witch,stuart,4,1,35
+girl dressed as a witch,witch,2,1,11
+girl in butterfly costume,girl in hippie costume,2,1,6
+girl in butterfly costume,girl s01e06,4,1,20
+girl in butterfly costume,howard,7,1,108
+girl in butterfly costume,leonard,13,1,69
+girl in butterfly costume,nurse costume girl,2,1,6
+girl in butterfly costume,penny,2,1,12
+girl in butterfly costume,raj,5,1,56
+girl in butterfly costume,sheldon,15,1,144
+girl in hippie costume,girl s01e06,4,1,18
+girl in hippie costume,howard,7,1,106
+girl in hippie costume,leonard,13,1,67
+girl in hippie costume,nurse costume girl,2,1,4
+girl in hippie costume,penny,2,1,10
+girl in hippie costume,raj,5,1,54
+girl in hippie costume,sheldon,15,1,142
+girl s01e06,howard,9,1,120
+girl s01e06,kurt,18,1,141
+girl s01e06,leonard,39,2,392
+girl s01e06,nurse costume girl,4,1,18
+girl s01e06,penny,15,2,96
+girl s01e06,raj,7,1,68
+girl s01e06,sheldon,41,2,395
+girl s01e15,howard,9,1,90
+girl s01e15,leonard,12,1,101
+girl s01e15,missy,5,1,52
+girl s01e15,raj,3,1,41
+girl s01e15,sheldon,7,1,68
+girl s02e06,howard,6,1,68
+girl s02e06,kathy,3,1,55
+girl s02e06,leonard,4,2,67
+girl s02e06,leslie,2,1,25
+girl s02e06,ramona,9,1,130
+girl s02e06,sheldon,17,2,196
+girl s02e08,howard,20,2,272
+girl s02e08,leonard,29,3,251
+girl s02e08,raj,4,1,40
+girl s02e08,sheldon,9,1,102
+girl s02e08,woman s02e08,4,1,35
+girl s02e13,leonard,8,1,38
+girl s02e13,little girl,5,1,16
+girl s02e13,sheldon,17,1,200
+girl s02e13,woman in queue,5,1,11
+girl s02e13,woman s02e13,5,1,10
+girl s03e03,howard,12,1,70
+girl s03e03,raj,13,1,117
+girl s03e03,second girl,6,1,19
+girl s03e12,martha,5,1,26
+girl s03e12,raj,18,1,131
+girl s03e12,sheldon,20,1,173
+girl s04e05,joy,5,1,63
+girl s04e05,leonard,6,1,37
+girl s05e20,howard,5,1,40
+girl s05e20,lakshmi,3,1,12
+girl s05e20,raj,9,1,133
+girl s06e16,nerdy guy,6,1,33
+girl s06e16,raj,9,1,153
+girl s06e16,stuart,5,1,30
+girl s06e17,howard,7,1,103
+girl s06e17,raj,24,2,414
+girl s06e17,sheldon,6,1,84
+girl s06e17,stuart,4,1,33
+girl s06e18,howard,7,1,93
+girl s06e18,leonard,5,1,163
+girl s07e01,howard,7,1,60
+girl s07e01,mrs davis,4,1,18
+girl s07e01,raj,10,1,112
+girl s07e04,raj,3,1,9
+girl s07e08,raj,5,1,55
+girl s08e21,penny,9,1,60
+girl s08e21,second girl,5,1,34
+girl s09e08,howard,8,1,105
+girl s09e08,raj,10,1,132
+girl s09e08,sheldon,14,1,205
+girl s09e08,vanessa,4,1,115
+girl s09e14,howard,19,2,193
+girl s09e14,raj,25,2,259
+girls,leonard,3,1,31
+glenn,howard,18,2,151
+glenn,leonard,4,1,50
+glenn,penny,12,2,95
+glenn,powerfully built man,7,1,44
+glenn,raj,5,1,51
+glenn,sheldon,7,1,115
+glenn,very tall,7,1,44
+goldfarb,howard,14,1,158
+goldfarb,leonard,16,1,207
+goldfarb,raj,16,1,153
+goldfarb,sheldon,9,1,139
+good looking man coming up stairs,howard,11,1,102
+good looking man coming up stairs,leonard,19,1,224
+good looking man coming up stairs,mike,3,1,14
+good looking man coming up stairs,penny,10,1,73
+good looking man coming up stairs,raj,14,1,125
+good looking man coming up stairs,sheldon,11,1,114
+greene,sheldon,15,1,232
+gretchen,howard,7,1,68
+gretchen,leonard,14,1,61
+gretchen,penny,14,1,103
+guard,sheldon,7,1,32
+guy at door,guy s08e20,5,1,38
+guy at door,howard,8,1,56
+guy at door,raj,3,1,47
+guy in baseball hat,leonard,16,1,183
+guy in baseball hat,penny,14,1,102
+guy in baseball hat,second guy,2,1,8
+guy in baseball hat,sheldon,9,1,157
+guy s01e16,penny,14,1,71
+guy s01e16,random guy,2,1,14
+guy s01e16,random woman,2,1,14
+guy s01e16,sheldon,17,1,173
+guy s01e16,woman s01e16,3,1,34
+guy s08e20,howard,11,1,84
+guy s08e20,raj,6,1,75
+guy s10e06,leonard,11,1,83
+guy s10e06,penny,13,1,81
+guys in passing car,howard,2,1,15
+guys in passing car,leonard,3,1,25
+guys in passing car,raj,3,1,27
+guys in passing car,sheldon,4,1,81
+halley,howard,2,1,21
+halley,leonard,3,1,54
+headmaster,leonard,3,1,88
+headmaster,penny,3,1,41
+helium man,leonard,4,1,43
+helium man,sheldon,6,1,63
+hernandez,leonard,2,1,6
+hernandez,sheldon,12,2,129
+hot girl,howard,7,1,76
+hot girl,leonard,16,1,134
+hot girl,raj,6,1,55
+hot girl,sheldon,7,1,96
+hot girl,stuart,10,1,104
+houston,voice,3,1,37
+howard,howard’s cousin,8,1,100
+howard,howie mandel,7,1,86
+howard,hr woman,9,1,100
+howard,isabella,18,1,161
+howard,janine,18,2,152
+howard,jeannie,8,1,57
+howard,jimmy,30,2,338
+howard,josh,24,3,211
+howard,joy,12,2,131
+howard,katee,49,3,436
+howard,kid,5,1,87
+howard,kripke,115,15,1269
+howard,kurt,10,1,62
+howard,lakshmi,6,1,42
+howard,lalita,30,2,320
+howard,leonard,7255,769,72248
+howard,leslie,160,13,1441
+howard,lucy,21,3,227
+howard,man in crowd,9,1,144
+howard,man in seat behind,2,1,36
+howard,man in suit,8,1,78
+howard,man s02e03,6,1,25
+howard,man s07e15,20,3,246
+howard,man s08e03,10,1,145
+howard,man s08e07,15,1,180
+howard,man s08e10,4,1,24
+howard,man s09e09,12,1,162
+howard,man s09e11,3,1,14
+howard,man s09e19,15,2,162
+howard,man s09e23,15,2,122
+howard,mandy,21,1,160
+howard,mark harmon on tv,4,1,10
+howard,marty,12,1,167
+howard,michaela,11,2,81
+howard,midwife,12,1,111
+howard,mike,244,25,2603
+howard,mike massimino,25,2,230
+howard,mission control,10,3,84
+howard,missy,57,6,464
+howard,model,7,1,38
+howard,mrs,3,1,25
+howard,mrs cooper,75,8,1117
+howard,mrs davis,16,2,130
+howard,mrs koothrappali,35,3,373
+howard,mrs latham,15,2,206
+howard,mrs wolowitz,566,60,5609
+howard,mrs. rostenkowski,19,2,157
+howard,nasa guy,11,1,85
+howard,nurse,49,4,500
+howard,nurse costume girl,7,1,106
+howard,older woman,3,1,26
+howard,penny,3188,338,31916
+howard,penny’s dad,9,1,170
+howard,policeman,6,1,55
+howard,powerfully built man,8,1,32
+howard,priya,151,20,1413
+howard,prof crawley,14,1,269
+howard,prof sharpe,9,1,96
+howard,ra,2,1,24
+howard,raj,6880,786,75796
+howard,ramona,40,5,405
+howard,randall,2,1,16
+howard,registrar,6,1,100
+howard,remote-control hawking,14,2,141
+howard,roeger,4,1,124
+howard,sarah,27,2,243
+howard,scanner,8,1,36
+howard,sceme,13,2,111
+howard,second child,9,1,112
+howard,second girl,10,1,69
+howard,second voice,2,1,12
+howard,sheldon,6885,687,89544
+howard,sheldon on laptop screen,2,1,166
+howard,sheldon-bot,28,3,393
+howard,siebert,32,4,463
+howard,siri,20,3,146
+howard,soup kitchen manager,17,3,193
+howard,stadium announcer,9,1,164
+howard,steph,19,3,193
+howard,stephen hawking,15,2,141
+howard,steve wozniak,7,1,52
+howard,store clerk,9,1,58
+howard,stuart,811,109,8468
+howard,summer,26,5,255
+howard,susan,2,1,20
+howard,tattooist,18,1,155
+howard,tech support guy,6,1,77
+howard,the three guys,3,1,6
+howard,theatre staff,11,2,83
+howard,third floor janitor,10,1,71
+howard,trent,8,1,60
+howard,vanessa,8,1,96
+howard,venkatesh,12,1,144
+howard,very tall,8,1,32
+howard,voice,14,4,176
+howard,waiter s03e12,4,1,36
+howard,waiter s07e15,5,2,53
+howard,waitress s06e04,8,1,108
+howard,waitress s06e13,2,1,13
+howard,wil,71,14,686
+howard,witch,12,1,139
+howard,woman s02e08,12,1,171
+howard,woman s09e05,4,1,27
+howard,woman s09e23,10,2,81
+howard,wyatt,2,1,21
+howard,zack,107,12,952
+howard’s cousin,leonard,4,1,19
+howard’s cousin,marty,6,1,69
+howard’s cousin,raj,2,1,17
+howard’s cousin,sheldon,8,1,111
+howie mandel,man in suit,5,1,36
+hr woman,janine,7,1,44
+hr woman,leonard,6,1,40
+hr woman,raj,9,1,114
+hr woman,sheldon,23,2,424
+huge man,leonard,2,1,3
+huge man,sheldon,5,1,27
+huge man,todd,4,1,19
+ira,kripke,3,1,38
+ira,leonard,11,1,115
+ira,penny,6,1,118
+ira,radio,4,1,64
+ira,sheldon,30,3,572
+isabella,raj,77,4,833
+james,sceme,6,1,25
+james,sheldon,40,7,508
+janine,kripke,20,2,122
+janine,leonard,46,3,407
+janine,penny,2,1,17
+janine,raj,31,3,361
+janine,sheldon,56,5,551
+jeannie,raj,5,1,45
+jeannie,sceme,4,1,31
+jeannie,sheldon,7,1,127
+jeannie,stuart,6,1,74
+jeff,leonard,10,1,59
+jeff,penny,15,1,64
+jesse,stuart,17,1,173
+jesse,sweatpants,10,1,92
+jimmy,leonard,77,3,652
+jimmy,raj,32,2,347
+jimmy,sheldon,64,3,733
+josh,raj,19,2,164
+joy,leonard,26,3,257
+joyce kim,leonard,6,1,38
+joyce kim,sheldon,6,1,64
+judge,sheldon,14,1,261
+katee,mrs wolowitz,22,2,265
+kathy,leonard,3,1,31
+kathy,sheldon,6,1,61
+kevin,leonard,45,4,481
+kevin,man s05e09,6,1,49
+kevin,penny,49,4,456
+kevin,wil,24,2,405
+kid,leonard,3,1,25
+kid,sheldon,3,1,23
+kirk,leonard,3,1,38
+kirk,sheldon,4,1,87
+kirk,spock,2,1,26
+korean,penny,3,1,13
+kripke,leonard,247,28,2852
+kripke,leslie,8,1,90
+kripke,penny,39,6,523
+kripke,radio,3,1,42
+kripke,raj,170,22,2269
+kripke,sheldon,463,41,6696
+kripke,siebert,11,1,139
+kripke,siri,9,1,97
+kripke,stephen hawking,8,1,53
+kripke,stuart,31,6,446
+kripke,wil,13,3,206
+kripke,zack,18,2,215
+kurt,leonard,58,3,628
+kurt,penny,25,1,175
+kurt,raj,8,1,46
+kurt,sheldon,48,2,414
+lady vet,leonard,5,1,37
+lady vet,penny,6,1,43
+lady vet,raj,4,1,83
+lady vet,vet,7,1,62
+lakshmi,raj,36,2,464
+lalita,leonard,30,2,215
+lalita,penny,22,1,136
+lalita,raj,42,2,431
+lalita,sheldon,39,1,382
+large black transvestite,leonard,8,1,45
+large black transvestite,sheldon,7,1,64
+large black transvestite,transvestite,2,1,10
+laura,leonard,14,1,124
+laura,penny,13,1,105
+laura,woman s05e09,6,1,19
+leonard,leslie,299,22,2833
+leonard,little girl,5,1,36
+leonard,maitre d’,20,2,145
+leonard,male string quartettist,15,1,108
+leonard,man in crowd,3,1,30
+leonard,man in penny’s apartment,7,1,61
+leonard,man s01e01,4,1,25
+leonard,man s01e10,8,1,91
+leonard,man s02e03,14,2,81
+leonard,man s03e22,15,1,100
+leonard,man s03e23,7,1,68
+leonard,man s04e09,8,1,34
+leonard,man s05e09,11,1,137
+leonard,man s08e03,4,1,31
+leonard,man s08e07,53,2,582
+leonard,man s08e10,7,1,63
+leonard,man s09e06,41,2,461
+leonard,man s09e11,4,1,19
+leonard,man s09e15,9,1,89
+leonard,man s09e19,18,2,202
+leonard,man s09e23,21,2,156
+leonard,man with a box,14,1,105
+leonard,man with flowers,14,1,75
+leonard,mandy,34,1,354
+leonard,mark harmon on tv,7,1,39
+leonard,marty,8,1,86
+leonard,meemaw,36,3,335
+leonard,michaela,29,3,311
+leonard,mike,56,6,556
+leonard,missy,69,7,596
+leonard,mr spock cuckoo clock,13,1,150
+leonard,mrs cooper,298,30,3781
+leonard,mrs gunderson,9,1,96
+leonard,mrs koothrappali,53,6,431
+leonard,mrs latham,62,4,629
+leonard,mrs wolowitz,92,13,815
+leonard,nathan fillion,22,2,201
+leonard,nerdy guy,8,1,123
+leonard,nurse,25,3,242
+leonard,nurse costume girl,13,1,67
+leonard,official,17,2,136
+leonard,older woman,5,1,42
+leonard,on-screen sheldon,5,1,102
+leonard,page,32,2,318
+leonard,paramedic,4,1,43
+leonard,penny,10003,863,95981
+leonard,penny’s dad,34,3,297
+leonard,pizza guy,6,1,56
+leonard,policeman,42,3,311
+leonard,priya,489,39,4360
+leonard,prof sharpe,12,1,135
+leonard,ra,2,1,17
+leonard,raj,5956,678,60228
+leonard,ramona,85,12,795
+leonard,randall,13,3,111
+leonard,random man,3,1,20
+leonard,rebecca,17,2,106
+leonard,receptionist,19,1,137
+leonard,red-haired guy,12,2,87
+leonard,registrar,6,1,76
+leonard,scanner,11,1,53
+leonard,sceme,17,2,149
+leonard,second guy,16,1,177
+leonard,second voice,5,1,41
+leonard,security guard,26,3,314
+leonard,sheldon,14466,1233,173855
+leonard,sheldon on laptop screen,3,1,104
+leonard,sheldon-bot,62,4,697
+leonard,siebert,32,4,421
+leonard,siri,5,1,25
+leonard,speccy guy,5,1,30
+leonard,speccy guy behind counter,5,1,24
+leonard,spock,3,1,32
+leonard,stadium announcer,3,1,50
+leonard,steph,157,12,1374
+leonard,stephen hawking,39,4,368
+leonard,steve wozniak,9,1,64
+leonard,store clerk,12,1,120
+leonard,strange man,6,1,21
+leonard,strange old man,7,1,74
+leonard,stuart,641,70,6395
+leonard,summer,7,2,85
+leonard,susan,15,3,146
+leonard,tall british dave,8,1,82
+leonard,the three guys,10,1,95
+leonard,theatre staff,17,2,144
+leonard,theodore,27,3,256
+leonard,third floor janitor,17,1,112
+leonard,toby,25,3,304
+leonard,todd,4,1,20
+leonard,tom,3,1,17
+leonard,transvestite,8,1,53
+leonard,venkatesh,15,1,150
+leonard,vet,27,3,265
+leonard,voice,48,5,570
+leonard,waiter s01e07,17,1,170
+leonard,waiter s03e12,7,1,46
+leonard,waitress s01e03,18,1,239
+leonard,waitress s06e13,2,1,18
+leonard,waitress s08e15,8,1,70
+leonard,wil,231,24,2347
+leonard,witch,4,1,31
+leonard,woman in lab coat,4,1,36
+leonard,woman in queue,5,1,31
+leonard,woman s02e08,5,1,25
+leonard,woman s02e13,5,1,30
+leonard,woman s02e21,15,1,169
+leonard,woman s05e09,16,1,139
+leonard,woman s09e05,6,1,43
+leonard,woman s09e23,16,2,115
+leonard,wyatt,59,7,695
+leonard,zack,175,16,1767
+leonard,zombie,15,3,83
+leonard-warrior,leonard-warrior’s head,2,1,13
+leonard-warrior,penny- warrior,2,1,15
+leonard-warrior,penny-warrior,2,1,14
+leonard-warrior,warrior,2,1,16
+leonard-warrior’s head,penny- warrior,2,1,8
+leonard-warrior’s head,penny-warrior,2,1,7
+leonard-warrior’s head,warrior,2,1,9
+leonard’s mother,penny,17,1,124
+leonard’s mother,woman s02e15,4,1,93
+leslie,male string quartettist,15,1,138
+leslie,man s02e03,10,1,64
+leslie,mrs wolowitz,26,2,195
+leslie,penny,56,7,563
+leslie,raj,70,7,797
+leslie,ramona,14,2,190
+leslie,sheldon,203,19,2486
+leslie,stephen hawking,12,1,91
+leslie,stuart,7,1,83
+leslie,third floor janitor,12,1,100
+leslie,wil,7,1,121
+levar,levar burton,4,1,16
+levar,sheldon,17,3,288
+levar burton,sheldon,6,1,104
+little girl,sheldon,14,1,198
+little girl,woman in queue,2,1,9
+little girl,woman s02e13,2,1,8
+lucy,man s06e18,4,1,32
+lucy,penny,21,1,282
+lucy,raj,151,14,1932
+lucy,waiter s06e23,10,1,69
+maitre d’,man s09e15,3,1,11
+maitre d’,penny,24,2,185
+man in crowd,man s08e03,3,1,7
+man in crowd,penny,4,1,18
+man in crowd,raj,2,1,21
+man in crowd,sheldon,7,1,79
+man in crowd,stadium announcer,2,1,26
+man in penny’s apartment,man s03e23,2,1,15
+man in penny’s apartment,penny,8,1,30
+man in penny’s apartment,zack,7,1,58
+man in seat behind,sheldon,4,1,76
+man in seat behind,waiter s07e15,3,1,51
+man s01e01,sheldon,4,1,24
+man s01e10,sheldon,8,1,180
+man s01e10,strange man,4,1,72
+man s01e10,toby,6,1,125
+man s02e03,sheldon,18,2,227
+man s03e13,sheldon,3,1,55
+man s03e22,man with a box,3,1,19
+man s03e22,penny,9,1,80
+man s03e22,sheldon,6,1,62
+man s03e23,penny,8,1,37
+man s03e23,zack,7,1,65
+man s04e09,penny,5,1,45
+man s04e09,penny’s dad,4,1,20
+man s05e09,penny,16,1,106
+man s06e18,raj,7,1,79
+man s07e15,sheldon,37,3,476
+man s07e15,waiter s07e15,7,1,102
+man s07e23,raj,10,1,52
+man s07e23,sheldon,8,1,83
+man s08e01,sheldon,3,1,216
+man s08e03,penny,5,1,19
+man s08e03,raj,3,1,22
+man s08e03,sheldon,8,1,80
+man s08e03,stadium announcer,3,1,27
+man s08e07,man with flowers,14,1,204
+man s08e07,penny,23,1,300
+man s08e07,raj,30,2,387
+man s08e07,sheldon,43,2,623
+man s08e10,prof sharpe,7,1,78
+man s08e10,raj,7,1,100
+man s08e13,sheldon,3,1,42
+man s09e06,sheldon,44,2,680
+man s09e11,raj,4,1,15
+man s09e11,wil,4,1,24
+man s09e15,penny,6,1,53
+man s09e19,penny,7,1,73
+man s09e19,raj,7,1,99
+man s09e23,raj,10,2,74
+man s09e23,sheldon,30,2,472
+man s09e23,stuart,7,1,40
+man s09e23,woman s09e23,11,2,75
+man with a box,penny,8,1,85
+man with a box,sheldon,5,1,67
+man with flowers,raj,2,1,3
+man with flowers,sheldon,14,1,179
+mandy,raj,21,1,158
+mark harmon on tv,penny,10,1,76
+mark harmon on tv,raj,4,1,13
+mark harmon on tv,second voice,4,1,18
+mark harmon on tv,sheldon,8,1,68
+martha,raj,19,1,133
+martha,sheldon,31,3,259
+marty,raj,6,1,84
+marty,sheldon,12,1,178
+meemaw,penny,30,2,282
+meemaw,sheldon,74,4,889
+michaela,raj,31,3,329
+michaela,woman s02e21,5,1,19
+midwife,raj,11,1,139
+midwife,stuart,9,1,101
+mike,mike massimino,16,2,126
+mike,mission control,6,3,33
+mike,mrs wolowitz,28,6,222
+mike,mrs. rostenkowski,11,2,65
+mike,penny,38,5,345
+mike,raj,53,7,562
+mike,sheldon,72,8,855
+mike,zack,4,1,47
+mike massimino,mission control,2,1,6
+mike massimino,raj,13,1,136
+minister,penny,3,1,34
+missy,penny,33,3,150
+missy,raj,34,4,268
+missy,sheldon,76,8,957
+model,raj,4,1,19
+mr spock cuckoo clock,penny,4,1,28
+mr spock cuckoo clock,sheldon,16,1,181
+mrs,mrs cooper,12,1,102
+mrs,sheldon,16,1,148
+mrs cooper,penny,132,16,1751
+mrs cooper,raj,45,5,667
+mrs cooper,randall,2,1,12
+mrs cooper,sheldon,485,43,6222
+mrs cooper,stuart,13,2,101
+mrs cooper,susan,2,1,16
+mrs cooper,wyatt,2,1,17
+mrs davis,raj,30,3,338
+mrs davis,sheldon,15,1,190
+mrs fowler,sheldon,8,1,98
+mrs gunderson,penny,8,1,73
+mrs koothrappali,mrs wolowitz,6,2,94
+mrs koothrappali,penny,16,2,176
+mrs koothrappali,priya,27,2,248
+mrs koothrappali,raj,119,10,1358
+mrs koothrappali,sheldon,57,5,670
+mrs latham,raj,17,2,226
+mrs latham,sheldon,16,2,288
+mrs latham,siebert,10,1,153
+mrs petrescu,sheldon,21,3,292
+mrs petrescu,stuart,19,3,137
+mrs wolowitz,nasa guy,4,1,29
+mrs wolowitz,penny,28,5,301
+mrs wolowitz,raj,112,18,1169
+mrs wolowitz,sheldon,84,11,1028
+mrs wolowitz,steph,3,1,24
+mrs wolowitz,stuart,19,4,193
+mrs wolowitz,zack,2,1,18
+nasa guy,raj,2,1,32
+nathan fillion,raj,25,2,345
+nathan fillion,waitress s08e15,3,1,45
+nerdy guy,raj,9,1,166
+nerdy guy,security guard,6,1,136
+nerdy guy,sheldon,10,1,146
+nerdy guy,stuart,5,1,43
+nurse,penny,12,1,160
+nurse,raj,9,1,103
+nurse,sheldon,7,1,153
+nurse costume girl,penny,2,1,10
+nurse costume girl,raj,5,1,54
+nurse costume girl,sheldon,15,1,142
+official,penny,17,2,152
+older woman,raj,4,1,52
+older woman,sheldon,10,1,137
+older woman,woman s09e05,3,1,13
+on-screen sheldon,penny,3,1,86
+on-screen sheldon,sheldon,6,1,121
+owner,sheldon,4,1,24
+page,raj,16,1,172
+page,sheldon,50,2,668
+page,woman at door,8,1,79
+paramedic,penny,3,1,35
+paramedic,sheldon,5,1,57
+penny,penny-warrior,3,1,13
+penny,penny’s dad,58,4,613
+penny,pizza guy,21,1,168
+penny,powerfully built man,2,1,8
+penny,priya,95,11,874
+penny,psychic,15,1,186
+penny,ra,3,1,20
+penny,raj,2468,289,26302
+penny,ramona,69,8,510
+penny,randall,32,6,297
+penny,random guy,14,1,75
+penny,random woman,14,1,75
+penny,rebecca,16,2,138
+penny,red-haired guy,9,2,57
+penny,registrar,5,1,50
+penny,sceme,14,2,152
+penny,second girl,8,1,68
+penny,second guy,14,1,96
+penny,second voice,8,1,78
+penny,sheldon,9354,743,110716
+penny,sheldon on laptop screen,3,1,106
+penny,sheldon-bot,43,3,494
+penny,siri,5,1,27
+penny,stadium announcer,4,1,38
+penny,stan lee,11,1,136
+penny,steph,23,1,181
+penny,stephen hawking,19,2,165
+penny,steve wozniak,11,1,93
+penny,store clerk,16,1,130
+penny,strange old man,6,1,57
+penny,stuart,420,51,4025
+penny,susan,41,6,418
+penny,tall british dave,10,1,52
+penny,taxi driver,3,1,15
+penny,the three guys,7,1,62
+penny,theodore,18,3,209
+penny,third floor janitor,5,1,39
+penny,toby,21,2,284
+penny,todd,5,1,42
+penny,tom,6,1,65
+penny,very tall,2,1,8
+penny,vet,29,3,273
+penny,voice,13,2,104
+penny,waiter s03e12,7,1,61
+penny,waitress s01e03,18,1,150
+penny,waitress s01e11,9,1,66
+penny,warrior,3,1,36
+penny,wil,171,15,1910
+penny,witch,5,1,43
+penny,woman s01e16,15,1,95
+penny,woman s02e15,17,1,189
+penny,woman s05e09,15,1,120
+penny,wyatt,72,9,781
+penny,zack,198,20,1778
+penny- warrior,penny-warrior,2,1,9
+penny- warrior,warrior,2,1,11
+penny-warrior,warrior,6,2,47
+penny’s dad,raj,7,1,80
+penny’s dad,sheldon,11,1,204
+penny’s dad,wyatt,7,1,115
+photographer,santa,4,1,41
+photographer,sheldon,3,1,13
+pizza guy,sheldon,16,1,199
+policeman,raj,11,1,128
+policeman,sheldon,47,3,672
+powerfully built man,very tall,2,1,2
+priya,raj,149,18,1565
+priya,sheldon,303,26,3582
+prof crawley,raj,14,1,278
+prof crawley,sheldon,19,1,306
+prof laughlin,raj,11,2,179
+prof laughlin,woman s03e04,2,1,28
+prof sharpe,raj,12,1,172
+professor proton,sheldon,6,1,120
+psychic,sheldon,14,1,245
+ra,sheldon,4,1,25
+ra,stuart,2,1,10
+radio,sheldon,6,1,154
+raj,ramona,41,6,318
+raj,rebecca,15,2,119
+raj,registrar,4,1,74
+raj,remote-control hawking,4,1,38
+raj,rothman,7,2,46
+raj,sarah,21,2,156
+raj,sceme,12,2,119
+raj,second girl,11,1,116
+raj,second voice,2,1,15
+raj,security guard,9,1,33
+raj,server,13,1,139
+raj,sheldon,5883,602,78459
+raj,sheldon-bot,20,2,219
+raj,siebert,36,4,497
+raj,siri,48,6,529
+raj,soup kitchen manager,12,3,170
+raj,stadium announcer,2,1,41
+raj,steph,8,1,59
+raj,stephen hawking,14,2,157
+raj,steve wozniak,6,1,41
+raj,store clerk,3,1,32
+raj,stuart,828,108,9225
+raj,summer,15,3,154
+raj,tattooist,11,1,72
+raj,tech support guy,2,1,10
+raj,the three guys,3,1,24
+raj,theatre staff,11,2,109
+raj,third floor janitor,7,1,49
+raj,trent,8,1,66
+raj,tv announcer,4,1,19
+raj,vanessa,10,1,123
+raj,venkatesh,15,1,152
+raj,vet,24,3,334
+raj,voice,9,2,81
+raj,waiter s01e07,11,1,99
+raj,waiter s06e23,10,1,81
+raj,waitress s08e15,9,1,163
+raj,wil,77,13,915
+raj,witch,4,1,62
+raj,woman at door,10,1,165
+raj,woman at table,13,1,135
+raj,woman in lab coat,3,1,55
+raj,woman s02e08,2,1,13
+raj,woman s02e21,18,1,223
+raj,woman s03e04,4,1,41
+raj,woman s04e22,18,1,159
+raj,woman s09e05,5,1,53
+raj,woman s09e23,5,2,33
+raj,zack,79,9,760
+raj,zombie,12,3,105
+ramona,sheldon,140,16,1384
+randall,sheldon,5,1,86
+randall,stuart,7,1,49
+randall,susan,37,6,321
+randall,wyatt,29,6,222
+random guy,random woman,2,1,18
+random guy,sheldon,17,1,177
+random guy,woman s01e16,3,1,38
+random woman,sheldon,17,1,177
+random woman,woman s01e16,3,1,38
+rebecca,sheldon,18,2,145
+receptionist,sheldon,17,1,216
+registrar,sheldon,4,1,60
+roeger,voice,2,1,45
+rothman,sheldon,6,1,45
+santa,sheldon,19,2,171
+sarah,tattooist,6,1,28
+scanner,sheldon,9,1,42
+sceme,sheldon,27,4,306
+sceme,stuart,4,1,47
+second alien,sheldon,2,1,17
+second guy,sheldon,9,1,151
+second voice,sheldon,6,1,70
+security guard,sheldon,27,3,370
+security guard,stuart,7,1,33
+security guard,voice,5,1,46
+server,sheldon,7,1,55
+server,woman at table,2,1,12
+server,woman s04e22,7,1,36
+sheldon,sheldon on laptop screen,6,1,207
+sheldon,sheldon-bot,7,1,148
+sheldon,shopkeeper,12,1,157
+sheldon,siebert,47,3,791
+sheldon,siri,16,3,249
+sheldon,speccy guy,5,1,63
+sheldon,speccy guy behind counter,5,1,57
+sheldon,spock,36,3,512
+sheldon,stadium announcer,7,1,99
+sheldon,stan lee,8,1,90
+sheldon,steph,139,10,1768
+sheldon,stephen hawking,73,6,748
+sheldon,store assistant,6,1,54
+sheldon,store clerk,13,1,101
+sheldon,strange man,6,1,110
+sheldon,strange old man,8,1,156
+sheldon,stuart,799,84,10374
+sheldon,summer,5,2,82
+sheldon,susan,5,1,90
+sheldon,taxi driver,4,1,24
+sheldon,tech support guy,5,1,40
+sheldon,the flash,12,1,132
+sheldon,the three guys,5,1,76
+sheldon,theatre staff,20,2,235
+sheldon,theodore,20,2,358
+sheldon,third floor janitor,25,1,262
+sheldon,toby,26,3,433
+sheldon,todd,11,2,60
+sheldon,tom,5,1,57
+sheldon,transvestite,7,1,72
+sheldon,tv announcer,3,1,43
+sheldon,vanessa,14,1,196
+sheldon,venkatesh,9,1,143
+sheldon,voice,66,7,796
+sheldon,waiter s01e07,19,1,234
+sheldon,waiter s07e15,12,2,116
+sheldon,waitress s01e11,9,1,128
+sheldon,waitress s06e13,3,1,37
+sheldon,wil,272,21,3842
+sheldon,witch,3,1,16
+sheldon,woman at table,7,1,51
+sheldon,woman in queue,14,1,193
+sheldon,woman s01e16,18,1,197
+sheldon,woman s02e08,7,1,75
+sheldon,woman s02e13,14,1,192
+sheldon,woman s04e22,12,1,75
+sheldon,woman s09e05,11,1,138
+sheldon,woman s09e23,25,2,431
+sheldon,wyatt,9,2,128
+sheldon,zack,144,14,1569
+sheldon-bot,steve wozniak,16,1,177
+speccy guy,speccy guy behind counter,2,1,8
+stephen hawking,stuart,7,1,46
+stephen hawking,wil,7,1,84
+store clerk,stuart,10,1,86
+strange man,toby,4,1,55
+strange old man,theodore,5,1,46
+stuart,susan,7,1,53
+stuart,sweatpants,9,1,85
+stuart,wil,80,10,800
+stuart,witch,4,1,36
+stuart,woman s09e23,4,1,22
+stuart,wyatt,7,1,54
+stuart,zack,29,3,334
+student one,student two,4,1,15
+susan,wyatt,38,6,343
+the flash,voice,7,1,78
+theatre staff,wil,8,1,55
+woman at table,woman s04e22,7,1,32
+woman in lab coat,zombie,2,1,32
+woman in queue,woman s02e13,2,1,3

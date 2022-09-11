@@ -1,0 +1,3704 @@
+speaker1,speaker2,line_count,scene_count,word_count
+"""salman""",kramer,8,1,70
+2nd movie patron,george,7,1,62
+2nd movie patron,movie patron,0,1,6
+aaron,announcement,7,1,101
+aaron,elaine,51,5,431
+aaron,helen,50,5,395
+aaron,jerry,47,4,347
+aaron,joanne,2,1,20
+aaron,kramer,10,1,66
+aaron,morty,54,5,500
+abby,cynthia,8,1,54
+abby,george,17,2,205
+abby,jerry,50,4,398
+abby,kramer,6,1,41
+ada,george,4,1,11
+adam,elaine,25,1,281
+adam,estelle,13,1,118
+adam,frank,19,1,240
+adam,george,25,1,287
+adam,jerry,36,1,356
+adam,kramer,20,1,193
+adam,lloyd,9,1,101
+adam,mr. lippman,11,1,115
+adam,patty,20,1,150
+ade,applicant,2,1,53
+ade,george,34,4,472
+aent,elaine,3,1,39
+agency rep,george,3,1,48
+agency rep,jerry,15,2,145
+agency rep,kramer,10,1,106
+agency rep,newman,12,1,100
+agency rep,ron,12,1,101
+agency rep,tim,8,1,98
+agent,elaine,6,1,110
+al,george,20,1,189
+al,jerry,19,1,139
+al roker,elaine,3,1,20
+al roker,jerry,3,1,16
+alan,carol,6,1,33
+alan,elaine,23,4,187
+alan,george,10,1,81
+alan,woman s08e10,4,1,41
+alec,elaine,15,1,124
+alec,george,20,2,254
+alec,jerry,35,3,396
+alec,joey,7,1,89
+alex,george,11,1,144
+alex,jerry,25,4,228
+alex,kramer,17,3,181
+alex,man #2 s08e21,2,1,22
+alex,man s08e21,10,2,84
+alex,tape player,2,1,18
+alex trebek,george,10,4,78
+alex trebek,jerry,13,4,151
+alex trebek,katie,3,1,24
+alex trebek,kramer,3,1,18
+alicia,elaine,9,1,68
+alicia,george,11,1,53
+alicia,jerry,21,1,126
+alicia,kramer,5,1,36
+alison,elaine,5,1,21
+alison,glenn,4,1,18
+allbright,doctor s08e13,3,1,29
+allison,charles,4,1,18
+allison,cheryl,3,1,11
+allison,donald,4,1,17
+allison,elaine,4,1,18
+allison,george,36,5,290
+allison,jerry,16,2,72
+allison,john,4,1,19
+allison,kramer,7,2,30
+allison,marla,4,1,18
+allison,mel,3,1,6
+allison,michael,6,1,39
+allison,mother,3,1,10
+allison,ping,4,1,13
+allison,sharon,2,1,9
+allison,sid,3,1,21
+allison,susan,10,2,29
+allison,the drake,3,1,17
+allison (season 4),george,3,1,23
+allison (season 4),kramer,3,1,14
+allison (season 8),george,13,2,123
+allison (season 8),kramer,7,2,84
+allison from play now,co-worker,2,1,9
+allison from play now,george,5,1,21
+allison from play now,glenn,2,1,10
+alton,benes,2,1,13
+alton,elaine,19,1,319
+alton,george,57,8,481
+alton,jerry,49,6,431
+alton,manager,4,1,20
+amanda,george,12,2,153
+amanda,kramer,4,1,33
+amanda,man #3 s08e03,6,1,38
+amanda,model #1,3,1,23
+amanda,model #2,3,1,23
+amanda,model #3,3,1,29
+amy,elaine,8,1,72
+amy,george,12,1,111
+amy,jerry,68,4,520
+amy,uncle leo,20,1,199
+angela,jerry,10,2,97
+angry man,cop #1,9,1,105
+angry man,cop #2,7,1,74
+angry man,elaine,27,1,301
+angry man,george,49,1,475
+angry man,jerry,38,1,295
+angry man,kramer,19,1,129
+angry man,maryedith,12,1,84
+angry man,matthew,15,1,128
+angry man,mike,19,1,205
+angry man,newman,15,1,127
+angry man,sheila,9,1,82
+angry man,sid,7,1,96
+angry man,truck driver,6,1,66
+anna,elaine,39,6,359
+anna,george,36,6,231
+announcement,elaine,8,1,25
+announcement,helen,4,1,35
+announcement,jerry,8,1,30
+announcement,morty,6,1,33
+announcer,announcer #2,3,1,74
+announcer,corbin bernsen,2,1,135
+announcer,elaine,10,3,92
+announcer,george,16,2,132
+announcer,jerry,32,5,292
+announcer,joel,8,2,64
+announcer,kernis,2,1,13
+announcer,kramer,9,2,110
+announcer,lanette,5,1,17
+announcer,lotus,2,1,20
+announcer,man s08e22,2,1,13
+announcer,misha,3,1,42
+announcer,mr. graham,2,1,23
+announcer,ronnie,4,1,56
+announcer,ruby,3,1,26
+announcer #1,announcer #2,9,2,98
+announcer #1,george,4,1,33
+announcer #1,jerry,6,1,47
+announcer #1,kramer,3,1,27
+announcer #2,george,4,1,33
+announcer #2,jerry,6,1,47
+announcer #2,kramer,5,2,55
+announcer on p.a. system,elaine,8,1,98
+announcer on p.a. system,hot dog vendor,2,1,40
+announcer on p.a. system,jerry,8,1,67
+announcer on tv,guy on phone,3,1,57
+announcer on tv,jerry,7,1,77
+announcer on tv,kramer,7,1,59
+another man,elaine,7,1,35
+another man,jerry,8,1,66
+another man,kramer,8,1,52
+another man,man s06e09,2,1,17
+answering machine,george,9,1,73
+answering machine,jerry,14,1,120
+answering machine,sophie,5,1,37
+antonio,ed,8,2,172
+antonio,elaine,4,1,132
+antonio,george,13,2,309
+antonio,kramer,9,1,62
+applicant,george,4,1,104
+arnie,beth,3,1,34
+arnie,elaine,14,2,147
+aronson,beck,6,1,60
+aronson,elaine,9,1,86
+artie,carol,5,1,36
+artie,elaine,9,1,64
+artie,jerry,11,1,116
+assistant,driver,10,1,74
+assistant,george,11,1,90
+assistant,jerry,10,1,70
+assistant,kramer,8,1,48
+assistant dresser,elaine,3,1,9
+assistant dresser,george,3,1,44
+assistant dresser,jay,3,1,12
+assistant dresser,jerry,5,1,34
+assistant dresser,michael,5,1,36
+assistant dresser,rita,4,1,12
+assistant dresser,sandi,4,1,28
+assistant dresser,stu,4,1,38
+assistant dresser,wilton,4,1,27
+attendant,captain,3,1,47
+attendant,doctor s08e05,4,1,56
+attendant,dr. burke,2,1,14
+attendant,elaine,47,7,611
+attendant,george,32,3,350
+attendant,hooker,7,1,78
+attendant,jerry,42,7,388
+attendant,kramer,43,5,472
+attendant,lloyd,9,1,80
+attendant,newman,3,1,33
+attendant,passenger #1,7,1,72
+attendant,passenger #2,5,1,52
+attendant,passenger #3,5,1,43
+attendant,tia,16,4,130
+attendant #1,attendant #2,4,1,53
+attendant #1,driver,3,1,15
+attendant #1,elaine,33,1,194
+attendant #1,gavin,7,1,56
+attendant #1,jerry,44,2,467
+attendant #1,passenger #1,4,1,41
+attendant #1,skycap,10,1,65
+attendant #1,tia,3,1,20
+attendant #1,ticket lady,5,1,59
+attendant #2,gavin,7,1,67
+attendant #2,jerry,7,1,50
+auctioneer,elaine,16,1,222
+auctioneer,jerry,12,1,194
+auctioneer,sue ellen,15,1,194
+audrey,elaine,47,4,314
+audrey,george,70,5,660
+audrey,health inspector,10,1,67
+audrey,jerry,61,7,371
+audrey,kramer,30,3,306
+audrey,poppie,22,3,115
+aunt may,betsy,7,1,58
+aunt may,father jessup,7,1,59
+aunt may,george,8,1,100
+ava,dan,2,1,14
+ava,elaine,35,2,307
+ava,ellen,6,1,37
+ava,george,49,3,508
+ava,guy s03e10,13,1,118
+ava,jerry,57,2,385
+ava,levitan,10,1,135
+ava,woman s03e10,6,1,50
+babs,clotworthy,3,1,7
+babs,george,2,1,2
+babs,kramer,17,4,130
+babs,landis,3,1,6
+babs,newman,11,2,75
+babu,babu's friend,3,1,108
+babu,cheryl,7,1,68
+babu,elaine,81,6,575
+babu,george,21,1,335
+babu,jerry,142,10,1397
+babu,kramer,35,2,487
+babu's brother,elaine,7,1,54
+babu's brother,george,6,1,44
+babu's brother,jerry,11,1,78
+bailiff,bubble boy,3,1,38
+bailiff,chiles,11,4,234
+bailiff,choate,6,1,37
+bailiff,elaine,2,1,6
+bailiff,foreman,3,1,12
+bailiff,frank,2,1,13
+bailiff,george,11,4,76
+bailiff,hoyt,41,5,468
+bailiff,jerry,12,4,62
+bailiff,kramer,2,1,17
+bailiff,mr. pitt,2,1,11
+bailiff,mr. sanger,2,1,10
+bailiff,mr. steinbrenner,4,1,51
+bailiff,penny,11,1,67
+bailiff,peterman,2,1,8
+bailiff,soup nazi,4,1,15
+bailiff,vandelay,15,4,178
+bailiff,vogel,4,1,23
+bania,club announcer,5,2,50
+bania,customer,2,1,12
+bania,donna,5,1,40
+bania,eddie,5,1,51
+bania,elaine,37,6,306
+bania,frank,5,1,56
+bania,george,52,5,398
+bania,jay,4,1,65
+bania,jenna,4,1,35
+bania,jerry,193,22,1728
+bania,kelly,19,2,188
+bania,kramer,77,7,632
+bania,monk's manager,4,1,62
+bania,simon,7,2,105
+bania,soup nazi,2,1,46
+bania,stu,4,1,64
+bania,waiter s06e07,13,1,124
+bania,waitress s06e07,6,1,71
+bania,woman s08e06,5,1,63
+bank employee,kramer,3,1,54
+banker,danny tartabull,7,1,39
+banker,elaine,12,1,58
+banker,george,8,1,85
+banker,jerry,11,1,56
+banker,kramer,4,1,30
+banker,nana,4,1,35
+barbara,clerk,10,1,68
+barbara,david,9,1,68
+barbara,elaine,15,1,170
+barbara,jane,2,1,7
+barbara,jerry,10,1,71
+barbara,jim,4,1,33
+barbara,kramer,7,1,46
+barbara,manager,13,1,104
+barbara,mike,2,1,7
+barbara,some guy,2,1,8
+barney's sales associate,elaine,19,3,186
+barney's sales associate,kramer,7,2,69
+barry,bartender,4,1,15
+barry,elaine,16,1,88
+barry,george,10,1,54
+barry,jerry,18,1,123
+barry,kramer,21,2,153
+bartender,george,3,1,49
+bartender,jerry,6,1,75
+bartender,kramer,11,2,124
+bartender,mary anne,4,1,29
+beck,elaine,7,1,76
+becky,jerry,16,2,150
+ben,carol,9,3,76
+ben,elaine,60,9,497
+ben,george,15,3,255
+ben,jerry,3,1,14
+ben,kramer,2,1,15
+ben,sue ellen,9,1,55
+ben,woman s08e09,7,1,34
+benes,george,2,1,19
+benes,jerry,2,1,18
+beth,david,9,2,53
+beth,elaine,30,5,271
+beth,father curtis,6,1,63
+beth,george,22,2,235
+beth,jerry,69,9,647
+beth,kramer,6,1,52
+beth,mickey,5,1,30
+beth,mr. abbott,5,1,64
+beth,mrs. anvino,4,1,70
+betsy,celia,9,1,67
+betsy,dr. allenwood,2,1,21
+betsy,father jessup,6,1,65
+betsy,george,37,4,436
+bette,elaine,19,2,170
+bette,frank,6,1,69
+bette,gennice,10,1,62
+bette,george,19,4,111
+bette,jerry,28,3,201
+bette,kramer,37,4,366
+bette,umpire,7,2,32
+biker,kramer,2,1,147
+bill,dan,4,1,41
+bill,george,8,2,63
+bill,glenda,3,1,16
+bill,jerry,4,1,42
+bill,reilly,3,1,43
+bill,stewardess,3,1,36
+billy,elaine,30,3,241
+billy,george,7,1,111
+blaine,carol,6,1,44
+blaine,elaine,24,3,168
+blaine,gail,6,1,45
+blaine,lisa,6,1,45
+blind man,dwayne,3,1,19
+blind man,george,16,3,157
+blind violin player,thug,2,1,10
+bob,cedric,10,2,128
+bob,elaine,19,3,187
+bob,jerry,12,2,50
+bob,kramer,34,5,402
+bob,man s09e20,5,1,64
+bob,peterman,9,1,82
+bob,ray,16,3,203
+bob,walker #1,3,1,18
+bob,walker #2,3,1,31
+bob,walker #3,2,1,15
+bob from suit store,george,19,3,172
+bob from suit store,saleswoman,9,2,39
+bob grossberg,elaine,9,1,110
+bob grossberg,jerry,12,1,125
+bob grossberg,teller,10,1,94
+bobby,elaine,2,1,80
+bobby,kramer,35,4,312
+bobby,tv,14,3,152
+bomb cop,mr. steinbrenner,3,1,78
+bonnie,george,49,8,477
+bonnie,scott,9,3,55
+bookie,charlie,6,1,81
+bookie,elaine,13,3,171
+bookie,estelle,3,1,25
+bookie,frank,8,2,121
+bookie,george,6,2,47
+bookie,jerry,3,1,21
+bookie,kramer,8,2,97
+bookie,kruger,3,1,25
+bookman,hoyt,12,1,64
+bookman,jerry,29,2,590
+bookman,kramer,7,1,94
+bookman,marian,6,1,85
+bookman,marion,3,1,80
+boss,boss' wife,3,1,10
+boss,elaine,7,1,120
+boss,robert,4,1,26
+boss' wife,elaine,6,1,120
+boss' wife,robert,3,1,26
+bouncer,george,5,1,36
+bouncer,model #4,4,1,37
+boy,elaine,18,2,108
+boy,george,7,1,57
+boy,jerry,4,1,29
+boy,kramer,4,1,44
+boy,man s05e06,3,1,49
+boy,mario,4,1,18
+boy,peterman,9,1,57
+boyfriend,elaine,6,1,46
+brady,george,8,1,48
+brady,jerry,7,1,33
+brady,mr. steinbrenner,4,1,36
+brady,seconrad,3,1,19
+brett,elaine,54,7,480
+brett,jerry,38,4,335
+bridget,jerry,5,1,43
+brody,jerry,54,7,502
+brody,kramer,55,9,490
+bruce,elaine,36,5,266
+bruce,george,15,3,132
+bruce,jerry,35,5,274
+bruce,mr. cohen,8,1,73
+bryant,jerry,16,1,216
+bryant,leslie,9,1,135
+bubble boy,chiles,4,1,42
+bubble boy,george,16,3,121
+bubble boy,hoyt,15,1,118
+bubble boy,jerry,6,1,57
+bubble boy,mr. sanger,3,1,42
+bubble boy,mrs. sanger,6,1,51
+bubble boy,penny,12,1,99
+bubble boy,peterman,3,1,40
+bubble boy,susan,6,1,50
+buckles,elaine,7,1,45
+buckles,george,5,1,29
+buckles,jerry,72,7,727
+buddy,jerry,9,1,130
+buddy,uncle leo,4,1,82
+business man,elaine,11,3,107
+business man,older man,2,1,16
+business man,older woman,4,2,29
+business man,pregnant woman,4,2,31
+business man,priest,2,1,15
+businessman,george,4,1,32
+businessman,mackenzie,5,1,99
+businessman,waiter s05e15,3,1,28
+buxom woman,george,4,1,15
+buzzer,george,6,1,91
+buzzer,jerry,8,1,129
+bystander #1,bystander #2,2,1,23
+bystander #1,george,6,1,68
+bystander #1,jerry,4,1,64
+bystander #1,kramer,3,1,29
+bystander #1,mike,9,1,133
+bystander #2,george,6,1,59
+bystander #2,jerry,4,1,55
+bystander #2,kramer,3,1,20
+bystander #2,mike,9,1,124
+c.k.,charles,3,1,13
+c.k.,helen,3,1,18
+c.k.,jerry,7,1,97
+c.k.,morty,3,1,15
+c.k.,sal bass,4,1,32
+c.k.,sandi,5,1,23
+c.k.,sidra,3,1,13
+c.k.,tia,3,1,17
+cab driver,elaine,16,4,183
+cab driver,puddy,8,2,80
+cabbie,elaine,8,2,116
+cabbie,gennice,6,1,140
+cabbie,george,20,3,248
+cabbie,jerry,20,3,257
+cabbie,joe devola,5,1,51
+cabby,george,7,1,130
+calvin klein,kramer,6,1,42
+calvin klein,tia,4,1,25
+candice bergen,kramer,9,1,59
+captain,dispatcher,2,1,17
+captain,elaine,22,3,177
+captain,george,23,1,199
+captain,jerry,33,5,266
+captain,kramer,24,6,227
+captain,leapin' larry,2,1,21
+captain,man on the street,2,1,17
+captain,tia,2,1,39
+car salesman,george,4,1,43
+car salesman,salesman,3,1,35
+car thief,george,23,1,117
+car thief,jerry,38,1,238
+car thief,kramer,24,1,144
+car washer,jerry,2,1,56
+carl,elaine,78,8,562
+carl,george,15,3,241
+carl,husband,4,1,22
+carl,jerry,42,4,297
+carl,kramer,11,1,210
+carl,morganewman,3,1,38
+carl,phone,5,1,34
+carl,wife,4,1,31
+carol,diane,9,1,99
+carol,elaine,75,11,601
+carol,gail,11,3,90
+carol,george,70,10,818
+carol,jane,6,2,46
+carol,jerry,90,9,824
+carol,kramer,28,5,263
+carol,larry,9,1,121
+carol,lisa,11,3,93
+carol,man #1 s01e03,9,1,106
+carol,man #2 s01e03,8,1,78
+carol,michael,7,1,94
+carol,mike,7,1,83
+carol,rachel,4,1,34
+carol,uncle mac,5,1,58
+carol,woman s04e09,2,1,22
+carreras,elaine,5,1,69
+carreras,jerry,3,1,9
+carrie,george,61,6,611
+carrie,ken,32,4,202
+carrie,orderly,2,1,11
+carrie,susan,9,1,48
+cashier s03e10,george,33,2,325
+cashier s03e10,jerry,23,2,183
+cashier s03e10,security guard,14,2,73
+cashier s07e10,florist,3,1,12
+cashier s07e10,george,17,3,179
+cashier s07e10,lloyd,2,1,11
+cashier s09e05,elaine,3,1,21
+cashier s09e05,jack,3,1,15
+cashier s09e17,elaien,2,1,14
+cashier s09e17,elaine,5,1,34
+cashier s09e17,gaurd,5,1,42
+cashier s09e17,george,9,1,64
+cashier s09e17,guard,7,1,64
+cashier s09e17,jerry,13,2,127
+cashier s09e17,uncle leo,7,1,48
+casting director,george,27,5,161
+casting director,jay,3,1,21
+casting director,jerry,35,7,181
+casting director,kramer,5,1,38
+casting director,mark,12,1,99
+casting director,melissa,12,2,75
+casting director,michael,12,1,102
+casting director,stu,9,2,95
+casting director,tom,9,1,58
+castro,george,10,1,180
+cedric,kramer,12,2,97
+cedric,man s09e20,3,1,21
+celia,detective #1,2,1,15
+celia,detective #2,3,1,30
+celia,elaine,4,1,49
+celia,fowler,3,1,31
+celia,george,33,5,226
+celia,guard,5,1,30
+celia,jerry,32,5,287
+celia,kramer,9,1,106
+celia,kurt,5,2,40
+celia,newman,5,1,31
+chairman,interpreter,2,1,21
+chairman,mr. lippman,2,1,22
+charles,cheryl,3,1,21
+charles,donald,4,1,27
+charles,elaine,4,1,28
+charles,helen,2,1,7
+charles,jerry,26,3,202
+charles,john,4,1,29
+charles,kramer,6,2,37
+charles,marla,4,1,28
+charles,mel,3,1,16
+charles,michael,6,1,49
+charles,morty,2,1,4
+charles,mother,3,1,20
+charles,ping,4,1,23
+charles,sal bass,3,1,21
+charles,sandi,7,2,23
+charles,sid,3,1,31
+charles,sidra,2,1,2
+charles,susan,3,1,15
+charles,the drake,3,1,27
+charles,tia,2,1,6
+charles,tom,6,1,42
+charlie,elaine,6,1,64
+charmaine,elaine,10,1,93
+charmaine,ethan,12,1,102
+charmaine,jerry,13,1,93
+charmaine,kramer,15,1,117
+chauffeur,eva,7,1,58
+chauffeur,george,61,2,681
+chauffeur,jerry,57,2,532
+chauffeur,man s03e18,9,1,56
+chauffeur,tim,4,1,28
+chauffeur,woman s03e18,4,1,23
+chelsea,kramer,14,2,183
+cheryl,donald,3,1,20
+cheryl,elaine,81,7,623
+cheryl,george,82,6,913
+cheryl,jerry,96,8,815
+cheryl,john,3,1,22
+cheryl,kramer,21,3,95
+cheryl,lab technician,5,1,44
+cheryl,marla,3,1,21
+cheryl,maryedith,10,1,26
+cheryl,matthew,9,1,31
+cheryl,mel,2,1,9
+cheryl,michael,5,1,42
+cheryl,mother,2,1,13
+cheryl,ping,3,1,16
+cheryl,sid,2,1,24
+cheryl,susan,2,1,8
+cheryl,the drake,2,1,20
+chiles,choate,6,1,62
+chiles,elaine,17,3,241
+chiles,frank,2,1,24
+chiles,george,22,5,451
+chiles,hoyt,50,7,811
+chiles,jerry,26,5,414
+chiles,kramer,10,1,196
+chiles,low-talker,1,1,43
+chiles,mr. pitt,2,1,19
+chiles,mr. ross,2,1,11
+chiles,mr. sanger,3,1,14
+chiles,mrs. ross,2,1,20
+chiles,penny,12,1,71
+chiles,peterman,3,1,12
+chiles,puddy,2,1,13
+chiles,secretary,3,1,98
+chiles,sidra,9,3,64
+chiles,soup nazi,4,1,23
+chiles,vandelay,13,4,258
+chiles,vogel,4,1,160
+chiles,wilcox,3,1,31
+chiropractor,elaine,7,2,42
+chiropractor,evelyn,6,1,85
+chiropractor,helen,8,2,53
+chiropractor,jerry,8,2,79
+chiropractor,morty,4,1,32
+choate,george,6,1,50
+choate,hoyt,13,1,135
+choate,jerry,5,1,19
+choate,vandelay,6,1,41
+christie,elaine,16,3,91
+christie,jerry,29,5,354
+christie,kid s07e13,4,1,35
+christie,kramer,4,1,31
+christie,maitre d',2,1,9
+christie,man s07e13,2,1,6
+cindy,george,8,1,70
+cindy,jerry,42,5,299
+cindy,kramer,19,2,197
+cindy,police,3,1,26
+claire,george,34,2,354
+claire,jerry,30,3,321
+claire,joel,4,1,74
+claire,waitress s01e04,3,1,15
+clare,darren,7,2,46
+clare,george,4,1,30
+clare,jerry,47,6,360
+clare,kramer,12,2,122
+clayton,gardner,4,1,90
+clayton,george,16,2,191
+clayton,zeke,10,2,104
+cleaning woman,george,16,2,256
+clerk,david,5,1,24
+clerk,elaine,88,6,723
+clerk,geoge,5,1,34
+clerk,george,154,15,1586
+clerk,guard,6,1,36
+clerk,jerry,63,6,731
+clerk,kramer,62,7,481
+clerk,man #1 s05e13,6,1,27
+clerk,man s05e13,2,1,13
+clerk,mona,7,1,55
+clerk,susan,37,4,294
+clerk 2,george,6,1,82
+clicky,elaine,12,1,98
+clicky,jerry,26,2,206
+clicky,teddy,11,1,90
+clotworthy,kramer,7,1,29
+clotworthy,landis,4,1,11
+club announcer,george,7,1,58
+club announcer,jerry,18,3,157
+club announcer,kramer,8,2,77
+clyde,jerry,8,1,61
+clyde,kramer,9,1,63
+co-worker,elaine,3,1,57
+co-worker,george,5,1,18
+co-worker,glenn,2,1,7
+co-worker #1,co-worker #2,4,1,11
+co-worker #1,george,4,1,59
+co-worker #1,kruger,5,1,46
+co-worker #2,george,4,1,62
+co-worker #2,kruger,5,1,49
+coco,george,12,1,76
+coco,kruger,12,1,110
+connie,detective,6,1,40
+connie,jackie,6,1,39
+connie,kramer,10,2,79
+conrad,delivery guy,6,1,70
+conrad,elaine,13,2,195
+conrad,george,32,3,310
+conrad,jerry,40,5,364
+conrad,kramer,11,1,126
+conrad,wilhelm,9,1,51
+contest winner,elaine,3,1,32
+cop #1,cop #2,13,2,109
+cop #1,elaine,38,2,395
+cop #1,george,50,1,494
+cop #1,jerry,39,1,314
+cop #1,kramer,20,1,148
+cop #1,maryedith,13,1,103
+cop #1,matthew,16,1,147
+cop #1,mike,20,1,224
+cop #1,newman,16,1,146
+cop #1,raquel,8,1,55
+cop #1,sheila,10,1,101
+cop #1,sid,8,1,115
+cop #1,truck driver,7,1,85
+cop #2,elaine,33,2,354
+cop #2,george,48,1,463
+cop #2,jerry,37,1,283
+cop #2,kramer,18,1,117
+cop #2,maryedith,11,1,72
+cop #2,matthew,14,1,116
+cop #2,mike,18,1,193
+cop #2,newman,14,1,115
+cop #2,raquel,5,1,45
+cop #2,sheila,8,1,70
+cop #2,sid,6,1,84
+cop #2,truck driver,5,1,54
+cop 2,cop s04e01,22,3,119
+cop 2,cop s08e10,2,1,46
+cop 2,cops,3,1,13
+cop 2,george,37,3,244
+cop 2,guy s04e01,11,1,61
+cop 2,jerry,42,3,224
+cop 2,kramer,3,1,13
+cop 2,lt. martel,3,1,25
+cop 2,police radio,3,1,41
+cop s03e10,elaine,2,1,12
+cop s03e10,jerry,9,2,31
+cop s03e10,patti,5,1,22
+cop s04e01,cops,8,1,48
+cop s04e01,george,45,3,285
+cop s04e01,guy s04e01,11,1,56
+cop s04e01,jerry,50,3,265
+cop s04e01,kramer,3,1,8
+cop s04e01,lt. martel,3,1,20
+cop s04e01,police radio,3,1,36
+cop s04e03,george,16,2,98
+cop s04e03,jerry,26,2,191
+cop s04e21,frank,9,1,40
+cop s06e13,kramer,9,3,149
+cop s07e01,jerry,6,1,49
+cop s07e01,kramer,10,1,58
+cop s07e10,elaine,2,1,45
+cop s09e12,elaine,5,1,30
+cop s09e12,jerry,11,1,66
+cop s09e12,kramer,6,1,55
+cop s09e12,silvio,7,1,55
+cops,george,9,1,91
+cops,jerry,9,1,53
+corbin bernsen,george,20,1,346
+corbin bernsen,george wendt,16,2,94
+corbin bernsen,jerry,3,1,37
+corinne,elaine,3,1,8
+corinne,hotel clerk,7,1,57
+corinne,jerry,25,2,227
+counter woman,jerry,9,1,113
+counter woman,mabel,8,1,55
+counterperson,elaine,9,2,56
+counterperson,george,4,1,10
+counterperson,jerry,3,1,17
+coworker,elaine,6,1,133
+craig,elaine,62,6,411
+craig,ian,14,1,70
+craig,jerry,35,5,273
+craig,lady,5,1,25
+crespi,george,18,1,150
+crespi,jerry,12,1,74
+crespi,kimbrough,14,1,183
+crespi,receptionist,4,1,14
+crespi,stu,11,1,41
+crew leader,george,9,2,57
+customer,danielle,4,1,25
+customer,elaine,7,2,61
+customer,george,24,1,278
+customer,jerry,27,3,168
+customer,kramer,10,2,79
+customer,soup nazi,10,2,113
+customer,teller,4,1,34
+cynthia,elaine,75,7,759
+cynthia,george,16,3,345
+cynthia,jerry,27,3,237
+cynthia,russell,7,2,45
+dan,elaine,34,4,282
+dan,eva,2,1,3
+dan,george,15,2,130
+dan,glenda,5,1,43
+dan,jerry,4,1,32
+dan,jodi,2,1,46
+dan,kramer,17,2,248
+dan,kristin,6,1,39
+dan,levitan,10,1,135
+dan,mr. pitt,4,1,27
+dana,george,62,4,801
+danielle,george,46,6,384
+danielle,jerry,4,1,27
+danielle,kramer,6,1,69
+danielle,waitress s08e17,6,1,29
+danny tartabull,elaine,15,1,67
+danny tartabull,george,11,1,94
+danny tartabull,jerry,14,1,65
+danny tartabull,kramer,7,1,39
+danny tartabull,nana,7,1,44
+daphne,george,32,3,470
+darren,george,29,5,321
+darren,jerry,51,7,444
+darren,kramer,41,6,445
+darryl,elaine,72,5,472
+darryl,george,8,1,52
+darryl,jerry,12,1,68
+darryl,waitress s09e15,22,3,141
+david,elaine,74,9,503
+david,george,26,3,256
+david,jerry,37,4,301
+david,russell,7,1,151
+david,sandi,10,1,55
+david,susan,4,1,26
+david,tom,8,1,108
+dean jones,kramer,10,1,106
+debby,george,22,3,197
+deena,george,72,7,718
+deena,guy s07e10,2,1,20
+deena,kramer,3,1,29
+deena,pop,14,3,125
+deensfrei,kramer,13,1,89
+delivery boy,elaine,5,1,43
+delivery guy,elaine,6,1,74
+delivery guy,george,7,1,92
+delivery guy,jerry,13,2,90
+delivery man,george,12,3,77
+delivery man,susan,5,1,45
+denim vest,elaine,22,2,141
+denim vest,gwen,11,1,80
+denim vest,jerry,5,1,25
+denim vest,kramer,12,1,86
+denim vest,woman s09e10,3,1,31
+denise,estelle,3,1,20
+denise,george,10,2,66
+denise,nurse,4,1,33
+denise,shelly,4,1,51
+dennis,kramer,8,1,83
+dentist,elaine,6,1,45
+dentist,george,10,1,93
+dentist,jerry,7,1,59
+dentist,kramer,7,1,53
+dentist,tim,11,1,100
+deputy,elaine,9,1,122
+deputy,george,8,1,154
+deputy,jerry,5,1,96
+deputy,kramer,5,1,105
+detective,elaine,21,3,207
+detective,hoyt,2,1,22
+detective,jerry,34,4,417
+detective,kramer,6,1,39
+detective,woman s07e20,4,1,72
+detective,young cop,12,2,164
+detective #1,detective #2,3,1,41
+detective #1,kurt,2,1,18
+detective #2,kurt,3,1,33
+diane,elaine,4,1,38
+diane,george,16,3,135
+diane,jerry,26,2,229
+diane,larry,4,1,82
+diane,man #1 s01e03,4,1,67
+diane,man #2 s01e03,3,1,39
+diane,woman at beach,2,1,14
+dick,elaine,33,2,272
+dick,george,38,2,240
+dick,jerry,48,4,527
+dick,mr. lippman,11,1,61
+director,kramer,7,1,65
+director,mickey,9,1,45
+director,stage hand,3,1,26
+director,tammy,6,1,53
+dispatcher,kramer,4,1,41
+doctor s02e08,elaine,24,3,281
+doctor s02e08,george,25,2,293
+doctor s02e08,jerry,18,2,195
+doctor s02e08,man s02e08,4,1,26
+doctor s02e08,nurse 1,2,1,25
+doctor s04e19,jerry,23,3,219
+doctor s04e19,kramer,28,3,290
+doctor s04e19,roy,12,2,166
+doctor s04e22,george,10,1,58
+doctor s05e03,elaine,10,2,79
+doctor s05e03,jerry,6,1,86
+doctor s05e07,george,19,1,180
+doctor s05e11,elaine,20,2,198
+doctor s05e11,jerry,6,1,43
+doctor s06e04,kramer,14,1,124
+doctor s06e20,dr. cooperman,3,1,43
+doctor s06e20,frank,3,1,40
+doctor s06e20,george,3,1,31
+doctor s06e20,kramer,4,1,49
+doctor s07e07,george,2,1,27
+doctor s07e07,peterman,3,1,30
+doctor s07e15,elaine,3,1,61
+doctor s07e22,elaine,9,1,61
+doctor s07e22,george,18,1,102
+doctor s07e22,jerry,9,1,63
+doctor s08e05,elaine,15,2,238
+doctor s08e06,george,3,1,31
+doctor s08e07,nurse,6,1,31
+doctor s08e13,nurse,2,1,9
+doctor s08e22,elaine,4,1,69
+doctor s08e22,george,3,1,64
+doctor s08e22,jerry,8,1,90
+doctor s08e22,kramer,6,1,66
+doctor s09e06,george,16,3,189
+doctor s09e06,miranda,9,2,98
+dog owner,dwayne,2,1,14
+dog owner,elaine,8,2,108
+dog owner,george,7,1,70
+dog owner,jerry,4,1,36
+doll,frank,4,1,47
+doll,george,7,2,88
+doll,susan,3,1,28
+dolores,george,16,1,112
+dolores,jerry,22,2,169
+donald,elaine,11,2,47
+donald,george,46,5,325
+donald,jerry,17,2,71
+donald,john,4,1,28
+donald,kramer,3,1,20
+donald,marla,4,1,27
+donald,mel,6,2,64
+donald,michael,6,1,48
+donald,mother,3,1,19
+donald,mrs. sanger,23,3,208
+donald,ping,4,1,22
+donald,sid,3,1,30
+donald,susan,22,4,109
+donald,the drake,3,1,26
+donna,elaine,20,3,176
+donna,estelle,13,2,70
+donna,frank,8,2,43
+donna,george,42,6,389
+donna,jerry,136,17,1168
+donna,kramer,6,1,35
+donna,willie,6,1,31
+doorman 2,doorman s06e17,3,1,25
+doorman s04e05,george,11,1,89
+doorman s06e17,elaine,6,1,112
+doorman s06e17,jerry,32,3,380
+doorman s06e17,mrs. payton,5,1,63
+doris,elaine,12,1,65
+doris,helen,58,4,424
+doris,jack,47,4,388
+doris,jerry,69,4,527
+doris,morty,55,4,347
+dr. allenwood,george,6,1,55
+dr. bakersoll,estelle,4,1,41
+dr. bakersoll,kramer,3,1,44
+dr. burke,elaine,5,1,47
+dr. cooperman,frank,2,1,25
+dr. cooperman,george,2,1,16
+dr. cooperman,kramer,3,1,34
+dr. dembrow,helen,4,1,28
+dr. dembrow,morty,9,2,103
+dr. resnick,elaine,13,1,90
+dr. resnick,uncle leo,18,2,102
+dr. reston,elaine,45,2,438
+dr. wexler,kramer,10,2,96
+dr. wexler,man s09e16,3,1,28
+dr. wexler,mickey,8,3,108
+driver,elaine,58,4,470
+driver,george,16,2,155
+driver,jerry,72,8,738
+driver,kramer,18,3,163
+driver,laura,5,1,23
+driver,newman,3,1,39
+driver,passenger #1,3,1,34
+driver,radio,8,1,110
+driver,skycap,9,1,58
+driver,tia,2,1,13
+driver,ticket lady,4,1,52
+dry cleaner,george,19,1,182
+dry cleaner,jerry,26,1,317
+dugan,elaine,20,5,205
+dugan,peterman,11,2,98
+dugan,walter,6,1,26
+duncan,elaine,4,1,43
+duncan,george,32,2,428
+duncan,jerry,40,4,380
+duncan,kramer,4,1,61
+duncan,lois,23,3,214
+duncan,mr. bevilacqua,5,1,69
+dustin,jerry,3,1,25
+dustin,paul,3,1,13
+dwayne,elaine,13,2,86
+dwayne,george,28,3,189
+dwayne,kramer,16,1,160
+dx,george,2,1,10
+ealine,elaine,12,3,60
+ealine,george,2,1,7
+ealine,machine,5,1,13
+ealine,man s09e19,4,1,24
+ealine,peterman,6,1,102
+earl,elaine,8,1,62
+earl,intercom,4,1,19
+earl,kramer,55,6,422
+earl,newman,28,3,231
+echo,george,9,1,56
+echo,kramer,11,1,45
+echo,tony,5,1,33
+ed,elaine,37,2,287
+ed,george,3,1,12
+eddie,eddit,3,1,52
+eddie,elaine,27,5,243
+eddie,frank,4,1,31
+eddie,jerry,5,1,21
+eddie,kramer,4,1,29
+eddie,woman s08e06,4,1,38
+eddit,elaine,4,1,62
+ego,george,7,1,69
+ego,jerry,8,1,98
+ego,kramer,8,1,90
+elaien,elaine,15,2,317
+elaien,jerry,16,2,195
+elaine,elane,3,1,25
+elaine,ellen,18,1,160
+elaine,employee,7,1,64
+elaine,estelle,39,5,325
+elaine,ethan,10,1,77
+elaine,eva,7,2,32
+elaine,evelyn,21,2,165
+elaine,ex,8,1,43
+elaine,fan #1,2,1,14
+elaine,father curtis,13,2,145
+elaine,father hernandez,2,1,11
+elaine,feldman,16,3,95
+elaine,female worker,8,2,112
+elaine,fireman,2,1,11
+elaine,florist,6,1,49
+elaine,frank,120,16,1447
+elaine,frankie,6,1,72
+elaine,fred,55,7,681
+elaine,friend 1,10,1,61
+elaine,furniture guy,12,2,151
+elaine,gail,50,7,354
+elaine,genderson,5,1,58
+elaine,gene,11,2,60
+elaine,gennice,13,1,127
+elaine,george,5630,554,54901
+elaine,girl,12,1,60
+elaine,giuliani,3,1,62
+elaine,gladys,15,2,131
+elaine,glenda,14,1,214
+elaine,glenn,53,6,449
+elaine,greeny,13,1,198
+elaine,greg,57,6,530
+elaine,guests,13,1,79
+elaine,guillermo,8,1,48
+elaine,guy s02e11,2,1,25
+elaine,guy s03e10,25,1,241
+elaine,guy s03e14,14,2,116
+elaine,guy s06e08,4,1,50
+elaine,guy s06e13,13,1,76
+elaine,guy s08e05,10,1,54
+elaine,guy s08e17,6,1,20
+elaine,gwen,22,3,155
+elaine,gx,2,1,58
+elaine,haarwood,9,1,68
+elaine,hairdresser,4,2,76
+elaine,hal,31,4,301
+elaine,harold,9,2,122
+elaine,heather,19,3,183
+elaine,helen,223,23,1538
+elaine,henry,4,1,31
+elaine,hilde,12,1,73
+elaine,holly,24,4,225
+elaine,homeless man,4,1,31
+elaine,hot dog vendor,8,1,68
+elaine,hoyt,12,2,74
+elaine,husband,18,1,112
+elaine,hx,6,1,36
+elaine,ian,15,1,60
+elaine,ilene,14,1,79
+elaine,intercom,16,2,113
+elaine,ipswitch,9,1,101
+elaine,isaac,14,1,173
+elaine,jack,64,5,459
+elaine,jackie,17,1,271
+elaine,jake,67,4,643
+elaine,james,22,4,156
+elaine,jane,76,10,638
+elaine,janet,11,1,83
+elaine,jay,2,1,7
+elaine,jean-paul,27,4,263
+elaine,jeanine,9,2,84
+elaine,jeannie,22,2,197
+elaine,jenna,9,1,41
+elaine,jenny,15,1,137
+elaine,jerry,11451,1120,104459
+elaine,jerry's machine,3,1,32
+elaine,jimmy,34,4,256
+elaine,joanne,26,5,255
+elaine,jodi,3,1,52
+elaine,joe divola,76,9,811
+elaine,joel,75,8,708
+elaine,joey,9,1,73
+elaine,john,17,2,183
+elaine,joy mayo,13,2,65
+elaine,joyce,29,2,290
+elaine,judge s07e12,5,1,33
+elaine,judy,27,3,215
+elaine,julie,25,3,136
+elaine,katie,9,1,81
+elaine,katy,20,2,108
+elaine,keith,30,3,265
+elaine,kelly,8,1,95
+elaine,keri,6,1,23
+elaine,kevin,84,12,695
+elaine,kid s03e06,29,1,274
+elaine,kid s07e13,5,1,27
+elaine,kim,4,1,82
+elaine,kramer,4149,464,39513
+elaine,kruger,4,2,27
+elaine,kurt,44,8,378
+elaine,lab technician,7,1,63
+elaine,lady,2,1,12
+elaine,lamar,17,4,171
+elaine,landis,60,4,495
+elaine,landis's intercom,10,1,81
+elaine,landlord,25,2,322
+elaine,larry,8,2,98
+elaine,leslie,27,4,241
+elaine,levitan,34,2,471
+elaine,lew,22,2,241
+elaine,lisa,16,3,102
+elaine,lloyd,74,7,711
+elaine,lois,2,1,13
+elaine,lorraine,8,1,39
+elaine,lotus,23,4,194
+elaine,lou,25,3,210
+elaine,lubeck,8,1,61
+elaine,machine,7,1,15
+elaine,maestro,59,7,530
+elaine,maid,4,1,16
+elaine,male worker,8,2,122
+elaine,man #,6,1,74
+elaine,man #1 s01e03,4,1,45
+elaine,man #1 s03e06,37,2,355
+elaine,man #1 s03e18,3,1,14
+elaine,man #1 s04e08,8,1,65
+elaine,man #1 s04e16,2,1,33
+elaine,man #1 s08e21,6,1,75
+elaine,man #2 s01e03,3,1,17
+elaine,man #2 s03e06,13,1,116
+elaine,man #2 s03e18,3,1,13
+elaine,man #2 s08e10,3,1,23
+elaine,man #2 s08e21,6,1,78
+elaine,man #3 s03e06,13,1,113
+elaine,man #3 s03e18,3,1,14
+elaine,man #3 s05e13,11,1,107
+elaine,man #4,3,1,12
+elaine,man at the counter,3,1,7
+elaine,man behind the door,10,1,73
+elaine,man in car,8,1,50
+elaine,man in the crowd,3,1,12
+elaine,man s02e06,8,1,64
+elaine,man s02e11,4,1,25
+elaine,man s03e20,13,1,71
+elaine,man s04e13,30,3,292
+elaine,man s04e21,6,1,48
+elaine,man s04e22,7,1,95
+elaine,man s05e13,14,1,164
+elaine,man s05e21,11,1,63
+elaine,man s06e09,9,2,64
+elaine,man s06e13,8,1,71
+elaine,man s06e21,6,1,55
+elaine,man s07e13,3,1,9
+elaine,man s07e15,7,1,74
+elaine,man s07e21,4,1,61
+elaine,man s08e04,8,2,104
+elaine,man s08e08,9,1,69
+elaine,man s08e16,10,1,124
+elaine,man s09e19,14,2,116
+elaine,man s09e20,6,1,47
+elaine,man s09e22,7,1,62
+elaine,manager,23,4,131
+elaine,mandel,11,2,177
+elaine,manny,4,1,45
+elaine,manya,14,1,110
+elaine,margaret,9,1,98
+elaine,marla,33,6,458
+elaine,martin,2,1,21
+elaine,mary,6,1,140
+elaine,mary anne,8,1,100
+elaine,maryedith,64,4,562
+elaine,matthew,46,2,454
+elaine,mel,38,3,339
+elaine,michael,55,8,530
+elaine,mickey,28,3,266
+elaine,mike,99,6,1090
+elaine,mohel,27,3,621
+elaine,mollika,13,1,187
+elaine,mom,14,1,80
+elaine,mona,11,1,116
+elaine,monica,23,2,126
+elaine,monk's manager,8,1,87
+elaine,morty,176,23,1443
+elaine,mother,32,2,318
+elaine,mr. abbott,4,2,39
+elaine,mr. bevilacqua,3,1,34
+elaine,mr. cohen,5,1,53
+elaine,mr. elinoff,20,1,214
+elaine,mr. lippman,215,19,2038
+elaine,mr. pitt,174,20,1513
+elaine,mr. ross,4,1,55
+elaine,mr. visaki,18,2,229
+elaine,mrs allister,18,2,159
+elaine,mrs reichman,2,1,24
+elaine,mrs. o,26,2,213
+elaine,mrs. payton,10,2,121
+elaine,mrs. ross,4,1,38
+elaine,myra,5,2,20
+elaine,nana,12,1,63
+elaine,ned,39,3,457
+elaine,neighbor,12,2,85
+elaine,nephew,9,1,122
+elaine,newman,214,25,2621
+elaine,news,3,1,96
+elaine,nikki,16,2,101
+elaine,nina,47,9,386
+elaine,noel,22,3,189
+elaine,noreen,32,2,348
+elaine,nurse,4,1,45
+elaine,officer,10,1,120
+elaine,old guy,7,1,66
+elaine,old man,3,1,38
+elaine,older man,16,3,158
+elaine,older woman,13,3,105
+elaine,olive,4,1,22
+elaine,other guy,11,2,71
+elaine,other-walter,2,1,14
+elaine,owner,25,3,183
+elaine,pamela,17,1,112
+elaine,paramedic,6,2,71
+elaine,passenger,12,2,86
+elaine,passenger #1,44,2,365
+elaine,passenger #2,9,1,132
+elaine,passenger #3,9,1,123
+elaine,passenger 2,8,1,114
+elaine,patty,31,1,263
+elaine,paul,13,2,191
+elaine,paula,9,1,66
+elaine,peggy,52,9,564
+elaine,people at table,3,1,52
+elaine,peter,4,1,10
+elaine,peterman,337,48,4207
+elaine,pharmacist,14,1,90
+elaine,phil,13,1,140
+elaine,phone,2,1,19
+elaine,phone man,14,2,166
+elaine,photographer,3,1,8
+elaine,ping,32,5,286
+elaine,pinter,11,2,111
+elaine,player,10,1,63
+elaine,police,6,2,84
+elaine,police officer,6,1,53
+elaine,policeman,6,1,57
+elaine,poppie,30,3,345
+elaine,pregnant woman,23,4,182
+elaine,priest,14,2,137
+elaine,puddy,300,36,2330
+elaine,rabbi,43,4,535
+elaine,rachel,24,3,180
+elaine,radio,11,2,95
+elaine,ramon,9,1,87
+elaine,raquel,10,1,104
+elaine,rava,42,8,327
+elaine,ray,18,4,114
+elaine,raymond,13,1,50
+elaine,rebecca,16,1,159
+elaine,receptionist,27,4,219
+elaine,rene,4,1,56
+elaine,rental car agent,35,2,417
+elaine,reston,5,1,34
+elaine,ricky,18,4,155
+elaine,rita,30,5,410
+elaine,robber,8,1,87
+elaine,robert,21,2,223
+elaine,roberta,9,2,49
+elaine,robin,8,1,82
+elaine,roger,33,3,263
+elaine,roxanne,11,2,113
+elaine,roy,37,5,300
+elaine,ruby,30,4,269
+elaine,rula,34,2,253
+elaine,russell,34,4,479
+elaine,sales woman,9,1,70
+elaine,salesman,13,1,109
+elaine,saleswoman,19,2,220
+elaine,sally,34,6,253
+elaine,sam,12,2,126
+elaine,sandi,3,1,23
+elaine,sandra,7,1,87
+elaine,sandy,16,1,115
+elaine,scene,4,1,17
+elaine,secretary,37,5,379
+elaine,sharon,3,1,16
+elaine,sheila,32,2,304
+elaine,shellbach,10,1,82
+elaine,sid,29,2,342
+elaine,sidra,46,5,366
+elaine,silvio,25,3,183
+elaine,simon,46,5,354
+elaine,skycap,39,1,237
+elaine,soup nazi,30,6,302
+elaine,stagehand,5,1,43
+elaine,stan,55,9,498
+elaine,stationer,24,2,216
+elaine,stella,4,1,17
+elaine,steve,32,5,285
+elaine,stranger,13,2,119
+elaine,stu,3,1,33
+elaine,subway announcement,3,1,16
+elaine,sue ellen,72,8,607
+elaine,sunny,5,1,52
+elaine,super,6,1,90
+elaine,susan,137,17,1033
+elaine,susie,5,1,82
+elaine,tabachnick,5,2,30
+elaine,tan,7,1,39
+elaine,tannoy,12,3,65
+elaine,tawni,7,1,46
+elaine,taxi driver,3,1,46
+elaine,teacher,6,1,52
+elaine,tenant 1,3,1,24
+elaine,tenant 2,3,1,28
+elaine,testikov,48,4,390
+elaine,the drake,17,2,128
+elaine,the girls,14,1,62
+elaine,theater manager,8,1,52
+elaine,tia,40,4,267
+elaine,ticket lady,34,1,231
+elaine,tim,67,8,506
+elaine,tina,42,3,277
+elaine,toby,29,2,242
+elaine,todd,52,5,393
+elaine,together,4,1,15
+elaine,tony,47,4,610
+elaine,truck driver,25,1,281
+elaine,tv,3,1,91
+elaine,umpire,5,1,68
+elaine,uncle leo,55,8,538
+elaine,usha,9,1,69
+elaine,usher,36,5,377
+elaine,vanessa,24,1,152
+elaine,vegetable lasagna,18,3,174
+elaine,victoria,5,1,41
+elaine,vincent,31,4,191
+elaine,violin player,3,1,12
+elaine,vivian,49,5,442
+elaine,vogel,9,2,114
+elaine,waiter s04e15,6,1,65
+elaine,waiter s07e03,6,1,49
+elaine,waiter s08e10,5,1,34
+elaine,waiter s09e17,2,1,28
+elaine,waitress s01e05,16,1,243
+elaine,waitress s04e06,28,4,228
+elaine,waitress s04e22,16,1,163
+elaine,waitress s05e21,4,1,31
+elaine,waitress s06e03,14,2,109
+elaine,waitress s06e07,3,1,21
+elaine,waitress s07e15,7,1,59
+elaine,waitress s08e09,8,1,58
+elaine,waitress s08e17,6,1,90
+elaine,waitress s09e12,4,1,34
+elaine,waitress s09e15,38,4,212
+elaine,waitress s09e17,9,1,87
+elaine,walter,24,7,170
+elaine,wendy,58,7,439
+elaine,west,20,1,177
+elaine,wife,18,1,121
+elaine,wilton,3,1,22
+elaine,winona,12,1,65
+elaine,woman #1,6,1,44
+elaine,woman #2,5,1,36
+elaine,woman 1,7,1,39
+elaine,woman 2,9,1,47
+elaine,woman at another table,4,1,31
+elaine,woman at next table,4,1,33
+elaine,woman at yet another table,4,1,29
+elaine,woman behind elaine,7,1,111
+elaine,woman in the crowd,2,1,8
+elaine,woman s01e02,18,1,167
+elaine,woman s02e10,14,2,128
+elaine,woman s03e10,18,1,173
+elaine,woman s03e13,17,1,141
+elaine,woman s04e13,13,3,170
+elaine,woman s04e21,7,1,117
+elaine,woman s05e02,8,1,56
+elaine,woman s05e05,10,1,67
+elaine,woman s05e08,6,1,114
+elaine,woman s06e21,12,2,101
+elaine,woman s07e20,3,1,19
+elaine,woman s08e06,6,1,54
+elaine,woman s08e09,8,1,65
+elaine,woman s08e10,4,1,26
+elaine,woman s08e13,13,1,99
+elaine,woman s08e21,7,1,87
+elaine,woman s09e01,7,1,63
+elaine,woman s09e10,6,1,63
+elaine,woman s09e14,12,1,75
+elaine,women,17,1,108
+elaine,worker s08e04,7,2,68
+elaine,worker s09e10,5,1,39
+elaine,workers,4,1,85
+elaine,wx,11,1,80
+elaine,young cop,8,2,38
+elaine,zach,8,2,65
+elaine,zubin,11,1,87
+elane,george,7,1,75
+elane,jerry,5,1,34
+elane,kramer,5,1,49
+eldridge,george,9,2,128
+eldridge,ricardi,2,1,38
+electrician,pop,4,1,58
+ellen,gavin,7,1,109
+ellen,george,30,1,354
+ellen,guy s03e10,13,1,133
+ellen,jerry,72,5,586
+ellen,kim,5,1,44
+ellen,kramer,4,1,23
+ellen,melissa,6,1,54
+ellen,morty,3,1,36
+ellen,woman s03e10,6,1,65
+emily,kramer,37,5,290
+employee,jerry,2,1,16
+employee,leapin' larry,2,1,45
+enzo,gino,29,5,279
+enzo,jerry,21,5,224
+enzo,kramer,3,1,58
+enzo,man s05e08,3,1,50
+enzo,newman,14,3,146
+eric,fireman,2,1,12
+eric,george,23,2,308
+eric,robin,3,1,46
+eric,robin's mother,11,2,120
+estelle,frank,510,68,4731
+estelle,frankie,3,1,12
+estelle,george,538,63,4598
+estelle,giuliani,2,1,81
+estelle,helen,5,1,33
+estelle,jerry,100,14,790
+estelle,kid s05e19,3,1,12
+estelle,kramer,113,15,914
+estelle,kruger,4,2,16
+estelle,lloyd,41,4,335
+estelle,mahjong lady,9,1,94
+estelle,morty,9,1,61
+estelle,mr. lippman,10,1,65
+estelle,mr. ross,8,1,82
+estelle,mr. steinbrenner,8,1,104
+estelle,mrs. ross,7,1,54
+estelle,nurse,5,2,41
+estelle,patty,19,1,100
+estelle,phone,2,1,21
+estelle,rhisa,2,1,4
+estelle,ricky,10,3,61
+estelle,robin,8,1,53
+estelle,shelly,3,1,49
+estelle,susan,25,2,122
+estelle,sylvia,5,1,51
+estelle,vandelay,7,1,47
+estelle,woman s05e02,11,1,80
+ethan,george,4,1,20
+ethan,jerry,31,4,217
+ethan,jessie,13,1,93
+ethan,kramer,25,3,217
+ethan,susan,2,1,15
+eva,george,48,5,678
+eva,jerry,47,5,537
+eva,jodi,4,2,217
+eva,kramer,6,1,34
+eva,man #1 s03e18,3,1,19
+eva,man #2 s03e18,3,1,18
+eva,man #3 s03e18,3,1,19
+eva,man #4,3,1,17
+eva,tim,18,5,225
+eva,woman s03e18,5,1,41
+evelyn,helen,43,3,374
+evelyn,jerry,37,3,317
+evelyn,morty,37,3,333
+ex,jerry,2,1,8
+ex,stationer,9,1,81
+executive 1,executive 2,5,1,66
+executive 1,george,18,5,226
+executive 1,jerry,8,2,74
+executive 1,mr oh,4,1,52
+executive 1,tv elaine,5,1,57
+executive 1,tv jerry,6,1,74
+executive 1,wilhelm,3,1,43
+executive 2,george,4,1,85
+executive 2,jerry,2,1,26
+executive 2,tv elaine,2,1,23
+executive 2,tv jerry,3,1,40
+fan,george,3,1,15
+fan #1,puddy,5,1,43
+farkus,frank,20,2,241
+farkus,george,18,2,242
+farkus,kramer,21,2,207
+farkus,ms. de granmont,7,1,63
+farmer,kramer,3,1,13
+farmer,newman,18,3,219
+farmer,susie,8,2,67
+father,son,7,2,102
+father curtis,george,2,1,12
+father curtis,jerry,24,2,237
+father curtis,mr. abbott,3,1,61
+father curtis,puddy,9,1,99
+father curtis,tim,2,1,45
+father hernandez,priest,6,1,31
+father hernandez,puddy,2,1,39
+father jessup,george,7,1,107
+father-priest,father-priest 2,14,3,139
+father-priest,george,29,4,273
+father-priest,kramer,10,1,115
+father-priest,sister roberta,5,2,80
+father-priest 2,george,16,3,177
+fdr,jerry,6,1,62
+fdr,kramer,25,4,245
+feldman,gene,12,3,94
+feldman,kevin,26,4,179
+female customer,jerry,2,1,25
+female worker,male worker,3,1,25
+female worker,walter,3,1,9
+female worker,workers,2,1,18
+fireman,george,6,1,148
+fireman,robin,3,1,46
+fireman,robin's mother,2,1,15
+flight attendant,intercom,7,1,84
+flight attendant,jerry,14,1,98
+flight attendant,kate,8,1,92
+florist,george,9,1,76
+foreman,jerry,3,1,19
+foreman,kramer,3,1,25
+foreman,vandelay,5,1,130
+fowler,george,5,1,36
+fowler,jerry,5,1,41
+fowler,kramer,13,2,122
+fowler,newman,4,1,8
+frank,george,612,74,5826
+frank,giuliani,2,1,113
+frank,helen,9,2,109
+frank,hoyt,4,1,31
+frank,jerry,126,17,1211
+frank,kid s05e19,4,1,24
+frank,kim,15,2,229
+frank,kramer,258,30,2391
+frank,kruger,11,3,121
+frank,lloyd,39,3,463
+frank,lotus,9,1,71
+frank,maestro,16,2,178
+frank,mahjong lady,10,1,88
+frank,man s07e16,3,1,32
+frank,morty,26,3,253
+frank,mr. lippman,16,1,187
+frank,mr. ross,18,1,165
+frank,mr. steinbrenner,10,2,179
+frank,mrs. ross,17,1,137
+frank,patty,25,1,222
+frank,phone,5,1,56
+frank,puddy,2,1,13
+frank,ricky,17,4,180
+frank,robin,9,1,65
+frank,ruby,11,1,107
+frank,rudy,16,2,131
+frank,sidra,2,1,18
+frank,susan,32,3,225
+frank,umpire,5,1,58
+frank,vandelay,2,1,11
+frank,wilhelm,2,1,12
+frank,woman s05e02,12,1,120
+frank,woman s08e06,4,1,43
+frankie,george,12,2,87
+frankie,hole digger #2,3,1,16
+frankie,jerry,33,4,274
+frankie,kramer,9,1,70
+frankie,rhisa,10,2,42
+frankie,woman s09e05,5,1,42
+fred,fred savage,6,1,26
+fred,george,26,4,258
+fred,jerry,21,3,156
+fred,kramer,13,1,166
+fred,man s04e22,2,1,20
+fred,mr. visaki,7,1,63
+fred,paul,8,2,59
+fred,receptionist,3,1,20
+fred savage,kramer,9,1,144
+friend,george,3,1,16
+friend,jerry,3,1,28
+friend,susan,3,1,19
+friend 1,kramer,12,1,113
+fulton,jerry,12,2,170
+furniture guy,george,2,1,34
+furniture guy,jerry,8,1,56
+furniture guy,super,3,1,42
+gail,george,19,3,224
+gail,jerry,45,4,427
+gail,kramer,4,1,62
+gail,lisa,6,3,45
+gail,russell,7,2,58
+gail,waiter s04e15,7,1,50
+gardner,george,6,1,94
+gardner,zeke,4,1,75
+gary,george,43,6,513
+gary,jerry,26,5,237
+gary,kramer,8,2,87
+gary,salesman,3,1,32
+gas station attendant,george,2,1,12
+gas station attendant,helen,5,1,37
+gas station attendant,jerry,16,1,123
+gas station attendant,morty,10,1,84
+gaurd,george,6,1,40
+gaurd,guard,4,1,40
+gaurd,jerry,6,1,77
+gaurd,uncle leo,4,1,24
+gavin,jerry,27,3,365
+gavin,kramer,7,1,118
+genderson,george,4,1,42
+genderson,jerry,4,1,62
+genderson,kramer,7,1,75
+genderson,police,5,1,32
+genderson,tv,4,1,73
+gene,kevin,18,3,147
+gennice,george,13,2,184
+gennice,jerry,43,5,476
+gennice,kramer,18,2,285
+gennice,stagehand,7,1,47
+geoge,george,6,1,72
+geoge,guard,3,1,22
+george,george wendt,20,1,357
+george,gepetto,12,2,107
+george,geroge,7,1,94
+george,gillian,6,1,66
+george,gina,18,2,96
+george,girl,3,1,55
+george,giuliani,3,1,109
+george,glenda,17,3,141
+george,glenn,5,1,19
+george,greeny,6,1,65
+george,greg,7,1,101
+george,grossbard,10,1,168
+george,guard,47,5,490
+george,guy s02e11,2,1,16
+george,guy s03e10,37,1,435
+george,guy s03e14,4,1,32
+george,guy s04e01,18,1,95
+george,guy s06e08,5,1,42
+george,guy s07e10,9,1,104
+george,guy s08e05,5,1,26
+george,guy s08e22,5,1,23
+george,gwen,29,3,256
+george,gx,2,1,78
+george,hallie,36,6,236
+george,hanke,43,6,659
+george,harold,5,1,62
+george,head,13,2,115
+george,heather,45,7,369
+george,helen,78,13,642
+george,heyman,17,2,125
+george,hilde,8,1,47
+george,homeless man,32,3,287
+george,hooker,12,2,161
+george,housekeeper,6,1,64
+george,hoyt,36,4,455
+george,intercom,3,1,28
+george,interviewer,22,1,337
+george,isabel,22,1,319
+george,jane,31,4,372
+george,janet,38,4,377
+george,janice,3,1,44
+george,jay,33,5,324
+george,jean-paul,8,2,78
+george,jeanine,11,1,127
+george,jeannie,5,1,14
+george,jenna,7,2,69
+george,jerry,14028,1267,138884
+george,jeter,6,1,68
+george,jimmy,25,2,202
+george,joanne,4,1,56
+george,jodi,35,5,562
+george,joe,32,3,251
+george,joe devola,10,2,200
+george,joe divola,18,1,151
+george,joe's wife,19,1,155
+george,joey,9,2,105
+george,joy mayo,14,2,110
+george,julianna,4,1,27
+george,julie,48,5,558
+george,karen,90,7,908
+george,katie,24,3,187
+george,katy,25,1,175
+george,keith,21,1,280
+george,kelly,27,2,245
+george,ken,42,5,372
+george,keri,5,1,28
+george,kevin,10,2,72
+george,kid #2,2,1,26
+george,kid s03e06,31,1,431
+george,kid s05e19,10,1,138
+george,kid s09e09,8,2,117
+george,kimbrough,26,1,309
+george,kramer,4537,483,47090
+george,kruger,134,20,1504
+george,kurt,14,2,152
+george,lady 1,8,2,78
+george,lady 2,8,2,73
+george,lamar,23,5,184
+george,lanette,19,4,107
+george,larry,10,2,91
+george,laser guy,6,1,85
+george,laura,26,3,242
+george,leader,8,1,62
+george,lena,14,1,112
+george,leslie,15,3,112
+george,levitan,50,3,496
+george,lew,8,1,94
+george,librarian,12,1,105
+george,lindsay,12,2,156
+george,liz,3,1,73
+george,lloyd,94,8,831
+george,lois,31,2,373
+george,loretta,26,3,191
+george,lou,7,1,53
+george,louise,11,2,92
+george,lt. martel,10,1,59
+george,lupe,34,1,291
+george,machine,5,1,18
+george,mackenzie,13,2,183
+george,maestro,12,1,70
+george,mahjong lady,9,1,102
+george,maitre d',13,3,94
+george,male worker,4,1,29
+george,man #1 s01e03,7,1,62
+george,man #1 s03e06,30,1,428
+george,man #1 s03e18,3,1,30
+george,man #1 s04e06,2,1,18
+george,man #1 s04e09,3,1,72
+george,man #1 s04e16,7,1,71
+george,man #1 s05e13,16,1,143
+george,man #1 s05e21,3,1,85
+george,man #1 s08e21,3,1,11
+george,man #2 s01e03,6,1,34
+george,man #2 s03e06,9,1,50
+george,man #2 s03e18,3,1,29
+george,man #2 s04e08,12,1,106
+george,man #2 s05e13,9,1,119
+george,man #2 s05e21,3,1,83
+george,man #2 s08e21,8,2,64
+george,man #3 s03e06,9,1,47
+george,man #3 s03e18,3,1,30
+george,man #3 s04e08,16,2,154
+george,man #3 s08e03,7,1,68
+george,man #4,3,1,28
+george,man at the counter,5,1,45
+george,man in car,15,2,171
+george,man s02e08,5,1,46
+george,man s03e18,37,1,270
+george,man s03e20,11,1,67
+george,man s04e01,27,1,206
+george,man s04e13,37,4,274
+george,man s04e21,6,1,56
+george,man s04e22,7,1,77
+george,man s05e02,14,2,191
+george,man s06e03,8,1,52
+george,man s06e21,5,1,18
+george,man s07e02,10,1,133
+george,man s07e07,7,1,41
+george,man s08e04,3,1,12
+george,man s08e06,4,1,58
+george,man s08e21,9,2,73
+george,man s08e22,2,1,5
+george,man s09e01,8,2,40
+george,man s09e11,27,3,335
+george,man s09e22,19,2,164
+george,man4,4,1,65
+george,manager,21,4,201
+george,marcy,36,4,316
+george,marie,3,1,47
+george,mario,13,2,112
+george,marisa,15,2,179
+george,mark,7,1,63
+george,marla,31,2,331
+george,martin,2,1,21
+george,mary,6,1,151
+george,mary anne,32,5,412
+george,maryedith,82,3,674
+george,matthew,66,2,592
+george,maura,33,4,318
+george,mcadam,6,2,83
+george,mechanic,24,3,390
+george,mel,7,1,36
+george,melissa,5,1,19
+george,member 1,5,1,21
+george,member 2,13,2,147
+george,michael,47,7,505
+george,mickey,24,3,270
+george,mike,151,8,1687
+george,minkler,11,1,83
+george,miranda,23,5,184
+george,model #1,4,1,54
+george,model #2,4,1,54
+george,model #3,4,1,60
+george,model #4,7,1,63
+george,mohel,18,2,565
+george,mollika,13,1,166
+george,molly,13,1,68
+george,mona,25,1,269
+george,monica,49,4,347
+george,mooney,10,1,57
+george,morgan,26,4,307
+george,morganewman,3,1,35
+george,morty,101,14,881
+george,mother,31,1,455
+george,movie patron,9,2,78
+george,mr oh,9,3,97
+george,mr reichman,8,1,104
+george,mr. abbott,2,1,25
+george,mr. bevilacqua,3,1,35
+george,mr. cushman,10,1,206
+george,mr. graham,2,1,15
+george,mr. lippman,67,4,632
+george,mr. morgan,10,2,164
+george,mr. ross,126,15,1421
+george,mr. sanger,2,1,10
+george,mr. steinbrenner,150,23,2841
+george,mr. tuttle,6,1,92
+george,mr. visaki,12,1,120
+george,mrs allister,5,1,46
+george,mrs reichman,5,1,67
+george,mrs. c,6,1,112
+george,mrs. enright,16,3,225
+george,mrs. peterman,7,1,108
+george,mrs. ross,105,15,1051
+george,mrs. s,6,1,13
+george,mrs. sanger,32,4,244
+george,mrs. sokol,52,3,698
+george,mrs. sweedler,21,2,355
+george,ms. de granmont,5,1,32
+george,music guy,7,1,65
+george,nana,8,1,90
+george,nancy,23,2,154
+george,naomi,10,1,142
+george,newman,198,17,1961
+george,newsstand owner,22,1,324
+george,nick,27,2,342
+george,nina,90,13,908
+george,noel,55,4,465
+george,nurse,13,4,85
+george,nurse 1,3,1,45
+george,officer,10,1,152
+george,old guy,5,1,54
+george,old man,8,1,116
+george,olive,9,1,59
+george,orderly,5,1,47
+george,other guy,2,1,7
+george,other security guard,17,1,100
+george,pam,15,4,122
+george,paramedic,10,2,78
+george,pat,10,1,119
+george,pat hazell,2,1,136
+george,patrice,49,3,540
+george,patty,41,2,356
+george,paul,7,1,76
+george,paula,38,4,296
+george,penny,11,1,67
+george,pensky,14,2,150
+george,peter,5,1,32
+george,peterman,55,10,620
+george,phil,14,2,78
+george,phone,11,2,159
+george,phone tape,12,1,74
+george,photographer,15,2,110
+george,ping,36,3,378
+george,pinter,10,2,84
+george,police,40,4,330
+george,police radio,10,1,75
+george,pop,25,4,268
+george,prisoner,15,1,216
+george,puddy,56,10,472
+george,rabbi,3,1,139
+george,rachel,34,4,270
+george,radio,8,1,67
+george,ralph,11,1,107
+george,ray,48,1,423
+george,raymond,58,4,346
+george,reader,11,1,84
+george,rebecca,13,1,152
+george,receptionist,90,11,696
+george,reilly,11,3,130
+george,remy,28,2,217
+george,repairman,13,1,116
+george,restaurateur,21,1,224
+george,rhisa,25,3,159
+george,ricardi,10,1,117
+george,richie,8,1,36
+george,rickey,8,1,43
+george,ricky,10,2,79
+george,rita,35,6,472
+george,robber,8,1,119
+george,roberta,2,1,7
+george,robin,62,8,712
+george,robin's mother,19,3,284
+george,ron,11,2,127
+george,ronnie,9,2,83
+george,roxanne,15,3,197
+george,roy,31,4,270
+george,rudy,15,2,171
+george,rula,48,2,445
+george,russel,17,2,280
+george,russell,121,12,1503
+george,sales woman,36,3,259
+george,salesman,50,8,643
+george,saleswoman,34,6,368
+george,sally,3,1,77
+george,sam,2,1,13
+george,sandi,16,2,215
+george,sandos brother 1,21,3,146
+george,sandos brother 2,8,1,46
+george,sandra,21,1,155
+george,sandy,6,1,34
+george,sara,22,4,151
+george,sasha,17,2,194
+george,scott,7,2,30
+george,seconrad,7,1,57
+george,secretary,24,5,257
+george,security guard,58,4,510
+george,sharon,41,3,371
+george,sheila,93,9,798
+george,shelly,20,3,215
+george,shlomo,33,2,282
+george,showalter,12,1,171
+george,sid,83,4,977
+george,sidra,2,1,17
+george,siena,17,3,176
+george,silvio,13,1,130
+george,slippert pete,16,1,147
+george,slippery pete,37,2,303
+george,sophie,12,1,94
+george,soup nazi,21,3,97
+george,sponer,9,1,165
+george,sponser,8,1,43
+george,sponsor,14,1,186
+george,stacey,20,1,161
+george,stan,37,6,409
+george,stein,14,1,209
+george,steve,19,2,213
+george,steven,38,5,369
+george,stranger,12,2,220
+george,stu,79,8,842
+george,student 1,12,1,107
+george,student 2,10,1,98
+george,student 3,10,1,93
+george,subway announcement,8,1,63
+george,sue ellen,17,2,197
+george,susan,806,86,7579
+george,susie,4,1,74
+george,sylvia,20,2,216
+george,tabachnick,10,2,94
+george,tape recorder,4,1,42
+george,tara,17,4,128
+george,tartabull,16,1,131
+george,tartbull,11,1,110
+george,tel,8,1,56
+george,teller,24,1,286
+george,therapist,2,1,12
+george,thomassoulo,41,5,415
+george,tia,5,1,51
+george,tim,111,13,1237
+george,timmy,13,1,106
+george,todd,24,2,230
+george,tom,35,4,521
+george,tony,52,4,512
+george,tor,25,2,261
+george,tough guy,11,1,62
+george,truck driver,47,1,455
+george,tuttle,15,1,129
+george,tv,11,2,282
+george,tv elaine,4,1,76
+george,tv jerry,5,1,93
+george,umpire,6,2,25
+george,uncle leo,55,6,445
+george,usher,28,4,314
+george,vandelay,12,3,72
+george,vanessa,18,2,81
+george,vegetable lasagna,12,1,109
+george,vender,4,1,55
+george,vic,8,1,81
+george,victoria,27,4,490
+george,violin player,8,1,59
+george,vivian,23,1,159
+george,vogel,14,3,162
+george,waiter s05e11,6,1,83
+george,waiter s05e15,5,1,38
+george,waiter s06e21,3,1,20
+george,waitress s01e05,22,1,314
+george,waitress s02e08,2,1,16
+george,waitress s03e22,18,1,100
+george,waitress s05e21,13,1,278
+george,waitress s06e03,18,2,202
+george,waitress s06e07,18,2,177
+george,waitress s06e11,7,1,38
+george,waitress s06e22,9,1,117
+george,waitress s07e17,6,1,18
+george,waitress s08e09,12,2,73
+george,waitress s08e17,7,2,32
+george,waitress s08e21,3,1,23
+george,waitress s09e15,8,1,43
+george,waitress s09e17,5,1,27
+george,watkins,12,2,106
+george,wendy,37,4,294
+george,west,18,1,173
+george,wilhelm,127,20,1367
+george,williams,5,1,70
+george,willie,41,3,447
+george,willie sr,16,1,168
+george,wilton,3,1,57
+george,woman at phone,7,1,69
+george,woman s02e10,2,1,25
+george,woman s03e10,30,1,367
+george,woman s03e13,42,4,524
+george,woman s03e18,25,1,408
+george,woman s04e01,29,1,217
+george,woman s04e09,2,1,37
+george,woman s04e13,12,2,162
+george,woman s04e19,3,1,13
+george,woman s04e21,7,1,125
+george,woman s05e02,33,3,273
+george,woman s05e05,5,1,48
+george,woman s06e11,5,1,30
+george,woman s06e13,2,1,11
+george,woman s07e02,8,1,111
+george,woman s08e21,4,1,23
+george,woman s09e01,3,1,16
+george,woman s09e11,16,1,173
+george,woman s09e22,14,1,163
+george,worker s07e19,7,1,72
+george,worker s08e08,10,2,62
+george,wx,5,1,93
+george,wyck,62,8,632
+george,yelling guy,8,1,80
+george,zeke,12,2,127
+george wendt,jerry,3,1,46
+gepetto,jerry,9,2,101
+gepetto,sylvia,6,1,74
+german woman,horst,9,1,67
+german woman,kramer,6,1,52
+geroge,jerry,11,1,78
+geroge,kramer,9,1,80
+giggio,jerry,13,2,118
+gillian,jerry,25,3,161
+gina,jerry,81,4,761
+gina,kramer,11,1,91
+gina,newman,11,1,98
+gino,jerry,26,2,200
+gino,kramer,6,2,84
+gino,newman,17,2,166
+girl,jerry,12,1,88
+girl,joey,2,1,11
+girl,kramer,9,2,79
+girl,mickey,6,1,43
+girl,susan,2,1,33
+girl,the girls,4,1,12
+girl,winona,2,1,15
+girlfriend,jerry,20,1,146
+girlfriend,kramer,15,1,91
+giuliani,jerry,4,1,105
+giuliani,kramer,2,1,46
+giuliani,news,2,1,122
+gladys,kramer,11,2,128
+glenda,greeny,3,1,34
+glenda,levitan,13,1,58
+glenn,woman s09e14,9,1,61
+greeny,levitan,12,1,42
+grossbard,guard,3,1,26
+grossbard,kramer,7,1,64
+grossbard,prisoner,7,1,68
+guad,guard,2,1,5
+guad,jean-paul,3,1,23
+guad,jerry,3,1,36
+guard,jean-paul,3,1,22
+guard,jerry,21,4,360
+guard,kramer,8,1,70
+guard,prisoner,8,1,74
+guard,prisoner 1,2,1,12
+guard,prisoner 2,2,1,12
+guard,prisoner 3,3,1,21
+guard,uncle leo,6,1,46
+guests,jerry,25,1,225
+guests,pamela,6,1,35
+guests,roger,3,1,11
+guests,vanessa,13,1,75
+guillermo,guy s08e17,4,1,34
+guillermo,helen,5,1,34
+guillermo,jerry,8,2,49
+guillermo,morty,3,1,22
+guillermo,tan,5,1,53
+guy on phone,jerry,8,1,102
+guy on phone,kramer,8,1,84
+guy s03e10,jerry,52,1,397
+guy s03e10,woman s03e10,13,1,146
+guy s03e13,kramer,10,1,101
+guy s03e14,jerry,15,2,145
+guy s03e14,kramer,4,1,40
+guy s03e14,old guy,7,1,80
+guy s03e14,other guy,13,2,125
+guy s03e14,roberta,11,2,103
+guy s03e14,steve,7,1,64
+guy s04e01,jerry,20,1,97
+guy s04e01,kramer,10,1,52
+guy s04e01,lt. martel,10,1,64
+guy s04e01,police radio,10,1,80
+guy s06e04,hostess,2,1,16
+guy s06e04,jerry,3,1,16
+guy s06e08,jerry,6,1,32
+guy s06e08,kramer,2,1,14
+guy s06e08,tim,6,1,44
+guy s06e16,jerry,6,1,38
+guy s06e16,kramer,12,1,75
+guy s06e16,stefanie,3,1,10
+guy s07e10,kramer,3,1,43
+guy s08e05,jerry,7,1,38
+guy s08e05,newman,9,1,152
+guy s08e17,tan,3,1,25
+guy1,jerry,2,1,16
+guy1,man #1 s04e06,4,1,47
+guy1,man #2 s04e06,3,1,24
+guy1,waitress s04e06,2,1,10
+gwen,jerry,38,7,233
+gwen,kramer,37,4,245
+gwen,tim,6,1,17
+gwen,todd,7,1,60
+gx,jerry,3,1,65
+haarwood,kramer,26,4,274
+haarwood,lloyd,6,1,37
+haffler,kramer,14,1,109
+hal,kramer,26,3,210
+hal,old man,3,1,24
+hallie,jerry,52,6,385
+hallie,maitre d',3,1,28
+hallie,sandos brother 1,16,2,108
+hallie,sandos brother 2,7,1,35
+hallie,susan,13,4,72
+hanke,jerry,8,1,159
+hanke,kid #2,3,1,89
+hanke,kid s09e09,11,2,180
+hanke,man #1 s09e09,3,1,38
+harold,jerry,39,4,391
+harold,kramer,23,3,296
+harold,manny,32,3,328
+head,jerry,13,3,72
+head,kramer,4,1,53
+health inspector,jerry,9,1,58
+health inspector,poppie,6,1,35
+helen,isaac,7,1,87
+helen,jack,142,9,1153
+helen,jerry,953,91,7569
+helen,kramer,168,16,1560
+helen,man in the crowd,5,1,24
+helen,manya,13,1,96
+helen,member 2,2,1,15
+helen,meryl,18,1,106
+helen,morty,830,102,6877
+helen,mrs. choate,14,2,155
+helen,nana,4,1,18
+helen,naomi,4,1,24
+helen,nephew,4,2,47
+helen,newman,17,2,173
+helen,photographer,3,1,5
+helen,rachel,16,1,64
+helen,receptionist,7,1,69
+helen,sal bass,3,1,26
+helen,sandi,4,1,17
+helen,sidra,2,1,7
+helen,stella,7,2,36
+helen,super,2,1,28
+helen,tia,2,1,11
+helen,uncle leo,65,11,607
+helen,woman in the crowd,4,1,20
+helen,zach,3,1,19
+helena,kramer,32,1,328
+henry,jerry,5,1,41
+henry,poppie,6,1,69
+henry,woman at another table,2,1,10
+henry,woman at next table,2,1,12
+henry,woman at yet another table,2,1,8
+herb,jack,21,2,225
+herb,morty,29,3,245
+herb,mrs. choate,17,2,155
+herb,ralph,24,3,182
+heyman,jerry,6,1,60
+hilde,jerry,20,3,108
+hilde,kramer,17,2,172
+hippie #1,hippie #2,6,1,102
+hippie #1,kramer,11,1,149
+hippie #2,kramer,7,1,95
+hole digger,jerry,4,1,17
+hole digger #2,jerry,4,1,49
+holly,james,7,1,54
+holly,jerry,53,9,492
+holly,tv,2,1,24
+holly,waiter s07e04,10,1,93
+homeless man,homeless man 2,3,1,10
+homeless man,jerry,25,4,199
+homeless man,kramer,44,5,524
+homeless man,lou,7,1,48
+homeless man,man s06e15,3,1,53
+homeless man,newman,8,1,64
+homeless man 2,kramer,8,1,114
+homeless man 2,newman,7,1,68
+hooker,kramer,10,2,79
+hooker,police,3,1,29
+horst,kramer,9,1,59
+hostess,jerry,3,1,26
+hot dog vendor,jerry,8,1,37
+housekeeper,jerry,23,2,165
+housekeeper,kramer,4,1,14
+housekeeper,sid,23,2,280
+hoyt,jerry,35,4,375
+hoyt,lady,4,1,37
+hoyt,low-talker,2,1,19
+hoyt,marcelino,2,1,4
+hoyt,mr. pitt,6,1,34
+hoyt,mr. ross,7,1,68
+hoyt,mr. sanger,14,1,90
+hoyt,mr. steinbrenner,6,1,69
+hoyt,mrs. ross,7,1,77
+hoyt,penny,23,1,147
+hoyt,peterman,14,1,88
+hoyt,sidra,13,2,111
+hoyt,soup nazi,14,2,92
+hoyt,vandelay,33,5,460
+hoyt,vogel,11,2,220
+hoyt,wilcox,8,1,88
+hoyt,woman s09e22,4,1,25
+husband,jerry,16,1,120
+husband,wife,2,1,15
+hx,jerry,3,1,16
+hx,kramer,8,1,159
+ice cream vender #1,kramer,2,1,10
+ilene,kramer,12,1,54
+ilene,mickey,8,1,46
+ilene,ned,11,1,94
+intercom,jerry,27,3,221
+intercom,kate,3,1,62
+intercom,kramer,5,1,26
+interpreter,mr. lippman,2,1,31
+interviewer,isabel,2,1,24
+interviewer,jerry,21,1,146
+interviewer,newsstand owner,2,1,29
+isaac,jerry,11,1,109
+isaac,morty,8,1,99
+isaac,nephew,7,1,95
+isaac,uncle leo,8,1,118
+isabel,jerry,31,3,254
+isabel,jerry's brain,13,2,185
+isabel,jerry's penis,11,2,181
+isabel,newsstand owner,2,1,11
+izzy jr.,izzy sr.,39,5,334
+izzy jr.,jerry,36,5,272
+izzy sr.,jerry,98,11,767
+izzy sr.,kramer,7,1,77
+izzy sr.,morty,25,3,229
+izzy sr.,sid,13,1,97
+jack,jerry,218,14,1813
+jack,julio,3,1,49
+jack,kramer,14,2,76
+jack,morty,201,11,1689
+jack,mrs. choate,4,1,15
+jack,puddy,6,1,33
+jack,rachel,12,1,73
+jack,ralph,15,2,143
+jack,stella,8,1,146
+jack,uncle leo,8,1,161
+jackie,jerry,19,1,295
+jackie,judge s07e12,18,1,284
+jackie,kramer,128,10,1405
+jackie,stan,17,1,287
+jackie,sue ellen,16,1,272
+jackie,wilkie,4,1,74
+jake,kramer,6,1,51
+jake,man s06e13,6,1,65
+jake,mr. lippman,7,1,91
+jake,reporter,4,1,52
+james,jerry,5,1,40
+jane,jerry,89,11,681
+jane,jim,4,1,32
+jane,kramer,39,6,305
+jane,manager,13,1,103
+jane,michael,7,1,83
+jane,mike,2,1,6
+jane,rachel,4,1,23
+jane,some guy,2,1,7
+jane,tony,7,1,98
+janet,jerry,13,2,140
+janet,kramer,9,1,121
+jay,jerry,44,6,347
+jay,michael,4,1,34
+jay,rita,3,1,10
+jay,sandi,3,1,26
+jay,stu,27,6,292
+jay,wilton,3,1,25
+jay leno,jerry,2,1,101
+jean-paul,jerry,81,12,733
+jean-paul,judy,4,1,11
+jean-paul,kramer,14,3,121
+jean-paul,man s07e05,13,1,70
+jean-paul,manager,5,1,55
+jeanine,jerry,14,1,88
+jeannie,jerry,62,7,512
+jeannie,kramer,16,2,158
+jeannie,waitress s07e22,6,1,25
+jeff,jerry,5,1,28
+jeff,mary,6,1,41
+jeff,pete,3,1,11
+jenna,jerry,68,12,575
+jenna,kramer,3,1,42
+jenny,jerry,21,1,234
+jenny,kramer,13,1,150
+jenny,steve,10,1,75
+jerry,jerry's brain,31,5,340
+jerry,jerry's message,11,1,131
+jerry,jerry's penis,11,2,153
+jerry,jessie,13,1,121
+jerry,jimmy,7,1,49
+jerry,joan,11,1,34
+jerry,joanne,7,1,32
+jerry,jodi,73,7,712
+jerry,joe,16,1,150
+jerry,joe devola,9,2,102
+jerry,joe divola,63,5,587
+jerry,joel,72,6,785
+jerry,joey,13,3,72
+jerry,john,11,1,52
+jerry,joy mayo,20,2,167
+jerry,judge s07e12,7,1,57
+jerry,judy,9,1,106
+jerry,julianna,28,2,313
+jerry,julie,20,3,133
+jerry,julio,9,2,108
+jerry,karen,26,3,193
+jerry,karl,8,1,120
+jerry,kate,52,6,579
+jerry,katie,44,5,358
+jerry,katya,26,5,281
+jerry,keith,67,5,721
+jerry,kelly,24,2,222
+jerry,keri,25,3,188
+jerry,kernis,8,2,90
+jerry,kevin,18,3,143
+jerry,kid s03e06,32,1,343
+jerry,kim,4,1,20
+jerry,kimbrough,20,1,233
+jerry,koren,7,2,56
+jerry,kramer,9634,971,93125
+jerry,kristin,36,2,302
+jerry,kruger,9,2,72
+jerry,kurt,2,1,17
+jerry,lab technician,5,1,43
+jerry,lady,8,1,59
+jerry,lamar,55,8,419
+jerry,landis,17,1,123
+jerry,lanette,68,9,391
+jerry,larry,8,2,107
+jerry,laura,65,7,695
+jerry,leapin' larry,15,5,180
+jerry,lena,42,3,381
+jerry,leslie,27,4,229
+jerry,letterman,6,1,94
+jerry,librarian,23,2,161
+jerry,lisi,50,4,376
+jerry,lloyd,114,9,815
+jerry,lois,64,6,435
+jerry,lorraine,13,1,81
+jerry,lotus,8,1,36
+jerry,lou,22,3,226
+jerry,louise,7,1,16
+jerry,lt. martel,12,1,61
+jerry,lupe,28,1,221
+jerry,lyle,11,2,31
+jerry,mabel,17,2,185
+jerry,maestro,47,4,314
+jerry,maid,6,1,28
+jerry,mailman,7,1,134
+jerry,maitre d',15,2,98
+jerry,man #1 s01e03,5,1,66
+jerry,man #1 s03e06,31,1,340
+jerry,man #1 s03e18,3,1,22
+jerry,man #1 s04e06,4,1,45
+jerry,man #1 s04e08,17,1,236
+jerry,man #1 s04e09,13,2,245
+jerry,man #1 s04e16,8,1,118
+jerry,man #2 s01e03,4,1,38
+jerry,man #2 s03e06,10,1,127
+jerry,man #2 s03e18,3,1,21
+jerry,man #2 s04e06,3,1,22
+jerry,man #2 s04e09,12,1,229
+jerry,man #2 s08e21,9,2,74
+jerry,man #3 s03e06,10,1,124
+jerry,man #3 s03e18,3,1,22
+jerry,man #3 s04e08,6,1,44
+jerry,man #3 s05e13,9,1,61
+jerry,man #4,3,1,20
+jerry,man at the counter,4,1,26
+jerry,man in audience,4,1,36
+jerry,man in car,6,1,53
+jerry,man in neighboring bed,3,1,42
+jerry,man in shower,5,1,10
+jerry,man in the crowd,7,1,64
+jerry,man s02e08,8,2,54
+jerry,man s02e10,8,1,85
+jerry,man s02e11,2,1,10
+jerry,man s03e18,29,1,188
+jerry,man s04e01,24,1,346
+jerry,man s04e21,10,1,95
+jerry,man s04e22,3,1,19
+jerry,man s05e08,2,1,26
+jerry,man s05e13,11,1,163
+jerry,man s06e09,8,1,81
+jerry,man s07e02,8,1,138
+jerry,man s07e05,18,1,173
+jerry,man s07e21,3,1,11
+jerry,man s08e04,9,1,58
+jerry,man s08e08,12,2,84
+jerry,man s08e21,17,3,115
+jerry,man s08e22,6,1,22
+jerry,man s09e19,13,1,154
+jerry,man s09e22,21,2,179
+jerry,manager,16,2,179
+jerry,manny,24,3,227
+jerry,manya,23,1,225
+jerry,mar,4,1,37
+jerry,marcelino,28,4,260
+jerry,marcy,9,1,66
+jerry,margaret,41,3,343
+jerry,mario,10,2,75
+jerry,marion,4,1,79
+jerry,mark,7,1,64
+jerry,marla,115,9,943
+jerry,marlene,44,4,524
+jerry,martin,5,2,26
+jerry,marty,38,3,327
+jerry,mary,27,3,306
+jerry,mary anne,17,2,207
+jerry,maryedith,76,4,563
+jerry,matthew,53,2,427
+jerry,maurice,3,1,41
+jerry,mel,48,2,424
+jerry,melanie,2,1,14
+jerry,melissa,56,8,394
+jerry,meryl,102,8,859
+jerry,michael,50,6,439
+jerry,mickey,81,9,848
+jerry,mike,133,10,1151
+jerry,milos,37,6,459
+jerry,miranda,2,1,15
+jerry,misha,7,2,29
+jerry,miss rhode island,5,1,45
+jerry,mohel,27,2,630
+jerry,mollika,17,1,186
+jerry,molly,11,1,51
+jerry,mona,11,1,171
+jerry,monk's manager,5,1,75
+jerry,morty,972,93,8297
+jerry,mother,42,2,410
+jerry,mr oh,15,2,102
+jerry,mr yamaguchi,4,1,29
+jerry,mr. abbott,11,2,88
+jerry,mr. arm,6,1,84
+jerry,mr. bevilacqua,7,2,53
+jerry,mr. cohen,4,1,45
+jerry,mr. goldstein,7,1,106
+jerry,mr. graham,6,1,32
+jerry,mr. green,3,1,46
+jerry,mr. lippman,61,2,520
+jerry,mr. pitt,24,4,146
+jerry,mr. ross,10,2,81
+jerry,mr. s,5,1,50
+jerry,mr. sanger,5,1,29
+jerry,mr. steinbrenner,21,2,210
+jerry,mr. visaki,8,1,62
+jerry,mrs allister,5,1,46
+jerry,mrs hamilton,43,3,296
+jerry,mrs reichman,4,1,30
+jerry,mrs. anvino,9,2,70
+jerry,mrs. choate,18,3,127
+jerry,mrs. payton,7,1,28
+jerry,mrs. ross,16,3,101
+jerry,mrs. s,14,2,62
+jerry,music guy,6,1,58
+jerry,myra,4,1,11
+jerry,naked man,27,3,260
+jerry,nana,21,2,135
+jerry,naomi,34,5,397
+jerry,narrator,3,1,40
+jerry,nephew,8,2,81
+jerry,newman,778,81,7242
+jerry,news,4,1,139
+jerry,newsstand owner,21,1,133
+jerry,nick,28,1,197
+jerry,nikki,30,3,182
+jerry,nina,108,18,870
+jerry,noel,25,3,219
+jerry,nun,5,1,27
+jerry,nurse,11,2,132
+jerry,nurse 1,3,1,12
+jerry,officer,13,1,126
+jerry,old guy,8,1,88
+jerry,old man,17,3,126
+jerry,old man #2,5,1,25
+jerry,old man #3,5,1,22
+jerry,olive,14,2,103
+jerry,other guy,16,3,110
+jerry,other security guard,18,1,83
+jerry,owner,19,3,145
+jerry,pam,29,6,199
+jerry,pamela,29,1,258
+jerry,paragon usher,2,1,25
+jerry,paramedic,11,3,103
+jerry,parry,8,1,59
+jerry,passenger #1,37,1,447
+jerry,pat,14,1,137
+jerry,pat hazell,2,1,67
+jerry,patrice,15,1,193
+jerry,patti,14,2,69
+jerry,patty,73,4,547
+jerry,paul,7,2,46
+jerry,paula,30,3,228
+jerry,peggy,5,1,44
+jerry,penny,14,1,86
+jerry,pete,4,1,31
+jerry,peter,6,1,56
+jerry,peterman,21,3,233
+jerry,phil,54,9,398
+jerry,phone,3,1,39
+jerry,phone tape,12,1,88
+jerry,photographer,3,1,10
+jerry,ping,40,5,314
+jerry,pinter,7,2,42
+jerry,player,9,1,38
+jerry,poker player #1,3,1,12
+jerry,poker player #2,3,1,10
+jerry,poker player #3,3,1,8
+jerry,poker player #4,2,1,4
+jerry,police,43,5,546
+jerry,police officer,12,1,103
+jerry,police radio,12,1,77
+jerry,policeman,9,1,81
+jerry,poppie,62,6,603
+jerry,postal worker,7,1,27
+jerry,postal worker danny,12,1,45
+jerry,prisoner 1,7,1,184
+jerry,prisoner 2,7,1,184
+jerry,prisoner 3,8,1,193
+jerry,puddy,109,14,873
+jerry,puerto rican man,3,1,46
+jerry,rabbi,25,2,211
+jerry,rachel,93,11,630
+jerry,radio,18,2,167
+jerry,ralph,11,1,54
+jerry,ramon,67,6,526
+jerry,rava,14,5,170
+jerry,ray,80,8,717
+jerry,raymond,9,2,84
+jerry,reader,18,2,96
+jerry,receptionist,50,7,452
+jerry,rental car agent,48,2,591
+jerry,repairman,18,2,96
+jerry,resident,8,1,47
+jerry,restaurateur,26,1,266
+jerry,rhisa,7,1,23
+jerry,richie,10,1,201
+jerry,rick,3,1,20
+jerry,rickey,6,1,25
+jerry,ricky,4,1,15
+jerry,rita,66,8,703
+jerry,robber,11,1,93
+jerry,roberta,10,2,78
+jerry,robin,7,2,77
+jerry,roger,32,2,302
+jerry,ron,28,2,219
+jerry,ronnie,32,5,321
+jerry,roxanne,18,3,128
+jerry,roy,56,10,426
+jerry,ruby,9,1,39
+jerry,russel,14,2,159
+jerry,russell,89,8,838
+jerry,ruthie,2,1,33
+jerry,sal bass,7,1,105
+jerry,sales woman,36,3,298
+jerry,salesman,44,8,502
+jerry,saleswoman,6,1,47
+jerry,sally,106,13,1351
+jerry,sandi,64,5,458
+jerry,sandos brother 1,28,3,187
+jerry,sandos brother 2,12,1,104
+jerry,sandra,37,2,460
+jerry,sandy,18,3,147
+jerry,sara,38,6,296
+jerry,scene,2,1,7
+jerry,seconrad,6,1,42
+jerry,secretary,11,1,67
+jerry,security guard,72,7,712
+jerry,seth,49,6,415
+jerry,sharon,45,4,501
+jerry,sheila,82,8,609
+jerry,shelly,26,2,211
+jerry,sherry,12,1,149
+jerry,shlomo,5,1,28
+jerry,sid,121,8,1268
+jerry,sidra,70,5,687
+jerry,silvio,32,2,250
+jerry,simon,27,3,327
+jerry,skycap,43,1,471
+jerry,slippery pete,7,1,37
+jerry,sophie,42,4,409
+jerry,soup nazi,24,5,120
+jerry,stacey,24,1,188
+jerry,stagehand,8,1,61
+jerry,stan,63,8,526
+jerry,stationer,20,2,177
+jerry,stefanie,7,1,34
+jerry,stella,11,2,50
+jerry,steve,88,9,783
+jerry,stewardess,10,2,89
+jerry,stock boy,9,1,155
+jerry,stranger,22,2,153
+jerry,stu,84,10,769
+jerry,subway announcement,7,1,85
+jerry,sue ellen,44,6,343
+jerry,susan,270,35,2327
+jerry,susie,7,1,50
+jerry,sylvia,5,1,46
+jerry,tabachnick,31,4,268
+jerry,tannoy,6,1,45
+jerry,tape player,4,1,36
+jerry,tape recorder,3,1,11
+jerry,tawni,40,6,257
+jerry,teacher,12,3,109
+jerry,teddy,14,1,120
+jerry,tel,12,1,97
+jerry,teller,35,2,304
+jerry,tenant 1,2,1,9
+jerry,tenant 2,2,1,13
+jerry,testikov,16,2,160
+jerry,the drake,24,2,157
+jerry,the girls,14,1,90
+jerry,tia,111,11,1103
+jerry,ticket lady,38,1,465
+jerry,tierney,15,2,138
+jerry,tim,156,19,1422
+jerry,tina,12,1,85
+jerry,toby,40,4,494
+jerry,todd,27,3,235
+jerry,together,9,1,22
+jerry,tom,43,5,458
+jerry,tony,58,5,778
+jerry,tor,23,2,331
+jerry,tough guy,10,1,100
+jerry,truck driver,36,1,275
+jerry,tv,18,4,356
+jerry,tv elaine,2,1,17
+jerry,tv jerry,3,1,34
+jerry,umpire,4,1,12
+jerry,uncle leo,326,28,2953
+jerry,uncle mac,8,1,64
+jerry,usher,17,3,129
+jerry,valerie,53,7,463
+jerry,vandelay,10,2,151
+jerry,vanessa,101,6,1035
+jerry,vegetable lasagna,15,1,120
+jerry,vic,18,3,203
+jerry,victoria,9,1,113
+jerry,violin player,7,1,81
+jerry,vivian,10,1,95
+jerry,vogel,15,3,110
+jerry,waiter s06e07,13,1,82
+jerry,waiter s07e04,12,1,86
+jerry,waitress #1,2,1,33
+jerry,waitress #2,2,1,33
+jerry,waitress s01e04,3,1,22
+jerry,waitress s01e05,24,1,253
+jerry,waitress s04e06,38,6,364
+jerry,waitress s04e22,15,1,169
+jerry,waitress s05e17,6,1,35
+jerry,waitress s05e21,8,1,103
+jerry,waitress s06e03,26,3,222
+jerry,waitress s06e07,18,2,116
+jerry,waitress s06e22,8,1,37
+jerry,waitress s07e22,7,1,19
+jerry,waitress s08e09,10,1,136
+jerry,waitress s09e15,12,1,59
+jerry,waitress s09e17,6,1,38
+jerry,wendy,39,4,270
+jerry,wife,16,1,129
+jerry,wilhelm,3,1,9
+jerry,willie,41,3,347
+jerry,wilton,5,1,47
+jerry,winona,59,5,556
+jerry,woman 1,7,1,83
+jerry,woman 2,9,1,91
+jerry,woman at another table,5,1,41
+jerry,woman at next table,5,1,43
+jerry,woman at yet another table,5,1,39
+jerry,woman in the crowd,6,1,60
+jerry,woman s01e02,19,1,174
+jerry,woman s02e10,8,1,75
+jerry,woman s03e10,45,1,329
+jerry,woman s03e18,29,1,341
+jerry,woman s03e19,5,1,65
+jerry,woman s04e01,26,1,357
+jerry,woman s04e19,51,6,398
+jerry,woman s04e21,11,1,164
+jerry,woman s05e04,4,1,18
+jerry,woman s05e05,7,1,109
+jerry,woman s05e18,4,1,36
+jerry,woman s06e21,6,1,91
+jerry,woman s07e02,6,1,116
+jerry,woman s07e07,2,1,6
+jerry,woman s07e20,3,1,38
+jerry,woman s08e06,13,2,137
+jerry,woman s09e08,5,1,40
+jerry,woman s09e10,4,1,30
+jerry,woman s09e22,12,1,117
+jerry,womanewman,2,1,22
+jerry,worker s08e08,7,1,42
+jerry,wx,15,1,185
+jerry,wyck,7,1,107
+jerry,yelling guy,7,1,92
+jerry,young cop,9,2,63
+jerry,zach,5,1,17
+jerry's brain,jerry's penis,14,2,212
+jerry's brain,kramer,5,1,101
+jerry's brain,lena,9,1,114
+jerry's brain,pam,2,1,8
+jerry's message,kramer,11,1,81
+jerry's message,marlene,2,1,31
+jeter,williams,3,1,22
+jim,kramer,9,1,71
+jim,manager,15,1,129
+jim,mike,4,1,32
+jim,some guy,4,1,33
+jimmy,kramer,35,3,222
+jimmy,mel,8,1,63
+jimmy,paramedic,7,1,47
+joan,louise,6,1,22
+joanne,michael,11,2,85
+joanne,rita,3,1,31
+joanne,roxanne,3,1,21
+joanne,stan,4,1,28
+joanne,susie,4,1,54
+jodi,karen,13,1,83
+jodi,kramer,6,1,37
+jodi,tim,2,1,179
+joe,joe's wife,14,1,83
+joe,kramer,14,1,170
+joe,remy,20,2,96
+joe devola,pat hazell,2,1,13
+joe devola,tom,2,1,26
+joe divola,kramer,8,2,50
+joe divola,mrs reichman,6,1,85
+joe divola,reston,2,1,17
+joe's wife,remy,16,1,107
+joel,kramer,10,2,73
+joel,waitress s01e04,5,1,83
+joey,kids,2,1,13
+joey,kramer,30,6,257
+joey,mickey,3,1,4
+joey,mrs. anvino,3,1,5
+joey,mrs. zanfino,3,1,19
+joey,sansei,5,1,12
+john,kramer,11,2,103
+john,marla,4,1,29
+john,mel,3,1,17
+john,michael,6,1,50
+john,mother,3,1,21
+john,ping,4,1,24
+john,sid,3,1,32
+john,susan,3,1,16
+john,the drake,3,1,28
+john tyler,mr. steinbrenner,7,1,121
+johnny,kramer,9,1,52
+johnny,mickey,11,1,83
+johnny,tammy,6,1,46
+joy mayo,keri,4,1,25
+joy mayo,kramer,7,1,88
+joy mayo,puddy,9,2,53
+joy mayo,silvio,8,1,63
+judge s04e03,kramer,25,2,160
+judge s04e03,newman,35,2,503
+judge s04e03,police officer,3,1,104
+judge s06e13,kramer,4,1,36
+judge s06e13,newman,4,1,29
+judge s07e12,kramer,11,1,56
+judge s07e12,stan,5,1,49
+judge s07e12,sue ellen,4,1,34
+julianna,raymond,4,1,32
+julie,karen,6,2,26
+julie,kramer,10,3,55
+julie,mickey,6,2,35
+julie,mr. abbott,2,1,11
+julie,waiter s08e19,3,1,16
+julie,wx,7,1,52
+julio,kramer,3,1,52
+karen,kramer,61,10,561
+karen,mickey,6,2,31
+karen,philbin,4,1,29
+karen,waiter s08e19,3,1,14
+kathy lee,kramer,13,1,142
+kathy lee,regis,29,2,265
+katie,kramer,11,2,123
+katya,misha,6,1,48
+keith,kramer,20,2,241
+keith,newman,15,1,215
+kelly,kramer,6,1,46
+kelly,monk's manager,6,1,120
+kelly,simon,5,1,147
+ken,orderly,3,1,20
+ken,susan,9,1,35
+keri,puddy,4,1,11
+kevin,kramer,8,2,40
+kevin,newman,3,1,9
+kevin,vargus,4,1,17
+kid #2,kid s09e09,2,1,14
+kid s03e06,kramer,25,1,168
+kid s03e06,man #1 s03e06,5,1,13
+kid s03e06,mother,6,1,40
+kid s05e19,robin,9,1,51
+kid s06e10,kramer,9,1,101
+kid s06e10,mickey,8,1,91
+kid s06e10,store manager,8,1,65
+kid s07e13,kramer,2,1,12
+kids,kramer,3,1,9
+kids,mrs. zanfino,3,1,8
+kim,lotus,5,1,84
+kim,melissa,5,1,34
+kim,ruby,7,1,120
+kimbrough,receptionist,12,1,173
+kimbrough,stu,19,1,200
+klein,kramer,9,1,94
+klein,man s04e12,3,1,30
+klein,woman s04e12,3,1,49
+koren,kramer,4,1,67
+kramer,kristin,12,2,162
+kramer,kruger,20,3,270
+kramer,kurt,3,1,18
+kramer,lab technician,6,1,49
+kramer,lamar,27,7,383
+kramer,landis,7,1,28
+kramer,landlord,23,2,276
+kramer,lanette,18,2,135
+kramer,larry,4,1,21
+kramer,laura,2,1,10
+kramer,leapin' larry,2,1,18
+kramer,leland,8,1,124
+kramer,leslie,14,2,139
+kramer,librarian,21,2,236
+kramer,lloyd,83,8,773
+kramer,lois,2,1,31
+kramer,lou,11,1,103
+kramer,lt. martel,21,2,382
+kramer,maestro,51,5,441
+kramer,mailman,3,1,44
+kramer,malcolm,8,1,67
+kramer,man #1 s03e06,24,1,165
+kramer,man #1 s03e18,5,1,25
+kramer,man #1 s05e13,14,1,101
+kramer,man #1 s08e21,12,2,157
+kramer,man #2 s03e18,5,1,24
+kramer,man #2 s04e08,15,1,136
+kramer,man #2 s05e13,8,1,53
+kramer,man #2 s08e21,16,3,190
+kramer,man #3 s03e18,5,1,25
+kramer,man #3 s04e08,3,1,12
+kramer,man #3 s08e03,4,1,21
+kramer,man #3 s08e21,5,1,85
+kramer,man #4,5,1,23
+kramer,man 4,5,1,92
+kramer,man at the counter,3,1,9
+kramer,man behind the door,8,1,64
+kramer,man in audience,2,1,6
+kramer,man in car,9,1,98
+kramer,man in shower,8,1,57
+kramer,man on the street,2,1,3
+kramer,man s02e10,6,1,67
+kramer,man s03e20,7,1,39
+kramer,man s04e07,15,1,89
+kramer,man s04e13,11,1,88
+kramer,man s04e21,4,1,26
+kramer,man s05e06,3,1,37
+kramer,man s06e09,8,1,67
+kramer,man s06e15,4,1,55
+kramer,man s08e03,4,1,27
+kramer,man s08e09,2,1,13
+kramer,man s08e10,2,1,15
+kramer,man s08e21,17,2,150
+kramer,man s08e22,6,1,49
+kramer,man s09e08,6,2,37
+kramer,man s09e16,6,1,27
+kramer,man s09e20,8,1,71
+kramer,man s09e22,7,1,50
+kramer,man4,3,1,35
+kramer,manager,52,7,415
+kramer,manny,8,1,54
+kramer,marcelino,19,3,123
+kramer,marian,9,1,45
+kramer,marion,12,2,83
+kramer,marla,3,1,21
+kramer,marlene,11,1,96
+kramer,martin,2,1,7
+kramer,marty,9,1,73
+kramer,mary,11,2,180
+kramer,mary anne,24,3,245
+kramer,maryedith,33,2,173
+kramer,matthew,35,2,222
+kramer,maxwell,12,1,79
+kramer,mel,8,2,41
+kramer,meryl,29,2,208
+kramer,michael,21,3,216
+kramer,mickey,247,28,2268
+kramer,mike,88,9,773
+kramer,miranda,3,1,48
+kramer,mohel,16,2,562
+kramer,mollika,10,1,136
+kramer,mom,16,2,140
+kramer,mona,7,2,65
+kramer,morgan,5,1,61
+kramer,morty,211,21,2023
+kramer,mother,27,2,205
+kramer,mr oh,33,6,263
+kramer,mr star,2,1,49
+kramer,mr tanaka,4,1,10
+kramer,mr yamaguchi,14,2,91
+kramer,mr. abbott,3,1,13
+kramer,mr. arm,4,1,45
+kramer,mr. bevilacqua,3,1,52
+kramer,mr. graham,19,3,197
+kramer,mr. lippman,63,5,577
+kramer,mr. pitt,21,2,198
+kramer,mr. pless,17,1,168
+kramer,mr. ross,13,2,90
+kramer,mr. steinbrenner,4,1,64
+kramer,mrs allister,7,1,89
+kramer,mrs. anvino,10,2,82
+kramer,mrs. ross,16,3,160
+kramer,mrs. s,7,1,43
+kramer,mrs. zanfino,4,1,15
+kramer,mrs.arm,4,1,37
+kramer,music guy,4,1,39
+kramer,myra,4,1,14
+kramer,naked man,3,1,19
+kramer,nana,11,2,115
+kramer,naomi,21,6,213
+kramer,ned,13,1,106
+kramer,neighbor,7,1,42
+kramer,nemwan,7,1,75
+kramer,newman,877,97,8520
+kramer,news,2,1,80
+kramer,nick,13,2,183
+kramer,nina,27,4,253
+kramer,o'neill,20,1,205
+kramer,officer,23,3,185
+kramer,old guy,5,1,62
+kramer,old man,18,3,166
+kramer,old man #2,5,1,79
+kramer,old man #3,5,1,76
+kramer,old woman,3,1,37
+kramer,olive,22,3,169
+kramer,organizer,12,1,79
+kramer,other guy,9,2,73
+kramer,pam,28,3,227
+kramer,paramedic,6,1,29
+kramer,passerby,4,1,45
+kramer,patient,4,1,22
+kramer,patty,26,1,175
+kramer,peggy,5,1,57
+kramer,peterman,32,4,433
+kramer,phil,10,1,107
+kramer,philbin,3,1,22
+kramer,ping,30,3,227
+kramer,police,25,5,338
+kramer,police radio,2,1,32
+kramer,pop,13,2,147
+kramer,poppie,34,3,331
+kramer,postal employee,8,1,63
+kramer,postman,8,1,49
+kramer,postmaster general,17,1,234
+kramer,prisoner,12,1,112
+kramer,prostitute,2,1,16
+kramer,puddy,34,7,330
+kramer,puerto rican man,3,1,26
+kramer,rabbi,12,1,98
+kramer,rachel,29,3,241
+kramer,radio,14,2,205
+kramer,ralph,10,1,66
+kramer,ramon,20,2,131
+kramer,raquel,9,1,128
+kramer,ray,27,3,226
+kramer,reader,16,2,171
+kramer,receptionist,3,1,28
+kramer,regis,15,1,167
+kramer,reporters,2,1,12
+kramer,resident,14,1,117
+kramer,reston,36,3,234
+kramer,rick,67,9,815
+kramer,ricky,3,1,16
+kramer,robber,6,1,43
+kramer,roberta,2,1,15
+kramer,ron,35,2,350
+kramer,roy,18,4,150
+kramer,rudy,23,3,194
+kramer,rusty,7,1,75
+kramer,sales woman,26,2,207
+kramer,salesman,35,5,445
+kramer,sally,18,4,298
+kramer,sandi,2,1,11
+kramer,sansei,5,1,12
+kramer,sara,5,1,36
+kramer,secretary,17,4,112
+kramer,security guard,7,2,35
+kramer,seth,5,1,49
+kramer,sharon,11,2,101
+kramer,sheila,20,1,125
+kramer,shellbach,11,1,99
+kramer,shlomo,18,2,123
+kramer,sid,46,5,458
+kramer,sidra,22,2,189
+kramer,siena,10,1,86
+kramer,silvio,64,4,629
+kramer,sister roberta,13,3,89
+kramer,slippert pete,7,1,46
+kramer,slippery pete,22,2,144
+kramer,some guy,7,1,46
+kramer,sophie,10,1,121
+kramer,soup nazi,14,3,113
+kramer,spike,6,1,37
+kramer,stage hand,6,1,65
+kramer,stagehand,2,1,18
+kramer,stan,44,6,420
+kramer,stefanie,13,1,71
+kramer,steve,54,7,554
+kramer,store manager,7,1,94
+kramer,stranger,9,2,62
+kramer,stu,5,1,61
+kramer,student #1,6,1,77
+kramer,student #2,4,1,46
+kramer,studio guard,7,1,116
+kramer,subway announcement,4,1,61
+kramer,sue ellen,9,1,44
+kramer,supervisor,7,1,57
+kramer,susan,90,13,769
+kramer,susie,3,1,17
+kramer,tabachnick,22,3,329
+kramer,tammy,30,3,197
+kramer,tannoy,7,1,85
+kramer,tape player,5,1,39
+kramer,tape recorder,8,1,81
+kramer,tel,6,1,32
+kramer,teller,13,1,99
+kramer,the drake,2,1,20
+kramer,tia,33,4,348
+kramer,ticket man,11,1,97
+kramer,tierney,3,1,42
+kramer,tim,45,6,377
+kramer,tina,12,2,76
+kramer,toby,25,3,293
+kramer,todd,27,3,190
+kramer,together,8,1,40
+kramer,tom,12,2,152
+kramer,tony,22,2,132
+kramer,tor,18,2,244
+kramer,truck driver,17,1,109
+kramer,tv,30,5,487
+kramer,ukrainian,6,1,107
+kramer,umpire,3,1,40
+kramer,uncle leo,25,3,269
+kramer,usher,20,4,129
+kramer,vandelay,4,1,135
+kramer,vet,4,1,65
+kramer,vic,6,1,75
+kramer,violin player,4,1,57
+kramer,vivian,12,1,100
+kramer,vogel,5,1,46
+kramer,voight,3,1,21
+kramer,waiter s08e19,4,1,16
+kramer,waitress s03e22,18,1,156
+kramer,waitress s06e03,6,1,47
+kramer,walker #1,4,1,36
+kramer,walker #2,4,1,49
+kramer,walker #3,3,1,33
+kramer,wendy,13,1,79
+kramer,west,14,1,145
+kramer,wilhelm,25,4,263
+kramer,wilkie,3,1,30
+kramer,winona,4,1,38
+kramer,woman 1,6,1,30
+kramer,woman 2,8,1,38
+kramer,woman behind elaine,2,1,8
+kramer,woman s02e10,11,2,106
+kramer,woman s03e22,10,1,78
+kramer,woman s04e19,10,2,23
+kramer,woman s04e21,5,1,95
+kramer,woman s05e05,4,1,50
+kramer,woman s05e08,2,1,3
+kramer,woman s05e11,3,1,23
+kramer,woman s05e18,6,1,71
+kramer,woman s08e06,4,1,41
+kramer,woman s08e21,12,2,173
+kramer,woman s09e05,8,1,64
+kramer,woman s09e08,13,2,118
+kramer,worker s07e19,16,2,124
+kramer,worker s09e10,6,1,52
+kramer,zach,4,1,26
+kristin,uncle leo,13,1,103
+kruger,male worker,7,1,31
+kruger,phil,3,1,12
+kruger,sandy,3,1,13
+kruger,watkins,12,2,100
+lady 1,lady 2,8,2,65
+lamar,radio,2,1,26
+landis,landis's intercom,11,1,98
+landis,mr. pitt,3,1,35
+landis,sandy,10,1,82
+lanette,lyle,9,2,38
+lanette,man s08e22,5,1,12
+lanette,mr. graham,5,1,22
+larry,man #1 s01e03,4,1,89
+larry,man #2 s01e03,3,1,61
+laura,todd,7,1,51
+leader,sponser,6,1,41
+leapin' larry,woman s07e07,2,1,18
+lena,monica,2,1,11
+lena,susan,16,2,122
+leslie,mary,6,1,136
+leslie,tabachnick,9,2,28
+leslie,woman s02e10,9,2,67
+lew,ned,11,2,141
+librarian,reader,11,2,73
+lindsay,mrs. enright,7,1,71
+lloyd,maryedith,10,1,80
+lloyd,mr. lippman,6,1,48
+lloyd,patty,15,1,83
+lloyd,phone,4,1,49
+lois,mr. bevilacqua,5,2,53
+loretta,maura,8,1,38
+lotus,ruby,21,4,141
+lotus,sunny,3,1,12
+lou,peterman,3,1,53
+lt. coleman,lt. martel,10,1,71
+lt. martel,officer,29,2,413
+lt. martel,police radio,2,1,44
+lubeck,peterman,12,1,129
+machine,nick,5,1,59
+mackenzie,waiter s05e15,6,1,105
+maestro,stagehand,5,1,54
+maestro,waiter s07e03,6,1,114
+mailman,winona,5,1,68
+maitre d',morty,10,1,119
+malcolm,mr. graham,9,1,114
+male worker,watkins,3,1,14
+male worker,worker s09e18,2,1,9
+male worker,workers,3,1,27
+man #,man #1 s03e06,5,1,20
+man #1 s01e03,man #2 s01e03,3,1,46
+man #1 s03e06,mother,5,1,37
+man #1 s03e13,man #2 s03e13,7,1,164
+man #1 s03e18,man #2 s03e18,2,1,9
+man #1 s03e18,man #3 s03e18,2,1,10
+man #1 s03e18,man #4,2,1,8
+man #1 s03e18,tim,2,1,15
+man #1 s04e06,man #2 s04e06,5,1,53
+man #1 s04e06,waitress s04e06,4,1,39
+man #1 s04e09,man #2 s04e09,3,1,9
+man #1 s04e09,rita,10,2,70
+man #1 s04e09,susan,2,1,8
+man #1 s05e21,man #2 s05e21,2,1,16
+man #1 s05e21,victoria,2,1,18
+man #1 s08e21,man #2 s08e21,5,2,30
+man #1 s08e21,man #3 s08e21,3,1,18
+man #1 s08e21,man 4,3,1,25
+man #1 s08e21,mary anne,4,1,33
+man #1 s08e21,mr. lippman,5,1,46
+man #1 s08e21,peterman,3,1,19
+man #1 s08e21,woman s08e21,6,2,56
+man #2 s03e06,man #3 s03e06,2,1,5
+man #2 s03e18,man #3 s03e18,2,1,9
+man #2 s03e18,man #4,2,1,7
+man #2 s03e18,tim,2,1,14
+man #2 s04e06,waitress s04e06,3,1,16
+man #2 s04e09,rita,9,1,60
+man #2 s04e09,susan,3,1,13
+man #2 s05e21,victoria,2,1,16
+man #2 s08e21,man #3 s08e21,2,1,5
+man #2 s08e21,man 4,2,1,12
+man #2 s08e21,man s08e21,4,2,43
+man #2 s08e21,mary anne,4,1,36
+man #2 s08e21,mr. lippman,5,1,49
+man #2 s08e21,peterman,3,1,22
+man #2 s08e21,tape player,2,1,10
+man #2 s08e21,woman s08e21,5,2,46
+man #3 s03e18,man #4,2,1,8
+man #3 s03e18,tim,2,1,15
+man #3 s04e08,mr reichman,5,1,56
+man #3 s04e08,mrs reichman,2,1,19
+man #3 s04e08,susan,12,2,76
+man #3 s08e21,man 4,2,1,11
+man #3 s08e21,woman s08e21,2,1,22
+man #4,tim,2,1,13
+man 4,woman s08e21,2,1,29
+man in audience,newman,2,1,7
+man in car,mrs. enright,2,1,10
+man in neighboring bed,man s02e08,2,1,3
+man in the crowd,woman in the crowd,3,1,18
+man on raft,russell,2,1,46
+man s02e06,rava,9,1,94
+man s02e08,nurse 1,4,1,9
+man s02e10,tabachnick,5,1,35
+man s03e20,west,11,1,124
+man s04e01,police,3,1,9
+man s04e01,woman s04e01,4,1,13
+man s04e12,woman s04e12,4,1,71
+man s04e13,rochelle,5,1,57
+man s04e13,woman s04e13,4,1,16
+man s04e21,woman s04e21,3,1,77
+man s04e22,mr. visaki,7,1,57
+man s04e22,paul,2,1,13
+man s05e02,photographer,13,2,229
+man s05e02,woman s05e02,9,2,193
+man s05e21,secretary,3,1,15
+man s05e21,tina,11,1,73
+man s06e04,noreen,2,1,9
+man s06e21,mr. pitt,4,1,35
+man s06e21,woman s06e21,4,1,31
+man s07e02,woman s07e02,2,1,24
+man s07e07,peterman,11,1,97
+man s07e15,waitress s07e15,4,1,33
+man s08e08,roger,4,1,55
+man s08e08,seth,6,1,27
+man s08e21,tape player,2,1,11
+man s08e21,waitress s08e21,3,1,32
+man s08e22,mr. graham,2,1,18
+man s09e01,thomassoulo,3,1,6
+man s09e01,woman s09e01,5,1,22
+man s09e11,mechanic,3,1,11
+man s09e11,saleswoman,2,1,13
+man s09e11,willie,17,2,101
+man s09e11,willie sr,5,1,35
+man s09e11,woman s09e11,5,1,40
+man s09e16,mickey,4,1,27
+man s09e20,police officer,4,1,28
+man s09e20,pregnant woman,3,1,15
+man s09e22,woman s09e22,4,1,44
+manager,mike,13,1,103
+manager,music guy,3,1,27
+manager,some guy,13,1,104
+manager,worker s09e10,4,1,30
+manya,morty,10,1,66
+manya,uncle leo,13,1,132
+margaret,newman,13,1,95
+margaret,stationer,8,1,110
+marian,marion,5,1,31
+marla,mel,3,1,16
+marla,michael,6,1,49
+marla,mother,3,1,20
+marla,ping,7,2,38
+marla,sid,3,1,31
+marla,stacey,12,1,90
+marla,susan,3,1,15
+marla,the drake,3,1,27
+martin,newman,4,1,27
+marty,meryl,16,2,156
+marty,paula,4,1,26
+marty,uncle leo,12,1,106
+mary,pete,5,1,44
+mary,tabachnick,7,1,140
+mary,woman s02e10,6,1,140
+mary anne,mr. lippman,7,1,71
+mary anne,mr. steinbrenner,4,1,68
+mary anne,peterman,5,1,44
+mary anne,woman s08e21,5,1,45
+maryedith,matthew,24,2,141
+maryedith,mike,23,1,203
+maryedith,newman,19,1,125
+maryedith,sheila,13,1,80
+maryedith,sid,11,1,94
+maryedith,truck driver,10,1,64
+matthew,mike,26,1,247
+matthew,newman,22,1,169
+matthew,sheila,16,1,124
+matthew,sid,14,1,138
+matthew,truck driver,13,1,108
+mcadam,reilly,6,2,54
+mechanic,saleswoman,3,1,12
+mechanic,willie,5,1,22
+mel,michael,5,1,37
+mel,mother,2,1,8
+mel,mrs. sanger,7,1,79
+mel,ping,3,1,11
+mel,sid,2,1,19
+mel,susan,2,1,3
+mel,the drake,2,1,15
+member 1,steven,5,1,42
+member 2,morty,5,1,25
+member 2,steven,4,1,49
+meryl,morty,14,1,93
+meryl,waitress s05e17,5,1,20
+michael,mother,5,1,41
+michael,other co-workers in hallway,3,1,23
+michael,ping,6,1,44
+michael,police,4,1,32
+michael,rachel,18,2,146
+michael,rita,10,2,69
+michael,robin,12,2,69
+michael,russell,4,1,35
+michael,sandi,5,1,50
+michael,sid,5,1,52
+michael,stu,5,1,60
+michael,susan,5,1,36
+michael,the drake,5,1,48
+michael,toby,4,1,30
+michael,tom,6,1,44
+michael,wilton,5,1,49
+michael,yelling guy,3,1,24
+mickey,mom,2,1,10
+mickey,mrs. anvino,2,1,3
+mickey,ned,9,1,98
+mickey,sophie,6,1,94
+mickey,stage hand,8,1,45
+mickey,store manager,6,1,84
+mickey,student #2,4,1,47
+mickey,susan,6,1,54
+mickey,tammy,39,3,326
+mickey,waiter s08e19,3,1,14
+mike,newman,26,1,246
+mike,peterman,4,1,81
+mike,secretary,8,1,94
+mike,sheila,20,1,201
+mike,sid,18,1,215
+mike,some guy,2,1,7
+mike,truck driver,17,1,185
+minkler,mooney,11,1,90
+model #1,model #2,2,1,4
+model #1,model #3,2,1,10
+model #2,model #3,2,1,10
+mohel,myra,4,1,42
+mohel,stan,6,1,64
+mollika,steve,7,1,99
+molly,russell,10,1,60
+mom,pop,7,1,53
+mom,todd,13,1,71
+mona,susan,15,1,82
+monica,susan,2,1,32
+monk's manager,simon,5,1,139
+morgan,wilhelm,6,2,83
+morty,mrs. choate,22,4,192
+morty,nana,4,1,50
+morty,nephew,6,2,84
+morty,newman,11,1,135
+morty,nurse,12,3,136
+morty,old man,13,2,115
+morty,old man #2,6,1,37
+morty,old man #3,6,1,34
+morty,peterman,21,3,247
+morty,photographer,4,1,26
+morty,rachel,16,1,92
+morty,ralph,19,3,125
+morty,receptionist,10,1,165
+morty,rudy,9,1,85
+morty,sal bass,3,1,23
+morty,sandi,4,1,14
+morty,sid,7,1,70
+morty,sidra,2,1,4
+morty,stella,11,2,84
+morty,super,4,1,41
+morty,tia,2,1,8
+morty,uncle leo,62,10,715
+morty,woman s05e18,7,1,71
+mother,ping,3,1,15
+mother,sid,2,1,23
+mother,susan,2,1,7
+mother,the drake,2,1,19
+mr burns,mr star,6,1,53
+mr burns,ms. jordan,2,1,38
+mr burns,secretary,2,1,26
+mr oh,mr tanaka,2,1,2
+mr oh,mr yamaguchi,8,2,23
+mr reichman,mrs reichman,5,1,59
+mr star,ms. jordan,6,1,53
+mr star,secretary,6,1,41
+mr tanaka,mr yamaguchi,2,1,3
+mr. arm,mrs.arm,11,4,84
+mr. arm,nina,5,1,28
+mr. cross,ms. baines,2,1,13
+mr. cross,wyck,3,1,27
+mr. cushman,mr. steinbrenner,7,1,77
+mr. lippman,newman,4,1,45
+mr. lippman,patty,17,1,97
+mr. lippman,peterman,6,1,57
+mr. lippman,rebecca,10,1,128
+mr. lippman,reporter,5,1,57
+mr. lippman,secretary,2,1,43
+mr. lippman,spike,4,1,61
+mr. lippman,testikov,32,2,170
+mr. lippman,woman s08e21,6,1,58
+mr. pitt,soup nazi,4,1,20
+mr. pitt,tv,2,1,60
+mr. pitt,woman s06e21,4,1,34
+mr. pitt,womanewman,2,1,32
+mr. pless,siena,9,1,106
+mr. ross,mrs. ross,95,17,852
+mr. ross,rickey,3,1,45
+mr. ross,salesman,3,1,26
+mr. ross,sara,3,1,41
+mr. ross,sidra,4,1,13
+mr. ross,susan,54,6,485
+mr. ross,vandelay,2,1,5
+mr. ross,wilcox,3,1,22
+mr. s,mrs. s,7,1,61
+mr. sanger,penny,11,1,71
+mr. sanger,peterman,2,1,12
+mr. steinbrenner,seconrad,8,2,108
+mr. steinbrenner,secretary,3,1,88
+mr. steinbrenner,vandelay,4,1,49
+mr. steinbrenner,wilhelm,40,3,440
+mr. tuttle,secretary,5,1,85
+mr. visaki,paul,7,1,56
+mrs hamilton,valerie,11,2,87
+mrs wilhelm,wilhelm,6,1,43
+mrs. c,nurse,4,1,107
+mrs. choate,ralph,8,2,57
+mrs. payton,poppie,8,1,80
+mrs. peterman,peterman,6,1,18
+mrs. ross,raymond,4,1,65
+mrs. ross,rickey,3,1,20
+mrs. ross,ricky,5,1,44
+mrs. ross,sara,8,2,64
+mrs. ross,sidra,4,1,22
+mrs. ross,susan,45,7,327
+mrs. ross,vandelay,2,1,14
+mrs. ross,wilcox,3,1,31
+mrs. sanger,susan,12,3,73
+ms. baines,wyck,3,1,24
+ms. jordan,secretary,2,1,26
+myra,stan,9,2,73
+nana,street tough,4,1,21
+nana,uncle leo,16,2,118
+nemwan,newman,6,1,56
+nemwan,rusty,2,1,20
+nephew,uncle leo,3,1,67
+newman,owner,12,2,166
+newman,pam,14,1,80
+newman,passerby,2,1,14
+newman,postal employee,7,1,107
+newman,postman,7,1,58
+newman,ralph,6,1,40
+newman,ramon,14,2,75
+newman,ron,33,2,319
+newman,rusty,6,1,56
+newman,salesman,7,1,68
+newman,seth,9,1,47
+newman,sheila,16,1,123
+newman,sid,14,1,137
+newman,silvio,14,1,114
+newman,soup nazi,3,1,11
+newman,supervisor,6,1,101
+newman,susie,9,2,113
+newman,tim,17,2,152
+newman,truck driver,13,1,107
+newman,ukrainian,5,1,54
+newman,woman s05e04,3,1,12
+newman,woman s09e08,9,2,52
+newman,zach,6,1,35
+nikki,police officer,8,1,65
+nikki,todd,12,2,83
+nina,pinter,5,2,51
+nina,sue ellen,12,2,164
+nina,waitress s06e11,5,1,32
+nina,woman s06e11,3,1,24
+noel,old man,7,1,68
+noel,steve,8,1,68
+nurse,shelly,4,1,62
+officer,robber,8,1,75
+officer,stranger,6,1,56
+officer,vogel,7,1,78
+old guy,other guy,5,1,55
+old guy,roberta,5,1,55
+old man,old man #2,5,1,41
+old man,old man #3,5,1,38
+old man,steve,3,1,36
+old man #2,old man #3,2,1,9
+older man,older woman,6,2,26
+older man,pregnant woman,5,2,31
+older man,priest,6,2,51
+older woman,pregnant woman,4,2,14
+older woman,priest,2,1,12
+other co-workers in hallway,toby,3,1,17
+other guy,roberta,8,2,58
+other guy,steve,10,2,66
+other security guard,security guard,15,1,75
+pam,roy,5,1,59
+pamela,roger,7,1,44
+pamela,vanessa,17,1,108
+park guy#1,park guy#2,5,1,15
+parry,sara,7,1,34
+passenger,puddy,11,2,118
+passenger,woman s09e01,3,1,14
+passenger #1,passenger #2,6,1,72
+passenger #1,passenger #3,6,1,63
+passenger #1,skycap,10,1,84
+passenger #1,tia,3,1,39
+passenger #1,ticket lady,5,1,78
+passenger #2,passenger #3,4,1,43
+passenger 2,puddy,6,1,25
+passenger 2,vegetable lasagna,3,1,13
+pat hazell,tom,2,1,33
+patti,steve,7,1,94
+paula,shelly,7,1,55
+paula,teacher,5,1,28
+peggy,peterman,9,1,79
+peggy,puddy,11,2,112
+peggy,walter,3,1,20
+penny,peterman,11,1,69
+pensky,secretary,11,2,129
+peterman,secretary,10,2,151
+peterman,waiter s09e17,2,1,56
+peterman,woman s08e21,4,1,31
+peterman,zach,2,1,36
+phil,sandy,2,1,3
+photographer,woman s05e02,10,2,112
+ping,sid,3,1,26
+ping,susan,3,1,10
+ping,the drake,3,1,22
+pinter,sue ellen,11,2,123
+poker player #1,poker player #2,4,1,18
+poker player #1,poker player #3,4,1,16
+poker player #1,poker player #4,3,1,12
+poker player #2,poker player #3,4,1,14
+poker player #2,poker player #4,3,1,10
+poker player #3,poker player #4,3,1,8
+police,prostitute,2,1,12
+police,rachel,9,1,74
+police,tv,3,1,65
+police,woman s04e01,5,1,20
+police officer,pregnant woman,3,1,21
+poppie,woman at another table,6,1,69
+poppie,woman at next table,6,1,71
+poppie,woman at yet another table,6,1,67
+postal employee,supervisor,3,1,22
+postal worker,postal worker danny,7,1,26
+postal worker danny,uncle leo,3,1,38
+pregnant woman,priest,7,2,44
+prisoner 1,prisoner 2,2,1,4
+prisoner 1,prisoner 3,3,1,13
+prisoner 2,prisoner 3,3,1,13
+puddy,sidra,2,1,7
+puddy,silvio,7,1,58
+puddy,vegetable lasagna,7,1,34
+puddy,woman s09e01,7,1,64
+rabbi,usher,11,1,116
+rava,ray,11,4,148
+raymond,receptionist,8,1,39
+raymond,ricky,3,1,33
+raymond,sara,3,1,37
+raymond,susan,8,1,89
+receptionist,russell,2,1,12
+receptionist,stu,9,1,31
+receptionist,susan,3,1,10
+receptionist,wendy,6,1,38
+rick,salesman,3,1,39
+rickey,sara,2,1,10
+rickey,susan,3,1,53
+ricky,ricky's boss,2,1,21
+ricky,sara,4,1,16
+ricky,susan,9,1,68
+rita,roxanne,10,2,92
+rita,russell,5,1,34
+rita,sandi,4,1,26
+rita,stan,3,1,23
+rita,stu,4,1,36
+rita,susan,8,1,59
+rita,susie,3,1,49
+rita,tom,7,1,43
+rita,wilton,4,1,25
+rita,yelling guy,4,1,23
+rivera,wells,16,2,431
+robber,stranger,4,1,23
+robber,vogel,5,1,45
+roberta,steve,4,1,22
+robin,robin's mother,6,2,69
+robin,ronnie,6,2,29
+roger,vanessa,14,1,84
+ron,sheila,13,3,95
+ron,tim,12,1,97
+ronnie,toby,5,1,51
+roxanne,stan,3,1,13
+roxanne,susie,3,1,39
+ruby,sunny,6,1,42
+russel,stu,4,1,65
+russell,sandi,11,1,180
+russell,stu,5,1,43
+russell,susan,15,2,85
+russell,tom,15,2,276
+russell,waiter s04e15,5,1,33
+russell,yelling guy,3,1,23
+ruthie,waitress #1,2,1,2
+ruthie,waitress #2,2,1,2
+ruthie,willie,2,1,6
+sal bass,sandi,5,1,31
+sal bass,sidra,3,1,21
+sal bass,tia,3,1,25
+salesman,susan,11,1,54
+saleswoman,willie,4,1,24
+sam,therapist,2,1,15
+sandi,sidra,4,1,12
+sandi,stu,4,1,52
+sandi,tia,4,1,16
+sandi,tom,17,2,174
+sandi,wilton,4,1,41
+sandos brother 1,susan,6,1,54
+sandos brother 2,susan,7,1,27
+sara,susan,12,2,121
+sasha,waiter s05e11,6,1,59
+secretary,tina,10,1,72
+sheila,sid,8,1,92
+sheila,soup nazi,5,1,45
+sheila,susan,7,1,24
+sheila,truck driver,7,1,62
+shlomo,slippert pete,8,1,58
+shlomo,slippery pete,22,2,153
+sid,susan,2,1,18
+sid,the drake,2,1,30
+sid,truck driver,5,1,76
+sidra,tia,2,1,6
+sidra,vandelay,4,1,16
+sidra,wilcox,5,1,33
+skycap,tia,9,1,63
+skycap,ticket lady,11,1,102
+slippert pete,slippery pete,10,1,70
+soup nazi,woman s07e06,3,1,12
+sponer,sponsor,7,1,65
+stage hand,tammy,5,1,53
+stan,sue ellen,3,1,37
+stan,susie,4,1,46
+stan,woman s05e05,3,1,11
+stella,uncle leo,10,2,107
+steven,student 1,6,1,39
+steven,student 2,4,1,30
+steven,student 3,4,1,25
+steven,wyck,11,1,122
+stock boy,vanessa,7,1,57
+stranger,vogel,3,1,26
+stu,susan,2,1,26
+stu,wilton,4,1,51
+student 1,student 2,4,1,31
+student 1,student 3,4,1,26
+student 2,student 3,2,1,17
+subway announcement,violin player,2,1,8
+sue ellen,woman s08e09,4,1,37
+susan,tel,7,1,36
+susan,the drake,2,1,14
+susan,usher,4,1,62
+susan,waitress s07e17,4,1,13
+tabachnick,woman s02e10,3,1,14
+tartabull,tartbull,9,1,37
+tenant 1,tenant 2,2,1,20
+the girls,winona,4,1,17
+tia,ticket lady,4,1,57
+tim,woman s03e18,2,1,11
+tom,yelling guy,5,1,32
+tv,womanewman,2,1,52
+tv elaine,tv jerry,3,1,31
+uncle leo,zach,3,1,22
+usha,zubin,8,1,88
+vandelay,vogel,7,1,23
+vandelay,wilcox,3,1,25
+victoria,waitress s05e21,3,1,24
+vincent,woman s08e13,10,1,63
+waiter s09e17,zach,2,1,28
+waitress #1,waitress #2,2,1,2
+waitress #1,willie,2,1,6
+waitress #2,willie,2,1,6
+waitress s06e11,woman s06e11,4,1,28
+walker #1,walker #2,4,1,31
+walker #1,walker #3,3,1,15
+walker #2,walker #3,3,1,28
+willie,willie sr,14,1,81
+willie,woman s09e11,14,1,86
+willie sr,woman s09e11,6,1,43
+woman #1,woman #2,5,1,32
+woman 1,woman 2,4,1,14
+woman at another table,woman at next table,2,1,12
+woman at another table,woman at yet another table,2,1,8
+woman at next table,woman at yet another table,2,1,10
+woman s03e13,women,12,1,135
+woman s07e20,young cop,2,1,16

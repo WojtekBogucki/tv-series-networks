@@ -6,4 +6,3 @@ if __name__ == "__main__":
     run_seinfeld_scrapper()
     run_tbbt_scrapper()
     run_friends_scrapper()
-

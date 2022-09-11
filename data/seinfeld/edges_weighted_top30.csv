@@ -1,0 +1,144 @@
+speaker1,speaker2,line_count,scene_count,word_count
+bania,elaine,37,6,306
+bania,frank,5,1,56
+bania,george,52,5,398
+bania,jerry,193,22,1728
+bania,kramer,77,7,632
+carol,elaine,75,11,601
+carol,george,70,10,818
+carol,jerry,90,9,824
+carol,kramer,28,5,263
+carol,mike,7,1,83
+clerk,elaine,88,6,723
+clerk,george,154,15,1586
+clerk,jerry,63,6,731
+clerk,kramer,62,7,481
+clerk,susan,37,4,294
+elaine,estelle,39,5,325
+elaine,frank,120,16,1447
+elaine,george,5630,554,54901
+elaine,helen,223,23,1538
+elaine,hoyt,12,2,74
+elaine,jack,64,5,459
+elaine,jackie,17,1,271
+elaine,jerry,11451,1120,104459
+elaine,joel,75,8,708
+elaine,kramer,4149,464,39513
+elaine,lloyd,74,7,711
+elaine,mickey,28,3,266
+elaine,mike,99,6,1090
+elaine,morty,176,23,1443
+elaine,mr. lippman,215,19,2038
+elaine,mr. pitt,174,20,1513
+elaine,newman,214,25,2621
+elaine,peterman,337,48,4207
+elaine,puddy,300,36,2330
+elaine,russell,34,4,479
+elaine,susan,137,17,1033
+elaine,tim,67,8,506
+elaine,uncle leo,55,8,538
+estelle,frank,510,68,4731
+estelle,george,538,63,4598
+estelle,helen,5,1,33
+estelle,jerry,100,14,790
+estelle,kramer,113,15,914
+estelle,lloyd,41,4,335
+estelle,morty,9,1,61
+estelle,mr. lippman,10,1,65
+estelle,mr. steinbrenner,8,1,104
+estelle,susan,25,2,122
+frank,george,612,74,5826
+frank,helen,9,2,109
+frank,hoyt,4,1,31
+frank,jerry,126,17,1211
+frank,kramer,258,30,2391
+frank,lloyd,39,3,463
+frank,morty,26,3,253
+frank,mr. lippman,16,1,187
+frank,mr. steinbrenner,10,2,179
+frank,puddy,2,1,13
+frank,susan,32,3,225
+frank,wilhelm,2,1,12
+george,helen,78,13,642
+george,hoyt,36,4,455
+george,jerry,14028,1267,138884
+george,karen,90,7,908
+george,kramer,4537,483,47090
+george,lloyd,94,8,831
+george,mickey,24,3,270
+george,mike,151,8,1687
+george,morty,101,14,881
+george,mr. lippman,67,4,632
+george,mr. steinbrenner,150,23,2841
+george,newman,198,17,1961
+george,peterman,55,10,620
+george,puddy,56,10,472
+george,russell,121,12,1503
+george,susan,806,86,7579
+george,tim,111,13,1237
+george,uncle leo,55,6,445
+george,wilhelm,127,20,1367
+helen,jack,142,9,1153
+helen,jerry,953,91,7569
+helen,kramer,168,16,1560
+helen,morty,830,102,6877
+helen,newman,17,2,173
+helen,uncle leo,65,11,607
+hoyt,jerry,35,4,375
+hoyt,mr. pitt,6,1,34
+hoyt,mr. steinbrenner,6,1,69
+hoyt,peterman,14,1,88
+jack,jerry,218,14,1813
+jack,kramer,14,2,76
+jack,morty,201,11,1689
+jack,puddy,6,1,33
+jack,uncle leo,8,1,161
+jackie,jerry,19,1,295
+jackie,kramer,128,10,1405
+jerry,joel,72,6,785
+jerry,karen,26,3,193
+jerry,kramer,9634,971,93125
+jerry,lloyd,114,9,815
+jerry,mickey,81,9,848
+jerry,mike,133,10,1151
+jerry,morty,972,93,8297
+jerry,mr. lippman,61,2,520
+jerry,mr. pitt,24,4,146
+jerry,mr. steinbrenner,21,2,210
+jerry,newman,778,81,7242
+jerry,peterman,21,3,233
+jerry,puddy,109,14,873
+jerry,russell,89,8,838
+jerry,susan,270,35,2327
+jerry,tim,156,19,1422
+jerry,uncle leo,326,28,2953
+jerry,wilhelm,3,1,9
+joel,kramer,10,2,73
+karen,kramer,61,10,561
+karen,mickey,6,2,31
+kramer,lloyd,83,8,773
+kramer,mickey,247,28,2268
+kramer,mike,88,9,773
+kramer,morty,211,21,2023
+kramer,mr. lippman,63,5,577
+kramer,mr. pitt,21,2,198
+kramer,mr. steinbrenner,4,1,64
+kramer,newman,877,97,8520
+kramer,peterman,32,4,433
+kramer,puddy,34,7,330
+kramer,susan,90,13,769
+kramer,tim,45,6,377
+kramer,uncle leo,25,3,269
+kramer,wilhelm,25,4,263
+lloyd,mr. lippman,6,1,48
+mickey,susan,6,1,54
+mike,newman,26,1,246
+mike,peterman,4,1,81
+morty,newman,11,1,135
+morty,peterman,21,3,247
+morty,uncle leo,62,10,715
+mr. lippman,newman,4,1,45
+mr. lippman,peterman,6,1,57
+mr. steinbrenner,wilhelm,40,3,440
+newman,tim,17,2,152
+russell,susan,15,2,85
