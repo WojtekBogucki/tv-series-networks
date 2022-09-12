@@ -1,4 +1,4 @@
-from EDA.processing import *
+from processing.processing import *
 import logging
 
 logger = logging.getLogger(__name__)

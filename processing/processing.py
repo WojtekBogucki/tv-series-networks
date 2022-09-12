@@ -117,7 +117,7 @@ def get_speaker_network_edges(dataset):
                                                               word_count=("word_count", "sum")).reset_index()
 
 
-def save_seasons(dataset, count=20, path="../data"):
+def save_seasons(dataset, count=20, path="data"):
     seasons = dataset.season.unique()
     for season in seasons:
         raw_season = dataset[dataset.season == season]
@@ -128,7 +128,7 @@ def save_seasons(dataset, count=20, path="../data"):
         print(f"Season {season} saved")
 
 
-def save_episodes(dataset, count=1, path="../data"):
+def save_episodes(dataset, count=1, path="data"):
     seasons = dataset.season.unique()
     for season in seasons:
         raw_season = dataset[dataset.season == season]
@@ -146,7 +146,7 @@ def save_episodes(dataset, count=1, path="../data"):
             print(f"Season {season} episode {episode} saved")
 
 
-def save_merged_episodes(path: str = "../data") -> None:
+def save_merged_episodes(path: str = "data") -> None:
     seasons = [os.path.join(path, dirname) for dirname in os.listdir(path) if
                os.path.isdir(os.path.join(path, dirname)) and dirname.startswith("season")]
     df = pd.DataFrame(columns=["speaker1", "speaker2", "line_count", "word_count", "scene_count", "season", "episode"])
@@ -183,7 +183,7 @@ def get_valid_filename(s: str) -> str:
 
 
 def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
-    os.makedirs(f"../figures/{show_name}/eda", exist_ok=True)
+    os.makedirs(f"figures/{show_name}/eda", exist_ok=True)
     lines_by_season = data.groupby('season')['line'].count()
     episodes_by_season = data.groupby('season')['episode'].nunique()
     lines_per_episode_by_season = lines_by_season / episodes_by_season
@@ -203,27 +203,27 @@ def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
     fig, ax = plt.subplots()
     lines_by_season.plot.bar(title="Number of lines by season", ylabel="Number of lines", ax=ax)
     plt.xticks(rotation=0)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_lines_by_season.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_lines_by_season.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
     lines_per_episode_by_season.plot.bar(title="Average number of lines per episode by season",
                                          ylabel="Average number of lines per episode", ax=ax)
     plt.xticks(rotation=0)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_lines_per_episode_by_season.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_lines_per_episode_by_season.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
     scenes_by_season.plot.bar(title="Number of scenes by season", ylabel="Number of scenes", ax=ax)
     plt.xticks(rotation=0)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_by_season.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_scenes_by_season.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
     scenes_per_episode_by_season.plot.bar(title="Average number of scenes per episode by season",
                                           ylabel="Average number of scenes per episode", ax=ax)
     plt.xticks(rotation=0)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_per_episode_by_season.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_scenes_per_episode_by_season.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
@@ -231,14 +231,14 @@ def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
     plt.title("Number of scenes")
     plt.ylabel("Number of scenes per episode")
     plt.xticks(rotation=0)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_scenes_per_episode_boxplot.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_scenes_per_episode_boxplot.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
     lines_by_speaker[:15].plot(kind="bar", stacked=True, colormap="inferno", title="Lines spoken by character",
                                ylabel="Number of lines", figsize=(12, 8), ax=ax)
     plt.xticks(rotation=45)
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_speakers_by_season.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_speakers_by_season.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
@@ -246,7 +246,7 @@ def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
                              ylabel="Number of episodes", figsize=(12, 8), ax=ax)
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_episodes_by_speaker.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_episodes_by_speaker.png")
     plt.close(fig)
 
     fig, ax = plt.subplots()
@@ -254,5 +254,5 @@ def visualize_eda(data: pd.DataFrame, show_name: str) -> None:
                                        ylabel="Number of characters", figsize=(12, 8), ax=ax)
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(f"../figures/{show_name}/eda/{show_name}_episodes_by_number_of_speaker.png")
+    plt.savefig(f"figures/{show_name}/eda/{show_name}_episodes_by_number_of_speaker.png")
     plt.close(fig)

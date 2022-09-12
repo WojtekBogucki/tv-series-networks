@@ -24,4 +24,4 @@ fig.update_layout({
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
 # fig.show()
-fig.write_image("../figures/timeline.png", scale=2)
+fig.write_image("figures/timeline.png", scale=2)

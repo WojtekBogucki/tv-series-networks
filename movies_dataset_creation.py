@@ -1,7 +1,7 @@
 import pandas as pd
 import ast
 import re
-from EDA.processing import get_valid_filename
+from processing.processing import get_valid_filename
 
 if __name__ == "__main__":
     movies = pd.read_csv("data/movie_dialog_corpus/movie_titles_metadata.txt",
