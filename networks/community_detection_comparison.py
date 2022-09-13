@@ -1,7 +1,7 @@
 from networks.utils import *
 import pandas as pd
 import os
-from timeit import timeit, repeat
+from timeit import repeat
 import numpy as np
 
 # calculate modularity for each community detection method
@@ -145,4 +145,4 @@ times_df.to_csv("../data/communities/times.csv")
 
 
 times_df = pd.read_csv("../data/communities/times.csv", index_col=0)
-(times_df/10).round(3)
+print((times_df/10).round(3))

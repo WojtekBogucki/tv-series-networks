@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-
 from utils import *
 import os
 import matplotlib
@@ -48,8 +46,6 @@ def get_movies_networks(selected: list, path_dir: str = "../data/movies") -> lis
 movies_net = get_movies_networks(selected_movies)
 movie_stats = get_movie_network_stats(movies_net, selected_movies)
 
-
-# create_similarity_matrix(movie_stats, selected_movies, filename="comparison/movies")
 
 # load serials
 episode_stats = pd.DataFrame()
@@ -113,13 +109,6 @@ most_unique.index = most_unique.index.str.split("_").map(lambda x: " ".join(e.ca
 
 matplotlib.use('Tkagg')
 
-# show_name = "seinfeld"
-# net_episodes = get_episode_networks_limit(f"../data/{show_name}/", 5)
-# latest_file = [f for f in os.listdir(f"../data/{show_name}/") if f.startswith(f"{show_name}_lines_v")][-1]
-# episode_dict = get_episode_dict(f"../data/{show_name}/{latest_file}")
-#
-# draw_interaction_network_communities(net_episodes[episode_dict["s09e11"]], "line_count", method="LD", seed=777, filename=f"{show_name}/episode_networks/s09e11_line_LD_limit5")
-
 # PCA
 pca = PCA(n_components=2)
 print(norm_all_stats.isna().sum())
@@ -138,11 +127,6 @@ print(pca.explained_variance_ratio_)
 show_idx = dict()
 for show_name in ["the_office", "seinfeld", "tbbt", "friends"]:
     show_idx[show_name] = norm_all_stats.reset_index()[norm_all_stats.index.str.startswith(show_name)].index.values
-
-
-# np.argwhere(norm_all_stats.index.str.startswith("seinfeld"))
-# np.argwhere(norm_all_stats.index.str.startswith("the_matrix"))
-# norm_all_stats.index[np.argwhere((all_stats_pca[:,0]>6) & (all_stats_pca[:,1]>7))]
 
 show_names = {
     "the_office": "The Office",

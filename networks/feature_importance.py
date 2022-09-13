@@ -1,8 +1,6 @@
 from networks.utils import *
 import os
-import matplotlib
 import numpy as np
-import random
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.inspection import permutation_importance
@@ -51,8 +49,8 @@ rf_random = RandomizedSearchCV(estimator=rf_base, param_distributions=random_gri
 
 rf_random.fit(X_train, y_train)
 
-rf_random.best_params_
-rf_random.best_score_
+print("Params: ", rf_random.best_params_)
+print("Score: ", rf_random.best_score_)
 rf_best = rf_random.best_estimator_
 
 rf_best.score(X_train, y_train)

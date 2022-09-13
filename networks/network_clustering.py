@@ -1,13 +1,11 @@
-import pandas as pd
-
 from networks.utils import *
 import os
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram
 from sklearn.metrics.cluster import contingency_matrix
-import matplotlib
+
 import numpy as np
-import random
+
 pd.options.display.max_columns = 30
 
 
