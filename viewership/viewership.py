@@ -1,6 +1,9 @@
+import logging
 import pandas as pd
 import numpy as np
 
+logger = logging.getLogger(__name__)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 def merge_episodes(df, show, season, episodes):
     ep1_mask = (df.show == show) & (df.season == season) & (df.episode == episodes[0])
@@ -20,17 +23,20 @@ def save_viewerships():
     office_view = office_view[["Season", "episode", "EpisodeTitle", "Viewership"]]
     office_view["show"] = "the_office"
     office_view.columns = ["season", "episode", "title", "viewership", "show"]
+    logger.info("The Office viewership finished")
 
     seinfeld_view = pd.read_csv("data/viewership/seinfeld.csv")
     seinfeld_view["us_viewers"] = seinfeld_view["us_viewers"].apply(lambda x: np.round(x/1e6,1))
     seinfeld_view = seinfeld_view[["season", "episode_num_in_season", "title", "us_viewers"]]
     seinfeld_view["show"] = "seinfeld"
     seinfeld_view.columns = ["season", "episode", "title", "viewership", "show"]
+    logger.info("Seinfeld viewership finished")
 
     tbbt_view = pd.read_csv("data/viewership/tbbt.csv")
     tbbt_view = tbbt_view[["Season", "No. inseason", "Title", "U.S. viewers(millions)"]]
     tbbt_view["show"] = "tbbt"
     tbbt_view.columns = ["season", "episode", "title", "viewership", "show"]
+    logger.info("TBBT viewership finished")
 
     friends_view = pd.read_csv("data/viewership/friends.csv")
     friends_view = friends_view.drop(friends_view[friends_view.Episode=="Special"].index)
@@ -40,6 +46,7 @@ def save_viewerships():
     friends_view = friends_view[["season", "episode", "Title", "U.S. viewers"]]
     friends_view["show"] = "friends"
     friends_view.columns = ["season", "episode", "title", "viewership", "show"]
+    logger.info("Friends viewership finished")
 
     viewership = pd.concat([office_view, seinfeld_view, tbbt_view, friends_view], axis=0).reset_index(drop=True)
 
@@ -68,7 +75,9 @@ def save_viewerships():
     viewership.drop(viewership[(viewership.show == "tbbt") & ((viewership.season == 11) | (viewership.season == 12))].index, inplace=True)
 
     viewership.to_csv("data/viewership/viewership.csv", index=False, encoding="utf-8")
+    logger.info("Viewership saved")
 
     season_viewership = viewership.groupby(["show", "season"])["viewership"].mean().reset_index(name="avg_viewership")
     season_viewership.avg_viewership = season_viewership.avg_viewership.round(2)
     season_viewership.to_csv("data/viewership/season_viewership.csv", index=False, encoding="utf-8")
+    logger.info("Season viewership saved")
