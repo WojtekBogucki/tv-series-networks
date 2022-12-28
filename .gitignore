@@ -267,3 +267,7 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
+
+data/friends/raw_scripts/
+data/tbbt/raw_scripts/
+data/seinfeld/seinology/
