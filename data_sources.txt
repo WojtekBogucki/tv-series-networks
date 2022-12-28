@@ -1,0 +1,6 @@
+data/friends/raw_scripts: https://fangj.github.io/friends/
+data/imdb: https://datasets.imdbws.com/
+data/movie_dialog_corpus: https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus
+data/seinfeld: https://web.archive.org/web/20170504050113/http://www.seinology.com/scripts-english.shtml
+data/tbbt: https://bigbangtrans.wordpress.com/
+data/the_office: https://www.kaggle.com/datasets/nasirkhalid24/the-office-us-complete-dialoguetranscript
