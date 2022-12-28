@@ -271,3 +271,8 @@ cython_debug/
 data/friends/raw_scripts/
 data/tbbt/raw_scripts/
 data/seinfeld/seinology/
+
+data/friends/season*/
+data/tbbt/season*/
+data/the_office/season*/
+data/seinfeld/season*/
