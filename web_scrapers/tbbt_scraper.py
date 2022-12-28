@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 main_URL = "https://bigbangtrans.wordpress.com/"
-headers = {"User-Agent": "'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'"}
+headers = {
+    "User-Agent": "'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'"}
 
 
 def get_episode_list(url: str, headers: dict) -> list:
@@ -22,14 +23,14 @@ def get_episode_list(url: str, headers: dict) -> list:
 
 def get_episode_titles(episode_list: list) -> list:
     episode_titles = list(map(lambda x: x.text
-                    .strip()
-                    .lower()
-                    .replace("\xa0", " ")
-                    .replace("series ", "s")
-                    .replace(" episode ", "e")
-                    .translate(str.maketrans({'\n': '', '–': '', ' ': '_', '(': '', ')': '', '/': ''}))
-                    .replace("__", "_"),
-                    episode_list))
+                              .strip()
+                              .lower()
+                              .replace("\xa0", " ")
+                              .replace("series ", "s")
+                              .replace(" episode ", "e")
+                              .translate(str.maketrans({'\n': '', '–': '', ' ': '_', '(': '', ')': '', '/': ''}))
+                              .replace("__", "_"),
+                              episode_list))
     logger.info(f"Got {len(episode_titles)} episode titles")
     return episode_titles
 
@@ -137,11 +138,11 @@ def create_transcript_file(episode_titles: list) -> pd.DataFrame:
                 speakers.append(speaker.strip().lower())
                 lines.append(line.strip())
     tbbt_df = pd.DataFrame.from_dict({"season": seasons,
-                                          "episode": episodes,
-                                          "title": titles,
-                                          "scene": scenes,
-                                          "speaker": speakers,
-                                          "line": lines})
+                                      "episode": episodes,
+                                      "title": titles,
+                                      "scene": scenes,
+                                      "speaker": speakers,
+                                      "line": lines})
     logger.info("Finished creating transcript file")
     return tbbt_df
 
@@ -157,6 +158,9 @@ def run_tbbt_scrapper():
     logger.info(f"Scenes per episode - mean: {scene_count.mean()}")
     logger.info(f"Scenes per episode - median: {scene_count.median()}")
 
+
+if __name__ == "__main__":
+    run_tbbt_scrapper()
 # pd.options.display.max_columns = 10
 # pd.options.display.max_rows = None
 #

@@ -57,17 +57,17 @@ def save_raw_scripts(episode_titles: list, episode_links: list, headers: dict, i
                     script_text.append(p + "\n")
         else:
             script_text = [p.get_text()
-                               .replace("\n", " ")
-                               .replace("\r", "")
-                               .replace("<", "(")
-                               .replace(">", ")")
-                               .replace("\x97", " ")
-                               .replace("\xa0", "")
-                               .replace("\x91", "'")
-                               .replace("\x92", "'")
-                               .replace("\x93", "")
-                               .replace("\ufffd", "")
-                               .replace("\x85", "'").strip() + "\n" for p in
+                           .replace("\n", " ")
+                           .replace("\r", "")
+                           .replace("<", "(")
+                           .replace(">", ")")
+                           .replace("\x97", " ")
+                           .replace("\xa0", "")
+                           .replace("\x91", "'")
+                           .replace("\x92", "'")
+                           .replace("\x93", "")
+                           .replace("\ufffd", "")
+                           .replace("\x85", "'").strip() + "\n" for p in
                            soup_subpage.body.findAll("p")]
         try:
             with open(f"data/friends/raw_scripts/{ep_title}.txt", "w", encoding="utf-8") as f:
@@ -77,9 +77,9 @@ def save_raw_scripts(episode_titles: list, episode_links: list, headers: dict, i
     logger.info("Finished saving raw scripts")
 
 
-
 def create_transcript_file(episode_titles: list) -> pd.DataFrame:
-    entry_words = ["enters?", "walks? in", "picks up", "bursts in", "approaches", "comes? in", "comes? over", "shows? up",
+    entry_words = ["enters?", "walks? in", "picks up", "bursts in", "approaches", "comes? in", "comes? over",
+                   "shows? up",
                    "arrives?", "entering"]
     exit_words = ["exits?", "leaves?", "walks? out", "hungs up"]
     new_scene_words = entry_words + exit_words
@@ -190,6 +190,9 @@ def run_friends_scrapper():
     logger.info(f"Scenes per episode - mean: {scene_count.mean()}")
     logger.info(f"Scenes per episode - median: {scene_count.median()}")
 
+
+if __name__ == "__main__":
+    run_friends_scrapper()
 # pd.options.display.max_columns = 10
 # pd.options.display.max_rows = None
 # friends_df = pd.read_csv("data/friends/friends_lines_v1.csv")

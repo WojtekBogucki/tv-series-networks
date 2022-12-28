@@ -94,7 +94,8 @@ def save_raw_scripts(episode_titles: list, episode_links: list, headers: dict, i
 
 
 def create_transcript_file(episode_titles: list) -> pd.DataFrame:
-    entry_words = ["enters?",  "walks? in",  "picks up", "bursts in", "approaches", "comes? in", "comes? over", "shows? up"]
+    entry_words = ["enters?", "walks? in", "picks up", "bursts in", "approaches", "comes? in", "comes? over",
+                   "shows? up"]
     exit_words = ["exits?", "leaves?", "walks? out", "hungs up"]
     new_scene_words = entry_words + exit_words
     next_scene = False
@@ -197,6 +198,9 @@ def run_seinfeld_scrapper():
     logger.info(f"Scenes per episode - mean: {scene_count.mean()}")
     logger.info(f"Scenes per episode - median: {scene_count.median()}")
 
+
+if __name__ == "__main__":
+    run_seinfeld_scrapper()
 # seinfeld_df = pd.read_csv("../data/seinfeld/seinfeld_lines_v1.csv")
 # seinfeld_df.groupby(["season", "episode"])["scene"].nunique().plot(kind="barh")
 
