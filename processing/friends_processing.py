@@ -1,8 +1,13 @@
 import pandas as pd
 from processing.processing import fix_names, split_characters, remove_speakers, fix_filtered_names, distinguish_characters
+import logging
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 
 def run_friends_processing():
+    logger.info("Started Friends processing...")
     friends_df = pd.read_csv("data/friends/friends_lines_v1.csv", encoding="utf-8")
     # len(friends_df.speaker[friends_df.speaker.str.contains(" and ")])
     # len(friends_df.speaker[friends_df.speaker.str.contains(", ")])
@@ -108,4 +113,5 @@ def run_friends_processing():
                                                      "the teacher", "the salesman", "waiter", "waitress", "woman"])
     # save data
     friends_df.to_csv("data/friends/friends_lines_v2.csv", index=False, encoding="utf-8")
+    logger.info("Finished Friends processing.")
 

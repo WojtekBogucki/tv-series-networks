@@ -1,8 +1,13 @@
 import pandas as pd
 from processing.processing import fix_names, split_characters, remove_speakers, fix_filtered_names, distinguish_characters
+import logging
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 
 def run_the_office_processing(fix_raw: bool = False):
+    logger.info("Started The Office processing...")
     if fix_raw:
         # read data
         office_raw = pd.read_csv("data/the_office/The-Office-Lines-V4.csv", sep=",", quotechar='\"', skipinitialspace=True)
@@ -158,3 +163,4 @@ def run_the_office_processing(fix_raw: bool = False):
     office_raw = distinguish_characters(office_raw, ["Man", "Woman", "Guy", "Girl", "Waiter"])
     # save data
     office_raw.to_csv("data/the_office/the_office_lines_v6.csv", index=False, encoding="utf-8")
+    logger.info("Finished The Office processing.")

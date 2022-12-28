@@ -1,8 +1,13 @@
 import pandas as pd
 from processing.processing import fix_names, split_characters, remove_speakers, fix_filtered_names, distinguish_characters
+import logging
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 
 def run_seinfeld_processing():
+    logger.info("Started Seinfeld processing...")
     seinfeld_df = pd.read_csv("data/seinfeld/seinfeld_lines_v1.csv", encoding="utf-8")
     # len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" and ")])
     # len(seinfeld_df.speaker[seinfeld_df.speaker.str.contains(" & ")])
@@ -113,4 +118,5 @@ def run_seinfeld_processing():
                                                        "worker"])
     # save data
     seinfeld_df.to_csv("data/seinfeld/seinfeld_lines_v2.csv", index=False, encoding="utf-8")
+    logger.info("Finished Seinfeld processing.")
 
