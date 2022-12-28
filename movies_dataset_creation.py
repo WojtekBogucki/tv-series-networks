@@ -1,7 +1,11 @@
+import logging
 import pandas as pd
 import ast
 import re
 from processing.processing import get_valid_filename
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 if __name__ == "__main__":
     movies = pd.read_csv("data/movie_dialog_corpus/movie_titles_metadata.txt",
@@ -63,6 +67,7 @@ if __name__ == "__main__":
         title_name = get_valid_filename(title)
         movie_edges[["speaker1", "speaker2", "line_count", "scene_count", "word_count"]].to_csv(
             f"data/movies/{title_name}.csv", index=False, encoding="utf-8")
+        logger.info(f"Movie {title} saved")
 
     # save ratings
 
@@ -73,3 +78,4 @@ if __name__ == "__main__":
         ["title", "id", "year", "rating", "num_votes"]).sum().reset_index()
     movies_genres["title"] = movies_genres["title"].apply(get_valid_filename)
     movies_genres.to_csv("data/imdb/movie_ratings.csv", index=False, encoding="utf-8")
+    logger.info("Movie ratings saved")
