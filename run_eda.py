@@ -15,6 +15,6 @@ if __name__ == "__main__":
         latest_file = [f for f in os.listdir(path) if f.startswith(f"{show_name}_lines_v")][-1]
         data = pd.read_csv(f"{path}/{latest_file}")
 
-        logger.info("Shape: ", data.shape)
+        logger.info(f"Shape: {data.shape}")
         logger.info(f"Unique speakers: {data.speaker.nunique()}")
         visualize_eda(data, show_name)

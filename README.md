@@ -35,6 +35,16 @@ Performing EDA on TV series datasets and saving all plots in `figures` directory
 
 There is a script `run_eda.py` for executing it.
 
+Created figures:
+- top episodes by number of speakers
+- top speakers by number of episodes they appeared in
+- number of lines per season
+- average number of lines in episode per season
+- number of scenes by season
+- boxplot of number of scenes per season
+- average number of scenes in episode per season
+- top speakers broken by number of lines per season
+
 ### Viewership and ratings
 
 Processing ratings and viewership data for TV series.
